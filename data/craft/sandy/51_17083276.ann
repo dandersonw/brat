@@ -1,0 +1,40 @@
+T3	Entity 184 204	genome reprogramming
+T4	KeyEntity 252 280	chromatin assembly machinery
+T5	Entity 321 348	chromatin assembly factor 1
+T6	KeyEntity 350 355	CAF-1
+T7	Entity 364 392	pre-implantation development
+T8	Entity 489 498	p150CAF-1
+T9	Entity 549 569	developmental arrest
+T10	Entity 577 590	16-cell stage
+T11	KeyEntity 667 687	nuclear organization
+T12	Entity 691 719	constitutive heterochromatin
+T13	Entity 768 791	heterochromatin domains
+T14	Entity 832 862	two-cell and blastocyst stages
+T15	KeyEntity 1071 1076	CAF-1
+T16	Entity 1097 1126	maturation of heterochromatin
+T17	Entity 1134 1161	preimplantation development
+T18	Entity 1249 1264	mislocalization
+T19	Entity 1267 1284	oss of clustering
+T20	Entity 1291 1343	econdensation of pericentric heterochromatin domains
+T21	Entity 1402 1446	alteration of epigenetic histone methylation
+T22	Entity 1469 1496	pericentric heterochromatin
+T23	KeyEntity 1703 1731	heterochromatin organization
+T24	Entity 1735 1762	pluripotent embryonic cells
+T25	KeyEntity 1668 1673	CAF-1
+T26	KeyEntity 1803 1831	chromatin assembly machinery
+T27	Entity 1851 1871	spatial organization
+T28	Entity 1876 1894	epigenetic marking
+T29	Entity 1912 1925	early embryos
+T30	Entity 1930 1950	embryonic stem cells
+R1	other_relation Arg1:T6 Arg2:T5	
+#1	AnnotatorNotes R1	equivalent
+R2	participates_in Arg1:T6 Arg2:T7	
+R3	participates_in Arg1:T12 Arg2:T11	
+R4	participates_in Arg1:T13 Arg2:T14	
+R5	regulates Arg1:T15 Arg2:T16	
+R6	participates_in Arg1:T16 Arg2:T17	
+R7	participates_in Arg1:T21 Arg2:T22	
+R8	regulates Arg1:T25 Arg2:T23	
+R9	participates_in Arg1:T23 Arg2:T24	
+R10	participates_in Arg1:T26 Arg2:T27	
+R11	participates_in Arg1:T26 Arg2:T28	

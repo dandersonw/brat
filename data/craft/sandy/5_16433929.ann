@@ -1,0 +1,33 @@
+T1	Entity 170 188	cellular migration
+T2	Entity 190 212	cell cycle progression
+T3	Entity 214 236	degenerative processes
+T4	Entity 241 251	cell death
+T5	KeyEntity 95 104	μ-calpain
+T6	KeyEntity 109 118	m-calpain
+T7	KeyEntity 337 342	Capn1
+T8	Entity 358 363	Capn2
+T9	KeyEntity 420 425	Capn4
+T10	KeyEntity 451 461	Capn4 gene
+T11	Entity 527 546	embryonic lethality
+T12	KeyEntity 728 737	m-calpain
+T13	Entity 744 754	compensate
+T14	Entity 794 811	loss of m-calpain
+R1	participates_in Arg1:T12 Arg2:T13	
+T15	Entity 832 837	death
+R2	participates_in Arg1:T14 Arg2:T15	
+T16	Entity 974 979	Capn2
+T17	Entity 988 1009	embryonic stems cells
+T18	KeyEntity 1296 1302	morula
+T19	Entity 1244 1274	preimplantation mutant embryos
+R3	participates_in Arg1:T19 Arg2:T18	
+R4	is_part_of Arg1:T16 Arg2:T17	
+T20	KeyEntity 1395 1405	Capn2 gene
+T21	Entity 1417 1453	pre-implantation embryonic lethality
+T22	KeyEntity 1466 1472	morula
+T23	Entity 1477 1487	blastocyst
+T24	Entity 1517 1526	μ-calpain
+T25	KeyEntity 1531 1540	m-calpain
+T26	Entity 1588 1609	vital for development
+T27	Entity 1617 1646	preimplantation murine embryo
+R5	regulates Arg1:T25 Arg2:T26	
+R6	is_part_of Arg1:T26 Arg2:T27	

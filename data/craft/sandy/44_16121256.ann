@@ -1,23 +1,23 @@
 T1	Entity 81 116	Medium-chain acyl-CoA dehydrogenase
-T2	Entity 118 122	MCAD
+T2	KeyEntity 118 122	MCAD
 T3	Entity 176 212	mitochondrial fatty acid β-oxidation
 T4	Entity 310 325	MCAD deficiency
-T5	Entity 327 334	MCAD−/−
+T5	KeyEntity 327 334	MCAD−/−
 T6	Entity 339 353	gene targeting
 T7	Entity 357 371	embryonic stem
-T8	Entity 373 375	ES
-T9	Entity 388 395	MCAD−/−
+T8	KeyEntity 373 375	ES
+T9	KeyEntity 388 395	MCAD−/−
 T10	Entity 414 430	organic aciduria
 T11	Entity 435 446	fatty liver
 T12	Entity 468 484	cold intolerance
 T13	Entity 517 541	sporadic cardiac lesions
-T14	Entity 550 557	MCAD−/−
+T14	KeyEntity 550 557	MCAD−/−
 T15	Entity 632 650	neonatal mortality
-T16	Entity 654 666	MCAD−/− pups
+T16	KeyEntity 654 666	MCAD−/− pups
 T17	Entity 731 740	mortality
-T18	Entity 744 767	MCAD-deficient patients
+T18	KeyEntity 744 767	MCAD-deficient patients
 T19	Entity 866 871	model
-T20	Entity 773 793	MCAD-deficient mouse
+T20	KeyEntity 773 793	MCAD-deficient mouse
 T21	Entity 909 929	fatty acid oxidation
 T22	Entity 934 946	pathogenesis
 T23	Entity 975 995	fatty acid oxidation

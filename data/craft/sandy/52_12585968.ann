@@ -1,0 +1,36 @@
+T1	Entity 130 148	Brn3c null mutants
+T2	Entity 157 176	immature hair cells
+T3	Entity 238 247	apoptosis
+T4	KeyEntity 321 344	neurotrophin expression
+T5	Entity 356 371	sensory neurons
+T6	Entity 380 401	embryonic development
+T7	Entity 455 478	patterns of innervation
+T8	KeyEntity 506 519	neurotrophins
+R1	interacts_with Arg1:T4 Arg2:T5	
+R2	participates_in Arg1:T5 Arg2:T6	
+T9	Entity 601 618	sensory epithelia
+T10	Entity 573 577	BDNF
+T11	Entity 582 586	NT-3
+T12	Entity 736 753	postnatal day 7/8
+T13	Entity 755 759	P7/8
+T14	Entity 839 879	myosin VIIa-positive immature hair cells
+T15	Entity 988 1023	mutant vestibular sensory epithelia
+T16	Entity 1090 1097	cochlea
+T17	Entity 1433 1454	functional hair cells
+T18	Entity 1235 1263	vestibular sensory epithelia
+T19	Entity 1285 1298	cochlear apex
+R3	interacts_with Arg1:T11 Arg2:T9	
+R4	interacts_with Arg1:T10 Arg2:T9	
+R5	other_relation Arg1:T12 Arg2:T13	
+#1	AnnotatorNotes R5	equivalent
+T20	Entity 1159 1179	vestibular epithelia
+T21	Entity 1305 1338	lacks MyoVIIa positive hair cells
+R6	participates_in Arg1:T21 Arg2:T19	
+T22	KeyEntity 1542 1555	neurotrophins
+T23	Entity 1563 1570	cochlea
+T24	Entity 1574 1589	Brn3c null mice
+T25	Entity 1615 1630	sensory neurons
+T26	Entity 1652 1659	cochlea
+R7	participates_in Arg1:T22 Arg2:T23	
+R8	participates_in Arg1:T23 Arg2:T24	
+R9	regulates Arg1:T22 Arg2:T25	

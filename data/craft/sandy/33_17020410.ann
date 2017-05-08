@@ -11,15 +11,15 @@ T10	Entity 779 793	UV sensitivity
 T11	Entity 798 819	cancer predisposition
 T12	Entity 835 853	segmental progeria
 T13	Entity 878 895	biallelic effects
-T14	Entity 962 973	Xpd alleles
+T14	KeyEntity 962 973	Xpd alleles
 T15	Entity 1037 1048	Xpd alleles
 T16	Entity 1114 1133	basal transcription
 T17	Entity 1052 1062	ameliorate
 T18	Entity 1199 1225	differential developmental
 T19	Entity 1230 1245	tissue-specific
-T20	Entity 1268 1287	Xpd allele products
+T20	KeyEntity 1268 1287	Xpd allele products
 T21	Entity 1299 1327	interallelic complementation
-T22	Entity 1472 1485	XPD disorders
+T22	KeyEntity 1472 1485	XPD disorders
 T23	Entity 1577 1611	pathological phenotypic plasticity
 T24	Entity 1533 1550	recessive alleles
 T25	Entity 592 626	compound heterozygous mouse models

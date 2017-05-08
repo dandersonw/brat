@@ -1,0 +1,36 @@
+T1	Entity 232 241	arthritis
+T2	KeyEntity 95 114	Articular cartilage
+T3	KeyEntity 550 559	Gdf5 gene
+T4	Entity 563 609	bone morphogenetic protein [BMP] family member
+T5	Entity 743 758	Cre recombinase
+T6	Entity 879 896	developing joints
+T7	Entity 908 930	early joint interzones
+T8	Entity 932 957	adult articular cartilage
+T9	Entity 967 980	joint capsule
+T10	KeyEntity 1027 1049	BMP receptor signaling
+T11	Entity 1053 1070	joint development
+T12	KeyEntity 1100 1106	Bmpr1a
+T13	Entity 1120 1146	die early in embryogenesis
+T14	Entity 1237 1270	bypasses this embryonic lethality
+T15	Entity 1191 1211	floxed Bmpr1a allele
+T16	Entity 1221 1236	Gdf5-Cre driver
+T17	Entity 1295 1316	postnatal development
+T18	KeyEntity 1710 1732	BMP receptor signaling
+T19	Entity 1758 1775	early development
+T20	Entity 1780 1808	creation of multiple tissues
+T21	Entity 1831 1865	maintenance of articular cartilage
+T22	KeyEntity 1916 1928	BMP receptor
+T23	Entity 1974 1994	human osteoarthritis
+R1	is_part_of Arg1:T2 Arg2:T1	
+R2	is_part_of Arg1:T3 Arg2:T4	
+T24	Entity 764 807	Gdf5 bacterial artificial chromosome clones
+R3	interacts_with Arg1:T5 Arg2:T24	
+R4	interacts_with Arg1:T24 Arg2:T6	
+R5	participates_in Arg1:T10 Arg2:T11	
+R6	participates_in Arg1:T12 Arg2:T13	
+R7	interacts_with Arg1:T15 Arg2:T16	
+R8	participates_in Arg1:T16 Arg2:T14	
+R9	regulates Arg1:T18 Arg2:T19	
+R10	regulates Arg1:T18 Arg2:T20	
+R11	regulates Arg1:T18 Arg2:T21	
+R12	regulates Arg1:T22 Arg2:T23	

@@ -1,0 +1,17 @@
+T1	Entity 269 275	gender
+T2	Entity 354 371	genetical genomic
+T3	Entity 683 701	metabolic syndrome
+T4	KeyEntity 1011 1027	gonadal fat mass
+T5	Entity 1050 1073	sex-specific regulation
+T6	KeyEntity 1127 1141	sex-dependence
+T7	Entity 1154 1178	cis and trans regulation
+T8	Entity 1182 1197	gene expression
+T9	KeyEntity 1288 1304	gonadal fat mass
+T10	Entity 1344 1370	female-biased heritability
+T11	Entity 588 609	apolipoprotein E null
+T12	Entity 611 618	ApoE−/−
+R1	other_relation Arg1:T12 Arg2:T11	
+#1	AnnotatorNotes R1	equivalent
+R2	is_part_of Arg1:T4 Arg2:T5	
+R3	regulates Arg1:T8 Arg2:T6	
+R4	participates_in Arg1:T9 Arg2:T10	

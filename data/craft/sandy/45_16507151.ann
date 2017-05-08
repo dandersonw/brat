@@ -1,11 +1,11 @@
-T1	Entity 93 119	Collagen-induced arthritis
+T1	KeyEntity 93 119	Collagen-induced arthritis
 T2	Entity 161 191	autoimmune experimental models
-T3	Entity 219 239	rheumatoid arthritis
-T4	Entity 247 273	collagen-induced arthritis
+T3	KeyEntity 219 239	rheumatoid arthritis
+T4	KeyEntity 247 273	collagen-induced arthritis
 T5	Entity 287 304	polygenic disease
 T6	Entity 357 382	disease-controlling genes
 T7	Entity 392 412	rheumatoid arthritis
-T8	Entity 519 545	collagen-induced arthritis
+T8	KeyEntity 519 545	collagen-induced arthritis
 T9	Entity 594 599	NFR/N
 T10	Entity 604 609	B10.Q
 T11	Entity 611 625	H-2q haplotype
@@ -14,7 +14,7 @@ T13	Entity 859 881	microsatellite markers
 T15	Entity 951 970	arthritis incidence
 T16	Entity 972 980	severity
 T17	Entity 1001 1014	chromosome 11
-T18	Entity 1024 1029	Cia40
+T18	KeyEntity 1024 1029	Cia40
 T19	Entity 1038 1049	colocalizes
 T20	Entity 1075 1092	pregnancy failure
 T22	Entity 1181 1190	incidence

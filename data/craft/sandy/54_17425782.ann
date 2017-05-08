@@ -1,0 +1,70 @@
+T1	Entity 98 110	pygopus gene
+T2	Entity 163 172	Armadillo
+T3	Entity 174 183	β-catenin
+T4	Entity 185 213	transcription factor complex
+T5	KeyEntity 217 240	canonical Wnt signaling
+T6	Entity 324 342	kidney development
+T7	KeyEntity 405 410	Pygo1
+T8	KeyEntity 415 420	Pygo2
+R1	other_relation Arg1:T3 Arg2:T2	
+#1	AnnotatorNotes R1	equivalent
+R2	other_relation Arg1:T3 Arg2:T4	
+#2	AnnotatorNotes R2	equivalent
+R3	participates_in Arg1:T3 Arg2:T5	
+T9	Entity 497 516	critical PHD domain
+T10	Entity 666 679	lens agenesis
+T11	Entity 681 699	growth retardation
+T12	Entity 701 727	altered kidney development
+T13	Entity 747 758	exencephaly
+T14	Entity 763 775	cleft palate
+T15	KeyEntity 971 997	BAT-gal transgene reporter
+T16	KeyEntity 1001 1024	canonical Wnt signaling
+T17	Entity 1096 1121	tissue-specific variation
+T18	Entity 1214 1231	developing kidney
+T19	KeyEntity 1151 1156	Pygo1
+T20	KeyEntity 1161 1166	Pygo2
+T21	Entity 1259 1283	stromal cell compartment
+T22	Entity 1363 1375	ureteric bud
+T23	Entity 1380 1423	metanephric mesenchyme-derived compartments
+T24	Entity 1487 1500	expanded tips
+T25	Entity 1425 1448	Branching morphogenesis
+T26	Entity 1456 1468	ureteric bud
+T27	Entity 1505 1524	reduced tip density
+T28	Entity 1641 1661	condensed mesenchyme
+T29	Entity 1674 1686	ureteric bud
+T30	Entity 1867 1888	candidate Wnt targets
+T31	Entity 1892 1910	kidney development
+T32	Entity 1810 1816	Cxcl13
+T33	Entity 1818 1824	Slc5a2
+T34	Entity 1826 1830	Klk5
+T35	Entity 1832 1836	Ren2
+T36	Entity 1841 1849	Timeless
+R4	participates_in Arg1:T15 Arg2:T16	
+R5	participates_in Arg1:T15 Arg2:T17	
+R6	is_part_of Arg1:T19 Arg2:T18	
+R7	is_part_of Arg1:T20 Arg2:T18	
+R8	is_part_of Arg1:T21 Arg2:T18	
+T37	Entity 1310 1331	double mutant kidneys
+R9	participates_in Arg1:T37 Arg2:T22	
+R10	participates_in Arg1:T37 Arg2:T23	
+R11	interacts_with Arg1:T25 Arg2:T26	
+R12	interacts_with Arg1:T28 Arg2:T29	
+R13	is_subclass_of Arg1:T32 Arg2:T30	
+R14	is_subclass_of Arg1:T33 Arg2:T30	
+R15	is_subclass_of Arg1:T34 Arg2:T30	
+R16	is_subclass_of Arg1:T35 Arg2:T30	
+R17	is_subclass_of Arg1:T36 Arg2:T30	
+R18	participates_in Arg1:T30 Arg2:T31	
+T38	Entity 1929 1952	mammalian Pygopus genes
+T39	Entity 1970 2000	normal branching morphogenesis
+T40	Entity 2008 2020	ureteric bud
+T41	Entity 2028 2046	kidney development
+T42	Entity 2261 2278	Pygo1/Pygo2 genes
+T43	Entity 2386 2410	quantitative transducers
+T44	Entity 2430 2450	Wnt signal intensity
+R19	regulates Arg1:T38 Arg2:T39	
+R20	participates_in Arg1:T39 Arg2:T40	
+R21	other_relation Arg1:T40 Arg2:T41	
+#3	AnnotatorNotes R21	time stage
+R22	is_part_of Arg1:T42 Arg2:T43	
+R23	participates_in Arg1:T43 Arg2:T44	

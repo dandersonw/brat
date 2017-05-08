@@ -1,0 +1,31 @@
+T1	KeyEntity 92 98	ADAM22
+T2	Entity 118 134	ADAM gene family
+T3	Entity 182 196	nervous system
+T4	Entity 280 295	integrin binder
+T5	Entity 215 221	ADAM22
+T6	Entity 323 332	cell-cell
+T7	Entity 336 360	cell-matrix interactions
+T8	Entity 406 412	ADAM22
+R1	is_subclass_of Arg1:T1 Arg2:T2	
+R2	participates_in Arg1:T1 Arg2:T3	
+R3	is_part_of Arg1:T5 Arg2:T4	
+R4	participates_in Arg1:T5 Arg2:T6	
+R5	participates_in Arg1:T5 Arg2:T7	
+T9	Entity 613 626	severe ataxia
+T10	Entity 698 709	convulsions
+T11	Entity 841 856	hypomyelination
+T12	Entity 864 881	peripheral nerves
+R6	participates_in Arg1:T10 Arg2:T9	
+R7	participates_in Arg1:T11 Arg2:T12	
+T13	KeyEntity 951 957	ADAM22
+T14	Entity 985 1004	correct functioning
+T15	Entity 1012 1026	nervous system
+T16	Entity 1048 1054	ADAM22
+T17	Entity 1132 1150	epileptic seizures
+T18	Entity 1155 1176	peripheral neuropathy
+R8	regulates Arg1:T13 Arg2:T14	
+R9	interacts_with Arg1:T14 Arg2:T15	
+R10	other_relation Arg1:T16 Arg2:T17	
+#1	AnnotatorNotes R10	future_studies
+R11	other_relation Arg1:T16 Arg2:T18	
+#2	AnnotatorNotes R11	future_studies

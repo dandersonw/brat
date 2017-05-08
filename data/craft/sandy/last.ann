@@ -1,0 +1,13 @@
+T1	Entity 70 111	Congenital nephrogenic diabetes insipidus
+T2	Entity 113 116	NDI
+T3	Entity 163 169	kidney
+T4	Entity 206 217	vasopressin
+T5	Entity 239 259	nephrogenic diabetes
+T6	Entity 313 335	vasopressin receptor 2
+T7	Entity 337 342	Avpr2
+T8	Entity 356 403	vasopressin-sensitive water channel aquaporin-2
+T9	Entity 405 409	Aqp2
+T10	Entity 635 653	mouse model of NDI
+T11	Entity 663 677	F204V mutation
+T12	Entity 685 694	Aqp2 gene
+T13	Entity 887 911	recessive Aqp2 mutations

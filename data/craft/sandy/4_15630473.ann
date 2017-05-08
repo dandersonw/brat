@@ -1,13 +1,13 @@
 T1	Entity 148 176	multipotent epithelial sheet
-T2	Entity 234 247	bud structure
+T2	KeyEntity 234 247	bud structure
 T3	Entity 384 411	multiple extracellular cues
 T4	Entity 429 446	adhesion dynamics
 T5	Entity 451 464	proliferation
 T6	Entity 478 494	cluster of cells
-T7	Entity 519 558	transforming growth factor β2 signaling
-T8	Entity 598 624	transcription factor Snail
+T7	KeyEntity 519 558	transforming growth factor β2 signaling
+T8	KeyEntity 598 624	transcription factor Snail
 T9	Entity 642 678	Ras-mitogen-activated protein kinase
-T10	Entity 680 684	MAPK
+T10	KeyEntity 680 684	MAPK
 T11	Entity 724 743	Snail misexpression
 T12	Entity 753 771	hyperproliferation
 T13	Entity 778 813	reduction in intercellular adhesion
@@ -16,7 +16,7 @@ T15	Entity 834 866	transcriptionally down-regulated
 T16	Entity 934 966	released from cell-cell contacts
 T17	Entity 879 896	adhesion proteins
 T18	Entity 920 929	signaling
-T19	Entity 1008 1027	Ras-MAPK activation
+T19	KeyEntity 1008 1027	Ras-MAPK activation
 T20	Entity 1128 1151	transcriptional changes
 T21	Entity 1069 1086	multipotent cells
 T22	Entity 1167 1180	proliferation

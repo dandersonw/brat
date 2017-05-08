@@ -1,0 +1,48 @@
+T1	Entity 127 165	wingless-related MMTV integration site
+T2	KeyEntity 167 170	WNT
+T3	Entity 176 200	fibroblast growth factor
+T4	KeyEntity 202 205	FGF
+T5	Entity 227 233	growth
+T6	Entity 235 248	morphogenesis
+T7	Entity 254 269	differentiation
+T8	Entity 301 312	development
+T9	KeyEntity 328 332	Fgf9
+T10	KeyEntity 337 341	Wnt4
+T11	KeyEntity 389 406	sex determination
+T12	Entity 408 420	Loss of Fgf9
+T13	Entity 430 445	XY sex reversal
+T14	Entity 455 467	loss of Wnt4
+T15	Entity 479 505	partial testis development
+T16	Entity 509 518	XX gonads
+T17	Entity 681 707	fibroblast growth factor 9
+T18	KeyEntity 709 713	FGF9
+T19	KeyEntity 719 723	WNT4
+T20	KeyEntity 760 777	sex determination
+T21	Entity 958 970	loss of Wnt4
+T22	Entity 1001 1017	up-regulate Fgf9
+T23	Entity 1022 1026	Sox9
+T24	Entity 1034 1048	absence of Sry
+T25	KeyEntity 1132 1136	Fgf9
+T26	Entity 1078 1095	fate of the gonad
+T27	KeyEntity 1141 1145	Wnt4
+R1	other_relation Arg1:T2 Arg2:T1	
+#1	AnnotatorNotes R1	equivalent
+R2	other_relation Arg1:T4 Arg2:T3	
+#2	AnnotatorNotes R2	equivalent
+R3	regulates Arg1:T9 Arg2:T11	
+R4	regulates Arg1:T10 Arg2:T11	
+R5	participates_in Arg1:T12 Arg2:T13	
+R6	participates_in Arg1:T14 Arg2:T15	
+R7	other_relation Arg1:T18 Arg2:T17	
+#3	AnnotatorNotes R7	equivalent
+R8	regulates Arg1:T18 Arg2:T20	
+R9	regulates Arg1:T19 Arg2:T20	
+T28	Entity 802 805	Sry
+T29	Entity 827 844	feed-forward loop
+R10	regulates Arg1:T28 Arg2:T29	
+R11	participates_in Arg1:T21 Arg2:T22	
+R12	participates_in Arg1:T21 Arg2:T23	
+R13	regulates Arg1:T25 Arg2:T26	
+R14	regulates Arg1:T27 Arg2:T26	
+T30	KeyEntity 1299 1316	sex determination
+T31	Entity 1362 1368	switch

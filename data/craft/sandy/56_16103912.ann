@@ -1,0 +1,35 @@
+T1	KeyEntity 89 120	Congenital diaphragmatic hernia
+T2	Entity 325 338	E18.5 embryos
+T3	Entity 370 391	N-ethyl-N-nitrosourea
+T4	Entity 430 450	pulmonary hypoplasia
+T5	Entity 455 489	abnormal diaphragmatic development
+T6	KeyEntity 491 495	Fog2
+T7	Entity 497 502	Zfpm2
+T8	Entity 520 540	recombinant interval
+T9	Entity 554 592	N-ethyl-N-nitrosourea-induced mutation
+T10	Entity 598 620	DNA sequencing of Fog2
+T11	Entity 715 732	truncated protein
+T12	Entity 872 888	de novo mutation
+T13	Entity 904 924	premature stop codon
+T14	Entity 983 1020	severe bilateral pulmonary hypoplasia
+T15	Entity 1028 1061	abnormally muscularized diaphragm
+T16	KeyEntity 1123 1127	Fog2
+T17	Entity 1151 1160	diaphragm
+T18	Entity 1165 1181	lung development
+T19	KeyEntity 1232 1236	FOG2
+T20	Entity 1289 1340	nonsyndromic human congenital diaphragmatic defects
+T21	Entity 1416 1424	neonates
+T22	Entity 1430 1461	congenital diaphragmatic hernia
+T23	Entity 1476 1521	primary pulmonary developmental abnormalities
+R1	interacts_with Arg1:T2 Arg2:T3	
+R2	other_relation Arg1:T6 Arg2:T7	
+#1	AnnotatorNotes R2	equivalent
+R3	is_part_of Arg1:T11 Arg2:T6	
+R4	regulates Arg1:T12 Arg2:T13	
+R5	participates_in Arg1:T13 Arg2:T14	
+R6	participates_in Arg1:T13 Arg2:T15	
+R7	regulates Arg1:T16 Arg2:T17	
+R8	regulates Arg1:T16 Arg2:T18	
+R9	participates_in Arg1:T19 Arg2:T20	
+R10	participates_in Arg1:T21 Arg2:T22	
+R11	participates_in Arg1:T21 Arg2:T23	

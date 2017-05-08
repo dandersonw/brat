@@ -1,0 +1,37 @@
+T1	KeyEntity 71 80	Helicases
+T2	Entity 103 113	initiation
+T3	Entity 118 128	elongation
+T4	Entity 132 147	DNA replication
+T5	Entity 225 241	Mcm4/6/7 complex
+T6	Entity 272 304	thymine-rich single-stranded DNA
+T7	KeyEntity 423 431	Mcm4/6/7
+T8	Entity 438 461	symmetric dual contacts
+T9	Entity 471 513	5′-proximal 25 nt single-stranded segments
+T10	Entity 530 543	branch points
+T11	Entity 567 582	double hexamers
+T12	Entity 584 608	Loss of thymine residues
+T13	Entity 667 685	unwinding efficacy
+T14	Entity 703 737	concurrent bidirectional unwinding
+T15	Entity 743 775	single double hexameric Mcm4/6/7
+T16	Entity 795 814	efficient unwinding
+T17	Entity 830 838	Mcm4/6/7
+T18	Entity 906 933	single-stranded 3′-tail DNA
+T19	Entity 949 968	helicase activation
+T20	Entity 984 1015	sequence context of the 3′-tail
+T21	Entity 1070 1090	more thymine content
+T22	Entity 1231 1253	cytosine–inosine pairs
+T23	Entity 1277 1286	unwinding
+T24	Entity 1449 1459	activation
+T25	Entity 1464 1484	substrate preference
+R1	participates_in Arg1:T1 Arg2:T2	
+R2	participates_in Arg1:T1 Arg2:T3	
+R3	regulates Arg1:T3 Arg2:T4	
+R4	regulates Arg1:T2 Arg2:T4	
+R5	regulates Arg1:T5 Arg2:T6	
+R6	participates_in Arg1:T7 Arg2:T8	
+R7	interacts_with Arg1:T7 Arg2:T9	
+R8	regulates Arg1:T7 Arg2:T11	
+R9	participates_in Arg1:T12 Arg2:T13	
+R10	regulates Arg1:T15 Arg2:T16	
+R11	is_part_of Arg1:T21 Arg2:T20	
+R12	interacts_with Arg1:T24 Arg2:T25	

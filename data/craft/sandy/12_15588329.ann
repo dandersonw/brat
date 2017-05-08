@@ -1,12 +1,12 @@
-T1	Entity 175 179	JNCL
+T1	KeyEntity 175 179	JNCL
 T2	Entity 208 249	childhood-onset neurodegenerative disease
-T3	Entity 282 295	CLN3 mutation
+T3	KeyEntity 282 295	CLN3 mutation
 T4	Entity 311 336	loss of battenin activity
 T5	Entity 360 386	mitochondrial ATP synthase
 T6	Entity 388 397	subunit c
 T7	Entity 421 432	CNS neurons
 T8	Entity 458 468	Cln3Δex7/8
-T9	Entity 511 524	JNCL mutation
+T9	KeyEntity 511 524	JNCL mutation
 T10	Entity 541 549	battenin
 T11	Entity 562 581	JNCL-like pathology
 R1	regulates Arg1:T1 Arg2:T2	
@@ -18,10 +18,10 @@ R5	participates_in Arg1:T4 Arg2:T7
 R6	participates_in Arg1:T9 Arg2:T8	
 R7	interacts_with Arg1:T8 Arg2:T10	
 R8	participates_in Arg1:T8 Arg2:T11	
-T12	Entity 637 650	JNCL mutation
+T12	KeyEntity 637 650	JNCL mutation
 T13	Entity 654 668	neuronal cells
 T14	Entity 678 705	P4 knock-in mouse cerebella
-T15	Entity 746 752	CbCln3
+T15	KeyEntity 746 752	CbCln3
 T16	Entity 793 822	neuronal precursor cell lines
 T17	Entity 857 862	MAP-2
 T18	Entity 867 880	NeuN-positive
