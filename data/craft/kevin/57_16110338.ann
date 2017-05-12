@@ -1,0 +1,15 @@
+T1	Entity 114 117;127 141	Rod photoreceptors
+T2	Entity 122 141	cone photoreceptors
+T3	Entity 286 310	gene expression patterns
+T4	Entity 312 324	morphologies
+T5	Entity 330 353	synaptic connectivities
+T6	KeyEntity 391 459	photoreceptor cells of the retinal degeneration 7 (rd7) mutant mouse
+T7	KeyEntity 483 514	enhanced S-cone syndrome (ESCS)
+T8	Entity 538 558	spontaneous deletion
+T9	Entity 566 589	mouse ortholog of NR2E3
+T10	Entity 594 638	orphan nuclear receptor transcription factor
+T11	KeyEntity 650 654	ESCS
+T12	Entity 666 676;703 711	microarray analysis
+T13	Entity 681 711	in situ hybridization analysis
+T14	Entity 735 745	rd7 retina
+T15	Entity 786 810	S-opsin–expressing cells

@@ -1,0 +1,42 @@
+T1	Entity 118 135	mammalian meiosis
+T2	Entity 137 167	homologous chromosome synapsis
+T3	Entity 184 197	recombination
+T4	Entity 210 220	eukaryotes
+T5	Entity 222 241	mammalian meiocytes
+T6	KeyEntity 324 347	mouse ortholog (Trip13)
+T7	KeyEntity 351 380	pachytene checkpoint 2 (PCH2)
+T8	Entity 435 459	Saccharomyces cerevisiae
+T9	Entity 464 486	Caenorhabditis elegans
+T10	Entity 518 525	meiosis
+T11	Entity 541 562	TRIP13-deficient mice
+T12	Entity 571 589	spermatocyte death
+T13	Entity 593 602	pachynema
+T14	Entity 615 622	oocytes
+T15	Entity 641 652;656 676	chromosomes mutant spermatocytes
+T16	Entity 761 766	RAD51
+T17	Entity 768 771	BLM
+T18	Entity 777 780	RPA
+T19	Entity 819 836	chiasmata markers
+T20	Entity 837 841	MLH1
+T21	Entity 846 850	MLH3
+T22	Entity 722 749	recombination intermediates
+T23	Entity 856 878	okadaic acid treatment
+T24	Entity 882 902	mutant spermatocytes
+T25	Entity 925 936	metaphase I
+T26	Entity 942 962	bivalent chromosomes
+T27	Entity 964 986	Double mutant analysis
+T28	Entity 1042 1047	Spo11
+T29	Entity 1049 1053	Mei1
+T30	Entity 1055 1059	Rec8
+T31	Entity 1065 1069	Dmc1
+T32	Entity 1091 1097	Trip13
+T33	Entity 1115 1121	TRIP13
+T34	Entity 1136 1154	meiotic checkpoint
+T35	Entity 1196 1202	TRIP13
+T36	Entity 1221 1236	strand invasion
+T37	Entity 1390 1411	recombination defects
+T38	Entity 1417 1426	asynapsis
+T39	Entity 1430 1447	mammalian meiosis
+T40	Entity 1486 1507	unrepaired DNA damage
+T41	Entity 1530 1559	pachytene checkpoint response
+T42	Entity 1563 1567	mice

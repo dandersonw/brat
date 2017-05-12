@@ -1,0 +1,30 @@
+T1	Entity 343 382	mouse olfactory epithelium cDNA library
+T2	Entity 406 448	olfactory receptor expressed sequence tags
+T3	Entity 500 530	additional olfactory receptors
+T4	Entity 555 569	gene structure
+T5	Entity 574 599	putative promoter regions
+R1	is_part_of Arg1:T2 Arg2:T1	
+T6	KeyEntity 472 490	olfactory function
+T7	KeyEntity 1798 1810	splice sites
+T8	Entity 1393 1413	olfactory epithelium
+T9	KeyEntity 1433 1452	olfactory receptors
+T10	Entity 1529 1564	unequal numbers of expressing cells
+T11	Entity 1569 1594	unequal transcript levels
+T12	Entity 1667 1700	multiple transcriptional variants
+T13	KeyEntity 1639 1658	olfactory receptors
+T14	Entity 1822 1835	coding region
+T15	Entity 1933 1966	nonfunctional olfactory receptors
+T16	Entity 1989 2016	increase receptor diversity
+R2	participates_in Arg1:T8 Arg2:T9	
+R3	participates_in Arg1:T13 Arg2:T12	
+R4	interacts_with Arg1:T7 Arg2:T14	
+R5	participates_in Arg1:T15 Arg2:T16	
+T17	Entity 2061 2079	olfactory function
+T18	KeyEntity 2112 2137	mouse olfactory receptors
+T19	Entity 2349 2359	one-neuron
+T20	Entity 2361 2387	one-gene expression regime
+T21	Entity 2297 2324	different expression levels
+R6	regulates Arg1:T19 Arg2:T21	
+R7	regulates Arg1:T20 Arg2:T21	
+T22	Entity 2549 2588	computational regulatory motif searches
+T23	Entity 2607 2637	olfactory receptor microarrays

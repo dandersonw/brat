@@ -15,4 +15,15 @@ T14	Entity 744 767	MCAD-deficient patients
 T15	KeyEntity 773 793	MCAD-deficient mouse
 T16	Entity 826 847	human MCAD deficiency
 T17	Entity 910 929	atty acid oxidation
-T18	Entity 934 946;950 964;975 995	pathogenesis human diseases fatty acid oxidation
+R1	participates_in Arg1:T1 Arg2:T2	
+R2	is_part_of Arg1:T3 Arg2:T4	
+R3	other_relation Arg1:T6 Arg2:T7	
+#1	AnnotatorNotes R3	attribute
+R4	other_relation Arg1:T6 Arg2:T8	
+#2	AnnotatorNotes R4	attribute
+R5	is_part_of Arg1:T9 Arg2:T10	
+R6	other_relation Arg1:T12 Arg2:T13	
+#3	AnnotatorNotes R6	attribute
+T18	Entity 934 946	pathogenesis
+T19	Entity 975 995	fatty acid oxidation
+R7	is_part_of Arg1:T19 Arg2:T18	

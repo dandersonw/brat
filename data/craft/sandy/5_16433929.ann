@@ -31,3 +31,9 @@ T26	Entity 1588 1609	vital for development
 T27	Entity 1617 1646	preimplantation murine embryo
 R5	regulates Arg1:T25 Arg2:T26	
 R6	is_part_of Arg1:T26 Arg2:T27	
+T28	KeyEntity 344 353	μ-calpain
+T29	KeyEntity 365 374	m-calpain
+R7	regulates Arg1:T7 Arg2:T28	
+R8	regulates Arg1:T8 Arg2:T29	
+R9	participates_in Arg1:T10 Arg2:T11	
+R10	participates_in Arg1:T20 Arg2:T21	

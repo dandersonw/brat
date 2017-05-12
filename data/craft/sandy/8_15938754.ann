@@ -1,0 +1,51 @@
+T1	Entity 176 192	gustatory system
+T2	Entity 252 262	toxic food
+T3	Entity 336 340	T2Rs
+T4	Entity 376 396	taste receptor cells
+T5	Entity 404 410	tongue
+T6	Entity 415 421	palate
+T7	Entity 561 582	quinine hydrochloride
+T8	Entity 584 588	QHCl
+T9	Entity 594 613	denatonium benzoate
+T10	Entity 615 617	DB
+R1	participates_in Arg1:T2 Arg2:T1	
+R2	is_part_of Arg1:T3 Arg2:T4	
+R3	is_part_of Arg1:T4 Arg2:T5	
+R4	is_part_of Arg1:T4 Arg2:T6	
+R5	other_relation Arg1:T8 Arg2:T7	
+#1	AnnotatorNotes R5	equivalent
+R6	other_relation Arg1:T10 Arg2:T9	
+#2	AnnotatorNotes R6	equivalent
+T11	Entity 849 861	chromosome 6
+T12	Entity 679 704	BXD/Ty recombinant inbred
+T13	Entity 706 708	RI
+T14	Entity 900 906	Tas2rs
+T15	Entity 894 898	T2Rs
+T16	Entity 909 915	Tas2rs
+T17	Entity 1279 1301	C57BL/6J Tas2r alleles
+T18	Entity 1306 1320	more sensitive
+T19	Entity 1324 1328	QHCl
+T20	Entity 1451 1472	quinine taster status
+T21	Entity 1388 1393	Tas2r
+R7	other_relation Arg1:T13 Arg2:T12	
+#3	AnnotatorNotes R7	equivalent
+R8	other_relation Arg1:T14 Arg2:T15	
+#4	AnnotatorNotes R8	equivalent
+R9	participates_in Arg1:T17 Arg2:T18	
+R10	interacts_with Arg1:T18 Arg2:T19	
+R11	participates_in Arg1:T21 Arg2:T20	
+T22	Entity 1557 1560	QTL
+T23	Entity 1565 1578	quinine taste
+T24	Entity 1596 1630	T2R-dependent transduction cascade
+T25	Entity 1685 1710	quinine taste sensitivity
+T26	Entity 1745 1758	polymorphisms
+T27	Entity 1766 1778	coding exons
+T28	Entity 1786 1799	Tas2r cluster
+T29	Entity 1867 1890	bitter taste phenotypes
+T30	Entity 1905 1918	T2R receptors
+T31	Entity 1929 1950	tolerant to variation
+R12	participates_in Arg1:T22 Arg2:T23	
+R13	regulates Arg1:T24 Arg2:T25	
+R14	is_part_of Arg1:T26 Arg2:T27	
+R15	is_part_of Arg1:T27 Arg2:T28	
+R16	participates_in Arg1:T30 Arg2:T31	

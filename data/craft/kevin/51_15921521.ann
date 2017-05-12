@@ -1,0 +1,5 @@
+T1	Entity 151 166	cystic fibrosis
+T2	KeyEntity 197 260	cystic fibrosis transmembrane conductance regulator (CFTR) gene
+T3	KeyEntity 367 408	Cftr deficient mice (CF mice: Cftrtm1Unc)
+T4	Entity 493 507;542 550	meconium ileus syndrome
+T5	Entity 512 550	distal intestinal obstruction syndrome

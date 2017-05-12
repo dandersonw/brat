@@ -1,0 +1,14 @@
+T1	KeyEntity 92 98	ADAM22
+T2	Entity 118 134	ADAM gene family
+R1	is_subclass_of Arg1:T1 Arg2:T2	
+T3	KeyEntity 215 221	ADAM22
+T4	Entity 253 258	ADAMs
+T5	Entity 280 295	integrin binder
+T6	Entity 323 332;348 360	cell-cell interactions
+T7	Entity 336 347;348 360	cell-matrix interactions
+R2	other_relation Arg1:T5 Arg2:T3	
+#1	AnnotatorNotes R2	attribute
+R3	participates_in Arg1:T3 Arg2:T6	
+R4	participates_in Arg1:T3 Arg2:T7	
+T8	KeyEntity 406 412	ADAM22
+T9	KeyEntity 453 473	ADAM22 knockout mice

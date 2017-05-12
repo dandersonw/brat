@@ -11,3 +11,153 @@ R2	is_part_of Arg1:T3 Arg2:T1
 R3	participates_in Arg1:T5 Arg2:T6	
 R4	other_relation Arg1:T7 Arg2:T8	
 #1	AnnotatorNotes R4	done_by
+T9	KeyEntity 602 608	ADAM11
+T10	Entity 719 753	visual and hidden water maze tasks
+T11	Entity 765 783	motor coordination
+T12	Entity 792 809	rotating rod task
+T13	Entity 636 647	hippocampus
+T14	Entity 652 662	cerebellum
+T15	KeyEntity 681 687	ADAM11
+R5	is_part_of Arg1:T9 Arg2:T13	
+R6	is_part_of Arg1:T9 Arg2:T14	
+T16	Entity 892 938	hidden water maze and rotating rod task skills
+T17	Entity 943 976	impaired in ADAM11-deficient mice
+R7	participates_in Arg1:T17 Arg2:T16	
+T18	KeyEntity 1017 1023	ADAM11
+T19	Entity 1116 1147	learning and motor coordination
+R8	regulates Arg1:T18 Arg2:T19	
+T20	KeyEntity 1155 1161	ADAM11
+T21	Entity 1221 1243	cell adhesion molecule
+T22	Entity 1251 1258	synapse
+R9	participates_in Arg1:T20 Arg2:T21	
+R10	is_part_of Arg1:T21 Arg2:T22	
+T23	Entity 1288 1307	synaptic regulation
+T24	Entity 1319 1338	behavioural changes
+R11	participates_in Arg1:T20 Arg2:T23	
+T25	Entity 1363 1396	A Disintegrin And Metalloprotease
+T26	KeyEntity 1357 1361	ADAM
+R12	other_relation Arg1:T26 Arg2:T25	
+#2	AnnotatorNotes R12	equivalent
+T27	Entity 1415 1454	membrane-spanning multi-domain proteins
+T28	Entity 1468 1497	metalloproteinase-like domain
+T29	Entity 1504 1527	disintegrin-like domain
+R13	is_part_of Arg1:T28 Arg2:T26	
+R14	is_part_of Arg1:T29 Arg2:T26	
+T30	Entity 1565 1602	catalytically active metalloproteases
+T31	Entity 2184 2202	adhesion molecules
+T32	Entity 2066 2087	functional redundancy
+T33	Entity 1891 1905	growth signals
+T34	Entity 2251 2282	integrin-mediated cell adhesion
+T35	Entity 2792 2830	spermatozoa lack egg-binding abilities
+T36	Entity 2729 2739	Adam2-null
+T37	Entity 2744 2759	Adam3-null male
+T38	KeyEntity 1555 1560	ADAMs
+R15	is_part_of Arg1:T38 Arg2:T30	
+T39	Entity 1816 1841	ADAM10, ADAM17 and ADAM19
+R16	is_part_of Arg1:T39 Arg2:T33	
+T40	Entity 1975 2006	ADAM8, ADAM9, ADAM12 and ADAM15
+R17	is_part_of Arg1:T40 Arg2:T32	
+T41	Entity 2146 2164	non-protease-ADAMs
+R18	is_part_of Arg1:T41 Arg2:T31	
+R19	participates_in Arg1:T36 Arg2:T35	
+R20	participates_in Arg1:T37 Arg2:T35	
+T42	KeyEntity 3044 3049	ADAMs
+T43	Entity 3057 3072	catalytic motif
+T44	Entity 3090 3116	metalloproteinase activity
+R21	is_part_of Arg1:T43 Arg2:T42	
+R22	participates_in Arg1:T43 Arg2:T44	
+T45	KeyEntity 3179 3184	ADAMs
+T46	Entity 3205 3219	cell migration
+T47	Entity 3221 3236	differentiation
+T48	Entity 3253 3272	synaptic regulation
+T49	Entity 3287 3296	integrins
+T50	Entity 3298 3319	cell-surface proteins
+T51	Entity 3323 3357	intracellular signalling molecules
+R23	participates_in Arg1:T45 Arg2:T46	
+R24	participates_in Arg1:T45 Arg2:T47	
+R25	participates_in Arg1:T45 Arg2:T48	
+R26	interacts_with Arg1:T45 Arg2:T49	
+R27	interacts_with Arg1:T45 Arg2:T50	
+R28	interacts_with Arg1:T45 Arg2:T51	
+T52	Entity 3391 3397	ataxia
+T53	Entity 3399 3407	seizures
+T54	Entity 3413 3418	death
+T55	Entity 3452 3467	hypomyelination
+T56	Entity 3475 3500	peripheral nervous system
+R29	participates_in Arg1:T55 Arg2:T56	
+T57	Entity 3564 3589	disruption of Adam23 gene
+T58	Entity 3614 3629	premature death
+R30	participates_in Arg1:T57 Arg2:T58	
+T59	KeyEntity 3807 3813	ADAM11
+T60	Entity 4041 4059	neural development
+T61	Entity 4085 4099	cell migration
+T62	KeyEntity 4213 4219	Adam11
+T63	Entity 4250 4285	developing and adult nervous system
+R31	interacts_with Arg1:T62 Arg2:T63	
+T64	KeyEntity 4337 4343	ADAM11
+T65	Entity 4350 4365	integrin binder
+R32	is_part_of Arg1:T64 Arg2:T65	
+T66	Entity 4402 4416	nervous system
+R33	interacts_with Arg1:T64 Arg2:T66	
+T67	Entity 4668 4692	homologous recombination
+T68	Entity 4638 4644	Adam11
+T69	Entity 4747 4769	Southern blot analysis
+T70	Entity 4820 4837	termination codon
+T71	Entity 4899 4935	truncated form of the ADAM11 protein
+T72	Entity 5156 5188	truncated form of ADAM11 protein
+T73	Entity 5200 5211	no function
+T74	Entity 5290 5311	Western blot analysis
+T75	Entity 5320 5337	specific antibody
+T76	KeyEntity 5236 5242	ADAM11
+T77	KeyEntity 5052 5065	ADAM-proteins
+T78	Entity 5465 5486	half of the wild-type
+T79	Entity 5421 5441	heterozygous mutants
+R34	participates_in Arg1:T68 Arg2:T67	
+R35	interacts_with Arg1:T70 Arg2:T71	
+R36	participates_in Arg1:T72 Arg2:T73	
+R37	other_relation Arg1:T76 Arg2:T74	
+#3	AnnotatorNotes R37	experimental_test
+R38	participates_in Arg1:T79 Arg2:T78	
+T80	Entity 5795 5816	ADAM11-deficient male
+T81	Entity 5890 5910	behavioural analyses
+T82	Entity 5915 5946	anatomical-histological studies
+T83	Entity 6096 6115	gain in body weight
+T84	Entity 6913 6937	spatial learning ability
+T85	Entity 6941 6962	ADAM11-deficient mice
+T86	Entity 6973 6990	Morris Water Maze
+#4	AnnotatorNotes T86	experimental_test
+T87	Entity 7167 7192	significantly longer time
+T88	Entity 7128 7140	Adam11 (-/-)
+T89	Entity 7566 7571	lower
+R39	participates_in Arg1:T88 Arg2:T87	
+R40	other_relation Arg1:T84 Arg2:T86	
+#5	AnnotatorNotes R40	experimental_test
+T90	Entity 7861 7866	lower
+T91	Entity 8082 8109	spatial learning impairment
+T92	Entity 8113 8123	(-/-) mice
+R41	is_part_of Arg1:T91 Arg2:T92	
+T93	Entity 8393 8428	progressive decrease in the latency
+T94	Entity 8614 8647	normal visible and motor function
+T96	Entity 8656 8666	motivation
+T97	Entity 8598 8608	(-/-) mice
+R42	participates_in Arg1:T97 Arg2:T94	
+R43	participates_in Arg1:T97 Arg2:T96	
+T95	Entity 9148 9173	decreased retention times
+T98	Entity 9414 9424	(-/-) mice
+T99	Entity 9425 9442	fell more quickly
+R44	participates_in Arg1:T98 Arg2:T99	
+T100	Entity 9521 9531	p = 0.0002
+#6	AnnotatorNotes T100	statistical_significance
+T101	Entity 9560 9569	p = 0.003
+#7	AnnotatorNotes T101	statistical significance
+T102	Entity 9598 9608	p = 0.0002
+#8	AnnotatorNotes T102	statistical significance
+T103	KeyEntity 10319 10325	ADAM11
+T104	KeyEntity 10404 10410	Adam11
+T105	Entity 10436 10441	brain
+T106	Entity 10443 10448	heart
+T107	Entity 10450 10455	liver
+T108	Entity 10460 10466	testis
+T109	Entity 10485 10507	Northern blot analysis
+#9	AnnotatorNotes T109	experimental_test
+T110	Entity 10529 10550	ADAM11-deficient mice

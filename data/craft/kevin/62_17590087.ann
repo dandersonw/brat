@@ -1,0 +1,16 @@
+T1	KeyEntity 478 498	Itpr1 (Itpr1Δ18/Δ18)
+T2	Entity 440 459;466 474	homozygous in-frame deletion
+T3	Entity 509 547	inositol 1,4,5-triphosphate receptor 1
+T4	Entity 571 597	spontaneous Itpr1 mutation
+T5	KeyEntity 698 703	Itpr1
+T6	KeyEntity 674 690	n-frame deletion
+T7	KeyEntity 754 770	Itpr1 expression
+T8	Entity 774 799	cerebellar Purkinje cells
+T9	KeyEntity 801 834	Spinocerebellar ataxia 15 (SCA15)
+T10	KeyEntity 911 916	ITPR1
+T11	Entity 984 990	ataxia
+T12	Entity 1017 1034	Itpr1 mutant mice
+T13	KeyEntity 1113 1118	ITPR1
+T14	KeyEntity 1139 1144	SCA15
+T15	KeyEntity 1208 1218	ITPR1 gene
+T16	KeyEntity 1297 1302	SCA15

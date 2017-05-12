@@ -1,0 +1,41 @@
+T1	Entity 144 202	α-amino-3-hydroxy-5-methyl-4-isoxazolepropionate receptors
+T2	KeyEntity 204 210	AMPARs
+T3	KeyEntity 344 365	Ca2+-permeable AMPARs
+T4	Entity 369 387	olfactory behavior
+T5	Entity 441 455	GluR-B subunit
+T6	Entity 482 491	GluR-B(Q)
+T7	Entity 509 536	increased Ca2+ permeability
+T8	KeyEntity 540 546	AMPARs
+R1	regulates Arg1:T6 Arg2:T7	
+R2	regulates Arg1:T5 Arg2:T7	
+R3	participates_in Arg1:T7 Arg2:T8	
+T9	Entity 622 655	enhanced olfactory discrimination
+T10	Entity 660 679	more rapid learning
+T11	Entity 685 714	go/no-go operant conditioning
+T12	KeyEntity 721 737	Olfactory memory
+T13	Entity 775 791	GluR-B depletion
+T14	Entity 795 804	forebrain
+T15	Entity 809 829	ectopically variable
+T16	Entity 888 914	decreased olfactory memory
+T17	Entity 918 929	hippocampus
+T18	Entity 934 940	cortex
+T19	Entity 955 961	memory
+T20	Entity 977 1005	transgenic GluR-B expression
+T21	Entity 1020 1035	piriform cortex
+T22	Entity 1040 1051	hippocampus
+T23	Entity 1197 1205	behavior
+T24	Entity 1220 1237	GluR-B expression
+T25	Entity 1248 1259	mechanistic
+T26	Entity 1264 1282	spatial dissection
+T27	Entity 1286 1304	olfactory learning
+T28	Entity 1306 1320	discrimination
+T29	Entity 1326 1345	memory capabilities
+R4	other_relation Arg1:T2 Arg2:T1	
+#1	AnnotatorNotes R4	equivalent
+R5	participates_in Arg1:T3 Arg2:T4	
+R6	participates_in Arg1:T13 Arg2:T15	
+R7	regulates Arg1:T20 Arg2:T19	
+R8	interacts_with Arg1:T23 Arg2:T24	
+R9	participates_in Arg1:T25 Arg2:T27	
+R10	participates_in Arg1:T26 Arg2:T27	
+R11	participates_in Arg1:T26 Arg2:T29	

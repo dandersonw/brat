@@ -1,0 +1,28 @@
+T1	KeyEntity 308 340	single alpha-crystallin knockout
+T2	Entity 480 484	lens
+T3	Entity 497 514	alphaA and alphaB
+T4	Entity 541 552	high levels
+T5	Entity 600 627	gross lenticular morphology
+T6	Entity 684 719	alphaA- and alphaB-crystallin genes
+T7	Entity 721 731	alphaA/BKO
+R1	participates_in Arg1:T1 Arg2:T2	
+R2	participates_in Arg1:T3 Arg2:T4	
+R3	participates_in Arg1:T6 Arg2:T5	
+T8	Entity 827 846	electron microscopy
+T9	Entity 851 870	confocal microscopy
+T10	Entity 896 916	Equatorial and axial
+T11	Entity 942 948	lenses
+T12	Entity 953 968	alphaA/BKO mice
+T13	Entity 1031 1066	No posterior sutures or fiber cells
+T14	Entity 1354 1368	equatorial/bow
+T15	Entity 1370 1379	posterior
+T16	Entity 1384 1392	anterior
+T17	Entity 1404 1410	lenses
+T18	Entity 1505 1534	alphaA- and alphaB-crystallin
+T19	Entity 1553 1580	proper fiber cell formation
+T20	Entity 1635 1653	cataract formation
+T21	Entity 1595 1622	absence of alpha-crystallin
+R4	is_subclass_of Arg1:T10 Arg2:T11	
+R5	is_part_of Arg1:T11 Arg2:T12	
+R6	regulates Arg1:T18 Arg2:T19	
+R7	participates_in Arg1:T21 Arg2:T20	

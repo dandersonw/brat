@@ -1,0 +1,6 @@
+T1	Entity 160 192	ancient conserved domain protein
+T2	KeyEntity 306 310	Acdp
+T3	Entity 339 361	human ACDP gene family
+T4	Entity 194 198	ACDP
+T5	Entity 316 331	mouse homologue
+R1	is_part_of Arg1:T2 Arg2:T5	

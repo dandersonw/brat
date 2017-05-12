@@ -1,0 +1,14 @@
+T1	Entity 182 192	STSL locus
+T2	KeyEntity 194 261	ATP-binding cassette (ABC)-transporters ABCG5 (encoding sterolin-1)
+T3	KeyEntity 266 293	ABCG8 (encoding sterolin-2)
+T4	Entity 305 319	sitosterolemia
+T5	Entity 360 378	sterol trafficking
+T6	Entity 406 432	plasma plant sterol levels
+T7	KeyEntity 461 475	sitosterolemia
+T8	KeyEntity 477 493	ABCG5/sterolin-1
+T9	KeyEntity 498 514	ABCG8/sterolin-2
+T10	Entity 547 568	obligate heterodimers
+T11	KeyEntity 660 665	ABCG5
+T12	KeyEntity 669 674	ABCG8
+T13	Entity 757 777	dietary sterol entry
+T14	Entity 782 806	biliary sterol secretion

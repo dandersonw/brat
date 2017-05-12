@@ -1,5 +1,11 @@
 T1	KeyEntity 145 157	PAX6 protein
-T2	Entity 208 214;219 243	ocular neurological development
+T2	Entity 219 243	neurological development
 T3	KeyEntity 309 318	PAX6 gene
 T4	KeyEntity 498 502	PAX6
 T5	KeyEntity 402 406	PAX6
+T6	Entity 208 214;232 243	ocular development
+R1	regulates Arg1:T1 Arg2:T6	
+R2	regulates Arg1:T1 Arg2:T2	
+T7	Entity 262 301	heterozygous loss-of-function mutations
+R3	is_part_of Arg1:T7 Arg2:T3	
+T8	Entity 324 337;345 358	malformations eye and brain

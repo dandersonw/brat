@@ -1,6 +1,6 @@
 T1	KeyEntity 354 396	small-effect quantitative trait loci (QTL)
 T2	KeyEntity 400 432	collagen induced arthritis (CIA)
-T3	Entity 439 452;457 481	global genome transcriptome approaches
+T3	Entity 457 481	transcriptome approaches
 T4	Entity 503 526	genome linkage analysis
 T5	Entity 530 540	F2 progeny
 T6	Entity 548 585	CIA susceptible and resistant strains
@@ -23,3 +23,4 @@ R4	other_relation Arg1:T11 Arg2:T12
 #1	AnnotatorNotes R4	expressed
 R5	regulates Arg1:T14 Arg2:T15	
 R6	participates_in Arg1:T16 Arg2:T17	
+T19	Entity 439 452	global genome

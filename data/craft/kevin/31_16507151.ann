@@ -11,8 +11,8 @@ T8	Entity 822 849	total genome-wide screening
 T9	Entity 859 881	microsatellite markers
 R2	participates_in Arg1:T9 Arg2:T8	
 T10	Entity 912 936	quantitative trait locus
-T12	Entity 1001 1014;1024 1029	chromosome 11 Cia40
-T11	Entity 1057 1062;1075 1092	locus pregnancy failure
+T12	Entity 1024 1029	Cia40
+T11	Entity 1057 1062	locus
 T13	Entity 1109 1133	quantitative trait locus
 T14	Entity 1236 1248	chromosome 1
 T15	Entity 1286 1310	quantitative trait locus
@@ -22,3 +22,16 @@ T18	Entity 1427 1436	gene loci
 T19	Entity 1445 1454	arthritis
 T20	Entity 1458 1482	aged multiparous females
 T21	Entity 1535 1552	pregnancy failure
+T22	Entity 1001 1014	chromosome 11
+T23	Entity 951 988	arthritis incidence, severity and day
+R3	participates_in Arg1:T10 Arg2:T23	
+R4	other_relation Arg1:T12 Arg2:T10	
+#2	AnnotatorNotes R4	Name
+T24	Entity 1075 1092	pregnancy failure
+R5	regulates Arg1:T11 Arg2:T24	
+R6	other_relation Arg1:T15 Arg2:T16	
+#3	AnnotatorNotes R6	has
+R7	is_part_of Arg1:T15 Arg2:T17	
+R8	is_part_of Arg1:T10 Arg2:T22	
+R9	regulates Arg1:T18 Arg2:T19	
+R10	is_part_of Arg1:T18 Arg2:T20	

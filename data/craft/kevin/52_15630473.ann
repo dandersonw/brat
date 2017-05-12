@@ -1,0 +1,7 @@
+T1	Entity 110 123	organogenesis
+T2	Entity 148 176	multipotent epithelial sheet
+R1	participates_in Arg1:T2 Arg2:T1	
+T3	Entity 255 277	hair bud morphogenesis
+T4	Entity 305 324	mutant mouse models
+T5	Entity 338 351	keratinocytes
+T6	Entity 429 446	adhesion dynamics
