@@ -1,0 +1,51 @@
+T1	Entity 132 141	proteases
+T2	Entity 143 153	secretases
+R1	is_subclass_of Arg1:T2 Arg2:T1	
+T3	Entity 167 176	amyloid-β
+T4	KeyEntity 178 180	Aβ
+T5	Entity 199 224	amyloid precursor protein
+T6	KeyEntity 226 229	APP
+T7	Entity 318 335	Alzheimer disease
+T8	Entity 366 388	reducing Aβ production
+T9	Entity 510 534	repair of damaged tissue
+T10	Entity 539 565	removal of amyloid lesions
+R2	other_relation Arg1:T4 Arg2:T3	
+#1	AnnotatorNotes R2	equivalent
+R3	other_relation Arg1:T6 Arg2:T5	
+#2	AnnotatorNotes R3	equivalent
+R4	interacts_with Arg1:T6 Arg2:T7	
+R5	participates_in Arg1:T8 Arg2:T9	
+R6	participates_in Arg1:T8 Arg2:T10	
+T11	KeyEntity 791 804	Aβ production
+T12	Entity 867 889	overexpress mutant APP
+T13	Entity 929 940	doxycycline
+T14	Entity 1012 1039	fulminant amyloid pathology
+T15	Entity 967 995	high-level expression of APP
+T16	Entity 1054 1065	doxycycline
+T17	Entity 1090 1115	transgenic APP expression
+T18	Entity 1141 1161	educes Aβ production
+T19	Entity 1216 1239	transgenic Aβ synthesis
+T20	Entity 1288 1305	amyloid pathology
+T21	Entity 1316 1344	formation and disaggregation
+T22	Entity 1348 1364	amyloid deposits
+T23	Entity 1381 1395	disequilibrium
+T24	KeyEntity 1474 1487	APP synthesis
+T25	KeyEntity 1546 1557	Aβ deposits
+R7	regulates Arg1:T13 Arg2:T12	
+R8	regulates Arg1:T15 Arg2:T14	
+R9	regulates Arg1:T16 Arg2:T17	
+R10	regulates Arg1:T16 Arg2:T18	
+R11	participates_in Arg1:T19 Arg2:T20	
+R12	participates_in Arg1:T21 Arg2:T22	
+R13	participates_in Arg1:T22 Arg2:T23	
+R14	interacts_with Arg1:T24 Arg2:T25	
+T26	Entity 1674 1689	amyloid lesions
+T27	Entity 1803 1826	arresting Aβ production
+T28	Entity 1869 1889	halt the progression
+T29	Entity 1913 1928	early treatment
+T30	KeyEntity 1967 1983	amyloid deposits
+T31	Entity 1713 1737	highly stable structures
+T32	Entity 1755 1775	slow to disaggregate
+R15	participates_in Arg1:T26 Arg2:T31	
+R16	participates_in Arg1:T26 Arg2:T32	
+R17	regulates Arg1:T27 Arg2:T28	

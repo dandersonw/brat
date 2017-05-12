@@ -4,5 +4,18 @@ T3	Entity 416 433	antioxidant genes
 T4	Entity 478 518	normal bronchial epithelial cells (NBEC)
 T5	Entity 604 616	NBEC samples
 T6	Entity 702 719	antioxidant genes
-T7	Entity 759 770;775 791	antioxidant DNA repair genes
+T7	Entity 775 791	DNA repair genes
 T8	Entity 1016 1018	BC
+R1	participates_in Arg1:T2 Arg2:T1	
+T9	Entity 299 301	BC
+T10	Entity 522 536	BC individuals
+T11	Entity 549 567	non-BC individuals
+T12	Entity 444 464	transcript abundance
+R2	participates_in Arg1:T3 Arg2:T12	
+R3	is_part_of Arg1:T12 Arg2:T4	
+T13	Entity 618 638	transcript abundance
+T14	Entity 759 770	antioxidant
+T15	Entity 824 845	transcription factors
+R4	regulates Arg1:T15 Arg2:T14	
+R5	regulates Arg1:T15 Arg2:T7	
+#1	AnnotatorNotes T15	Not sure

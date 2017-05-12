@@ -1,5 +1,5 @@
 T1	KeyEntity 116 120	ATRX
-T2	Entity 151 162;166 190	SNF2 family ATPase/helicase proteins
+T2	Entity 151 162	SNF2 family
 T3	Entity 211 226	gene expression
 T4	KeyEntity 279 283	ATRX
 T5	KeyEntity 413 417	ATRX
@@ -19,3 +19,13 @@ T18	KeyEntity 1217 1240	mprinted X-inactivation
 T19	KeyEntity 1343 1347	Atrx
 T20	Entity 1374 1392	murine trophoblast
 T21	KeyEntity 1431 1466	imprinted X chromosome inactivation
+T22	Entity 166 190	ATPase/helicase proteins
+R1	is_subclass_of Arg1:T22 Arg2:T2	
+R2	regulates Arg1:T1 Arg2:T3	
+T23	Entity 240 249	chromatin
+R3	participates_in Arg1:T5 Arg2:T6	
+T24	Entity 571 578	homolog
+T25	Entity 582 586	mice
+R4	is_part_of Arg1:T7 Arg2:T25	
+R5	is_part_of Arg1:T14 Arg2:T13	
+R6	regulates Arg1:T19 Arg2:T20	

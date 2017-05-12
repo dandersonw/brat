@@ -1,0 +1,35 @@
+T1	Entity 113 146	Embryonic stem cell-specific gene
+T2	Entity 148 151	ESG
+T3	Entity 172 200	KH-domain containing protein
+T4	Entity 231 244	early embryos
+T5	Entity 246 256	germ cells
+T6	Entity 262 276	embryonic stem
+T7	Entity 734 752	ESG1-like sequence
+T8	Entity 765 792	multiple critical mutations
+T9	Entity 819 840	duplicated pseudogene
+T10	Entity 925 940	strong enhancer
+T11	Entity 945 962	promoter activity
+T12	Entity 966 991	undifferentiated ES cells
+T13	Entity 1341 1365	homologous recombination
+T14	Entity 1409 1434	heterozygous intercrosses
+T15	Entity 1490 1505	absence of ESG1
+T16	KeyEntity 1628 1637	ESG1 gene
+T17	Entity 1692 1704	chromosome 9
+T18	KeyEntity 1775 1779	ESG1
+T19	Entity 1783 1794	dispensable
+T20	Entity 1799 1823	self-renewal of ES cells
+T21	Entity 1828 1854	establishment of germcells
+R1	other_relation Arg1:T2 Arg2:T1	
+#1	AnnotatorNotes R1	equivalent
+R2	regulates Arg1:T2 Arg2:T3	
+R3	is_part_of Arg1:T8 Arg2:T7	
+R4	is_part_of Arg1:T7 Arg2:T9	
+T22	KeyEntity 872 881	ESG1 gene
+R5	participates_in Arg1:T22 Arg2:T10	
+R6	participates_in Arg1:T22 Arg2:T11	
+R7	interacts_with Arg1:T11 Arg2:T12	
+R8	interacts_with Arg1:T10 Arg2:T12	
+R9	is_part_of Arg1:T16 Arg2:T17	
+R10	participates_in Arg1:T18 Arg2:T19	
+R11	participates_in Arg1:T19 Arg2:T20	
+R12	participates_in Arg1:T19 Arg2:T21	

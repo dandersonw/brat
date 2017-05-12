@@ -1,0 +1,61 @@
+T1	Entity 115 128	Gametogenesis
+T2	Entity 134 160	sexually dimorphic process
+T3	Entity 195 220	germ cell differentiation
+T4	Entity 268 297	heteromorphic sex chromosomes
+T5	Entity 361 387	incomplete X and Y pairing
+T6	Entity 395 411	meiotic prophase
+T7	Entity 442 464	heterochromatin domain
+T8	Entity 470 477	XY body
+T9	Entity 483 490	XY body
+T10	Entity 326 349	sex-specific challenges
+R1	is_subclass_of Arg1:T5 Arg2:T10	
+R2	interacts_with Arg1:T5 Arg2:T6	
+T11	Entity 510 518	prophase
+T12	Entity 595 602	meiosis
+T13	KeyEntity 641 646	DMRT7
+T14	Entity 650 673	mammal-specific protein
+T15	Entity 689 719	invertebrate sexual regulators
+T16	KeyEntity 720 729	Doublesex
+T17	KeyEntity 734 739	MAB-3
+T18	KeyEntity 754 759	DMRT7
+T19	Entity 792 799	XY body
+T20	Entity 807 822	pachytene stage
+T21	Entity 826 842	meiotic prophase
+T22	Entity 863 875	male meiosis
+T23	KeyEntity 880 893	Dmrt7 mutants
+T24	Entity 895 910	meiotic pairing
+T25	Entity 915 928	recombination
+T26	Entity 950 984	transcriptionally silenced XY body
+T27	Entity 1057 1066	apoptosis
+T28	Entity 1074 1083	pachynema
+T29	Entity 1128 1137	diplonema
+T30	Entity 1208 1224	histone H3K9 di-
+T31	Entity 1229 1243	trimethylation
+T32	Entity 1248 1274	heterochromatin protein 1β
+T33	Entity 1331 1340	pachynema
+T34	Entity 1345 1354	diplonema
+T35	Entity 1385 1390	DMRT7
+T36	Entity 1398 1405	XY body
+T37	Entity 1448 1461	Dmrt7 mutants
+T38	Entity 1480 1485	DMRT7
+T39	Entity 1555 1564	pachynema
+T40	Entity 1506 1534	sex chromatin transformation
+T41	Entity 1569 1578	diplonema
+T42	Entity 1596 1601	DMRT7
+T43	Entity 1639 1674	meiotic sex chromosome inactivation
+T44	Entity 1678 1703	postmeiotic sex chromatin
+T45	Entity 1805 1810	Dmrt7
+T46	Entity 1842 1849	meiosis
+T47	Entity 1857 1870	sex chromatin
+T48	KeyEntity 1929 1938	Doublesex
+T49	Entity 1942 1952	Drosophila
+T50	Entity 2042 2052	roundworms
+T51	Entity 2056 2063	mammals
+T52	Entity 2115 2125	Dmrt7 gene
+T53	Entity 2187 2189	XX
+T54	Entity 2204 2206	XY
+T55	Entity 2278 2291	meiotic phase
+T56	Entity 2295 2322	male germ cell development.
+T57	Entity 2385 2386;2393 2404	X chromosomes
+T58	Entity 2391 2404	Y chromosomes
+T59	Entity 2445 2452	XY body

@@ -6,5 +6,10 @@ T5	KeyEntity 525 577	peroxisome proliferator-activated receptor δ (PPARδ)
 T6	Entity 581 596	skeletal muscle
 T7	Entity 650 670	type I muscle fibers
 T8	Entity 685 699	wild-type mice
-T9	KeyEntity 705 710	PPARδ
+T9	KeyEntity 705 718	PPARδ agonist
 T10	Entity 737 765	type I fiber gene expression
+R1	participates_in Arg1:T1 Arg2:T2	
+R2	participates_in Arg1:T1 Arg2:T3	
+R3	is_part_of Arg1:T5 Arg2:T6	
+R4	regulates Arg1:T5 Arg2:T7	
+R5	is_part_of Arg1:T9 Arg2:T8	

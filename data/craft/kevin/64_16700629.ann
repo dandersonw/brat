@@ -6,18 +6,18 @@ T5	Entity 254 269	differentiation
 T6	KeyEntity 328 332	Fgf9
 T7	KeyEntity 337 341	Wnt4
 T8	Entity 359 365	gonads
-T9	Entity 416 420	Fgf9
+T9	KeyEntity 416 420	Fgf9
 T10	Entity 430 445	XY sex reversal
 T11	KeyEntity 463 467	Wnt4
 T12	Entity 509 518	XX gonads
 T13	Entity 479 505	partial testis development
-T14	Entity 603 606	Sry
+T14	KeyEntity 603 606	Sry
 T15	Entity 681 714	fibroblast growth factor 9 (FGF9)
-T16	Entity 719 723	WNT4
+T16	KeyEntity 719 723	WNT4
 T17	Entity 760 777	sex determination
 T18	Entity 786 800	mouse XY gonad
-T19	Entity 802 805	Sry
-T20	Entity 853 857	Sox9
+T19	KeyEntity 802 805	Sry
+T20	KeyEntity 853 857	Sox9
 T21	KeyEntity 862 866	Fgf9
 T22	KeyEntity 887 891	Fgf9
 T23	KeyEntity 906 910	Wnt4
@@ -25,3 +25,33 @@ T24	Entity 928 942	testis pathway
 T25	Entity 966 970	Wnt4
 T26	Entity 974 983	XX gonads
 T27	KeyEntity 1013 1017	Fgf9
+R1	other_relation Arg1:T7 Arg2:T8	
+#1	AnnotatorNotes R1	expressed
+R2	other_relation Arg1:T6 Arg2:T8	
+#2	AnnotatorNotes R2	expressed
+R3	participates_in Arg1:T9 Arg2:T10	
+R4	interacts_with Arg1:T11 Arg2:T13	
+R5	interacts_with Arg1:T13 Arg2:T12	
+T28	Entity 731 747	opposing signals
+R6	regulates Arg1:T28 Arg2:T17	
+R7	interacts_with Arg1:T15 Arg2:T28	
+R8	interacts_with Arg1:T16 Arg2:T28	
+T29	Entity 827 844	feed-forward loop
+R9	regulates Arg1:T19 Arg2:T29	
+R10	interacts_with Arg1:T20 Arg2:T29	
+R11	interacts_with Arg1:T21 Arg2:T29	
+R12	regulates Arg1:T29 Arg2:T22	
+R13	regulates Arg1:T29 Arg2:T23	
+R14	is_part_of Arg1:T25 Arg2:T26	
+R15	regulates Arg1:T25 Arg2:T27	
+T30	KeyEntity 1022 1026	Sox9
+R16	regulates Arg1:T25 Arg2:T30	
+T31	KeyEntity 1045 1048	Sry
+T32	KeyEntity 1132 1136	Fgf9
+T33	KeyEntity 1141 1145	Wnt4
+T34	Entity 1113 1123	antagonism
+T35	Entity 1078 1095	fate of the gonad
+R17	regulates Arg1:T34 Arg2:T35	
+R18	interacts_with Arg1:T32 Arg2:T34	
+R19	interacts_with Arg1:T33 Arg2:T34	
+T36	KeyEntity 1191 1194	Sry

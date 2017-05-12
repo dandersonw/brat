@@ -4,4 +4,25 @@ T3	KeyEntity 389 407	AMPAR modification
 T4	Entity 441 455	GluR-B subunit
 T5	Entity 473 491	unedited GluR-B(Q)
 T6	Entity 519 536;540 546	Ca2+ permeability AMPARs
-T7	Entity 574 586	AMPAR switch
+T7	KeyEntity 574 586	AMPAR switch
+T8	Entity 263 299	sensory coding, learning, and memory
+R1	interacts_with Arg1:T1 Arg2:T8	
+T9	Entity 369 387	olfactory behavior
+R2	participates_in Arg1:T2 Arg2:T9	
+R3	interacts_with Arg1:T4 Arg2:T3	
+R4	interacts_with Arg1:T5 Arg2:T3	
+T10	Entity 604 613	forebrain
+T11	Entity 631 655	olfactory discrimination
+T12	Entity 694 719	operant conditioning task
+T13	Entity 775 791	GluR-B depletion
+T14	Entity 795 804	forebrain
+T15	Entity 918 929	hippocampus
+T16	Entity 934 940	cortex
+T17	Entity 977 1005	transgenic GluR-B expression
+T18	Entity 1020 1035	piriform cortex
+T19	Entity 1040 1051	hippocampus
+T20	Entity 1112 1130	GluR-B variability
+T21	Entity 1135 1163	transgenic GluR-B expression
+T22	Entity 1197 1216;1220 1237	behavior and levels GluR-B expression
+T23	Entity 1286 1345	olfactory learning, discrimination, and memory capabilities
+R5	participates_in Arg1:T13 Arg2:T14	

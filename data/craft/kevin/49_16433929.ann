@@ -1,0 +1,22 @@
+T1	KeyEntity 95 104	μ-calpain
+T2	KeyEntity 109 118	m-calpain
+T3	Entity 123 155	ubiquitously expressed proteases
+T4	Entity 170 188	cellular migration
+T5	Entity 190 212	cell cycle progression
+T6	Entity 214 236	degenerative processes
+T7	Entity 241 251	cell death
+T8	Entity 259 280	heterodimeric enzymes
+T9	KeyEntity 337 354	Capn1 (μ-calpain)
+T10	KeyEntity 358 375	Capn2 (m-calpain)
+T11	Entity 420 425	Capn4
+T12	Entity 445 461	mouse Capn4 gene
+T13	KeyEntity 477 486;501 509	μ-calpain activity
+T14	KeyEntity 491 509	m-calpain activity
+T15	Entity 527 546	embryonic lethality
+T16	Entity 623 646	mammalian embryogenesis
+T17	KeyEntity 666 676	Capn1 gene
+T18	Entity 694 706	fertile mice
+T19	Entity 728 737	m-calpain
+T20	KeyEntity 771 780	μ-calpain
+T21	KeyEntity 802 811	m-calpain
+T22	KeyEntity 841 854	Capn4-/- mice

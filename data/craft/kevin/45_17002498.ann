@@ -1,6 +1,27 @@
 T1	KeyEntity 124 156	Apc (adenomatous polyposis coli)
 T2	Entity 176 197	Wnt signaling pathway
 T3	Entity 234 247	tumorigenesis
-T4	Entity 249 275;280 283	Heterozygous knockout mice Apc
+T4	Entity 249 275	Heterozygous knockout mice
 T5	KeyEntity 395 398	Apc
 T6	Entity 429 442	floxed allele
+T7	KeyEntity 280 283	Apc
+T8	Entity 348 367	embryonic lethality
+T9	Entity 326 338	homozygosity
+T10	KeyEntity 489 504	Cre recombinase
+T11	Entity 530 561	human Keratin 14 (K14) promoter
+T12	Entity 582 593	basal cells
+T13	Entity 617 637	stratified epithelia
+T14	Entity 639 654;663 676	Mice homozygous floxed allele
+T15	Entity 697 714	K14-cre transgene
+T16	Entity 834 854	K14-cre–mediated Apc
+T17	Entity 896 935	ectodermally derived squamous epithelia
+T18	Entity 1015 1034	squamous metaplasia
+T19	Entity 1059 1085	epithelial-derived tissues
+T20	Entity 1101 1107	thymus
+T21	Entity 1183 1203	thymic abnormalities
+T22	KeyEntity 1207 1214	K14-cre
+T23	Entity 1216 1231	ApcCKO/CKO mice
+T24	KeyEntity 1244 1252	Apc gene
+T25	Entity 1267 1282	embryonic cells
+T26	Entity 1294 1315	epithelial cell fates
+T27	Entity 1339 1374	epithelial–mesenchymal interactions

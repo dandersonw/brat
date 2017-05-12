@@ -1,0 +1,11 @@
+T1	KeyEntity 147 152	BRCA2
+T2	Entity 156 166	DNA repair
+T3	KeyEntity 233 238	BRCA2
+T4	Entity 242 285	homology-dependent (recombinational) repair
+T5	Entity 289 313	DNA double-strand breaks
+T6	KeyEntity 396 401	BRCA2
+T7	Entity 428 450	recombinational repair
+T8	KeyEntity 452 457	BRCA2
+T9	KeyEntity 550 563	RAD51 [1,2,3]
+T10	KeyEntity 733 738	BRCA2
+T11	KeyEntity 742 763	RAD51–mediated repair

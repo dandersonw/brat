@@ -4,3 +4,4 @@ T3	Entity 361 364	IOP
 T4	Entity 463 466	IOP
 T5	Entity 435 459	candidate gene mutations
 T6	Entity 259 293	genetically distinct mouse strains
+R1	is_part_of Arg1:T2 Arg2:T6	
