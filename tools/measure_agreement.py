@@ -50,7 +50,7 @@ class Agreement:
             for i in xrange(total_len):
                 category_counts[i][annotator[i]] += 1
         print category_counts
-        return fleiss_kappa(np.matrix(category_counts))
+        return fleiss_kappa(category_counts)
 
     def get_entity_spans(self, doc):
         return list(itertools.chain.from_iterable(map(lambda e: e.spans, doc.get_entities())))
@@ -120,14 +120,14 @@ def spans_to_biluo(spans, total_len):
 
 
 def fleiss_kappa(m):
-    (num_items, num_categories) = m.shape
-    num_annotators = np.sum(m[0])
+    num_items = len(m)
+    num_categories = len(m[0])
+    num_annotators = sum(m[0])
     num_annotations = num_annotators * num_items
-    observed_agreements = ((m * m.transpose()).diagonal() - num_annotators) / \
-                        float(num_annotators * (num_annotators - 1))
-    observed_agreement = observed_agreements.mean()
-    distribution = np.sum(m, axis=0) / float(num_annotations)
-    expected_agreement = np.sum(distribution * distribution.transpose())
+    observed_agreements = sum([sum([i * i for i in item]) for item in m]) - num_annotations
+    observed_agreement = observed_agreements / float(num_annotators * (num_annotators - 1)) / num_items
+    distribution = [sum([item[c] for item in m]) / float(num_annotations) for c in xrange(num_categories)]
+    expected_agreement = sum([p * p for p in distribution])
     return (observed_agreement - expected_agreement) / (1 - expected_agreement)
 
 
