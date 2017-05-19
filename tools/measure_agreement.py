@@ -3,6 +3,7 @@
 
 from __future__ import with_statement
 from scipy import stats
+import numpy as np
 import argparse
 import itertools
 
@@ -39,6 +40,20 @@ class Agreement:
             total += self.f1(combination[0], combination[1])
             count += 1
         return total / count
+
+    def entity_span_fleiss_kappa(self):
+        spans = map(lambda e: self.get_entity_spans(e), self.annotations)
+        total_len = len(self.annotations[0].get_document_text())
+        biluo = map(lambda s: spans_to_biluo(s, total_len), spans)
+        category_counts = np.zeros((total_len, 5))
+        for annotator in biluo:
+            for i in xrange(total_len):
+                category_counts[i][annotator[i]] += 1
+        print category_counts
+        return fleiss_kappa(np.matrix(category_counts))
+
+    def get_entity_spans(self, doc):
+        return list(itertools.chain.from_iterable(map(lambda e: e.spans, doc.get_entities())))
 
     def f1(self, gold, notGold):
         precision = self.precision(gold, notGold)
@@ -81,10 +96,46 @@ class Agreement:
             return filter(lambda r: r.type in self.filter_relation_types, relations)
 
 
+def spans_to_biluo(spans, total_len):
+    # o -> 0, b -> 1, i -> 2, l -> 3, u -> 4
+    spans = sorted(spans)
+    result = [0] * total_len
+    i = 0
+    j = 0
+    while j < len(spans):
+        if i < spans[j][0]:  # o
+            result[i] = 0
+        elif i == spans[j][0] and (i + 1 < spans[j][1]):  # b
+            result[i] = 1
+        elif i == spans[j][0]:  # u
+            result[i] = 4
+            j += 1
+        elif i + 1 == spans[j][1]:  # l
+            result[i] = 3
+            j += 1
+        else:  # i
+            result[i] = 2
+        i += 1
+    return result
+
+
+def fleiss_kappa(m):
+    (num_items, num_categories) = m.shape
+    num_annotators = np.sum(m[0])
+    num_annotations = num_annotators * num_items
+    observed_agreements = ((m * m.transpose()).diagonal() - num_annotators) / \
+                        float(num_annotators * (num_annotators - 1))
+    observed_agreement = observed_agreements.mean()
+    distribution = np.sum(m, axis=0) / float(num_annotations)
+    expected_agreement = np.sum(distribution * distribution.transpose())
+    return (observed_agreement - expected_agreement) / (1 - expected_agreement)
+
+
 def calculate_agreement(files, entity_filter):
     annotations = map(lambda f: annotation.TextAnnotations(f), files)
     agreement = Agreement(annotations)
     agreement.filter_entity_types = entity_filter
+    print agreement.entity_span_fleiss_kappa()
     print agreement.exact_match_score()
 
 
