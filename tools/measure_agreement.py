@@ -32,6 +32,7 @@ class Agreement:
         self.strict_relation_type = True
         self.filter_entity_types = None
         self.filter_relation_types = None
+        self.strict_entity_offset = True
 
     def exact_match_score(self):
         total = 0
@@ -49,7 +50,6 @@ class Agreement:
         for annotator in biluo:
             for i in xrange(total_len):
                 category_counts[i][annotator[i]] += 1
-        print category_counts
         return fleiss_kappa(category_counts)
 
     def get_entity_spans(self, doc):
@@ -66,22 +66,18 @@ class Agreement:
         entities = list(self.filter_entities(notGold.get_entities()))
         if len(entities) == 0:
             return 1
-        found = filter(lambda e: self.find_entity(gold, e) is not None, entities)
+        found = filter(lambda e: self.find_matching_entities(gold, e), entities)
         return float(len(found)) / len(entities)
 
     def recall(self, gold, notGold):
         entities = list(self.filter_entities(gold.get_entities()))
         if len(entities) == 0:
             return 1
-        found = filter(lambda e: self.find_entity(notGold, e) is not None, entities)
+        found = filter(lambda e: self.find_matching_entities(notGold, e), entities)
         return float(len(found)) / len(entities)
 
-    def find_entity(self, haystack, needle):
-        for entity in haystack.get_entities():
-            if entity.same_span(needle) and \
-               (not self.strict_entity_type or entity.type == needle.type):
-                return entity
-        return None
+    def find_matching_entities(self, haystack, needle):
+        return [e for e in haystack.get_entities() if self.entities_match(e, needle)]
 
     def filter_entities(self, entities):
         if self.filter_entity_types is None:
@@ -94,6 +90,18 @@ class Agreement:
             return relations
         else:
             return filter(lambda r: r.type in self.filter_relation_types, relations)
+
+    def entities_match(self, a, b):
+        return (not self.strict_entity_type or a.type == b.type) \
+            and ((not self.strict_entity_offset and self.any_overlapping_spans(a, b))
+                 or a.same_span(b))
+
+    def any_overlapping_spans(self, a, b):
+        for i in a.spans:
+            for j in b.spans:
+                if j[0] < i[1] and i[0] < j[1]:
+                    return True
+        return False
 
 
 def spans_to_biluo(spans, total_len):
