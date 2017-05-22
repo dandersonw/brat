@@ -3,9 +3,16 @@
 
 from __future__ import with_statement
 from scipy import stats
+from sys import path as sys_path
+from collections import defaultdict
 import numpy as np
 import argparse
 import itertools
+import diff_and_mark
+import os.path
+
+# this seems to be necessary for annotations to find its config
+sys_path.append(os.path.join(os.path.dirname(__file__), '..'))
 
 
 '''
@@ -15,14 +22,9 @@ Compute inter-annotator agreement
 try:
     import annotation
 except ImportError:
-    import os.path
-    from sys import path as sys_path
     # Guessing that we might be in the brat tools/ directory ...
     sys_path.append(os.path.join(os.path.dirname(__file__), '../server/src'))
     import annotation
-
-# this seems to be necessary for annotations to find its config
-sys_path.append(os.path.join(os.path.dirname(__file__), '..'))
 
 
 class Agreement:
@@ -33,13 +35,21 @@ class Agreement:
         self.filter_entity_types = None
         self.filter_relation_types = None
         self.strict_entity_offset = True
+        self.ignore_discontinuous = True
 
     def exact_match_score(self):
         total = 0
         count = 0
-        for combination in itertools.combinations(self.annotations, 2):
-            total += self.f1(combination[0], combination[1])
-            count += 1
+        groupedByDoc = defaultdict(list)
+        for doc in self.annotations:
+            groupedByDoc[os.path.basename(doc.get_document())].append(doc)
+        for (doc_name, annotations) in groupedByDoc.items():
+            for combination in itertools.combinations(annotations, 2):
+                total += self.f1(combination[0], combination[1])
+                count += 1
+        if count == 0:
+            print "No document was found that was annotated twice"
+            return -1
         return total / count
 
     def entity_span_fleiss_kappa(self):
@@ -53,7 +63,8 @@ class Agreement:
         return fleiss_kappa(category_counts)
 
     def get_entity_spans(self, doc):
-        return list(itertools.chain.from_iterable(map(lambda e: e.spans, doc.get_entities())))
+        return list(itertools.chain.from_iterable(
+            [e.spans for e in doc.get_entities() if self.entity_is_included(e)]))
 
     def f1(self, gold, notGold):
         precision = self.precision(gold, notGold)
@@ -63,27 +74,21 @@ class Agreement:
         return stats.hmean([precision, recall])
 
     def precision(self, gold, notGold):
-        entities = list(self.filter_entities(notGold.get_entities()))
+        entities = [e for e in notGold.get_entities() if self.entity_is_included(e)]
         if len(entities) == 0:
             return 1
         found = filter(lambda e: self.find_matching_entities(gold, e), entities)
         return float(len(found)) / len(entities)
 
     def recall(self, gold, notGold):
-        entities = list(self.filter_entities(gold.get_entities()))
-        if len(entities) == 0:
-            return 1
-        found = filter(lambda e: self.find_matching_entities(notGold, e), entities)
-        return float(len(found)) / len(entities)
+        return self.precision(notGold, gold)
 
     def find_matching_entities(self, haystack, needle):
         return [e for e in haystack.get_entities() if self.entities_match(e, needle)]
 
-    def filter_entities(self, entities):
-        if self.filter_entity_types is None:
-            return entities
-        else:
-            return filter(lambda e: e.type in self.filter_entity_types, entities)
+    def entity_is_included(self, e):
+        return ((self.filter_entity_types is None or e in self.filter_entity_types)
+                and (self.ignore_discontinuous is False or len(e.spans) == 1))
 
     def filter_relations(self, relations):
         if self.filter_relation_types is None:
@@ -111,6 +116,8 @@ def spans_to_biluo(spans, total_len):
     i = 0
     j = 0
     while j < len(spans):
+        if i >= total_len:
+            print spans
         if i < spans[j][0]:  # o
             result[i] = 0
         elif i == spans[j][0] and (i + 1 < spans[j][1]):  # b
@@ -139,18 +146,24 @@ def fleiss_kappa(m):
     return (observed_agreement - expected_agreement) / (1 - expected_agreement)
 
 
-def calculate_agreement(files, entity_filter):
+def calculate_agreement(files, relaxed, consider_discontinuous, entity_filter):
     annotations = map(lambda f: annotation.TextAnnotations(f), files)
     agreement = Agreement(annotations)
     agreement.filter_entity_types = entity_filter
-    print agreement.entity_span_fleiss_kappa()
+    agreement.ignore_discontinuous = not consider_discontinuous
+    if relaxed:
+        agreement.strict_entity_offset = False
+        agreement.strict_entity_type = False
+
+    # print agreement.entity_span_fleiss_kappa()
     print agreement.exact_match_score()
 
 
 def argparser():
     ap = argparse.ArgumentParser(description="Calculate inter-annotator agreement")
-    ap.add_argument("first")
-    ap.add_argument("second")
+    ap.add_argument("paths", nargs="+")
+    ap.add_argument("--relaxed", action="store_true")
+    ap.add_argument("--considerDiscontinuous", action="store_true")
     ap.add_argument("--entityTypes", nargs="*", help="Consider only entities of listed types")
     return ap
 
@@ -160,7 +173,13 @@ def main(argv=None):
         argv = sys.argv
     args = argparser().parse_args(argv[1:])
 
-    calculate_agreement([args.first, args.second], args.entityTypes)
+    files = []
+    errors = []
+    for path in args.paths:
+        diff_and_mark.add_files(files, path, errors)
+    print "{} errors encountered in reading files".format(len(errors))
+
+    calculate_agreement(files, args.relaxed, args.considerDiscontinuous, args.entityTypes)
 
 
 if __name__ == "__main__":
