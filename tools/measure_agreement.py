@@ -131,20 +131,13 @@ class Agreement:
 
     def entities_match(self, a, b):
         return (not self.strict_entity_type or a.type == b.type) \
-            and ((not self.strict_entity_offset and self.any_overlapping_spans(a, b))
+            and ((not self.strict_entity_offset and any_overlapping_spans(a, b))
                  or a.same_span(b))
 
     def relations_match(self, a, b, a_id_entity, b_id_entity):
         return (self.entities_match(a_id_entity[a.arg1], b_id_entity[b.arg1])
                 and self.entities_match(a_id_entity[a.arg2], b_id_entity[b.arg2])
                 and (not self.strict_relation_type or a.type == b.type))
-
-    def any_overlapping_spans(self, a, b):
-        for i in a.spans:
-            for j in b.spans:
-                if j[0] < i[1] and i[0] < j[1]:
-                    return True
-        return False
 
     def annotations_grouped_by_document(self):
         result = defaultdict(list)
@@ -181,6 +174,14 @@ def spans_to_biluo(spans, total_len):
     return result
 
 
+def any_overlapping_spans(a, b):
+        for i in a.spans:
+            for j in b.spans:
+                if j[0] < i[1] and i[0] < j[1]:
+                    return True
+        return False
+
+
 def fleiss_kappa(m):
     num_items = len(m)
     num_categories = len(m[0])
@@ -207,7 +208,7 @@ def calculate_agreement(files, relaxed, consider_discontinuous, entity_filter):
         agreement.strict_entity_type = True
 
     # print agreement.entity_span_fleiss_kappa()
-    print stats.describe(agreement.pairwise_scores(agreement.entity_f1))
+    report_scores(agreement.pairwise_scores(agreement.entity_f1), "Entity F1")
     # modes for relation scores
     agreement.strict_entity_offset = False
     agreement.strict_entity_type = False
@@ -216,7 +217,15 @@ def calculate_agreement(files, relaxed, consider_discontinuous, entity_filter):
     else:
         agreement.restricted_relation_scoring = False
 
-    print stats.describe(agreement.pairwise_scores(agreement.relation_f1))
+    report_scores(agreement.pairwise_scores(agreement.relation_f1), "Relation F1")
+
+
+def report_scores(scores, name):
+    print "-" * 60
+    print name
+    print stats.describe(scores)
+    print scores
+
 
 def argparser():
     ap = argparse.ArgumentParser(description="Calculate inter-annotator agreement")
