@@ -51,11 +51,10 @@ class Agreement:
         for (doc_name, annotations) in self.annotations_grouped_by_document():
             for combination in itertools.combinations(annotations, 2):
                 scores.append(score_function(combination[0], combination[1]))
-                scores.append(score_function(combination[1], combination[0]))
         return scores
 
-    def entity_span_fleiss_kappa(self):
-        spans = map(lambda e: self.get_entity_spans(e), self.annotations)
+    def _entity_span_fleiss_kappa(self):
+        spans = map(lambda e: self._get_entity_spans(e), self.annotations)
         total_len = len(self.annotations[0].get_document_text())
         biluo = map(lambda s: spans_to_biluo(s, total_len), spans)
         category_counts = np.zeros((total_len, 5))
@@ -64,73 +63,73 @@ class Agreement:
                 category_counts[i][annotator[i]] += 1
         return fleiss_kappa(category_counts)
 
-    def get_entity_spans(self, doc):
+    def _get_entity_spans(self, doc):
         return list(itertools.chain.from_iterable(
-            [e.spans for e in doc.get_entities() if self.entity_is_included(e)]))
+            [e.spans for e in doc.get_entities() if self._entity_is_included(e)]))
 
-    def entity_f1(self, gold, notGold):
-        precision = self.entity_precision(gold, notGold)
-        recall = self.entity_precision(notGold, gold)
+    def _entity_f1(self, gold, notGold):
+        precision = self._entity_precision(gold, notGold)
+        recall = self._entity_precision(notGold, gold)
         if 0 in precision + recall:
             return 0
         recall = float(recall[0]) / recall[1]
         precision = float(precision[0]) / precision[1]
         return stats.hmean([precision, recall])
 
-    def relation_f1(self, gold, notGold):
-        precision = self.relation_precision(gold, notGold)
-        recall = self.relation_precision(notGold, gold)
+    def _relation_f1(self, gold, notGold):
+        precision = self._relation_precision(gold, notGold)
+        recall = self._relation_precision(notGold, gold)
         if 0 in precision + recall:
             return 0
         precision = float(precision[0]) / precision[1]
         recall = float(recall[0]) / recall[1]
         return stats.hmean([precision, recall])
 
-    def entity_precision(self, gold, notGold):
-        entities = [e for e in notGold.get_entities() if self.entity_is_included(e)]
-        found = [e for e in entities if self.find_matching_entities(gold, e)]
+    def _entity_precision(self, gold, notGold):
+        entities = [e for e in notGold.get_entities() if self._entity_is_included(e)]
+        found = [e for e in entities if self._find_matching_entities(gold, e)]
         return (len(found), len(entities))
 
-    def relation_precision(self, gold, not_gold):
-        relations = list(self.filter_relations(not_gold.get_relations()))
-        gold_id_entity = self.entity_id_map(gold)
-        not_gold_id_entity = self.entity_id_map(not_gold)
+    def _relation_precision(self, gold, not_gold):
+        relations = list(self._filter_relations(not_gold.get_relations()))
+        gold_id_entity = self._entity_id_map(gold)
+        not_gold_id_entity = self._entity_id_map(not_gold)
         if self.restricted_relation_scoring:
             relations = [r for r in relations if
-                         self.entity_matches_exist(gold, r, not_gold_id_entity)]
+                         self._entity_matches_exist(gold, r, not_gold_id_entity)]
 
         found = [r for r in relations if
-                 self.find_matching_relations(gold, r, gold_id_entity, not_gold_id_entity)]
+                 self._find_matching_relations(gold, r, gold_id_entity, not_gold_id_entity)]
         return (len(found), len(relations))
 
-    def entity_matches_exist(self, gold, relation, id_entity_map):
-        return (self.find_matching_entities(gold, id_entity_map[relation.arg1])
-                and self.find_matching_entities(gold, id_entity_map[relation.arg2]))
+    def _entity_matches_exist(self, gold, relation, id_entity_map):
+        return (self._find_matching_entities(gold, id_entity_map[relation.arg1])
+                and self._find_matching_entities(gold, id_entity_map[relation.arg2]))
 
-    def find_matching_entities(self, gold, entity):
-        return [e for e in gold.get_entities() if self.entities_match(e, entity)]
+    def _find_matching_entities(self, gold, entity):
+        return [e for e in gold.get_entities() if self._entities_match(e, entity)]
 
-    def find_matching_relations(self, gold, relation, gold_id_entity, not_gold_id_entity):
+    def _find_matching_relations(self, gold, relation, gold_id_entity, not_gold_id_entity):
         return [r for r in gold.get_relations() if
-                self.relations_match(r, relation, gold_id_entity, not_gold_id_entity)]
+                self._relations_match(r, relation, gold_id_entity, not_gold_id_entity)]
 
-    def entity_is_included(self, e):
-        return ((self.filter_entity_types is None or e in self.filter_entity_types)
+    def _entity_is_included(self, e):
+        return ((self.filter_entity_types is None or e.type in self.filter_entity_types)
                 and (self.ignore_discontinuous is False or len(e.spans) == 1))
 
-    def filter_relations(self, relations):
+    def _filter_relations(self, relations):
         if self.filter_relation_types is None:
             return relations
         else:
             return filter(lambda r: r.type in self.filter_relation_types, relations)
 
-    def entities_match(self, a, b):
+    def _entities_match(self, a, b):
         return (not self.strict_entity_type or a.type == b.type) \
             and (not self.strict_entity_offset and any_overlapping_spans(a, b) or a.same_span(b))
 
-    def relations_match(self, a, b, a_id_entity, b_id_entity):
-        return (self.entities_match(a_id_entity[a.arg1], b_id_entity[b.arg1])
-                and self.entities_match(a_id_entity[a.arg2], b_id_entity[b.arg2])
+    def _relations_match(self, a, b, a_id_entity, b_id_entity):
+        return (self._entities_match(a_id_entity[a.arg1], b_id_entity[b.arg1])
+                and self._entities_match(a_id_entity[a.arg2], b_id_entity[b.arg2])
                 and (not self.strict_relation_type or a.type == b.type))
 
     def annotations_grouped_by_document(self):
@@ -144,7 +143,7 @@ class Agreement:
             result[name].append(doc)
         return result.items()
 
-    def entity_id_map(self, text_annotation):
+    def _entity_id_map(self, text_annotation):
         return {e.id: e for e in text_annotation.get_entities()}
 
 
@@ -207,7 +206,7 @@ def calculate_agreement(files, relaxed, consider_discontinuous, entity_filter):
         agreement.strict_entity_type = True
 
     # print agreement.entity_span_fleiss_kappa()
-    report_scores(agreement.pairwise_scores(agreement.entity_f1), "Entity F1")
+    report_scores(agreement.pairwise_scores(agreement._entity_f1), "Entity F1")
     # modes for relation scores
     agreement.strict_entity_offset = True
     agreement.strict_entity_type = False
@@ -216,7 +215,7 @@ def calculate_agreement(files, relaxed, consider_discontinuous, entity_filter):
     else:
         agreement.restricted_relation_scoring = False
 
-    report_scores(agreement.pairwise_scores(agreement.relation_f1), "Relation F1")
+    report_scores(agreement.pairwise_scores(agreement._relation_f1), "Relation F1")
 
 
 def report_scores(scores, name):
