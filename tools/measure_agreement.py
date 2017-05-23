@@ -223,8 +223,10 @@ def calculate_agreement(files, relaxed, consider_discontinuous, filter_entity_ty
     agreement.strict_entity_offset = True
     agreement.strict_entity_type = False
     if relaxed:
+        agreement.strict_relation_type = False
         agreement.restricted_relation_scoring = True
     else:
+        agreement.strict_relation_type = True
         agreement.restricted_relation_scoring = False
 
     report_scores(agreement.relation_f1(), "Relation F1")
