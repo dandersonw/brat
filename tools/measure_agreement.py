@@ -107,7 +107,7 @@ class Agreement:
         return float(len(found)) / len(relations)
 
     def relation_recall(self, gold, notGold):
-        return self.entity_recall(notGold, gold)
+        return self.relation_precision(notGold, gold)
 
     def entity_matches_exist(self, gold, relation, id_entity_map):
         return (self.find_matching_entities(gold, id_entity_map[relation.arg1])
