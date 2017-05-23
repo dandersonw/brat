@@ -70,27 +70,26 @@ class Agreement:
 
     def entity_f1(self, gold, notGold):
         precision = self.entity_precision(gold, notGold)
-        recall = self.entity_recall(gold, notGold)
-        if precision == 0 or recall == 0:
+        recall = self.entity_precision(notGold, gold)
+        if 0 in precision + recall:
             return 0
+        recall = float(recall[0]) / recall[1]
+        precision = float(precision[0]) / precision[1]
         return stats.hmean([precision, recall])
 
     def relation_f1(self, gold, notGold):
         precision = self.relation_precision(gold, notGold)
-        recall = self.relation_recall(gold, notGold)
-        if precision == 0 or recall == 0:
+        recall = self.relation_precision(notGold, gold)
+        if 0 in precision + recall:
             return 0
+        precision = float(precision[0]) / precision[1]
+        recall = float(recall[0]) / recall[1]
         return stats.hmean([precision, recall])
 
     def entity_precision(self, gold, notGold):
         entities = [e for e in notGold.get_entities() if self.entity_is_included(e)]
-        if len(entities) == 0:
-            return 1
         found = [e for e in entities if self.find_matching_entities(gold, e)]
-        return float(len(found)) / len(entities)
-
-    def entity_recall(self, gold, not_gold):
-        return self.entity_precision(not_gold, gold)
+        return (len(found), len(entities))
 
     def relation_precision(self, gold, not_gold):
         relations = list(self.filter_relations(not_gold.get_relations()))
@@ -100,14 +99,9 @@ class Agreement:
             relations = [r for r in relations if
                          self.entity_matches_exist(gold, r, not_gold_id_entity)]
 
-        if len(relations) == 0:
-            return 1
         found = [r for r in relations if
                  self.find_matching_relations(gold, r, gold_id_entity, not_gold_id_entity)]
-        return float(len(found)) / len(relations)
-
-    def relation_recall(self, gold, notGold):
-        return self.relation_precision(notGold, gold)
+        return (len(found), len(relations))
 
     def entity_matches_exist(self, gold, relation, id_entity_map):
         return (self.find_matching_entities(gold, id_entity_map[relation.arg1])
