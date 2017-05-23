@@ -10,6 +10,7 @@ import argparse
 import itertools
 import diff_and_mark
 import os.path
+import re
 
 # this seems to be necessary for annotations to find its config
 sys_path.append(os.path.join(os.path.dirname(__file__), '..'))
@@ -131,8 +132,7 @@ class Agreement:
 
     def entities_match(self, a, b):
         return (not self.strict_entity_type or a.type == b.type) \
-            and ((not self.strict_entity_offset and any_overlapping_spans(a, b))
-                 or a.same_span(b))
+            and (not self.strict_entity_offset and any_overlapping_spans(a, b) or a.same_span(b))
 
     def relations_match(self, a, b, a_id_entity, b_id_entity):
         return (self.entities_match(a_id_entity[a.arg1], b_id_entity[b.arg1])
@@ -141,8 +141,13 @@ class Agreement:
 
     def annotations_grouped_by_document(self):
         result = defaultdict(list)
+        remove_random_prefix = re.compile(r"^[0-9]+_([0-9]+)$")
         for doc in self.annotations:
-            result[os.path.basename(doc.get_document())].append(doc)
+            name = os.path.basename(doc.get_document())
+            match = remove_random_prefix.match(name)
+            if match is not None:
+                name = match.group(1)
+            result[name].append(doc)
         return result.items()
 
     def entity_id_map(self, text_annotation):
@@ -210,7 +215,7 @@ def calculate_agreement(files, relaxed, consider_discontinuous, entity_filter):
     # print agreement.entity_span_fleiss_kappa()
     report_scores(agreement.pairwise_scores(agreement.entity_f1), "Entity F1")
     # modes for relation scores
-    agreement.strict_entity_offset = False
+    agreement.strict_entity_offset = True
     agreement.strict_entity_type = False
     if relaxed:
         agreement.restricted_relation_scoring = True
