@@ -203,10 +203,11 @@ def fleiss_kappa(m):
     return (observed_agreement - expected_agreement) / (1 - expected_agreement)
 
 
-def calculate_agreement(files, relaxed, consider_discontinuous, entity_filter):
+def calculate_agreement(files, relaxed, consider_discontinuous, filter_entity_types, filter_relation_types):
     annotations = map(lambda f: annotation.TextAnnotations(f), files)
     agreement = Agreement(annotations)
-    agreement.filter_entity_types = entity_filter
+    agreement.filter_entity_types = filter_entity_types
+    agreement.filter_relation_types = filter_relation_types
     agreement.ignore_discontinuous = not consider_discontinuous
     # modes for entity scores
     if relaxed:
@@ -234,12 +235,14 @@ def report_scores(scores, name):
     print name
     print scores
 
+
 def argparser():
     ap = argparse.ArgumentParser(description="Calculate inter-annotator agreement")
     ap.add_argument("paths", nargs="+")
     ap.add_argument("--relaxed", action="store_true")
     ap.add_argument("--considerDiscontinuous", action="store_true")
     ap.add_argument("--entityTypes", nargs="*", help="Consider only entities of listed types")
+    ap.add_argument("--relationTypes", nargs="*", help="Consider only relations of listed types")
     return ap
 
 
@@ -254,7 +257,11 @@ def main(argv=None):
         diff_and_mark.add_files(files, path, errors)
     print "{} errors encountered in reading files".format(len(errors))
 
-    calculate_agreement(files, args.relaxed, args.considerDiscontinuous, args.entityTypes)
+    calculate_agreement(files,
+                        args.relaxed,
+                        args.considerDiscontinuous,
+                        args.entityTypes,
+                        args.relationTypes)
 
 
 if __name__ == "__main__":
