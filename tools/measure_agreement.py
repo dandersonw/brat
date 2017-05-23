@@ -46,11 +46,22 @@ class Agreement:
         # document
         self.restricted_relation_scoring = False
 
-    def pairwise_scores(self, score_function):
+    def entity_f1(self):
+        precisions = self.per_file_scores(self._entity_precision)
+        precisions = reduce(lambda a, b: map(lambda i, j: i + j, a, b), precisions)
+        return float(precisions[0]) / precisions[1]
+
+    def relation_f1(self):
+        precisions = self.per_file_scores(self._relation_precision)
+        precisions = reduce(lambda a, b: map(lambda i, j: i + j, a, b), precisions)
+        return float(precisions[0]) / precisions[1]
+
+    def per_file_scores(self, score_function):
         scores = []
         for (doc_name, annotations) in self.annotations_grouped_by_document():
             for combination in itertools.combinations(annotations, 2):
                 scores.append(score_function(combination[0], combination[1]))
+                scores.append(score_function(combination[1], combination[0]))
         return scores
 
     def _entity_span_fleiss_kappa(self):
@@ -206,7 +217,7 @@ def calculate_agreement(files, relaxed, consider_discontinuous, entity_filter):
         agreement.strict_entity_type = True
 
     # print agreement.entity_span_fleiss_kappa()
-    report_scores(agreement.pairwise_scores(agreement._entity_f1), "Entity F1")
+    report_scores(agreement.entity_f1(), "Entity F1")
     # modes for relation scores
     agreement.strict_entity_offset = True
     agreement.strict_entity_type = False
@@ -215,15 +226,13 @@ def calculate_agreement(files, relaxed, consider_discontinuous, entity_filter):
     else:
         agreement.restricted_relation_scoring = False
 
-    report_scores(agreement.pairwise_scores(agreement._relation_f1), "Relation F1")
+    report_scores(agreement.relation_f1(), "Relation F1")
 
 
 def report_scores(scores, name):
     print "-" * 60
     print name
-    print stats.describe(scores)
     print scores
-
 
 def argparser():
     ap = argparse.ArgumentParser(description="Calculate inter-annotator agreement")
