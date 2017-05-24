@@ -3,12 +3,28 @@
 
 import ai2_common
 import argparse
-
-FIXUP_STEPS = []
+import sys
 
 
 def fixup_overlapping_annotations(doc):
-    pass
+    overlapping = ai2_common.find_overlapping(doc)
+    for pair in overlapping:
+        a = pair[0].brat_annotation
+        b = pair[1].brat_annotation
+        remove = None
+        if a.contains(b):
+            remove = pair[1]
+        elif b.contains(a):
+            remove = pair[0]
+        else:
+            sys.stderr.write("Can't fix the pair of {} in fixup_overlapping_annotations".format(pair))
+
+        if remove is not None:
+            doc.remove_entity(remove)
+    return doc
+
+
+FIXUP_STEPS = [fixup_overlapping_annotations]
 
 
 def fixup(doc):

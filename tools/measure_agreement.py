@@ -5,6 +5,7 @@ from __future__ import with_statement
 from scipy import stats
 from sys import path as sys_path
 from collections import defaultdict
+import ai2_common
 import numpy as np
 import argparse
 import itertools
@@ -136,7 +137,7 @@ class Agreement:
 
     def _entities_match(self, a, b):
         return (not self.strict_entity_type or a.type == b.type) \
-            and (not self.strict_entity_offset and any_overlapping_spans(a, b) or a.same_span(b))
+            and (not self.strict_entity_offset and ai2_common.any_overlapping_spans(a, b) or a.same_span(b))
 
     def _relations_match(self, a, b, a_id_entity, b_id_entity):
         return (self._entities_match(a_id_entity[a.arg1], b_id_entity[b.arg1])
@@ -181,14 +182,6 @@ def spans_to_biluo(spans, total_len):
             result[i] = 2
         i += 1
     return result
-
-
-def any_overlapping_spans(a, b):
-        for i in a.spans:
-            for j in b.spans:
-                if j[0] < i[1] and i[0] < j[1]:
-                    return True
-        return False
 
 
 def fleiss_kappa(m):

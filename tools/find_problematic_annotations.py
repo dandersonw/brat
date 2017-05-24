@@ -3,7 +3,7 @@
 
 import argparse
 import diff_and_mark
-import measure_agreement
+import ai2_common
 from sys import path as sys_path
 import os.path
 import itertools
@@ -30,7 +30,7 @@ def find_discontinuous(text_annotation):
 
 
 def find_overlapping(text_annotation):
-    return filter(lambda c: measure_agreement.any_overlapping_spans(c[0], c[1]),
+    return filter(lambda c: ai2_common.any_overlapping_spans(c[0], c[1]),
                   itertools.combinations(text_annotation.get_entities(), 2))
 
 
