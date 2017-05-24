@@ -7,6 +7,10 @@ import argparse
 FIXUP_STEPS = []
 
 
+def fixup_overlapping_annotations(doc):
+    pass
+
+
 def fixup(doc):
     for step in FIXUP_STEPS:
         doc = step(doc)

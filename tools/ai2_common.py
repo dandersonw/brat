@@ -27,6 +27,13 @@ class EnhancedAnnotatedDoc:
         first_shot = NLP(text_annotation.get_document_text())
         required_boundaries = self._get_entity_boundaries_for_tokenization()
         self.spacy_doc = self._impose_token_boundaries(first_shot, required_boundaries)
+        self.entities = [Entity(e, self) for e in text_annotation.get_entities()]
+
+    def __getitem__(self, key):
+        return self.spacy_doc[key]
+
+    def __len__(self):
+        return self.spacy_doc.__len__()
 
     def _impose_token_boundaries(self, spacy_doc, boundaries):
         b_idx = 0
@@ -54,6 +61,18 @@ class EnhancedAnnotatedDoc:
         return sorted(set(itertools.chain.from_iterable(spans)))
 
 
+class Entity:
+    """Wrapper for brat annotation. Spans are in tokens."""
+    def __init__(self, entity_annotation, parent_doc):
+        self.entity_annotation = entity_annotation
+        self.parent_doc = parent_doc
+        self.spans = []
+        print entity_annotation
+        for span in entity_annotation.spans:
+            self.spans.append((get_token_starting_at_char_offset(parent_doc, span[0]).i,
+                               get_token_ending_at_char_offset(parent_doc, span[1]).i + 1))
+
+
 def get_docs(*paths):
     found_paths = []
     extensions = re.compile(r"\.(txt|ann)$")
@@ -77,3 +96,35 @@ def get_docs(*paths):
         text_annotation = annotation.TextAnnotations(path)
         result.append(EnhancedAnnotatedDoc(text_annotation))
     return result
+
+
+def get_token_starting_at_char_offset(doc, offset):
+    l = 0
+    r = len(doc)
+    while r - l > 1:
+        mid = (l + r) / 2
+        if doc[mid].idx > offset:
+            r = mid
+        else:
+            l = mid
+
+    if doc[l].idx == offset:
+        return doc[l]
+    else:
+        return None
+
+
+def get_token_ending_at_char_offset(doc, offset):
+    l = 0
+    r = len(doc)
+    while r - l > 1:
+        mid = (l + r) / 2
+        if doc[mid].idx + len(doc[mid]) > offset:
+            r = mid
+        else:
+            l = mid
+
+    if doc[l].idx + len(doc[l]) == offset:
+        return doc[l]
+    else:
+        return None
