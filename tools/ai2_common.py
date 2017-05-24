@@ -60,15 +60,21 @@ class EnhancedAnnotatedDoc:
                 [e.spans for e in self.brat_annotation.get_entities()]))
         return sorted(set(itertools.chain.from_iterable(spans)))
 
+    def get_entities(self):
+        return self.entities
+
+    def remove_entity(self, entity):
+        self.entities = [e for e in self.entities if e != entity]
+        self.brat_annotation.del_annotation(entity.brat_annotation)
+
 
 class Entity:
     """Wrapper for brat annotation. Spans are in tokens."""
-    def __init__(self, entity_annotation, parent_doc):
-        self.entity_annotation = entity_annotation
+    def __init__(self, brat_annotation, parent_doc):
+        self.brat_annotation = brat_annotation
         self.parent_doc = parent_doc
         self.spans = []
-        print entity_annotation
-        for span in entity_annotation.spans:
+        for span in brat_annotation.spans:
             self.spans.append((get_token_starting_at_char_offset(parent_doc, span[0]).i,
                                get_token_ending_at_char_offset(parent_doc, span[1]).i + 1))
 
@@ -128,3 +134,16 @@ def get_token_ending_at_char_offset(doc, offset):
         return doc[l]
     else:
         return None
+
+
+def find_overlapping(doc):
+    return filter(lambda c: any_overlapping_spans(c[0], c[1]),
+                  itertools.combinations(doc.get_entities(), 2))
+
+
+def any_overlapping_spans(a, b):
+        for i in a.spans:
+            for j in b.spans:
+                if j[0] < i[1] and i[0] < j[1]:
+                    return True
+        return False
