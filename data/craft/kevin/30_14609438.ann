@@ -1,3 +1,17 @@
 T1	KeyEntity 161 184;200 204	Tripeptidyl-peptidase I CLN2
 T2	Entity 235 274	sedolisins (serine-carboxyl peptidases)
 T3	Entity 367 422	classical late-infantile neuronal ceroid lipofuscinosis
+T4	Entity 663 672;676 686	orthologs human CLN2
+T5	Entity 976 994	Xenopus tropicalis
+T6	Entity 947 952	zebra
+T7	Entity 938 942	fugu
+T8	Entity 932 936	fish
+T9	Entity 969 974	frogs
+T10	Entity 1026 1036	human CLN2
+T11	Entity 1081 1110	Pseudomonas sp. 101 sedolisin
+T12	Entity 1125 1129	CLN2
+T13	Entity 1241 1252	life cycles
+T14	Entity 1380 1392	CLN2 enzymes
+T15	Entity 1434 1446	tripeptidase
+T16	Entity 1672 1676	CLN2
+T17	Entity 1658 1668	inhibitors

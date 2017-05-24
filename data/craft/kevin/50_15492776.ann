@@ -1,0 +1,34 @@
+T1	Entity 95 114	Articular cartilage
+T2	Entity 232 241	arthritis
+T3	Entity 312 321	cartilage
+T4	KeyEntity 544 559	mouse Gdf5 gene
+T5	Entity 563 602	bone morphogenetic protein [BMP] family
+R1	is_subclass_of Arg1:T4 Arg2:T5	
+T6	Entity 626 637	mouse lines
+T7	Entity 743 758	Cre recombinase
+T8	KeyEntity 764 800	Gdf5 bacterial artificial chromosome
+T9	Entity 856 875	floxed target genes
+T10	Entity 879 896	developing joints
+T11	Entity 908 930	early joint interzones
+T12	Entity 932 957	adult articular cartilage
+T13	Entity 967 980	joint capsule
+T14	Entity 1027 1049	BMP receptor signaling
+T15	Entity 1072 1106	Mice with null mutations in Bmpr1a
+T16	Entity 1133 1146	embryogenesis
+T17	Entity 1191 1211	floxed Bmpr1a allele
+T18	Entity 1221 1236	Gdf5-Cre driver
+T19	Entity 1251 1270	embryonic lethality
+T20	Entity 1320 1348	mice missing the Bmpr1a gene
+T21	Entity 1352 1369	articular regions
+T22	Entity 1427 1451	Bmpr1a receptor function
+T23	Entity 1462 1481	articular cartilage
+T24	Entity 1524 1547	receptor-deficient mice
+T25	Entity 1584 1604	human osteoarthritis
+T26	KeyEntity 1606 1619	Gdf5-Cre mice
+T27	Entity 1710 1732	BMP receptor signaling
+T28	Entity 1846 1865	articular cartilage
+T29	Entity 1916 1938	BMP receptor signaling
+T30	Entity 1974 1994	human osteoarthritis
+T31	Entity 2033 2055	BMP receptor signaling
+T32	Entity 710 727	developing joints
+R2	is_part_of Arg1:T7 Arg2:T8	

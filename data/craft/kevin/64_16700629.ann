@@ -12,7 +12,7 @@ T11	KeyEntity 463 467	Wnt4
 T12	Entity 509 518	XX gonads
 T13	Entity 479 505	partial testis development
 T14	KeyEntity 603 606	Sry
-T15	Entity 681 714	fibroblast growth factor 9 (FGF9)
+T15	KeyEntity 681 714	fibroblast growth factor 9 (FGF9)
 T16	KeyEntity 719 723	WNT4
 T17	Entity 760 777	sex determination
 T18	Entity 786 800	mouse XY gonad
@@ -55,3 +55,11 @@ R17	regulates Arg1:T34 Arg2:T35
 R18	interacts_with Arg1:T32 Arg2:T34	
 R19	interacts_with Arg1:T33 Arg2:T34	
 T36	KeyEntity 1191 1194	Sry
+R20	regulates Arg1:T1 Arg2:T3	
+R21	regulates Arg1:T1 Arg2:T4	
+R22	regulates Arg1:T1 Arg2:T5	
+R23	regulates Arg1:T2 Arg2:T3	
+R24	regulates Arg1:T2 Arg2:T4	
+R25	regulates Arg1:T2 Arg2:T5	
+T37	Entity 301 312;321 326	development mouse
+R26	interacts_with Arg1:T19 Arg2:T18	

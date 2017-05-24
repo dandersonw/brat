@@ -26,3 +26,19 @@ T18	Entity 768 785	reversal learning
 T19	Entity 752 763;777 785	associative learning
 R8	other_relation Arg1:T12 Arg2:T11	
 #1	AnnotatorNotes R8	attribute
+T20	KeyEntity 1165 1200	dopamine D2 receptor deficient mice
+T21	KeyEntity 1445 1480	dopamine D2 receptor deficient mice
+T22	KeyEntity 1712 1747	dopamine D2 receptor deficient mice
+T23	KeyEntity 1879 1899	Inbred C57Bl/6J mice
+T24	KeyEntity 1940 1972	functional dopamine D2 receptors
+T25	Entity 1988 1997	olfaction
+T26	Entity 2110 2145	dopamine D2 receptor deficient mice
+T27	Entity 2189 2208	reinforced stimulus
+T28	Entity 2331 2351	dopamine D2 receptor
+T29	Entity 2380 2391;2405 2413	associative learning
+T30	Entity 2396 2413	reversal learning
+R9	interacts_with Arg1:T24 Arg2:T23	
+#2	AnnotatorNotes R9	Lack of
+R10	other_relation Arg1:T25 Arg2:T23	
+#3	AnnotatorNotes R10	attribute
+T31	Entity 2041 2080	odor-driven reinforcement contingencies

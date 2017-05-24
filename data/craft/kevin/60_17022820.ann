@@ -1,8 +1,8 @@
 T1	Entity 91 101	Thrombosis
 T2	Entity 144 167	cardiovascular diseases
 T3	Entity 240 260	inbred mouse strains
-T4	Entity 262 270	C57BL/6J
-T5	Entity 275 278	A/J
+T4	KeyEntity 262 270	C57BL/6J
+T5	KeyEntity 275 278	A/J
 T6	Entity 325 332	obesity
 T7	Entity 334 349	atherosclerosis
 T8	Entity 355 372	vessel remodeling
@@ -11,5 +11,58 @@ T10	Entity 487 497	hemostasis
 T11	Entity 543 553	thrombosis
 T12	Entity 558 568	hemostasis
 T13	Entity 582 596	inbred strains
-T14	Entity 638 653	A/J chromosomes
-T15	Entity 661 680	C57BL/6J background
+T14	KeyEntity 638 653	A/J chromosomes
+T15	KeyEntity 661 680	C57BL/6J background
+R1	is_subclass_of Arg1:T4 Arg2:T3	
+R2	is_subclass_of Arg1:T5 Arg2:T3	
+T16	KeyEntity 692 695;709 713	A/J mice
+T17	KeyEntity 700 713	C57Bl/6J mice
+T18	Entity 748 758	thrombosis
+T19	Entity 763 773	hemostasis
+T20	Entity 777 785	thrombus
+T21	Entity 805 819	carotid artery
+T22	Entity 850 857	carotid
+T23	Entity 861 876	ferric chloride
+R3	interacts_with Arg1:T23 Arg2:T22	
+T24	Entity 984 994	thrombosis
+T25	Entity 999 1009	hemostasis
+T26	Entity 1066 1077	warm saline
+T27	KeyEntity 1123 1138	A/J chromosomes
+T28	KeyEntity 1144 1163	C57BL/6J background
+R4	is_part_of Arg1:T27 Arg2:T28	
+T29	Entity 1230 1253	Thrombus occlusion time
+T30	KeyEntity 1284 1292	A/J mice
+T31	KeyEntity 1305 1318	C57BL/6J mice
+T32	Entity 1199 1218	tail bleeding assay
+T33	Entity 1320 1338	Tail bleeding time
+T34	Entity 1375 1390	rebleeding time
+T35	Entity 928 957	Bleeding and rebleeding times
+T36	KeyEntity 1421 1429	A/J mice
+T37	KeyEntity 1442 1455	C57BL/6J mice
+T38	Entity 1457 1474	Coagulation times
+T39	Entity 1479 1494	tail morphology
+T40	Entity 1513 1534	tail collagen content
+T41	KeyEntity 1549 1552;1567 1571	A/J mice
+T42	KeyEntity 1558 1571	C57BL/6J mice
+T43	KeyEntity 1612 1622	B6-Chr5A/J
+T44	KeyEntity 1624 1635	B6-Chr11A/J
+T45	KeyEntity 1641 1652	B6-Chr17A/J
+T46	Entity 1685 1700	rebleeding time
+T47	KeyEntity 1725 1733	A/J mice
+T48	Entity 1780 1796	rebleeding times
+T49	KeyEntity 1808 1821	C57BL/6J mice
+T50	KeyEntity 1875 1885	B6-Chr5A/J
+T51	KeyEntity 1890 1901	B6-Chr17A/J
+T52	KeyEntity 1921 1934	A/J phenotype
+T53	Entity 1957 1983	doubly heterosomic progeny
+T54	Entity 2044 2063	arterial thrombosis
+T55	Entity 2068 2079	haemostasis
+T56	KeyEntity 2107 2125	C57BL/and A/J mice
+T57	KeyEntity 2133 2147	A/J chromosome
+T58	KeyEntity 2223 2226	A/J
+T59	KeyEntity 2247 2266	C57Bl/6J background
+T60	KeyEntity 2284 2297	A/J phenotype
+T61	KeyEntity 2326 2333	A/J QTL
+T62	Entity 2426 2460	vascular injury induced thrombosis
+T63	Entity 2469 2488	tail bleeding assay
+T64	Entity 2558 2574	thrombotic risk.

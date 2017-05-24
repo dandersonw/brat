@@ -1,0 +1,43 @@
+T1	Entity 196 264	peroxisome proliferator-activated receptor-γ coactivator-1α (PGC-1α)
+T2	Entity 168 195	transcriptional coactivator
+R1	is_subclass_of Arg1:T1 Arg2:T2	
+T3	KeyEntity 287 315	PGC-1α null (PGC-1α−/−) mice
+T4	Entity 413 448	abnormal energy metabolic phenotype
+T5	Entity 454 479	postnatal growth of heart
+T6	Entity 484 511	slow-twitch skeletal muscle
+T7	KeyEntity 574 588	PGC-1α−/− mice
+T8	KeyEntity 604 618	PGC-1α−/− mice
+T9	Entity 702 722	Mitochondrial number
+T10	Entity 727 747	respiratory capacity
+T11	Entity 765 792	slow-twitch skeletal muscle
+T12	KeyEntity 796 810	PGC-1α−/− mice
+T13	KeyEntity 873 887	PGC-1α−/− mice
+T14	Entity 905 935	diminution in cardiac function
+T15	KeyEntity 991 1005	PGC-1α−/− mice
+T16	KeyEntity 1162 1176	PGC-1α−/− mice
+T17	Entity 1185 1202	hepatic steatosis
+T18	KeyEntity 1332 1346	PGC-1α−/− mice
+T19	Entity 1372 1403	diet-induced insulin resistance
+T20	Entity 1409 1427	wild-type controls
+T21	Entity 1437 1453	vacuolar lesions
+T22	Entity 1475 1497	central nervous system
+T23	KeyEntity 1501 1515	PGC-1α−/− mice
+T24	KeyEntity 1548 1554	PGC-1α
+T25	Entity 1641 1655	postnatal life
+T26	Entity 1584 1637	adaptation to the metabolic and physiologic stressors
+T27	Entity 638 656	increased body fat
+R2	other_relation Arg1:T27 Arg2:T8	
+#1	AnnotatorNotes R2	attribute
+R3	is_part_of Arg1:T11 Arg2:T12	
+R4	other_relation Arg1:T14 Arg2:T13	
+#2	AnnotatorNotes R4	attribute
+R5	other_relation Arg1:T17 Arg2:T16	
+#3	AnnotatorNotes R5	attribute
+T28	Entity 1287 1316	expression of lipogenic genes
+T29	Entity 1235 1269	mitochondrial respiratory capacity
+R6	interacts_with Arg1:T29 Arg2:T17	
+R7	interacts_with Arg1:T28 Arg2:T17	
+R8	is_part_of Arg1:T21 Arg2:T22	
+R9	is_part_of Arg1:T22 Arg2:T23	
+R10	other_relation Arg1:T24 Arg2:T26	
+#4	AnnotatorNotes R10	required

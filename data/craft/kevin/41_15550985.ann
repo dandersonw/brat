@@ -12,6 +12,9 @@ T11	Entity 590 610	proprioceptive axons
 T12	KeyEntity 808 812	NT-3
 T13	Entity 865 889	muscle sensory afferents
 T14	Entity 823 860	short-distance axon guidance molecule
-T15	KeyEntity 734 738	NT-3
+T15	KeyEntity 707 738	chemoattractant effects of NT-3
 T16	Entity 621 636;644 655	ectopic regions spinal cord
 T17	Entity 742 768	dorsal root ganglion axons
+R1	participates_in Arg1:T1 Arg2:T2	
+R2	is_part_of Arg1:T3 Arg2:T4	
+R3	participates_in Arg1:T15 Arg2:T17	

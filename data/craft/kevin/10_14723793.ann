@@ -1,6 +1,46 @@
-T1	Entity 160 192	ancient conserved domain protein
 T2	KeyEntity 306 310	Acdp
 T3	Entity 339 361	human ACDP gene family
-T4	Entity 194 198	ACDP
+T4	Entity 160 199	ancient conserved domain protein (ACDP)
 T5	Entity 316 331	mouse homologue
 R1	is_part_of Arg1:T2 Arg2:T5	
+T6	Entity 382 392	Acdp genes
+T7	KeyEntity 394 399	Acdp1
+T8	KeyEntity 401 406	Acdp2
+T9	KeyEntity 408 413	Acdp3
+T10	KeyEntity 418 423	Acdp4
+T11	Entity 478 492	cDNA sequences
+T12	Entity 547 558	amino acids
+T13	Entity 578 594	mouse Acdp genes
+T14	Entity 640 650;666 675	nucleotide sequences
+T15	Entity 655 675	amino acid sequences
+T16	Entity 770 800	Ancient Conserved Domain (ACD)
+T17	Entity 873 886	Acdp proteins
+T18	Entity 906 919	AA homologies
+T19	KeyEntity 927 948	bacteria CorC protein
+T20	Entity 1007 1016;1028 1034	magnesium efflux
+T21	Entity 1021 1034	cobalt efflux
+T22	Entity 1040 1050	Acdp genes
+T23	KeyEntity 1105 1110	Acdp1
+T24	Entity 1189 1195	kidney
+T25	Entity 1200 1206	testis
+T26	KeyEntity 1226 1231	Acdp1
+T27	Entity 1298 1313	plasma membrane
+T28	Entity 1332 1342	Acdp genes
+T29	KeyEntity 1475 1479	Acdp
+T30	KeyEntity 1506 1510	Acdp
+T31	Entity 1546 1558	CorC protein
+T32	KeyEntity 1638 1642	Acdp
+T33	Entity 723 733;749 758	nucleotide sequences
+T34	Entity 738 758	amino acid sequences
+T35	Entity 1235 1254	hippocampus neurons
+T36	Entity 1705 1720	mammalian cells
+R2	is_subclass_of Arg1:T7 Arg2:T6	
+R3	is_subclass_of Arg1:T8 Arg2:T6	
+R4	is_subclass_of Arg1:T9 Arg2:T6	
+R5	is_subclass_of Arg1:T10 Arg2:T6	
+R6	is_subclass_of Arg1:T2 Arg2:T3	
+R7	other_relation Arg1:T6 Arg2:T11	
+#1	AnnotatorNotes R7	type
+R8	other_relation Arg1:T18 Arg2:T17	
+#2	AnnotatorNotes R8	attribute
+T1	Entity 1688 1701	ion transport

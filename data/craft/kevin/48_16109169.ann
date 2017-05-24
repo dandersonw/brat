@@ -1,9 +1,45 @@
 T1	Entity 150 160	Huntingtin
-T2	Entity 201 224	polyglutamine expansion
 T3	Entity 228 248	Huntington's disease
 T4	Entity 265 287	extraembryonic tissues
-T5	Entity 292 311	proper gastrulation
+T5	Entity 299 311	gastrulation
 T6	Entity 435 468	whole mount in situ hybridization
 T7	Entity 480 500	embryonic patterning
 T8	Entity 505 518	morphogenesis
-T9	Entity 522 570	homozygous Hdhex4/5 huntingtin deficient embryos
+T9	KeyEntity 522 570	homozygous Hdhex4/5 huntingtin deficient embryos
+T10	Entity 166 173	HD gene
+R1	other_relation Arg1:T1 Arg2:T5	
+#1	AnnotatorNotes R1	required
+R2	participates_in Arg1:T4 Arg2:T5	
+R3	interacts_with Arg1:T8 Arg2:T9	
+R4	interacts_with Arg1:T7 Arg2:T9	
+T2	Entity 600 610	huntingtin
+T11	Entity 744 770	shortened primitive streak
+T12	Entity 772 796	absence of a proper node
+T13	Entity 801 853	diminished production of anterior streak derivatives
+T14	Entity 863 868;884 894	Wnt3a expression
+T15	Entity 870 874;884 894	Tbx6 expression
+T16	Entity 879 883;884 894	Dll1 expression
+T17	Entity 913 930	paraxial mesoderm
+T18	Entity 943 958	Otx2 expression
+T19	Entity 990 1017	failure of head development
+T20	Entity 1132 1173	ectopic expression of Nodal, Fgf8 and Gsc
+T21	Entity 1220 1249	proximal mesoderm derivatives
+T22	Entity 1463 1495	anterior visceral endoderm (AVE)
+T23	Entity 1524 1534	Huntingtin
+T24	Entity 1607 1646	anterior region of the primitive streak
+T25	Entity 1706 1732	transcription factor genes
+T26	Entity 1687 1701	dynamic growth
+T27	Entity 1848 1858	huntingtin
+T28	Entity 1866 1888	extraembryonic tissues
+T29	Entity 1901 1935	normal anterior streak development
+T30	Entity 2023 2055	dominant polyglutamine expansion
+T31	Entity 2059 2069	huntingtin
+T32	Entity 2104 2124	Huntington's disease
+T33	Entity 1181 1189	epiblast
+T34	Entity 1194 1207	T (Brachyury)
+T35	Entity 1212 1216	Evx1
+T36	Entity 1259 1318	impaired posterior restriction and anterior streak deficits
+R5	is_part_of Arg1:T27 Arg2:T28	
+R6	regulates Arg1:T28 Arg2:T29	
+R7	other_relation Arg1:T30 Arg2:T31	
+#2	AnnotatorNotes R7	attribute

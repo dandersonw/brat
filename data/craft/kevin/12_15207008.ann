@@ -1,4 +1,31 @@
-T1	Entity 171 192	ancient gene families
-T2	Entity 242 256	gene structure
 T3	Entity 292 300	homologs
-T4	Entity 333 383	transforming acidic coiled coil (TACC) gene family
+T4	KeyEntity 333 383	transforming acidic coiled coil (TACC) gene family
+T5	KeyEntity 655 660	TACCs
+T6	Entity 768 781	TACC proteins
+T7	KeyEntity 859 864	TACC4
+T8	Entity 886 897	human TACC3
+T9	Entity 903 908	RHAMM
+T10	Entity 997 1002	TACCs
+T11	Entity 1035 1045	C. elegans
+T12	Entity 1050 1065	D. melanogaster
+T13	Entity 1096 1100	TACC
+T14	Entity 1215 1226	human TACC2
+T15	Entity 1242 1263	hormone receptor RXRβ
+T16	Entity 1311 1333	ancestral TACC protein
+T17	Entity 1351 1387	centrosomal/mitotic spindle dynamics
+T18	Entity 1389 1402	TACC proteins
+T19	Entity 1448 1467	protein translation
+T20	Entity 1469 1483	RNA processing
+T21	Entity 1469 1472;1488 1501	RNA transcription
+T22	KeyEntity 1582 1595	TACC proteins
+T23	Entity 1695 1707	LSm proteins
+T24	Entity 1709 1734	nuclear hormone receptors
+T25	Entity 1736 1741	GAS41
+T26	Entity 1747 1768	transcription factors
+T27	KeyEntity 1810 1823	TACC proteins
+R1	interacts_with Arg1:T14 Arg2:T15	
+R2	interacts_with Arg1:T16 Arg2:T17	
+R3	participates_in Arg1:T18 Arg2:T19	
+R4	participates_in Arg1:T18 Arg2:T20	
+R5	regulates Arg1:T18 Arg2:T21	
+T1	Entity 1973 1993	chromatin remodeling

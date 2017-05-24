@@ -1,0 +1,20 @@
+T1	Entity 106 131	High growth (hg) modifier
+T2	Entity 147 188	independent quantitative trait loci (QTL)
+T3	Entity 271 294	mouse chromosomes (MMU)
+T4	Entity 362 365	QTL
+T5	Entity 387 403	congenic strains
+T6	Entity 436 463	CAST/EiJ (CAST) QTL alleles
+T7	Entity 476 502	mutant C57Bl/6J-hg/hg (HG)
+T8	Entity 506 529	wild type C57Bl/6J (B6)
+T9	Entity 1413 1435	speed congenic strains
+T10	Entity 663 667	MMU2
+T11	Entity 694 696;704 715	HG backgrounds
+T12	Entity 701 715	B6 backgrounds
+T13	Entity 782 792	MMU2 panel
+T14	Entity 850 853	QTL
+T15	Entity 931 942	hg deletion
+T16	Entity 1005 1018	HG background
+T17	Entity 1028 1031	QTL
+T18	Entity 1035 1059	MMU1, 5, 8, 9, 11 and 17
+T19	Entity 1293 1296	QTL
+T20	Entity 271 319	mouse chromosomes (MMU) 1, 2, 5, 8, 9, 11 and 17

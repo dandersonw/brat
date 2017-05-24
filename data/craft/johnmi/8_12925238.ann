@@ -1,0 +1,65 @@
+T1	Entity 41 51	annexin A7
+T2	Entity 111 121	annexin A7
+T3	Entity 158 168	Annexin A7
+T4	Entity 326 340	47 kDa isoform
+T5	Entity 615 625	annexin A7
+T6	Entity 662 674	erythrocytes
+T7	Entity 680 693	anxA7-/- mice
+T8	Entity 1541 1560	annexin A7 isoforms
+T9	Entity 1663 1673	annexin A7
+T10	Entity 1774 1784	annexin A7
+T11	Entity 55 64	platelets
+T12	Entity 69 84	red blood cells
+R1	is_part_of Arg1:T1 Arg2:T11	
+R2	is_part_of Arg1:T1 Arg2:T12	
+T13	Entity 174 179	Ca2+-
+T14	Entity 184 212	phospholipid-binding protein
+R3	participates_in Arg1:T3 Arg2:T13	
+R4	participates_in Arg1:T3 Arg2:T14	
+T15	Entity 228 230;235 249	47 51 kDa isoform
+T16	Entity 235 249	51 kDa isoform
+T17	Entity 286 301	membrane fusion
+R5	participates_in Arg1:T15 Arg2:T17	
+T18	Entity 364 376	erythrocytes
+T19	Entity 443 473	Ca2+-dependent vesicle release
+R6	is_part_of Arg1:T4 Arg2:T18	
+R7	participates_in Arg1:T4 Arg2:T19	
+T20	Entity 1565 1579	ed blood cells
+R8	is_part_of Arg1:T8 Arg2:T20	
+T21	Entity 497 511	ed blood cells
+T22	Entity 988 998	Annexin A7
+T23	Entity 1022 1031	platelets
+T24	Entity 895 905	annexin A7
+T25	Entity 1159 1168	platelets
+T26	Entity 1222 1232	annexin A7
+T27	Entity 1276 1290	ed blood cells
+T28	Entity 1304 1311	protein
+T29	Entity 1366 1378	cytoskeleton
+T30	Entity 1380 1395	Red blood cells
+T31	Entity 1452 1462	annexin A7
+T32	Entity 1466 1484	cellular processes
+T33	Entity 1604 1617	small isoform
+T34	Entity 1621 1630	platelets
+R9	is_part_of Arg1:T33 Arg2:T34	
+T35	Entity 1682 1700	cellular functions
+R10	regulates Arg1:T9 Arg2:T35	
+T36	Entity 1788 1803	membrane fusion
+T37	Entity 1706 1713	defects
+R11	is_part_of Arg1:T22 Arg2:T23	
+T38	Entity 1236 1251	membrane fusion
+R12	is_part_of Arg1:T5 Arg2:T6	
+R13	is_part_of Arg1:T6 Arg2:T7	
+T39	Entity 714 740	Ca2+-mediated vesiculation
+T40	Entity 777 798	membrane organization
+T41	Entity 846 876	gradient fractionation studies
+T42	Entity 916 934	altered cell shape
+R14	regulates Arg1:T24 Arg2:T42	
+T43	Entity 949 967	osmotic resistance
+R15	regulates Arg1:T24 Arg2:T43	
+T44	Entity 971 986	red blood cells
+R16	is_part_of Arg1:T43 Arg2:T44	
+R17	regulates Arg1:T26 Arg2:T38	
+R18	regulates Arg1:T28 Arg2:T29	
+R19	participates_in Arg1:T31 Arg2:T32	
+R20	other_relation Arg1:T5 Arg2:T39	
+#1	AnnotatorNotes R20	doesn't interact

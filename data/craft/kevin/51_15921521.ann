@@ -3,3 +3,38 @@ T2	KeyEntity 197 260	cystic fibrosis transmembrane conductance regulator (CFTR) 
 T3	KeyEntity 367 408	Cftr deficient mice (CF mice: Cftrtm1Unc)
 T4	Entity 493 507;542 550	meconium ileus syndrome
 T5	Entity 512 550	distal intestinal obstruction syndrome
+T6	Entity 353 363	intestines
+R1	is_part_of Arg1:T6 Arg2:T3	
+T7	Entity 437 465	excessive mucus accumulation
+T8	KeyEntity 635 653	C57Bl/6 background
+T9	Entity 671 678	CF mice
+T10	Entity 697 713	solid mouse chow
+T11	Entity 788 809	wild type littermates
+T12	Entity 843 878	loci of the CF intestinal phenotype
+T13	Entity 906 913	CF mice
+T14	Entity 919 943	mixed genetic background
+T15	KeyEntity 949 956	C57Bl/6
+T16	KeyEntity 964 969	129Sv
+T17	Entity 988 1004	CF mice congenic
+T18	KeyEntity 1012 1030	C57Bl/6 background
+T19	Entity 1061 1084	intestinal CF phenotype
+T20	Entity 1086 1093	CF mice
+T21	Entity 1166 1180	dry mouse chow
+T22	Entity 1187 1218	reduced intestinal inflammation
+T23	Entity 1234 1253	quantitative RT-PCR
+T24	Entity 1316 1342	reduced mucus accumulation
+T25	Entity 1350 1367	intestinal crypts
+T26	Entity 1609 1640	genome-wide PCR allele scanning
+T27	KeyEntity 1755 1762	D1Mit36
+T28	KeyEntity 1796 1803	D9Mit90
+T29	Entity 1843 1851	D10Mit14
+T30	Entity 1969 1993	CF mouse small intestine
+T31	Entity 1969 1977;1998 2013	CF mouse animal survival
+T32	Entity 2154 2177	CF intestinal phenotype
+R2	participates_in Arg1:T15 Arg2:T14	
+R3	participates_in Arg1:T16 Arg2:T14	
+R4	other_relation Arg1:T14 Arg2:T13	
+#1	AnnotatorNotes R4	attribute
+R5	other_relation Arg1:T18 Arg2:T17	
+#2	AnnotatorNotes R5	attribute
+T33	Entity 1876 1892	modifier regions

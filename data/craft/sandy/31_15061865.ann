@@ -26,3 +26,30 @@ T17	Entity 937 945	salience
 R8	interacts_with Arg1:T13 Arg2:T17	
 R9	participates_in Arg1:T17 Arg2:T14	
 R10	participates_in Arg1:T15 Arg2:T16	
+T19	Entity 1123 1160	Mildly food-deprived female wild-type
+T20	Entity 1165 1200	dopamine D2 receptor deficient mice
+T21	Entity 1201 1216	rapidly learned
+R11	participates_in Arg1:T19 Arg2:T21	
+R12	participates_in Arg1:T20 Arg2:T21	
+T22	Entity 1241 1265	visible food reinforcers
+R13	interacts_with Arg1:T21 Arg2:T22	
+T23	Entity 1445 1480	dopamine D2 receptor deficient mice
+T24	Entity 1504 1515	more trials
+T25	Entity 1539 1551	discriminate
+R14	participates_in Arg1:T23 Arg2:T24	
+R15	participates_in Arg1:T24 Arg2:T25	
+T26	Entity 1712 1747	dopamine D2 receptor deficient mice
+T27	Entity 1759 1772	fail to alter
+T28	Entity 1779 1796	response patterns
+R16	participates_in Arg1:T26 Arg2:T27	
+R17	participates_in Arg1:T27 Arg2:T28	
+T29	Entity 1929 1972	absence of functional dopamine D2 receptors
+T30	Entity 2013 2066	impaired ability to acquire odor-driven reinforcement
+R18	regulates Arg1:T29 Arg2:T30	
+T31	Entity 2214 2233	unexpected outcomes
+T32	Entity 2110 2145	dopamine D2 receptor deficient mice
+R19	regulates Arg1:T32 Arg2:T31	
+#1	AnnotatorNotes R19	negative
+T33	Entity 2331 2351	dopamine D2 receptor
+T34	Entity 2380 2413	associative and reversal learning
+R20	regulates Arg1:T33 Arg2:T34	

@@ -34,10 +34,7 @@ R10	is_part_of Arg1:T21 Arg2:T22
 T23	Entity 1288 1307	synaptic regulation
 T24	Entity 1319 1338	behavioural changes
 R11	participates_in Arg1:T20 Arg2:T23	
-T25	Entity 1363 1396	A Disintegrin And Metalloprotease
-T26	KeyEntity 1357 1361	ADAM
-R12	other_relation Arg1:T26 Arg2:T25	
-#2	AnnotatorNotes R12	equivalent
+T26	KeyEntity 1357 1397	ADAM (A Disintegrin And Metalloprotease)
 T27	Entity 1415 1454	membrane-spanning multi-domain proteins
 T28	Entity 1468 1497	metalloproteinase-like domain
 T29	Entity 1504 1527	disintegrin-like domain
@@ -118,12 +115,12 @@ R36	participates_in Arg1:T72 Arg2:T73
 R37	other_relation Arg1:T76 Arg2:T74	
 #3	AnnotatorNotes R37	experimental_test
 R38	participates_in Arg1:T79 Arg2:T78	
-T80	Entity 5795 5816	ADAM11-deficient male
+T80	KeyEntity 5795 5816	ADAM11-deficient male
 T81	Entity 5890 5910	behavioural analyses
 T82	Entity 5915 5946	anatomical-histological studies
 T83	Entity 6096 6115	gain in body weight
 T84	Entity 6913 6937	spatial learning ability
-T85	Entity 6941 6962	ADAM11-deficient mice
+T85	KeyEntity 6941 6962	ADAM11-deficient mice
 T86	Entity 6973 6990	Morris Water Maze
 #4	AnnotatorNotes T86	experimental_test
 T87	Entity 7167 7192	significantly longer time
@@ -160,4 +157,135 @@ T107	Entity 10450 10455	liver
 T108	Entity 10460 10466	testis
 T109	Entity 10485 10507	Northern blot analysis
 #9	AnnotatorNotes T109	experimental_test
-T110	Entity 10529 10550	ADAM11-deficient mice
+T110	KeyEntity 10529 10550	ADAM11-deficient mice
+T25	Entity 9899 9909	(-/-) mice
+T111	Entity 9919 9937	high grip strength
+R12	participates_in Arg1:T25 Arg2:T111	
+T112	Entity 10768 10789	in situ hybridisation
+#10	AnnotatorNotes T112	experimental_test
+T113	Entity 11065 11076	hippocampus
+T114	Entity 11169 11204	lesions of the hippocampal pathways
+T115	Entity 11215 11244	severe impairment of learning
+R45	regulates Arg1:T114 Arg2:T115	
+T116	KeyEntity 11293 11314	ADAM11-deficient mice
+T117	Entity 11322 11331	more time
+T118	Entity 11354 11373	than wild-type mice
+R46	participates_in Arg1:T116 Arg2:T117	
+R47	other_relation Arg1:T118 Arg2:T116	
+#2	AnnotatorNotes R47	comparison
+T119	KeyEntity 11657 11678	ADAM11-deficient mice
+T120	Entity 11683 11705	not search selectively
+R48	participates_in Arg1:T119 Arg2:T120	
+T121	Entity 11947 11974	spatial learning impairment
+T122	KeyEntity 11916 11937	ADAM11-deficient mice
+R49	participates_in Arg1:T122 Arg2:T121	
+T123	Entity 11981 11991	cerebellum
+T124	Entity 12012 12031	smooth coordination
+T125	Entity 12035 12057	somatic motor activity
+T126	Entity 12073 12084	muscle tone
+T127	Entity 12129 12140	equilibrium
+R50	regulates Arg1:T123 Arg2:T124	
+R51	interacts_with Arg1:T124 Arg2:T125	
+R52	regulates Arg1:T123 Arg2:T126	
+R53	regulates Arg1:T123 Arg2:T127	
+T128	KeyEntity 12579 12600	ADAM11-deficient mice
+T129	Entity 12601 12618	fell more quickly
+R54	participates_in Arg1:T128 Arg2:T129	
+T130	KeyEntity 12701 12722	ADAM11-deficient mice
+T131	Entity 12741 12759	motor coordination
+R55	participates_in Arg1:T130 Arg2:T131	
+T132	Entity 13062 13072	cerebellum
+T133	Entity 13170 13184	motor learning
+R56	regulates Arg1:T132 Arg2:T133	
+T134	Entity 13214 13233	synaptotagmin (Syt)
+T135	Entity 13512 13526	Syt IV mutants
+T136	Entity 13533 13551	motor coordination
+R57	participates_in Arg1:T135 Arg2:T136	
+T137	Entity 14497 14508	hippocampus
+T138	Entity 14513 14523	cerebellum
+T139	Entity 14569 14596	spatial learning impairment
+T140	Entity 14601 14622	motor discoordination
+R58	participates_in Arg1:T139 Arg2:T137	
+R59	participates_in Arg1:T139 Arg2:T137	
+R60	participates_in Arg1:T140 Arg2:T138	
+R61	participates_in Arg1:T140 Arg2:T138	
+T141	Entity 14649 14670	In situ hybridisation
+#11	AnnotatorNotes T141	experimental_test
+T142	Entity 14723 14749	pyramidal cells of CA1–CA3
+T143	Entity 14761 14795	granule cells of the dentate gyrus
+T144	Entity 14803 14814	hippocampus
+T145	Entity 14822 14854	granular cells in the cerebellum
+T146	KeyEntity 14693 14699	Adam11
+R62	participates_in Arg1:T146 Arg2:T142	
+R63	participates_in Arg1:T146 Arg2:T143	
+R64	participates_in Arg1:T143 Arg2:T144	
+R65	participates_in Arg1:T143 Arg2:T145	
+T147	Entity 15388 15424	neural cell adhesion molecule (NCAM)
+T148	Entity 15543 15575	mediators of synaptic plasticity
+T149	Entity 15583 15603	adult nervous system
+R66	regulates Arg1:T147 Arg2:T148	
+R67	participates_in Arg1:T148 Arg2:T149	
+T150	Entity 15621 15640	neuron excitability
+T151	Entity 15648 15659	hippocampus
+T152	Entity 15686 15726	post-burst after hyperpolarization (AHP)
+R68	participates_in Arg1:T150 Arg2:T151	
+R69	participates_in Arg1:T150 Arg2:T152	
+T153	Entity 15756 15784	long-term potentiation (LTP)
+R70	participates_in Arg1:T150 Arg2:T153	
+T154	Entity 15927 15940	NMDA receptor
+T155	Entity 15980 15997	motor dysfunction
+T156	Entity 15950 15963	NR2A and NR2C
+R71	is_subclass_of Arg1:T156 Arg2:T154	
+R72	regulates Arg1:T154 Arg2:T155	
+T157	Entity 16047 16087	excitatory postsynaptic currents (EPSCs)
+R73	regulates Arg1:T154 Arg2:T157	
+T158	KeyEntity 16461 16482	ADAM11-deficient mice
+T159	Entity 16560 16587	deficit in spatial learning
+T160	Entity 16592 16609	motor dysfunction
+R74	participates_in Arg1:T158 Arg2:T159	
+R75	participates_in Arg1:T158 Arg2:T160	
+T161	Entity 16647 16658	Adam22 gene
+T162	Entity 16673 16679	ataxia
+T163	Entity 16698 16738	hypomyelination of the peripheral nerves
+R76	participates_in Arg1:T161 Arg2:T162	
+R77	participates_in Arg1:T161 Arg2:T163	
+T164	Entity 17582 17620	hippocampus-dependent spatial learning
+T165	Entity 17625 17664	cerebellum-dependent motor coordination
+T166	KeyEntity 17668 17689	ADAM11-deficient mice
+T167	Entity 17722 17732	water maze
+T168	Entity 17737 17755	rotating rod tasks
+#12	AnnotatorNotes T168	experimental_test
+#13	AnnotatorNotes T167	experimental_test
+T169	Entity 17878 17902	ADAM proteins' functions
+R78	regulates Arg1:T166 Arg2:T165	
+R79	regulates Arg1:T166 Arg2:T164	
+T170	Entity 18103 18106	PCR
+#14	AnnotatorNotes T170	experimental_test
+T171	Entity 18248 18263	PGKneo cassette
+#15	AnnotatorNotes T171	experimental_test
+T172	Entity 19364 19386	Southern blot analysis
+#16	AnnotatorNotes T172	experimental_test
+T173	Entity 19668 19680	Western blot
+#17	AnnotatorNotes T173	experimental_test
+T174	Entity 21264 21295	VERSAMAX equipment and software
+#18	AnnotatorNotes T174	equipment
+T175	Entity 21224 21237	Plexiglas box
+#19	AnnotatorNotes T175	equipment
+T176	Entity 21608 21646	circular, transparent acrylic platform
+#20	AnnotatorNotes T176	equipment
+T177	Entity 21400 21422	Morris water maze task
+#21	AnnotatorNotes T177	experimental_test
+T178	Entity 23596 23614	traction apparatus
+#22	AnnotatorNotes T178	equipment
+T179	Entity 25351 25393	buffered formalin and embedded in paraffin
+#23	AnnotatorNotes T179	experimental_procedure
+T180	Entity 26716 26738	Southern blot analysis
+#24	AnnotatorNotes T180	experimental_test
+T181	Entity 26944 26966	Southern blot analysis
+#25	AnnotatorNotes T181	experimental_test
+T182	Entity 27166 27187	Western blot analysis
+#26	AnnotatorNotes T182	experimental_test
+T183	Entity 27376 27406	HA-tagged mouse ADAM11 protein
+T184	Entity 27420 27430	HeLa cells
+T185	Entity 27667 27689	Morris water maze task
+#27	AnnotatorNotes T185	experimental_test

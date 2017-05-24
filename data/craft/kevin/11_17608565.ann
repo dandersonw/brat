@@ -56,3 +56,30 @@ R22	participates_in Arg1:T30 Arg2:T32
 R23	regulates Arg1:T22 Arg2:T30	
 T33	Entity 1294 1305	Rb function
 R24	regulates Arg1:T13 Arg2:T33	
+T34	Entity 1688 1715	retinoblastoma protein (Rb)
+T35	Entity 1730 1746	tumor suppressor
+R25	is_subclass_of Arg1:T34 Arg2:T35	
+T36	Entity 1792 1823	E2f transcription factor family
+T37	Entity 1838 1840	Rb
+T38	Entity 1895 1932	tissue-specific transcription factors
+T39	Entity 1970 1983	Rb null cells
+T40	Entity 2098 2100	Rb
+T41	Entity 2154 2160	retina
+T42	KeyEntity 2171 2175	E2f1
+T43	Entity 2221 2249	Rb-deficient retinal neurons
+T44	Entity 2286 2295	apoptosis
+T45	Entity 2380 2394	photoreceptors
+T46	Entity 2405 2444	Rb-deficient starburst amacrine neurons
+T47	KeyEntity 2480 2484	E2f1
+T48	Entity 2551 2553	Rb
+T49	Entity 2566 2581	differentiation
+T50	Entity 2632 2634	Rb
+T51	Entity 2644 2674	starburst cell differentiation
+T52	Entity 2697 2700	E2f
+T53	Entity 1389 1392	E2f
+T54	KeyEntity 2702 2707	E2f3a
+T55	Entity 2777 2791	Rb–E2f pathway
+R26	regulates Arg1:T34 Arg2:T36	
+R27	participates_in Arg1:T50 Arg2:T51	
+R28	regulates Arg1:T50 Arg2:T54	
+R29	is_subclass_of Arg1:T54 Arg2:T52	

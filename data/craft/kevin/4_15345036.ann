@@ -3,9 +3,43 @@ T2	Entity 150 165	apoptotic cells
 T3	Entity 184 202	animal development
 T4	Entity 204 219	immune function
 T5	Entity 224 244	cellular homeostasis
-T6	Entity 250 285	phosphatidylserine receptor (Ptdsr)
+T6	KeyEntity 250 285	phosphatidylserine receptor (Ptdsr)
 T7	Entity 289 299	phagocytes
 T8	Entity 357 372	apoptotic cells
 T9	Entity 380 407	anti-inflammatory signaling
 T10	Entity 453 480	phosphatidylserine receptor
-T11	Entity 509 519	Ptdsr gene
+T11	KeyEntity 509 519	Ptdsr gene
+R1	is_part_of Arg1:T6 Arg2:T7	
+R2	participates_in Arg1:T6 Arg2:T9	
+T12	Entity 544 578	Ablation of Ptdsr function in mice
+T13	Entity 586 605	perinatal lethality
+T14	Entity 607 625	growth retardation
+T15	Entity 632 707	delay in terminal differentiation of the kidney, intestine, liver and lungs
+T16	Entity 740 755	eye development
+T17	Entity 807 830	retinal differentiation
+T18	Entity 834 882	complete unilateral or bilateral absence of eyes
+T19	KeyEntity 884 898	Ptdsr -/- mice
+T20	Entity 904 916	anophthalmia
+T21	Entity 958 994	ectopic retinal-pigmented epithelium
+T22	Entity 998 1012	nasal cavities
+T23	Entity 1047 1071	apoptotic cell clearance
+T24	KeyEntity 1155 1174	Ptdsr knockout mice
+T25	Entity 1180 1207	Ptdsr-deficient macrophages
+T26	Entity 1225 1270	pro- and anti-inflammatory cytokine signaling
+T27	Entity 1294 1309	apoptotic cells
+T28	Entity 1318 1336	lipopolysaccharide
+T29	KeyEntity 1351 1356	Ptdsr
+T30	Entity 1436 1449	embryogenesis
+T31	Entity 1462 1484	apoptotic cell removal
+T32	KeyEntity 1486 1491	Ptdsr
+T33	KeyEntity 1607 1612	Ptdsr
+T34	Entity 1633 1657	apoptotic cell clearance
+T35	Entity 1661 1672	macrophages
+T36	Entity 1721 1750	macrophage cytokine responses
+T37	Entity 1811 1838	phosphatidylserine receptor
+T38	Entity 1862 1886	apoptotic cell clearance
+R3	other_relation Arg1:T23 Arg2:T24	
+#1	AnnotatorNotes R3	attribute
+R4	participates_in Arg1:T25 Arg2:T26	
+T39	Entity 1378 1428	development and differentiation of multiple organs
+R5	participates_in Arg1:T29 Arg2:T39	

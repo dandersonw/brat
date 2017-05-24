@@ -1,0 +1,32 @@
+T1	Entity 176 192	gustatory system
+T2	Entity 336 340	T2Rs
+T3	Entity 376 396	taste receptor cells
+T4	Entity 404 410	tongue
+T5	Entity 415 421	palate
+T6	Entity 459 518	receptor-dependent and -independent transduction mechanisms
+T7	Entity 561 589	quinine hydrochloride (QHCl)
+T8	Entity 594 618	denatonium benzoate (DB)
+T9	Entity 679 723	BXD/Ty recombinant inbred (RI) mouse strains
+T10	Entity 741 771	quantitative trait locus (QTL)
+T11	Entity 797 801	QHCl
+T12	Entity 808 811	QTL
+T13	Entity 849 861	chromosome 6
+T14	Entity 894 907	T2Rs (Tas2rs)
+T15	Entity 909 915	Tas2rs
+T16	Entity 965 1003	single nucleotide polymorphisms (SNPs)
+T17	Entity 1020 1046	BXD/Ty RI parental strains
+T18	Entity 1048 1076	C57BL/6J (quinine-sensitive)
+T19	Entity 1081 1109	DBA/2J (quinine insensitive)
+T20	Entity 1171 1179	RI lines
+T21	Entity 1207 1215;1226 1239	C57BL/6J Tas2r alleles
+T22	Entity 1219 1239	DBA/2J Tas2r alleles
+T23	Entity 1279 1301	C57BL/6J Tas2r alleles
+T24	Entity 1324 1328	QHCl
+T25	Entity 1355 1369	DBA/2J alleles
+T26	Entity 1388 1401	Tas2r cluster
+T27	Entity 1451 1472	quinine taster status
+T28	Entity 1557 1560	QTL
+T29	Entity 1565 1578	quinine taste
+T30	Entity 1596 1622	T2R-dependent transduction
+T31	Entity 1786 1799	Tas2r cluster
+T32	Entity 1905 1918	T2R receptors

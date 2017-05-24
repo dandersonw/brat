@@ -6,3 +6,44 @@ T5	KeyEntity 280 320	Pygopus-mediated canonical Wnt signaling
 T6	Entity 324 342	kidney development
 T7	KeyEntity 406 410	ygo1
 T8	KeyEntity 415 420	Pygo2
+T9	Entity 1929 1952	mammalian Pygopus genes
+T10	Entity 1970 2000	normal branching morphogenesis
+T11	Entity 2008 2046	ureteric bud during kidney development
+T12	Entity 2108 2114	kidney
+T13	Entity 2169 2212	evolutionary divergence of Pygopus function
+T14	Entity 2233 2243	Drosophila
+T15	Entity 2221 2228	mammals
+T16	Entity 2261 2278	Pygo1/Pygo2 genes
+T17	Entity 2311 2334	canonical Wnt signaling
+T18	Entity 2386 2410	quantitative transducers
+T19	Entity 2430 2450	Wnt signal intensity
+T20	Entity 506 516	PHD domain
+T21	Entity 566 590	Pygo2 homozygous mutants
+T22	Entity 666 679	lens agenesis
+T23	Entity 681 699	growth retardation
+T24	Entity 701 727	altered kidney development
+T25	Entity 747 758	exencephaly
+T26	Entity 763 775	cleft palate
+T27	Entity 777 801	Pygo1 homozygous mutants
+T28	Entity 886 916	Pygo1/Pygo2 homozygous mutants
+T29	Entity 971 1024	BAT-gal transgene reporter of canonical Wnt signaling
+T30	Entity 1032 1089	reduced levels of expression in Pygo1-/-/Pygo2-/- mutants
+T31	Entity 1125 1145	degree of diminution
+T32	Entity 1151 1156	Pygo1
+T33	Entity 1161 1172	Pygo2 genes
+T34	Entity 1259 1283	stromal cell compartment
+T35	Entity 1285 1302	Confocal analysis
+T36	Entity 1363 1375	ureteric bud
+T37	Entity 1380 1423	metanephric mesenchyme-derived compartments
+T38	Entity 1456 1468	ureteric bud
+T39	Entity 1651 1661	mesenchyme
+T40	Entity 1674 1686	ureteric bud
+T41	Entity 1688 1704	Nephron formatio
+T42	Entity 1736 1755	Microarray analysis
+T43	Entity 1810 1816	Cxcl13
+T44	Entity 1818 1824	Slc5a2
+T45	Entity 1832 1836	Ren2
+T46	Entity 1826 1830	Klk5
+T47	Entity 1841 1849	Timeless
+T48	Entity 1867 1888	candidate Wnt targets
+T49	Entity 1892 1910	kidney development

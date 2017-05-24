@@ -1,0 +1,68 @@
+T1	Entity 142 158	Pendred syndrome
+T2	Entity 169 197	autosomal-recessive disorder
+T3	Entity 215 234	congenital deafness
+T4	Entity 239 245	goiter
+T5	Entity 273 280	SLC26A4
+T6	Entity 298 305	pendrin
+T7	Entity 348 355	pendrin
+T8	Entity 360 368	deafness
+T9	KeyEntity 391 401	Slc26a4+/+
+T10	KeyEntity 406 410;422 434	lack Slc26a4 gene
+T11	KeyEntity 436 446	Slc26a4-/-
+R1	other_relation Arg1:T5 Arg2:T6	
+#1	AnnotatorNotes R1	results
+T12	Entity 473 480	pendrin
+T13	Entity 518 546	confocal immunocytochemistry
+T14	Entity 598 604	RT-PCR
+T15	Entity 610 632	endocochlear potential
+T16	Entity 641 671	endolymphatic K+ concentration
+T17	Entity 691 722	double-barreled microelectrodes
+T18	Entity 750 770	stria marginal cells
+T19	Entity 911 923	densitometry
+T20	Entity 935 942	Pendrin
+T21	Entity 1849 1868	pendrin dysfunction
+T22	Entity 1880 1913	loss of KCNJ10 protein expression
+T23	Entity 1920 1954	loss of the endocochlear potential
+T24	Entity 2001 2017	Pendred syndrome
+T25	Entity 1989 1997	deafness
+T26	Entity 960 967	cochlea
+T27	Entity 971 987	apical membranes
+T28	Entity 991 1014	spiral prominence cells
+T29	Entity 1019 1039	spindle-shaped cells
+T30	Entity 1043 1059	stria vascularis
+T31	Entity 1064 1076	outer sulcus
+T32	Entity 1081 1091	root cells
+T33	Entity 1093 1109	Endolymph volume
+T34	KeyEntity 1113 1128	Slc26a4-/- mice
+T35	Entity 1191 1215	type I and II fibrocytes
+T36	Entity 1230 1245	Slc26a4-/- mice
+T37	Entity 1257 1279	endocochlear potential
+T38	Entity 1311 1329	basal cell barrier
+T39	Entity 1337 1354	K+ channel KCNJ10
+T40	Entity 1388 1404	Stria vascularis
+T41	Entity 1449 1468	free radical damage
+T42	KeyEntity 1533 1544	KCNJ10 mRNA
+T43	KeyEntity 1562 1576	KCNJ10 protein
+T44	Entity 1589 1620	Endolymphatic K+ concentrations
+T45	Entity 1669 1681	K+ secretion
+T46	Entity 1710 1726	K+ channel KCNQ1
+T47	Entity 1710 1720;1731 1736	K+ channel KCNE1
+T48	Entity 1738 1771	Na+/2Cl-/K+ cotransporter SLC12A2
+T49	Entity 1780 1797	gap junction GJB2
+R2	is_subclass_of Arg1:T1 Arg2:T2	
+R3	other_relation Arg1:T3 Arg2:T1	
+#2	AnnotatorNotes R3	attribute
+R4	other_relation Arg1:T4 Arg2:T1	
+#3	AnnotatorNotes R4	attribute
+T50	Entity 548 566	Expression of mRNA
+T51	Entity 792 807	vibrating probe
+T52	Entity 880 892	pigmentation
+R6	is_part_of Arg1:T27 Arg2:T28	
+R5	is_part_of Arg1:T28 Arg2:T26	
+R7	is_part_of Arg1:T29 Arg2:T30	
+R8	is_part_of Arg1:T30 Arg2:T26	
+T53	Entity 1510 1528	intermediate cells
+R9	other_relation Arg1:T21 Arg2:T22	
+#4	AnnotatorNotes R9	results
+R10	other_relation Arg1:T21 Arg2:T23	
+#5	AnnotatorNotes R10	results

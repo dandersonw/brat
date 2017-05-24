@@ -1,6 +1,6 @@
 T1	KeyEntity 124 156	Apc (adenomatous polyposis coli)
 T2	Entity 176 197	Wnt signaling pathway
-T3	Entity 234 247	tumorigenesis
+T3	Entity 218 247	development and tumorigenesis
 T4	Entity 249 275	Heterozygous knockout mice
 T5	KeyEntity 395 398	Apc
 T6	Entity 429 442	floxed allele
@@ -25,3 +25,14 @@ T24	KeyEntity 1244 1252	Apc gene
 T25	Entity 1267 1282	embryonic cells
 T26	Entity 1294 1315	epithelial cell fates
 T27	Entity 1339 1374	epithelial–mesenchymal interactions
+R1	participates_in Arg1:T1 Arg2:T2	
+R2	participates_in Arg1:T1 Arg2:T3	
+R3	other_relation Arg1:T7 Arg2:T4	
+#1	AnnotatorNotes R3	attribute
+R4	regulates Arg1:T11 Arg2:T10	
+R5	other_relation Arg1:T10 Arg2:T12	
+#2	AnnotatorNotes R5	expresses in
+R6	is_part_of Arg1:T15 Arg2:T14	
+R7	is_part_of Arg1:T18 Arg2:T19	
+R8	is_subclass_of Arg1:T20 Arg2:T19	
+R9	participates_in Arg1:T24 Arg2:T26	

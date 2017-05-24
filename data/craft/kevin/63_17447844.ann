@@ -9,7 +9,7 @@ T8	Entity 470 477	XY body
 T9	Entity 483 490	XY body
 T10	Entity 326 349	sex-specific challenges
 R1	is_subclass_of Arg1:T5 Arg2:T10	
-R2	interacts_with Arg1:T5 Arg2:T6	
+R2	participates_in Arg1:T5 Arg2:T6	
 T11	Entity 510 518	prophase
 T12	Entity 595 602	meiosis
 T13	KeyEntity 641 646	DMRT7
@@ -34,14 +34,14 @@ T31	Entity 1229 1243	trimethylation
 T32	Entity 1248 1274	heterochromatin protein 1β
 T33	Entity 1331 1340	pachynema
 T34	Entity 1345 1354	diplonema
-T35	Entity 1385 1390	DMRT7
-T36	Entity 1398 1405	XY body
+T35	KeyEntity 1385 1390	DMRT7
+T36	Entity 1398 1405;1428 1435	XY body defects
 T37	Entity 1448 1461	Dmrt7 mutants
-T38	Entity 1480 1485	DMRT7
+T38	KeyEntity 1480 1485	DMRT7
 T39	Entity 1555 1564	pachynema
 T40	Entity 1506 1534	sex chromatin transformation
 T41	Entity 1569 1578	diplonema
-T42	Entity 1596 1601	DMRT7
+T42	KeyEntity 1596 1601	DMRT7
 T43	Entity 1639 1674	meiotic sex chromosome inactivation
 T44	Entity 1678 1703	postmeiotic sex chromatin
 T45	Entity 1805 1810	Dmrt7
@@ -51,7 +51,7 @@ T48	KeyEntity 1929 1938	Doublesex
 T49	Entity 1942 1952	Drosophila
 T50	Entity 2042 2052	roundworms
 T51	Entity 2056 2063	mammals
-T52	Entity 2115 2125	Dmrt7 gene
+T52	KeyEntity 2115 2125	Dmrt7 gene
 T53	Entity 2187 2189	XX
 T54	Entity 2204 2206	XY
 T55	Entity 2278 2291	meiotic phase
@@ -59,3 +59,47 @@ T56	Entity 2295 2322	male germ cell development.
 T57	Entity 2385 2386;2393 2404	X chromosomes
 T58	Entity 2391 2404	Y chromosomes
 T59	Entity 2445 2452	XY body
+R3	is_subclass_of Arg1:T1 Arg2:T2	
+T60	Entity 243 250	mammals
+R4	is_subclass_of Arg1:T13 Arg2:T14	
+R5	is_part_of Arg1:T13 Arg2:T15	
+R6	is_subclass_of Arg1:T16 Arg2:T15	
+R7	is_subclass_of Arg1:T17 Arg2:T15	
+R8	is_part_of Arg1:T18 Arg2:T19	
+R9	participates_in Arg1:T18 Arg2:T21	
+T61	KeyEntity 2467 2480	DMRT7 protein
+T62	Entity 2495 2505	germ cells
+T63	Entity 2524 2536	male XY body
+T64	Entity 2544 2551	meiosis
+T65	Entity 2609 2616	XY body
+T66	Entity 2708 2724	histone proteins
+T67	Entity 2737 2746	pachytene
+T68	Entity 2751 2767	diplotene stages
+T69	KeyEntity 2823 2841	Dmrt7 mutant cells
+T70	KeyEntity 2882 2887	Dmrt7
+R10	participates_in Arg1:T4 Arg2:T10	
+R11	participates_in Arg1:T38 Arg2:T40	
+R12	other_relation Arg1:T40 Arg2:T39	
+#1	AnnotatorNotes R12	occurs
+R13	other_relation Arg1:T40 Arg2:T41	
+#2	AnnotatorNotes R13	occurs
+T71	Entity 1623 1633	transition
+R14	participates_in Arg1:T43 Arg2:T71	
+R15	participates_in Arg1:T44 Arg2:T71	
+R16	regulates Arg1:T42 Arg2:T71	
+T72	Entity 1707 1712	males
+R17	is_part_of Arg1:T71 Arg2:T72	
+T73	Entity 1792 1803	vertebrates
+T74	Entity 1766 1773	mammals
+R18	is_part_of Arg1:T48 Arg2:T49	
+T75	Entity 1980 1998	sexual development
+R19	regulates Arg1:T48 Arg2:T75	
+R20	is_part_of Arg1:T58 Arg2:T59	
+R21	is_part_of Arg1:T57 Arg2:T59	
+R22	is_part_of Arg1:T61 Arg2:T63	
+R23	is_part_of Arg1:T63 Arg2:T62	
+T76	Entity 2771 2778	meiosis
+T77	Entity 2805 2818	sex chromatin
+T78	Entity 2916 2923	mammals
+T79	Entity 2942 2953	vertebrates
+T80	Entity 1414 1435	sex chromatin defects

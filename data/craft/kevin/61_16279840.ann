@@ -5,3 +5,42 @@ T4	Entity 318 335	Alzheimer disease
 T5	KeyEntity 375 388	Aβ production
 T6	Entity 396 401	brain
 T7	Entity 550 565	amyloid lesions
+T8	Entity 132 141	proteases
+R1	is_subclass_of Arg1:T1 Arg2:T8	
+R2	interacts_with Arg1:T8 Arg2:T2	
+R3	is_part_of Arg1:T2 Arg2:T3	
+T9	Entity 730 752	transgenic mouse model
+T10	Entity 791 804	Aβ production
+T11	Entity 834 854	secretase inhibitors
+T12	Entity 862 866	mice
+T13	KeyEntity 879 889	mutant APP
+R4	other_relation Arg1:T12 Arg2:T13	
+#1	AnnotatorNotes R4	express
+T14	KeyEntity 929 940	doxycycline
+R5	regulates Arg1:T14 Arg2:T12	
+T15	Entity 967 988;992 995	high-level expression APP
+T16	Entity 1674 1689	amyloid lesions
+T17	Entity 1693 1708	transgenic mice
+R6	is_part_of Arg1:T16 Arg2:T17	
+T18	Entity 1803 1826	arresting Aβ production
+T19	Entity 1830 1861	patients with Alzheimer disease
+T20	Entity 1967 1983	amyloid deposits
+R7	participates_in Arg1:T18 Arg2:T19	
+T21	Entity 1012 1039	fulminant amyloid pathology
+T22	KeyEntity 1054 1080	doxycycline administration
+T23	Entity 1090 1115	transgenic APP expression
+T24	Entity 1148 1161	Aβ production
+T25	Entity 1216 1239	transgenic Aβ synthesis
+T26	Entity 1348 1364	amyloid deposits
+T27	Entity 1474 1487	APP synthesis
+T28	Entity 1546 1557	Aβ deposits
+T29	Entity 1580 1593	amyloid load,
+R8	participates_in Arg1:T15 Arg2:T21	
+R9	regulates Arg1:T22 Arg2:T23	
+R10	interacts_with Arg1:T22 Arg2:T24	
+T30	Entity 1181 1199	nontransgenic mice
+T31	Entity 1273 1305	progression of amyloid pathology
+R11	regulates Arg1:T25 Arg2:T31	
+T32	Entity 1720 1737	stable structures
+R12	regulates Arg1:T32 Arg2:T16	
+#2	AnnotatorNotes R12	attribute

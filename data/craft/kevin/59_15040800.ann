@@ -12,3 +12,49 @@ T11	KeyEntity 660 665	ABCG5
 T12	KeyEntity 669 674	ABCG8
 T13	Entity 757 777	dietary sterol entry
 T14	Entity 782 806	biliary sterol secretion
+T15	KeyEntity 1724 1740	Abcg8/sterolin-2
+T16	Entity 1758 1782	biliary sterol secretion
+T17	KeyEntity 1800 1816	Abcg8/sterolin-2
+T18	Entity 1849 1878	biliary cholesterol secretion
+T19	Entity 1884 1894	sitosterol
+T20	Entity 1902 1930	biliary sitosterol secretion
+T21	Entity 1974 1993	sitosterolemic mice
+T22	KeyEntity 2051 2067	Abcg8/sterolin-2
+T23	Entity 895 924	mouse model of sitosterolemia
+T24	Entity 938 965	Abcg8/sterolin-2 deficiency
+T25	Entity 973 997	Homozygous knockout mice
+T26	Entity 1021 1035	sitosterolemia
+T27	KeyEntity 1047 1070	Mice deficient in Abcg8
+T28	Entity 1139 1149	sitosterol
+T29	Entity 1154 1165	campesterol
+T30	Entity 1183 1197	sitosterolemia
+T31	Entity 1214 1230	Abcg5/sterolin-1
+T32	Entity 1253 1258	liver
+T33	Entity 1263 1272	intestine
+T34	Entity 1276 1307	Abcg8/sterolin-2 deficient mice
+T35	KeyEntity 1364 1384	Abcg8 deficient mice
+T36	Entity 1547 1573	heterozygous Abcg8+/- mice
+T37	Entity 1587 1601	sitosterolemic
+T38	Entity 1633 1657	biliary sterol secretion
+R1	is_part_of Arg1:T2 Arg2:T1	
+R2	is_part_of Arg1:T3 Arg2:T1	
+T39	Entity 328 356	autosomal recessive disorder
+R3	is_subclass_of Arg1:T4 Arg2:T39	
+R4	other_relation Arg1:T5 Arg2:T4	
+#1	AnnotatorNotes R4	attribute
+R5	other_relation Arg1:T9 Arg2:T10	
+#2	AnnotatorNotes R5	attribute
+R6	other_relation Arg1:T8 Arg2:T10	
+#3	AnnotatorNotes R6	function
+R7	other_relation Arg1:T24 Arg2:T23	
+#4	AnnotatorNotes R7	attribute
+R8	participates_in Arg1:T29 Arg2:T30	
+R9	participates_in Arg1:T28 Arg2:T30	
+R10	other_relation Arg1:T31 Arg2:T32	
+#5	AnnotatorNotes R10	expressed
+R11	other_relation Arg1:T31 Arg2:T33	
+#6	AnnotatorNotes R11	expressed
+R12	other_relation Arg1:T15 Arg2:T16	
+#7	AnnotatorNotes R12	required 
+R13	interacts_with Arg1:T17 Arg2:T18	
+R14	interacts_with Arg1:T19 Arg2:T18	
