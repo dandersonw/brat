@@ -26,3 +26,8 @@ T21	Entity 1135 1163	transgenic GluR-B expression
 T22	Entity 1197 1216;1220 1237	behavior and levels GluR-B expression
 T23	Entity 1286 1345	olfactory learning, discrimination, and memory capabilities
 R5	participates_in Arg1:T13 Arg2:T14	
+R6	is_part_of Arg1:T7 Arg2:T10	
+T24	Entity 548 552	Mice
+R7	is_part_of Arg1:T7 Arg2:T24	
+T25	Entity 898 914	olfactory memory
+R8	participates_in Arg1:T13 Arg2:T25	

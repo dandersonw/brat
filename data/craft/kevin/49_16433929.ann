@@ -16,7 +16,49 @@ T15	Entity 527 546	embryonic lethality
 T16	Entity 623 646	mammalian embryogenesis
 T17	KeyEntity 666 676	Capn1 gene
 T18	Entity 694 706	fertile mice
-T19	Entity 728 737	m-calpain
+T19	KeyEntity 728 737	m-calpain
 T20	KeyEntity 771 780	μ-calpain
 T21	KeyEntity 802 811	m-calpain
-T22	KeyEntity 841 854	Capn4-/- mice
+T22	KeyEntity 832 837;841 854	death Capn4-/- mice
+T23	KeyEntity 968 984	mouse Capn2 gene
+T24	Entity 988 1009	embryonic stems cells
+T25	Entity 1181 1211	nested PCR genotyping protocol
+T26	Entity 1233 1274	homozygous preimplantation mutant embryos
+T27	Entity 1296 1302;1329 1334	morula stage
+T28	Entity 1318 1334	blastocyts stage
+T29	Entity 1366 1387	homozygous disruption
+T30	KeyEntity 1395 1405	Capn2 gene
+T31	Entity 1417 1453	pre-implantation embryonic lethality
+T32	Entity 1466 1472;1488 1493	morula stage
+T33	Entity 1477 1493	blastocyst stage
+T34	KeyEntity 1517 1526	μ-calpain
+T35	KeyEntity 1531 1540	m-calpain
+T36	KeyEntity 1575 1584	m-calpain
+T37	Entity 1598 1646	development of the preimplantation murine embryo
+R1	is_subclass_of Arg1:T2 Arg2:T3	
+R2	is_subclass_of Arg1:T1 Arg2:T3	
+R3	participates_in Arg1:T2 Arg2:T4	
+R4	participates_in Arg1:T2 Arg2:T5	
+R5	participates_in Arg1:T2 Arg2:T6	
+R6	participates_in Arg1:T2 Arg2:T7	
+R7	participates_in Arg1:T1 Arg2:T4	
+R8	participates_in Arg1:T1 Arg2:T5	
+R9	participates_in Arg1:T1 Arg2:T6	
+R10	participates_in Arg1:T1 Arg2:T7	
+T38	Entity 306 324	catalytic subunits
+R11	is_subclass_of Arg1:T38 Arg2:T8	
+R12	other_relation Arg1:T9 Arg2:T38	
+#1	AnnotatorNotes R12	encodes
+R13	other_relation Arg1:T10 Arg2:T38	
+#2	AnnotatorNotes R13	encodes
+T39	Entity 390 408	regulatory subunit
+R14	is_subclass_of Arg1:T39 Arg2:T8	
+R15	other_relation Arg1:T11 Arg2:T39	
+#3	AnnotatorNotes R15	encodes
+R16	is_part_of Arg1:T23 Arg2:T24	
+R17	other_relation Arg1:T26 Arg2:T27	
+#4	AnnotatorNotes R17	shows up
+R18	other_relation Arg1:T29 Arg2:T30	
+#5	AnnotatorNotes R18	attribute
+R19	participates_in Arg1:T29 Arg2:T31	
+R20	participates_in Arg1:T36 Arg2:T37	

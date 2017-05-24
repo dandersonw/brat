@@ -1,5 +1,4 @@
-T1	KeyEntity 160 184	ancient conserved domain
-T2	KeyEntity 194 198	ACDP
+T2	KeyEntity 160 199	ancient conserved domain protein (ACDP)
 T4	Entity 316 331	mouse homologue
 T5	Entity 339 354	human ACDP gene
 T6	Entity 394 399	Acdp1
@@ -49,3 +48,376 @@ T34	KeyEntity 1506 1510	Acdp
 R13	other_relation Arg1:T34 Arg2:T23	
 #3	AnnotatorNotes R13	homologue_of
 R14	participates_in Arg1:T25 Arg2:T26	
+T35	KeyEntity 1802 1841	ancient conserved domain protein (ACDP)
+T1	Entity 1983 1991	bacteria
+T36	Entity 1993 1998	yeast
+T37	Entity 2000 2010	C. elegans
+T38	Entity 2016 2031	D. melanogaster
+T39	Entity 2419 2434	human ACDP cDNA
+T40	Entity 2789 2800	RT reaction
+#4	AnnotatorNotes T40	experimental_test
+T41	Entity 3373 3379	RT-PCR
+#5	AnnotatorNotes T41	experimental_test
+T42	Entity 3720 3733	Northern blot
+#6	AnnotatorNotes T42	experimental_test
+T43	KeyEntity 3750 3766	Acdp gene family
+T44	KeyEntity 4169 4182	Acdp1 message
+T45	Entity 4210 4215	brain
+R15	participates_in Arg1:T44 Arg2:T45	
+T46	Entity 4223 4229	kidney
+T47	Entity 4234 4240	testis
+T48	KeyEntity 4279 4284	Acdp2
+T49	Entity 4318 4323	brain
+T50	Entity 4325 4341	kidney and liver
+R16	participates_in Arg1:T48 Arg2:T49	
+R17	participates_in Arg1:T48 Arg2:T50	
+T51	KeyEntity 4595 4600	Acdp3
+T52	Entity 4622 4627	brain
+T53	KeyEntity 4686 4691	Acdp4
+T54	Entity 4713 4719	kidney
+T55	Entity 4721 4736	small intestine
+T56	Entity 4741 4747	testis
+T57	Entity 4629 4635	kidney
+T58	Entity 4637 4652	liver and heart
+T59	Entity 5200 5213	Northern blot
+#7	AnnotatorNotes T59	experimental_test
+T60	Entity 5413 5437	Radiation hybrid mapping
+#8	AnnotatorNotes T60	experimental_test
+T61	KeyEntity 6098 6109	human ACDP2
+T62	KeyEntity 6118 6134	mouse Acdp2 gene
+R18	other_relation Arg1:T61 Arg2:T62	
+#9	AnnotatorNotes R18	human_connection
+T63	Entity 6365 6386	Acdp2 5' UTR sequence
+T64	KeyEntity 6929 6942	Acdp proteins
+T65	Entity 7220 7225	Amip3
+T66	KeyEntity 7137 7150	Acdp proteins
+T67	Entity 7159 7178	yeast Amip3 protein
+T68	Entity 7289 7302	Amip3 mutants
+T69	Entity 7880 7896	AF202994 (Acdp1)
+T70	Entity 7898 7914	AF216961 (Acdp2)
+T71	Entity 7916 7932	AF216964 (Acdp3)
+T72	Entity 7937 7953	AF216963 (Acdp4)
+T73	Entity 9286 9320	our distinct transmembrane domains
+T74	Entity 9331 9346	two CBS domains
+T75	Entity 9353 9365	DUF21 domain
+T76	Entity 9568 9590	stable globular domain
+T77	Entity 9528 9548	Pairs of CBS domains
+R19	is_part_of Arg1:T77 Arg2:T76	
+T78	Entity 11392 11404	Western-blot
+#10	AnnotatorNotes T78	experimental_test
+T79	Entity 12500 12525	Acdp1 C-terminus antibody
+T80	Entity 12566 12581	localize Acdp-1
+R20	interacts_with Arg1:T79 Arg2:T80	
+T81	Entity 12602 12615	Northern blot
+#11	AnnotatorNotes T81	experimental_test
+T82	Entity 12692 12716	subcellular localization
+T83	Entity 12720 12739	hippocampus neurons
+R21	is_part_of Arg1:T82 Arg2:T83	
+T84	Entity 13289 13299	Immunoblot
+#12	AnnotatorNotes T84	experimental_test
+T85	Entity 13352 13366	Immunoblotting
+T86	Entity 13392 13408	Western blotting
+#13	AnnotatorNotes T86	experimental_test
+#14	AnnotatorNotes T85	experimental_test
+T87	Entity 13734 13744	Immunoblot
+#15	AnnotatorNotes T87	experimental_test
+T88	Entity 13968 14001	Subcellular localization of Acdp1
+T89	Entity 14005 14024	hippocampus neurons
+R22	is_part_of Arg1:T88 Arg2:T89	
+T90	Entity 14440 14464	evolutionarily conserved
+T91	Entity 14582 14603	biquitously expressed
+T92	Entity 14615 14644	development and adult tissues
+T93	Entity 15216 15246	efflux of magnesium and cobalt
+T94	Entity 15146 15151	Amip3
+R23	regulates Arg1:T94 Arg2:T93	
+T95	Entity 15903 15938	Acdp localization in neuronal cells
+T96	Entity 16093 16118	Acdp1 C-terminus antibody
+T97	KeyEntity 16135 16140	Acdp1
+T98	Entity 16144 16149	brain
+R24	interacts_with Arg1:T96 Arg2:T97	
+R25	participates_in Arg1:T97 Arg2:T98	
+T99	KeyEntity 16291 16295	Acdp
+T100	Entity 16317 16330	ion transport
+R26	regulates Arg1:T99 Arg2:T100	
+T101	Entity 16907 16924	Molecular cloning
+#16	AnnotatorNotes T101	experimental_test
+T102	Entity 17124 17156	DNA and amino acid conservations
+T103	Entity 17165 17170	mouse
+R27	other_relation Arg1:T102 Arg2:T103	
+#17	AnnotatorNotes R27	human_connection
+T104	Entity 17190 17199	Acdp gene
+T105	Entity 17214 17230	Acdp gene family
+T106	Entity 17291 17312	functional redundancy
+T107	Entity 17316 17323	overlap
+T108	KeyEntity 17539 17544	Acdp1
+T109	Entity 17579 17594	plasma membrane
+T110	Entity 17598 17617	hippocampus neurons
+R28	interacts_with Arg1:T108 Arg2:T109	
+R29	participates_in Arg1:T109 Arg2:T110	
+T111	Entity 17753 17765	cDNA cloning
+#18	AnnotatorNotes T111	experimental_test
+T112	Entity 17773 17789	Acdp gene family
+T113	Entity 17886 17896	ACDP cDNAs
+T114	Entity 18504 18507	PCR
+#19	AnnotatorNotes T114	experimental_test
+T115	Entity 18916 18929	Northern Blot
+#20	AnnotatorNotes T115	experimental_test
+T116	Entity 19038 19047	Acdp gene
+T117	Entity 19055 19067	PCR fragment
+T118	Entity 19164 19194	random primer extension system
+#21	AnnotatorNotes T118	experimental_procedure
+T119	Entity 19216 19230	Hybridizations
+#22	AnnotatorNotes T119	experimental_procedure
+T120	Entity 19294 19310	washing buffer I
+#23	AnnotatorNotes T120	experimental_procedure
+T121	Entity 19376 19393	washing buffer II
+#24	AnnotatorNotes T121	experimental_procedure
+T122	Entity 19576 19607	KLH (keyhole limpet hemacyanin)
+T123	Entity 19783 19796	Western blots
+#25	AnnotatorNotes T123	experimental_test
+T124	Entity 20054 20086	T31 mouse radiation hybrid panel
+#26	AnnotatorNotes T124	experimental_test
+T125	Entity 21050 21077	Hippocampal neuron cultures
+T126	Entity 21134 21147	hippocampuses
+T127	Entity 21172 21196	mouse embryos at 16 days
+#27	AnnotatorNotes T127	time_stage
+T128	Entity 21243 21264	20 min at 37°C in MEM
+#28	AnnotatorNotes T128	experimental_procedure
+T129	Entity 21261 21291	MEM (minimum essential medium)
+T130	Entity 21349 21362	0.25% trypsin
+#29	AnnotatorNotes T130	experimental_procedure
+T131	Entity 21305 21323	suspension culture
+#30	AnnotatorNotes T131	experimental_procedure
+T132	Entity 21575 21606	37°C in a humidified atmosphere
+#31	AnnotatorNotes T132	experimental_procedure
+T133	Entity 21612 21618	5% CO2
+#32	AnnotatorNotes T133	experimental_procedure
+T134	Entity 21694 21716	culture flasks at 37°C
+#33	AnnotatorNotes T134	experimental_procedure
+T135	Entity 21749 21771	5% CO2 until confluent
+#34	AnnotatorNotes T135	experimental_procedure
+T136	Entity 21799 21826	10-5 M cytosine arabinoside
+#35	AnnotatorNotes T136	experimental_procedure
+T137	Entity 21863 21880	12–24 hrs at 37°C
+#36	AnnotatorNotes T137	experimental_procedure
+T138	Entity 21979 21993	immunostaining
+#37	AnnotatorNotes T138	experimental_test
+T139	Entity 22063 22088	4% paraformaldehyde (PFA)
+#38	AnnotatorNotes T139	experimental_procedure
+T140	Entity 22151 22157	4% PFA
+#39	AnnotatorNotes T140	experimental_procedure
+T141	Entity 22162 22179	0.4% Triton X-100
+#40	AnnotatorNotes T141	experimental_procedure
+T142	Entity 22353 22397	abbit polyclonal anti-ACDP antibody (1:3000)
+#41	AnnotatorNotes T142	experimental_procedure
+T143	Entity 22506 22544	Alex 488 conjugated secondary antibody
+#42	AnnotatorNotes T143	experimental_procedure
+R30	participates_in Arg1:T104 Arg2:T106	
+R31	is_part_of Arg1:T126 Arg2:T127	
+T144	KeyEntity 2228 2244	ACDP gene family
+T145	Entity 2491 2509	mouse EST database
+T146	Entity 2519 2525	blastn
+T147	Entity 2530 2537	tblastn
+T148	Entity 2548 2565	Mouse EST markers
+T149	Entity 2588 2599	Acdp member
+T150	Entity 2848 2873	M13 primer (olig-dT tail)
+T151	Entity 2829 2839	EST marker
+T152	KeyEntity 2938 2947	Acdp gene
+T153	Entity 3053 3056	PCR
+#43	AnnotatorNotes T153	experimental_test
+T154	KeyEntity 3385 3390	Acdp1
+T155	KeyEntity 3512 3516	Acdp
+T156	Entity 3981 3995	Northern bolts
+#44	AnnotatorNotes T156	experimental_test
+T157	Entity 4001 4014	PCR fragments
+T158	KeyEntity 4086 4090	Acdp
+T159	KeyEntity 4356 4361	Acdp2
+T160	KeyEntity 4490 4495	Acdp3
+T161	KeyEntity 4500 4505	Acdp4
+T162	KeyEntity 4775 4786	Acdp3 and 4
+T163	Entity 4839 4846	β-actin
+T164	Entity 4964 4974	ubiquitous
+T165	KeyEntity 5457 5467	Acdp1 gene
+T166	Entity 5476 5489	chromosome 19
+T167	KeyEntity 5570 5575	Acdp2
+T168	Entity 5614 5619	Acdp1
+T169	Entity 5623 5636	chromosome 19
+T170	KeyEntity 5706 5711	Acdp3
+T171	KeyEntity 5716 5721	Acdp4
+T172	Entity 5735 5747	chromosome 1
+T173	Entity 6332 6346	human homologs
+T174	KeyEntity 6617 6647	ancient conserved domain (ACD)
+T175	Entity 6465 6478	UTR sequences
+T176	Entity 6548 6562	all Acdp genes
+T177	Entity 6707 6736	mouse and human ACDP proteins
+T178	KeyEntity 6751 6761	ACD domain
+T179	Entity 6765 6789	evolutionarily conserved
+T180	Entity 7057 7084	magnesium and cobalt efflux
+T181	Entity 7849 7856	GenBank
+T182	Entity 8262 8274	conservation
+T183	KeyEntity 8278 8288	ACD domain
+T184	Entity 8309 8314	Amip3
+T185	Entity 8333 8369	Saccharomyces cerevisiae (NP_014581)
+T186	Entity 8371 8375	CanG
+T187	Entity 8394 8421	Candida glabrata (AAF33142)
+R32	is_part_of Arg1:T184 Arg2:T185	
+R33	is_part_of Arg1:T186 Arg2:T187	
+T188	Entity 8423 8438	NeuC (EAA31204)
+T189	Entity 8470 8487	Neurospora crassa
+R34	is_part_of Arg1:T188 Arg2:T189	
+T190	Entity 8489 8493	DroM
+T191	Entity 8517 8532	D. melanogaster
+R35	is_part_of Arg1:T190 Arg2:T191	
+T192	Entity 8583 8624	BDGP (Berkeley Drosophila Genome Project)
+T193	Entity 8626 8630	AnoG
+T194	Entity 8661 8694	anopheles gambiae str. (EAA01004)
+R36	is_part_of Arg1:T193 Arg2:T194	
+T195	Entity 8696 8711	CaeE (AAK77203)
+T196	Entity 8747 8768	Caenohabditis elegans
+R37	is_part_of Arg1:T195 Arg2:T196	
+T197	Entity 8770 8774	CorC
+T198	Entity 8786 8830	bacteria magnesium and cobalt efflux protein
+T199	Entity 8840 8861	Shewanella oneidensis
+R38	is_part_of Arg1:T197 Arg2:T199	
+T200	Entity 8863 8867	XyFD
+T201	Entity 8903 8941	Xylella fastidiosa Dixon (ZP_00038107)
+R39	is_part_of Arg1:T200 Arg2:T201	
+T202	Entity 8954 8971	Phylogenetic tree
+T203	KeyEntity 9024 9034	ACD domain
+T204	KeyEntity 9264 9276	Acdp members
+T205	Entity 9384 9397	bacteria CorC
+T206	Entity 9402 9422	yeast Amip3 proteins
+T207	Entity 9424 9435	CBS domains
+T208	Entity 9811 9879	cNMP-binding domain (cyclic nucleotide-monophosphate-binding domain)
+T209	Entity 9897 9909	Acdp members
+R40	is_part_of Arg1:T208 Arg2:T209	
+R41	is_part_of Arg1:T73 Arg2:T204	
+R42	is_part_of Arg1:T74 Arg2:T73	
+R43	is_part_of Arg1:T75 Arg2:T73	
+T210	Entity 9927 9948	transmembrane domains
+T211	Entity 9956 9969	Acdp4 protein
+T212	Entity 10015 10028	TMHMM program
+T213	Entity 9971 9992	Transmembrane domains
+T214	Entity 10077 10101	inside /outside/TM helix
+T215	Entity 10367 10386	Alanine-rich region
+T216	Entity 10408 10427	Leucine-rich region
+T217	Entity 10498 10517	Proline-rich region
+T218	Entity 10588 10607	two amidation sites
+T219	KeyEntity 10640 10645	Acdp2
+T220	Entity 10652 10671	glycine-rich region
+R44	is_part_of Arg1:T220 Arg2:T219	
+T221	KeyEntity 10707 10712	Acdp3
+T222	Entity 10731 10750	alanine-rich region
+R45	is_part_of Arg1:T222 Arg2:T221	
+T223	Entity 10771 10790	leucine-rich region
+R46	is_part_of Arg1:T223 Arg2:T221	
+T224	KeyEntity 10802 10807	Acdp4
+T225	Entity 10819 10841	leucine zipper pattern
+R47	is_part_of Arg1:T225 Arg2:T224	
+T226	Entity 11089 11108	ACD domain of Acdp1
+T227	Entity 11172 11185	Sigma Genosys
+T228	Entity 11417 11444	mouse brain tissue extracts
+T229	Entity 11492 11510	C-terminal peptide
+T230	KeyEntity 11533 11538	Acdp1
+T231	Entity 11575 11593	N-terminal peptide
+T232	KeyEntity 11605 11610	Acdp4
+T233	KeyEntity 11626 11631	Acdp1
+T234	Entity 11891 11907	Acdp1 C-terminus
+T235	Entity 11933 11939	HEK293
+T236	Entity 11941 11944	3T3
+T237	Entity 11949 11953	PC12
+T238	Entity 12135 12154	HEK293 cell lysates
+T239	Entity 12175 12178	3T3
+T240	Entity 12183 12187	PC12
+T241	KeyEntity 12233 12238	Acdp1
+T242	Entity 12302 12308	HEK293
+T243	KeyEntity 12427 12432	Acdp1
+T244	KeyEntity 12468 12474	Acdp-1
+T245	KeyEntity 10349 10354	Acdp1
+T246	Entity 10994 10999	Acdp1
+R48	interacts_with Arg1:T230 Arg2:T229	
+R49	interacts_with Arg1:T232 Arg2:T231	
+T247	KeyEntity 12656 12661	Acdp1
+T248	Entity 12852 12877	mouse cortical astrocytes
+T249	Entity 12889 12903	Immunostaining
+#45	AnnotatorNotes T249	experimental_test
+T250	Entity 12918 12952	Acdp1 C-terminus specific antibody
+T251	Entity 12954 12970	Confocal imaging
+#46	AnnotatorNotes T251	experimental_test
+T252	KeyEntity 12985 12990	Acdp1
+T253	Entity 13025 13040	plasma membrane
+T254	Entity 13144 13166	Acdp1-immunoreactivity
+T255	KeyEntity 13254 13267	Acdp proteins
+T256	KeyEntity 13312 13325	Acdp proteins
+T257	Entity 13550 13564	Acdp1 (115 kD)
+T258	Entity 13566 13580	Acdp2 (100 kD)
+T259	Entity 13582 13595	Acdp4 (90 kD)
+T260	Entity 13600 13613	Acdp3 (80 kD)
+T261	Entity 13860 13866	Acdp-1
+T262	Entity 13757 13762	Acdp1
+T263	Entity 14093 14112	anti-Acdp1 antibody
+T264	Entity 14274 14290	ACDP gene family
+T265	Entity 14354 14358	ACDP
+T266	KeyEntity 14711 14720	Acdp gene
+T267	Entity 14863 14876	Acdp proteins
+T268	Entity 14896 14909	AA homologies
+T269	Entity 14917 14938	bacteria CorC protein
+R50	other_relation Arg1:T267 Arg2:T269	
+#47	AnnotatorNotes R50	homolog
+T270	Entity 14943 14962	yeast Amip3 protein
+R51	other_relation Arg1:T267 Arg2:T270	
+#48	AnnotatorNotes R51	homolog
+T271	Entity 15182 15194	CorC protein
+T272	Entity 15260 15265	Amip3
+T273	Entity 15294 15309	copper toxicity
+R52	is_part_of Arg1:T272 Arg2:T273	
+T274	KeyEntity 15311 15324	Acdp proteins
+T275	Entity 15368 15381	bacteria CorC
+T276	Entity 15386 15406	yeast Amip3 proteins
+T277	Entity 15420 15431	CBS domains
+T278	Entity 15433 15445	DUF21 domain
+T279	Entity 15450 15471	transmembrane domains
+T280	Entity 15488 15507	cNMP-binding domain
+T281	Entity 15525 15538	Acdp proteins
+T282	Entity 15644 15668	Acdp1 C-terminal peptide
+T283	KeyEntity 15689 15694	Acdp1
+T284	Entity 15729 15744	plasma membrane
+T285	Entity 15748 15767	hippocampus neurons
+R53	participates_in Arg1:T283 Arg2:T284	
+R54	participates_in Arg1:T284 Arg2:T285	
+T286	Entity 15807 15820	ACDP proteins
+T287	Entity 15856 15863	nucleus
+R55	participates_in Arg1:T286 Arg2:T287	
+T288	Entity 18046 18078	human ACDP 5' cDNA coding region
+T289	Entity 18105 18125	mouse reverse primer
+T290	Entity 18135 18151	mouse EST marker
+T291	Entity 18220 18255	low annealing temperature (45–50°C)
+T292	Entity 18266 18269	PCR
+#49	AnnotatorNotes T292	experimental_test
+T293	Entity 18456 18490	high annealing temperature (62°C).
+T294	Entity 18440 18443	PCR
+#50	AnnotatorNotes T294	experimental_test
+T295	Entity 18576 18602	ABI377 automatic sequencer
+T296	Entity 18855 18873	BAC DNA sequencing
+T297	Entity 20411 20428	Sequence assembly
+T298	Entity 20456 20466	Sequencher
+T299	Entity 20486 20510	Protein and DNA homology
+T300	Entity 20542 20549	tblastn
+T301	Entity 20551 20558	tblastx
+T302	Entity 20560 20566	blastp
+T303	Entity 20571 20577	blastn
+T304	Entity 20638 20645	GeneDoc
+T305	Entity 20708 20727	BCM Search Launcher
+T306	Entity 20730 20741	ProfileScan
+T307	Entity 20744 20765	sequence motif search
+T308	Entity 20768 20774	ExPASy
+T309	Entity 20780 20786	3Dpssm
+T310	Entity 20848 20865	Phylogenetic tree
+T311	Entity 20885 20893	Clustalw
+T312	Entity 20923 20985	UPGMA (Unweighted Pair Group Method using Arithmetic averages)
+T313	Entity 21489 21514	mouse cortical astrocytes
+T314	Entity 21388 21419	dissociated hippocampal neurons
+T315	Entity 22663 22686	goat serum PBS solution
+T316	Entity 22751 22789	glycerol-based anti-photobleach medium
+T317	Entity 23004 23018	cDNA sequences
+T318	Entity 23027 23036	Acdp gene

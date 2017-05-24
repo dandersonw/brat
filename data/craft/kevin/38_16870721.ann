@@ -2,4 +2,18 @@ T1	Entity 159 173	p53 regulation
 T2	Entity 204 213	p53 locus
 T3	Entity 220 244	homologous recombination
 T4	Entity 248 256	ES cells
-T5	Entity 269 280	mutant mice
+T5	Entity 385 394	p53 locus
+T6	KeyEntity 421 473	Recombinase-Mediated Cassette Exchange (RMCE) method
+T7	Entity 519 527	ES cells
+T8	KeyEntity 637 688	Somatic cells to Accelerate Phenotyping (RMCE-ASAP)
+T9	Entity 734 743	p53 locus
+T10	Entity 779 790	fibroblasts
+T11	KeyEntity 871 880	RMCE-ASAP
+T12	Entity 1015 1023	ES cells
+T13	KeyEntity 1095 1104	RMCE-ASAP
+R1	is_part_of Arg1:T2 Arg2:T4	
+T14	Entity 827 845	recessive mutation
+T15	Entity 890 936	inverted heterologous recombinase target sites
+T16	Entity 940 974	positive/negative selection marker
+T17	Entity 994 1011	germline capacity
+T18	Entity 1033 1056	power of mouse genetics

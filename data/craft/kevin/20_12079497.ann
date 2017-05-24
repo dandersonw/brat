@@ -1,0 +1,47 @@
+T1	Entity 151 189	Non-invasive autofluorescent reporters
+T2	Entity 279 310	green fluorescent protein (GFP)
+T3	Entity 345 362	Aequoria Victoria
+T4	Entity 388 404	mouse transgenic
+T5	Entity 414 431	targeting regimes
+T6	Entity 514 518	lacZ
+T7	Entity 523 543	alkaline phosphatase
+T8	Entity 717 758	enhanced green fluorescent protein (EGFP)
+T9	Entity 762 787	embryonic stem (ES) cells
+T10	Entity 792 796	mice
+T11	KeyEntity 839 885	embryonic stem (ES) cell-mediated transgenesis
+T12	KeyEntity 898 938	enhanced cyan fluorescent protein (ECFP)
+T13	KeyEntity 943 985	enhanced yellow fluorescent protein (EYFP)
+T14	KeyEntity 1022 1058	color variants of wild type (wt) GFP
+T15	KeyEntity 1080 1086	DsRed1
+T16	Entity 1098 1130	red fluorescent protein reporter
+T17	Entity 1156 1172	Discostoma coral
+T18	Entity 1202 1205	GFP
+T19	Entity 1339 1343	ECFP
+T20	Entity 1347 1373	EYFP GFP-variant reporters
+T21	KeyEntity 1422 1428	DsRed1
+T22	KeyEntity 1452 1458	DsRed1
+T23	Entity 1665 1669;1682 1687	ECFP cells
+T24	Entity 1674 1687	EYFP ES cells
+T25	Entity 1837 1858	GFP variant reporters
+T26	Entity 1945 1949	ECFP
+T27	Entity 1954 1989	EYFP-expressing transgenic ES cells
+T28	Entity 2119 2127	chimeras
+T29	Entity 2131 2147	transplantations
+T30	Entity 2064 2117	ombinatorial, double-tagged recombination experiments
+R1	is_part_of Arg1:T2 Arg2:T3	
+T31	Entity 484 504	gene-based reporters
+R2	is_subclass_of Arg1:T6 Arg2:T31	
+R3	is_subclass_of Arg1:T7 Arg2:T31	
+T32	Entity 590 611	chromogenic substrate
+R4	other_relation Arg1:T32 Arg2:T31	
+#1	AnnotatorNotes R4	requires
+R5	is_part_of Arg1:T8 Arg2:T9	
+R6	is_subclass_of Arg1:T12 Arg2:T14	
+R7	is_subclass_of Arg1:T13 Arg2:T14	
+R8	is_subclass_of Arg1:T15 Arg2:T16	
+T33	Entity 1249 1257	ES cells
+T34	Entity 1555 1585;1625 1633	Balanced (diploid <-> diploid) chimeras
+T35	Entity 1590 1633	polarized (tetraploid <-> diploid) chimeras
+T36	Entity 1882 1923	non-invasive multi-spectral visualization
+R9	other_relation Arg1:T36 Arg2:T25	
+#2	AnnotatorNotes R9	attribute

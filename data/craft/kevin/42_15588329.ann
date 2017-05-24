@@ -1,6 +1,6 @@
-T1	KeyEntity 175 179	JNCL
+T1	Entity 175 179	JNCL
 T2	Entity 185 249	recessively inherited, childhood-onset neurodegenerative disease
-T3	Entity 282 295	CLN3 mutation
+T3	KeyEntity 282 295	CLN3 mutation
 T4	Entity 319 336	battenin activity
 T5	Entity 360 386	mitochondrial ATP synthase
 T6	Entity 388 397	subunit c
@@ -9,3 +9,32 @@ T8	KeyEntity 458 482	Cln3Δex7/8 knock-in mice
 T9	KeyEntity 511 524	JNCL mutation
 T10	Entity 534 549	mutant battenin
 T11	Entity 562 581	JNCL-like pathology
+R1	other_relation Arg1:T8 Arg2:T10	
+#1	AnnotatorNotes R1	express
+T12	Entity 1461 1469	battenin
+T13	Entity 1486 1520	intracellular membrane trafficking
+T14	Entity 1525 1547	mitochondrial function
+T15	Entity 1615 1635	JNCL disease process
+T16	Entity 1664 1681	neuronal survival
+T17	Entity 637 650	JNCL mutation
+T18	Entity 654 668	neuronal cells
+T19	KeyEntity 678 705	P4 knock-in mouse cerebella
+T20	KeyEntity 746 822	CbCln3 wild-type, heterozygous, and homozygous neuronal precursor cell lines
+T21	Entity 857 862	MAP-2
+T22	Entity 867 880	NeuN-positive
+T23	Entity 882 899	neuron-like cells
+T24	KeyEntity 901 940	Homozygous CbCln3Δex7/8 precursor cells
+T25	Entity 963 978	mutant battenin
+T26	Entity 1020 1036	ATPase subunit c
+T27	Entity 1102 1123	cathepsin D transport
+T28	Entity 1208 1222	lysosomal size
+T29	Entity 1257 1268	endocytosis
+T30	Entity 1294 1306	mitochondria
+T31	Entity 1333 1352;1357 1366	cellular ATP levels decreased
+R2	is_part_of Arg1:T17 Arg2:T18	
+R3	other_relation Arg1:T12 Arg2:T13	
+#2	AnnotatorNotes R3	required
+R4	other_relation Arg1:T12 Arg2:T14	
+#3	AnnotatorNotes R4	required
+R5	participates_in Arg1:T15 Arg2:T16	
+T32	Entity 1391 1407	oxidative stress

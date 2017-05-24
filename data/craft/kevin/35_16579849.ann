@@ -4,3 +4,22 @@ T3	KeyEntity 258 262	MSUD
 T4	Entity 312 339	degree of enzyme deficiency
 R1	participates_in Arg1:T2 Arg2:T1	
 R2	regulates Arg1:T4 Arg2:T3	
+T5	Entity 568 572	MSUD
+T6	Entity 582 596	gene targeting
+T7	Entity 601 633	embryonic stem cell technologies
+T8	Entity 682 739	E2 subunit gene of branched-chain keto acid dehydrogenase
+T9	Entity 753 765	murine model
+T10	Entity 769 786	intermediate MSUD
+T11	Entity 831 844	human E2 cDNA
+T12	Entity 996 1011	E2 subunit gene
+T13	Entity 1015 1053	branched-chain keto acid dehydrogenase
+T14	Entity 1105 1109	MSUD
+T15	Entity 1147 1194	branched-chain keto acid dehydrogenase activity
+T16	Entity 1196 1215	E2 immunoreactivity
+T17	Entity 1258 1284	branched-chain amino acids
+T18	Entity 1374 1427	human E2 cDNA in the liver of the E2 knockout animals
+T19	Entity 1461 1465	MSUD
+T20	Entity 1467 1514	Branched-chain keto acid dehydrogenase activity
+T21	Entity 1710 1726	MSUD mouse model
+T22	Entity 1878 1882	MSUD
+T23	Entity 1964 1968	MSUD

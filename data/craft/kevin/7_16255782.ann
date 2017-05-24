@@ -19,3 +19,49 @@ T15	Entity 824 845	transcription factors
 R4	regulates Arg1:T15 Arg2:T14	
 R5	regulates Arg1:T15 Arg2:T7	
 #1	AnnotatorNotes T15	Not sure
+R6	is_part_of Arg1:T4 Arg2:T10	
+T16	Entity 1034 1081	putative transcription factor recognition sites
+T17	Entity 1103 1120	antioxidant genes
+R7	is_part_of Arg1:T16 Arg2:T17	
+T18	Entity 1148 1176	silico DNA sequence analysis
+T19	Entity 1219 1240	transcription factors
+T20	Entity 1274 1306	antioxidant and DNA repair genes
+T21	Entity 1348 1364	quantitative PCR
+T22	Entity 1368 1372	NBEC
+T23	Entity 1393 1407	BC individuals
+T24	Entity 1379 1385;1396 1407	non-BC individuals
+T25	KeyEntity 1419 1445	CEBPG transcription factor
+T26	Entity 1504 1535	antioxidant or DNA repair genes
+T27	Entity 1539 1557	non-BC individuals
+T28	Entity 1569 1583	BC individuals
+T29	Entity 1588 1602	BC individuals
+T30	KeyEntity 1624 1629	CEBPG
+T31	KeyEntity 1720 1725	XRCC1
+T32	KeyEntity 1727 1732	ERCC5
+T33	KeyEntity 1734 1739	GSTP1
+T34	KeyEntity 1745 1749	SOD1
+T35	KeyEntity 1797 1801	GPX1
+T36	KeyEntity 1912 1916	E2F1
+T37	Entity 1818 1838	transcription factor
+R8	is_subclass_of Arg1:T36 Arg2:T37	
+T38	KeyEntity 1918 1922	E2F1
+T39	KeyEntity 1943 1948	GSTP1
+T40	KeyEntity 1994 1999	CEBPG
+T41	KeyEntity 2137 2142	CEBPG
+T42	Entity 2150 2170	transcription factor
+R9	other_relation Arg1:T42 Arg2:T41	
+#2	AnnotatorNotes R9	attribute
+T43	Entity 2208 2221;2225 2261	transcription key antioxidant and DNA repair genes
+R10	regulates Arg1:T41 Arg2:T43	
+T44	Entity 2357 2359	BC
+T45	KeyEntity 2441 2446	CEBPG
+R11	other_relation Arg1:T25 Arg2:T26	
+#3	AnnotatorNotes R11	associated
+R12	is_part_of Arg1:T26 Arg2:T27	
+T46	Entity 1678 1696	non-BC individuals
+T47	Entity 2405 2416	antioxidant
+T48	Entity 2421 2437	DNA repair genes
+R13	regulates Arg1:T45 Arg2:T48	
+#4	AnnotatorNotes R13	sub-optimal
+R14	regulates Arg1:T45 Arg2:T47	
+#5	AnnotatorNotes R14	sub-optimal

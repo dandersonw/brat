@@ -1,15 +1,9 @@
 T1	Entity 98 110	pygopus gene
-T2	Entity 163 172	Armadillo
-T3	Entity 174 183	β-catenin
-T4	Entity 185 213	transcription factor complex
+T3	Entity 163 205	Armadillo (β-catenin) transcription factor
 T5	KeyEntity 217 240	canonical Wnt signaling
 T6	Entity 324 342	kidney development
 T7	KeyEntity 405 410	Pygo1
 T8	KeyEntity 415 420	Pygo2
-R1	other_relation Arg1:T3 Arg2:T2	
-#1	AnnotatorNotes R1	equivalent
-R2	other_relation Arg1:T3 Arg2:T4	
-#2	AnnotatorNotes R2	equivalent
 R3	participates_in Arg1:T3 Arg2:T5	
 T9	Entity 497 516	critical PHD domain
 T10	Entity 666 679	lens agenesis

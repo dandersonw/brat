@@ -1,0 +1,36 @@
+T1	Entity 103 150	Bone morphogenetic protein (BMP) family members
+T2	KeyEntity 162 166	BMP2
+T3	KeyEntity 168 172	BMP4
+T4	KeyEntity 178 182	BMP7
+T5	Entity 227 231	BMPs
+T6	Entity 256 277	early limb patterning
+T7	Entity 307 321	skeletogenesis
+T8	Entity 369 394	early embryonic lethality
+T9	KeyEntity 413 417	Bmp2
+T10	KeyEntity 422 426	Bmp4
+T11	Entity 465 478	BMP molecules
+T12	Entity 542 555	BMP molecules
+T13	Entity 583 599	limb development
+T14	KeyEntity 751 755	Bmp2
+T15	KeyEntity 760 764	Bmp4
+T16	Entity 802 821	limb bud mesenchyme
+T17	Entity 882 886	BMPs
+T18	Entity 934 953	Sonic Hedghog (SHH)
+T19	Entity 957 992	patterning the anteroposterior axis
+T20	Entity 1017 1040	interdigital mesenchyme
+T21	Entity 1055 1069	digit identity
+T22	Entity 1108 1121	BMP signaling
+T23	Entity 1142 1165	onset of chondrogenesis
+T24	Entity 1182 1208	chondrogenic condensations
+T25	KeyEntity 1249 1253	BMP2
+T26	KeyEntity 1258 1262	BMP4
+T27	Entity 1319 1347	chondrogenic differentiation
+T28	KeyEntity 1389 1393	BMP2
+T29	KeyEntity 1398 1402	BMP7
+T30	KeyEntity 1406 1419	BMP2 and BMP4
+T31	KeyEntity 1464 1468	BMP2
+T32	KeyEntity 1473 1477	BMP4
+T33	Entity 1512 1524	osteogenesis
+R1	is_subclass_of Arg1:T2 Arg2:T1	
+R2	is_subclass_of Arg1:T3 Arg2:T1	
+R3	is_subclass_of Arg1:T4 Arg2:T1	

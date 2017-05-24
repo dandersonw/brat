@@ -1,0 +1,43 @@
+T1	KeyEntity 107 154	Metal-responsive transcription factor 1 (MTF-1)
+T2	Entity 246 262	heavy metal load
+T3	Entity 279 309	metal response elements (MREs)
+T4	Entity 183 195	target genes
+R1	regulates Arg1:T1 Arg2:T4	
+T5	Entity 398 425	embryonic liver development
+T6	KeyEntity 457 461	Mtf1
+T7	KeyEntity 524 554	Mtf1 conditional knockout mice
+T8	Entity 559 578	control littermates
+T9	Entity 618 645	liver-specific transcriptio
+T10	Entity 692 713	metallothionein genes
+T11	KeyEntity 727 761	MTF-1 target genes with MRE motifs
+T12	KeyEntity 794 799	MTF-1
+T13	KeyEntity 840 855	selenoprotein W
+T14	KeyEntity 857 878	muscle 1 gene (Sepw1)
+T15	Entity 894 946	glutathione-binding and putative antioxidant protein
+T16	KeyEntity 969 974	MTF-1
+T17	KeyEntity 1022 1027	MTF-1
+T18	Entity 1041 1067	cadmium-induced expression
+T19	KeyEntity 1071 1112	N-myc downstream regulated gene 1 (Ndrg1)
+T20	KeyEntity 1198 1203	MTF-1
+T21	Entity 1228 1297	cadmium response of cysteine- and glycine-rich protein 1 gene (Csrp1)
+T22	KeyEntity 1362 1367	MTF-1
+T23	Entity 1402 1410	Slc39a10
+T24	Entity 1416 1439	tative zinc transporter
+R2	is_subclass_of Arg1:T23 Arg2:T24	
+T25	KeyEntity 1469 1474	MTF-1
+T26	Entity 1476 1483	cadmium
+T27	Entity 1570 1581	glutathione
+T28	Entity 1585 1612	cadmium-binding antioxidant
+T29	Entity 1750 1766	metallothioneins
+T30	KeyEntity 1823 1838	selenoprotein W
+T31	KeyEntity 1714 1719	MTF-1
+R3	participates_in Arg1:T12 Arg2:T13	
+R4	regulates Arg1:T17 Arg2:T18	
+R5	is_part_of Arg1:T19 Arg2:T18	
+R6	interacts_with Arg1:T20 Arg2:T21	
+T32	Entity 1322 1347	cytoskeletal organization
+R7	regulates Arg1:T22 Arg2:T23	
+R8	is_subclass_of Arg1:T27 Arg2:T28	
+T33	Entity 1675 1704	cellular anti-cadmium defense
+T34	KeyEntity 1782 1793	glutathione
+R9	regulates Arg1:T31 Arg2:T29	

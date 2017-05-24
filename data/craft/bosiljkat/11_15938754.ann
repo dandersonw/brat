@@ -1,0 +1,77 @@
+T1	Entity 176 192	gustatory system
+T2	Entity 240 262	potentially toxic food
+R1	interacts_with Arg1:T2 Arg2:T1	
+T3	Entity 282 296	bitter stimuli
+T4	Entity 306 330	specific taste receptors
+R2	regulates Arg1:T3 Arg2:T4	
+T5	Entity 144 168	bitter-tasting compounds
+R3	regulates Arg1:T1 Arg2:T5	
+T6	Entity 336 340	T2Rs
+T7	Entity 376 396	taste receptor cells
+R4	is_subclass_of Arg1:T6 Arg2:T4	
+R5	regulates Arg1:T4 Arg2:T7	
+T8	Entity 459 518	receptor-dependent and -independent transduction mechanisms
+T9	Entity 535 549	bitter stimuli
+R6	participates_in Arg1:T9 Arg2:T8	
+T10	Entity 561 582	quinine hydrochloride
+T11	Entity 594 613	denatonium benzoate
+R7	is_part_of Arg1:T10 Arg2:T9	
+R8	is_part_of Arg1:T11 Arg2:T9	
+T12	Entity 638 675	brief-access behavioral taste testing
+#1	AnnotatorNotes T12	method
+T13	Entity 679 723	BXD/Ty recombinant inbred (RI) mouse strains
+T14	Entity 741 765	quantitative trait locus
+T15	Entity 767 770	QTL
+R9	other_relation Arg1:T15 Arg2:T14	
+T16	Entity 584 588	QHCl
+R10	other_relation Arg1:T16 Arg2:T10	
+T17	Entity 615 617	DB
+R11	other_relation Arg1:T17 Arg2:T11	
+T18	Entity 797 801	QHCl
+R12	is_part_of Arg1:T14 Arg2:T13	
+R13	other_relation Arg1:T12 Arg2:T13	
+T19	Entity 849 861	chromosome 6
+T20	Entity 894 907	T2Rs (Tas2rs)
+R14	is_part_of Arg1:T20 Arg2:T19	
+R15	is_part_of Arg1:T14 Arg2:T19	
+T21	Entity 776 793	taste sensitivity
+R16	participates_in Arg1:T14 Arg2:T21	
+T22	Entity 909 915	Tas2rs
+T23	Entity 1520 1539	taste-salient assay
+#2	AnnotatorNotes T23	method
+T24	Entity 1557 1560	QTL
+T25	Entity 1565 1578	quinine taste
+T26	Entity 1596 1630	T2R-dependent transduction cascade
+T27	Entity 951 996	coding region single nucleotide polymorphisms
+T28	Entity 1020 1046	BXD/Ty RI parental strains
+T29	Entity 1048 1056	C57BL/6J
+T30	Entity 1081 1087	DBA/2J
+R17	is_subclass_of Arg1:T29 Arg2:T28	
+R18	is_subclass_of Arg1:T30 Arg2:T28	
+R19	is_part_of Arg1:T27 Arg2:T22	
+T31	Entity 1160 1179	Individual RI lines
+T32	Entity 1207 1215	C57BL/6J
+T33	Entity 1219 1239	DBA/2J Tas2r alleles
+R20	is_part_of Arg1:T32 Arg2:T31	
+R21	is_part_of Arg1:T33 Arg2:T31	
+T34	Entity 1324 1328	QHCl
+T35	Entity 1279 1301	C57BL/6J Tas2r alleles
+T36	Entity 1355 1369	DBA/2J alleles
+T37	Entity 1388 1401	Tas2r cluster
+T38	Entity 1420 1429	haplotype
+R22	is_part_of Arg1:T37 Arg2:T38	
+T39	Entity 1259 1267	RI lines
+R23	is_part_of Arg1:T35 Arg2:T39	
+R24	is_part_of Arg1:T36 Arg2:T39	
+T40	Entity 1451 1472	quinine taster status
+R25	participates_in Arg1:T38 Arg2:T40	
+T41	Entity 1685 1710	quinine taste sensitivity
+T42	Entity 1786 1799	Tas2r cluster
+T43	Entity 1867 1890	bitter taste phenotypes
+T44	Entity 1905 1918	T2R receptors
+R26	other_relation Arg1:T23 Arg2:T24	
+R27	participates_in Arg1:T26 Arg2:T41	
+T45	Entity 1828 1842	inbred strains
+R28	regulates Arg1:T45 Arg2:T43	
+T46	Entity 1745 1758	polymorphisms
+R29	is_part_of Arg1:T46 Arg2:T42	

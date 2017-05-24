@@ -1,3 +1,23 @@
 T1	Entity 123 157	Leber's congenital amaurosis (LCA)
 T3	Entity 352 371	photoreceptor cells
 T4	KeyEntity 500 503	Crx
+T2	Entity 243 263;271 284	abnormal development neural retina
+T5	KeyEntity 517 542	Crx mutant strain of mice
+T6	Entity 579 582	LCA
+T7	Entity 616 630	Crx's function
+T8	Entity 682 699	developing retina
+T9	Entity 703 718	Crx mutant mice
+T10	Entity 734 761	Outer segment morphogenesis
+T11	Entity 793 809	elongation stage
+T12	Entity 891 912	Crx-/- photoreceptors
+T13	Entity 968 989	outer plexiform layer
+T14	Entity 1035 1056	synaptogenesis defect
+T15	Entity 1080 1083	LCA
+T16	Entity 1243 1246	LCA
+R1	is_part_of Arg1:T8 Arg2:T9	
+T17	Entity 464 498	photoreceptor transcription factor
+R2	is_subclass_of Arg1:T4 Arg2:T17	
+T18	Entity 935 960	abnormal synaptic endings
+R3	is_part_of Arg1:T18 Arg2:T13	
+R4	other_relation Arg1:T18 Arg2:T12	
+#1	AnnotatorNotes R4	attribute

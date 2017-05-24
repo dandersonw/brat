@@ -11,5 +11,26 @@ T10	Entity 594 638	orphan nuclear receptor transcription factor
 T11	KeyEntity 650 654	ESCS
 T12	Entity 666 676;703 711	microarray analysis
 T13	Entity 681 711	in situ hybridization analysis
-T14	Entity 735 745	rd7 retina
+T14	KeyEntity 735 745	rd7 retina
 T15	Entity 786 810	S-opsin–expressing cells
+R1	is_part_of Arg1:T8 Arg2:T9	
+T16	KeyEntity 893 925	photoreceptors in the rd7 retina
+T17	Entity 991 1019	rod- and cone-specific genes
+R2	other_relation Arg1:T17 Arg2:T16	
+#1	AnnotatorNotes R2	expresses
+T18	Entity 1034 1055	in situ hybridization
+T19	Entity 1107 1124	rd7 mutant retina
+T20	Entity 1128 1138	microarray
+T21	Entity 1284 1311	glucose/glycogen metabolism
+T22	Entity 1333 1360	abnormal electroretinograms
+T23	Entity 1362 1387	slow retinal degeneration
+T24	Entity 1393 1414	retinal dysmorphology
+T25	KeyEntity 1423 1439	humans with ESCS
+T26	Entity 1500 1530	hybrid photoreceptor cell type
+R3	other_relation Arg1:T24 Arg2:T25	
+#2	AnnotatorNotes R3	attribute
+R4	other_relation Arg1:T23 Arg2:T25	
+#3	AnnotatorNotes R4	attribute
+R5	other_relation Arg1:T22 Arg2:T25	
+#4	AnnotatorNotes R5	attribute
+T27	Entity 1687 1701	rods and cones

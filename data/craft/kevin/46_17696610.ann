@@ -13,9 +13,9 @@ T12	Entity 571 589	spermatocyte death
 T13	Entity 593 602	pachynema
 T14	Entity 615 622	oocytes
 T15	Entity 641 652;656 676	chromosomes mutant spermatocytes
-T16	Entity 761 766	RAD51
-T17	Entity 768 771	BLM
-T18	Entity 777 780	RPA
+T16	KeyEntity 761 766	RAD51
+T17	KeyEntity 768 771	BLM
+T18	KeyEntity 777 780	RPA
 T19	Entity 819 836	chiasmata markers
 T20	Entity 837 841	MLH1
 T21	Entity 846 850	MLH3
@@ -40,3 +40,25 @@ T39	Entity 1430 1447	mammalian meiosis
 T40	Entity 1486 1507	unrepaired DNA damage
 T41	Entity 1530 1559	pachytene checkpoint response
 T42	Entity 1563 1567	mice
+T43	Entity 1757 1764	meiosis
+T44	KeyEntity 2329 2341	mouse Trip13
+T45	Entity 2396 2422	meiotic checkpoint control
+R1	participates_in Arg1:T44 Arg2:T45	
+T46	KeyEntity 2493 2499	Trip13
+T47	Entity 2531 2572	major classes of recombination in meiosis
+T48	Entity 2594 2624	repairing broken DNA molecules
+R2	participates_in Arg1:T46 Arg2:T47	
+R3	participates_in Arg1:T47 Arg2:T48	
+T49	Entity 2861 2889	detect unrepaired DNA damage
+T50	Entity 2905 2925	failed recombination
+R4	participates_in Arg1:T2 Arg2:T1	
+R5	participates_in Arg1:T3 Arg2:T1	
+R6	is_part_of Arg1:T6 Arg2:T7	
+R7	is_part_of Arg1:T7 Arg2:T8	
+R8	is_part_of Arg1:T7 Arg2:T9	
+R9	is_subclass_of Arg1:T16 Arg2:T22	
+R10	is_subclass_of Arg1:T17 Arg2:T22	
+R11	is_subclass_of Arg1:T18 Arg2:T22	
+R12	is_subclass_of Arg1:T20 Arg2:T19	
+R13	is_subclass_of Arg1:T21 Arg2:T19	
+R14	participates_in Arg1:T40 Arg2:T41	

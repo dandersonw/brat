@@ -1,0 +1,40 @@
+T1	Entity 144 177	Sterile alpha motif (SAM) domains
+T2	Entity 332 361	Polycomb group (PcG) proteins
+T3	Entity 366 398	ETS family transcription factors
+T4	Entity 479 508	SAM domain-containing protein
+T5	Entity 546 568	retinal photoreceptors
+T6	Entity 577 589	pineal gland
+T7	Entity 608 653	mouse mr-s (major retinal SAM domain protein)
+T8	Entity 665 669	mr-s
+T9	Entity 703 712	zebrafish
+T10	Entity 721 726	human
+T11	Entity 769 794	photoreceptor development
+T12	Entity 861 871	SAM domain
+T13	Entity 875 879	mr-s
+T14	Entity 943 953	Mph1/Rae28
+T15	Entity 1140 1165	photoreceptor development
+T16	Entity 1167 1171	mr-s
+T17	Entity 1316 1334	adult pineal gland
+T18	Entity 1279 1303	terminal differentiation
+T19	Entity 1353 1357	mr-s
+T20	Entity 1387 1419	cone-rod homeodomain protein Crx
+T21	Entity 1463 1475	mr-s protein
+T22	Entity 1511 1539	SAM domain-containing region
+T23	Entity 1551 1553	ph
+T24	Entity 1559 1571	mr-s protein
+T25	Entity 1610 1614	mr-s
+T26	Entity 1635 1648	HEK293T cells
+T27	Entity 1667 1684	luciferase assays
+T28	Entity 1700 1712	mr-s protein
+T29	Entity 1722 1745	GAL4 DNA-binding domain
+T30	Entity 1832 1836	mr-s
+T31	Entity 1888 1898	SAM domain
+T32	Entity 1910 1927	C-terminal region
+T33	KeyEntity 1970 1974	mr-s
+T34	Entity 2012 2034	retinal photoreceptors
+T35	Entity 2039 2051	pineal gland
+T36	KeyEntity 2127 2131	mr-s
+T37	Entity 2150 2175	transcriptional repressor
+T38	Entity 2179 2198	photoreceptor cells
+T39	Entity 2206 2218	pinealocytes
+T40	Entity 2226 2238	pineal gland

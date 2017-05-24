@@ -1,29 +1,14 @@
-T1	Entity 106 117	High growth
-T2	KeyEntity 119 121	hg
-T3	Entity 159 182	quantitative trait loci
-T4	KeyEntity 184 187	QTL
+T2	KeyEntity 106 122	High growth (hg)
+T4	KeyEntity 159 188	quantitative trait loci (QTL)
 T5	Entity 221 240	carcass composition
 T6	Entity 199 205	growth
 T7	Entity 207 216	adiposity
 T8	Entity 290 293	MMU
 T9	KeyEntity 362 365	QTL
-T10	Entity 436 444	CAST/EiJ
-T11	Entity 446 450	CAST
+T11	Entity 436 451	CAST/EiJ (CAST)
 T12	Entity 452 463	QTL alleles
-T13	Entity 476 497	mutant C57Bl/6J-hg/hg
-T14	KeyEntity 499 501	HG
-T15	Entity 506 524	wild type C57Bl/6J
-T16	KeyEntity 526 528	B6
-R1	other_relation Arg1:T16 Arg2:T15	
-#1	AnnotatorNotes R1	equivalent
-R2	other_relation Arg1:T14 Arg2:T13	
-#2	AnnotatorNotes R2	equivalent
-R3	other_relation Arg1:T2 Arg2:T1	
-#3	AnnotatorNotes R3	equivalent
-R4	other_relation Arg1:T4 Arg2:T3	
-#4	AnnotatorNotes R4	equivalent
-R5	other_relation Arg1:T11 Arg2:T10	
-#5	AnnotatorNotes R5	equivalent
+T14	KeyEntity 483 502	C57Bl/6J-hg/hg (HG)
+T16	KeyEntity 506 529	wild type C57Bl/6J (B6)
 R6	participates_in Arg1:T12 Arg2:T14	
 R7	participates_in Arg1:T12 Arg2:T16	
 T17	Entity 571 591	speed congenic panel

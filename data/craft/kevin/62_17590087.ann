@@ -1,7 +1,7 @@
 T1	KeyEntity 478 498	Itpr1 (Itpr1Δ18/Δ18)
 T2	Entity 440 459;466 474	homozygous in-frame deletion
 T3	Entity 509 547	inositol 1,4,5-triphosphate receptor 1
-T4	Entity 571 597	spontaneous Itpr1 mutation
+T4	Entity 571 597;601 605	spontaneous Itpr1 mutation mice
 T5	KeyEntity 698 703	Itpr1
 T6	KeyEntity 674 690	n-frame deletion
 T7	KeyEntity 754 770	Itpr1 expression
@@ -14,3 +14,25 @@ T13	KeyEntity 1113 1118	ITPR1
 T14	KeyEntity 1139 1144	SCA15
 T15	KeyEntity 1208 1218	ITPR1 gene
 T16	KeyEntity 1297 1302	SCA15
+T17	Entity 115 152;156 160	autosomal recessive movement disorder mice
+T18	Entity 363 392	linkage and sequence analysis
+R1	is_part_of Arg1:T2 Arg2:T1	
+R2	other_relation Arg1:T1 Arg2:T3	
+#1	AnnotatorNotes R2	expresses
+R3	interacts_with Arg1:T7 Arg2:T8	
+T19	Entity 838 871	human autosomal dominant disorder
+R4	is_subclass_of Arg1:T9 Arg2:T19	
+R5	participates_in Arg1:T9 Arg2:T10	
+R6	is_part_of Arg1:T11 Arg2:T12	
+T20	Entity 1164 1185	heterozygous deletion
+T21	Entity 1366 1392	in-frame deletion mutation
+T22	KeyEntity 1405 1410	Itpr1
+T23	KeyEntity 1627 1632	ITPR1
+T24	KeyEntity 1660 1685	spinocerebellar ataxia 15
+T25	KeyEntity 1889 1894	ITPR1
+T26	KeyEntity 1963 1968	ITPR1
+T27	KeyEntity 2033 2038	ITPR1
+T28	KeyEntity 2058 2083	spinocerebellar ataxia 15
+R7	participates_in Arg1:T27 Arg2:T28	
+T29	Entity 2087 2093	humans
+R8	participates_in Arg1:T28 Arg2:T29	

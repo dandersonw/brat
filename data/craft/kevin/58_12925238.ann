@@ -1,9 +1,30 @@
 T1	Entity 158 168	Annexin A7
-T2	Entity 174 179	Ca2+-
-T3	Entity 184 212	phospholipid-binding protein
+T2	Entity 174 212	Ca2+- and phospholipid-binding protein
 T4	Entity 286 301	membrane fusion
-T5	Entity 238 249	kDa isoform
-T6	Entity 329 340	kDa isoform
 T7	Entity 364 376	erythrocytes
 T8	Entity 443 473	Ca2+-dependent vesicle release
 T9	Entity 496 511	red blood cells
+T10	KeyEntity 615 625	annexin A7
+T11	Entity 662 674	erythrocytes
+T12	KeyEntity 680 693	anxA7-/- mice
+T13	Entity 714 748	Ca2+-mediated vesiculation process
+T14	KeyEntity 1541 1560	annexin A7 isoforms
+T15	KeyEntity 1663 1673	annexin A7
+T16	KeyEntity 1774 1784	annexin A7
+T17	Entity 895 905	annexin A7
+T18	Entity 949 967	osmotic resistance
+T19	KeyEntity 988 998	Annexin A7
+T20	KeyEntity 1222 1232	annexin A7
+R1	is_subclass_of Arg1:T1 Arg2:T2	
+R2	interacts_with Arg1:T1 Arg2:T4	
+T3	Entity 333 340	isoform
+R3	is_part_of Arg1:T3 Arg2:T7	
+R4	regulates Arg1:T3 Arg2:T8	
+T5	Entity 1022 1031	platelets
+T6	Entity 1236 1261	membrane fusion processes
+T21	Entity 1275 1290	red blood cells
+T22	Entity 1357 1378	membrane cytoskeleton
+T23	Entity 1380 1395	Red blood cells
+T24	KeyEntity 1452 1462	annexin A7
+T25	Entity 1564 1579	red blood cells
+T26	Entity 1788 1813	membrane fusion processes

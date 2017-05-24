@@ -1,10 +1,8 @@
-T1	KeyEntity 229 251	bronchogenic carcinoma
-T2	Entity 253 255	BC
+T2	KeyEntity 229 256	bronchogenic carcinoma (BC)
 T3	Entity 360 382	genetically determined
 T4	Entity 416 433	antioxidant genes
 T5	Entity 444 464	transcript abundance
-T6	Entity 513 517	NBEC
-T7	Entity 478 511	normal bronchial epithelial cells
+T7	Entity 478 518	normal bronchial epithelial cells (NBEC)
 T8	Entity 604 608	NBEC
 T9	Entity 618 645	transcript abundance values
 T10	Entity 702 719	antioxidant genes
@@ -13,12 +11,8 @@ T12	Entity 775 791	DNA repair genes
 T13	Entity 796 808	co-regulated
 T14	Entity 824 845	transcription factors
 T15	Entity 855 881	inter-individual variation
-R1	other_relation Arg1:T2 Arg2:T1	
-#1	AnnotatorNotes R1	equivalent
 R2	is_part_of Arg1:T3 Arg2:T2	
 R3	interacts_with Arg1:T4 Arg2:T7	
-R4	other_relation Arg1:T6 Arg2:T7	
-#2	AnnotatorNotes R4	equivalent
 R5	is_part_of Arg1:T9 Arg2:T8	
 R6	participates_in Arg1:T10 Arg2:T8	
 R7	regulates Arg1:T14 Arg2:T11	
@@ -34,7 +28,7 @@ T23	Entity 1368 1372	NBEC
 R9	is_part_of Arg1:T16 Arg2:T17	
 R10	other_relation Arg1:T22 Arg2:T21	
 #3	AnnotatorNotes R10	experimental_test
-R11	regulates Arg1:T22 Arg2:T20	
+R11	other_relation Arg1:T22 Arg2:T20	
 #4	AnnotatorNotes R11	experimental_test
 T24	Entity 1419 1445	CEBPG transcription factor
 T25	Entity 1504 1515	antioxidant
