@@ -9,7 +9,6 @@ import ai2_common
 import numpy as np
 import argparse
 import itertools
-import diff_and_mark
 import os.path
 import re
 
@@ -77,7 +76,7 @@ class Agreement:
 
     def _get_entity_spans(self, doc):
         return list(itertools.chain.from_iterable(
-            [e.spans for e in doc.get_entities() if self._entity_is_included(e)]))
+            [e.spans for e in doc.entities if self._entity_is_included(e)]))
 
     def _entity_f1(self, gold, notGold):
         precision = self._entity_precision(gold, notGold)
@@ -98,32 +97,27 @@ class Agreement:
         return stats.hmean([precision, recall])
 
     def _entity_precision(self, gold, notGold):
-        entities = [e for e in notGold.get_entities() if self._entity_is_included(e)]
+        entities = [e for e in notGold.entities if self._entity_is_included(e)]
         found = [e for e in entities if self._find_matching_entities(gold, e)]
         return (len(found), len(entities))
 
     def _relation_precision(self, gold, not_gold):
-        relations = list(self._filter_relations(not_gold.get_relations()))
-        gold_id_entity = self._entity_id_map(gold)
-        not_gold_id_entity = self._entity_id_map(not_gold)
+        relations = list(self._filter_relations(not_gold.relations))
         if self.restricted_relation_scoring:
-            relations = [r for r in relations if
-                         self._entity_matches_exist(gold, r, not_gold_id_entity)]
+            relations = [r for r in relations if self._entity_matches_exist(gold, r)]
 
-        found = [r for r in relations if
-                 self._find_matching_relations(gold, r, gold_id_entity, not_gold_id_entity)]
+        found = [r for r in relations if self._find_matching_relations(gold, r)]
         return (len(found), len(relations))
 
-    def _entity_matches_exist(self, gold, relation, id_entity_map):
-        return (self._find_matching_entities(gold, id_entity_map[relation.arg1])
-                and self._find_matching_entities(gold, id_entity_map[relation.arg2]))
+    def _entity_matches_exist(self, gold, relation):
+        return (self._find_matching_entities(gold, relation.arg1)
+                and self._find_matching_entities(gold, relation.arg2))
 
     def _find_matching_entities(self, gold, entity):
-        return [e for e in gold.get_entities() if self._entities_match(e, entity)]
+        return [e for e in gold.entities if self._entities_match(e, entity)]
 
-    def _find_matching_relations(self, gold, relation, gold_id_entity, not_gold_id_entity):
-        return [r for r in gold.get_relations() if
-                self._relations_match(r, relation, gold_id_entity, not_gold_id_entity)]
+    def _find_matching_relations(self, gold, relation):
+        return [r for r in gold.relations if self._relations_match(r, relation)]
 
     def _entity_is_included(self, e):
         return ((self.filter_entity_types is None or e.type in self.filter_entity_types)
@@ -137,26 +131,23 @@ class Agreement:
 
     def _entities_match(self, a, b):
         return (not self.strict_entity_type or a.type == b.type) \
-            and (not self.strict_entity_offset and ai2_common.any_overlapping_spans(a, b) or a.same_span(b))
+            and (not self.strict_entity_offset and a.overlaps(b) or a.same_span(b))
 
-    def _relations_match(self, a, b, a_id_entity, b_id_entity):
-        return (self._entities_match(a_id_entity[a.arg1], b_id_entity[b.arg1])
-                and self._entities_match(a_id_entity[a.arg2], b_id_entity[b.arg2])
+    def _relations_match(self, a, b):
+        return (self._entities_match(a.arg1, b.arg1)
+                and self._entities_match(a.arg2, b.arg2)
                 and (not self.strict_relation_type or a.type == b.type))
 
     def annotations_grouped_by_document(self):
         result = defaultdict(list)
         remove_random_prefix = re.compile(r"^[0-9]+_([0-9]+)$")
         for doc in self.annotations:
-            name = os.path.basename(doc.get_document())
+            name = os.path.basename(doc.brat_annotation.get_document())
             match = remove_random_prefix.match(name)
             if match is not None:
                 name = match.group(1)
             result[name].append(doc)
         return result.items()
-
-    def _entity_id_map(self, text_annotation):
-        return {e.id: e for e in text_annotation.get_entities()}
 
 
 def spans_to_biluo(spans, total_len):
@@ -196,9 +187,8 @@ def fleiss_kappa(m):
     return (observed_agreement - expected_agreement) / (1 - expected_agreement)
 
 
-def calculate_agreement(files, relaxed, consider_discontinuous, filter_entity_types, filter_relation_types):
-    annotations = map(lambda f: annotation.TextAnnotations(f), files)
-    agreement = Agreement(annotations)
+def calculate_agreement(docs, relaxed, consider_discontinuous, filter_entity_types, filter_relation_types):
+    agreement = Agreement(docs)
     agreement.filter_entity_types = filter_entity_types
     agreement.filter_relation_types = filter_relation_types
     agreement.ignore_discontinuous = not consider_discontinuous
@@ -246,13 +236,9 @@ def main(argv=None):
         argv = sys.argv
     args = argparser().parse_args(argv[1:])
 
-    files = []
-    errors = []
-    for path in args.paths:
-        diff_and_mark.add_files(files, path, errors)
-    print "{} errors encountered in reading files".format(len(errors))
+    docs = ai2_common.get_docs(*args.paths)
 
-    calculate_agreement(files,
+    calculate_agreement(docs,
                         args.relaxed,
                         args.considerDiscontinuous,
                         args.entityTypes,
