@@ -8,7 +8,6 @@ import itertools
 import glob
 import re
 from sys import path as sys_path
-from pathos.multiprocessing import Pool
 
 # this seems to be necessary for annotations to find its config
 sys_path.append(os.path.join(os.path.dirname(__file__), '..'))
@@ -26,13 +25,17 @@ class EnhancedAnnotatedDoc:
     def __init__(self, text_annotation):
         self.brat_annotation = text_annotation
         first_shot = NLP(text_annotation.get_document_text())
+        first_shot_len = len(first_shot)
         required_boundaries = self._get_entity_boundaries_for_tokenization()
         self.spacy_doc = self._impose_token_boundaries(first_shot, required_boundaries)
+        assert len(self.spacy_doc) >= first_shot_len
         self.entities = [Entity(e, self) for e in text_annotation.get_entities()]
         self.relations = [Relation(r, self) for r in text_annotation.get_relations()]
+        self.document_id = os.path.basename(text_annotation.get_document())
+        self.annotator_id = os.path.basename(os.path.dirname(text_annotation.get_document()))
 
     def __getitem__(self, key):
-        return self.spacy_doc[key]
+        return self.spacy_doc.__getitem__(key)
 
     def __len__(self):
         return self.spacy_doc.__len__()
@@ -115,8 +118,7 @@ def get_docs(*paths):
             else:
                 found_paths.append(path)
 
-    pool = Pool(4)
-    result = pool.map(load_doc, found_paths)
+    result = [load_doc(p) for p in found_paths]
     return result
 
 
@@ -167,3 +169,29 @@ def any_overlapping_spans(a, b):
                 if j[0] < i[1] and i[0] < j[1]:
                     return True
         return False
+
+
+# Requires the spans be independent
+def spans_to_biluo(spans, total_len):
+    # o -> 0, b -> 1, i -> 2, l -> 3, u -> 4
+    spans = sorted(spans)
+    result = [0] * total_len
+    i = 0
+    j = 0
+    while j < len(spans):
+        if i >= total_len:
+            print spans
+        if i < spans[j][0]:  # o
+            result[i] = 0
+        elif i == spans[j][0] and (i + 1 < spans[j][1]):  # b
+            result[i] = 1
+        elif i == spans[j][0]:  # u
+            result[i] = 4
+            j += 1
+        elif i + 1 == spans[j][1]:  # l
+            result[i] = 3
+            j += 1
+        else:  # i
+            result[i] = 2
+        i += 1
+    return result

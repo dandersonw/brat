@@ -47,36 +47,41 @@ class Agreement:
         self.restricted_relation_scoring = False
 
     def entity_f1(self):
-        precisions = self.per_file_scores(self._entity_precision)
-        precisions = reduce(lambda a, b: map(lambda i, j: i + j, a, b), precisions)
+        precisions = self.per_file_per_annotator_pair(self._entity_precision)
+        precisions = reduce_by_tuple_sum([reduce_by_tuple_sum(pair) for pair in precisions])
         return float(precisions[0]) / precisions[1]
 
     def relation_f1(self):
-        precisions = self.per_file_scores(self._relation_precision)
-        precisions = reduce(lambda a, b: map(lambda i, j: i + j, a, b), precisions)
+        precisions = self.per_file_per_annotator_pair(self._relation_precision)
+        precisions = reduce_by_tuple_sum([reduce_by_tuple_sum(pair) for pair in precisions])
         return float(precisions[0]) / precisions[1]
 
-    def per_file_scores(self, score_function):
-        scores = []
-        for (doc_name, annotations) in self.annotations_grouped_by_document():
-            for combination in itertools.combinations(annotations, 2):
-                scores.append(score_function(combination[0], combination[1]))
-                scores.append(score_function(combination[1], combination[0]))
-        return scores
+    def per_file_per_annotator_pair(self, score_function):
+        result = []
+        annotators = set((a.annotator_id for a in self.annotations))
+        for combination in itertools.combinations(annotators, 2):
+            scores = []
+            for (doc_name, annotations) in self.annotations_grouped_by_document(combination):
+                scores.append(score_function(annotations[0], annotations[1]))
+                scores.append(score_function(annotations[1], annotations[0]))
+            result.append(scores)
+        return result
 
-    def _entity_span_fleiss_kappa(self):
-        spans = map(lambda e: self._get_entity_spans(e), self.annotations)
-        total_len = len(self.annotations[0].get_document_text())
-        biluo = map(lambda s: spans_to_biluo(s, total_len), spans)
-        category_counts = np.zeros((total_len, 5))
-        for annotator in biluo:
-            for i in xrange(total_len):
-                category_counts[i][annotator[i]] += 1
+    def entity_span_fleiss_kappa(self):
+        category_counts = []
+        for (doc_name, annotations) in self.annotations_grouped_by_document(None):
+            annotations = list(annotations)
+            doc_len = len(annotations[0])
+            if len(set(len(d) for d in annotations)) != 1:
+                # TODO: resolve tokenization differences
+                continue
+            document_counts = [[0] * 2] * doc_len
+            for doc in annotations:
+                labels = entity_or_not_per_idx(doc.entities, doc_len)
+                for i in xrange(doc_len):
+                    document_counts[i][labels[i]] += 1
+            category_counts += document_counts
         return fleiss_kappa(category_counts)
-
-    def _get_entity_spans(self, doc):
-        return list(itertools.chain.from_iterable(
-            [e.spans for e in doc.entities if self._entity_is_included(e)]))
 
     def _entity_f1(self, gold, notGold):
         precision = self._entity_precision(gold, notGold)
@@ -138,11 +143,13 @@ class Agreement:
                 and self._entities_match(a.arg2, b.arg2)
                 and (not self.strict_relation_type or a.type == b.type))
 
-    def annotations_grouped_by_document(self):
+    def annotations_grouped_by_document(self, annotators_filter):
         result = defaultdict(list)
         remove_random_prefix = re.compile(r"^[0-9]+_([0-9]+)$")
         for doc in self.annotations:
-            name = os.path.basename(doc.brat_annotation.get_document())
+            if annotators_filter is not None and doc.annotator_id not in annotators_filter:
+                continue
+            name = doc.document_id
             match = remove_random_prefix.match(name)
             if match is not None:
                 name = match.group(1)
@@ -150,28 +157,17 @@ class Agreement:
         return result.items()
 
 
-def spans_to_biluo(spans, total_len):
-    # o -> 0, b -> 1, i -> 2, l -> 3, u -> 4
-    spans = sorted(spans)
+def reduce_by_tuple_sum(tuples):
+    return reduce(lambda a, b: map(lambda i, j: i + j, a, b), tuples)
+
+
+# Just fills in where a span covers. Agnostic to overlapping or discontinuous spans.
+def entity_or_not_per_idx(entities, total_len):
     result = [0] * total_len
-    i = 0
-    j = 0
-    while j < len(spans):
-        if i >= total_len:
-            print spans
-        if i < spans[j][0]:  # o
-            result[i] = 0
-        elif i == spans[j][0] and (i + 1 < spans[j][1]):  # b
-            result[i] = 1
-        elif i == spans[j][0]:  # u
-            result[i] = 4
-            j += 1
-        elif i + 1 == spans[j][1]:  # l
-            result[i] = 3
-            j += 1
-        else:  # i
-            result[i] = 2
-        i += 1
+    for e in entities:
+        for span in e.spans:
+            for i in xrange(span[0], span[1]):
+                result[i] = 1
     return result
 
 
@@ -213,6 +209,8 @@ def calculate_agreement(docs, relaxed, consider_discontinuous, filter_entity_typ
         agreement.restricted_relation_scoring = False
 
     report_scores(agreement.relation_f1(), "Relation F1")
+
+    report_scores(agreement.entity_span_fleiss_kappa(), "Fleiss Kappa")
 
 
 def report_scores(scores, name):
