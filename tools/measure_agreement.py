@@ -75,7 +75,7 @@ class Agreement:
                 annotations = ai2_common.docs_with_compatible_tokenization(annotations)
                 assert len(set(len(d) for d in annotations)) == 1
             doc_len = len(annotations[0])
-            document_counts = [[0] * 2] * doc_len
+            document_counts = np.zeros((doc_len, 2)).tolist()
             for doc in annotations:
                 labels = entity_or_not_per_idx(doc.entities, doc_len)
                 for i in xrange(doc_len):
