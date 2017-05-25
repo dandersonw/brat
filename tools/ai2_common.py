@@ -8,6 +8,7 @@ import itertools
 import glob
 import re
 from sys import path as sys_path
+from pathos.multiprocessing import Pool
 
 # this seems to be necessary for annotations to find its config
 sys_path.append(os.path.join(os.path.dirname(__file__), '..'))
@@ -114,12 +115,13 @@ def get_docs(*paths):
             else:
                 found_paths.append(path)
 
-    result = []
-    for path in found_paths:
-        print path
-        text_annotation = annotation.TextAnnotations(path)
-        result.append(EnhancedAnnotatedDoc(text_annotation))
+    pool = Pool(4)
+    result = pool.map(load_doc, found_paths)
     return result
+
+
+def load_doc(identifier):
+    return EnhancedAnnotatedDoc(annotation.TextAnnotations(identifier))
 
 
 def get_token_starting_at_char_offset(doc, offset):
