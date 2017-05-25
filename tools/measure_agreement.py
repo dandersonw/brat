@@ -71,10 +71,10 @@ class Agreement:
         category_counts = []
         for (doc_name, annotations) in self.annotations_grouped_by_document(None):
             annotations = list(annotations)
-            doc_len = len(annotations[0])
             if len(set(len(d) for d in annotations)) != 1:
-                # TODO: resolve tokenization differences
-                continue
+                annotations = ai2_common.docs_with_compatible_tokenization(annotations)
+                assert len(set(len(d) for d in annotations)) == 1
+            doc_len = len(annotations[0])
             document_counts = [[0] * 2] * doc_len
             for doc in annotations:
                 labels = entity_or_not_per_idx(doc.entities, doc_len)
