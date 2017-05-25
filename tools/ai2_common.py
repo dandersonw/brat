@@ -24,15 +24,18 @@ NLP = spacy.load("en")
 class EnhancedAnnotatedDoc:
     def __init__(self, text_annotation):
         self.brat_annotation = text_annotation
-        first_shot = NLP(text_annotation.get_document_text())
-        first_shot_len = len(first_shot)
+        self.spacy_doc = NLP(text_annotation.get_document_text())
         required_boundaries = self._get_entity_boundaries_for_tokenization()
-        self.spacy_doc = self._impose_token_boundaries(first_shot, required_boundaries)
-        assert len(self.spacy_doc) >= first_shot_len
-        self.entities = [Entity(e, self) for e in text_annotation.get_entities()]
-        self.relations = [Relation(r, self) for r in text_annotation.get_relations()]
+        self._impose_token_boundaries(required_boundaries)
         self.document_id = os.path.basename(text_annotation.get_document())
         self.annotator_id = os.path.basename(os.path.dirname(text_annotation.get_document()))
+        self._regenerate_from_brat()
+
+    def copy_with_compatible_tokenization(self, boundaries):
+        copy = EnhancedAnnotatedDoc(self.brat_annotation)
+        copy._impose_token_boundaries(boundaries)
+        copy._regenerate_from_brat()
+        return copy
 
     def __getitem__(self, key):
         return self.spacy_doc.__getitem__(key)
@@ -40,10 +43,10 @@ class EnhancedAnnotatedDoc:
     def __len__(self):
         return self.spacy_doc.__len__()
 
-    def _impose_token_boundaries(self, spacy_doc, boundaries):
+    def _impose_token_boundaries(self, boundaries):
         b_idx = 0
         imposed_tokens = []
-        for t in spacy_doc:
+        for t in self.spacy_doc:
             start = t.idx
             end = start + len(t)
             splits = [0]
@@ -57,7 +60,7 @@ class EnhancedAnnotatedDoc:
                 result_tokens.append([t.text[splits[i]: splits[i+1]], False])
             result_tokens[-1][1] = len(t.whitespace_) > 0
             imposed_tokens += [tuple(token) for token in result_tokens]
-        return spacy.tokens.Doc(spacy_doc.vocab, orths_and_spaces=imposed_tokens)
+        self.spacy_doc = spacy.tokens.Doc(self.spacy_doc.vocab, orths_and_spaces=imposed_tokens)
 
     def _get_entity_boundaries_for_tokenization(self):
         spans = set(
@@ -65,10 +68,15 @@ class EnhancedAnnotatedDoc:
                 [e.spans for e in self.brat_annotation.get_entities()]))
         return sorted(set(itertools.chain.from_iterable(spans)))
 
+    def _regenerate_from_brat(self):
+        self.entities = [Entity(e, self) for e in self.brat_annotation.get_entities()]
+        self.relations = [Relation(r, self) for r in self.brat_annotation.get_relations()]
+
     def get_entity(self, id):
         return next((e for e in self.entities if e.id == id), None)
 
     def remove_entity(self, entity):
+        # TODO: make this not destructive
         self.entities = [e for e in self.entities if e != entity]
         self.brat_annotation.del_annotation(entity.brat_annotation)
 
@@ -195,3 +203,9 @@ def spans_to_biluo(spans, total_len):
             result[i] = 2
         i += 1
     return result
+
+
+def docs_with_compatible_tokenization(original):
+    boundaries = sorted(set(itertools.chain.from_iterable((
+        doc._get_entity_boundaries_for_tokenization() for doc in original))))
+    return [doc.copy_with_compatible_tokenization(boundaries) for doc in original]
