@@ -28,6 +28,7 @@ class EnhancedAnnotatedDoc:
         required_boundaries = self._get_entity_boundaries_for_tokenization()
         self.spacy_doc = self._impose_token_boundaries(first_shot, required_boundaries)
         self.entities = [Entity(e, self) for e in text_annotation.get_entities()]
+        self.relations = [Relation(r, self) for r in text_annotation.get_relations()]
 
     def __getitem__(self, key):
         return self.spacy_doc[key]
@@ -60,8 +61,8 @@ class EnhancedAnnotatedDoc:
                 [e.spans for e in self.brat_annotation.get_entities()]))
         return sorted(set(itertools.chain.from_iterable(spans)))
 
-    def get_entities(self):
-        return self.entities
+    def get_entity(self, id):
+        return next((e for e in self.entities if e.id == id), None)
 
     def remove_entity(self, entity):
         self.entities = [e for e in self.entities if e != entity]
@@ -73,10 +74,27 @@ class Entity:
     def __init__(self, brat_annotation, parent_doc):
         self.brat_annotation = brat_annotation
         self.parent_doc = parent_doc
+        self.id = brat_annotation.id
+        self.type = brat_annotation.type
+        self.character_spans = brat_annotation.spans
         self.spans = []
         for span in brat_annotation.spans:
             self.spans.append((get_token_starting_at_char_offset(parent_doc, span[0]).i,
                                get_token_ending_at_char_offset(parent_doc, span[1]).i + 1))
+
+    def same_span(self, other):
+        return set(self.character_spans) == set(other.character_spans)
+
+    def overlaps(self, other):
+        return any_overlapping_spans(self.brat_annotation, other.brat_annotation)
+
+
+class Relation:
+    def __init__(self, brat_annotation, parent_doc):
+        self.brat_annotation = brat_annotation
+        self.type = brat_annotation.type
+        self.arg1 = parent_doc.get_entity(brat_annotation.arg1)
+        self.arg2 = parent_doc.get_entity(brat_annotation.arg2)
 
 
 def get_docs(*paths):
@@ -89,7 +107,7 @@ def get_docs(*paths):
             if not children:
                 sys.stderr.write("No annotation files found in {}\n".format(path))
             identifiers = [child[:-4] for child in children]
-            found_paths += identifiers
+            found_paths += list(set(identifiers))
         else:
             if extensions.search(path):
                 found_paths.append(path[:-4])
