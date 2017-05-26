@@ -32,6 +32,21 @@ def trim_leading_determiners(doc):
     return doc
 
 
+def trim_punctuation(doc):
+    GOOD_PUNCT_TAGS = {"-LRB-", "-RRB-"}
+    count = 0
+    for entity in doc.entities:
+        start_token = doc[entity.spans[0][0]]
+        end_token = doc[entity.spans[-1][1] - 1]
+        if not start_token.is_oov and start_token.pos_ == "PUNCT" and start_token.tag_ not in GOOD_PUNCT_TAGS:
+            trim_entity(doc, entity, 0, 1, 0)
+        if not end_token.is_oov and end_token.pos_ == "PUNCT" and start_token.tag_ not in GOOD_PUNCT_TAGS:
+            trim_entity(doc, entity, -1, 0, -1)
+    logging.debug("{} leading/trailing pieces of punctuation to fixup in doc {}"
+                  .format(count, doc.document_id))
+    return doc
+
+
 def fixup_overlapping_annotations(doc):
     overlapping = ai2_common.find_overlapping(doc)
     for pair in overlapping:
@@ -64,6 +79,7 @@ def trim_entity(doc, entity, span_idx, left_trim, right_trim):
 
 FIXUP_STEPS = [remove_other_relations,
                trim_leading_determiners,
+               trim_punctuation,
                fixup_overlapping_annotations]
 
 
@@ -76,13 +92,15 @@ def fixup(doc):
 def main():
     parser = argparse.ArgumentParser()
     parser.add_argument("paths", nargs="+")
+    parser.add_argument("--outputPath")
     args = parser.parse_args()
 
     docs = ai2_common.get_docs(*args.paths)
     fixed = [fixup(doc) for doc in docs]
 
-    for doc in fixed:
-        print unicode(doc.brat_annotation)
+    if args.outputPath is not None:
+        for doc in fixed:
+            print unicode(doc.brat_annotation)
 
 
 if __name__ == "__main__":
