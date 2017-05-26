@@ -15,3 +15,9 @@ R1	other_relation Arg1:T2 Arg2:T1
 R2	other_relation Arg1:T4 Arg2:T3	
 #2	AnnotatorNotes R2	equivalent
 R3	participates_in Arg1:T11 Arg2:T10	
+T13	KeyEntity 10 23	global genome
+T14	KeyEntity 28 41	transcriptome
+T15	Entity 69 124	candidate genes of small-effect quantitative trait loci
+R4	interacts_with Arg1:T13 Arg2:T15	
+R5	interacts_with Arg1:T14 Arg2:T15	
+T16	KeyEntity 128 154	collagen-induced arthritis

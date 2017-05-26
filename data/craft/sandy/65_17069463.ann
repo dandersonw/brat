@@ -52,3 +52,11 @@ R15	participates_in Arg1:T33 Arg2:T20
 R16	participates_in Arg1:T33 Arg2:T21	
 T34	Entity 1873 1883	modulators
 R17	participates_in Arg1:T24 Arg2:T34	
+T35	KeyEntity 0 6	RanBP2
+T36	KeyEntity 17 22	Cox11
+T37	KeyEntity 27 39	Hexokinase I
+R18	regulates Arg1:T35 Arg2:T36	
+R19	regulates Arg1:T35 Arg2:T37	
+T38	KeyEntity 55 83	Haploinsufficiency of RanBP2
+T39	KeyEntity 91 121	Deficits in Glucose Metabolism
+R20	interacts_with Arg1:T38 Arg2:T39	

@@ -78,3 +78,6 @@ R26	participates_in Arg1:T39 Arg2:T38
 R27	is_subclass_of Arg1:T40 Arg2:T39	
 R28	participates_in Arg1:T41 Arg2:T38	
 R29	participates_in Arg1:T42 Arg2:T38	
+T46	KeyEntity 22 42	anti-cadmium defense
+T47	KeyEntity 57 79	MTF-1/metallothioneins
+T48	KeyEntity 84 95	glutathione

@@ -65,3 +65,48 @@ R13	regulates Arg1:T45 Arg2:T48
 #4	AnnotatorNotes R13	sub-optimal
 R14	regulates Arg1:T45 Arg2:T47	
 #5	AnnotatorNotes R14	sub-optimal
+T49	Entity 2461 2463	BC
+T50	Entity 2700 2702	BC
+T51	Entity 2710 2721	Antioxidant
+T52	Entity 2726 2744	DNA repair enzymes
+T53	Entity 2847 2849	BC
+T54	Entity 2852 2891	ormal bronchial epithelial cells (NBEC)
+T55	Entity 3002 3004	BC
+T56	Entity 3012 3031	Antioxidant enzymes
+T57	Entity 3040 3044	NBEC
+T58	Entity 3121 3132	xenobiotics
+T59	Entity 3141 3150	pollution
+T60	Entity 3155 3170	cigarette smoke
+T61	Entity 3298 3322	denaturation of proteins
+T62	Entity 3324 3360	cross-linking of lipids and proteins
+T63	Entity 3365 3399	modification of nucleic acid bases
+T64	Entity 3234 3257	Reactive oxygen species
+T65	Entity 3431 3449	DNA repair enzymes
+T66	Entity 3470 3483	damage to DNA
+T67	Entity 3494 3508	oxidant stress
+T68	Entity 3573 3584	carcinogens
+T69	Entity 2826 2842	progenitor cells
+R15	is_subclass_of Arg1:T54 Arg2:T69	
+T70	Entity 3050 3073	reactive oxygen species
+R16	is_subclass_of Arg1:T59 Arg2:T58	
+R17	is_subclass_of Arg1:T60 Arg2:T58	
+T71	Entity 3269 3287	damaging reactions
+R18	is_subclass_of Arg1:T61 Arg2:T71	
+R19	is_subclass_of Arg1:T62 Arg2:T71	
+R20	is_subclass_of Arg1:T63 Arg2:T71	
+R21	other_relation Arg1:T66 Arg2:T67	
+#6	AnnotatorNotes R21	caused by
+T72	Entity 3642 3679	nteractive transcript abundance index
+T73	Entity 3691 3708	antioxidant genes
+T74	Entity 3722 3726	NBEC
+T75	Entity 3730 3744	BC individuals
+T76	Entity 3757 3775	non-BC individuals
+T77	Entity 3793 3807	BC individuals
+T78	Entity 3837 3864	poor antioxidant protection
+T79	Entity 3975 3986	antioxidant
+T80	Entity 3990 4006	DNA repair genes
+T81	Entity 4010 4028	non-BC individuals
+T82	Entity 4041 4055	BC individuals
+T83	KeyEntity 4102 4112	GSTP1/GPX1
+T84	KeyEntity 4114 4122	CAT/GPX3
+T85	KeyEntity 4128 4137	GPX3/SOD1

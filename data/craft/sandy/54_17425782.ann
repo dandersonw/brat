@@ -62,3 +62,10 @@ R21	other_relation Arg1:T40 Arg2:T41
 #3	AnnotatorNotes R21	time stage
 R22	is_part_of Arg1:T42 Arg2:T43	
 R23	participates_in Arg1:T43 Arg2:T44	
+T2	KeyEntity 0 5	Pygo1
+T4	KeyEntity 10 15	Pygo2
+T45	KeyEntity 25 38	Wnt signaling
+T46	KeyEntity 42 70	mammalian kidney development
+R1	participates_in Arg1:T4 Arg2:T45	
+R2	participates_in Arg1:T2 Arg2:T45	
+R24	is_part_of Arg1:T45 Arg2:T46	

@@ -49,3 +49,7 @@ R13	regulates Arg1:T24 Arg2:T25
 R14	is_part_of Arg1:T26 Arg2:T27	
 R15	is_part_of Arg1:T27 Arg2:T28	
 R16	participates_in Arg1:T30 Arg2:T31	
+T32	KeyEntity 0 10;18 29	Haplotypes Tas2r locus
+T33	Entity 33 52	distal chromosome 6
+T34	KeyEntity 63 88	quinine taste sensitivity
+T35	Entity 92 103	inbred mice

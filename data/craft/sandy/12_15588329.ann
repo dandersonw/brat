@@ -64,3 +64,8 @@ T38	Entity 1664 1681	neuronal survival
 R24	regulates Arg1:T34 Arg2:T35	
 R25	regulates Arg1:T34 Arg2:T36	
 R26	interacts_with Arg1:T37 Arg2:T38	
+T39	KeyEntity 0 20	Membrane trafficking
+T40	KeyEntity 25 52	mitochondrial abnormalities
+T41	KeyEntity 61 81	subunit c deposition
+T42	Entity 87 108	cerebellar cell model
+T43	KeyEntity 112 151	juvenile neuronal ceroid lipofuscinosis

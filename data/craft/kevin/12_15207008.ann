@@ -29,3 +29,8 @@ R3	participates_in Arg1:T18 Arg2:T19
 R4	participates_in Arg1:T18 Arg2:T20	
 R5	regulates Arg1:T18 Arg2:T21	
 T1	Entity 1973 1993	chromatin remodeling
+T2	Entity 0 28	Structure-function evolution
+T28	Entity 36 73	Transforming acidic coiled coil genes
+T29	Entity 98 132	phylogenetically diverse organisms
+T30	Entity 1995 2010;2035 2044	transcriptional complexes
+T31	Entity 2015 2044	posttranscriptional complexes

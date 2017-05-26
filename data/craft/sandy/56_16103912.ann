@@ -33,3 +33,10 @@ R8	regulates Arg1:T16 Arg2:T18
 R9	participates_in Arg1:T19 Arg2:T20	
 R10	participates_in Arg1:T21 Arg2:T22	
 R11	participates_in Arg1:T21 Arg2:T23	
+T24	KeyEntity 0 4	Fog2
+T25	KeyEntity 21 37;47 58	Normal Diaphragm Development
+T27	Entity 62 66	Mice
+T28	Entity 71 77	Humans
+T26	KeyEntity 21 27;42 58	Normal Lung Development
+R12	regulates Arg1:T24 Arg2:T26	
+R13	regulates Arg1:T24 Arg2:T25	

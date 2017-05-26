@@ -75,3 +75,7 @@ T43	KeyEntity 1644 1649	Tbx15
 R26	is_part_of Arg1:T22 Arg2:T43	
 R27	is_part_of Arg1:T14 Arg2:T13	
 R28	is_part_of Arg1:T43 Arg2:T23	
+T44	Entity 0 23	Dorsoventral Patterning
+T45	Entity 31 41	Mouse Coat
+T46	KeyEntity 45 50	Tbx15
+R29	interacts_with Arg1:T46 Arg2:T44	

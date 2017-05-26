@@ -33,3 +33,6 @@ R10	participates_in Arg1:T14 Arg2:T17
 R11	participates_in Arg1:T18 Arg2:T19	
 R12	regulates Arg1:T20 Arg2:T18	
 R13	participates_in Arg1:T19 Arg2:T21	
+T22	KeyEntity 2 22	Developmental Switch
+T23	KeyEntity 42 53	DRG Neurons
+T24	KeyEntity 57 91	ETS Transcription Factor Signaling

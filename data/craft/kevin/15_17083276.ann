@@ -72,3 +72,8 @@ R24	regulates Arg1:T35 Arg2:T36
 R25	regulates Arg1:T35 Arg2:T37	
 R26	is_part_of Arg1:T37 Arg2:T38	
 R27	is_part_of Arg1:T37 Arg2:T39	
+T43	KeyEntity 0 5	CAF-1
+T44	Entity 23 51	Heterochromatin Organization
+T45	Entity 55 82	Pluripotent Embryonic Cells
+R28	participates_in Arg1:T43 Arg2:T44	
+R29	interacts_with Arg1:T44 Arg2:T45	

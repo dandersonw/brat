@@ -17,3 +17,6 @@ T16	Entity 1199 1227	posterior subcapsular region
 T17	Entity 1240 1267	anterior subcapsular cortex
 T18	Entity 1277 1294	alphaA/BKO lenses
 T19	Entity 1416 1431	alphaA/BKO mice
+T20	Entity 0 30	Morphological characterization
+T21	Entity 38 45;57 67	AlphaA- crystallin
+T22	Entity 50 67	AlphaB-crystallin

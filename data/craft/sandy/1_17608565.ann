@@ -60,3 +60,6 @@ T35	Entity 1522 1524	Rb
 T36	Entity 1294 1296	Rb
 R24	regulates Arg1:T24 Arg2:T36	
 R25	regulates Arg1:T35 Arg2:T31	
+T37	KeyEntity 0 36	Rb-Mediated Neuronal Differentiation
+T38	KeyEntity 45 78	Cell-Cycle–Independent Regulation
+T39	KeyEntity 82 87	E2f3a

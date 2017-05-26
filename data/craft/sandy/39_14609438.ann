@@ -1,13 +1,7 @@
-T1	Entity 161 184	Tripeptidyl-peptidase I
-T2	KeyEntity 200 204	CLN2
-T3	Entity 235 245	sedolisins
-T4	Entity 247 273	serine-carboxyl peptidases
+T2	KeyEntity 161 184;200 204	Tripeptidyl-peptidase I CLN2
+T3	Entity 235 274	sedolisins (serine-carboxyl peptidases)
 T5	Entity 334 365	fatal neurodegenerative disease
 T6	Entity 377 422	late-infantile neuronal ceroid lipofuscinosis
-R1	other_relation Arg1:T2 Arg2:T1	
-#1	AnnotatorNotes R1	equivalent
-R2	other_relation Arg1:T4 Arg2:T3	
-#2	AnnotatorNotes R2	equivalent
 T7	KeyEntity 682 686	CLN2
 T8	Entity 1081 1110	Pseudomonas sp. 101 sedolisin
 T9	Entity 999 1036	three-dimensional model of human CLN2
@@ -22,3 +16,54 @@ T16	Entity 1649 1676	specific inhibitors of CLN2
 R4	participates_in Arg1:T10 Arg2:T11	
 R5	participates_in Arg1:T10 Arg2:T12	
 R6	participates_in Arg1:T13 Arg2:T14	
+T17	KeyEntity 11 41	tripeptidyl-peptidase I (CLN2)
+T18	Entity 45 55	ubiquitous
+T19	Entity 60 76	highly conserved
+T20	KeyEntity 91 107	sedolisin family
+T21	KeyEntity 111 137	serine-carboxyl peptidases
+T1	Entity 463 480	genomic sequences
+T4	Entity 727 745	eukaryotic species
+T22	Entity 783 795	80% identity
+T23	Entity 830 837	macaque
+T24	Entity 839 844	mouse
+T25	Entity 846 849	rat
+T26	Entity 851 854	dog
+T27	Entity 860 863	cow
+T28	Entity 932 953	fish (fugu and zebra)
+T29	Entity 969 995	frogs (Xenopus tropicalis)
+T30	KeyEntity 1717 1748	tripeptidyl-peptidase I (TPP-I)
+T31	KeyEntity 1940 1945	TPP-I
+T32	KeyEntity 2006 2010	CLN2
+R1	other_relation Arg1:T31 Arg2:T32	
+#1	AnnotatorNotes R1	identical
+T33	KeyEntity 2104 2108	CLN2
+T34	Entity 2063 2100	abolishment of the enzymatic activity
+R2	participates_in Arg1:T34 Arg2:T33	
+T35	Entity 2136 2177	fatal inherited neurodegenerative disease
+T36	Entity 2179 2234	classical late-infantile neuronal ceroid lipofuscinosis
+R7	is_subclass_of Arg1:T36 Arg2:T35	
+R8	participates_in Arg1:T36 Arg2:T34	
+T37	KeyEntity 2305 2309	CLN2
+T38	Entity 2315 2331	serine peptidase
+T39	KeyEntity 2454 2458	CLN2
+T40	Entity 2536 2570	high-resolution crystal structures
+#2	AnnotatorNotes T40	experimental_procedure
+T41	KeyEntity 2634 2638	CLN2
+T42	Entity 2640 2649	sedolisin
+T43	Entity 2654 2665	kumamolisin
+R9	participates_in Arg1:T42 Arg2:T40	
+R10	participates_in Arg1:T43 Arg2:T40	
+T44	Entity 2754 2794	sedolisins or serine-carboxyl peptidases
+T45	Entity 2842 2889	fully conserved catalytic triad (Ser, Glu, Asp)
+R11	is_part_of Arg1:T45 Arg2:T44	
+T46	Entity 2916 2919	Asp
+T47	Entity 2927 2940	oxyanion hole
+R12	is_part_of Arg1:T46 Arg2:T47	
+T48	Entity 2946 2955	Sedolisin
+T49	Entity 2988 3034	kumamolisin, aorsin [9], and physarolisin [10]
+T50	Entity 3059 3066	archaea
+T51	Entity 3068 3076	bacteria
+T52	Entity 3078 3083	fungi
+T53	Entity 3088 3095	amoebae
+T54	KeyEntity 3159 3163	CLN2
+T55	Entity 3195 3205	sedolisins

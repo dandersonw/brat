@@ -29,3 +29,6 @@ R10	other_relation Arg1:T16 Arg2:T17
 #1	AnnotatorNotes R10	future_studies
 R11	other_relation Arg1:T16 Arg2:T18	
 #2	AnnotatorNotes R11	future_studies
+T19	KeyEntity 0 6	Ataxia
+T20	KeyEntity 11 43	peripheral nerve hypomyelination
+T21	Entity 47 68	ADAM22-deficient mice

@@ -1,14 +1,11 @@
-T1	KeyEntity 81 111	nephrogenic diabetes insipidus
-T2	Entity 113 116	NDI
+T1	KeyEntity 81 117	nephrogenic diabetes insipidus (NDI)
 T3	Entity 70 80	Congenital
 T4	Entity 163 169	kidney
 T5	Entity 173 190	concentrate urine
 T6	Entity 206 217	vasopressin
 T7	KeyEntity 239 269	nephrogenic diabetes insipidus
-T8	Entity 313 335	vasopressin receptor 2
-T9	Entity 337 342	Avpr2
-T10	Entity 356 403	vasopressin-sensitive water channel aquaporin-2
-T11	Entity 405 409	Aqp2
+T9	Entity 313 343	vasopressin receptor 2 (Avpr2)
+T10	Entity 356 410	vasopressin-sensitive water channel aquaporin-2 (Aqp2)
 T12	Entity 545 578	ethylnitrosourea-mutagenized mice
 T13	KeyEntity 650 653	NDI
 T14	Entity 663 677	F204V mutation
@@ -25,17 +22,11 @@ T25	Entity 1383 1402	mechanistic studies
 T26	Entity 1425 1440	pharmacological
 T27	Entity 1445 1459	gene therapies
 T28	KeyEntity 1464 1467	NDI
-R1	other_relation Arg1:T2 Arg2:T1	
-#1	AnnotatorNotes R1	equivalent
 R2	other_relation Arg1:T3 Arg2:T1	
 #2	AnnotatorNotes R2	time_stage
 R3	interacts_with Arg1:T4 Arg2:T5	
 R4	interacts_with Arg1:T4 Arg2:T6	
-R5	other_relation Arg1:T9 Arg2:T8	
-#3	AnnotatorNotes R5	equivalent
 R6	is_part_of Arg1:T9 Arg2:T7	
-R7	other_relation Arg1:T11 Arg2:T10	
-#4	AnnotatorNotes R7	equivalent
 R8	is_part_of Arg1:T10 Arg2:T7	
 R9	is_part_of Arg1:T14 Arg2:T12	
 R10	is_part_of Arg1:T15 Arg2:T12	
@@ -54,3 +45,5 @@ R17	other_relation Arg1:T29 Arg2:T26
 #8	AnnotatorNotes R17	future_studies
 R18	other_relation Arg1:T29 Arg2:T27	
 #9	AnnotatorNotes R18	future_studies
+T2	KeyEntity 0 18	Diabetes Insipidus
+T8	KeyEntity 46 57	Aquaporin-2

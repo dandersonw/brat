@@ -57,3 +57,5 @@ T33	Entity 1825 1837	adult animal
 R19	interacts_with Arg1:T31 Arg2:T32	
 R20	other_relation Arg1:T32 Arg2:T33	
 #6	AnnotatorNotes R20	time_stage
+T34	KeyEntity 0 20;24 34	Nuclear localization Annexin A7
+T35	Entity 42 66	murine brain development

@@ -45,3 +45,6 @@ R8	regulates Arg1:T24 Arg2:T23
 R9	is_part_of Arg1:T25 Arg2:T26	
 R10	is_part_of Arg1:T25 Arg2:T27	
 R11	is_part_of Arg1:T25 Arg2:T28	
+T33	KeyEntity 0 32	Late gestational lung hypoplasia
+T34	Entity 38 49	mouse model
+T35	KeyEntity 57 83	Smith-Lemli-Opitz syndrome

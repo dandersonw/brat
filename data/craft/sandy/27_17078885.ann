@@ -36,3 +36,9 @@ T26	Entity 1280 1290	pharyngeal
 T27	Entity 1295 1328	cardiac outflow tract development
 R10	interacts_with Arg1:T23 Arg2:T24	
 R11	participates_in Arg1:T23 Arg2:T25	
+T28	KeyEntity 10 24	ALK5 signaling
+T29	Entity 32 44	neural crest
+T30	Entity 64 105	postmigratory neural crest cell apoptosis
+#1	AnnotatorNotes T30	increased
+T31	Entity 117 138	outflow tract defects
+#2	AnnotatorNotes T31	severe

@@ -1,7 +1,4 @@
-T1	Entity 150 170	intraocular pressure
-T2	KeyEntity 172 175	IOP
-R1	other_relation Arg1:T2 Arg2:T1	
-#1	AnnotatorNotes R1	equivalent
+T2	KeyEntity 150 176	intraocular pressure (IOP)
 T3	Entity 526 536	IOP ranges
 T4	Entity 556 569	10 to 20 mmHg
 T5	Entity 612 617	aging
@@ -36,3 +33,22 @@ T23	Entity 1529 1532	Tyr
 T24	Entity 1544 1557	increased IOP
 R11	participates_in Arg1:T22 Arg2:T24	
 R12	participates_in Arg1:T23 Arg2:T24	
+T25	KeyEntity 0 20	Intraocular pressure
+T26	Entity 45 49	mice
+T1	KeyEntity 251 255	IOPs
+T27	Entity 259 293	genetically distinct mouse strains
+R1	is_part_of Arg1:T1 Arg2:T27	
+T28	Entity 333 336	age
+T29	Entity 338 341	sex
+T30	Entity 346 357	time of day
+T31	KeyEntity 361 364	IOP
+R13	interacts_with Arg1:T28 Arg2:T31	
+R14	interacts_with Arg1:T29 Arg2:T31	
+R15	interacts_with Arg1:T30 Arg2:T31	
+T32	Entity 426 459	specific candidate gene mutations
+T33	KeyEntity 463 466	IOP
+R16	interacts_with Arg1:T32 Arg2:T33	
+T34	Entity 1340 1357	regulation of IOP
+T35	Entity 1657 1683	genetics of IOP regulation
+R17	is_part_of Arg1:T25 Arg2:T26	
+T36	Entity 65 78	strain survey

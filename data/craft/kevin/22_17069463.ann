@@ -66,3 +66,9 @@ R19	regulates Arg1:T37 Arg2:T38
 R20	regulates Arg1:T37 Arg2:T39	
 R21	regulates Arg1:T37 Arg2:T40	
 T44	Entity 1945 1952;1957 1966;1968 1983;1988 2007	targets metabolic aging disorders allied neuropathies
+T45	KeyEntity 0 6	RanBP2
+T46	KeyEntity 17 22	Cox11
+T47	Entity 27 50	Hexokinase I Activities
+T48	Entity 55 83	Haploinsufficiency of RanBP2
+T49	Entity 103 121	Glucose Metabolism
+R22	regulates Arg1:T45 Arg2:T46	

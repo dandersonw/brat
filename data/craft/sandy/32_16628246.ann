@@ -8,9 +8,7 @@ T7	KeyEntity 279 283	ATRX
 T8	Entity 316 337	human genetic disease
 T9	KeyEntity 413 417	ATRX
 T10	Entity 421 432	development
-T11	Entity 473 478	ATR-X
-T12	Entity 480 516	alpha thalassemia mental retardation
-T13	Entity 518 526	X-linked
+T11	Entity 473 527	ATR-X (alpha thalassemia mental retardation, X-linked)
 T14	KeyEntity 588 592	Atrx
 T15	Entity 601 620	8- to 16-cell stage
 T16	Entity 641 654	protein, Atrx
@@ -34,10 +32,6 @@ R6	other_relation Arg1:T7 Arg2:T8
 #1	AnnotatorNotes R6	human_connection
 R7	other_relation Arg1:T9 Arg2:T10	
 #2	AnnotatorNotes R7	time_stage
-R8	other_relation Arg1:T11 Arg2:T12	
-#3	AnnotatorNotes R8	equivalent
-R9	other_relation Arg1:T11 Arg2:T13	
-#4	AnnotatorNotes R9	equivalent
 R10	other_relation Arg1:T14 Arg2:T15	
 #5	AnnotatorNotes R10	time_stage
 R11	other_relation Arg1:T19 Arg2:T17	
@@ -47,3 +41,7 @@ R13	participates_in Arg1:T20 Arg2:T21
 R14	other_relation Arg1:T24 Arg2:T25	
 #7	AnnotatorNotes R14	time stage
 R15	interacts_with Arg1:T24 Arg2:T26	
+T12	KeyEntity 0 12	Loss of Atrx
+T13	KeyEntity 21 44	Trophoblast Development
+T28	KeyEntity 53 78	Pattern of X-Inactivation
+T29	KeyEntity 82 104	Extraembryonic Tissues

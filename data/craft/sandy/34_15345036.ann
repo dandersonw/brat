@@ -57,3 +57,7 @@ R13	regulates Arg1:T33 Arg2:T34
 R14	participates_in Arg1:T39 Arg2:T37	
 R15	is_part_of Arg1:T39 Arg2:T38	
 R16	regulates Arg1:T41 Arg2:T40	
+T43	KeyEntity 4 31	phosphatidylserine receptor
+T44	KeyEntity 63 76	embryogenesis
+T45	KeyEntity 81 110	not in apoptotic cell removal
+#2	AnnotatorNotes T45	no relation

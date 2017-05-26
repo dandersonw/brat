@@ -5,29 +5,29 @@ T4	Entity 479 508	SAM domain-containing protein
 T5	Entity 546 568	retinal photoreceptors
 T6	Entity 577 589	pineal gland
 T7	Entity 608 653	mouse mr-s (major retinal SAM domain protein)
-T8	Entity 665 669	mr-s
+T8	KeyEntity 665 669	mr-s
 T9	Entity 703 712	zebrafish
 T10	Entity 721 726	human
 T11	Entity 769 794	photoreceptor development
 T12	Entity 861 871	SAM domain
-T13	Entity 875 879	mr-s
-T14	Entity 943 953	Mph1/Rae28
+T13	KeyEntity 875 879	mr-s
+T14	KeyEntity 943 953	Mph1/Rae28
 T15	Entity 1140 1165	photoreceptor development
-T16	Entity 1167 1171	mr-s
+T16	KeyEntity 1167 1171	mr-s
 T17	Entity 1316 1334	adult pineal gland
 T18	Entity 1279 1303	terminal differentiation
-T19	Entity 1353 1357	mr-s
+T19	KeyEntity 1336 1349;1353 1357	Transcription mr-s
 T20	Entity 1387 1419	cone-rod homeodomain protein Crx
-T21	Entity 1463 1475	mr-s protein
+T21	KeyEntity 1463 1475	mr-s protein
 T22	Entity 1511 1539	SAM domain-containing region
 T23	Entity 1551 1553	ph
-T24	Entity 1559 1571	mr-s protein
-T25	Entity 1610 1614	mr-s
-T26	Entity 1635 1648	HEK293T cells
+T24	KeyEntity 1559 1571	mr-s protein
+T25	KeyEntity 1610 1614	mr-s
+T26	KeyEntity 1635 1648	HEK293T cells
 T27	Entity 1667 1684	luciferase assays
-T28	Entity 1700 1712	mr-s protein
-T29	Entity 1722 1745	GAL4 DNA-binding domain
-T30	Entity 1832 1836	mr-s
+T28	KeyEntity 1700 1712	mr-s protein
+T29	KeyEntity 1722 1745	GAL4 DNA-binding domain
+T30	KeyEntity 1832 1836	mr-s
 T31	Entity 1888 1898	SAM domain
 T32	Entity 1910 1927	C-terminal region
 T33	KeyEntity 1970 1974	mr-s
@@ -38,3 +38,28 @@ T37	Entity 2150 2175	transcriptional repressor
 T38	Entity 2179 2198	photoreceptor cells
 T39	Entity 2206 2218	pinealocytes
 T40	Entity 2226 2238	pineal gland
+R1	is_part_of Arg1:T12 Arg2:T13	
+T41	KeyEntity 1077 1081	mr-s
+T42	Entity 1421 1446	Immunoprecipitation assay
+R2	is_subclass_of Arg1:T20 Arg2:T19	
+T43	Entity 1596 1603	nucleus
+R3	is_part_of Arg1:T24 Arg2:T43	
+R4	other_relation Arg1:T33 Arg2:T34	
+#1	AnnotatorNotes R4	expressed
+R5	other_relation Arg1:T33 Arg2:T35	
+#2	AnnotatorNotes R5	expressed
+R6	other_relation Arg1:T37 Arg2:T36	
+#3	AnnotatorNotes R6	attribute
+R7	is_part_of Arg1:T39 Arg2:T40	
+R8	is_part_of Arg1:T38 Arg2:T40	
+T44	Entity 0 7	Cloning
+T45	Entity 12 28	characterization
+T46	KeyEntity 32 36	mr-s
+T47	Entity 46 64	SAM domain protein
+T48	Entity 93 120	retinal photoreceptor cells
+R9	is_subclass_of Arg1:T46 Arg2:T47	
+R10	other_relation Arg1:T46 Arg2:T48	
+#4	AnnotatorNotes R10	expressed
+T49	Entity 1761 1786	transcriptional repressor
+R11	regulates Arg1:T28 Arg2:T29	
+T50	Entity 1853 1875	homophilic interaction

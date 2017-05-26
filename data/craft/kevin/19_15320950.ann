@@ -66,3 +66,7 @@ R9	other_relation Arg1:T21 Arg2:T22
 #4	AnnotatorNotes R9	results
 R10	other_relation Arg1:T21 Arg2:T23	
 #5	AnnotatorNotes R10	results
+T54	Entity 0 33	Loss of KCNJ10 protein expression
+T55	Entity 45 66	ndocochlear potential
+T56	Entity 90 117	Pendred syndrome mouse mode
+R11	interacts_with Arg1:T54 Arg2:T55	

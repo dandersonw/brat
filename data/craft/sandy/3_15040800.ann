@@ -46,3 +46,8 @@ T31	Entity 1792 1816	loss of Abcg8/sterolin-2
 T32	Entity 1849 1878	biliary cholesterol secretion
 R15	regulates Arg1:T29 Arg2:T30	
 R16	participates_in Arg1:T31 Arg2:T32	
+T33	KeyEntity 17 31	sitosterolemia
+T34	Entity 2 13	mouse model
+T35	KeyEntity 33 60	absence of Abcg8/sterolin-2
+T36	KeyEntity 83 110	secrete biliary cholesterol
+T37	Entity 72 79;83 110	failure secrete biliary cholesterol

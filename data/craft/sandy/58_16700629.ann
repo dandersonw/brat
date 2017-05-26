@@ -46,3 +46,10 @@ R13	regulates Arg1:T25 Arg2:T26
 R14	regulates Arg1:T27 Arg2:T26	
 T30	KeyEntity 1299 1316	sex determination
 T31	Entity 1362 1368	switch
+T32	KeyEntity 0 4	Fgf9
+T33	KeyEntity 9 13	Wnt4
+T34	KeyEntity 21 41	Antagonistic Signals
+R15	is_part_of Arg1:T33 Arg2:T34	
+R16	is_part_of Arg1:T32 Arg2:T34	
+T35	KeyEntity 54 81	Mammalian Sex Determination
+R17	regulates Arg1:T34 Arg2:T35	

@@ -16,7 +16,7 @@ T13	Entity 174 179	Ca2+-
 T14	Entity 184 212	phospholipid-binding protein
 R3	participates_in Arg1:T3 Arg2:T13	
 R4	participates_in Arg1:T3 Arg2:T14	
-T15	Entity 228 230;235 249	47 51 kDa isoform
+T15	Entity 235 249	51 kDa isoform
 T16	Entity 235 249	51 kDa isoform
 T17	Entity 286 301	membrane fusion
 R5	participates_in Arg1:T15 Arg2:T17	
@@ -63,3 +63,5 @@ R18	regulates Arg1:T28 Arg2:T29
 R19	participates_in Arg1:T31 Arg2:T32	
 R20	other_relation Arg1:T5 Arg2:T39	
 #1	AnnotatorNotes R20	doesn't interact
+T45	Entity 235 249	51 kDa isoform
+T46	Entity 228 230;238 249	47 kDa isoform

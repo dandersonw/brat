@@ -74,3 +74,6 @@ R27	is_part_of Arg1:T42 Arg2:T30
 T43	Entity 1620 1640	Embryonic expression
 R28	is_part_of Arg1:T43 Arg2:T33	
 #5	AnnotatorNotes R22	required
+T44	KeyEntity 0 23	Dorsoventral Patterning
+T45	Entity 31 41	Mouse Coat
+T46	KeyEntity 45 50	Tbx15

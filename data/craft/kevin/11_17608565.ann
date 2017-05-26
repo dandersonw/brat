@@ -83,3 +83,6 @@ R26	regulates Arg1:T34 Arg2:T36
 R27	participates_in Arg1:T50 Arg2:T51	
 R28	regulates Arg1:T50 Arg2:T54	
 R29	is_subclass_of Arg1:T54 Arg2:T52	
+T56	Entity 0 36	Rb-Mediated Neuronal Differentiation
+T57	Entity 45 78	Cell-Cycle–Independent Regulation
+T58	KeyEntity 82 87	E2f3a

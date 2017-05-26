@@ -34,3 +34,9 @@ T26	Entity 1652 1659	cochlea
 R7	participates_in Arg1:T22 Arg2:T23	
 R8	participates_in Arg1:T23 Arg2:T24	
 R9	regulates Arg1:T22 Arg2:T25	
+T27	KeyEntity 0 22	Brn3c null mutant mice
+T28	Entity 28 37	long-term
+#2	AnnotatorNotes T28	time
+T29	Entity 39 59	incomplete retention
+T30	KeyEntity 68 98	afferent inner ear innervation
+R10	is_part_of Arg1:T30 Arg2:T27	

@@ -60,3 +60,6 @@ T41	Entity 2179 2198	photoreceptor cells
 T42	Entity 2206 2218	pinealocytes
 R15	regulates Arg1:T40 Arg2:T41	
 R17	regulates Arg1:T40 Arg2:T42	
+T43	KeyEntity 32 64	mr-s, a novel SAM domain protein
+T44	KeyEntity 12 28;32 64	characterization mr-s, a novel SAM domain protein
+T45	KeyEntity 93 120	retinal photoreceptor cells

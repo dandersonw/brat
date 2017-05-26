@@ -45,3 +45,6 @@ T34	Entity 1800 1815	bone metabolism
 T35	Entity 1820 1829	aged mice
 R11	regulates Arg1:T32 Arg2:T34	
 R12	is_part_of Arg1:T32 Arg2:T35	
+T36	Entity 0 8;16 41	Ablation Sam68 RNA Binding Protein
+T37	Entity 61 82	Age-Related Bone Loss
+T38	Entity 51 55	Mice

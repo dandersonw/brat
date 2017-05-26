@@ -35,3 +35,6 @@ R9	participates_in Arg1:T12 Arg2:T13
 R10	regulates Arg1:T15 Arg2:T16	
 R11	is_part_of Arg1:T21 Arg2:T20	
 R12	interacts_with Arg1:T24 Arg2:T25	
+T26	KeyEntity 0 11	DNA binding
+T27	KeyEntity 16 24	helicase
+T28	KeyEntity 36 59	mouse MCM4/6/7 helicase

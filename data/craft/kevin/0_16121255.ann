@@ -29,3 +29,7 @@ R7	interacts_with Arg1:T11 Arg2:T12
 R8	is_part_of Arg1:T12 Arg2:T9	
 R9	other_relation Arg1:T14 Arg2:T15	
 R10	interacts_with Arg1:T16 Arg2:T17	
+T20	Entity 0 18	Diabetes Insipidus
+T21	Entity 22 26	Mice
+T22	KeyEntity 34 57	Mutation in Aquaporin-2
+R11	is_part_of Arg1:T22 Arg2:T21	

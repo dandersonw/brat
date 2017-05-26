@@ -21,3 +21,8 @@ T18	Entity 935 960	abnormal synaptic endings
 R3	is_part_of Arg1:T18 Arg2:T13	
 R4	other_relation Arg1:T18 Arg2:T12	
 #1	AnnotatorNotes R4	attribute
+T19	Entity 0 14	Synaptogenesis
+T20	Entity 19 42	outer segment formation
+T21	Entity 64 77	neural retina
+T22	Entity 81 96	Crx mutant mice
+R5	is_part_of Arg1:T21 Arg2:T22	

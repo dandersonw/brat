@@ -14,3 +14,5 @@ R3	regulates Arg1:T4 Arg2:T5
 R4	participates_in Arg1:T6 Arg2:T7	
 R5	interacts_with Arg1:T7 Arg2:T8	
 R6	participates_in Arg1:T9 Arg2:T10	
+T11	KeyEntity 0 5	BRCA2
+T12	KeyEntity 10 34	homologous recombination

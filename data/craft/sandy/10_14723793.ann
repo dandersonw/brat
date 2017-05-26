@@ -421,3 +421,5 @@ T315	Entity 22663 22686	goat serum PBS solution
 T316	Entity 22751 22789	glycerol-based anti-photobleach medium
 T317	Entity 23004 23018	cDNA sequences
 T318	Entity 23027 23036	Acdp gene
+T319	KeyEntity 0 17	Molecular cloning
+T320	KeyEntity 52 68	Acdp gene family

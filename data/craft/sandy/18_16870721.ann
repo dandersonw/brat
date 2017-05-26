@@ -5,9 +5,7 @@ T4	Entity 248 256	ES cells
 T5	KeyEntity 385 394	p53 locus
 T7	KeyEntity 421 466	Recombinase-Mediated Cassette Exchange (RMCE)
 T8	Entity 506 527	targeting in ES cells
-T9	Entity 612 676	Adapted for targeting in Somatic cells to Accelerate Phenotyping
-T10	KeyEntity 683 687	ASAP
-T11	KeyEntity 678 687	RMCE-ASAP
+T11	KeyEntity 612 688	Adapted for targeting in Somatic cells to Accelerate Phenotyping (RMCE-ASAP)
 T12	Entity 756 790	efficient targeting in fibroblasts
 T13	Entity 796 821	rapid phenotypic read-out
 T14	Entity 827 844	recessive mutatio
@@ -18,8 +16,6 @@ T18	Entity 994 1011	germline capacity
 T19	Entity 1015 1023	ES cells
 R1	regulates Arg1:T1 Arg2:T2	
 R2	interacts_with Arg1:T3 Arg2:T4	
-R4	other_relation Arg1:T10 Arg2:T9	
-#2	AnnotatorNotes R4	is
 R5	participates_in Arg1:T15 Arg2:T16	
 R6	is_subclass_of Arg1:T16 Arg2:T17	
 R7	is_part_of Arg1:T18 Arg2:T19	
@@ -380,3 +376,365 @@ T307	Entity 19610 19632	p53GFP-expressing MEFs
 T308	Entity 19664 19679	p53GFP toxicity
 R55	regulates Arg1:T306 Arg2:T307	
 R56	participates_in Arg1:T307 Arg2:T308	
+T309	KeyEntity 0 9	RMCE-ASAP
+T310	Entity 13 34	gene targeting method
+T311	Entity 39 41	ES
+T312	Entity 46 59	somatic cells
+T313	KeyEntity 63 92	accelerate phenotype analyses
+T9	Entity 2358 2383	large (15–20 kb) plasmids
+R4	participates_in Arg1:T117 Arg2:T118	
+R57	is_part_of Arg1:T29 Arg2:T30	
+R58	participates_in Arg1:T124 Arg2:T125	
+R59	is_part_of Arg1:T31 Arg2:T32	
+R60	is_part_of Arg1:T31 Arg2:T33	
+T10	Entity 4133 4142	cassettes
+T314	Entity 4157 4176	repeated loxP sites
+T315	Entity 4358 4386	intramolecular recombination
+T316	Entity 4527 4539	interference
+T317	Entity 4573 4589	selection marker
+T318	Entity 4598 4613	endogenous gene
+R61	is_part_of Arg1:T317 Arg2:T316	
+R62	is_part_of Arg1:T318 Arg2:T316	
+T319	Entity 4646 4672	remove the selectable gene
+R63	participates_in Arg1:T316 Arg2:T319	
+T320	Entity 4799 4803	2 nt
+T321	KeyEntity 5136 5140	RMCE
+T322	Entity 5144 5152	ES cells
+R64	is_part_of Arg1:T321 Arg2:T322	
+T323	Entity 5363 5402	Hygromycin–Thymidine Kinase fusion gene
+T324	Entity 5428 5455	positive/negative selection
+R65	participates_in Arg1:T323 Arg2:T324	
+T325	KeyEntity 5459 5463	RMCE
+T326	Entity 5474 5489	mouse sterility
+R66	participates_in Arg1:T323 Arg2:T326	
+T327	Entity 5780 5799	phenotypic analyses
+T328	Entity 5858 5879	marker-free mutations
+T329	KeyEntity 5887 5896	p53 locus
+T330	Entity 5900 5908	ES cells
+R67	is_part_of Arg1:T329 Arg2:T330	
+R68	interacts_with Arg1:T328 Arg2:T329	
+T331	KeyEntity 6081 6090	RMCE-ASAP
+T332	Entity 6111 6132	any locus of interest
+T333	KeyEntity 6184 6204	p53 RMCE-ready locus
+T334	Entity 6158 6177	Targeting construct
+T335	Entity 6470 6477	WT loxP
+T336	Entity 6483 6489	oxP257
+T337	Entity 6795 6819	average frequency of 81%
+T338	Entity 6835 6844	CHO cells
+T339	Entity 6852 6876	average frequency of 69%
+R69	is_part_of Arg1:T337 Arg2:T338	
+T340	Entity 6893 6903	Hela cells
+R70	is_part_of Arg1:T339 Arg2:T340	
+T341	Entity 6960 6964;6976 6980	ClaI site
+T342	Entity 6971 6980	FseI site
+T343	Entity 6914 6927	L3-1L plasmid
+T344	Entity 6993 7003	LoxP sites
+T345	Entity 7016 7032	plasmid L3-CF-1L
+T346	Entity 7273 7293	plasmid CN-PuroΔTK-F
+T347	Entity 7525 7542	exons 2–11 of p53
+T348	Entity 8241 8274	p53 contains repetitive sequences
+T349	Entity 8552 8574	L3-p53PmlEagPuroΔTK-1L
+T350	Entity 8585 8588	DTA
+T351	Entity 8922 8928;8942 8950	p53GFP plasmids
+T352	Entity 8933 8950	p53ΔPGFP plasmids
+T353	Entity 11955 11965	T25 flasks
+T354	Entity 11969 11988	105 cells per flask
+T355	Entity 12409 12426	single 10 cm-dish
+T356	Entity 12428 12444	grown for 3 days
+T357	Entity 12477 12495	105 cells per dish
+T358	Entity 19362 19366	RMCE
+T359	KeyEntity 19700 19704	RMCE
+T360	Entity 19708 19722	p53RMCE/− MEFs
+T361	Entity 19732 19750	p53ΔPGFP construct
+R71	is_part_of Arg1:T361 Arg2:T359	
+T362	KeyEntity 19752 19776	p53ΔPGFP-expressing MEFs
+T363	Entity 19883 19899;19908 19913	p53ΔPGFP protein lower
+T364	KeyEntity 19961 19974	p53ΔP/ΔP MEFs
+T365	Entity 19979 20021	unable to arrest cycling after irradiation
+R72	participates_in Arg1:T364 Arg2:T365	
+T366	Entity 20051 20068	irradiation doses
+T367	Entity 20074 20097	arrested p53RMCE/− MEFs
+R73	participates_in Arg1:T366 Arg2:T367	
+T368	Entity 20174 20200	not arrest p53ΔPGFP/− MEFs
+T369	KeyEntity 20244 20253	RMCE-ASAP
+T370	Entity 20266 20283	heterozygous MEFs
+T371	Entity 20292 20326	detection of a recessive phenotype
+R74	participates_in Arg1:T369 Arg2:T370	
+R75	participates_in Arg1:T370 Arg2:T371	
+T372	Entity 20353 20385	deleting the proline rich domain
+T373	Entity 20395 20410	less active p53
+R76	regulates Arg1:T372 Arg2:T373	
+T374	Entity 20416 20443	impaired cell cycle control
+R77	participates_in Arg1:T373 Arg2:T374	
+T375	Entity 20470 20491	GFP C-terminal fusion
+T376	Entity 20509 20529	alter p53 regulation
+R78	participates_in Arg1:T375 Arg2:T376	
+T377	Entity 20604 20615;20650 20663	development RMCE approach
+T378	Entity 20620 20634;20650 20663	implementation RMCE approach
+T379	Entity 20687 20706	allele modification
+T380	Entity 20710 20718	ES cells
+R79	participates_in Arg1:T377 Arg2:T379	
+R80	participates_in Arg1:T378 Arg2:T379	
+R81	is_part_of Arg1:T379 Arg2:T380	
+T381	Entity 20743 20760	heterozygous MEFs
+T382	Entity 20764 20794	accelerate phenotypic analyses
+T383	KeyEntity 20811 20820	RMCE-ASAP
+T384	Entity 20853 20885	inverted heterologous loxP sites
+R82	is_part_of Arg1:T384 Arg2:T383	
+T385	Entity 20889 20923	positive/negative selection marker
+R83	is_part_of Arg1:T385 Arg2:T383	
+T386	Entity 21017 21057	knock-out allele of the gene of interest
+R84	is_part_of Arg1:T386 Arg2:T383	
+T387	KeyEntity 21093 21102	RMCE-ASAP
+T388	Entity 21139 21166	analysis of mammalian genes
+R85	participates_in Arg1:T387 Arg2:T388	
+T389	KeyEntity 21259 21268	RMCE-ASAP
+T390	Entity 21286 21318	generate fibroblastic cell lines
+R86	participates_in Arg1:T389 Arg2:T390	
+T391	Entity 21336 21354	repeated targeting
+T392	Entity 21380 21383	p53
+T393	Entity 21387 21390	myc
+T394	Entity 21392 21397	NF-KB
+T395	Entity 21462 21474	PuroΔTK gene
+T396	Entity 21479 21496	SNLPuro-7/4 cells
+T397	Entity 21516 21524	DTA gene
+T398	KeyEntity 21991 22000	RMCE-ASAP
+T399	Entity 22008 22032	homologous recombination
+T400	Entity 22038 22079	gene of interest (GOI, open boxes: exons)
+T401	Entity 22153 22157	loxP
+T402	Entity 22193 22229	positive/negative selection cassette
+T403	Entity 22246 22279	second inverted heterologous loxP
+T404	Entity 22309 22328	RMCE-ready ES cells
+T405	Entity 22391 22413	Cre expression plasmid
+T406	Entity 22447 22490	floxed mutant GOI (green box: mutated exon)
+T407	KeyEntity 22540 22549	RMCE-ASAP
+T408	Entity 22624 22660	positive/negative selection cassette
+T409	Entity 22751 22769;22799 22825	selection cassette lies downstream of the GOI
+T410	Entity 22861 22901	accelerated phenotyping in somatic cells
+T411	Entity 22952 22968	RMCE-ready locus
+T412	Entity 22990 22998	WT locus
+T413	Entity 22920 22934	functional GOI
+T414	Entity 23026 23042	RMCE-ready mouse
+T415	Entity 22709 22724	RMCE-ready mice
+R87	participates_in Arg1:T408 Arg2:T415	
+T416	Entity 23075 23079	GOI,
+T417	Entity 23080 23093	somatic cells
+T418	KeyEntity 23102 23118	RMCE-ready locus
+T419	Entity 23164 23216	RMCE/+ and RMCE/− mouse embryonic fibroblasts (MEFs)
+T420	Entity 23320 23328;23342 23351	dominant mutations
+T421	Entity 23332 23351	recessive mutations
+T422	Entity 23297 23316	phenotypic analyses
+T423	Entity 23399 23407	ES cells
+T424	KeyEntity 23415 23435	p53 RMCE-ready locus
+T425	KeyEntity 23441 23449	p53 gene
+T426	Entity 23468 23498	17 kb-long EcoRI (RI) fragment
+T427	Entity 23555 23579	Flox targeting construct
+T428	Entity 23672 23702	3.4 kb-long 5′ homology region
+T429	Entity 23709 23734	0.2 kb upstream of coding
+T430	Entity 23749 23759	EcoRI site
+T431	Entity 23764 23766	L3
+T432	Entity 23770 23796	mutant loxP [loxP257, (14)
+R89	is_part_of Arg1:T430 Arg2:T428	
+R90	is_part_of Arg1:T431 Arg2:T428	
+R91	is_part_of Arg1:T432 Arg2:T428	
+T433	Entity 23805 23814	p53 exons
+T434	Entity 23821 23838	0.4 kb downstream
+T435	KeyEntity 23842 23869	puroΔTK fusion gene (puDTK)
+T436	Entity 23874 23901	positive/negative selection
+T437	Entity 23914 23930	inverted WT loxP
+T438	Entity 23943 23973	1.2 kb-long 3′ homology region
+T439	Entity 23987 24015	diphteria α-toxin (DTA) gene
+T440	Entity 24020 24040	targeting enrichment
+T441	Entity 24122 24133	6.5 kb band
+T442	Entity 24137 24150	Southern blot
+#2	AnnotatorNotes T442	experimental_test
+T443	Entity 24156 24163	probe A
+T444	Entity 24170 24179	3 kb band
+T445	Entity 24183 24186	PCR
+#19	AnnotatorNotes T445	experimental_test
+T446	Entity 24192 24201	primers a
+T447	Entity 24192 24199;24206 24207	primers b
+T448	Entity 24226 24234	Southern
+T449	Entity 24240 24243	PCR
+T450	Entity 24251 24263;24281 24287	positive (β) clones
+T451	Entity 24272 24287	negative clones
+R88	is_part_of Arg1:T435 Arg2:T433	
+R92	participates_in Arg1:T435 Arg2:T436	
+R93	is_part_of Arg1:T437 Arg2:T433	
+#20	AnnotatorNotes T447	refers to figure 2
+#21	AnnotatorNotes T446	refers to figure 2
+T452	KeyEntity 24322 24326	RMCE
+T453	Entity 24330 24338	ES cells
+T454	KeyEntity 24344 24348	RMCE
+T455	KeyEntity 24356 24370	p53GFP plasmid
+T456	Entity 24447 24470	p53GFP coding sequences
+T457	Entity 24482 24484;24492 24497	L3 sites
+T458	Entity 24489 24497	1L sites
+T459	Entity 24528 24550	Cre expression plasmid
+T460	Entity 24591 24594	PCR
+T461	Entity 24600 24609	primers b
+T462	Entity 24600 24607;24614 24615	primers c
+T463	Entity 24620 24633	Southern blot
+#22	AnnotatorNotes T463	experimental_test
+T464	Entity 24552 24573	FIAU-resistant clones
+T465	Entity 24639 24646	probe B
+T466	Entity 24704 24727	54/65 RMCE recombinants
+T467	Entity 24787 24790	PCR
+#23	AnnotatorNotes T467	experimental_test
+T468	Entity 24801 24809	Southern
+#24	AnnotatorNotes T468	experimental_test
+T469	Entity 24950 24977	correct recombination at 1L
+T470	Entity 25011 25013;25020 25028	12 kb bands
+T471	Entity 25018 25028	5 kb bands
+T472	Entity 25032 25040	Southern
+#25	AnnotatorNotes T472	experimental_test
+T473	Entity 25054 25080	orrect recombination at L3
+T474	Entity 25086 25102	absence of bands
+T475	Entity 25123 25132	Southerns
+#26	AnnotatorNotes T475	experimental_test
+T476	Entity 25186 25196	rearranged
+T477	Entity 25201 25226	inserted at ectopic sites
+T478	KeyEntity 25233 25237	RMCE
+T479	Entity 25266 25284	Recombinant clones
+T480	Entity 25302 25314	western blot
+#27	AnnotatorNotes T480	experimental_test
+T481	Entity 25323 25338	antibody to p53
+T482	Entity 25362 25369	western
+#28	AnnotatorNotes T482	experimental_test
+T483	Entity 25406 25424	p53+/GFP ES clones
+T484	Entity 25461 25477	adriamycin (ADR)
+T485	Entity 25505 25521	protein extracts
+T486	Entity 25537 25543	p53GFP
+T487	Entity 25577 25583	80 kDa
+T488	KeyEntity 25656 25660	RMCE
+T489	Entity 25668 25684	p53ΔPGFP plasmid
+T490	KeyEntity 25690 25717	p53ΔPGFP exchange construct
+T491	KeyEntity 25777 25793	p53GFP construct
+T492	Entity 25829 25840	exon 4 (4*)
+T493	Entity 25852 25864	PRD deletion
+R94	regulates Arg1:T492 Arg2:T493	
+R95	is_part_of Arg1:T492 Arg2:T491	
+T494	KeyEntity 25866 25870	RMCE
+T495	Entity 25902 25929	10/12 FIAU-resistant clones
+T496	Entity 25942 25951	3 kb band
+T497	Entity 25955 25958	PCR
+#29	AnnotatorNotes T497	experimental_test
+T498	Entity 25964 25973	primers b
+T499	Entity 25964 25971;25978 25979	primers c
+T500	Entity 25983 25990	western
+#30	AnnotatorNotes T500	experimental_test
+T501	Entity 26008 26029	FIAU-resistant clones
+T502	Entity 26071 26080	Lo X/Hi X
+T503	Entity 26125 26133	p53ΔPGFP
+T504	Entity 26135 26143	p53ΔPGFP
+T505	Entity 26177 26183	75 kDa
+T506	Entity 26239 26244	p53WT
+T507	Entity 26279 26296	p53ΔPGFP mutation
+T508	Entity 26250 26271	Germline transmission
+T509	Entity 26357 26373	p53ΔPGFP chimera
+T510	Entity 26407 26410	PCR
+#31	AnnotatorNotes T510	experimental_test
+T511	Entity 26416 26425	primers d
+T512	Entity 26416 26423;26430 26431	primers e
+T513	Entity 26459 26466	p53+/ΔP
+T514	Entity 26471 26484	p53ΔP/ΔP MEFs
+T515	Entity 26502 26505	U45
+T516	Entity 26509 26525	p53+/ΔPGFP mouse
+T517	Entity 26540 26568	transmission of the mutation
+T518	Entity 26581 26602	Germline transmission
+T519	KeyEntity 26610 26630	p53 RMCE-ready locus
+T520	Entity 26632 26650	p53RMCE/+ ES cells
+T521	Entity 26670 26681	blastocysts
+T522	Entity 26694 26707	chimeric mice
+T523	Entity 26709 26724	Chimeras (>80%)
+T524	Entity 26746 26767	p53+/− mice (Taconic)
+T525	Entity 26772 26776	MEFs
+T526	Entity 26792 26796	MEFs
+T527	Entity 26808 26817	genotyped
+T528	Entity 26821 26824	PCR
+#32	AnnotatorNotes T528	experimental_test
+T529	Entity 26830 26839	primers a
+T530	Entity 26830 26837;26844 26845	primers b
+T531	Entity 26875 26889	PuroΔTK marker
+T532	KeyEntity 26897 26908	RMCE allele
+T533	Entity 26959 26979	p53 RMCE-ready locus
+T534	Entity 26983 26989	MEFs 1
+T535	Entity 26983 26986	MEF
+T536	Entity 26983 26986;26997 26998	MEF 6
+T537	Entity 27020 27030	MEF clones
+T538	Entity 27066 27075	primers f
+T539	Entity 27066 27072;27080 27081	primer g
+T540	Entity 27066 27072;27099 27100	primer h
+T541	Entity 27066 27072;27105 27106	primer i
+T542	Entity 27149 27160	p53+/− mice
+T543	Entity 27199 27208	Primers f
+T544	Entity 27199 27205;27213 27214	Primer g
+T545	Entity 27225 27239	320 bp product
+T546	Entity 27253 27264	RMCE allele
+T547	Entity 27272 27281	primers h
+T548	Entity 27272 27278;27286 27287	primer i
+T549	Entity 27311 27325	150 bp product
+T550	Entity 27335 27345	Neo marker
+T551	Entity 27353 27362	KO allele
+T552	Entity 27364 27369	MEF 1
+T553	Entity 27374 27383	p53RMCE/+
+T554	Entity 27388 27394	MEFs 2
+T555	Entity 27388 27391;27399 27400	MEF 6
+T556	Entity 27405 27420	p53RMCE/− cells
+R96	participates_in Arg1:T520 Arg2:T521	
+R97	interacts_with Arg1:T523 Arg2:T524	
+T557	KeyEntity 27444 27448	RMCE
+T558	Entity 27452 27455	MEF
+T559	KeyEntity 27462 27466	RMCE
+T560	Entity 27476 27490	p53GFP plasmid
+T561	Entity 27540 27568	intense nuclear fluorescence
+T562	Entity 27570 27584	p53RMCE/− MEFs
+T563	Entity 27608 27630	Cre expression plasmid
+T564	Entity 27639 27662	p53GFP exchange plasmid
+T565	Entity 27749 27761	fluorescence
+T566	Entity 27763 27777	phase contrast
+T567	Entity 27779 27785	merged
+T568	KeyEntity 27883 27887	RMCE
+T569	KeyEntity 27897 27913	p53ΔPGFP plasmid
+T570	Entity 27915 27929	p53RMCE/− MEFs
+T571	Entity 27953 27975	Cre expression plasmid
+T572	Entity 27984 28000	p53ΔPGFP plasmid
+T573	Entity 28021 28032	ganciclovir
+T574	Entity 28034 28037	PCR
+#33	AnnotatorNotes T574	experimental_test
+T575	Entity 28043 28052	primers d
+T576	Entity 28043 28050;28057 28058	primers e
+T577	Entity 28086 28119	9/22 ganciclovir-resistant clones
+T578	Entity 28135 28146	ΔP mutation
+R98	participates_in Arg1:T577 Arg2:T578	
+T579	Entity 28213 28216	PCR
+T580	Entity 28222 28231	primers b
+T581	Entity 28222 28229;28236 28237	primers c
+T582	Entity 28270 28283	PRD deletions
+T583	Entity 28298 28302	RMCE
+T584	Entity 28310 28319	p53 locus
+R99	regulates Arg1:T583 Arg2:T582	
+R100	is_part_of Arg1:T583 Arg2:T584	
+T585	Entity 28416 28423	Western
+#34	AnnotatorNotes T585	experimental_test
+T586	Entity 28477 28485	p53ΔPGFP
+T587	Entity 28504 28507	ADR
+T588	Entity 28534 28539	p53WT
+T589	Entity 28565 28573	p53ΔPGFP
+T590	Entity 28603 28625;28641 28645	Asynchronous p53RMCE/− MEFs
+T591	Entity 28603 28615;28630 28645	Asynchronous p53ΔPGFP/− MEFs
+T592	Entity 28690 28700	6 or 12 Gy
+T593	Entity 28842 28855	p53RMCE locus
+T594	Entity 28921 28929	ES cells
+T595	Entity 28941 28949	p53ΔPGFP
+T596	Entity 28953 28959	p53GFP
+T597	KeyEntity 28963 28967	RMCE
+T598	Entity 28987 28996	efficient
+T599	Entity 29049 29053	MEFs
+T600	Entity 29062 29077	p53GFP toxicity
+T601	KeyEntity 29112 29116	RMCE
+R101	interacts_with Arg1:T597 Arg2:T596	
+R102	interacts_with Arg1:T597 Arg2:T595	
+T602	Entity 29122 29130	p53ΔPGFP
+T603	Entity 29193 29201	p53ΔPGFP
+T604	Entity 29214 29218	MEFs

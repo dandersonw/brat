@@ -28,3 +28,9 @@ R6	regulates Arg1:T19 Arg2:T21
 R7	regulates Arg1:T20 Arg2:T21	
 T22	Entity 2549 2588	computational regulatory motif searches
 T23	Entity 2607 2637	olfactory receptor microarrays
+T24	KeyEntity 0 16	Odorant receptor
+T25	Entity 27 40	sequence tags
+T26	KeyEntity 53 73	olfactory expression
+T27	Entity 82 91	400 genes
+T28	KeyEntity 93 121	extensive alternate splicing
+T29	KeyEntity 126 151	unequal expression levels

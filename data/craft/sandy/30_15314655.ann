@@ -68,3 +68,6 @@ R19	participates_in Arg1:T34 Arg2:T36
 R20	is_part_of Arg1:T39 Arg2:T38	
 R21	participates_in Arg1:T39 Arg2:T40	
 R22	interacts_with Arg1:T42 Arg2:T43	
+T16	KeyEntity 4 28	Zebrafish moonshine Gene
+T35	KeyEntity 37 75	Transcriptional Intermediary Factor 1γ
+T45	KeyEntity 90 116	Regulator of Hematopoiesis
