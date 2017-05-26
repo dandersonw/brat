@@ -86,21 +86,21 @@ class Agreement:
     def entity_span_krippendorff_alpha(self):
         annotator_set = set((doc.annotator_id for doc in self.annotations))
         # Character level
-        aggregated_regions = dict()
+        aggregated_regions = defaultdict(list)
         total_len = 0
         for (doc_name, annotations) in self.annotations_grouped_by_document(None):
             # We need all annotators to have annotated each doc
             assert annotator_set == set((doc.annotator_id for doc in annotations))
             doc_len = len(annotations[0].brat_annotation.get_document_text())
             for doc in annotations:
-                spans = [e.spans for e in doc.brat_annotation.get_entities()]
+                spans = itertools.chain.from_iterable(
+                    e.spans for e in doc.brat_annotation.get_entities())
                 regions = krippendorf_regions(spans, doc_len)
                 offset_spans(regions, total_len)
-                aggregated_regions[doc.annotator_id].append(regions)
+                aggregated_regions[doc.annotator_id] += regions
             total_len += doc_len
         aggregated_regions = aggregated_regions.values()
-        
-
+        return krippendorff_alpha(aggregated_regions, total_len)
 
     def _entity_f1(self, gold, notGold):
         precision = self._entity_precision(gold, notGold)
@@ -190,26 +190,30 @@ def entity_or_not_per_idx(entities, total_len):
     return result
 
 
-# As defined in Krippendorf 1995
+# As defined in Krippendorff 1995
 def krippendorff_alpha(annotator_regions, total_len):
     B = float(len(annotator_regions))
-    N = float(sum((len(regions for regions in annotator_regions))))
+    N = float(sum((len(regions) for regions in annotator_regions)))
     L = float(total_len)
-    expected_denom = B * L * (B * L - 1) * L
-    expected_denom -= L * sum([
-        sum((span[2]
-             * (span[1] - span[0])
-             * (span[1] - span[0] - 1)
-             for span in region))
-        for region in annotator_regions])
+    expected_denom = B * L * (B * L - 1)
+
+    expected_denom -= sum((sum((span[2]
+                                * (span[1] - span[0])
+                                * (span[1] - span[0] - 1)
+                                for span in region))
+                           for region in annotator_regions))
     expected_num = 0
     for region in annotator_regions:
         for span in region:
             l = span[1] - span[0]
             if span[2]:
                 expected_num += ((N - 1) / 3) * (2 * pow(l, 3) - 3 * pow(l, 2) + l)
-            # TODO: seemingly redundant other piece of piecewise function here
-    expected_num *= 2
+                for region_b in annotator_regions:
+                    for span_b in region_b:
+                        l_b = span_b[1] - span_b[0]
+                        if not span_b[2] and l_b >= l:
+                            expected_num += (l_b - l + 1) * pow(l, 2)
+    expected_num *= (2 / L)
     expected_disagreement = expected_num / expected_denom
 
     observed_disagreement = 0
@@ -218,15 +222,17 @@ def krippendorff_alpha(annotator_regions, total_len):
             for region_b in annotator_regions:
                 for span_b in region_b:
                     # Calculate distance
-                    intersect = span_a[0] < span_b[1] and span_b[0] > span_a[1]
-                    contain = (span_a[0] <= span_b[0] and span_a[1] >= span_b[0]
-                               or span_b[0] <= span_a[0] and span_b[1] >= span_a[0])
+                    intersect = span_a[0] < span_b[1] and span_b[0] < span_a[1]
+                    a_contain_b = span_a[0] <= span_b[0] and span_a[1] >= span_b[1]
+                    b_contain_a = span_b[0] <= span_a[0] and span_b[1] >= span_a[1]
                     if span_a[2] and span_b[2] and intersect:
                         left_distance = span_b[0] - span_a[0]
                         right_distance = span_b[1] - span_a[1]
                         observed_disagreement += pow(left_distance, 2) + pow(right_distance, 2)
-                    if span_a[2] ^ span_b[2] and contain:
+                    elif b_contain_a and span_a[2] and not span_b[2]:
                         observed_disagreement += pow(span_a[1] - span_a[0], 2)
+                    elif a_contain_b and span_b[2] and not span_a[2]:
+                        observed_disagreement += pow(span_b[1] - span_b[0], 2)
     observed_disagreement /= B * (B - 1) * pow(L, 2)
     return 1 - (observed_disagreement / expected_disagreement)
 
@@ -237,15 +243,15 @@ def krippendorf_regions(spans, total_len):
     for span in spans:
         last = regions[-1][1] if regions else 0
         if last < span[0]:
-            regions.append((last, span[0], False))
+            regions.append([last, span[0], False])
         elif last > span[0]:  # Let us try and paper over overlapping spans
             if last < span[1]:
-                regions.append((last, span[1], True))
+                regions.append([last, span[1], True])
             continue
-        regions.append((span[0], span[1], True))
+        regions.append([span[0], span[1], True])
     last = regions[-1][1] if regions else 0
     if last < total_len:
-        regions.append((last, total_len, False))
+        regions.append([last, total_len, False])
     return regions
 
 
@@ -253,6 +259,7 @@ def offset_spans(spans, offset):
     for span in spans:
         span[0] += offset
         span[1] += offset
+
 
 def fleiss_kappa(m):
     num_items = len(m)
@@ -294,6 +301,7 @@ def calculate_agreement(docs, relaxed, consider_discontinuous, filter_entity_typ
     report_scores(agreement.relation_f1(), "Relation F1")
 
     report_scores(agreement.entity_span_fleiss_kappa(), "Fleiss Kappa")
+    report_scores(agreement.entity_span_krippendorff_alpha(), "Krippendorff Alpha")
 
 
 def report_scores(scores, name):
