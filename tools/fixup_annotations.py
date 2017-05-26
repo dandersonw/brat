@@ -15,7 +15,7 @@ def remove_other_relations(doc):
             to_remove.append(relation)
     for relation in to_remove:
         doc.remove_relation(relation)
-    logging.debug("{} `other_relation's to fixup in doc {}".format(len(to_remove), doc.document_id))   
+    logging.debug("{} `other_relation's to fixup in doc {}".format(len(to_remove), doc.document_id))
     return doc
 
 
@@ -27,15 +27,7 @@ def trim_leading_determiners(doc):
         # entities as determiners if their surface forms are OOV
         if start_token.tag_ == "DT" and not start_token.is_oov:
             count += 1
-            first_span = (entity.spans[0][0] + 1, entity.spans[0][1])
-            if first_span[1] - first_span[0] == 0:
-                if len(entity.spans) == 1:
-                    logging.warn(u"Removing entity {} that is only a determiner".format(entity))
-                    doc.remove_entity(entity, force_remove_relations=True)
-                else:
-                    entity.set_spans(entity.spans[1:])
-            else:
-                entity.set_spans([first_span] + entity.spans[1:])
+            trim_entity(doc, entity, 0, 1, 0)
     logging.debug("{} leading determiners to fixup in doc {}".format(count, doc.document_id))
     return doc
 
@@ -54,6 +46,20 @@ def fixup_overlapping_annotations(doc):
         doc.remove_entity(remove, force_remove_relations=True)
     logging.debug("{} overlapping pairs to fixup in doc {}".format(len(overlapping), doc.document_id))
     return doc
+
+
+def trim_entity(doc, entity, span_idx, left_trim, right_trim):
+    span = entity.spans[span_idx]
+    span = (span[0] + left_trim, span[1] + right_trim)
+    if span[1] - span[0] <= 0:
+        if len(entity.spans) == 1:
+            logging.warn(u"Removing entity {} that was fully trimmed".format(entity))
+            doc.remove_entity(entity, force_remove_relations=True)
+        else:
+            entity.set_spans(entity.spans[1:])
+    spans = entity.spans
+    spans[span_idx] = span
+    entity.set_spans(spans)
 
 
 FIXUP_STEPS = [remove_other_relations,
