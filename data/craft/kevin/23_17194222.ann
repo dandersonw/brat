@@ -34,3 +34,8 @@ T33	Entity 1512 1524	osteogenesis
 R1	is_subclass_of Arg1:T2 Arg2:T1	
 R2	is_subclass_of Arg1:T3 Arg2:T1	
 R3	is_subclass_of Arg1:T4 Arg2:T1	
+T34	KeyEntity 33 37	BMP2
+T35	KeyEntity 39 43	BMP4
+T36	KeyEntity 49 53	BMP7
+T37	Entity 77 91	Skeletogenesis
+T38	Entity 57 72	Limb Patterning

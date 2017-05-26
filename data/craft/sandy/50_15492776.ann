@@ -34,3 +34,6 @@ R9	regulates Arg1:T18 Arg2:T19
 R10	regulates Arg1:T18 Arg2:T20	
 R11	regulates Arg1:T18 Arg2:T21	
 R12	regulates Arg1:T22 Arg2:T23	
+T25	KeyEntity 0 22	BMP Receptor Signaling
+T26	KeyEntity 39 60	Postnatal Maintenance
+T27	KeyEntity 64 83	Articular Cartilage

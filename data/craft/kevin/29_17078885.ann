@@ -15,3 +15,6 @@ T14	Entity 1187 1210	ALK5-mediated signaling
 T15	Entity 1214 1232	neural crest cells
 T16	Entity 1280 1290	pharyngeal
 T17	Entity 1295 1328	cardiac outflow tract development
+T18	Entity 0 24	Defective ALK5 signaling
+T19	Entity 32 44	neural crest
+T20	Entity 64 105	postmigratory neural crest cell apoptosis

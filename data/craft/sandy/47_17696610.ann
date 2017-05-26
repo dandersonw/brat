@@ -37,3 +37,7 @@ R11	participates_in Arg1:T16 Arg2:T18
 R12	participates_in Arg1:T19 Arg2:T20	
 R13	regulates Arg1:T21 Arg2:T22	
 R14	interacts_with Arg1:T23 Arg2:T24	
+T25	KeyEntity 0 37	Mouse Pachytene Checkpoint 2 (Trip13)
+T26	Entity 65 86	Meiotic Recombination
+R15	regulates Arg1:T25 Arg2:T26	
+T27	Entity 91 103	Not Synapsis

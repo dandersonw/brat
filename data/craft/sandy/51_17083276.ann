@@ -38,3 +38,8 @@ R8	regulates Arg1:T25 Arg2:T23
 R9	participates_in Arg1:T23 Arg2:T24	
 R10	participates_in Arg1:T26 Arg2:T27	
 R11	participates_in Arg1:T26 Arg2:T28	
+T1	KeyEntity 0 5	CAF-1
+T2	KeyEntity 23 51	Heterochromatin Organization
+T31	KeyEntity 55 82	Pluripotent Embryonic Cells
+R12	participates_in Arg1:T1 Arg2:T2	
+R13	is_part_of Arg1:T2 Arg2:T31	

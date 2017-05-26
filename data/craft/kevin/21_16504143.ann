@@ -32,3 +32,6 @@ T26	Entity 1116 1124	learning
 T27	Entity 1221 1243	cell adhesion molecule
 T28	Entity 1251 1258	synapse
 R5	is_part_of Arg1:T27 Arg2:T28	
+T29	Entity 12 28	spatial learning
+T30	Entity 33 51	motor coordination
+T31	KeyEntity 55 76	ADAM11-deficient mice

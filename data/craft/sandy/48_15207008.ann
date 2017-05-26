@@ -35,3 +35,6 @@ T25	Entity 1582 1586	TACC
 R8	participates_in Arg1:T21 Arg2:T20	
 R9	participates_in Arg1:T21 Arg2:T22	
 R10	participates_in Arg1:T21 Arg2:T23	
+T26	KeyEntity 0 28	Structure-function evolution
+T27	KeyEntity 36 73	Transforming acidic coiled coil genes
+T28	KeyEntity 98 132	phylogenetically diverse organisms

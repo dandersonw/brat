@@ -37,3 +37,9 @@ R11	is_part_of Arg1:T15 Arg2:T14
 R12	participates_in Arg1:T17 Arg2:T16	
 R13	participates_in Arg1:T16 Arg2:T19	
 R14	regulates Arg1:T20 Arg2:T21	
+T25	Entity 2 19	Signaling Pathway
+T26	KeyEntity 30 36	TGF-β2
+T27	KeyEntity 41 46	Snail
+T28	KeyEntity 50 77	Hair Follicle Morphogenesis
+R15	participates_in Arg1:T26 Arg2:T28	
+R16	participates_in Arg1:T27 Arg2:T28	

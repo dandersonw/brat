@@ -41,3 +41,5 @@ R13	is_part_of Arg1:T20 Arg2:T19
 R14	participates_in Arg1:T20 Arg2:T21	
 R15	is_part_of Arg1:T20 Arg2:T22	
 R16	participates_in Arg1:T20 Arg2:T23	
+T24	KeyEntity 0 35	Medium-Chain Acyl-CoA Dehydrogenase
+T25	Entity 50 68	Gene-Targeted Mice

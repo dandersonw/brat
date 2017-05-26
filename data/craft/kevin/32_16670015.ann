@@ -18,3 +18,7 @@ T17	Entity 1028 1031	QTL
 T18	Entity 1035 1059	MMU1, 5, 8, 9, 11 and 17
 T19	Entity 1293 1296	QTL
 T20	Entity 271 319	mouse chromosomes (MMU) 1, 2, 5, 8, 9, 11 and 17
+T21	Entity 36 47	obesity QTL
+T22	Entity 25 31;44 47	growth QTL
+T23	Entity 54 82	mouse speed congenic strains
+T24	Entity 0 21	Genome-wide isolation

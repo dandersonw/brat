@@ -39,3 +39,9 @@ R8	interacts_with Arg1:T23 Arg2:T24
 R9	participates_in Arg1:T25 Arg2:T27	
 R10	participates_in Arg1:T26 Arg2:T27	
 R11	participates_in Arg1:T26 Arg2:T29	
+T30	KeyEntity 0 28	Enhanced Odor Discrimination
+T31	KeyEntity 33 58	Impaired Olfactory Memory
+T32	Entity 62 89	Spatially Controlled Switch
+T33	KeyEntity 93 107	AMPA Receptors
+R12	regulates Arg1:T33 Arg2:T31	
+R13	regulates Arg1:T33 Arg2:T30	

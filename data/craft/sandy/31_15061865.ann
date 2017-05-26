@@ -53,3 +53,7 @@ R19	regulates Arg1:T32 Arg2:T31
 T33	Entity 2331 2351	dopamine D2 receptor
 T34	Entity 2380 2413	associative and reversal learning
 R20	regulates Arg1:T33 Arg2:T34	
+T35	KeyEntity 0 21	Dopamine D2 receptors
+T36	KeyEntity 30 53	two-odor discrimination
+T37	KeyEntity 58 75	reversal learning
+T38	Entity 79 91	C57BL/6 mice

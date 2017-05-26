@@ -49,3 +49,8 @@ T32	Entity 1755 1775	slow to disaggregate
 R15	participates_in Arg1:T26 Arg2:T31	
 R16	participates_in Arg1:T26 Arg2:T32	
 R17	regulates Arg1:T27 Arg2:T28	
+T33	KeyEntity 0 22	Persistent Amyloidosis
+T34	KeyEntity 33 61	Suppression of Aβ Production
+T35	KeyEntity 87 104	Alzheimer Disease
+R18	interacts_with Arg1:T34 Arg2:T33	
+R19	participates_in Arg1:T33 Arg2:T35	

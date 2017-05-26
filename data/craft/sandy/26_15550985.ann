@@ -42,3 +42,5 @@ R11	is_part_of Arg1:T22 Arg2:T23
 R12	participates_in Arg1:T23 Arg2:T24	
 R13	interacts_with Arg1:T25 Arg2:T26	
 R14	interacts_with Arg1:T25 Arg2:T27	
+T28	KeyEntity 2 22;27 31	Chemoattractant Role NT-3
+T29	KeyEntity 35 63	Proprioceptive Axon Guidance

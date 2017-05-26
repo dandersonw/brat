@@ -289,3 +289,6 @@ T183	Entity 27376 27406	HA-tagged mouse ADAM11 protein
 T184	Entity 27420 27430	HeLa cells
 T185	Entity 27667 27689	Morris water maze task
 #27	AnnotatorNotes T185	experimental_test
+T188	KeyEntity 55 76	ADAM11-deficient mice
+T189	KeyEntity 12 28	spatial learning
+T186	KeyEntity 33 51	motor coordination

@@ -48,3 +48,7 @@ R13	interacts_with Arg1:T25 Arg2:T24
 R14	interacts_with Arg1:T28 Arg2:T29	
 R15	interacts_with Arg1:T28 Arg2:T30	
 R16	is_part_of Arg1:T32 Arg2:T31	
+T33	KeyEntity 18 35	Doublesex Homolog
+T34	Entity 2 17	Mammal-Specific
+T35	KeyEntity 52 70	Male Sex Chromatin
+T36	KeyEntity 91 103	Male Meiosis

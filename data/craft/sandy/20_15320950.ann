@@ -81,3 +81,7 @@ R19	other_relation Arg1:T38 Arg2:T37
 #10	AnnotatorNotes R19	equivalent
 R20	participates_in Arg1:T41 Arg2:T39	
 R21	regulates Arg1:T46 Arg2:T47	
+T53	KeyEntity 0 33	Loss of KCNJ10 protein expression
+T54	KeyEntity 44 66	endocochlear potential
+T55	Entity 78 86	deafness
+T56	KeyEntity 90 106	Pendred syndrome

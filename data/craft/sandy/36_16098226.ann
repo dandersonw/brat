@@ -48,3 +48,8 @@ R15	interacts_with Arg1:T22 Arg2:T25
 R16	interacts_with Arg1:T29 Arg2:T30	
 T32	Entity 1445 1459	PAX6 mutations
 R17	interacts_with Arg1:T32 Arg2:T31	
+T33	KeyEntity 93 99	HOMER3
+T34	KeyEntity 101 106	DNCL1
+T35	KeyEntity 111 117	TRIM11
+T36	KeyEntity 41 45	PAX6
+T37	KeyEntity 47 67	C-terminal mutations

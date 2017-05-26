@@ -40,3 +40,8 @@ R11	participates_in Arg1:T24 Arg2:T23
 R12	participates_in Arg1:T24 Arg2:T25	
 R13	is_part_of Arg1:T25 Arg2:T26	
 R14	is_part_of Arg1:T25 Arg2:T27	
+T28	KeyEntity 35 74	cystic fibrosis intestinal inflammatory
+T29	Entity 10 27	genetic modifiers
+T30	Entity 88 107	mouse chromosomes 1
+T31	Entity 109 110;88 105	9 mouse chromosomes
+T32	Entity 116 118;88 105	10 mouse chromosomes

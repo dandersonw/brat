@@ -33,3 +33,8 @@ T22	Entity 1225 1240	limbs deficient
 R12	interacts_with Arg1:T21 Arg2:T22	
 T23	Entity 1464 1477	BMP2 and BMP4
 R13	interacts_with Arg1:T23 Arg2:T18	
+T1	Entity 33 37	BMP2
+T8	Entity 39 43	BMP4
+T24	Entity 49 53	BMP7
+T25	KeyEntity 57 72	Limb Patterning
+T26	KeyEntity 77 91	Skeletogenesis

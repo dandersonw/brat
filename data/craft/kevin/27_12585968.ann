@@ -28,3 +28,8 @@ T27	Entity 1574 1589	Brn3c null mice
 T28	Entity 1615 1630	sensory neurons
 T29	Entity 1652 1659	cochlea
 T30	Entity 1724 1745	apical spiral neurons
+R1	other_relation Arg1:T2 Arg2:T1	
+#1	AnnotatorNotes R1	attribute
+R2	is_part_of Arg1:T26 Arg2:T27	
+T31	KeyEntity 0 22	Brn3c null mutant mice
+T32	Entity 68 98	afferent inner ear innervation

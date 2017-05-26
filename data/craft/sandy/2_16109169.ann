@@ -67,3 +67,7 @@ R14	regulates Arg1:T39 Arg2:T44
 R15	participates_in Arg1:T39 Arg2:T45	
 R16	is_part_of Arg1:T48 Arg2:T49	
 R17	participates_in Arg1:T48 Arg2:T50	
+T52	KeyEntity 20 51	Huntington's disease gene (Hdh)
+T53	KeyEntity 60 85	anterior streak formation
+T54	KeyEntity 90 106	early patterning
+T55	Entity 114 126	mouse embryo

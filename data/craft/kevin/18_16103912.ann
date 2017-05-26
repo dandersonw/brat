@@ -48,3 +48,10 @@ R16	other_relation Arg1:T28 Arg2:T27
 #3	AnnotatorNotes R16	has
 R17	other_relation Arg1:T29 Arg2:T27	
 #4	AnnotatorNotes R17	has
+T30	KeyEntity 0 4	Fog2
+T31	Entity 21 37;47 58	Normal Diaphragm Development
+T32	Entity 42 58	Lung Development
+T33	Entity 62 66	Mice
+T34	Entity 71 77	Humans
+R18	participates_in Arg1:T30 Arg2:T31	
+R19	participates_in Arg1:T30 Arg2:T32	

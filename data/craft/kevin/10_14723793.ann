@@ -44,3 +44,6 @@ R7	other_relation Arg1:T6 Arg2:T11
 R8	other_relation Arg1:T18 Arg2:T17	
 #2	AnnotatorNotes R8	attribute
 T1	Entity 1688 1701	ion transport
+T37	Entity 0 17	Molecular cloning
+T38	Entity 22 38	characterization
+T39	Entity 46 68	mouse Acdp gene family

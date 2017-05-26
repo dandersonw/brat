@@ -35,3 +35,5 @@ R7	is_part_of Arg1:T15 Arg2:T17
 R8	is_part_of Arg1:T10 Arg2:T22	
 R9	regulates Arg1:T18 Arg2:T19	
 R10	is_part_of Arg1:T18 Arg2:T20	
+T25	Entity 18 49	collagen-induced arthritis loci
+T26	Entity 58 81	multiparous female mice

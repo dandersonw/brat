@@ -45,3 +45,6 @@ R14	participates_in Arg1:T24 Arg2:T25
 R15	participates_in Arg1:T27 Arg2:T28	
 R16	regulates Arg1:T29 Arg2:T30	
 R17	participates_in Arg1:T29 Arg2:T32	
+T21	KeyEntity 18 49	collagen-induced arthritis loci
+T26	Entity 53 81	aged multiparous female mice
+R18	is_part_of Arg1:T21 Arg2:T26	

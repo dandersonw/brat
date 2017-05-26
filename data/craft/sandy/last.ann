@@ -30,3 +30,7 @@ R9	regulates Arg1:T16 Arg2:T17
 T18	Entity 1215 1225	AQP2-F204V
 T19	Entity 1246 1267	endoplasmic reticulum
 R10	interacts_with Arg1:T18 Arg2:T19	
+T20	KeyEntity 0 18	Diabetes Insipidus
+T21	Entity 22 26	Mice
+T22	KeyEntity 46 57	Aquaporin-2
+R11	is_part_of Arg1:T22 Arg2:T20	

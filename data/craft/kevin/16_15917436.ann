@@ -33,3 +33,6 @@ T22	Entity 1492 1523	eukaryotic replicative helicase
 R11	is_part_of Arg1:T21 Arg2:T22	
 T23	Entity 1145 1155	GC content
 R12	participates_in Arg1:T23 Arg2:T18	
+T24	Entity 36 59	mouse MCM4/6/7 helicase
+T25	Entity 0 11	DNA binding
+T26	Entity 16 24	helicase

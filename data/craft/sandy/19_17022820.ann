@@ -85,3 +85,6 @@ R23	participates_in Arg1:T49 Arg2:T51
 R24	participates_in Arg1:T49 Arg2:T51	
 R25	participates_in Arg1:T50 Arg2:T52	
 R26	participates_in Arg1:T50 Arg2:T52	
+T59	KeyEntity 42 52	hemostasis
+T60	KeyEntity 57 67	thrombosis
+T61	Entity 0 18	Genetic background

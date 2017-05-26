@@ -61,3 +61,11 @@ R19	is_part_of Arg1:T29 Arg2:T31
 R20	regulates Arg1:T32 Arg2:T33	
 R21	regulates Arg1:T32 Arg2:T34	
 R22	regulates Arg1:T32 Arg2:T35	
+T40	KeyEntity 0 17	PGC-1α Deficiency
+T41	KeyEntity 25 67	Multi-System Energy Metabolic Derangements
+T42	Entity 69 87	Muscle Dysfunction
+T43	Entity 89 112	Abnormal Weight Control
+T44	Entity 117 134	Hepatic Steatosis
+R23	is_part_of Arg1:T42 Arg2:T41	
+R24	is_part_of Arg1:T43 Arg2:T41	
+R25	is_part_of Arg1:T44 Arg2:T41	

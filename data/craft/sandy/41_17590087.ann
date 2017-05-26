@@ -34,3 +34,10 @@ R10	interacts_with Arg1:T11 Arg2:T12
 R11	is_part_of Arg1:T13 Arg2:T14	
 R12	regulates Arg1:T15 Arg2:T16	
 R13	participates_in Arg1:T18 Arg2:T17	
+T23	KeyEntity 0 8;12 17	Deletion ITPR1
+T24	KeyEntity 28 34	Ataxia
+T25	Entity 38 42	Mice
+T26	KeyEntity 47 72	Spinocerebellar Ataxia 15
+T27	Entity 76 82	Humans
+R14	is_part_of Arg1:T24 Arg2:T25	
+R15	is_part_of Arg1:T26 Arg2:T27	

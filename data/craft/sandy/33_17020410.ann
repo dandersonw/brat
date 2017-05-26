@@ -40,3 +40,6 @@ T26	Entity 1454 1468	“null” alleles
 R13	is_part_of Arg1:T26 Arg2:T22	
 R14	participates_in Arg1:T24 Arg2:T23	
 T27	Entity 95 118	compound heterozygosity
+T28	KeyEntity 0 18	Rescue of Progeria
+T29	KeyEntity 22 41	Trichothiodystrophy
+T30	KeyEntity 45 74	Homozygous Lethal Xpd Alleles

@@ -35,3 +35,7 @@ T22	Entity 2034 2061	gene and cellular therapies
 T23	Entity 2077 2106	devastating metabolic disease
 T24	KeyEntity 1964 1968	MSUD
 R11	is_part_of Arg1:T24 Arg2:T23	
+T25	Entity 0 10;35 48	Production murine models
+T26	Entity 15 48	characterization of murine models
+T27	KeyEntity 64 102	intermediate maple syrup urine disease
+T28	KeyEntity 52 59;77 102	classic maple syrup urine disease

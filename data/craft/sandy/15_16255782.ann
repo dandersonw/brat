@@ -68,3 +68,8 @@ R18	is_subclass_of Arg1:T39 Arg2:T40
 R19	regulates Arg1:T39 Arg2:T42	
 R20	regulates Arg1:T39 Arg2:T43	
 R21	regulates Arg1:T47 Arg2:T44	
+T1	KeyEntity 0 26	CEBPG transcription factor
+T6	KeyEntity 43 54	antioxidant
+T48	KeyEntity 59 75	DNA repair genes
+T49	KeyEntity 79 112	normal bronchial epithelial cells
+T50	KeyEntity 141 163	bronchogenic carcinoma

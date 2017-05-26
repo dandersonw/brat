@@ -53,3 +53,5 @@ R15	is_part_of Arg1:T26 Arg2:T27
 R16	other_relation Arg1:T30 Arg2:T29	
 #3	AnnotatorNotes R16	requires
 R17	interacts_with Arg1:T31 Arg2:T32	
+T36	KeyEntity 0 32	Adenomatous Polyposis Coli (APC)
+T37	Entity 49 67;71 75;80 86	Normal Development Skin Thymus

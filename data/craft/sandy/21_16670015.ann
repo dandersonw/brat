@@ -42,3 +42,5 @@ R14	is_part_of Arg1:T33 Arg2:T34
 R15	participates_in Arg1:T33 Arg2:T35	
 R16	participates_in Arg1:T36 Arg2:T35	
 R17	participates_in Arg1:T37 Arg2:T35	
+T1	KeyEntity 0 21;25 31;36 47	Genome-wide isolation growth obesity QTL
+T3	KeyEntity 60 82	speed congenic strains

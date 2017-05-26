@@ -28,3 +28,7 @@ T20	Entity 1162 1187	photoreceptor development
 T21	KeyEntity 1243 1246	LCA
 R7	participates_in Arg1:T18 Arg2:T19	
 R8	participates_in Arg1:T20 Arg2:T21	
+T22	KeyEntity 0 14	Synaptogenesis
+T23	KeyEntity 19 42	outer segment formation
+T24	KeyEntity 64 77	neural retina
+T25	KeyEntity 81 96	Crx mutant mice

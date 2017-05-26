@@ -3,26 +3,43 @@ T2	Entity 172 200	KH-domain containing protein
 T3	Entity 231 244	early embryos
 T4	Entity 246 256	germ cells
 T5	Entity 262 287	embryonic stem (ES) cells
-T6	Entity 347 362	mouse ESG1 gene
-T7	Entity 552 561	ESG1 gene
-T8	Entity 628 643	mouse ESG1 gene
+T6	KeyEntity 347 362	mouse ESG1 gene
+T7	KeyEntity 552 561	ESG1 gene
+T8	KeyEntity 628 643	mouse ESG1 gene
 T9	Entity 716 728	chromosome 9
 T10	Entity 846 864	5' flanking region
 T11	Entity 872 881	ESG1 gene
 T12	Entity 995 1020	luciferase reporter assay
 T13	Entity 1066 1075	ESG1 gene
 T14	Entity 1106 1114	ES cells
-T15	Entity 1122 1136	β-geo cassette
+T15	KeyEntity 1122 1136	β-geo cassette
 T16	Entity 1140 1164	homologous recombination
 T17	Entity 1215 1225	germ cells
-T18	Entity 1227 1239	ESG1-/- mice
-T19	Entity 1295 1311	ESG1-/- ES cells
+T18	KeyEntity 1227 1239	ESG1-/- mice
+T19	KeyEntity 1295 1311	ESG1-/- ES cells
 T20	Entity 1341 1365	homologous recombination
 T21	Entity 1384 1395	blastocysts
 T22	Entity 1436 1449;1467 1475	Northern blot analyses
 T23	Entity 1454 1475	western blot analyses
 T24	Entity 1501 1505	ESG1
-T25	Entity 1622 1637	mouse ESG1 gene
+T25	KeyEntity 1622 1637	mouse ESG1 gene
 T26	Entity 1692 1704	chromosome 9
-T27	Entity 1775 1779	ESG1
+T27	KeyEntity 1775 1779	ESG1
 T28	Entity 1815 1823	ES cells
+R1	other_relation Arg1:T1 Arg2:T2	
+#1	AnnotatorNotes R1	expresses
+R2	is_part_of Arg1:T25 Arg2:T26	
+T29	Entity 1741 1758	pluripotent cells
+T30	Entity 1763 1773	germ cells
+T31	Entity 1845 1854	germcells
+R3	other_relation Arg1:T10 Arg2:T11	
+#2	AnnotatorNotes R3	attribute
+T32	KeyEntity 66 70	ESG1
+T33	KeyEntity 72 88	PH34/ECAT2/DPPA5
+R4	other_relation Arg1:T1 Arg2:T3	
+#3	AnnotatorNotes R4	expressed in
+R5	other_relation Arg1:T1 Arg2:T4	
+#4	AnnotatorNotes R5	expressed in
+R6	other_relation Arg1:T1 Arg2:T5	
+#5	AnnotatorNotes R6	expressed in
+T34	Entity 400 425	chromosomal localizations

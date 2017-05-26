@@ -44,3 +44,6 @@ R14	is_part_of Arg1:T26 Arg2:T17
 R15	is_part_of Arg1:T26 Arg2:T18	
 T27	KeyEntity 1717 1722	Sam68
 R16	is_part_of Arg1:T27 Arg2:T19	
+T28	KeyEntity 22 41	RNA Binding Protein
+T29	KeyEntity 16 21;22 41	Sam68 RNA Binding Protein
+T30	KeyEntity 61 82	Age-Related Bone Loss

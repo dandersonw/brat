@@ -1,16 +1,12 @@
-T1	Entity 140 161	Mucolipidosis type IV
-T2	KeyEntity 163 167	MLIV
+T2	KeyEntity 140 168	Mucolipidosis type IV (MLIV)
 T3	Entity 175 221	autosomal recessive lysosomal storage disorder
 T4	Entity 239 256	severe neurologic
 T5	Entity 261 289	ophthalmologic abnormalities
 T6	KeyEntity 304 313	MLIV gene
 T7	KeyEntity 315 321	MCOLN1
-T8	Entity 366 394	transient receptor potential
-T9	Entity 396 399	TRP
+T8	Entity 366 400	transient receptor potential (TRP)
 T10	KeyEntity 501 507	Mcoln1
 T11	Entity 528 542	splice variant
-R1	other_relation Arg1:T2 Arg2:T1	
-#1	AnnotatorNotes R1	equivalent
 R2	is_part_of Arg1:T2 Arg2:T3	
 R3	is_part_of Arg1:T7 Arg2:T8	
 R4	is_part_of Arg1:T10 Arg2:T11	
@@ -35,3 +31,440 @@ T26	KeyEntity 1457 1461	MLIV
 R7	interacts_with Arg1:T23 Arg2:T22	
 R8	is_part_of Arg1:T24 Arg2:T25	
 R9	is_part_of Arg1:T24 Arg2:T26	
+T28	Entity 0 7;12 28;42 53	Cloning characterization Mcoln1 gene
+T27	Entity 65 97	alternatively spliced transcript
+T1	Entity 780 795	580 amino acids
+T29	Entity 839 843	2 kb
+T30	Entity 855 863	14 exons
+T9	Entity 979 1001	611 amino acid protein
+T31	KeyEntity 1624 1664	Mucolipidosis type IV (MLIV; MIM 252650)
+T32	Entity 1671 1717	autosomal recessive lysosomal storage disorder
+T33	Entity 1743 1759	corneal clouding
+T34	Entity 1761 1792	delayed psychomotor development
+T35	Entity 1798 1816	mental retardation
+R1	is_part_of Arg1:T33 Arg2:T31	
+R10	is_part_of Arg1:T34 Arg2:T31	
+R11	is_part_of Arg1:T35 Arg2:T31	
+T36	Entity 1939 1966	constitutively achlorhydric
+T37	Entity 1983 1997	hypergastremia
+T38	KeyEntity 2017 2021	MLIV
+T39	Entity 2025 2027;2034 2062	no mucopolysaccharide excretion
+T40	Entity 2025 2027;2064 2080	no skeletal changes
+T41	Entity 2025 2027;2085 2097	no organomegaly
+T42	Entity 2128 2161	Abnormal lysosomal storage bodies
+T43	Entity 2166 2180	large vacuoles
+T44	Entity 2200 2204	skin
+T45	Entity 2209 2229	conjuctival biopsies
+T46	Entity 2236 2255	electron-microscopy
+#1	AnnotatorNotes T46	experimental_procedure
+T47	Entity 2270 2289	gene identification
+#3	AnnotatorNotes T47	experimental_procedure
+T48	KeyEntity 2392 2396	MLIV
+T49	Entity 2404 2431	Ashkenazi Jewish population
+T50	KeyEntity 2535 2541	MCOLN1
+T51	Entity 2570 2593	chromosome 19p13.2-13.3
+T52	Entity 2614 2621;2646 2695	protein transient receptor potential (TRP) cation channel
+R12	regulates Arg1:T50 Arg2:T52	
+T53	Entity 2721 2740	Protein trafficking
+T54	KeyEntity 2762 2766	MLIV
+T55	Entity 2800 2822	late endocytic pathway
+R13	other_relation Arg1:T55 Arg2:T54	
+#4	AnnotatorNotes R13	time_stage
+T56	Entity 2846 2859	mucolipidoses
+T57	Entity 2890 2920	defective lysosomal hydrolases
+R14	is_part_of Arg1:T57 Arg2:T56	
+T58	Entity 2945 2967	Caenorhabditis elegans
+#5	AnnotatorNotes T58	model_organism
+T59	KeyEntity 3026 3032	MCOLN1
+T60	Entity 3033 3043	C. elegans
+#6	AnnotatorNotes T60	model_organism
+T61	Entity 3055 3060	cup-5
+R15	other_relation Arg1:T61 Arg2:T60	
+#7	AnnotatorNotes R15	homolog
+T62	Entity 3093 3104	endocytosis
+T63	Entity 3106 3136	accumulation of large vacuoles
+T64	Entity 3144 3191	decreased rate of endocytosed protein breakdown
+R16	participates_in Arg1:T61 Arg2:T62	
+R17	participates_in Arg1:T61 Arg2:T63	
+R18	participates_in Arg1:T61 Arg2:T64	
+R19	regulates Arg1:T59 Arg2:T61	
+#8	AnnotatorNotes R19	human_connection
+T65	KeyEntity 3293 3318	mouse homologue of MCOLN1
+T66	KeyEntity 3353 3373	mouse models of MLIV
+T67	KeyEntity 3458 3480	mouse homologue Mcoln1
+T68	Entity 3504 3529	mouse homologue of MCOLN1
+T69	Entity 3581 3620	high throughput genomic sequence (HTGS)
+#9	AnnotatorNotes T69	experimental_procedure
+T70	Entity 3636 3643	TBLASTN
+#10	AnnotatorNotes T70	equipment
+T71	Entity 3666 3715	mouse BAC clone RPCI-23_387H4 (GB No. AC079544.1)
+T72	Entity 3869 3872	BAC
+T73	Entity 3882 3894	chromosome 8
+T74	Entity 3973 3985	BAC sequence
+T75	Entity 4011 4029	mouse EST database
+T76	Entity 4036 4042	BLASTN
+T77	Entity 4086 4103	I.M.A.G.E. clones
+T78	Entity 4057 4061	ESTs
+R20	other_relation Arg1:T70 Arg2:T71	
+#11	AnnotatorNotes R20	identified
+R21	participates_in Arg1:T72 Arg2:T73	
+T79	KeyEntity 4167 4185	Mcoln1 gene region
+T80	Entity 4214 4228	590 kb segment
+T81	Entity 4232 4250	mouse chromosome 8
+T82	Entity 4264 4283	human chromosome 19
+T83	Entity 4307 4311	Insr
+T84	Entity 4316 4319	Nte
+T85	Entity 4352 4356	BACs
+T86	Entity 4358 4383	RPCI-23_334D24 (AC087153)
+T87	Entity 4385 4409	RPCI-23_312B8 (AC087150)
+T88	Entity 4415 4439	RPCI-23_387H4 (AC079544)
+T89	KeyEntity 4467 4473	Mcoln1
+T90	Entity 4480 4488	14 exons
+T91	Entity 4590 4597	exon 13
+T92	Entity 4605 4637	alternatively spliced transcript
+T93	Entity 4652 4676	UniGene cluster Mm.39099
+T94	Entity 4701 4734	human zinc finger gene (AC001252)
+T95	Entity 4815 4827	201 kb scale
+T96	Entity 4831 4848	BAC RPCI-23_387H4
+R22	is_subclass_of Arg1:T86 Arg2:T85	
+R23	is_subclass_of Arg1:T87 Arg2:T85	
+R24	is_subclass_of Arg1:T88 Arg2:T85	
+T97	Entity 4865 4879	ID Nos. 604971
+T98	Entity 4865 4872;4881 4888	ID Nos. 1228665
+T99	Entity 4865 4872;4890 4897	ID Nos. 1247566
+T100	Entity 4908 4932	UniGene cluster Mm. 8356
+T101	Entity 4980 4995	2 kb transcript
+T102	Entity 5004 5041	open reading frame of 580 amino acids
+T103	Entity 5053 5077	Mcoln1 (GB No. AF302010)
+T104	Entity 5097 5110	cDNA sequence
+T105	Entity 5118 5121	BAC
+T106	Entity 5161 5169	14 exons
+R25	is_part_of Arg1:T106 Arg2:T105	
+T107	KeyEntity 5211 5217	Mcoln1
+T108	Entity 5228 5246	mouse chromosome 8
+R26	is_part_of Arg1:T107 Arg2:T108	
+T109	Entity 5285 5310	UniGene Cluster Mm. 39099
+T110	Entity 5331 5371	human zinc finger gene (GB No. AC001252)
+T111	Entity 5402 5408	1.8 kb
+R27	other_relation Arg1:T109 Arg2:T110	
+#12	AnnotatorNotes R27	homologue
+T112	KeyEntity 5429 5435	Mcoln1
+T113	Entity 5441 5444	Nte
+T114	Entity 5479 5516	neuropathy target esterase gene (NTE)
+R28	other_relation Arg1:T113 Arg2:T114	
+#13	AnnotatorNotes R28	homologue
+T115	Entity 5527 5541	130 base pairs
+T116	Entity 5552 5574	polyadenylation signal
+T117	KeyEntity 5579 5585	Mcoln1
+T118	Entity 5632 5638	Mcoln1
+T119	KeyEntity 5702 5708	MCOLN1
+R29	other_relation Arg1:T118 Arg2:T119	
+#14	AnnotatorNotes R29	homologue
+T120	Entity 5746 5762	zinc finger gene
+T121	Entity 5767 5770	Nte
+T122	Entity 5771 5779;5796 5813	confirms region of synteny
+R30	participates_in Arg1:T120 Arg2:T122	
+R31	participates_in Arg1:T121 Arg2:T122	
+T123	Entity 5822 5841	human chromosome 19
+T124	Entity 5846 5864	mouse chromosome 8
+R32	other_relation Arg1:T123 Arg2:T124	
+#15	AnnotatorNotes R32	human_connection
+R33	other_relation Arg1:T122 Arg2:T123	
+#16	AnnotatorNotes R33	human_connection
+T125	Entity 5954 5966	91% identity
+T126	Entity 5913 5918	mouse
+T127	Entity 5981 6007	C. elegans homologue cup-5
+T128	Entity 6014 6026	34% identity
+T129	KeyEntity 6032 6038	Mcoln1
+R34	other_relation Arg1:T127 Arg2:T129	
+#17	AnnotatorNotes R34	homologue
+R35	other_relation Arg1:T128 Arg2:T127	
+#18	AnnotatorNotes R35	similarity to human homologue
+T130	Entity 6043 6058	BLASTP analysis
+#19	AnnotatorNotes T130	experimental_procedure
+T131	Entity 6062 6068	Mcoln1
+T132	Entity 6091 6124	Drosophila melanogaster homologue
+T133	Entity 6136 6148	38% identity
+R36	other_relation Arg1:T133 Arg2:T132	
+#20	AnnotatorNotes R36	similar to human homologue
+T134	KeyEntity 6178 6209	MCOLN1 amino acid substitutions
+T135	KeyEntity 6225 6229	MLIV
+R37	other_relation Arg1:T134 Arg2:T135	
+#21	AnnotatorNotes R37	causation
+T136	Entity 6239 6260	conserved amino acids
+R38	is_part_of Arg1:T135 Arg2:T136	
+T137	Entity 6262 6277	TMPred analysis
+#22	AnnotatorNotes T137	experimental_procedure
+T138	KeyEntity 6336 6342	MCOLN1
+T139	Entity 6355 6378	6 transmembrane domains
+T140	Entity 6388 6390;6397 6404	N- termini
+T141	Entity 6395 6404	C-termini
+T142	Entity 6421 6430	cytoplasm
+R39	interacts_with Arg1:T141 Arg2:T142	
+R40	interacts_with Arg1:T140 Arg2:T142	
+R41	participates_in Arg1:T142 Arg2:T139	
+R42	is_part_of Arg1:T139 Arg2:T138	
+T143	Entity 6456 6483	Peptide sequence comparison
+T144	KeyEntity 6487 6493	Mcoln1
+T145	Entity 6497 6502	human
+T146	Entity 6504 6519	D. melanogaster
+T147	Entity 6525 6543	C. elegans (cup-5)
+T148	Entity 6576 6597	transmembrane domains
+T149	Entity 6625 6646	putative channel pore
+T150	Entity 6677 6727	putative late endosomal/lysosomal targeting signal
+T151	Entity 6753 6759	Mcoln1
+T152	Entity 6761 6788	Mouse adult multiple tissue
+T153	Entity 6761 6766;6793 6802	Mouse embryonic
+T154	Entity 6803 6817	Northern blots
+#23	AnnotatorNotes T154	experimental_test
+T155	Entity 6863 6884	mouse exon 2 (probe 1
+T156	Entity 6929 6947	2.4 kb (isoform 1)
+T157	Entity 6997 7020	4.4 kb band (isoform 2)
+T158	Entity 7041 7052	2.4 kb band
+T159	Entity 7126 7131	brain
+T160	Entity 7133 7138	liver
+T161	Entity 7143 7149	kidney
+R43	participates_in Arg1:T158 Arg2:T159	
+R44	participates_in Arg1:T158 Arg2:T160	
+R45	participates_in Arg1:T158 Arg2:T161	
+T162	Entity 7155 7172	fetal tissue blot
+#24	AnnotatorNotes T162	experimental_test
+T163	Entity 7204 7218	2.4 kb message
+T164	KeyEntity 7262 7279	human MCOLN1 gene
+T165	Entity 7290 7307	single transcript
+R46	regulates Arg1:T164 Arg2:T165	
+T166	Entity 7719 7737	chromosome 8 locus
+T167	Entity 7781 7798	Northern analysis
+#25	AnnotatorNotes T167	experimental_test
+T168	KeyEntity 7802 7808	Mcoln1
+T170	Entity 7814 7841	Mouse fetal tissue Northern
+#26	AnnotatorNotes T170	experimental_test
+T172	Entity 7850 7897	mouse multiple tissue Northern blots (Clontech)
+#27	AnnotatorNotes T172	experimental_test
+T173	Entity 7937 7962	exon 2 (probe 1, Fig. 1B)
+T174	Entity 7989 8009	multiple tissue blot
+T175	Entity 8032 8081	alternatively spliced segment of exon 13 (probe 2
+T176	Entity 8093 8122	β-Actin control hybridization
+T177	KeyEntity 8174 8180	Mcoln1
+T178	Entity 8181 8207	alternative splice variant
+T179	Entity 8294 8312	mouse EST database
+T180	Entity 8324 8330	intron
+T181	Entity 8346 8362	genomic sequence
+T182	KeyEntity 8376 8387	Mcoln1 gene
+T183	Entity 8393 8397	ESTs
+T184	Entity 8443 8469	intron 12 (GB No. AI430291
+T185	Entity 8443 8452;8474 8482	intron 12 AA874645
+T186	Entity 8530 8576	Clone 408619 (ESTs: GB No. AI430291, AI429558)
+T187	Entity 8598 8619	1.1 kb before exon 13
+T188	Entity 8676 8720	exon 14. Clone 1281641 (EST:GB No. AA874645)
+T189	Entity 8728 8749	175 bp before exon 13
+T190	Entity 8780 8787	exon 14
+T191	Entity 8791 8821	mouse multiple tissue Northern
+#28	AnnotatorNotes T191	experimental_test
+T192	Entity 8870 8919	putative intron sequence in clone 408619 (Probe 2
+T193	Entity 8955 8966	4.4 kb band
+R47	interacts_with Arg1:T181 Arg2:T182	
+R48	interacts_with Arg1:T180 Arg2:T182	
+R49	participates_in Arg1:T192 Arg2:T191	
+T169	Entity 9040 9046	RT-PCR
+#29	AnnotatorNotes T169	experimental_test
+T171	Entity 9064 9072	exons 10
+T194	Entity 9064 9069;9077 9079	exons 11
+T195	Entity 9104 9113	intron 12
+T196	Entity 9134 9162	BALB/c mouse brain total RNA
+#30	AnnotatorNotes T196	experimental_test
+T197	Entity 9305 9321	expanded exon 13
+T198	Entity 9261 9279	alternative splice
+R50	participates_in Arg1:T198 Arg2:T197	
+T199	Entity 9337 9344	exon 12
+T200	Entity 9356 9375	bp 436 of intron 12
+R51	interacts_with Arg1:T199 Arg2:T200	
+T201	Entity 9388 9409	large 1614 bp exon 13
+T202	Entity 9436 9443	exon 14
+T203	Entity 9512 9527	611 amino acids
+T204	Entity 9529 9550	28 amino acids longer
+T205	Entity 9583 9600	2.4 kb transcript
+T206	Entity 9603 9618	TMPred analysis
+#31	AnnotatorNotes T206	experimental_test
+T207	Entity 9633 9642	isoform 2
+T208	KeyEntity 9687 9693	Mcoln1
+R52	regulates Arg1:T207 Arg2:T208	
+T209	Entity 9706 9729	6 transmembrane domains
+T210	Entity 9736 9748	channel pore
+R53	is_part_of Arg1:T209 Arg2:T208	
+R54	is_part_of Arg1:T210 Arg2:T208	
+T211	Entity 9791 9805	amino acid 526
+T212	Entity 9811 9852	55 amino acid C-terminal cytoplasmic tail
+T213	Entity 9868 9885	2.4 kb transcript
+R55	regulates Arg1:T212 Arg2:T213	
+T214	Entity 9919 9937	86 amino acid tail
+T215	Entity 9953 9986	murine specific 4.4 kb transcript
+R56	regulates Arg1:T214 Arg2:T215	
+R57	other_relation Arg1:T212 Arg2:T214	
+#32	AnnotatorNotes R57	not similar
+T216	Entity 9997 10028	Clontech Mouse RNA Master Blots
+#33	AnnotatorNotes T216	experimental_test
+T217	Entity 10054 10060	exon 2
+T218	Entity 10065 10081	intron 12 probes
+T219	Entity 10332 10357	two alternatively spliced
+T220	Entity 10358 10373	Mcoln1 isoforms
+R58	is_part_of Arg1:T219 Arg2:T220	
+T221	Entity 10297 10324	Peptide sequence comparison
+#34	AnnotatorNotes T221	experimental_procedure
+T222	Entity 10413 10441	c-terminal cytoplasmic tails
+T223	Entity 10471 10492	transmembrane domains
+T224	Entity 10526 10536;10552 10560	nucleotide sequence
+T225	Entity 10541 10560	amino acid sequence
+T226	Entity 10568 10606	alternatively spliced mouse transcript
+T227	KeyEntity 10621 10650	human MCOLN1 genomic sequence
+T228	Entity 10713 10727	Northern blots
+#35	AnnotatorNotes T228	experimental_test
+T229	Entity 10743 10762	human MCOLN1 probes
+T230	Entity 10777 10794	2.4 kb transcript
+T231	Entity 10825 10855	human multiple tissue Northern
+#36	AnnotatorNotes T231	experimental_test
+T232	Entity 10860 10874	human Southern
+#37	AnnotatorNotes T232	experimental_test
+T233	Entity 10891 10906	human intron 12
+T234	Entity 10927 10934	exon 13
+T235	Entity 11007 11033	alternate mouse transcript
+T236	Entity 11080 11088	Southern
+#38	AnnotatorNotes T236	experimental_test
+T237	Entity 11123 11131	Northern
+#39	AnnotatorNotes T237	experimental_test
+T238	KeyEntity 11192 11205	murine Mcoln1
+T239	Entity 11154 11176	alternative transcript
+R59	is_part_of Arg1:T239 Arg2:T238	
+T240	Entity 11214 11229	BLASTP analysis
+#40	AnnotatorNotes T240	experimental_test
+T241	KeyEntity 11237 11264	alternate Mcoln1 transcript
+T242	Entity 11294 11344	145 amino acid anonymous protein (GB No. BAB25862)
+R60	other_relation Arg1:T241 Arg2:T242	
+#41	AnnotatorNotes R60	similarity 
+T243	Entity 11362 11373	RIKEN clone
+T244	Entity 11562 11584	Mcoln1 coding sequence
+T245	KeyEntity 11645 11661	Mcoln1 isoform 1
+T246	Entity 11723 11733;11749 11754	amino acid level
+T247	Entity 11738 11754	nucleotide level
+R61	is_part_of Arg1:T246 Arg2:T245	
+R62	is_part_of Arg1:T247 Arg2:T245	
+T248	Entity 11771 11792	transmembrane domains
+T249	Entity 11809 11832	putative cation channel
+T250	Entity 11859 11894	putative di-leucine (L-L-X-X) motif
+T251	Entity 11902 11912	C-terminus
+R63	participates_in Arg1:T250 Arg2:T251	
+T252	Entity 11933 11974	late endosomal/lysosomal targeting signal
+R64	is_part_of Arg1:T250 Arg2:T252	
+T253	Entity 12042 12051	cup-5[13]
+T254	KeyEntity 12081 12087	MCOLN1
+R65	other_relation Arg1:T254 Arg2:T253	
+#42	AnnotatorNotes R65	homologue
+T255	Entity 12095 12116	cellular localization
+#43	AnnotatorNotes T255	experimental_procedure
+T256	Entity 12166 12180	late endosomes
+T257	Entity 12188 12197	lysosomes
+T258	KeyEntity 12204 12221	mouse Mcoln1 gene
+T259	Entity 12226 12260	two alternatively spliced isoforms
+R66	is_part_of Arg1:T259 Arg2:T258	
+T260	Entity 12286 12323	different c-terminal cytoplasmic tail
+R67	is_part_of Arg1:T260 Arg2:T259	
+T261	Entity 12336 12365	86 amino acid c-terminal tail
+T262	Entity 12376 12402	lysosomal targeting signal
+R68	other_relation Arg1:T261 Arg2:T262	
+#44	AnnotatorNotes R68	lacks
+T263	Entity 12571 12605	alternate subcellular localization
+T264	Entity 12636 12663	isoform-specific antibodies
+T265	KeyEntity 12735 12751	Mcoln1 knock-out
+T266	Entity 12830 12851	mouse gene expression
+T267	Entity 12830 12835;12856 12865	mouse phenotype
+T268	KeyEntity 12887 12908	second Mcoln1 isoform
+T269	Entity 12955 12983	alternatively spliced region
+T270	Entity 13077 13121	species specific alternative splice variants
+T271	Entity 13123 13163	MOG, myelin/oligodendrocyte glycoprotein
+T272	Entity 13184 13199	splice variants
+T273	Entity 13243 13266	ATP11B, a P-type ATPase
+T274	Entity 13274 13304	rabbit-specific splice variant
+T275	Entity 13310 13317;13320 13340	deletes transmembrane domain
+R69	is_part_of Arg1:T275 Arg2:T273	
+T276	Entity 13373 13405	putative function of the protein
+R70	participates_in Arg1:T275 Arg2:T276	
+T277	Entity 13481 13493	32,000 genes
+T278	Entity 13701 13721	alternative splicing
+T279	Entity 13734 13752	genetic complexity
+T280	Entity 13783 13802	splicing regulation
+T281	Entity 13877 13909	species-specific splice variants
+T282	Entity 13956 14000	alternatively spliced transcripts progresses
+T283	Entity 14079 14084	BLAST
+#45	AnnotatorNotes T283	experimental_procedure
+T284	Entity 14090 14116	Draft Human Genome Browser
+#46	AnnotatorNotes T284	equipment
+T285	Entity 14134 14141	UniGene
+T286	KeyEntity 14168 14174	Mcoln1
+T287	Entity 14198 14212	motif searches
+#47	AnnotatorNotes T287	experimental_procedure
+T288	Entity 14219 14230	ProfileScan
+#48	AnnotatorNotes T288	equipment
+T289	Entity 14236 14242	TMPred
+#49	AnnotatorNotes T289	equipment
+T290	Entity 14285 14297	Pileup (GCG)
+#50	AnnotatorNotes T290	experimental_procedure
+T291	Entity 14302 14310	Boxshade
+#51	AnnotatorNotes T291	experimental_procedure
+T292	Entity 14330 14347	I.M.A.G.E. Clones
+T293	Entity 14439 14464	AmpliCycle sequencing kit
+#52	AnnotatorNotes T293	equipment
+T294	Entity 14512 14549	Genomyx LR programmable DNA sequencer
+#53	AnnotatorNotes T294	equipment
+T295	Entity 14552 14567	RT-PCR Reaction
+#54	AnnotatorNotes T295	experimental_test
+T296	Entity 14569 14597	BALB/c mouse brain total RNA
+T297	Entity 14745 14751	RT-PCR
+#55	AnnotatorNotes T297	experimental_test
+T298	Entity 14736 14740	cDNA
+T299	Entity 14765 14773	hexamers
+T300	Entity 14778 14793	oligo dT primer
+T301	Entity 14799 14809	RT product
+T302	Entity 14834 14860	alternatively spliced form
+T303	Entity 14957 14960	PCR
+#56	AnnotatorNotes T303	experimental_test
+T304	Entity 14978 15007	annealing temperature of 61°C
+#57	AnnotatorNotes T304	experimental_procedure
+T305	Entity 15010 15032	Southern Blot Analysis
+#58	AnnotatorNotes T305	experimental_test
+T306	Entity 15040 15057	mouse genomic DNA
+T307	Entity 15077 15082	EcoRI
+T308	Entity 15084 15089	BamHI
+T309	Entity 15091 15095	PstI
+T310	Entity 15101 15105	XbaI
+T311	Entity 15145 15159	1% agarose gel
+T312	Entity 15163 15166	60V
+T313	Entity 15205 15223	Hybond N+ membrane
+T314	Entity 15276 15305	32P-dATP labeled PCR fragment
+T315	KeyEntity 15313 15333	Mcoln1 coding region
+T316	Entity 15351 15357	exon 2
+T317	Entity 15471 15500	annealing temperature of 59°C
+#59	AnnotatorNotes T317	experimental_procedure
+T318	Entity 15503 15516	Hybridization
+T319	Entity 15521 15527	washes
+T320	Entity 15575 15597	Northern Blot Analysis
+#60	AnnotatorNotes T320	experimental_test
+T321	Entity 15599 15641	Mouse embryo multiple-tissue northern blot
+#61	AnnotatorNotes T321	experimental_test
+T322	Entity 15646 15687	mouse adult multiple-tissue northern blot
+#62	AnnotatorNotes T322	experimental_test
+T323	Entity 15792 15821	32P-dATP labeled DNA fragment
+T324	KeyEntity 15825 15831	Mcoln1
+R71	is_part_of Arg1:T314 Arg2:T315	
+R72	is_part_of Arg1:T323 Arg2:T324	
+T325	Entity 15863 15869	exon 2
+R73	is_part_of Arg1:T324 Arg2:T325	
+R74	is_part_of Arg1:T315 Arg2:T316	
+T326	Entity 15891 15913	alternative transcript
+T327	Entity 15959 15967	exons 12
+T328	Entity 15959 15964;15972 15974	exons 13
+T329	Entity 16072 16101	annealing temperature of 62°C
+#63	AnnotatorNotes T329	experimental_procedure
+T330	Entity 16141 16155	β-actin probes
+#64	AnnotatorNotes T330	experimental_procedure
+T331	Entity 16333 16346	grant NS39995
+#65	AnnotatorNotes T331	funding_agency

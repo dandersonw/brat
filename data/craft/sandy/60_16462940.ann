@@ -15,3 +15,9 @@ R1	other_relation Arg1:T12 Arg2:T11
 R2	is_part_of Arg1:T4 Arg2:T5	
 R3	regulates Arg1:T8 Arg2:T6	
 R4	participates_in Arg1:T9 Arg2:T10	
+T13	KeyEntity 0 7;20 28	Genetic Analysis
+T14	KeyEntity 12 28	Genomic Analysis
+T15	KeyEntity 34 48	Fat Mass Trait
+T16	Entity 54 73	Complex Inheritance
+T17	KeyEntity 89 104	Sex Specificity
+R5	participates_in Arg1:T15 Arg2:T17	

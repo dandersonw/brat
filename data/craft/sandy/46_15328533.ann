@@ -17,3 +17,8 @@ R4	other_relation Arg1:T7 Arg2:T8
 T12	Entity 801 829	genetically generated fibers
 R5	participates_in Arg1:T12 Arg2:T10	
 R6	participates_in Arg1:T10 Arg2:T11	
+T13	KeyEntity 14 31	Muscle Fiber Type
+T14	KeyEntity 36 53	Running Endurance
+T15	KeyEntity 57 62	PPARδ
+R7	regulates Arg1:T15 Arg2:T14	
+R8	regulates Arg1:T15 Arg2:T13	

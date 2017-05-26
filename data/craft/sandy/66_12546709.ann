@@ -26,3 +26,6 @@ R4	is_subclass_of Arg1:T10 Arg2:T11
 R5	is_part_of Arg1:T11 Arg2:T12	
 R6	regulates Arg1:T18 Arg2:T19	
 R7	participates_in Arg1:T21 Arg2:T20	
+T22	KeyEntity 0 30;38 45;57 67	Morphological characterization AlphaA- crystallin
+T23	KeyEntity 0 30;50 67	Morphological characterization AlphaB-crystallin
+T24	Entity 68 94	double knockout mouse lens

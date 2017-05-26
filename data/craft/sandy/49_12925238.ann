@@ -34,3 +34,9 @@ T24	Entity 1674 1700	impairs cellular functions
 R10	is_part_of Arg1:T20 Arg2:T21	
 R11	is_part_of Arg1:T20 Arg2:T22	
 R12	participates_in Arg1:T23 Arg2:T24	
+T25	KeyEntity 0 8;38 51	Function of annexin A7
+T26	KeyEntity 10 20;38 51	expression of annexin A7
+T27	KeyEntity 25 37;38 51	localization of annexin A7
+T28	Entity 55 64	platelets
+T29	Entity 69 84	red blood cells
+T30	Entity 111 134	annexin A7 mutant mouse

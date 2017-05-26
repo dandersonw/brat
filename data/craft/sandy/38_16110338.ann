@@ -36,3 +36,10 @@ R7	participates_in Arg1:T23 Arg2:T20
 R8	participates_in Arg1:T23 Arg2:T21	
 R9	participates_in Arg1:T23 Arg2:T22	
 T27	KeyEntity 650 654	ESCS
+T28	KeyEntity 2 22	Hybrid Photoreceptor
+T29	Entity 39 42;52 57	Rod Genes
+T30	Entity 47 57	Cone Genes
+R10	is_part_of Arg1:T29 Arg2:T28	
+R11	is_part_of Arg1:T30 Arg2:T28	
+T31	KeyEntity 63 74	Mouse Model
+T32	KeyEntity 78 102	Enhanced S-Cone Syndrome

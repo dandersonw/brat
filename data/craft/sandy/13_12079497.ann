@@ -63,3 +63,7 @@ T41	Entity 2131 2147	transplantations
 R15	is_part_of Arg1:T33 Arg2:T34	
 R16	participates_in Arg1:T36 Arg2:T37	
 R17	participates_in Arg1:T35 Arg2:T37	
+T42	Entity 0 20	Embryonic stem cells
+T43	Entity 25 29	mice
+T44	Entity 41 63	different GFP variants
+T45	Entity 77 98	non-invasive reporter

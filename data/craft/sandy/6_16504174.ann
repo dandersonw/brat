@@ -33,3 +33,9 @@ R9	is_part_of Arg1:T16 Arg2:T17
 R10	participates_in Arg1:T18 Arg2:T19	
 R11	participates_in Arg1:T19 Arg2:T20	
 R12	participates_in Arg1:T19 Arg2:T21	
+T23	KeyEntity 0 14	Identification
+T24	KeyEntity 19 38	targeted disruption
+T25	Entity 46 56	mouse gene
+T26	Entity 66 89	ESG1 (PH34/ECAT2/DPPA5)
+R13	participates_in Arg1:T23 Arg2:T26	
+R14	participates_in Arg1:T24 Arg2:T26	

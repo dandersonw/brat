@@ -24,3 +24,7 @@ R4	other_relation Arg1:T11 Arg2:T12
 R5	regulates Arg1:T14 Arg2:T15	
 R6	participates_in Arg1:T16 Arg2:T17	
 T19	Entity 439 452	global genome
+T20	Entity 10 23	global genome
+T21	Entity 28 41	transcriptome
+T22	Entity 88 124	small-effect quantitative trait loci
+T23	Entity 128 154	collagen-induced arthritis

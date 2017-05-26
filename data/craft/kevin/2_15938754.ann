@@ -30,3 +30,7 @@ T29	Entity 1565 1578	quinine taste
 T30	Entity 1596 1622	T2R-dependent transduction
 T31	Entity 1786 1799	Tas2r cluster
 T32	Entity 1905 1918	T2R receptors
+T33	Entity 0 10	Haplotypes
+T34	Entity 18 29	Tas2r locus
+T35	Entity 40 52	chromosome 6
+T36	Entity 63 88	quinine taste sensitivity
