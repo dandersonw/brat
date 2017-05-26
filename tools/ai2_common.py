@@ -37,6 +37,9 @@ class EnhancedAnnotatedDoc:
         copy._regenerate_from_brat()
         return copy
 
+    def get_entities(self):
+        return self.entities
+
     def __getitem__(self, key):
         return self.spacy_doc.__getitem__(key)
 
@@ -80,6 +83,10 @@ class EnhancedAnnotatedDoc:
         self.entities = [e for e in self.entities if e != entity]
         self.brat_annotation.del_annotation(entity.brat_annotation)
 
+    def remove_relation(self, relation):
+        self.relations = [r for r in self.relations if r != relation]
+        self.brat_annotation.del_annotation(relation.brat_annotation)
+
 
 class Entity:
     """Wrapper for brat annotation. Spans are in tokens."""
@@ -99,6 +106,12 @@ class Entity:
 
     def overlaps(self, other):
         return any_overlapping_spans(self.brat_annotation, other.brat_annotation)
+
+    def get_relations(self):
+        return [r for r in self.parent_doc.relations if r.arg1 == self or r.arg2 == self]
+
+    def __len__(self):
+        return sum((span[1] - span[0] for span in self.spans))
 
 
 class Relation:

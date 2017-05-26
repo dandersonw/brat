@@ -4,27 +4,39 @@
 import ai2_common
 import argparse
 import sys
+import logging
+logging.basicConfig(level=logging.DEBUG)
+
+
+def remove_other_relations(doc):
+    to_remove = []
+    for relation in doc.relations:
+        if relation.type == "other_relation":
+            to_remove.append(relation)
+    logging.debug("{} `other_relation's to fixup in doc {}".format(len(to_remove), doc.document_id))
+    for relation in to_remove:
+        doc.remove_relation(relation)
+    return doc
 
 
 def fixup_overlapping_annotations(doc):
     overlapping = ai2_common.find_overlapping(doc)
+    logging.debug("{} overlapping pairs to fixup in doc {}".format(len(overlapping), doc.document_id))
     for pair in overlapping:
-        a = pair[0].brat_annotation
-        b = pair[1].brat_annotation
-        remove = None
-        if a.contains(b):
+        if pair[0].get_relations() and not pair[1].get_relations():
             remove = pair[1]
-        elif b.contains(a):
+        elif pair[1].get_relations() and not pair[0].get_relations():
+            remove = pair[0]
+        elif len(pair[0]) < len(pair[1]):
             remove = pair[0]
         else:
-            sys.stderr.write("Can't fix the pair of {} in fixup_overlapping_annotations".format(pair))
-
-        if remove is not None:
-            doc.remove_entity(remove)
+            remove = pair[1]
+        doc.remove_entity(remove)
     return doc
 
 
-FIXUP_STEPS = [fixup_overlapping_annotations]
+FIXUP_STEPS = [remove_other_relations,
+               fixup_overlapping_annotations]
 
 
 def fixup(doc):
