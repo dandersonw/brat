@@ -53,7 +53,7 @@ class EnhancedAnnotatedDoc:
                     token = get_token_at_char_offset(self, l)
                     l = token.idx
                 token = get_token_at_char_offset(self, r)
-                if token is not None:
+                if token is not None and token.idx < r:
                     r = token.idx + len(token)
                 new_spans.append((l, r))
             e.spans = new_spans
