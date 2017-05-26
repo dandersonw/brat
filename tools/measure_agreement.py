@@ -78,10 +78,13 @@ class Agreement:
 
         All documents are concatenated for the final calculation.
         """
+        annotator_set = set((doc.annotator_id for doc in self.annotations))
         category_counts = []
         for (doc_name, annotations) in self.annotations_grouped_by_document(None):
             annotations = list(annotations)
-            annotations = ai2_common.compatibilize_tokenization_if_necessary(annotations)
+            # We need all annotators to have annotated each doc
+            assert annotator_set == set((doc.annotator_id for doc in annotations))
+            assert len(set(len(d) for d in annotations)) == 1
             doc_len = len(annotations[0])
             document_counts = np.zeros((doc_len, 2)).tolist()
             for doc in annotations:

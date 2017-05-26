@@ -25,17 +25,12 @@ class EnhancedAnnotatedDoc:
     def __init__(self, text_annotation):
         self.brat_annotation = text_annotation
         self.spacy_doc = NLP(text_annotation.get_document_text())
-        required_boundaries = self._get_entity_boundaries_for_tokenization()
-        self._impose_token_boundaries(required_boundaries)
+        self._impose_token_boundaries()
+        self.entities = [Entity(e, self) for e in self.brat_annotation.get_entities()]
+        self.relations = [Relation(r, self) for r in self.brat_annotation.get_relations()]
         self.document_id = os.path.basename(text_annotation.get_document())
         self.annotator_id = os.path.basename(os.path.dirname(text_annotation.get_document()))
-        self._regenerate_from_brat()
-
-    def copy_with_compatible_tokenization(self, boundaries):
-        copy = EnhancedAnnotatedDoc(self.brat_annotation)
-        copy._impose_token_boundaries(boundaries)
-        copy._regenerate_from_brat()
-        return copy
+        self.char_len = len(self.brat_annotation.get_document_text())
 
     def get_entities(self):
         return self.entities
@@ -46,34 +41,21 @@ class EnhancedAnnotatedDoc:
     def __len__(self):
         return self.spacy_doc.__len__()
 
-    def _impose_token_boundaries(self, boundaries):
-        b_idx = 0
-        imposed_tokens = []
-        for t in self.spacy_doc:
-            start = t.idx
-            end = start + len(t)
-            splits = [0]
-            while b_idx < len(boundaries) and boundaries[b_idx] < end:
-                if boundaries[b_idx] > start:
-                    splits.append(boundaries[b_idx] - start)
-                b_idx += 1
-            splits.append(end)
-            result_tokens = []
-            for i in xrange(len(splits) - 1):
-                result_tokens.append([t.text[splits[i]: splits[i+1]], False])
-            result_tokens[-1][1] = len(t.whitespace_) > 0
-            imposed_tokens += [tuple(token) for token in result_tokens]
-        self.spacy_doc = spacy.tokens.Doc(self.spacy_doc.vocab, orths_and_spaces=imposed_tokens)
-
-    def _get_entity_boundaries_for_tokenization(self):
-        spans = set(
-            itertools.chain.from_iterable(
-                [e.spans for e in self.brat_annotation.get_entities()]))
-        return sorted(set(itertools.chain.from_iterable(spans)))
-
-    def _regenerate_from_brat(self):
-        self.entities = [Entity(e, self) for e in self.brat_annotation.get_entities()]
-        self.relations = [Relation(r, self) for r in self.brat_annotation.get_relations()]
+    def _impose_token_boundaries(self):
+        """Ensure each entity annotation has bounds that align with the tokenization. """
+        for e in self.brat_annotation.get_entities():
+            new_spans = []
+            for span in e.spans:
+                l = span[0]
+                r = span[1]
+                if get_token_starting_at_char_offset(self, l) is None:
+                    token = get_token_at_char_offset(self, l)
+                    l = token.idx
+                token = get_token_at_char_offset(self, r)
+                if token is not None:
+                    r = token.idx + len(token)
+                new_spans.append((l, r))
+            e.spans = new_spans
 
     def get_entity(self, id):
         return next((e for e in self.entities if e.id == id), None)
@@ -152,6 +134,14 @@ def load_doc(identifier):
 
 
 def get_token_starting_at_char_offset(doc, offset):
+    at = get_token_at_char_offset(doc, offset)
+    if at.idx == offset:
+        return at
+    else:
+        return None
+
+
+def get_token_at_char_offset(doc, offset):
     l = 0
     r = len(doc)
     while r - l > 1:
@@ -161,7 +151,7 @@ def get_token_starting_at_char_offset(doc, offset):
         else:
             l = mid
 
-    if doc[l].idx == offset:
+    if doc[l].idx + len(doc[l]) > offset:
         return doc[l]
     else:
         return None
@@ -219,25 +209,4 @@ def spans_to_biluo(spans, total_len):
         else:  # i
             result[i] = 2
         i += 1
-    return result
-
-
-def compatibilize_tokenization(original_docs):
-    boundaries = sorted(set(itertools.chain.from_iterable((
-        doc._get_entity_boundaries_for_tokenization() for doc in original_docs))))
-    return [doc.copy_with_compatible_tokenization(boundaries) for doc in original_docs]
-
-
-def compatibilize_tokenization_if_necessary(original_docs):
-    """Conform the tokenization of different annotations of the same document.
-
-    Because entity annotations can influence tokenization the same doc might
-    have different tokenization depending on the annotations it receieved.
-
-    """
-    if len(set(len(d) for d in original_docs)) != 1:
-        result = compatibilize_tokenization(original_docs)
-    else:
-        result = original_docs
-    assert len(set(len(d) for d in result)) == 1
     return result
