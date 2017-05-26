@@ -61,8 +61,12 @@ class EnhancedAnnotatedDoc:
     def get_entity(self, id):
         return next((e for e in self.entities if e.id == id), None)
 
-    def remove_entity(self, entity):
-        # TODO: make this not destructive
+    def remove_entity(self, entity, force_remove_relations=False):
+        relations = entity.get_relations()
+        if not force_remove_relations and relations:
+            ValueError("Entity {} has relations and will not be removed.".format(entity))
+        for r in relations:
+            self.remove_relation(r)
         self.entities = [e for e in self.entities if e != entity]
         self.brat_annotation.del_annotation(entity.brat_annotation)
 
@@ -100,6 +104,19 @@ class Entity:
 
     def __len__(self):
         return sum((span[1] - span[0] for span in self.spans))
+
+    def set_spans(self, spans):
+        self.character_spans = []
+        for span in spans:
+            l = self.parent_doc[span[0]].idx
+            last_token = self.parent_doc[span[1] - 1]
+            r = last_token.idx + len(last_token)
+            self.character_spans.append((l, r))
+        self.brat_annotation.spans = self.character_spans
+
+    def __str__(self):
+        # TODO: something nicer?
+        return self.brat_annotation.__str__()
 
 
 class Relation:
