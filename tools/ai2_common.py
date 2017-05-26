@@ -18,13 +18,14 @@ except ImportError:
     sys_path.append(os.path.join(os.path.dirname(__file__), '../server/src'))
     import annotation
 
-NLP = spacy.load("en")
-
 
 class EnhancedAnnotatedDoc:
+    NLP = None
+
     def __init__(self, text_annotation):
+        EnhancedAnnotatedDoc._init_nlp()
         self.brat_annotation = text_annotation
-        self.spacy_doc = NLP(text_annotation.get_document_text())
+        self.spacy_doc = EnhancedAnnotatedDoc.NLP(text_annotation.get_document_text())
         self._impose_token_boundaries()
         self.entities = [Entity(e, self) for e in self.brat_annotation.get_entities()]
         self.relations = [Relation(r, self) for r in self.brat_annotation.get_relations()]
@@ -68,6 +69,11 @@ class EnhancedAnnotatedDoc:
     def remove_relation(self, relation):
         self.relations = [r for r in self.relations if r != relation]
         self.brat_annotation.del_annotation(relation.brat_annotation)
+
+    @staticmethod
+    def _init_nlp():
+        if EnhancedAnnotatedDoc.NLP is None:
+            EnhancedAnnotatedDoc.NLP = spacy.load("en")
 
 
 class Entity:
