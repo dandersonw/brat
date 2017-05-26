@@ -93,7 +93,7 @@ def print_overlapping_entity_mentions(a, b, source_text):
                 if i == a.spans[a_idx][1]:
                     a_idx += 1
                 else:
-                    j = min(b.spans[b_idx][1], a.spans[a_idx][1])
+                    j = min(a.spans[a_idx][1], b.spans[b_idx][1] if b_idx < b_len else sys.maxint)
                     sys.stdout.write(GREEN)
                     sys.stdout.write(source_text[i: j])
                     i = j
@@ -103,7 +103,7 @@ def print_overlapping_entity_mentions(a, b, source_text):
                 if i == b.spans[b_idx][1]:
                     b_idx += 1
                 else:
-                    j = min(b.spans[b_idx][1], a.spans[a_idx][1])
+                    j = min(b.spans[b_idx][1], a.spans[a_idx][1] if a_idx < a_len else sys.maxint)
                     sys.stdout.write(GREEN)
                     sys.stdout.write(source_text[i: j])
                     i = j
