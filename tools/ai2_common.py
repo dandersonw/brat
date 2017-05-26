@@ -131,6 +131,10 @@ def get_docs(*paths):
 
 
 def load_doc(identifier):
+    """An identifier is the path to a pair of a .ann file and a .txt file, minus
+    the extension for either.
+
+    """
     return EnhancedAnnotatedDoc(annotation.TextAnnotations(identifier))
 
 
@@ -205,7 +209,22 @@ def spans_to_biluo(spans, total_len):
     return result
 
 
-def docs_with_compatible_tokenization(original):
+def compatibilize_tokenization(original_docs):
     boundaries = sorted(set(itertools.chain.from_iterable((
-        doc._get_entity_boundaries_for_tokenization() for doc in original))))
-    return [doc.copy_with_compatible_tokenization(boundaries) for doc in original]
+        doc._get_entity_boundaries_for_tokenization() for doc in original_docs))))
+    return [doc.copy_with_compatible_tokenization(boundaries) for doc in original_docs]
+
+
+def compatibilize_tokenization_if_necessary(original_docs):
+    """Conform the tokenization of different annotations of the same document.
+
+    Because entity annotations can influence tokenization the same doc might
+    have different tokenization depending on the annotations it receieved.
+
+    """
+    if len(set(len(d) for d in original_docs)) != 1:
+        result = compatibilize_tokenization(original_docs)
+    else:
+        result = original_docs
+    assert len(set(len(d) for d in result)) == 1
+    return result

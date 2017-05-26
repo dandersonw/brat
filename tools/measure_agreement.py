@@ -68,12 +68,20 @@ class Agreement:
         return result
 
     def entity_span_fleiss_kappa(self):
+        """Computes the Fleiss kappa according to the following model of annotation:
+
+        (For each doc)
+        units = T = {t(0), ..., t(n)} where n = doc length in tokens
+        labels = {0, 1} ∀ t(i)
+         - 0: ∄ entity s.t. i ∈ e.span
+         - 1: ∃ entity s.t. i ∈ e.span
+
+        All documents are concatenated for the final calculation.
+        """
         category_counts = []
         for (doc_name, annotations) in self.annotations_grouped_by_document(None):
             annotations = list(annotations)
-            if len(set(len(d) for d in annotations)) != 1:
-                annotations = ai2_common.docs_with_compatible_tokenization(annotations)
-                assert len(set(len(d) for d in annotations)) == 1
+            annotations = ai2_common.compatibilize_tokenization_if_necessary(annotations)
             doc_len = len(annotations[0])
             document_counts = np.zeros((doc_len, 2)).tolist()
             for doc in annotations:
@@ -84,8 +92,11 @@ class Agreement:
         return fleiss_kappa(category_counts)
 
     def entity_span_krippendorff_alpha(self):
+        """Character level Krippendorff's alpha, with a disagreement function as defined
+        in Krippendorff 1995.
+
+        """
         annotator_set = set((doc.annotator_id for doc in self.annotations))
-        # Character level
         aggregated_regions = defaultdict(list)
         total_len = 0
         for (doc_name, annotations) in self.annotations_grouped_by_document(None):
@@ -180,8 +191,11 @@ def reduce_by_tuple_sum(tuples):
     return reduce(lambda a, b: map(lambda i, j: i + j, a, b), tuples)
 
 
-# Just fills in where a span covers. Agnostic to overlapping or discontinuous spans.
 def entity_or_not_per_idx(entities, total_len):
+    """Just fills in where a span covers. Agnostic to overlapping or discontinuous
+    spans.
+
+    """
     result = [0] * total_len
     for e in entities:
         for span in e.spans:
@@ -190,18 +204,23 @@ def entity_or_not_per_idx(entities, total_len):
     return result
 
 
-# As defined in Krippendorff 1995
 def krippendorff_alpha(annotator_regions, total_len):
+    """As defined in Krippendorff 1995. Written while referring to Krippendorff
+    2004, "Measuring the Reliability of Qualitative Text Analysis Data" because
+    of hard to understand typesetting in the 1995 paper.
+
+    """
     B = float(len(annotator_regions))
     N = float(sum((len(regions) for regions in annotator_regions)))
     L = float(total_len)
-    expected_denom = B * L * (B * L - 1)
 
+    expected_denom = B * L * (B * L - 1)
     expected_denom -= sum((sum((span[2]
                                 * (span[1] - span[0])
                                 * (span[1] - span[0] - 1)
                                 for span in region))
                            for region in annotator_regions))
+
     expected_num = 0
     for region in annotator_regions:
         for span in region:
@@ -238,6 +257,10 @@ def krippendorff_alpha(annotator_regions, total_len):
 
 
 def krippendorf_regions(spans, total_len):
+    """Converts a list of spans into a list of regions as needed to calculate
+    Krippendorff's alpha
+
+    """
     spans = sorted(set(spans))
     regions = []
     for span in spans:
