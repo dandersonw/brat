@@ -45,18 +45,7 @@ class EnhancedAnnotatedDoc:
     def _impose_token_boundaries(self):
         """Ensure each entity annotation has bounds that align with the tokenization. """
         for e in self.brat_annotation.get_entities():
-            new_spans = []
-            for span in e.spans:
-                l = span[0]
-                r = span[1]
-                if get_token_starting_at_char_offset(self, l) is None:
-                    token = get_token_at_char_offset(self, l)
-                    l = token.idx
-                token = get_token_at_char_offset(self, r)
-                if token is not None and token.idx < r:
-                    r = token.idx + len(token)
-                new_spans.append((l, r))
-            e.spans = new_spans
+            e.spans = [match_span_to_tokens(self, span) for span in e.spans]
 
     def get_entity(self, id):
         return next((e for e in self.entities if e.id == id), None)
@@ -154,6 +143,31 @@ def load_doc(identifier):
 
     """
     return EnhancedAnnotatedDoc(annotation.TextAnnotations(identifier))
+
+
+def match_span_to_tokens(doc, span):
+    l = span[0]
+    r = span[1]
+    if get_token_starting_at_char_offset(doc, l) is None:
+        leftToken = get_token_at_char_offset(doc, l)
+        # The below block could trigger if whitespace on the left side of a token were annotated
+        if leftToken is None:
+            for i in xrange(len(doc)):
+                if doc[i].idx > l:
+                    l = doc[i].idx
+        l = leftToken.idx
+
+    rightToken = get_token_at_char_offset(doc, r)
+    # Here a `None' result means there is nothing to correct
+    if rightToken is not None and rightToken.idx < r:
+        r = rightToken.idx + len(rightToken)
+
+    # The maximum distance in characters to move a span
+    MAXIMUM_CORRECTION = 3
+    if abs(l - span[0]) > MAXIMUM_CORRECTION or abs(r - span[1]) > MAXIMUM_CORRECTION:
+        raise ValueError("Could not fit span {} to tokens in doc {}".format(span, doc.document_id))
+
+    return (l, r)
 
 
 def get_token_starting_at_char_offset(doc, offset):
