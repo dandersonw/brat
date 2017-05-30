@@ -5,6 +5,9 @@ import ai2_common
 import argparse
 import sys
 import logging
+import re
+import os
+import os.path
 logging.basicConfig(level=logging.DEBUG)
 
 
@@ -13,6 +16,7 @@ def remove_discontinuous_entities(doc):
     debug("{} discontinuous entities to remove".format(len(to_remove)), doc)
     for entity in to_remove:
         doc.remove_entity(entity, force_remove_relations=True)
+    return doc
 
 
 def remove_other_relations(doc):
@@ -22,7 +26,7 @@ def remove_other_relations(doc):
             to_remove.append(relation)
     for relation in to_remove:
         doc.remove_relation(relation)
-    debug("{} `other_relation's to fixup".format(len(to_remove)), doc)
+    debug("{} `other_relation's to remove".format(len(to_remove)), doc)
     return doc
 
 
@@ -52,22 +56,28 @@ def trim_punctuation(doc):
     return doc
 
 
+def merge_acronyms(doc):
+    relations = doc.relations
+    count = 0
+    for relation in relations:
+        equivalent_relation = [c for c in relation.get_comments() if c.type == "equivalent"]
+        acronym = looks_like_an_acronym(relation.arg1) or looks_like_an_acronym(relation.arg2)
+        if equivalent_relation and acronym:
+            merge_entities(relation.arg1, relation.arg2)
+            doc.remove_relation(relation)
+            count += 1
+    debug("{} acronym-looking annotations merged".format(count), doc)
+    return doc
+
+
 def is_trimmable_punctuation(token):
     GOOD_PUNCT_TAGS = {"-LRB-", "-RRB-"}
     return not token.is_oov and token.pos_ == "PUNCT" and token.tag_ not in GOOD_PUNCT_TAGS
 
 
-def internal_heads(tokens):
-    heads = {}
-    new = {tokens}
-    while len(new) != len(heads):
-        heads = new
-        new = {t.head if t.head in tokens else t for t in heads}
-    return heads
-
-
-def external_heads(tokens):
-    return {t.head for t in tokens if t.head not in tokens}
+def looks_like_an_acronym(entity):
+    ACRONYM_RE = re.compile(r"^[^a-z]+$")
+    return min([ACRONYM_RE.match(t.text) is not None for t in entity.get_tokens()])
 
 
 def fixup_overlapping_annotations(doc):
@@ -82,7 +92,7 @@ def fixup_overlapping_annotations(doc):
         else:
             remove = pair[1]
         doc.remove_entity(remove, force_remove_relations=True)
-    debug("{} overlapping pairs to fixup".format(len(overlapping), doc))
+    debug("{} overlapping pairs to fixup".format(len(overlapping)), doc)
     return doc
 
 
@@ -100,6 +110,18 @@ def trim_entity(doc, entity, span_idx, left_trim, right_trim):
     entity.set_spans(spans)
 
 
+def merge_entities(a, b, doc):
+    """Merge entity b into entity a"""
+    for relation in b.get_relations():
+        relation.swap(b, a)
+    # Let's not deal with discontinuous entities here
+    assert len(a.spans) == 1 and len(b.spans) == 1
+    l = min(a.spans[0][0], b.spans[0][0])
+    r = max(a.spans[0][1], b.spans[0][1])
+    a.set_spans([(l, r)])
+    doc.remove_entity(b, force_remove_relations=False)
+
+
 def debug(message, doc):
     logging.debug("{}: {}".format(doc.document_id, message))
 
@@ -108,7 +130,8 @@ def warn(message, doc):
     logging.warn("{}: {}".format(doc.document_id, message))
 
 
-FIXUP_STEPS = [remove_other_relations,
+FIXUP_STEPS = [merge_acronyms,
+               remove_other_relations,
                remove_discontinuous_entities,
                trim_leading_determiners,
                trim_punctuation,
@@ -131,8 +154,10 @@ def main():
     fixed = [fixup(doc) for doc in docs]
 
     if args.outputPath is not None:
+        if not os.path.exists(args.outputPath):
+            os.mkdir(args.outputPath)
         for doc in fixed:
-            print unicode(doc.brat_annotation)
+            doc.write_to_path(args.outputPath)
 
 
 if __name__ == "__main__":

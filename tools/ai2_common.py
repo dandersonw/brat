@@ -7,6 +7,7 @@ import spacy
 import itertools
 import glob
 import re
+import codecs
 from sys import path as sys_path
 
 # this seems to be necessary for annotations to find its config
@@ -24,14 +25,14 @@ class EnhancedAnnotatedDoc:
 
     def __init__(self, text_annotation):
         EnhancedAnnotatedDoc._init_nlp()
-        self.brat_annotation = text_annotation
-        self.spacy_doc = EnhancedAnnotatedDoc.NLP(text_annotation.get_document_text())
-        self._impose_token_boundaries()
-        self.entities = [Entity(e, self) for e in self.brat_annotation.get_entities()]
-        self.relations = [Relation(r, self) for r in self.brat_annotation.get_relations()]
         self.document_id = os.path.basename(text_annotation.get_document())
         self.annotator_id = os.path.basename(os.path.dirname(text_annotation.get_document()))
-        self.char_len = len(self.brat_annotation.get_document_text())
+        self.document_text = text_annotation.get_document_text()
+        self.char_len = len(self.document_text)
+        self.spacy_doc = EnhancedAnnotatedDoc.NLP(self.document_text)
+        self.brat_annotation = text_annotation
+        self.entities = [Entity(e, self) for e in self.brat_annotation.get_entities()]
+        self.relations = [Relation(r, self) for r in self.brat_annotation.get_relations()]
 
     def get_entities(self):
         return self.entities
@@ -42,13 +43,11 @@ class EnhancedAnnotatedDoc:
     def __len__(self):
         return self.spacy_doc.__len__()
 
-    def _impose_token_boundaries(self):
-        """Ensure each entity annotation has bounds that align with the tokenization. """
-        for e in self.brat_annotation.get_entities():
-            e.spans = [match_span_to_tokens(self, span) for span in e.spans]
-
     def get_entity(self, id):
-        return next((e for e in self.entities if e.id == id), None)
+        entity = next((e for e in self.entities if e.id == id), None)
+        if entity is None:
+            raise ValueError("Could not find entity id {} in {}".format(id, self.document_id))
+        return entity
 
     def remove_entity(self, entity, force_remove_relations=False):
         relations = entity.get_relations()
@@ -66,7 +65,16 @@ class EnhancedAnnotatedDoc:
     @staticmethod
     def _init_nlp():
         if EnhancedAnnotatedDoc.NLP is None:
-            EnhancedAnnotatedDoc.NLP = spacy.load("en_core_web_md")
+            EnhancedAnnotatedDoc.NLP = spacy.load("en")
+
+    def write_to_path(self, path):
+        if not os.path.isdir(path):
+            raise ValueError("{} is not a directory".format(path))
+
+        with codecs.open(os.path.join(path, self.document_id + ".txt"), mode="w", encoding="utf-8") as txt:
+            txt.write(self.brat_annotation.get_document_text())
+        with codecs.open(os.path.join(path, self.document_id + ".ann"), mode="w", encoding="utf-8") as ann:
+            ann.write(unicode(self.brat_annotation))
 
 
 class Entity:
@@ -76,11 +84,8 @@ class Entity:
         self.parent_doc = parent_doc
         self.id = brat_annotation.id
         self.type = brat_annotation.type
-        self.character_spans = brat_annotation.spans
-        self.spans = []
-        for span in brat_annotation.spans:
-            self.spans.append((get_token_starting_at_char_offset(parent_doc, span[0]).i,
-                               get_token_ending_at_char_offset(parent_doc, span[1]).i + 1))
+        spans = [match_span_to_tokens(parent_doc, span) for span in brat_annotation.spans]
+        self.set_spans(spans)
 
     def same_span(self, other):
         return set(self.character_spans) == set(other.character_spans)
@@ -96,12 +101,16 @@ class Entity:
 
     def set_spans(self, spans):
         self.character_spans = []
+        self.spans = spans
         for span in spans:
             l = self.parent_doc[span[0]].idx
             last_token = self.parent_doc[span[1] - 1]
             r = last_token.idx + len(last_token)
             self.character_spans.append((l, r))
         self.brat_annotation.spans = self.character_spans
+        doc_text = self.parent_doc.document_text
+        new = "".join((doc_text[span[0]:span[1]] for span in self.character_spans))
+        self.brat_annotation.text = new
 
     def __str__(self):
         # TODO: something nicer?
@@ -109,17 +118,34 @@ class Entity:
 
     def get_tokens(self):
         return itertools.chain.from_iterable(
-            itertools.chain.from_iterable((self.parent_doc[i]
-                                           for i in xrange(span[0], span[1]))
-                                          for span in self.spans))
+            (self.parent_doc[i] for i in xrange(span[0], span[1]))
+            for span in self.spans)
 
 
 class Relation:
     def __init__(self, brat_annotation, parent_doc):
         self.brat_annotation = brat_annotation
+        self.parent_doc = parent_doc
         self.type = brat_annotation.type
         self.arg1 = parent_doc.get_entity(brat_annotation.arg1)
         self.arg2 = parent_doc.get_entity(brat_annotation.arg2)
+        assert self.arg1 is not None
+        assert self.arg2 is not None
+
+    def swap(self, a, b):
+        """Swap a for b in this relation"""
+        if self.arg1 == a:
+            self.arg1 = b
+            self.brat_annotation.arg1 = b.id
+        elif self.arg2 == a:
+            self.arg2 = b
+            self.brat_annotation.arg2 = b.id
+        else:
+            raise ValueError("Entity {} is not a part of relation {}".format(a, self))
+
+    def get_comments(self):
+        return [c for c in self.parent_doc.brat_annotation.get_oneline_comments()
+                if c.target == self.brat_annotation]
 
 
 def get_docs(*paths):
@@ -148,30 +174,47 @@ def load_doc(identifier):
     the extension for either.
 
     """
-    return EnhancedAnnotatedDoc(annotation.TextAnnotations(identifier))
+    try:
+        return EnhancedAnnotatedDoc(annotation.TextAnnotations(identifier))
+    except AssertionError as e:
+        sys.stderr.write("Failed to load doc {} with error {}\n".format(identifier, e))
 
 
 def match_span_to_tokens(doc, span):
-    l = span[0]
-    r = span[1]
-    if get_token_starting_at_char_offset(doc, l) is None:
-        leftToken = get_token_at_char_offset(doc, l)
+    loff = span[0]
+    roff = span[1]
+    leftToken = get_token_starting_at_char_offset(doc, loff)
+    if leftToken is None:
+        leftToken = get_token_at_char_offset(doc, loff)
         # The below block could trigger if whitespace on the left side of a token were annotated
         if leftToken is None:
             for i in xrange(len(doc)):
-                if doc[i].idx > l:
-                    l = doc[i].idx
-        l = leftToken.idx
+                if doc[i].idx > loff:
+                    l = i
+                    break
+        else:
+            l = leftToken.i
+    else:
+        l = leftToken.i
 
-    rightToken = get_token_at_char_offset(doc, r)
+    rightToken = get_token_at_char_offset(doc, roff)
     # Here a `None' result means there is nothing to correct
-    if rightToken is not None and rightToken.idx < r:
-        r = rightToken.idx + len(rightToken)
+    if rightToken is not None and rightToken.idx < roff:
+        r = rightToken.i + 1
+    elif rightToken is not None and rightToken.idx == roff:
+        r = rightToken.i
+    else:
+        for i in xrange(len(doc)):
+            if doc[i].idx > roff:
+                r = i
+                break
 
     # The maximum distance in characters to move a span
     MAXIMUM_CORRECTION = 3
-    if abs(l - span[0]) > MAXIMUM_CORRECTION or abs(r - span[1]) > MAXIMUM_CORRECTION:
-        raise ValueError("Could not fit span {} to tokens in doc {}".format(span, doc.document_id))
+    move = max(abs(doc[l].idx - loff), abs((doc[r - 1].idx + len(doc[r - 1])) - roff))
+    if move > MAXIMUM_CORRECTION:
+        raise ValueError("Could not fit span {} to tokens in doc {}, had to move {}"
+                         .format(span, doc.document_id, move))
 
     return (l, r)
 
