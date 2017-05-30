@@ -8,6 +8,13 @@ import logging
 logging.basicConfig(level=logging.DEBUG)
 
 
+def remove_discontinuous_entities(doc):
+    to_remove = [e for e in doc.entities if len(e.spans) > 1]
+    debug("{} discontinuous entities to remove".format(len(to_remove)), doc)
+    for entity in to_remove:
+        doc.remove_entity(entity, force_remove_relations=True)
+
+
 def remove_other_relations(doc):
     to_remove = []
     for relation in doc.relations:
@@ -15,7 +22,7 @@ def remove_other_relations(doc):
             to_remove.append(relation)
     for relation in to_remove:
         doc.remove_relation(relation)
-    logging.debug("{} `other_relation's to fixup in doc {}".format(len(to_remove), doc.document_id))
+    debug("{} `other_relation's to fixup".format(len(to_remove)), doc)
     return doc
 
 
@@ -28,23 +35,39 @@ def trim_leading_determiners(doc):
         if start_token.tag_ == "DT" and not start_token.is_oov:
             count += 1
             trim_entity(doc, entity, 0, 1, 0)
-    logging.debug("{} leading determiners to fixup in doc {}".format(count, doc.document_id))
+    debug("{} leading determiners to fixup".format(count), doc)
     return doc
 
 
 def trim_punctuation(doc):
-    GOOD_PUNCT_TAGS = {"-LRB-", "-RRB-"}
     count = 0
     for entity in doc.entities:
         start_token = doc[entity.spans[0][0]]
         end_token = doc[entity.spans[-1][1] - 1]
-        if not start_token.is_oov and start_token.pos_ == "PUNCT" and start_token.tag_ not in GOOD_PUNCT_TAGS:
+        if is_trimmable_punctuation(start_token):
             trim_entity(doc, entity, 0, 1, 0)
-        if not end_token.is_oov and end_token.pos_ == "PUNCT" and start_token.tag_ not in GOOD_PUNCT_TAGS:
+        if is_trimmable_punctuation(end_token):
             trim_entity(doc, entity, -1, 0, -1)
-    logging.debug("{} leading/trailing pieces of punctuation to fixup in doc {}"
-                  .format(count, doc.document_id))
+    debug("{} leading/trailing pieces of punctuation to fixup".format(count), doc)
     return doc
+
+
+def is_trimmable_punctuation(token):
+    GOOD_PUNCT_TAGS = {"-LRB-", "-RRB-"}
+    return not token.is_oov and token.pos_ == "PUNCT" and token.tag_ not in GOOD_PUNCT_TAGS
+
+
+def internal_heads(tokens):
+    heads = {}
+    new = {tokens}
+    while len(new) != len(heads):
+        heads = new
+        new = {t.head if t.head in tokens else t for t in heads}
+    return heads
+
+
+def external_heads(tokens):
+    return {t.head for t in tokens if t.head not in tokens}
 
 
 def fixup_overlapping_annotations(doc):
@@ -59,7 +82,7 @@ def fixup_overlapping_annotations(doc):
         else:
             remove = pair[1]
         doc.remove_entity(remove, force_remove_relations=True)
-    logging.debug("{} overlapping pairs to fixup in doc {}".format(len(overlapping), doc.document_id))
+    debug("{} overlapping pairs to fixup".format(len(overlapping), doc))
     return doc
 
 
@@ -68,7 +91,7 @@ def trim_entity(doc, entity, span_idx, left_trim, right_trim):
     span = (span[0] + left_trim, span[1] + right_trim)
     if span[1] - span[0] <= 0:
         if len(entity.spans) == 1:
-            logging.warn(u"Removing entity {} that was fully trimmed".format(entity))
+            warn(u"Removing entity {} that was fully trimmed".format(entity), doc)
             doc.remove_entity(entity, force_remove_relations=True)
         else:
             entity.set_spans(entity.spans[1:])
@@ -77,7 +100,16 @@ def trim_entity(doc, entity, span_idx, left_trim, right_trim):
     entity.set_spans(spans)
 
 
+def debug(message, doc):
+    logging.debug("{}: {}".format(doc.document_id, message))
+
+
+def warn(message, doc):
+    logging.warn("{}: {}".format(doc.document_id, message))
+
+
 FIXUP_STEPS = [remove_other_relations,
+               remove_discontinuous_entities,
                trim_leading_determiners,
                trim_punctuation,
                fixup_overlapping_annotations]
