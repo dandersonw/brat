@@ -66,7 +66,7 @@ class EnhancedAnnotatedDoc:
     @staticmethod
     def _init_nlp():
         if EnhancedAnnotatedDoc.NLP is None:
-            EnhancedAnnotatedDoc.NLP = spacy.load("en")
+            EnhancedAnnotatedDoc.NLP = spacy.load("en_core_web_md")
 
 
 class Entity:
@@ -106,6 +106,12 @@ class Entity:
     def __str__(self):
         # TODO: something nicer?
         return self.brat_annotation.__str__()
+
+    def get_tokens(self):
+        return itertools.chain.from_iterable(
+            itertools.chain.from_iterable((self.parent_doc[i]
+                                           for i in xrange(span[0], span[1]))
+                                          for span in self.spans))
 
 
 class Relation:
