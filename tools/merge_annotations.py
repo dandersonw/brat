@@ -3,6 +3,7 @@
 
 import ai2_common
 import argparse
+import copy
 import curses
 import time
 import locale
@@ -11,6 +12,14 @@ import intervaltree
 import json
 import codecs
 import os.path
+import sys
+from shutil import copyfile
+
+try:
+    import annotation
+except ImportError:
+    sys.path.append(os.path.join(os.path.dirname(__file__), '../server/src'))
+    import annotation
 
 
 class MergeHistory:
@@ -39,11 +48,39 @@ class MergeHistory:
             pass
 
     def init(self, identifier, correction_dir, annotator_dirs):
+        if not annotator_dirs:
+            raise ValueError("Must provide at least one annotator!")
+
         self.identifier = identifier
         self.correction_dir = correction_dir
         self.annotator_dirs = annotator_dirs
         self.accepted = []
         self.rejected = []
+
+        annotator_dir = annotator_dirs[0]
+        copyfile(os.path.join(annotator_dir, identifier + ".txt"),
+                 os.path.join(correction_dir, identifier + ".txt"))
+        open(os.path.join(correction_dir, identifier + ".ann"), mode="w").close()
+
+    def build_corrected_brat(self):
+        brat = annotation.TextAnnotations(os.path.join(self.correction_dir, self.identifier))
+        annotators_brat = self.get_annotator_brats()
+        for a in self.accepted:
+            annotator = a[0]
+            annotation_id = a[1]
+            ann = annotators_brat[annotator].get_ann_by_id(annotation_id)
+            ann = prefix_annotation(annotator, ann)
+            brat.add_annotation(ann)
+        # call sanity checking?
+        return brat
+
+    def get_annotator_brats(self):
+        annotators_brat = dict()
+        for dir in self.annotator_dirs:
+            annotator = os.path.basename(dir)
+            annotators_brat[annotator] = annotation.TextAnnotations(os.path.join(dir,
+                                                                                 self.identifier))
+        return annotators_brat
 
     def write_logfile(self):
         config = {"identifier": self.identifier,
@@ -52,6 +89,20 @@ class MergeHistory:
         with codecs.open(self.logfile, mode="w", encoding="utf-8") as outputFile:
             json.dump(config, outputFile)
             outputFile.write("\n")
+            for a in self.accepted:
+                outputFile.write("\t".join(tuple(["ACCEPT"]) + a + "\n"))
+            for r in self.rejected:
+                outputFile.write("\t".join(tuple(["REJECT"]) + a + "\n"))
+
+
+def prefix_annotation(prefix, ann):
+    new_id = "{}-{}".format(prefix, ann.id)
+    ann = copy.copy(ann)
+    ann.id = new_id
+    id_attrs = ["target", "arg1", "arg2"]
+    for attr in id_attrs:
+        if hasattr(ann, attr):
+            setattr(ann, attr, "{}-{}".format(prefix, getattr(ann, attr)))
 
 
 def run(stdscr, args):
@@ -103,13 +154,25 @@ def get_entity_span_tree(doc):
     return intervaltree.IntervalTree.from_tuples(entspans)
 
 
+def logfile_path(dir, identifier):
+    return os.path.join(dir, identifier + ".mrg")
+
+
 def init_merge(args):
-    logfile = os.path.join(args.logfile_dir, args.identifier + ".mrg")
+    logfile = logfile_path(args.logfile_dir, args.identifier)
     if os.path.exists(logfile):
         raise ValueError("Logfile already exists!")
     history = MergeHistory(logfile)
     history.init(args.identifier, args.correction_dir, args.annotator_dirs)
     history.write_logfile()
+
+
+def automatic_portion(args):
+    logfile = logfile_path(args.logfile_dir, args.identifier)
+    if not os.path.exists(logfile):
+        raise ValueError("Logfile does not exist!")
+    history = MergeHistory(logfile)
+    annotator_brats = history.get_annotator_brats()
 
 
 def display(args):
@@ -132,12 +195,15 @@ def main():
 
     common = argparse.ArgumentParser(add_help=False)
     common.add_argument("logfile_dir")
+    common.add_argument("identifier")
 
     init_parser = subparsers.add_parser("init", parents=[common])
-    init_parser.add_argument("identifier")
-    init_parser.add_argument("correction_dir", nargs=1)
+    init_parser.add_argument("correction_dir")
     init_parser.add_argument("annotator_dirs", nargs="+")
     init_parser.set_defaults(func=init_merge)
+
+    automatic_portion_parser = subparsers.add_parser("auto", parents=[common])
+    automatic_portion_parser.set_defaults(func=automatic_portion)
 
     args = parser.parse_args()
     args.func(args)
