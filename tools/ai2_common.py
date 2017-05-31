@@ -145,7 +145,7 @@ class Relation:
 
     def get_comments(self):
         return [c for c in self.parent_doc.brat_annotation.get_oneline_comments()
-                if c.target == self.brat_annotation]
+                if c.target == self.brat_annotation.id]
 
 
 def get_docs(*paths):
