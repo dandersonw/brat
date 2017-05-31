@@ -8,15 +8,11 @@ import itertools
 import glob
 import re
 import codecs
-from sys import path as sys_path
 
-# this seems to be necessary for annotations to find its config
-sys_path.append(os.path.join(os.path.dirname(__file__), '..'))
 try:
     import annotation
 except ImportError:
-    # Guessing that we might be in the brat tools/ directory ...
-    sys_path.append(os.path.join(os.path.dirname(__file__), '../server/src'))
+    sys.path.append(os.path.join(os.path.dirname(__file__), '../server/src'))
     import annotation
 
 
