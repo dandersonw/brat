@@ -48,7 +48,7 @@ class MergeHistory:
     def write_logfile(self):
         config = {"identifier": self.identifier,
                   "correction_dir": self.correction_dir,
-                  "annotator_dirs": self.annoator_dirs}
+                  "annotator_dirs": self.annotator_dirs}
         with codecs.open(self.logfile, mode="w", encoding="utf-8") as outputFile:
             json.dump(config, outputFile)
             outputFile.write("\n")
@@ -104,7 +104,12 @@ def get_entity_span_tree(doc):
 
 
 def init_merge(args):
-    print args
+    logfile = os.path.join(args.logfile_dir, args.identifier + ".mrg")
+    if os.path.exists(logfile):
+        raise ValueError("Logfile already exists!")
+    history = MergeHistory(logfile)
+    history.init(args.identifier, args.correction_dir, args.annotator_dirs)
+    history.write_logfile()
 
 
 def display(args):
@@ -126,9 +131,12 @@ def main():
     subparsers = parser.add_subparsers()
 
     common = argparse.ArgumentParser(add_help=False)
-    common.add_argument("logfile")
+    common.add_argument("logfile_dir")
 
     init_parser = subparsers.add_parser("init", parents=[common])
+    init_parser.add_argument("identifier")
+    init_parser.add_argument("correction_dir", nargs=1)
+    init_parser.add_argument("annotator_dirs", nargs="+")
     init_parser.set_defaults(func=init_merge)
 
     args = parser.parse_args()
