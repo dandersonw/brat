@@ -173,6 +173,37 @@ def automatic_portion(args):
         raise ValueError("Logfile does not exist!")
     history = MergeHistory(logfile)
     annotator_brats = history.get_annotator_brats()
+    annotators = annotator_brats.keys()
+    brats = annotator_brats.values()
+    corrected = history.build_corrected_brat()
+
+    entities = itertools.chain.from_iterable((k.get_entities() for k in brats))
+    for entity in entities:
+        matches = get_entity_matches(entity, brats)
+        in_already = get_entity_matches(entity, corrected)
+        if len(in_already) > 0 or len(matches) < len(annotators):
+            continue
+        else:
+            types = set((e.type for e in matches))
+            if len(types) == 1:
+                etype = list(types)[0]
+            else:
+                # TODO - resolve type disagreement with a different policy?
+                etype = "Entity"
+            entity.type = etype
+            # TODO prefix by anything?
+            corrected.add_annotation(entity)
+            history.corrected.append(())
+
+
+def get_entity_matches(entity, brats):
+    matches = []
+    for brat in brats:
+        for e2 in brat.get_entities():
+            if entity.same_span(e2):
+                matches.append(e2)
+                break
+    return matches
 
 
 def display(args):
