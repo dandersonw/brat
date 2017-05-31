@@ -8,13 +8,50 @@ import time
 import locale
 import itertools
 import intervaltree
-
-locale.setlocale(locale.LC_ALL, "")
+import json
+import codecs
+import os.path
 
 
 class MergeHistory:
     def __init__(self, logfile):
         self.logfile = logfile
+        if os.path.exists(logfile):
+            with codecs.open(logfile, mode="r", encoding="utf-8") as inputFile:
+                lines = list(inputFile)
+                config = json.loads(lines[0].strip())
+                self.identifier = config["identifier"]
+                self.correction_dir = config["correction_dir"]
+                self.annotator_dirs = config["annotator_dirs"]
+                self.accepted = []
+                self.rejected = []
+                for line in lines[1:]:
+                    tokens = line.split("t")
+                    action = tokens[0]
+                    if action == "ACCEPT":
+                        self.accepted.append(tuple(tokens[1:]))
+                    elif action == "REJECT":
+                        self.rejected.append(tuple(tokens[1:]))
+                    else:
+                        raise ValueError("Unrecognized line in logfile:\n{}".format(line))
+        else:
+            # Need to call `init' to get fields initialized with their values
+            pass
+
+    def init(self, identifier, correction_dir, annotator_dirs):
+        self.identifier = identifier
+        self.correction_dir = correction_dir
+        self.annotator_dirs = annotator_dirs
+        self.accepted = []
+        self.rejected = []
+
+    def write_logfile(self):
+        config = {"identifier": self.identifier,
+                  "correction_dir": self.correction_dir,
+                  "annotator_dirs": self.annoator_dirs}
+        with codecs.open(self.logfile, mode="w", encoding="utf-8") as outputFile:
+            json.dump(config, outputFile)
+            outputFile.write("\n")
 
 
 def run(stdscr, args):
@@ -66,9 +103,11 @@ def get_entity_span_tree(doc):
     return intervaltree.IntervalTree.from_tuples(entspans)
 
 
-def main():
-    parser = argparse.ArgumentParser()
-    args = parser.parse_args()
+def init_merge(args):
+    print args
+
+
+def display(args):
     stdscr = curses.initscr()
     init_curses()
     stdscr.keypad(1)
@@ -79,6 +118,21 @@ def main():
         curses.nocbreak()
         curses.echo()
         curses.endwin()
+
+
+def main():
+    locale.setlocale(locale.LC_ALL, "")
+    parser = argparse.ArgumentParser()
+    subparsers = parser.add_subparsers()
+
+    common = argparse.ArgumentParser(add_help=False)
+    common.add_argument("logfile")
+
+    init_parser = subparsers.add_parser("init", parents=[common])
+    init_parser.set_defaults(func=init_merge)
+
+    args = parser.parse_args()
+    args.func(args)
 
 
 if __name__ == "__main__":
