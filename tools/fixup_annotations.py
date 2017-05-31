@@ -60,13 +60,15 @@ def merge_acronyms(doc):
     relations = doc.relations
     count = 0
     for relation in relations:
-        equivalent_relation = [c for c in relation.get_comments() if c.type == "equivalent"]
+        equivalent_relation = [c for c in relation.get_comments() if c.tail.strip() == "equivalent"]
         acronym = looks_like_an_acronym(relation.arg1) or looks_like_an_acronym(relation.arg2)
         if equivalent_relation and acronym:
-            merge_entities(relation.arg1, relation.arg2)
+            merge_entities(relation.arg1, relation.arg2, doc)
+            if doc[relation.arg1.spans[-1][1]].tag_ == "-RRB-":
+                trim_entity(doc, relation.arg1, -1, 0, 1)
             doc.remove_relation(relation)
             count += 1
-    debug("{} acronym-looking annotations merged".format(count), doc)
+    debug("{} acronym annotations merged".format(count), doc)
     return doc
 
 
@@ -77,7 +79,7 @@ def is_trimmable_punctuation(token):
 
 def looks_like_an_acronym(entity):
     ACRONYM_RE = re.compile(r"^[^a-z]+$")
-    return min([ACRONYM_RE.match(t.text) is not None for t in entity.get_tokens()])
+    return min([ACRONYM_RE.search(t.text) is not None for t in entity.get_tokens()])
 
 
 def fixup_overlapping_annotations(doc):
