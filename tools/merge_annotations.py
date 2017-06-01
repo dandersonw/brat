@@ -146,9 +146,9 @@ def translate_relation(relation, from_brat, to_brat):
     return relation
 
 
-def is_entity_contested(entity):
+def is_annotation_contested(annotation):
     prefixes = ["FIX_TYPE", "FIX_SPAN_", "VERIFY_"]
-    return max((entity.type.startswith(p) for p in prefixes))
+    return max((annotation.type.startswith(p) for p in prefixes))
 
 
 def get_relation_matches(relation, from_brat, brats):
@@ -184,13 +184,7 @@ def get_entity_overlaps(entity, brats):
     return matches
 
 
-def main():
-    locale.setlocale(locale.LC_ALL, "")
-    parser = argparse.ArgumentParser()
-    parser.add_argument("correction_dir")
-    parser.add_argument("annotator_dirs", nargs="+")
-    args = parser.parse_args()
-
+def merge(args):
     # Annotator names will derived from the basenames so make sure they look don't end with a slash
     args.annotator_dirs = [os.path.normpath(d) for d in args.annotator_dirs]
     args.correction_dir = os.path.normpath(args.correction_dir)
@@ -209,6 +203,51 @@ def main():
         if len(dirs) < len(args.annotator_dirs):
             logging.warn("Only {} annotators have annotated {}".format(len(dirs), identifier))
         merge_annotations(identifier, args.correction_dir, dirs)
+
+
+def verify(args):
+    identifiers = ai2_common.get_identifiers(args.correction_dir)
+
+    if args.verbose:
+        logging.basicConfig(level=logging.DEBUG)
+
+    not_finished = []
+    for identifier in identifiers:
+        unresolved = []
+        brat = annotation.TextAnnotations(identifier)
+        for a in brat:
+            if isinstance(a, annotation.TypedAnnotation):
+                if is_annotation_contested(a):
+                    unresolved.append(a)
+        logging.debug("{} has {} unresolved conflicts".format(identifier, len(unresolved)))
+        if unresolved:
+            not_finished.append((identifier, unresolved))
+
+    if not_finished:
+        logging.warn("{} files with unresolved annotations".format(len(not_finished)))
+        sys.exit(1)
+
+
+def main():
+    locale.setlocale(locale.LC_ALL, "")
+    parser = argparse.ArgumentParser()
+    subparsers = parser.add_subparsers()
+
+    common_parser = argparse.ArgumentParser(add_help=False)
+    common_parser.add_argument("correction_dir")
+
+    create_parser = subparsers.add_parser("merge", parents=[common_parser])
+    create_parser.add_argument("annotator_dirs", nargs="+")
+    create_parser.set_defaults(func=merge)
+
+    verify_parser = subparsers.add_parser("verify", parents=[common_parser])
+    verify_parser.add_argument("--verbose",
+                               help="Print information about individual files",
+                               action="store_true")
+    verify_parser.set_defaults(func=verify)
+
+    args = parser.parse_args()
+    args.func(args)
 
 
 if __name__ == "__main__":
