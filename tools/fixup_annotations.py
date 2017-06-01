@@ -8,7 +8,6 @@ import logging
 import re
 import os
 import os.path
-logging.basicConfig(level=logging.DEBUG)
 
 
 def remove_discontinuous_entities(doc):
@@ -134,7 +133,6 @@ def warn(message, doc):
 
 FIXUP_STEPS = [merge_acronyms,
                remove_other_relations,
-               remove_discontinuous_entities,
                trim_leading_determiners,
                trim_punctuation,
                fixup_overlapping_annotations]
@@ -147,6 +145,7 @@ def fixup(doc):
 
 
 def main():
+    logging.basicConfig(level=logging.DEBUG)
     parser = argparse.ArgumentParser()
     parser.add_argument("paths", nargs="+")
     parser.add_argument("--outputPath")
