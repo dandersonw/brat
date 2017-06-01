@@ -33,6 +33,12 @@ def prefix_annotation_type(ann, prefix):
     return ann
 
 
+def set_annotation_type(ann, type):
+    ann = copy.copy(ann)
+    ann.type = type
+    return ann
+
+
 def get_annotator(brat):
     return os.path.basename(os.path.dirname(brat.get_document()))
 
@@ -81,7 +87,7 @@ def merge_annotations(identifier, correction_dir, annotator_dirs):
             types = set((e.type for e in matches))
             if len(types) > 1:
                 # Type of the entity is contested
-                ann = prefix_annotation_type(ann, "FIX_TYPE_")
+                ann = set_annotation_type(ann, "FIX_TYPE")
             corrected.add_annotation(ann)
 
     for (entity, from_brat) in no_perfect_match:
@@ -114,7 +120,7 @@ def merge_annotations(identifier, correction_dir, annotator_dirs):
             types = set((r.type for r in matches))
             if len(types) > 1:
                 # Type of the relation is contested
-                ann = prefix_annotation_type(ann, "FIX_TYPE_")
+                ann = set_annotation_type(ann, "FIX_TYPE")
             corrected.add_annotation(ann)
 
     for (relation, from_brat) in no_perfect_match:
@@ -141,7 +147,7 @@ def translate_relation(relation, from_brat, to_brat):
 
 
 def is_entity_contested(entity):
-    prefixes = ["FIX_TYPE_", "FIX_SPAN_", "VERIFY_"]
+    prefixes = ["FIX_TYPE", "FIX_SPAN_", "VERIFY_"]
     return max((entity.type.startswith(p) for p in prefixes))
 
 
