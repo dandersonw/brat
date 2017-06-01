@@ -1,7 +1,6 @@
 T3	Entity 184 204	genome reprogramming
 T4	KeyEntity 252 280	chromatin assembly machinery
-T5	Entity 321 348	chromatin assembly factor 1
-T6	KeyEntity 350 355	CAF-1
+T6	KeyEntity 321 356	chromatin assembly factor 1 (CAF-1)
 T7	Entity 364 392	pre-implantation development
 T8	Entity 489 498	p150CAF-1
 T9	Entity 549 569	developmental arrest
@@ -15,8 +14,8 @@ T16	Entity 1097 1126	maturation of heterochromatin
 T17	Entity 1134 1161	preimplantation development
 T18	Entity 1249 1264	mislocalization
 T19	Entity 1267 1284	oss of clustering
-T20	Entity 1291 1343	econdensation of pericentric heterochromatin domains
-T21	Entity 1402 1446	alteration of epigenetic histone methylation
+T20	Entity 1308 1343	pericentric heterochromatin domains
+T21	Entity 1416 1446	epigenetic histone methylation
 T22	Entity 1469 1496	pericentric heterochromatin
 T23	KeyEntity 1703 1731	heterochromatin organization
 T24	Entity 1735 1762	pluripotent embryonic cells
@@ -26,8 +25,6 @@ T27	Entity 1851 1871	spatial organization
 T28	Entity 1876 1894	epigenetic marking
 T29	Entity 1912 1925	early embryos
 T30	Entity 1930 1950	embryonic stem cells
-R1	other_relation Arg1:T6 Arg2:T5	
-#1	AnnotatorNotes R1	equivalent
 R2	participates_in Arg1:T6 Arg2:T7	
 R3	participates_in Arg1:T12 Arg2:T11	
 R4	participates_in Arg1:T13 Arg2:T14	
@@ -43,3 +40,8 @@ T2	KeyEntity 23 51	Heterochromatin Organization
 T31	KeyEntity 55 82	Pluripotent Embryonic Cells
 R12	participates_in Arg1:T1 Arg2:T2	
 R13	is_part_of Arg1:T2 Arg2:T31	
+T5	Entity 603 612	p150CAF-1
+T32	Entity 500 517	Loss of p150CAF-1
+T33	Entity 867 876	p150CAF-1
+T34	Entity 1188 1210	depletion of p150CAF-1
+T35	Entity 1358 1371	loss of CAF-1

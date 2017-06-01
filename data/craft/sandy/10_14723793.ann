@@ -12,7 +12,7 @@ T15	Entity 770 800	Ancient Conserved Domain (ACD)
 T16	Entity 805 821	highly conserved
 T17	KeyEntity 894 919	very strong AA homologies
 T18	Entity 927 948	bacteria CorC protein
-T19	Entity 1007 1034	magnesium and cobalt efflux
+T19	Entity 1021 1034	cobalt efflux
 T20	Entity 1298 1313	plasma membrane
 T21	KeyEntity 1347 1371	evolutionarily conserved
 T11	Entity 1429 1440	development
@@ -25,8 +25,6 @@ T3	Entity 1150 1155	brain
 T27	Entity 1189 1195	kidney
 T28	Entity 1200 1206	testis
 T29	Entity 1235 1246	hippocampus
-R1	other_relation Arg1:T4 Arg2:T5	
-#1	AnnotatorNotes R1	homologue_of
 T12	KeyEntity 578 594	mouse Acdp genes
 R2	is_part_of Arg1:T12 Arg2:T13	
 R3	is_part_of Arg1:T12 Arg2:T14	
@@ -423,3 +421,9 @@ T317	Entity 23004 23018	cDNA sequences
 T318	Entity 23027 23036	Acdp gene
 T319	KeyEntity 0 17	Molecular cloning
 T320	KeyEntity 52 68	Acdp gene family
+T321	KeyEntity 306 310	Acdp
+T322	Entity 1007 1016;1028 1034	magnesium efflux
+T323	Entity 723 733;749 758	nucleotide sequences
+T324	Entity 738 758	amino acid sequences
+R1	is_subclass_of Arg1:T321 Arg2:T5	
+R56	is_part_of Arg1:T321 Arg2:T4	

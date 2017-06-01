@@ -3,15 +3,12 @@ T2	Entity 188 208	DNA-binding proteins
 T3	Entity 223 236	transcription
 T4	Entity 253 265	coactivators
 T5	Entity 270 282	corepressors
-T6	Entity 301 320	zebrafish moonshine
-T7	KeyEntity 322 325	mon
+T7	KeyEntity 301 326	zebrafish moonshine (mon)
 T8	Entity 358 367	embryonic
-T9	Entity 372 377	adult
-T10	Entity 378 391	hematopoiesis
-T11	Entity 406 435	severe red blood cell aplasia
+T10	Entity 372 391	adult hematopoiesis
+T11	Entity 413 435	red blood cell aplasia
 T12	KeyEntity 452 455	mon
-T13	Entity 500 538	transcriptional intermediary factor 1γ
-T14	KeyEntity 540 545	TIF1γ
+T14	KeyEntity 500 546	transcriptional intermediary factor 1γ (TIF1γ)
 T15	Entity 468 486	zebrafish ortholog
 T17	Entity 591 603	coactivators
 T18	Entity 608 620	corepressors
@@ -43,10 +40,6 @@ T44	Entity 1553 1572	hematopoietic cells
 R1	participates_in Arg1:T4 Arg2:T3	
 R2	participates_in Arg1:T5 Arg2:T3	
 R3	regulates Arg1:T2 Arg2:T1	
-R4	other_relation Arg1:T7 Arg2:T6	
-#1	AnnotatorNotes R4	equivalent
-R5	other_relation Arg1:T10 Arg2:T9	
-#2	AnnotatorNotes R5	time_stage
 R6	other_relation Arg1:T10 Arg2:T8	
 #3	AnnotatorNotes R6	time_stage
 R7	participates_in Arg1:T7 Arg2:T11	
@@ -71,3 +64,4 @@ R22	interacts_with Arg1:T42 Arg2:T43
 T16	KeyEntity 4 28	Zebrafish moonshine Gene
 T35	KeyEntity 37 75	Transcriptional Intermediary Factor 1γ
 T45	KeyEntity 90 116	Regulator of Hematopoiesis
+T6	Entity 551 557	TRIM33

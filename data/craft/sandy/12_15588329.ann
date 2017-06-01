@@ -7,7 +7,7 @@ T6	Entity 388 397	subunit c
 T7	Entity 421 432	CNS neurons
 T8	Entity 458 468	Cln3Δex7/8
 T9	KeyEntity 511 524	JNCL mutation
-T10	Entity 541 549	battenin
+T10	Entity 534 549	mutant battenin
 T11	Entity 562 581	JNCL-like pathology
 R1	regulates Arg1:T1 Arg2:T2	
 #1	AnnotatorNotes R1	equivalent
@@ -16,7 +16,7 @@ R3	participates_in Arg1:T4 Arg2:T5
 R4	participates_in Arg1:T4 Arg2:T6	
 R5	participates_in Arg1:T4 Arg2:T7	
 R6	participates_in Arg1:T9 Arg2:T8	
-R7	interacts_with Arg1:T8 Arg2:T10	
+R7	participates_in Arg1:T8 Arg2:T10	
 R8	participates_in Arg1:T8 Arg2:T11	
 T12	KeyEntity 637 650	JNCL mutation
 T13	Entity 654 668	neuronal cells
@@ -26,7 +26,7 @@ T16	Entity 793 822	neuronal precursor cell lines
 T17	Entity 857 862	MAP-2
 T18	Entity 867 880	NeuN-positive
 T19	Entity 882 899	neuron-like cells
-T20	Entity 912 924	CbCln3Δex7/8
+T20	Entity 901 924	Homozygous CbCln3Δex7/8
 T21	Entity 970 978	battenin
 T22	Entity 1009 1036	accumulate ATPase subunit c
 T23	Entity 1102 1123	cathepsin D transport
@@ -37,7 +37,7 @@ T27	Entity 1257 1268	endocytosis
 T28	Entity 1294 1306	mitochondria
 T29	Entity 1333 1345	cellular ATP
 T30	Entity 1391 1407	oxidative stress
-R9	participates_in Arg1:T12 Arg2:T13	
+R9	is_part_of Arg1:T12 Arg2:T13	
 R10	is_part_of Arg1:T14 Arg2:T12	
 R11	is_subclass_of Arg1:T17 Arg2:T19	
 R12	is_subclass_of Arg1:T18 Arg2:T19	
@@ -61,9 +61,9 @@ T35	Entity 1486 1520	intracellular membrane trafficking
 T36	Entity 1525 1547	mitochondrial function
 T37	Entity 1615 1635	JNCL disease process
 T38	Entity 1664 1681	neuronal survival
-R24	regulates Arg1:T34 Arg2:T35	
-R25	regulates Arg1:T34 Arg2:T36	
-R26	interacts_with Arg1:T37 Arg2:T38	
+R24	participates_in Arg1:T34 Arg2:T35	
+R25	is_part_of Arg1:T34 Arg2:T36	
+R26	participates_in Arg1:T37 Arg2:T38	
 T39	KeyEntity 0 20	Membrane trafficking
 T40	KeyEntity 25 52	mitochondrial abnormalities
 T41	KeyEntity 61 81	subunit c deposition
