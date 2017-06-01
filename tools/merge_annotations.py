@@ -67,6 +67,9 @@ def merge_annotations(identifier, correction_dir, annotator_dirs):
     Works according to the scheme laid out in:
     docs.google.com/document/d/1zj5WAAykZfrPJwaKtv-AUD0m9BrVH6ybcl17PunnIgc
 
+    It is a significant invariant that there will only be one entity with any
+    given set of spans.
+
     """
     annotator_brats = get_annotator_brats(annotator_dirs, identifier)
     annotators = annotator_brats.keys()
@@ -106,6 +109,10 @@ def merge_annotations(identifier, correction_dir, annotator_dirs):
             # With no overlap
             ann = prefix_annotation_type(id_prefixed, "VERIFY_")
         corrected.add_annotation(ann)
+
+    # Transfer comments on entities
+    for entity in corrected.get_entities():
+        transfer_comments(corrected, entity, brats)
 
     all_relations = itertools.chain.from_iterable(
         (((r, b) for r in b.get_relations()) for b in brats))
@@ -157,6 +164,17 @@ def translate_relation(relation, from_brat, to_brat):
     return relation
 
 
+def transfer_comments(to_brat, entity, from_brats):
+    for brat in from_brats:
+        entities = set(brat.get_entities())
+        for c in brat.get_oneline_comments():
+            target = brat.get_ann_by_id(c.target)
+            if target in entities and target.same_span(entity):
+                c = copy.copy(c)
+                c.target = entity.id
+                to_brat.add_annotation(c)
+
+
 def is_annotation_contested(annotation):
     prefixes = ["FIX_", "VERIFY_"]
     return max((annotation.type.startswith(p) for p in prefixes))
@@ -195,6 +213,10 @@ def get_entity_overlaps(entity, brats):
             if ai2_common.any_overlapping_spans(entity, e2):
                 matches.append(e2)
     return matches
+
+
+def get_comments(brat, ann):
+    return [c for c in brat.get_oneline_comments() if c.target == ann.id]
 
 
 def merge(args):

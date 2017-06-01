@@ -4,25 +4,16 @@
 import argparse
 import diff_and_mark
 import ai2_common
-from sys import path as sys_path
 import os.path
 import itertools
 import codecs
 import sys
 
-UTF8Writer = codecs.getwriter('utf8')
-sys.stdout = UTF8Writer(sys.stdout)
-
-
 try:
     import annotation
 except ImportError:
-    # Guessing that we might be in the brat tools/ directory ...
-    sys_path.append(os.path.join(os.path.dirname(__file__), '../server/src'))
+    sys.path.append(os.path.join(os.path.dirname(__file__), '../server/src'))
     import annotation
-
-# this seems to be necessary for annotations to find its config
-sys_path.append(os.path.join(os.path.dirname(__file__), '..'))
 
 
 def find_discontinuous(text_annotation):
@@ -158,12 +149,15 @@ def display_overlapping(files, verbose):
     print "Total number of overlapping entites: {}".format(total_overlapping_entities)
 
 
-def main(argv=None):
+def main():
     ap = argparse.ArgumentParser(description="Find entities with discontinuous spans")
     ap.add_argument("dir")
     ap.add_argument("category")
     ap.add_argument("--verbose", action="store_true")
     args = ap.parse_args()
+
+    UTF8Writer = codecs.getwriter('utf8')
+    sys.stdout = UTF8Writer(sys.stdout)
 
     files = []
     errors = []
@@ -173,8 +167,9 @@ def main(argv=None):
         display_discontinuous(files, args.verbose)
     elif args.category == "overlapping":
         display_overlapping(files, args.verbose)
+    else:
+        raise ValueError("Unknown category of problematic annotations to look for")
 
 
 if __name__ == "__main__":
-    import sys
-    sys.exit(main(sys.argv))
+    main()
