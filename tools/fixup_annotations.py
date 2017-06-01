@@ -84,6 +84,9 @@ def looks_like_an_acronym(entity):
 def fixup_overlapping_annotations(doc):
     overlapping = ai2_common.find_overlapping(doc)
     for pair in overlapping:
+        if doc.get_entity(pair[0].id) is None or doc.get_entity(pair[1].id) is None:
+            # We've already removed one of the pair
+            continue
         if pair[0].get_relations() and not pair[1].get_relations():
             remove = pair[1]
         elif pair[1].get_relations() and not pair[0].get_relations():

@@ -41,8 +41,6 @@ class EnhancedAnnotatedDoc:
 
     def get_entity(self, id):
         entity = next((e for e in self.entities if e.id == id), None)
-        if entity is None:
-            raise ValueError("Could not find entity id {} in {}".format(id, self.document_id))
         return entity
 
     def remove_entity(self, entity, force_remove_relations=False):
@@ -144,8 +142,8 @@ class Relation:
                 if c.target == self.brat_annotation.id]
 
 
-def get_docs(*paths):
-    found_paths = []
+def get_identifiers(*paths):
+    found_identifiers = []
     extensions = re.compile(r"\.(txt|ann)$")
     for path in paths:
         if os.path.isdir(path):
@@ -154,15 +152,17 @@ def get_docs(*paths):
             if not children:
                 sys.stderr.write("No annotation files found in {}\n".format(path))
             identifiers = [child[:-4] for child in children]
-            found_paths += list(set(identifiers))
+            found_identifiers += list(set(identifiers))
         else:
             if extensions.search(path):
-                found_paths.append(path[:-4])
+                found_identifiers.append(path[:-4])
             else:
-                found_paths.append(path)
+                found_identifiers.append(path)
+    return found_identifiers
 
-    result = [load_doc(p) for p in found_paths]
-    return result
+
+def get_docs(*paths):
+    return [load_doc(i) for i in get_identifiers(*paths)]
 
 
 def load_doc(identifier):

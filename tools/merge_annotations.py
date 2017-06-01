@@ -5,11 +5,13 @@ import ai2_common
 import argparse
 import copy
 import locale
+import logging
 import itertools
 import codecs
 import os.path
 import sys
 from shutil import copyfile
+from collections import defaultdict
 
 try:
     import annotation
@@ -52,14 +54,14 @@ def create_correction_file(identifier, correction_dir, annotator_dirs):
     return correction_ann
 
 
-def automatic_portion(args):
-    annotator_brats = get_annotator_brats(args.annotator_dirs, args.identifier)
+def merge_annotations(identifier, correction_dir, annotator_dirs):
+    annotator_brats = get_annotator_brats(annotator_dirs, identifier)
     annotators = annotator_brats.keys()
     brats = annotator_brats.values()
-    correction_file = create_correction_file(args.identifier,
-                                             args.correction_dir,
-                                             args.annotator_dirs)
-    corrected = annotation.TextAnnotations(os.path.join(args.correction_dir, args.identifier))
+    correction_file = create_correction_file(identifier,
+                                             correction_dir,
+                                             annotator_dirs)
+    corrected = annotation.TextAnnotations(os.path.join(correction_dir, identifier))
 
     all_entities = itertools.chain.from_iterable(
         (((e, b) for e in b.get_entities()) for b in brats))
@@ -177,18 +179,28 @@ def get_entity_overlaps(entity, brats):
 def main():
     locale.setlocale(locale.LC_ALL, "")
     parser = argparse.ArgumentParser()
-    subparsers = parser.add_subparsers()
-
-    common = argparse.ArgumentParser(add_help=False)
-    common.add_argument("identifier")
-
-    automatic_portion_parser = subparsers.add_parser("auto", parents=[common])
-    automatic_portion_parser.add_argument("correction_dir")
-    automatic_portion_parser.add_argument("annotator_dirs", nargs="+")
-    automatic_portion_parser.set_defaults(func=automatic_portion)
-
+    parser.add_argument("correction_dir")
+    parser.add_argument("annotator_dirs", nargs="+")
     args = parser.parse_args()
-    args.func(args)
+
+    # Annotator names will derived from the basenames so make sure they look don't end with a slash
+    args.annotator_dirs = [os.path.normpath(d) for d in args.annotator_dirs]
+    args.correction_dir = os.path.normpath(args.correction_dir)
+
+    if not os.path.exists(args.correction_dir):
+        os.mkdir(args.correction_dir)
+
+    identifiers_annotators = defaultdict(list)
+    for dir in args.annotator_dirs:
+        identifiers = (os.path.basename(os.path.normpath(i))
+                       for i in ai2_common.get_identifiers(dir))
+        for identifier in identifiers:
+            identifiers_annotators[identifier].append(dir)
+
+    for (identifier, dirs) in identifiers_annotators.items():
+        if len(dirs) < len(args.annotator_dirs):
+            logging.warn("Only {} annotators have annotated {}".format(len(dirs), identifier))
+        merge_annotations(identifier, args.correction_dir, dirs)
 
 
 if __name__ == "__main__":
