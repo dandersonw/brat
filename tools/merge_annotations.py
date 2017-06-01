@@ -70,11 +70,12 @@ def merge_annotations(identifier, correction_dir, annotator_dirs):
 
     # Entities with perfect span matches
     for (entity, from_brat) in all_entities:
+        if entity in accounted_for:
+            continue
         matches = get_entity_matches(entity, brats)
+        accounted_for.update(set(matches))
         if len(matches) < len(annotators):
-            if entity not in accounted_for:
-                no_perfect_match.append((entity, from_brat))
-                accounted_for.update(set(matches))
+            no_perfect_match.append((entity, from_brat))
         else:
             ann = suffix_annotation_id(get_annotator(from_brat), entity)
             types = set((e.type for e in matches))
@@ -85,8 +86,8 @@ def merge_annotations(identifier, correction_dir, annotator_dirs):
 
     for (entity, from_brat) in no_perfect_match:
         id_prefixed = suffix_annotation_id(get_annotator(from_brat), entity)
-        if get_entity_overlaps(entity, brats):
-            # With some overlap
+        if len(get_entity_overlaps(entity, brats)) > 1:
+            # With some overlap (other than itself)
             ann = prefix_annotation_type(id_prefixed, "FIX_SPAN_")
         else:
             # With no overlap
@@ -100,11 +101,12 @@ def merge_annotations(identifier, correction_dir, annotator_dirs):
 
     # Relations for which the arguments have perfect span matches
     for (relation, from_brat) in all_relations:
+        if relation in accounted_for:
+            continue
         matches = get_relation_matches(relation, from_brat, brats)
+        accounted_for.update(set(matches))
         if len(matches) < len(annotators):
-            if relation not in accounted_for:
-                no_perfect_match.append((relation, from_brat))
-                accounted_for.update(set(matches))
+            no_perfect_match.append((relation, from_brat))
         else:
             # Relation needs to refer to entities in the new set
             ann = translate_relation(relation, from_brat, corrected)
