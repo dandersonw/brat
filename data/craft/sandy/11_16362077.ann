@@ -1,7 +1,7 @@
 T1	Entity 157 184	KH-type RNA binding protein
 T2	Entity 236 250	RNA metabolism
 T3	Entity 339 354	Sam68-null mice
-T4	Entity 699 724	bone marrow stromal cells
+T4	Entity 690 724	Sam68−/− bone marrow stromal cells
 T5	Entity 731 756	differentiation advantage
 T6	Entity 765 783	osteogenic pathway
 T7	Entity 824 841	short hairpin RNA
@@ -20,12 +20,11 @@ T19	Entity 1744 1788	bone marrow mesenchymal cell differentiation
 T20	KeyEntity 145 150	Sam68
 R1	other_relation Arg1:T20 Arg2:T1	
 #1	AnnotatorNotes R1	is
-R2	regulates Arg1:T20 Arg2:T2	
 T21	Entity 358 382	homologous recombination
-R3	is_part_of Arg1:T3 Arg2:T21	
+R3	participates_in Arg1:T21 Arg2:T3	
 R4	is_part_of Arg1:T4 Arg2:T5	
-R5	interacts_with Arg1:T4 Arg2:T6	
-R6	participates_in Arg1:T7 Arg2:T9	
+R5	participates_in Arg1:T4 Arg2:T6	
+R6	is_part_of Arg1:T7 Arg2:T9	
 R7	other_relation Arg1:T9 Arg2:T8	
 #2	AnnotatorNotes R7	is
 R8	other_relation Arg1:T11 Arg2:T10	
@@ -43,7 +42,18 @@ T26	KeyEntity 1577 1582	Sam68
 R14	is_part_of Arg1:T26 Arg2:T17	
 R15	is_part_of Arg1:T26 Arg2:T18	
 T27	KeyEntity 1717 1722	Sam68
-R16	is_part_of Arg1:T27 Arg2:T19	
-T28	KeyEntity 22 41	RNA Binding Protein
+R16	regulates Arg1:T27 Arg2:T19	
 T29	KeyEntity 16 21;22 41	Sam68 RNA Binding Protein
 T30	KeyEntity 61 82	Age-Related Bone Loss
+T28	Entity 0 8;16 21	Ablation Sam68
+T31	Entity 98 111	Src substrate
+T32	Entity 126 133	mitosis
+T33	KeyEntity 389 402	Sam68−/− mice
+T34	Entity 466 487	wild-type littermates
+T35	Entity 1116 1124	Sam68+/+
+T36	Entity 1129 1137	Sam68−/−
+R2	regulates Arg1:T31 Arg2:T2	
+T37	Entity 1800 1815	bone metabolism
+T38	Entity 1820 1829	aged mice
+R17	regulates Arg1:T27 Arg2:T37	
+R18	is_part_of Arg1:T27 Arg2:T38	

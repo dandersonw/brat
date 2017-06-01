@@ -28,7 +28,7 @@ R9	other_relation Arg1:T20 Arg2:T10
 #5	AnnotatorNotes R9	no_relation
 R10	is_subclass_of Arg1:T14 Arg2:T13	
 R11	interacts_with Arg1:T13 Arg2:T15	
-T21	Entity 1249 1262	BMP2 and BMP4
+T21	Entity 1249 1253	BMP2
 T22	Entity 1225 1240	limbs deficient
 R12	interacts_with Arg1:T21 Arg2:T22	
 T23	Entity 1464 1477	BMP2 and BMP4
@@ -38,3 +38,18 @@ T8	Entity 39 43	BMP4
 T24	Entity 49 53	BMP7
 T25	KeyEntity 57 72	Limb Patterning
 T26	KeyEntity 77 91	Skeletogenesis
+T27	Entity 162 166	BMP2
+T28	Entity 168 172	BMP4
+T29	Entity 178 182	BMP7
+T30	Entity 413 417	Bmp2
+T31	Entity 422 426	Bmp4
+T32	Entity 542 555	BMP molecules
+T33	Entity 465 478	BMP molecules
+T34	Entity 704 708	BMPs
+T35	Entity 1258 1262	BMP4
+R1	interacts_with Arg1:T35 Arg2:T22	
+T36	Entity 1389 1393	BMP2
+T37	Entity 1398 1402	BMP7
+T38	Entity 1406 1410	BMP2
+T39	Entity 1415 1419	BMP4
+T40	Entity 1142 1147	onset

@@ -36,7 +36,7 @@ R13	regulates Arg1:T18 Arg2:T22
 R14	participates_in Arg1:T22 Arg2:T21	
 T23	KeyEntity 1070 1072	Rb
 T24	Entity 1266 1271	E2f3b
-T25	Entity 1309 1318	quiescent
+T25	Entity 1309 1324	quiescent cells
 R15	regulates Arg1:T23 Arg2:T27	
 T26	Entity 1180 1197	developing retina
 T27	Entity 1116 1120	E2f3

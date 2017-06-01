@@ -73,3 +73,9 @@ T6	KeyEntity 43 54	antioxidant
 T48	KeyEntity 59 75	DNA repair genes
 T49	KeyEntity 79 112	normal bronchial epithelial cells
 T50	KeyEntity 141 163	bronchogenic carcinoma
+T51	KeyEntity 299 301	BC
+T52	Entity 522 524	BC
+T53	Entity 549 567	non-BC individuals
+T54	KeyEntity 1016 1018	BC
+T55	Entity 1393 1395	BC
+T56	Entity 1379 1385	non-BC

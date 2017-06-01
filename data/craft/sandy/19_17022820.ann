@@ -29,7 +29,7 @@ T19	KeyEntity 748 758	thrombosis
 T20	Entity 763 773	hemostasis
 T21	Entity 777 785	thrombus
 T22	Entity 805 819	carotid artery
-T23	Entity 850 876	carotid to ferric chloride
+T23	Entity 861 876	ferric chloride
 T24	Entity 881 891	blood flow
 T25	Entity 1079 1113	Twenty-one chromosome substitution
 T26	Entity 962 979	surrogate markers
@@ -44,7 +44,7 @@ R12	participates_in Arg1:T17 Arg2:T19
 R13	participates_in Arg1:T18 Arg2:T20	
 R14	interacts_with Arg1:T21 Arg2:T22	
 T32	Entity 928 936	Bleeding
-T33	Entity 941 951	rebleeding
+T33	Entity 941 957	rebleeding times
 R15	is_part_of Arg1:T32 Arg2:T26	
 R16	is_part_of Arg1:T33 Arg2:T26	
 R17	is_part_of Arg1:T25 Arg2:T30	
@@ -62,7 +62,7 @@ T43	Entity 1612 1622	B6-Chr5A/J
 T44	Entity 1624 1635	B6-Chr11A/J
 T45	Entity 1641 1652	B6-Chr17A/J
 T46	KeyEntity 1725 1733	A/J mice
-T47	Entity 1875 1901	B6-Chr5A/J and B6-Chr17A/J
+T47	Entity 1890 1901	B6-Chr17A/J
 T48	Entity 1957 1983	doubly heterosomic progeny
 R19	interacts_with Arg1:T34 Arg2:T35	
 #1	AnnotatorNotes R19	decrease
@@ -88,3 +88,8 @@ R26	participates_in Arg1:T50 Arg2:T52
 T59	KeyEntity 42 52	hemostasis
 T60	KeyEntity 57 67	thrombosis
 T61	Entity 0 18	Genetic background
+T62	Entity 1875 1885	B6-Chr5A/J
+R27	is_subclass_of Arg1:T62 Arg2:T48	
+T63	Entity 1808 1822	C57BL/6J mice,
+T64	Entity 2133 2168	A/J chromosome substitution strains
+T65	Entity 850 857	carotid

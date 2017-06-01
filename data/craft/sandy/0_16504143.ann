@@ -9,8 +9,7 @@ T8	Entity 420 434	gene targeting
 R1	is_part_of Arg1:T1 Arg2:T2	
 R2	is_part_of Arg1:T3 Arg2:T1	
 R3	participates_in Arg1:T5 Arg2:T6	
-R4	other_relation Arg1:T7 Arg2:T8	
-#1	AnnotatorNotes R4	done_by
+R4	participates_in Arg1:T7 Arg2:T8	
 T9	KeyEntity 602 608	ADAM11
 T10	Entity 719 753	visual and hidden water maze tasks
 T11	Entity 765 783	motor coordination
@@ -20,7 +19,7 @@ T14	Entity 652 662	cerebellum
 T15	KeyEntity 681 687	ADAM11
 R5	is_part_of Arg1:T9 Arg2:T13	
 R6	is_part_of Arg1:T9 Arg2:T14	
-T16	Entity 892 938	hidden water maze and rotating rod task skills
+T16	Entity 914 938	rotating rod task skills
 T17	Entity 943 976	impaired in ADAM11-deficient mice
 R7	participates_in Arg1:T17 Arg2:T16	
 T18	KeyEntity 1017 1023	ADAM11
@@ -292,3 +291,6 @@ T185	Entity 27667 27689	Morris water maze task
 T188	KeyEntity 55 76	ADAM11-deficient mice
 T189	KeyEntity 12 28	spatial learning
 T186	KeyEntity 33 51	motor coordination
+T187	KeyEntity 446 467	ADAM11-deficient mice
+T190	Entity 892 909	hidden water maze
+R80	participates_in Arg1:T17 Arg2:T190	

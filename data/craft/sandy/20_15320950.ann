@@ -15,7 +15,7 @@ R4	regulates Arg1:T5 Arg2:T6
 R5	interacts_with Arg1:T5 Arg2:T1	
 T11	Entity 473 480	pendrin
 T12	Entity 518 546	confocal immunocytochemistry
-T13	Entity 585 604	quantitative RT-PCR
+T13	Entity 598 604	RT-PCR
 T14	Entity 610 632	endocochlear potential
 T15	Entity 641 671	endolymphatic K+ concentration
 T16	Entity 691 722	double-barreled microelectrodes
@@ -24,21 +24,7 @@ T18	Entity 792 807	vibrating probe
 T19	Entity 841 875	morphometric distance measurements
 T20	Entity 880 892	pigmentation
 T21	Entity 911 923	densitometry
-R6	other_relation Arg1:T12 Arg2:T11	
-#1	AnnotatorNotes R6	experimental_test
 T22	Entity 548 566	Expression of mRNA
-R7	other_relation Arg1:T13 Arg2:T22	
-#2	AnnotatorNotes R7	experimental_test
-R8	other_relation Arg1:T16 Arg2:T14	
-#3	AnnotatorNotes R8	experimental_test
-R9	other_relation Arg1:T16 Arg2:T15	
-#4	AnnotatorNotes R9	experimental_test
-R10	other_relation Arg1:T18 Arg2:T17	
-#5	AnnotatorNotes R10	experimental_test
-R11	other_relation Arg1:T21 Arg2:T19	
-#6	AnnotatorNotes R11	experimental_test
-R12	other_relation Arg1:T21 Arg2:T20	
-#7	AnnotatorNotes R12	experimental_test
 T23	Entity 935 942	Pendrin
 T24	Entity 960 967	cochlea
 T25	Entity 971 987	apical membranes
@@ -48,7 +34,7 @@ T28	Entity 1043 1059	stria vascularis
 T29	Entity 1147 1160	tissue masses
 T30	Entity 1081 1091	root cells
 T31	Entity 1093 1109	Endolymph volume
-T32	Entity 1113 1123	Slc26a4-/-
+T32	Entity 1113 1128	Slc26a4-/- mice
 T33	Entity 1191 1215	type I and II fibrocytes
 T34	Entity 1230 1240	Slc26a4-/-
 T35	Entity 1257 1279	endocochlear potential
@@ -85,3 +71,9 @@ T53	KeyEntity 0 33	Loss of KCNJ10 protein expression
 T54	KeyEntity 44 66	endocochlear potential
 T55	Entity 78 86	deafness
 T56	KeyEntity 90 106	Pendred syndrome
+#2	AnnotatorNotes T13	experimental_test
+#1	AnnotatorNotes T12	experimental_test
+#3	AnnotatorNotes T16	experimental_procedure
+#4	AnnotatorNotes T21	experimental_test
+#6	AnnotatorNotes T18	experimental_procedure
+T57	Entity 422 429	Slc26a4

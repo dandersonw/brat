@@ -52,3 +52,10 @@ T33	KeyEntity 18 35	Doublesex Homolog
 T34	Entity 2 17	Mammal-Specific
 T35	KeyEntity 52 70	Male Sex Chromatin
 T36	KeyEntity 91 103	Male Meiosis
+T37	Entity 483 490	XY body
+T38	KeyEntity 1385 1390	DMRT7
+T39	Entity 1398 1405	XY body
+T40	Entity 1414 1435	sex chromatin defects
+T41	Entity 1448 1461	Dmrt7 mutants
+T42	Entity 895 910	meiotic pairing
+T43	Entity 895 902;915 928	meiotic recombination
