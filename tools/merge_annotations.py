@@ -120,7 +120,7 @@ def merge_annotations(identifier, correction_dir, annotator_dirs):
             types = set((r.type for r in matches))
             if len(types) > 1:
                 # Type of the relation is contested
-                ann = set_annotation_type(ann, "FIX_TYPE")
+                ann = set_annotation_type(ann, "FIX_RELATION_TYPE")
             corrected.add_annotation(ann)
 
     for (relation, from_brat) in no_perfect_match:
@@ -147,7 +147,7 @@ def translate_relation(relation, from_brat, to_brat):
 
 
 def is_annotation_contested(annotation):
-    prefixes = ["FIX_TYPE", "FIX_SPAN_", "VERIFY_"]
+    prefixes = ["FIX_", "VERIFY_"]
     return max((annotation.type.startswith(p) for p in prefixes))
 
 
