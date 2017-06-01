@@ -3,7 +3,6 @@
 
 import ai2_common
 import argparse
-import sys
 import logging
 import re
 import os
@@ -19,6 +18,7 @@ def remove_discontinuous_entities(doc):
 
 
 def remove_other_relations(doc):
+    """Removes relations of type 'other_relation'."""
     to_remove = []
     for relation in doc.relations:
         if relation.type == "other_relation":
@@ -37,7 +37,7 @@ def trim_leading_determiners(doc):
         # entities as determiners if their surface forms are OOV
         if start_token.tag_ == "DT" and not start_token.is_oov:
             count += 1
-            trim_entity(doc, entity, 0, 1, 0)
+            adjust_entity_span(doc, entity, 0, 1, 0)
     debug("{} leading determiners to fixup".format(count), doc)
     return doc
 
@@ -48,14 +48,18 @@ def trim_punctuation(doc):
         start_token = doc[entity.spans[0][0]]
         end_token = doc[entity.spans[-1][1] - 1]
         if is_trimmable_punctuation(start_token):
-            trim_entity(doc, entity, 0, 1, 0)
+            adjust_entity_span(doc, entity, 0, 1, 0)
         if is_trimmable_punctuation(end_token):
-            trim_entity(doc, entity, -1, 0, -1)
+            adjust_entity_span(doc, entity, -1, 0, -1)
     debug("{} leading/trailing pieces of punctuation to fixup".format(count), doc)
     return doc
 
 
 def merge_acronyms(doc):
+    """Merges two entities together if they are connected by a relation commented
+    with "equivalent" and one of them looks like an acronym
+
+    """
     relations = doc.relations
     count = 0
     for relation in relations:
@@ -64,7 +68,7 @@ def merge_acronyms(doc):
         if equivalent_relation and acronym:
             merge_entities(relation.arg1, relation.arg2, doc)
             if doc[relation.arg1.spans[-1][1]].tag_ == "-RRB-":
-                trim_entity(doc, relation.arg1, -1, 0, 1)
+                adjust_entity_span(doc, relation.arg1, -1, 0, 1)
             doc.remove_relation(relation)
             count += 1
     debug("{} acronym annotations merged".format(count), doc)
@@ -82,6 +86,7 @@ def looks_like_an_acronym(entity):
 
 
 def fixup_overlapping_annotations(doc):
+    """Ensures that there is no token included in two entities."""
     overlapping = ai2_common.find_overlapping(doc)
     for pair in overlapping:
         if doc.get_entity(pair[0].id) is None or doc.get_entity(pair[1].id) is None:
@@ -100,9 +105,16 @@ def fixup_overlapping_annotations(doc):
     return doc
 
 
-def trim_entity(doc, entity, span_idx, left_trim, right_trim):
+def adjust_entity_span(doc, entity, span_idx, left_adjustment, right_adjustment):
+    """Moves the boundaries of one span of an entity.
+
+    The leftward boundary of the 'span_idx'th span is moved by 'left_adjustment' and
+    the rightword boundary by 'right_adjustment'. If negative/positive this causes the
+    entity to grow.
+
+    """
     span = entity.spans[span_idx]
-    span = (span[0] + left_trim, span[1] + right_trim)
+    span = (span[0] + left_adjustment, span[1] + right_adjustment)
     if span[1] - span[0] <= 0:
         if len(entity.spans) == 1:
             warn(u"Removing entity {} that was fully trimmed".format(entity), doc)

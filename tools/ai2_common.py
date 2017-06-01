@@ -18,16 +18,21 @@ except ImportError:
 
 
 class EnhancedAnnotatedDoc:
+    """A wrapper for a brat annotation.TextAnnotation.
+
+    Indices into the doc and spans are measured in tokens.
+
+    """
     NLP = None
 
-    def __init__(self, text_annotation):
+    def __init__(self, brat_annotation):
         EnhancedAnnotatedDoc._init_nlp()
-        self.document_id = os.path.basename(text_annotation.get_document())
-        self.annotator_id = os.path.basename(os.path.dirname(text_annotation.get_document()))
-        self.document_text = text_annotation.get_document_text()
+        self.document_id = os.path.basename(brat_annotation.get_document())
+        self.annotator_id = os.path.basename(os.path.dirname(brat_annotation.get_document()))
+        self.document_text = brat_annotation.get_document_text()
         self.char_len = len(self.document_text)
         self.spacy_doc = EnhancedAnnotatedDoc.NLP(self.document_text)
-        self.brat_annotation = text_annotation
+        self.brat_annotation = brat_annotation
         self.entities = [Entity(e, self) for e in self.brat_annotation.get_entities()]
         self.relations = [Relation(r, self) for r in self.brat_annotation.get_relations()]
 
@@ -63,6 +68,9 @@ class EnhancedAnnotatedDoc:
             EnhancedAnnotatedDoc.NLP = spacy.load("en")
 
     def write_to_path(self, path):
+        """Write .txt and .ann files representing the underlying brat annotation.
+        'path' is expected to be a directory.
+        """
         if not os.path.isdir(path):
             raise ValueError("{} is not a directory".format(path))
 
@@ -178,6 +186,11 @@ def load_doc(identifier):
 
 
 def match_span_to_tokens(doc, span):
+    """Converts a character span to a token span.
+
+    The token span will cover any token that is touched by the character span.
+
+    """
     loff = span[0]
     roff = span[1]
     leftToken = get_token_starting_at_char_offset(doc, loff)
@@ -257,6 +270,7 @@ def get_token_ending_at_char_offset(doc, offset):
 
 
 def find_overlapping(doc):
+    """Finds pairs of entities which overlap in 'doc'."""
     return filter(lambda c: any_overlapping_spans(c[0], c[1]),
                   itertools.combinations(doc.get_entities(), 2))
 

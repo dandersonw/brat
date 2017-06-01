@@ -21,9 +21,8 @@ except ImportError:
 
 
 def suffix_annotation_id(prefix, ann):
-    new_id = "{}.{}".format(ann.id, prefix)
     ann = copy.copy(ann)
-    ann.id = new_id
+    ann.id = "{}.{}".format(ann.id, prefix)
     return ann
 
 
@@ -61,6 +60,14 @@ def create_correction_file(identifier, correction_dir, annotator_dirs):
 
 
 def merge_annotations(identifier, correction_dir, annotator_dirs):
+    """Combines the brat annotations for 'identifier' from each dir in 'annotator_dirs'.
+
+    Overwrites any existing file in 'correction_dir'.
+
+    Works according to the scheme laid out in:
+    docs.google.com/document/d/1zj5WAAykZfrPJwaKtv-AUD0m9BrVH6ybcl17PunnIgc
+
+    """
     annotator_brats = get_annotator_brats(annotator_dirs, identifier)
     annotators = annotator_brats.keys()
     brats = annotator_brats.values()
@@ -135,6 +142,10 @@ def merge_annotations(identifier, correction_dir, annotator_dirs):
 
 
 def translate_relation(relation, from_brat, to_brat):
+    """Finds entities in 'to_brat' that have the same spans as the args to
+    'relation' in 'from_brat' and replaces them in 'relation'.
+
+    """
     arg1 = from_brat.get_ann_by_id(relation.arg1)
     arg2 = from_brat.get_ann_by_id(relation.arg2)
     arg1_match = get_entity_matches(arg1, [to_brat])
@@ -152,6 +163,7 @@ def is_annotation_contested(annotation):
 
 
 def get_relation_matches(relation, from_brat, brats):
+    """Finds relations that have arguments which match on a span basis."""
     arg1 = from_brat.get_ann_by_id(relation.arg1)
     arg2 = from_brat.get_ann_by_id(relation.arg2)
     matches = []
@@ -165,6 +177,7 @@ def get_relation_matches(relation, from_brat, brats):
 
 
 def get_entity_matches(entity, brats):
+    """Finds entities which match on a span basis."""
     matches = []
     for brat in brats:
         for e2 in brat.get_entities():
@@ -175,17 +188,23 @@ def get_entity_matches(entity, brats):
 
 
 def get_entity_overlaps(entity, brats):
+    """Finds entities which overlap."""
     matches = []
     for brat in brats:
         for e2 in brat.get_entities():
             if ai2_common.any_overlapping_spans(entity, e2):
                 matches.append(e2)
-                break
     return matches
 
 
 def merge(args):
-    # Annotator names will derived from the basenames so make sure they look don't end with a slash
+    """Call 'merge_annotations' for each identifier found in the provided annotator
+    directories, each with the set of annotator directories that it is found
+    in.
+
+    """
+    # Annotator names will derived from the basenames so make sure they don't
+    # end with a separator
     args.annotator_dirs = [os.path.normpath(d) for d in args.annotator_dirs]
     args.correction_dir = os.path.normpath(args.correction_dir)
 
@@ -206,6 +225,7 @@ def merge(args):
 
 
 def verify(args):
+    """Verify that there are no contested annotations remaining"""
     identifiers = ai2_common.get_identifiers(args.correction_dir)
 
     if args.verbose:
