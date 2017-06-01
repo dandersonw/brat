@@ -6,7 +6,6 @@ import argparse
 import copy
 import locale
 import itertools
-import intervaltree
 import codecs
 import os.path
 import sys
@@ -19,14 +18,21 @@ except ImportError:
     import annotation
 
 
-def prefix_annotation(prefix, ann):
-    new_id = "{}-{}".format(prefix, ann.id)
+def suffix_annotation_id(prefix, ann):
+    new_id = "{}.{}".format(ann.id, prefix)
     ann = copy.copy(ann)
     ann.id = new_id
-    id_attrs = ["target", "arg1", "arg2"]
-    for attr in id_attrs:
-        if hasattr(ann, attr):
-            setattr(ann, attr, "{}-{}".format(prefix, getattr(ann, attr)))
+    return ann
+
+
+def prefix_annotation_type(ann, prefix):
+    ann = copy.copy(ann)
+    ann.type = prefix + ann.type
+    return ann
+
+
+def get_annotator(brat):
+    return os.path.basename(os.path.dirname(brat.get_document()))
 
 
 def get_annotator_brats(annotator_dirs, identifier):
@@ -35,17 +41,6 @@ def get_annotator_brats(annotator_dirs, identifier):
             annotator = os.path.basename(dir)
             annotators_brat[annotator] = annotation.TextAnnotations(os.path.join(dir, identifier))
         return annotators_brat
-
-
-def get_entity_span_tree(doc):
-    entspans = list(itertools.chain.from_iterable((((s[0], s[1], e)
-                                                    for s in e.spans)
-                                                   for e in doc.entities)))
-    return intervaltree.IntervalTree.from_tuples(entspans)
-
-
-def logfile_path(dir, identifier):
-    return os.path.join(dir, identifier + ".mrg")
 
 
 def create_correction_file(identifier, correction_dir, annotator_dirs):
@@ -66,32 +61,97 @@ def automatic_portion(args):
                                              args.annotator_dirs)
     corrected = annotation.TextAnnotations(os.path.join(args.correction_dir, args.identifier))
 
-    all_entities = itertools.chain.from_iterable((k.get_entities() for k in brats))
-    unresolved = []
+    all_entities = itertools.chain.from_iterable(
+        (((e, b) for e in b.get_entities()) for b in brats))
+    accounted_for = set()
+    no_perfect_match = []
 
     # Entities with perfect span matches
-    for entity in all_entities:
+    for (entity, from_brat) in all_entities:
         matches = get_entity_matches(entity, brats)
-        in_already = get_entity_matches(entity, [corrected])
-        if len(in_already) > 0:
-            continue
-        elif len(matches) < len(annotators):
-            unresolved.append(entity)
+        if len(matches) < len(annotators):
+            if entity not in accounted_for:
+                no_perfect_match.append((entity, from_brat))
+                accounted_for.update(set(matches))
         else:
+            ann = suffix_annotation_id(get_annotator(from_brat), entity)
             types = set((e.type for e in matches))
-            if len(types) == 1:
-                etype = list(types)[0]
-            else:
-                # TODO - resolve type disagreement with a different policy?
-                etype = "Entity"
-            entity.type = etype
-            # TODO prefix by anything?
-            corrected.add_annotation(entity)
+            if len(types) > 1:
+                # Type of the entity is contested
+                ann = prefix_annotation_type(ann, "FIX_TYPE_")
+            corrected.add_annotation(ann)
 
-    
-    
+    for (entity, from_brat) in no_perfect_match:
+        id_prefixed = suffix_annotation_id(get_annotator(from_brat), entity)
+        if get_entity_overlaps(entity, brats):
+            # With some overlap
+            ann = prefix_annotation_type(id_prefixed, "FIX_SPAN_")
+        else:
+            # With no overlap
+            ann = prefix_annotation_type(id_prefixed, "VERIFY_")
+        corrected.add_annotation(ann)
+
+    all_relations = itertools.chain.from_iterable(
+        (((r, b) for r in b.get_relations()) for b in brats))
+    accounted_for = set()
+    no_perfect_match = []
+
+    # Relations for which the arguments have perfect span matches
+    for (relation, from_brat) in all_relations:
+        matches = get_relation_matches(relation, from_brat, brats)
+        if len(matches) < len(annotators):
+            if relation not in accounted_for:
+                no_perfect_match.append((relation, from_brat))
+                accounted_for.update(set(matches))
+        else:
+            # Relation needs to refer to entities in the new set
+            ann = translate_relation(relation, from_brat, corrected)
+            ann = suffix_annotation_id(get_annotator(from_brat), ann)
+            types = set((r.type for r in matches))
+            if len(types) > 1:
+                # Type of the relation is contested
+                ann = prefix_annotation_type(ann, "FIX_TYPE_")
+            corrected.add_annotation(ann)
+
+    for (relation, from_brat) in no_perfect_match:
+        ann = prefix_annotation_type(
+            suffix_annotation_id(get_annotator(from_brat),
+                                 translate_relation(relation, from_brat, corrected)),
+            "VERIFY_")
+        corrected.add_annotation(ann)
+
     with codecs.open(correction_file, mode="w", encoding="utf-8") as outputFile:
         outputFile.write(unicode(corrected))
+
+
+def translate_relation(relation, from_brat, to_brat):
+    arg1 = from_brat.get_ann_by_id(relation.arg1)
+    arg2 = from_brat.get_ann_by_id(relation.arg2)
+    arg1_match = get_entity_matches(arg1, [to_brat])
+    arg2_match = get_entity_matches(arg2, [to_brat])
+    assert arg1_match and arg2_match
+    relation = copy.copy(relation)
+    relation.arg1 = arg1_match[0].id
+    relation.arg2 = arg2_match[0].id
+    return relation
+
+
+def is_entity_contested(entity):
+    prefixes = ["FIX_TYPE_", "FIX_SPAN_", "VERIFY_"]
+    return max((entity.type.startswith(p) for p in prefixes))
+
+
+def get_relation_matches(relation, from_brat, brats):
+    arg1 = from_brat.get_ann_by_id(relation.arg1)
+    arg2 = from_brat.get_ann_by_id(relation.arg2)
+    matches = []
+    for brat in brats:
+        for r2 in brat.get_relations():
+            o_arg1 = brat.get_ann_by_id(r2.arg1)
+            o_arg2 = brat.get_ann_by_id(r2.arg2)
+            if arg1.same_span(o_arg1) and arg2.same_span(o_arg2):
+                matches.append(r2)
+    return matches
 
 
 def get_entity_matches(entity, brats):
@@ -99,6 +159,16 @@ def get_entity_matches(entity, brats):
     for brat in brats:
         for e2 in brat.get_entities():
             if entity.same_span(e2):
+                matches.append(e2)
+                break
+    return matches
+
+
+def get_entity_overlaps(entity, brats):
+    matches = []
+    for brat in brats:
+        for e2 in brat.get_entities():
+            if ai2_common.any_overlapping_spans(entity, e2):
                 matches.append(e2)
                 break
     return matches
