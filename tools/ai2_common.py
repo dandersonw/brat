@@ -8,6 +8,7 @@ import itertools
 import glob
 import re
 import codecs
+import logging
 
 try:
     import annotation
@@ -205,12 +206,12 @@ def match_span_to_tokens(doc, span):
                 r = i
                 break
 
-    # The maximum distance in characters to move a span
+    # The maximum distance in characters to move a span without complaining
     MAXIMUM_CORRECTION = 3
     move = max(abs(doc[l].idx - loff), abs((doc[r - 1].idx + len(doc[r - 1])) - roff))
     if move > MAXIMUM_CORRECTION:
-        raise ValueError("Could not fit span {} to tokens in doc {}, had to move {}"
-                         .format(span, doc.document_id, move))
+        logging.warn("In fitting span {} to tokens in doc {}, had to move {} characters"
+                     .format(span, doc.document_id, move))
 
     return (l, r)
 
