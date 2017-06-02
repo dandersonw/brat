@@ -159,7 +159,7 @@ def get_identifiers(*paths):
             # Don't recur, just check one level down
             children = [f for f in glob.glob(os.path.join(path, "*")) if extensions.search(f)]
             if not children:
-                sys.stderr.write("No annotation files found in {}\n".format(path))
+                logging.warn("No annotation files found in {}\n".format(path))
             identifiers = [child[:-4] for child in children]
             found_identifiers += list(set(identifiers))
         else:

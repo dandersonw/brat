@@ -50,8 +50,7 @@ def get_annotator_brats(annotator_dirs, identifier):
         return annotators_brat
 
 
-def create_correction_file(identifier, correction_dir, annotator_dirs):
-    annotator_dir = annotator_dirs[0]
+def create_correction_file(identifier, correction_dir, annotator_dir):
     copyfile(os.path.join(annotator_dir, identifier + ".txt"),
              os.path.join(correction_dir, identifier + ".txt"))
     correction_ann = os.path.join(correction_dir, identifier + ".ann")
@@ -76,7 +75,7 @@ def merge_annotations(identifier, correction_dir, annotator_dirs):
     brats = annotator_brats.values()
     correction_file = create_correction_file(identifier,
                                              correction_dir,
-                                             annotator_dirs)
+                                             annotator_dirs[0])
     corrected = annotation.TextAnnotations(os.path.join(correction_dir, identifier))
 
     all_entities = itertools.chain.from_iterable(
@@ -146,6 +145,18 @@ def merge_annotations(identifier, correction_dir, annotator_dirs):
 
     with codecs.open(correction_file, mode="w", encoding="utf-8") as outputFile:
         outputFile.write(unicode(corrected))
+
+
+def merge_annotations_only_linking(identifier, result_dir, base_dir, linking_dir):
+    result_ann_file = create_correction_file(identifier, result_dir, base_dir)
+    base = annotation.TextAnnotations(os.path.join(base_dir, identifier))
+    linking = annotation.TextAnnotations(os.path.join(linking_dir, identifier))
+
+    for entity in base.get_entities():
+        transfer_comments(base, entity, [linking])
+
+    with codecs.open(result_ann_file, mode="w", encoding="utf-8") as outputFile:
+        outputFile.write(unicode(base))
 
 
 def translate_relation(relation, from_brat, to_brat):
@@ -247,11 +258,8 @@ def merge(args):
 
 
 def verify(args):
-    """Verify that there are no contested annotations remaining"""
+    """Verify that there are no contested annotations remaining in 'args.correction_dir'."""
     identifiers = ai2_common.get_identifiers(args.correction_dir)
-
-    if args.verbose:
-        logging.basicConfig(level=logging.DEBUG)
 
     not_finished = []
     for identifier in identifiers:
@@ -270,25 +278,68 @@ def verify(args):
         sys.exit(1)
 
 
+def merge_only_linking(args):
+    """Calls 'merge_annotations_only_linking' for all appropriate file pairs.
+
+    Will copy files from 'args.base_dir' without changes if they are not matched by a
+    file in 'args.linking_dir'.
+
+    """
+    base = set((os.path.basename(os.path.normpath(i))
+                for i in ai2_common.get_identifiers(args.base_dir)))
+    linking = set((os.path.basename(os.path.normpath(i))
+                   for i in ai2_common.get_identifiers(args.linking_dir)))
+    shared = set.intersection(base, linking)
+    no_linking = base - linking
+
+    if not os.path.exists(args.correction_dir):
+        os.mkdir(args.correction_dir)
+
+    for identifier in shared:
+        merge_annotations_only_linking(identifier,
+                                       args.correction_dir,
+                                       args.base_dir,
+                                       args.linking_dir)
+
+    logging.info("Merged linking for {} documents".format(len(shared)))
+    logging.warn("Could not find linking for the documents:\n{}".format(no_linking))
+
+    for extension in {".txt", ".ann"}:
+        for identifier in no_linking:
+            copyfile(os.path.join(args.base_dir, identifier + extension),
+                     os.path.join(args.correction_dir, identifier + extension))
+
+
 def main():
     locale.setlocale(locale.LC_ALL, "")
     parser = argparse.ArgumentParser()
     subparsers = parser.add_subparsers()
 
-    common_parser = argparse.ArgumentParser(add_help=False)
-    common_parser.add_argument("correction_dir")
+    common = argparse.ArgumentParser(add_help=False)
+    common.add_argument("correction_dir",
+                        help="The directory where the results will be stored")
+    common.add_argument("--verbose",
+                        help="Log more information.",
+                        action="store_true")
 
-    create_parser = subparsers.add_parser("merge", parents=[common_parser])
-    create_parser.add_argument("annotator_dirs", nargs="+")
-    create_parser.set_defaults(func=merge)
+    create = subparsers.add_parser("merge", parents=[common])
+    create.add_argument("annotator_dirs", nargs="+")
+    create.set_defaults(func=merge)
 
-    verify_parser = subparsers.add_parser("verify", parents=[common_parser])
-    verify_parser.add_argument("--verbose",
-                               help="Print information about individual files",
-                               action="store_true")
-    verify_parser.set_defaults(func=verify)
+    merge_linking = subparsers.add_parser("merge_linking", parents=[common])
+    merge_linking.add_argument("base_dir",
+                               help=("The base for the merge. "
+                                     "Will provide all entities and relations."))
+    merge_linking.add_argument("linking_dir",
+                               help="Take linking annotations from this directory")
+    merge_linking.set_defaults(func=merge_only_linking)
+
+    verify = subparsers.add_parser("verify", parents=[common])
+    verify.set_defaults(func=verify)
 
     args = parser.parse_args()
+    if args.verbose:
+        logging.basicConfig(level=logging.DEBUG)
     args.func(args)
 
 
