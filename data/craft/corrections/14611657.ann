@@ -1,0 +1,55 @@
+T1.sandy	KeyEntity 343 382	mouse olfactory epithelium cDNA library
+T4.sandy	Entity 555 569	gene structure
+T5.sandy	Entity 574 599	putative promoter regions
+T6.sandy	Entity 472 490	olfactory function
+T8.sandy	Entity 1393 1413	olfactory epithelium
+T9.sandy	KeyEntity 1433 1452	olfactory receptors
+T12.sandy	Entity 1667 1700	multiple transcriptional variants
+T13.sandy	KeyEntity 1639 1658	olfactory receptors
+T15.sandy	Entity 1933 1966	nonfunctional olfactory receptors
+T17.sandy	Entity 2061 2079	olfactory function
+T23.sandy	Entity 2607 2637	olfactory receptor microarrays
+T7.sandy	Entity 1798 1810	splice sites
+T14.sandy	Entity 1822 1835	coding region
+T16.sandy	Entity 1989 2016	increase receptor diversity
+T18.sandy	KeyEntity 2112 2137	mouse olfactory receptors
+T21.sandy	Entity 2297 2324	different expression levels
+T22.sandy	Entity 2549 2588	computational regulatory motif searches
+T24.sandy	KeyEntity 0 16	Odorant receptor
+T25.sandy	Entity 27 40	sequence tags
+T26.sandy	KeyEntity 53 73	olfactory expression
+T1.kevin	KeyEntity 221 246	mouse olfactory receptors
+T2.kevin	Entity 285 303	olfactory function
+T6.kevin	KeyEntity 511 530	olfactory receptors
+T9.kevin	Entity 628 658	olfactory receptor gene family
+T10.kevin	KeyEntity 774 799	mouse olfactory receptors
+T11.kevin	Entity 838 856	olfactory function
+T12.kevin	KeyEntity 883 902	olfactory receptors
+T13.kevin	KeyEntity 928 967	mouse olfactory epithelium cDNA library
+T14.kevin	KeyEntity 1213 1235	odorant receptor cDNAs
+T15.kevin	Entity 1276 1289	real-time PCR
+T17.kevin	Entity 1368 1385	transcript levels
+T21.kevin	Entity 1853 1898	stereotyped olfactory receptor gene structure
+T26.kevin	KeyEntity 2188 2207	olfactory receptors
+T27.kevin	Entity 2224 2243	sequence similarity
+T28.kevin	Entity 2423 2455	5' untranslated region sequences
+T29.kevin	Entity 2460 2486	candidate promoter regions
+T30.kevin	KeyEntity 2505 2524	olfactory receptors
+R3.sandy	participates_in Arg1:T13.sandy Arg2:T12.sandy	
+R4.sandy	is_part_of Arg1:T7.sandy Arg2:T14.sandy	
+R1.kevin	is_part_of Arg1:T17.kevin Arg2:T8.sandy	
+T1	Entity 103 121	alternate splicing
+T2	Entity 1577 1594	transcript levels
+T3	Entity 406 424	olfactory receptor
+T4	Entity 435 448	sequence tags
+R2	is_part_of Arg1:T4 Arg2:T1.sandy	
+T5	Entity 2349 2387	one-neuron, one-gene expression regime
+R3	regulates Arg1:T5 Arg2:T21.sandy	
+R1	is_part_of Arg1:T4 Arg2:T3	
+#1	AnnotatorNotes R1	**expresses
+R4	is_part_of Arg1:T9.sandy Arg2:T8.sandy	
+T6	Entity 1736 1738;1746 1766	5' untranslated regions
+T7	Entity 1743 1766	3' untranslated regions
+T8	Entity 1905 1925	atypical transcripts
+R5	regulates Arg1:T8 Arg2:T15.sandy	
+R6	regulates Arg1:T8 Arg2:T16.sandy	

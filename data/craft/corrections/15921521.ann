@@ -1,0 +1,64 @@
+T7.sandy	Entity 437 465	excessive mucus accumulation
+T10.sandy	Entity 512 550	distal intestinal obstruction syndrome
+T15.sandy	Entity 1187 1218	reduced intestinal inflammation
+T17.sandy	Entity 1316 1342	reduced mucus accumulation
+T19.sandy	Entity 1755 1762	D1Mit36
+T20.sandy	Entity 1796 1803	D9Mit90
+T21.sandy	Entity 1843 1851	D10Mit14
+T24.sandy	Entity 1876 1892	modifier regions
+T3.sandy	Entity 333 347	modifier genes
+T6.sandy	Entity 422 433	obstruction
+T8.sandy	Entity 493 507	meconium ileus
+T11.sandy	Entity 720 732	inflammation
+T12.sandy	Entity 740 755	small intestine
+T14.sandy	Entity 1101 1117	mixed background
+T16.sandy	Entity 1282 1300	normal body weight
+T18.sandy	Entity 1398 1411	gender effect
+T22.sandy	Entity 1705 1721	milder phenotype
+T25.sandy	Entity 1939 1961	inflammatory phenotype
+T27.sandy	Entity 1998 2013	animal survival
+T29.sandy	Entity 10 27	genetic modifiers
+T1.kevin	Entity 151 166	cystic fibrosis
+T2.kevin	KeyEntity 197 260	cystic fibrosis transmembrane conductance regulator (CFTR) gene
+T3.kevin	KeyEntity 367 408	Cftr deficient mice (CF mice: Cftrtm1Unc)
+T6.kevin	Entity 353 363	intestines
+T8.kevin	KeyEntity 635 653	C57Bl/6 background
+T9.kevin	Entity 671 678	CF mice
+T10.kevin	Entity 697 713	solid mouse chow
+T11.kevin	Entity 788 809	wild type littermates
+T13.kevin	Entity 906 913	CF mice
+T14.kevin	Entity 919 943	mixed genetic background
+T15.kevin	KeyEntity 949 956	C57Bl/6
+T16.kevin	KeyEntity 964 969	129Sv
+T17.kevin	Entity 988 1004	CF mice congenic
+T18.kevin	KeyEntity 1012 1030	C57Bl/6 background
+T19.kevin	Entity 1061 1084	intestinal CF phenotype
+T20.kevin	Entity 1086 1093	CF mice
+T21.kevin	Entity 1166 1180	dry mouse chow
+T23.kevin	Entity 1234 1253	quantitative RT-PCR
+T25.kevin	Entity 1350 1367	intestinal crypts
+T26.kevin	Entity 1609 1640	genome-wide PCR allele scanning
+T30.kevin	Entity 1969 1993	CF mouse small intestine
+T32.kevin	Entity 2154 2177	CF intestinal phenotype
+R5.sandy	participates_in Arg1:T14.sandy Arg2:T15.sandy	
+R6.sandy	participates_in Arg1:T14.sandy Arg2:T16.sandy	
+R7.sandy	participates_in Arg1:T14.sandy Arg2:T17.sandy	
+R8.sandy	participates_in Arg1:T19.sandy Arg2:T22.sandy	
+R9.sandy	participates_in Arg1:T20.sandy Arg2:T22.sandy	
+R10.sandy	participates_in Arg1:T21.sandy Arg2:T22.sandy	
+R12.sandy	participates_in Arg1:T24.sandy Arg2:T25.sandy	
+R14.sandy	participates_in Arg1:T25.sandy Arg2:T27.sandy	
+R1.kevin	is_part_of Arg1:T6.kevin Arg2:T3.kevin	
+R1	interacts_with Arg1:T3.sandy Arg2:T1.kevin	
+R2	participates_in Arg1:T6.kevin Arg2:T7.sandy	
+R3	is_part_of Arg1:T7.sandy Arg2:T6.sandy	
+T1	KeyEntity 35 84	cystic fibrosis intestinal inflammatory phenotype
+T2	VERIFY_Entity 106 107;88 105	1 mouse chromosomes
+R4	participates_in Arg1:T12.sandy Arg2:T11.sandy	
+T3	Entity 855 878	CF intestinal phenotype
+T4	Entity 834 847	modifier loci
+R5	is_part_of Arg1:T4 Arg2:T3	
+R6	interacts_with Arg1:T15.kevin Arg2:T16.kevin	
+R7	participates_in Arg1:T15.kevin Arg2:T14.kevin	
+R8	participates_in Arg1:T16.kevin Arg2:T14.kevin	
+R9	is_part_of Arg1:T25.sandy Arg2:T30.kevin	

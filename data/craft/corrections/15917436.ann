@@ -1,0 +1,62 @@
+T1.sandy	KeyEntity 71 80	Helicases
+T4.sandy	Entity 132 147	DNA replication
+T6.sandy	Entity 272 304	thymine-rich single-stranded DNA
+T7.sandy	KeyEntity 423 431	Mcm4/6/7
+T9.sandy	Entity 471 513	5′-proximal 25 nt single-stranded segments
+T13.sandy	Entity 667 685	unwinding efficacy
+T14.sandy	Entity 703 737	concurrent bidirectional unwinding
+T17.sandy	KeyEntity 830 838	Mcm4/6/7
+T18.sandy	Entity 906 933	single-stranded 3′-tail DNA
+T19.sandy	Entity 949 968	helicase activation
+T20.sandy	Entity 984 1015	sequence context of the 3′-tail
+T26.sandy	KeyEntity 0 11	DNA binding
+T27.sandy	KeyEntity 16 24	helicase
+T28.sandy	KeyEntity 36 59	mouse MCM4/6/7 helicase
+T2.sandy	Entity 103 113	initiation
+T3.sandy	Entity 118 128	elongation
+T11.sandy	Entity 567 582	double hexamers
+T16.sandy	Entity 795 814	efficient unwinding
+T22.sandy	Entity 1231 1253	cytosine–inosine pairs
+T23.sandy	Entity 1277 1286	unwinding
+T24.sandy	Entity 1449 1459	activation
+T25.sandy	Entity 1464 1484	substrate preference
+T4.kevin	Entity 215 241	mammalian Mcm4/6/7 complex
+T8.kevin	Entity 592 608	thymine residues
+T17.kevin	KeyEntity 1115 1123	Mcm4/6/7
+T18.kevin	Entity 1092 1111	Strand displacement
+T19.kevin	KeyEntity 1304 1331	mammalian Mcm4/6/7 helicase
+T20.kevin	Entity 1369 1387	base-paired duplex
+T22.kevin	Entity 1492 1523	eukaryotic replicative helicase
+T23.kevin	Entity 1145 1155	GC content
+R1.sandy	participates_in Arg1:T1.sandy Arg2:T2.sandy	
+R2.sandy	participates_in Arg1:T1.sandy Arg2:T3.sandy	
+R7.sandy	interacts_with Arg1:T7.sandy Arg2:T9.sandy	
+R8.sandy	is_part_of Arg1:T7.sandy Arg2:T11.sandy	
+R12.sandy	interacts_with Arg1:T24.sandy Arg2:T25.sandy	
+R1.kevin	participates_in Arg1:T1.sandy Arg2:T4.sandy	
+R5.kevin	regulates Arg1:T8.kevin Arg2:T13.sandy	
+R9.kevin	regulates Arg1:T20.sandy Arg2:T19.sandy	
+R10.kevin	participates_in Arg1:T17.kevin Arg2:T18.kevin	
+R12.kevin	participates_in Arg1:T23.kevin Arg2:T18.kevin	
+T1	Entity 190 207	ATPase activities
+T2	Entity 177 185;197 207	helicase activities
+R1	is_part_of Arg1:T2 Arg2:T4.kevin	
+R2	is_part_of Arg1:T1 Arg2:T4.kevin	
+R3	regulates Arg1:T6.sandy Arg2:T2	
+R4	regulates Arg1:T6.sandy Arg2:T1	
+R5	is_part_of Arg1:T9.sandy Arg2:T11.sandy	
+T3	Entity 750 775	double hexameric Mcm4/6/7
+R6	participates_in Arg1:T3 Arg2:T14.sandy	
+R7	participates_in Arg1:T3 Arg2:T16.sandy	
+T4	Entity 1075 1090	thymine content
+R8	is_part_of Arg1:T4 Arg2:T20.sandy	
+T5	Entity 874 894	extension structures
+T6	Entity 865 869;884 894	fork structures
+R9	regulates Arg1:T17.sandy Arg2:T6	
+R10	regulates Arg1:T17.sandy Arg2:T5	
+R11	is_part_of Arg1:T18.sandy Arg2:T6	
+R12	is_part_of Arg1:T18.sandy Arg2:T5	
+R13	participates_in Arg1:T22.kevin Arg2:T24.sandy	
+R14	interacts_with Arg1:T25.sandy Arg2:T22.kevin	
+R15	is_part_of Arg1:T3.sandy Arg2:T4.sandy	
+R16	is_part_of Arg1:T2.sandy Arg2:T4.sandy	

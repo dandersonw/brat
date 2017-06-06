@@ -1,0 +1,55 @@
+T3.sandy	KeyEntity 282 295	CLN3 mutation
+T5.sandy	Entity 360 386	mitochondrial ATP synthase
+T6.sandy	Entity 388 397	subunit c
+T7.sandy	Entity 421 432	CNS neurons
+T9.sandy	KeyEntity 511 524	JNCL mutation
+T10.sandy	Entity 534 549	mutant battenin
+T11.sandy	Entity 562 581	JNCL-like pathology
+T12.sandy	KeyEntity 637 650	JNCL mutation
+T13.sandy	Entity 654 668	neuronal cells
+T14.sandy	Entity 678 705	P4 knock-in mouse cerebella
+T17.sandy	Entity 857 862	MAP-2
+T18.sandy	Entity 867 880	NeuN-positive
+T19.sandy	Entity 882 899	neuron-like cells
+T23.sandy	Entity 1102 1123	cathepsin D transport
+T25.sandy	Entity 1208 1222	lysosomal size
+T27.sandy	Entity 1257 1268	endocytosis
+T28.sandy	Entity 1294 1306	mitochondria
+T30.sandy	Entity 1391 1407	oxidative stress
+T34.sandy	Entity 1461 1469	battenin
+T35.sandy	Entity 1486 1520	intracellular membrane trafficking
+T36.sandy	Entity 1525 1547	mitochondrial function
+T37.sandy	Entity 1615 1635	JNCL disease process
+T38.sandy	Entity 1664 1681	neuronal survival
+T31.sandy	Entity 1038 1058	Recessive phenotypes
+T39.sandy	KeyEntity 0 20	Membrane trafficking
+T40.sandy	KeyEntity 25 52	mitochondrial abnormalities
+T41.sandy	KeyEntity 61 81	subunit c deposition
+T42.sandy	Entity 87 108	cerebellar cell model
+T43.sandy	KeyEntity 112 151	juvenile neuronal ceroid lipofuscinosis
+T1.kevin	KeyEntity 175 179	JNCL
+T2.kevin	Entity 185 249	recessively inherited, childhood-onset neurodegenerative disease
+T4.kevin	Entity 319 336	battenin activity
+T8.kevin	Entity 458 482	Cln3Δex7/8 knock-in mice
+T24.kevin	Entity 901 940	Homozygous CbCln3Δex7/8 precursor cells
+T25.kevin	Entity 963 978	mutant battenin
+T26.kevin	Entity 1020 1037	ATPase subunit c.
+T31.kevin	Entity 1333 1352	cellular ATP levels
+R9.sandy	is_part_of Arg1:T12.sandy Arg2:T13.sandy	
+R26.sandy	participates_in Arg1:T37.sandy Arg2:T38.sandy	
+R10.sandy	VERIFY_is_part_of Arg1:T14.sandy Arg2:T12.sandy	
+R16.sandy	VERIFY_participates_in Arg1:T23.sandy Arg2:T31.sandy	
+R18.sandy	VERIFY_participates_in Arg1:T25.sandy Arg2:T31.sandy	
+R20.sandy	VERIFY_participates_in Arg1:T27.sandy Arg2:T31.sandy	
+R24.sandy	participates_in Arg1:T34.sandy Arg2:T35.sandy	
+R25.sandy	participates_in Arg1:T34.sandy Arg2:T36.sandy	
+R1	regulates Arg1:T3.sandy Arg2:T1.kevin	
+R2	participates_in Arg1:T4.kevin Arg2:T5.sandy	
+R3	participates_in Arg1:T4.kevin Arg2:T6.sandy	
+R4	participates_in Arg1:T4.kevin Arg2:T7.sandy	
+R5	regulates Arg1:T24.kevin Arg2:T26.kevin	
+R6	VERIFY_is_part_of Arg1:T9.sandy Arg2:T8.kevin	
+R7	VERIFY_is_part_of Arg1:T10.sandy Arg2:T8.kevin	
+T1	Entity 746 762;793 822	CbCln3 wild-type neuronal precursor cell lines
+T2	Entity 746 752;764 776;793 822	CbCln3 heterozygous neuronal precursor cell lines
+T3	Entity 746 752;782 822	CbCln3 homozygous neuronal precursor cell lines

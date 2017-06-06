@@ -1,0 +1,72 @@
+T1.sandy	Entity 148 165	dorsoventral axis
+T2.sandy	KeyEntity 294 310	droopy ear (deH)
+T3.sandy	Entity 320 353	dorsoventral skin characteristics
+T4.sandy	KeyEntity 393 404	Agouti gene
+T5.sandy	KeyEntity 424 456	Agouti allele black-and-tan (at)
+T6.sandy	Entity 473 487	sharp boundary
+T7.sandy	KeyEntity 543 555	deH mutation
+T8.sandy	Entity 567 588	pigmentation boundary
+T9.sandy	Entity 612 644	dorsal-to-ventral transformation
+T10.sandy	KeyEntity 667 682	deletion in deH
+T11.sandy	KeyEntity 726 736	Tbx15 gene
+T12.sandy	Entity 779 789	mesenchyme
+T13.sandy	Entity 806 843	pigmentary and skeletal malformations
+T15.sandy	KeyEntity 910 915	Tbx15
+T16.sandy	KeyEntity 935 948	deH phenotype
+T17.sandy	KeyEntity 963 985	Tbx15 loss of function
+T18.sandy	KeyEntity 1017 1022	Tbx15
+T19.sandy	Entity 993 1013	embryonic expression
+T20.sandy	Entity 1026 1043	dorsal mesenchyme
+T21.sandy	KeyEntity 1064 1081	Agouti expression
+T22.sandy	Entity 1085 1103	ventral mesenchyme
+T23.sandy	KeyEntity 1112 1128	absence of Tbx15
+T24.sandy	Entity 1202 1210	dorsally
+T25.sandy	KeyEntity 1144 1150	Agouti
+T29.sandy	Entity 1357 1362	E12.5
+T30.sandy	KeyEntity 1417 1422	Tbx15
+T31.sandy	Entity 1459 1493	dorsoventral pigmentation boundary
+T32.sandy	Entity 1592 1618	limb dorsoventral boundary
+T33.sandy	KeyEntity 1644 1649	Tbx15
+T34.sandy	Entity 1653 1676	dorsolateral mesenchyme
+T36.sandy	Entity 1820 1830	T-box gene
+T37.sandy	Entity 1841 1862	embryonic development
+T38.sandy	Entity 2065 2080	body morphology
+T40.sandy	Entity 1910 1933	dorsoventral patterning
+T41.sandy	Entity 744 764	embryonic expression
+T42.sandy	Entity 1393 1413	embryonic expression
+T43.sandy	Entity 1620 1640	Embryonic expression
+T44.sandy	KeyEntity 0 23	Dorsoventral Patterning
+T45.sandy	Entity 31 41	Mouse Coat
+T46.sandy	KeyEntity 45 50	Tbx15
+T26.sandy	Entity 1159 1166	embryos
+T28.sandy	Entity 1304 1329	dorsoventral pigmentation
+T35.sandy	Entity 1763 1776	dorsal dermis
+T39.sandy	Entity 1542 1570	dermal cell lineage boundary
+T10.kevin	Entity 856 871	deH/deH animals
+T38.kevin	Entity 2034 2061	region-specific differences
+T40.kevin	Entity 406 410	Mice
+R1.sandy	participates_in Arg1:T2.sandy Arg2:T3.sandy	
+R2.sandy	participates_in Arg1:T4.sandy Arg2:T3.sandy	
+R3.sandy	participates_in Arg1:T5.sandy Arg2:T6.sandy	
+R4.sandy	regulates Arg1:T7.sandy Arg2:T8.sandy	
+R5.sandy	regulates Arg1:T7.sandy Arg2:T9.sandy	
+R6.sandy	is_part_of Arg1:T10.sandy Arg2:T11.sandy	
+R7.sandy	participates_in Arg1:T12.sandy Arg2:T13.sandy	
+R10.sandy	regulates Arg1:T17.sandy Arg2:T16.sandy	
+R11.sandy	is_part_of Arg1:T19.sandy Arg2:T18.sandy	
+R16.sandy	regulates Arg1:T23.sandy Arg2:T25.sandy	
+R20.sandy	is_part_of Arg1:T32.sandy Arg2:T31.sandy	
+R21.sandy	is_part_of Arg1:T33.sandy Arg2:T34.sandy	
+R23.sandy	genetically_interacts_with Arg1:T36.sandy Arg2:T37.sandy	
+R27.sandy	is_part_of Arg1:T42.sandy Arg2:T30.sandy	
+R28.sandy	is_part_of Arg1:T43.sandy Arg2:T33.sandy	
+R14.sandy	is_part_of Arg1:T25.sandy Arg2:T26.sandy	
+R24.sandy	is_part_of Arg1:T40.sandy Arg2:T38.sandy	
+R25.sandy	participates_in Arg1:T11.sandy Arg2:T41.sandy	
+R6.kevin	participates_in Arg1:T13.sandy Arg2:T10.kevin	
+R11.kevin	is_part_of Arg1:T18.sandy Arg2:T20.sandy	
+R12.kevin	is_part_of Arg1:T21.sandy Arg2:T22.sandy	
+R21.kevin	participates_in Arg1:T38.kevin Arg2:T38.sandy	
+R29.kevin	participates_in Arg1:T46.sandy Arg2:T44.sandy	
+T1	Entity 1171 1188	postnatal animals
+R1	is_part_of Arg1:T25.sandy Arg2:T1	

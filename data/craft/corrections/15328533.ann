@@ -1,0 +1,29 @@
+T3.sandy	Entity 117 153	adaptive muscle fiber transformation
+T6.sandy	KeyEntity 525 577	peroxisome proliferator-activated receptor δ (PPARδ)
+T8.sandy	Entity 650 670	type I muscle fibers
+T1.sandy	Entity 212 228	scripted changes
+T2.sandy	Entity 232 247	gene expression
+T11.sandy	Entity 864 891	improved metabolic profiles
+T12.sandy	Entity 801 829	genetically generated fibers
+T13.sandy	Entity 14 31	Muscle Fiber Type
+T14.sandy	Entity 36 53	Running Endurance
+T15.sandy	KeyEntity 57 62	PPARδ
+T1.kevin	Entity 74 101	Endurance exercise training
+T3.kevin	Entity 173 197	mitochondrial biogenesis
+T4.kevin	Entity 438 458	wild-type littermate
+T6.kevin	Entity 581 596	skeletal muscle
+T8.kevin	Entity 685 699	wild-type mice
+T9.kevin	Entity 705 718	PPARδ agonist
+T11.kevin	Entity 261 281	transcription factor
+T12.kevin	Entity 481 500	targeted expression
+R1.sandy	participates_in Arg1:T1.sandy Arg2:T2.sandy	
+R7.sandy	regulates Arg1:T15.sandy Arg2:T14.sandy	
+R8.sandy	regulates Arg1:T15.sandy Arg2:T13.sandy	
+R1.kevin	participates_in Arg1:T1.kevin Arg2:T3.sandy	
+R2.kevin	participates_in Arg1:T1.kevin Arg2:T3.kevin	
+R3.kevin	is_part_of Arg1:T6.sandy Arg2:T6.kevin	
+R4.kevin	regulates Arg1:T6.sandy Arg2:T8.sandy	
+R5.kevin	interacts_with Arg1:T9.kevin Arg2:T8.kevin	
+T1	Entity 737 773	type I fiber gene expression profile
+T2	Entity 851 858	obesity
+R1	regulates Arg1:T12.sandy Arg2:T2	

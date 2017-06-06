@@ -1,0 +1,39 @@
+T3.sandy	Entity 176 212	mitochondrial fatty acid β-oxidation
+T5.sandy	KeyEntity 310 335	MCAD deficiency (MCAD−/−)
+T12.sandy	Entity 468 484	cold intolerance
+T15.sandy	Entity 632 650	neonatal mortality
+T16.sandy	KeyEntity 654 666	MCAD−/− pups
+T18.sandy	KeyEntity 744 767	MCAD-deficient patients
+T20.sandy	KeyEntity 773 793	MCAD-deficient mouse
+T21.sandy	Entity 909 929	fatty acid oxidation
+T22.sandy	Entity 934 946	pathogenesis
+T23.sandy	Entity 975 995	fatty acid oxidation
+T6.sandy	Entity 339 353	gene targeting
+T10.sandy	Entity 414 430	organic aciduria
+T11.sandy	Entity 435 446	fatty liver
+T17.sandy	Entity 731 740	mortality
+T19.sandy	Entity 866 871	model
+T25.sandy	KeyEntity 50 68	Gene-Targeted Mice
+T1.kevin	KeyEntity 81 134	Medium-chain acyl-CoA dehydrogenase (MCAD) deficiency
+T4.kevin	Entity 294 305	mouse model
+T5.kevin	Entity 357 382	embryonic stem (ES) cells
+T6.kevin	KeyEntity 388 400	MCAD−/− mice
+T9.kevin	Entity 526 541	cardiac lesions
+T10.kevin	KeyEntity 550 562	MCAD−/− mice
+T11.kevin	Entity 589 608	human MCAD patients
+T16.kevin	Entity 826 847	human MCAD deficiency
+R10.sandy	participates_in Arg1:T16.sandy Arg2:T15.sandy	
+R12.sandy	participates_in Arg1:T18.sandy Arg2:T17.sandy	
+R13.sandy	is_part_of Arg1:T20.sandy Arg2:T19.sandy	
+R14.sandy	participates_in Arg1:T20.sandy Arg2:T21.sandy	
+R15.sandy	is_part_of Arg1:T20.sandy Arg2:T22.sandy	
+R16.sandy	participates_in Arg1:T20.sandy Arg2:T23.sandy	
+R1.kevin	participates_in Arg1:T1.kevin Arg2:T3.sandy	
+R2.kevin	is_part_of Arg1:T5.sandy Arg2:T4.kevin	
+R5.kevin	is_part_of Arg1:T9.kevin Arg2:T10.kevin	
+R7.kevin	is_part_of Arg1:T23.sandy Arg2:T22.sandy	
+T1	KeyEntity 0 46	Medium-Chain Acyl-CoA Dehydrogenase Deficiency
+R1	interacts_with Arg1:T5.kevin Arg2:T6.sandy	
+R2	is_part_of Arg1:T10.sandy Arg2:T6.kevin	
+R3	is_part_of Arg1:T11.sandy Arg2:T6.kevin	
+R4	is_part_of Arg1:T12.sandy Arg2:T6.kevin	

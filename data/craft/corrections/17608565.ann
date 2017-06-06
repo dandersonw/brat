@@ -1,0 +1,106 @@
+T1.sandy	FIX_TYPE 139 166	retinoblastoma protein (Rb)
+T2.sandy	Entity 176 198	neural differentiation
+T3.sandy	Entity 252 254	Rb
+T4.sandy	Entity 271 286	cell cycle exit
+T5.sandy	Entity 300 321	death of some neurons
+T8.sandy	FIX_TYPE 482 508	Rb-deficient retinal cells
+T11.sandy	Entity 594 624	E2f transcription factor (E2f)
+T12.sandy	Entity 712 750	cell-cycle–independent differentiation
+T13.sandy	Entity 685 703	double-null retina
+T14.sandy	KeyEntity 775 806	starburst amacrine cells (SACs)
+T15.sandy	Entity 808 832	cholinergic interneurons
+T16.sandy	Entity 845 866	direction selectivity
+T17.sandy	Entity 897 912	rhythmic bursts
+T18.sandy	FIX_TYPE 925 927	Rb
+T19.sandy	Entity 971 975	E2fs
+T20.sandy	Entity 942 956	block division
+T21.sandy	Entity 992 1007	differentiation
+T22.sandy	Entity 1024 1047	tissue-specific factors
+T23.sandy	FIX_TYPE 1070 1072	Rb
+T24.sandy	FIX_TYPE 1266 1271	E2f3b
+T25.sandy	Entity 1309 1324	quiescent cells
+T28.sandy	FIX_TYPE 1431 1433	Rb
+T29.sandy	Entity 1443 1462	SAC differentiation
+T30.sandy	FIX_TYPE 1471 1476	E2f3a
+T31.sandy	Entity 1535 1557	neural differentiation
+T32.sandy	FIX_TYPE 1613 1618	E2f3a
+T33.sandy	Entity 1082 1101	SAC differentiation
+T34.sandy	Entity 1135 1139	E2f3
+T35.sandy	Entity 1522 1524	Rb
+T37.sandy	FIX_TYPE 0 36	Rb-Mediated Neuronal Differentiation
+T38.sandy	FIX_TYPE 45 78	Cell-Cycle–Independent Regulation
+T39.sandy	KeyEntity 82 87	E2f3a
+T6.sandy	FIX_SPAN_Entity 415 430	differentiation
+T7.sandy	FIX_SPAN_Entity 435 478	light-evoked electrophysiological responses
+T9.sandy	FIX_SPAN_Entity 526 542	ectopic division
+T10.sandy	FIX_SPAN_Entity 547 556	apoptosis
+T26.sandy	VERIFY_Entity 1180 1197	developing retina
+T27.sandy	FIX_SPAN_Entity 1116 1120	E2f3
+T36.sandy	FIX_SPAN_Entity 1294 1296	Rb
+T9.kevin	FIX_SPAN_KeyEntity 1116 1129	E2f3 activity
+T21.kevin	FIX_SPAN_Entity 526 556	ectopic division and apoptosis
+T3.kevin	FIX_SPAN_Entity 415 478	differentiation and light-evoked electrophysiological responses
+T33.kevin	FIX_SPAN_Entity 1294 1305	Rb function
+T34.kevin	VERIFY_Entity 1688 1715	retinoblastoma protein (Rb)
+T35.kevin	VERIFY_Entity 1730 1746	tumor suppressor
+T36.kevin	VERIFY_Entity 1792 1823	E2f transcription factor family
+T37.kevin	VERIFY_Entity 1838 1840	Rb
+T38.kevin	VERIFY_Entity 1895 1932	tissue-specific transcription factors
+T39.kevin	VERIFY_Entity 1970 1983	Rb null cells
+T40.kevin	VERIFY_Entity 2098 2100	Rb
+T41.kevin	VERIFY_Entity 2154 2160	retina
+T42.kevin	VERIFY_KeyEntity 2171 2175	E2f1
+T43.kevin	VERIFY_Entity 2221 2249	Rb-deficient retinal neurons
+T44.kevin	VERIFY_Entity 2286 2295	apoptosis
+T45.kevin	VERIFY_Entity 2380 2394	photoreceptors
+T46.kevin	VERIFY_Entity 2405 2444	Rb-deficient starburst amacrine neurons
+T47.kevin	VERIFY_KeyEntity 2480 2484	E2f1
+T48.kevin	VERIFY_Entity 2551 2553	Rb
+T49.kevin	VERIFY_Entity 2566 2581	differentiation
+T50.kevin	VERIFY_Entity 2632 2634	Rb
+T51.kevin	VERIFY_Entity 2644 2674	starburst cell differentiation
+T52.kevin	VERIFY_Entity 2697 2700	E2f
+T53.kevin	VERIFY_Entity 1389 1392	E2f
+T54.kevin	VERIFY_KeyEntity 2702 2707	E2f3a
+T55.kevin	VERIFY_Entity 2777 2791	Rb–E2f pathway
+T59.kevin	VERIFY_Entity 4116 4120	RPCs
+T60.kevin	VERIFY_Entity 4381 4385	RPCs
+#1	AnnotatorNotes T5.sandy	neuronal death
+#1	AnnotatorNotes T5.sandy	neuronal death
+R1.sandy	participates_in Arg1:T1.sandy Arg2:T2.sandy	
+R2.sandy	regulates Arg1:T3.sandy Arg2:T4.sandy	
+R3.sandy	regulates Arg1:T3.sandy Arg2:T5.sandy	
+R8.sandy	participates_in Arg1:T13.sandy Arg2:T12.sandy	
+R9.sandy	participates_in Arg1:T15.sandy Arg2:T16.sandy	
+R10.sandy	participates_in Arg1:T15.sandy Arg2:T17.sandy	
+R11.sandy	regulates Arg1:T18.sandy Arg2:T19.sandy	
+R12.sandy	FIX_RELATION_TYPE Arg1:T19.sandy Arg2:T20.sandy	
+R13.sandy	regulates Arg1:T18.sandy Arg2:T22.sandy	
+R14.sandy	participates_in Arg1:T22.sandy Arg2:T21.sandy	
+R16.sandy	FIX_RELATION_TYPE Arg1:T24.sandy Arg2:T25.sandy	
+R17.sandy	regulates Arg1:T28.sandy Arg2:T30.sandy	
+R18.sandy	regulates Arg1:T30.sandy Arg2:T29.sandy	
+R19.sandy	is_part_of Arg1:T14.sandy Arg2:T15.sandy	
+R21.sandy	is_part_of Arg1:T12.sandy Arg2:T14.sandy	
+R22.sandy	regulates Arg1:T18.sandy Arg2:T20.sandy	
+R25.sandy	regulates Arg1:T35.sandy Arg2:T31.sandy	
+R4.sandy	VERIFY_genetically_interacts_with Arg1:T8.sandy Arg2:T7.sandy	
+R5.sandy	VERIFY_genetically_interacts_with Arg1:T8.sandy Arg2:T6.sandy	
+R6.sandy	VERIFY_participates_in Arg1:T11.sandy Arg2:T10.sandy	
+R7.sandy	VERIFY_regulates Arg1:T11.sandy Arg2:T9.sandy	
+R15.sandy	VERIFY_regulates Arg1:T23.sandy Arg2:T27.sandy	
+R20.sandy	VERIFY_regulates Arg1:T32.sandy Arg2:T31.sandy	
+R23.sandy	VERIFY_regulates Arg1:T27.sandy Arg2:T33.sandy	
+R24.sandy	VERIFY_regulates Arg1:T24.sandy Arg2:T36.sandy	
+R5.kevin	VERIFY_regulates Arg1:T21.kevin Arg2:T8.sandy	
+R6.kevin	VERIFY_participates_in Arg1:T11.sandy Arg2:T21.kevin	
+R10.kevin	VERIFY_regulates Arg1:T9.kevin Arg2:T33.sandy	
+R11.kevin	VERIFY_regulates Arg1:T23.sandy Arg2:T9.kevin	
+R16.kevin	VERIFY_regulates Arg1:T31.sandy Arg2:T32.sandy	
+R4.kevin	VERIFY_genetically_interacts_with Arg1:T3.kevin Arg2:T8.sandy	
+R24.kevin	VERIFY_regulates Arg1:T24.sandy Arg2:T33.kevin	
+R25.kevin	VERIFY_is_subclass_of Arg1:T34.kevin Arg2:T35.kevin	
+R26.kevin	VERIFY_regulates Arg1:T34.kevin Arg2:T36.kevin	
+R27.kevin	VERIFY_participates_in Arg1:T50.kevin Arg2:T51.kevin	
+R28.kevin	VERIFY_regulates Arg1:T50.kevin Arg2:T54.kevin	
+R29.kevin	VERIFY_is_subclass_of Arg1:T54.kevin Arg2:T52.kevin	

@@ -1,0 +1,50 @@
+T1.sandy	KeyEntity 158 168	Annexin A7
+T4.sandy	Entity 286 301	membrane fusion
+T5.sandy	Entity 364 376	erythrocytes
+T6.sandy	Entity 443 473	Ca2+-dependent vesicle release
+T7.sandy	KeyEntity 615 625	annexin A7
+T8.sandy	Entity 662 674	erythrocytes
+T9.sandy	KeyEntity 680 693	anxA7-/- mice
+T16.sandy	Entity 1357 1378	membrane cytoskeleton
+T17.sandy	Entity 1380 1395	Red blood cells
+T18.sandy	KeyEntity 1452 1462	annexin A7
+T21.sandy	Entity 1564 1579	red blood cells
+T15.sandy	Entity 1337 1349	organization
+T19.sandy	Entity 1466 1484	cellular processes
+T22.sandy	Entity 1621 1630	platelets
+T28.sandy	Entity 55 64	platelets
+T29.sandy	Entity 69 84	red blood cells
+T30.sandy	Entity 111 134	annexin A7 mutant mouse
+T2.kevin	Entity 174 212	Ca2+- and phospholipid-binding protein
+T9.kevin	Entity 496 511	red blood cells
+T13.kevin	Entity 714 748	Ca2+-mediated vesiculation process
+T14.kevin	KeyEntity 1541 1560	annexin A7 isoforms
+T15.kevin	KeyEntity 1663 1673	annexin A7
+T16.kevin	KeyEntity 1774 1784	annexin A7
+T17.kevin	KeyEntity 895 905	annexin A7
+T18.kevin	Entity 949 967	osmotic resistance
+T19.kevin	KeyEntity 988 998	Annexin A7
+T20.kevin	KeyEntity 1222 1232	annexin A7
+T3.kevin	Entity 333 340	isoform
+T5.kevin	Entity 1022 1031	platelets
+T6.kevin	Entity 1236 1261	membrane fusion processes
+T21.kevin	Entity 1275 1290	red blood cells
+T26.kevin	Entity 1788 1813	membrane fusion processes
+R3.sandy	participates_in Arg1:T1.sandy Arg2:T4.sandy	
+R7.sandy	participates_in Arg1:T16.sandy Arg2:T15.sandy	
+R8.sandy	is_part_of Arg1:T18.sandy Arg2:T17.sandy	
+R9.sandy	participates_in Arg1:T18.sandy Arg2:T19.sandy	
+R1.kevin	is_subclass_of Arg1:T1.sandy Arg2:T2.kevin	
+R3.kevin	is_part_of Arg1:T3.kevin Arg2:T5.sandy	
+R4.kevin	participates_in Arg1:T3.kevin Arg2:T6.sandy	
+T1	KeyEntity 41 51	annexin A7
+T2	Entity 924 934	cell shape
+R1	participates_in Arg1:T17.kevin Arg2:T2	
+R2	participates_in Arg1:T17.kevin Arg2:T18.kevin	
+T3	Entity 1082 1102	aggregation velocity
+T4	Entity 1159 1168	platelets
+R3	is_part_of Arg1:T14.kevin Arg2:T21.sandy	
+T5	Entity 1604 1617	small isoform
+R4	is_part_of Arg1:T5 Arg2:T22.sandy	
+T6	Entity 1682 1700	cellular functions
+R5	participates_in Arg1:T15.kevin Arg2:T6	

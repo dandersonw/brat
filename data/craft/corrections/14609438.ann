@@ -1,0 +1,325 @@
+T2.sandy	KeyEntity 161 184;200 204	Tripeptidyl-peptidase I CLN2
+T3.sandy	Entity 235 274	sedolisins (serine-carboxyl peptidases)
+T8.sandy	Entity 1081 1110	Pseudomonas sp. 101 sedolisin
+T10.sandy	FIX_TYPE 1125 1129	CLN2
+T13.sandy	Entity 1380 1392	CLN2 enzymes
+T15.sandy	Entity 1434 1446	tripeptidase
+T17.sandy	FIX_TYPE 11 41	tripeptidyl-peptidase I (CLN2)
+T20.sandy	FIX_TYPE 91 107	sedolisin family
+T21.sandy	FIX_TYPE 111 137	serine-carboxyl peptidases
+T57.sandy	Entity 1672 1676	CLN2
+T5.sandy	VERIFY_Entity 334 365	fatal neurodegenerative disease
+T6.sandy	FIX_SPAN_Entity 377 422	late-infantile neuronal ceroid lipofuscinosis
+T7.sandy	FIX_SPAN_KeyEntity 682 686	CLN2
+T9.sandy	FIX_SPAN_Entity 999 1036	three-dimensional model of human CLN2
+T11.sandy	VERIFY_Entity 1138 1154	highly conserved
+T12.sandy	VERIFY_Entity 1159 1177	widely distributed
+T14.sandy	VERIFY_Entity 1336 1363	almost completely conserved
+T16.sandy	FIX_SPAN_Entity 1649 1668	specific inhibitors
+T18.sandy	VERIFY_Entity 45 55	ubiquitous
+T19.sandy	VERIFY_Entity 60 76	highly conserved
+T1.sandy	VERIFY_Entity 463 480	genomic sequences
+T4.sandy	VERIFY_Entity 727 745	eukaryotic species
+T22.sandy	VERIFY_Entity 783 795	80% identity
+T23.sandy	VERIFY_Entity 830 837	macaque
+T24.sandy	VERIFY_Entity 839 844	mouse
+T25.sandy	VERIFY_Entity 846 849	rat
+T26.sandy	VERIFY_Entity 851 854	dog
+T27.sandy	VERIFY_Entity 860 863	cow
+T28.sandy	FIX_SPAN_Entity 932 953	fish (fugu and zebra)
+T29.sandy	FIX_SPAN_Entity 969 995	frogs (Xenopus tropicalis)
+T30.sandy	VERIFY_KeyEntity 1717 1748	tripeptidyl-peptidase I (TPP-I)
+T31.sandy	VERIFY_KeyEntity 1940 1945	TPP-I
+T32.sandy	VERIFY_KeyEntity 2006 2010	CLN2
+T33.sandy	VERIFY_KeyEntity 2104 2108	CLN2
+T34.sandy	VERIFY_Entity 2063 2074;2082 2100	abolishment enzymatic activity
+T35.sandy	VERIFY_Entity 2136 2177	fatal inherited neurodegenerative disease
+T36.sandy	VERIFY_Entity 2179 2234	classical late-infantile neuronal ceroid lipofuscinosis
+T37.sandy	VERIFY_KeyEntity 2305 2309	CLN2
+T38.sandy	VERIFY_Entity 2315 2331	serine peptidase
+T39.sandy	VERIFY_KeyEntity 2454 2458	CLN2
+T40.sandy	VERIFY_Entity 2536 2570	high-resolution crystal structures
+T41.sandy	VERIFY_KeyEntity 2634 2638	CLN2
+T42.sandy	VERIFY_Entity 2640 2649	sedolisin
+T43.sandy	VERIFY_Entity 2654 2665	kumamolisin
+T44.sandy	VERIFY_Entity 2768 2794	serine-carboxyl peptidases
+T45.sandy	VERIFY_Entity 2842 2889	fully conserved catalytic triad (Ser, Glu, Asp)
+T46.sandy	VERIFY_Entity 2916 2919	Asp
+T47.sandy	VERIFY_Entity 2927 2940	oxyanion hole
+T48.sandy	VERIFY_Entity 2946 2955	Sedolisin
+T49.sandy	VERIFY_Entity 2988 3034	kumamolisin, aorsin [9], and physarolisin [10]
+T50.sandy	VERIFY_Entity 3059 3066	archaea
+T51.sandy	VERIFY_Entity 3068 3076	bacteria
+T52.sandy	VERIFY_Entity 3078 3083	fungi
+T53.sandy	VERIFY_Entity 3088 3095	amoebae
+T54.sandy	VERIFY_KeyEntity 3159 3163	CLN2
+T55.sandy	VERIFY_Entity 3195 3205	sedolisins
+T56.sandy	VERIFY_Entity 1581 1605	physiological substrates
+T58.sandy	VERIFY_Entity 2754 2764	sedolisins
+T59.sandy	VERIFY_KeyEntity 3303 3307	CLN2
+T60.sandy	VERIFY_Entity 3360 3380	genomic distribution
+T61.sandy	VERIFY_Entity 3453 3468	crystallization
+T62.sandy	VERIFY_Entity 3541 3556	crystallography
+T63.sandy	VERIFY_Entity 3560 3563	NMR
+T64.sandy	VERIFY_Entity 3603 3621	molecular modeling
+T65.sandy	VERIFY_Entity 3770 3780	inhibitors
+T66.sandy	VERIFY_Entity 3859 3871	HIV protease
+T67.sandy	VERIFY_Entity 3902 3911	peptidase
+T68.sandy	VERIFY_Entity 3919 3930	coronavirus
+T69.sandy	VERIFY_Entity 3947 3980	severe acute respiratory syndrome
+T70.sandy	VERIFY_Entity 4034 4061	molecular homology modeling
+T71.sandy	VERIFY_KeyEntity 4091 4095	CLN2
+T72.sandy	VERIFY_Entity 4147 4168	biological substrates
+T73.sandy	VERIFY_Entity 4207 4236	design of specific inhibitors
+T74.sandy	VERIFY_KeyEntity 4291 4308	CLN2-like enzymes
+T75.sandy	VERIFY_KeyEntity 4348 4352	CLN2
+T76.sandy	VERIFY_Entity 4379 4389	sedolisins
+T77.sandy	VERIFY_Entity 4395 4421	highly conserved sequences
+T78.sandy	VERIFY_Entity 4494 4506	195 residues
+T79.sandy	VERIFY_Entity 4534 4544	maturation
+T80.sandy	VERIFY_Entity 4559 4582	active catalytic domain
+T81.sandy	VERIFY_KeyEntity 4621 4625	CLN2
+T82.sandy	VERIFY_Entity 4756 4771	563 amino acids
+T83.sandy	VERIFY_Entity 4786 4810	single polypeptide chain
+T84.sandy	VERIFY_Entity 4831 4841	prosegment
+T85.sandy	VERIFY_Entity 4850 4866	catalytic domain
+T86.sandy	VERIFY_KeyEntity 4890 4900	mouse CLN2
+T87.sandy	VERIFY_Entity 4912 4927;4935 4945	single deletion prosegment
+T88.sandy	VERIFY_Entity 4959 4976;4998 5001	sequence identity 81%
+T89.sandy	VERIFY_Entity 5015 5025;5029 5032	similarity 92%
+T90.sandy	VERIFY_Entity 5094 5106	88% identity
+T91.sandy	VERIFY_Entity 5111 5125	94% similarity
+T92.sandy	VERIFY_Entity 5063 5068;5079 5086	human enzymes
+T94.sandy	VERIFY_Entity 5163 5177	78.5% identity
+T95.sandy	VERIFY_Entity 5206 5227	mouse-human orthologs
+T96.sandy	VERIFY_Entity 5240 5254	mammalian CLN2
+T97.sandy	VERIFY_Entity 5271 5294	highly conserved enzyme
+T98.sandy	VERIFY_KeyEntity 5341 5358	CLN2-like enzymes
+T99.sandy	VERIFY_Entity 5307 5327	Sequence comparisons
+T100.sandy	VERIFY_Entity 5402 5409	enzymes
+T101.sandy	VERIFY_Entity 5425 5435	prosegment
+T102.sandy	VERIFY_Entity 5458 5469	active site
+T103.sandy	VERIFY_Entity 5566 5578	stability of
+T104.sandy	VERIFY_Entity 5515 5533	conserved residues
+T105.sandy	VERIFY_Entity 5625 5643	residues identical
+T106.sandy	VERIFY_Entity 5717 5726	character
+T107.sandy	VERIFY_Entity 5753 5778	maturation cleavage point
+T108.sandy	VERIFY_Entity 5794 5804;5812 5825	N terminus active enzyme
+T109.sandy	VERIFY_KeyEntity 5887 5904	CLN2-like enzymes
+T110.sandy	VERIFY_Entity 5923 5927	fugu
+T111.sandy	VERIFY_Entity 6023 6032	zebrafish
+T112.sandy	VERIFY_Entity 6224 6242	zebrafish sequence
+T113.sandy	VERIFY_KeyEntity 6280 6289	fugu CLN2
+T114.sandy	VERIFY_Entity 6321 6329;6335 6352	deletion single nucleotide
+T115.sandy	VERIFY_Entity 6391 6430	insertions of repeated nucleotide pairs
+T116.sandy	VERIFY_Entity 6613 6629	global agreement
+T117.sandy	VERIFY_Entity 6631 6645	69% identities
+T118.sandy	VERIFY_Entity 6650 6666	83% similarities
+T119.sandy	VERIFY_Entity 6690 6703	gene sequence
+T120.sandy	VERIFY_KeyEntity 6711 6730	zebrafish CLN2.This
+T121.sandy	VERIFY_Entity 6759 6777	manual corrections
+T122.sandy	VERIFY_KeyEntity 6832 6843	fugu enzyme
+T123.sandy	VERIFY_Entity 6845 6865	Inserted nucleotides
+T124.sandy	VERIFY_Entity 6927 6946	amino acid sequence
+T125.sandy	VERIFY_KeyEntity 6954 6970	fugu CLN2 analog
+T126.sandy	VERIFY_KeyEntity 6984 6997	sedolisin-TPP
+T127.sandy	VERIFY_Entity 7055 7074	mammalian orthologs
+T128.sandy	VERIFY_Entity 7120 7150	translated amino acid sequence
+T129.sandy	VERIFY_Entity 7167 7176;7191 7198	mammalian enzymes
+T131.sandy	VERIFY_Entity 7209 7223	amino terminus
+T132.sandy	VERIFY_Entity 7231 7248	propeptide region
+T133.sandy	VERIFY_Entity 7268 7282	30 amino acids
+T134.sandy	VERIFY_Entity 7417 7429	coding frame
+T135.sandy	VERIFY_Entity 7454 7464	methionine
+T136.sandy	VERIFY_Entity 7510 7531	full genomic sequence
+T137.sandy	VERIFY_Entity 7551 7577	fugu sequencing consortium
+T138.sandy	VERIFY_Entity 7608 7625	catalytic domains
+T139.sandy	VERIFY_KeyEntity 7668 7672	CLN2
+T140.sandy	VERIFY_Entity 7678 7683	human
+T141.sandy	VERIFY_Entity 7685 7689	fugu
+T142.sandy	VERIFY_Entity 7695 7704	zebrafish
+T143.sandy	VERIFY_KeyEntity 7753 7757	CLN2
+T144.sandy	VERIFY_KeyEntity 7629 7633	CLN2
+T145.sandy	VERIFY_Entity 7761 7779	Xenopus tropicalis
+T146.sandy	VERIFY_Entity 7812 7819	enzymes
+T147.sandy	VERIFY_Entity 7877 7897	Active site residues
+T148.sandy	VERIFY_KeyEntity 7926 7930	CLN2
+T149.sandy	VERIFY_Entity 8001 8019	Xenopus tropicalis
+T150.sandy	VERIFY_Entity 8067 8091	sedolisin-TPP (AL594774)
+T151.sandy	VERIFY_Entity 8105 8117	EST database
+T152.sandy	VERIFY_Entity 8129 8140;8148 8164	middle part catalytic domain
+T153.sandy	VERIFY_Entity 8199 8210	active site
+T154.sandy	VERIFY_Entity 8225 8235	N terminus
+T155.sandy	VERIFY_Entity 8254 8262;8276 8281	aspartic acids
+T157.sandy	VERIFY_Entity 8301 8316	catalytic triad
+T158.sandy	VERIFY_Entity 8366 8378	75% identity
+T159.sandy	VERIFY_Entity 8388 8406	fugu sedolisin-TPP
+T160.sandy	VERIFY_Entity 8412 8424	69% identity
+T161.sandy	VERIFY_KeyEntity 8430 8440	human CLN2
+T162.sandy	VERIFY_Entity 8476 8485;8496 8506	bacterial sedolisins
+T164.sandy	VERIFY_Entity 8614 8628	CLN2 subfamily
+T165.sandy	VERIFY_KeyEntity 8648 8682	highly conserved CLN2-like enzymes
+T166.sandy	VERIFY_Entity 8719 8731	fish species
+T167.sandy	VERIFY_Entity 8743 8748	frogs
+T168.sandy	VERIFY_Entity 8773 8783	peptidases
+T169.sandy	VERIFY_Entity 8815 8826	vertebrates
+T170.sandy	VERIFY_Entity 8872 8878	humans
+T171.sandy	VERIFY_Entity 8887 8891	mice
+T172.sandy	VERIFY_KeyEntity 8960 8970	human CLN2
+T173.sandy	VERIFY_KeyEntity 8998 9002	CLN2
+T174.sandy	VERIFY_Entity 9011 9015;9021 9038	lack crystal structure
+T175.sandy	VERIFY_Entity 9060 9076	protein modeling
+T176.sandy	VERIFY_Entity 9127 9141	membrane-bound
+T177.sandy	VERIFY_Entity 9117 9123	enzyme
+T178.sandy	VERIFY_Entity 9152 9168	sequence 271–294
+T179.sandy	VERIFY_Entity 9247 9267	transmembrane anchor
+T180.sandy	VERIFY_Entity 9338 9368	fully water-soluble sedolisins
+T181.sandy	VERIFY_KeyEntity 9447 9451	CLN2
+T182.sandy	VERIFY_Entity 9453 9462	sedolisin
+T183.sandy	VERIFY_Entity 9468 9479	kumamolisin
+T184.sandy	VERIFY_Entity 9589 9611	homology-derived model
+T185.sandy	VERIFY_KeyEntity 9615 9625	human CLN2
+T186.sandy	VERIFY_Entity 9652 9666	homology model
+T187.sandy	VERIFY_Entity 9690 9710	complex of sedolisin
+T188.sandy	VERIFY_Entity 9718 9744	covalently-bound inhibitor
+T189.sandy	VERIFY_Entity 9746 9767	pseudo-iodotyrostatin
+T190.sandy	VERIFY_KeyEntity 9840 9850	human CLN2
+T191.sandy	VERIFY_Entity 9883 9905	aldehyde functionality
+T192.sandy	VERIFY_Entity 9916 9925	C-termini
+T193.sandy	VERIFY_Entity 9953 9963;9980 9983	inhibitors Oda
+T194.sandy	VERIFY_Entity 10022 10043	pseudo-iodotyrostatin
+T195.sandy	VERIFY_Entity 10057 10066	inhibitor
+T196.sandy	VERIFY_KeyEntity 10082 10086	CLN2
+T197.sandy	VERIFY_Entity 10259 10288	pseudo-iodotyrostatin complex
+T198.sandy	VERIFY_KeyEntity 10297 10301	CLN2
+T199.sandy	VERIFY_Entity 10307 10319	tripeptidase
+T200.sandy	VERIFY_Entity 10335 10344	inhibitor
+T201.sandy	VERIFY_Entity 10396 10413	tripeptide analog
+T202.sandy	VERIFY_Entity 10423 10432	sedolisin
+T203.sandy	VERIFY_Entity 10445 10463	Sequence alignment
+T204.sandy	VERIFY_Entity 10467 10476;10491 10498	bacterial enzymes
+T206.sandy	VERIFY_Entity 10530 10539	sedolisin
+T207.sandy	VERIFY_Entity 10541 10552	kumamolisin
+T208.sandy	VERIFY_Entity 10558 10568	human CLN2
+T209.sandy	VERIFY_Entity 10680 10696	r.m.s. deviation
+T210.sandy	VERIFY_Entity 10723 10737	Cα coordinates
+T211.sandy	VERIFY_KeyEntity 10754 10758	CLN2
+T212.sandy	VERIFY_Entity 10804 10813	sedolisin
+T213.sandy	VERIFY_Entity 10888 10897	sedolisin
+T214.sandy	VERIFY_Entity 10902 10913	kumamolisin
+T215.sandy	VERIFY_Entity 10934 10940;10952 10960	Cys327 residues
+T217.sandy	VERIFY_Entity 11020 11034	disulfide bond
+T218.sandy	VERIFY_Entity 11178 11187;11192 11210	cysteines strictly conserved
+T220.sandy	VERIFY_Entity 11242 11246	CLN2
+T219.sandy	VERIFY_Entity 11317 11337	bacterial sedolisins
+T221.sandy	VERIFY_Entity 11353 11362	disulfide
+T222.sandy	VERIFY_KeyEntity 11401 11405	CLN2
+T223.sandy	VERIFY_Entity 11478 11500	homology-derived model
+T224.sandy	VERIFY_KeyEntity 11504 11514	human CLN2
+T225.sandy	VERIFY_Entity 11538 11546	Cα trace
+T226.sandy	VERIFY_KeyEntity 11550 11554	CLN2
+T227.sandy	VERIFY_Entity 11516 11530	Ribbon diagram
+T228.sandy	VERIFY_Entity 11605 11626;11630 11639	highly conserved core sedolisin
+T230.sandy	VERIFY_Entity 11698 11709;11717 11725	Side chains residues
+T231.sandy	VERIFY_Entity 11748 11755	mutated
+T232.sandy	VERIFY_Entity 11798 11843	late-infantile neuronal ceroid lipofuscinosis
+T233.sandy	VERIFY_Entity 11863 11877	ball-and-stick
+T234.sandy	VERIFY_Entity 11899 11924	substrate binding pockets
+T235.sandy	VERIFY_KeyEntity 11928 11932	CLN2
+T236.sandy	VERIFY_KeyEntity 11937 11946	sedolisin
+T237.sandy	VERIFY_KeyEntity 11986 11990	CLN2
+T238.sandy	VERIFY_Entity 12004 12016	tripeptidase
+T239.sandy	VERIFY_Entity 12044 12069	substrate-binding pockets
+T240.sandy	VERIFY_Entity 12071 12073	S1
+T241.sandy	VERIFY_Entity 12082 12084	S3
+T242.sandy	VERIFY_Entity 12172 12177	P1-P3
+T243.sandy	VERIFY_Entity 12185 12194	inhibitor
+T244.sandy	VERIFY_Entity 12307 12316	sedolisin
+T245.sandy	VERIFY_Entity 12320 12331	kumamolisin
+T246.sandy	VERIFY_Entity 12337 12347	inhibitors
+T247.sandy	VERIFY_Entity 12365 12373	tyrosine
+T248.sandy	VERIFY_Entity 12379 12392	phenylalanine
+T249.sandy	VERIFY_Entity 12407 12416	S1 pocket
+T250.sandy	VERIFY_Entity 12443 12458	fully conserved
+T251.sandy	VERIFY_Entity 12475 12485	sedolisins
+T252.sandy	VERIFY_Entity 12525 12540;12548 12554	right-hand side pocket
+T253.sandy	VERIFY_Entity 12601 12611	main chain
+T254.sandy	VERIFY_Entity 12622 12638	residues 164–165
+T255.sandy	VERIFY_KeyEntity 12719 12729	human CLN2
+T256.sandy	VERIFY_Entity 12749 12759	main chain
+T257.sandy	VERIFY_Entity 12787 12814	hydrogen-bonded interaction
+T258.sandy	VERIFY_Entity 12824 12844	side chain of Thr279
+T259.sandy	VERIFY_Entity 12858 12883	signature sequence SGTSAS
+T260.sandy	VERIFY_Entity 12900 12916	catalytic Ser280
+T261.sandy	VERIFY_Entity 12959 12965	Asp165
+T262.sandy	VERIFY_Entity 12981 12990	conserved
+T263.sandy	VERIFY_Entity 13023 13029;13037 13050	lining oxyanion hole
+T264.sandy	VERIFY_Entity 13102 13111	S1 pocket
+T265.sandy	VERIFY_Entity 13139 13150	side chains
+T266.sandy	VERIFY_Entity 13237 13251	steric barrier
+T267.sandy	VERIFY_Entity 13256 13273	excluding solvent
+T268.sandy	VERIFY_Entity 13334 13350	residues 130–132
+T269.sandy	VERIFY_Entity 13320 13330	main chain
+T270.sandy	VERIFY_Entity 13366 13382	conserved Gly131
+T271.sandy	VERIFY_Entity 13466 13476	P1 residue
+T272.sandy	VERIFY_Entity 13484 13493	substrate
+T3.kevin	FIX_SPAN_Entity 367 422	classical late-infantile neuronal ceroid lipofuscinosis
+T4.kevin	FIX_SPAN_Entity 663 672;676 686	orthologs human CLN2
+T5.kevin	FIX_SPAN_Entity 976 994	Xenopus tropicalis
+T6.kevin	FIX_SPAN_Entity 947 952	zebra
+T7.kevin	FIX_SPAN_Entity 938 942	fugu
+T8.kevin	FIX_SPAN_Entity 932 936	fish
+T9.kevin	FIX_SPAN_Entity 969 974	frogs
+T10.kevin	FIX_SPAN_Entity 1026 1036	human CLN2
+T13.kevin	VERIFY_Entity 1241 1252	life cycles
+T17.kevin	FIX_SPAN_Entity 1658 1668	inhibitors
+#2	AnnotatorNotes T40.sandy	experimental_procedure
+#1	AnnotatorNotes T62.sandy	experimental_test
+#3	AnnotatorNotes T63.sandy	experimental_test
+#4	AnnotatorNotes T70.sandy	experimental_test
+R3.sandy	VERIFY_participates_in Arg1:T8.sandy Arg2:T9.sandy	
+R4.sandy	VERIFY_participates_in Arg1:T10.sandy Arg2:T11.sandy	
+R5.sandy	VERIFY_participates_in Arg1:T10.sandy Arg2:T12.sandy	
+R6.sandy	VERIFY_participates_in Arg1:T13.sandy Arg2:T14.sandy	
+R2.sandy	VERIFY_participates_in Arg1:T34.sandy Arg2:T33.sandy	
+R7.sandy	VERIFY_is_subclass_of Arg1:T36.sandy Arg2:T35.sandy	
+R8.sandy	VERIFY_participates_in Arg1:T36.sandy Arg2:T34.sandy	
+R9.sandy	VERIFY_participates_in Arg1:T42.sandy Arg2:T40.sandy	
+R10.sandy	VERIFY_participates_in Arg1:T43.sandy Arg2:T40.sandy	
+R11.sandy	VERIFY_is_part_of Arg1:T45.sandy Arg2:T44.sandy	
+R12.sandy	VERIFY_is_part_of Arg1:T46.sandy Arg2:T47.sandy	
+R13.sandy	VERIFY_is_subclass_of Arg1:T2.sandy Arg2:T3.sandy	
+R14.sandy	VERIFY_interacts_with Arg1:T16.sandy Arg2:T57.sandy	
+R1.sandy	VERIFY_is_part_of Arg1:T45.sandy Arg2:T58.sandy	
+R15.sandy	VERIFY_is_subclass_of Arg1:T75.sandy Arg2:T76.sandy	
+R16.sandy	VERIFY_is_part_of Arg1:T82.sandy Arg2:T83.sandy	
+R17.sandy	VERIFY_is_part_of Arg1:T84.sandy Arg2:T83.sandy	
+R18.sandy	VERIFY_is_part_of Arg1:T85.sandy Arg2:T83.sandy	
+R19.sandy	VERIFY_is_part_of Arg1:T87.sandy Arg2:T86.sandy	
+R20.sandy	VERIFY_is_part_of Arg1:T96.sandy Arg2:T97.sandy	
+R21.sandy	VERIFY_is_part_of Arg1:T101.sandy Arg2:T100.sandy	
+R22.sandy	VERIFY_participates_in Arg1:T119.sandy Arg2:T120.sandy	
+R23.sandy	VERIFY_is_part_of Arg1:T124.sandy Arg2:T125.sandy	
+R24.sandy	VERIFY_is_part_of Arg1:T131.sandy Arg2:T132.sandy	
+R25.sandy	VERIFY_is_part_of Arg1:T132.sandy Arg2:T128.sandy	
+R26.sandy	VERIFY_is_part_of Arg1:T138.sandy Arg2:T144.sandy	
+R27.sandy	VERIFY_is_part_of Arg1:T143.sandy Arg2:T145.sandy	
+R28.sandy	VERIFY_is_part_of Arg1:T150.sandy Arg2:T152.sandy	
+R29.sandy	VERIFY_is_part_of Arg1:T155.sandy Arg2:T157.sandy	
+R31.sandy	VERIFY_participates_in Arg1:T177.sandy Arg2:T176.sandy	
+R33.sandy	VERIFY_interacts_with Arg1:T187.sandy Arg2:T189.sandy	
+R34.sandy	VERIFY_participates_in Arg1:T191.sandy Arg2:T192.sandy	
+R35.sandy	VERIFY_is_part_of Arg1:T198.sandy Arg2:T199.sandy	
+R36.sandy	VERIFY_interacts_with Arg1:T201.sandy Arg2:T202.sandy	
+R37.sandy	VERIFY_is_part_of Arg1:T218.sandy Arg2:T220.sandy	
+R38.sandy	VERIFY_is_part_of Arg1:T221.sandy Arg2:T222.sandy	
+R39.sandy	VERIFY_participates_in Arg1:T230.sandy Arg2:T231.sandy	
+R40.sandy	VERIFY_is_part_of Arg1:T231.sandy Arg2:T232.sandy	
+R41.sandy	VERIFY_is_part_of Arg1:T237.sandy Arg2:T238.sandy	
+R42.sandy	VERIFY_is_part_of Arg1:T242.sandy Arg2:T243.sandy	
+R43.sandy	VERIFY_interacts_with Arg1:T248.sandy Arg2:T249.sandy	
+R44.sandy	VERIFY_interacts_with Arg1:T247.sandy Arg2:T249.sandy	
+R45.sandy	VERIFY_interacts_with Arg1:T257.sandy Arg2:T256.sandy	
+R46.sandy	VERIFY_is_part_of Arg1:T258.sandy Arg2:T257.sandy	
+R47.sandy	VERIFY_is_part_of Arg1:T271.sandy Arg2:T272.sandy	
+R48.sandy	VERIFY_is_part_of Arg1:T269.sandy Arg2:T268.sandy	

@@ -1,0 +1,55 @@
+T1.sandy	Entity 286 310	gene expression patterns
+T2.sandy	Entity 312 324	morphologies
+T3.sandy	Entity 330 353	synaptic connectivities
+T7.sandy	KeyEntity 483 514	enhanced S-cone syndrome (ESCS)
+T8.sandy	Entity 538 558	spontaneous deletion
+T10.sandy	Entity 594 638	orphan nuclear receptor transcription factor
+T11.sandy	Entity 735 745	rd7 retina
+T12.sandy	Entity 786 810	S-opsin–expressing cells
+T16.sandy	Entity 1107 1124	rd7 mutant retina
+T17.sandy	Entity 1284 1311	glucose/glycogen metabolism
+T20.sandy	Entity 1333 1360	abnormal electroretinograms
+T21.sandy	Entity 1362 1387	slow retinal degeneration
+T22.sandy	Entity 1393 1414	retinal dysmorphology
+T23.sandy	Entity 1500 1530	hybrid photoreceptor cell type
+T27.sandy	KeyEntity 650 654	ESCS
+T4.sandy	Entity 681 711	in situ hybridization analysis
+T5.sandy	Entity 418 459	retinal degeneration 7 (rd7) mutant mouse
+T9.sandy	KeyEntity 584 589	NR2E3
+T13.sandy	Entity 893 907	photoreceptors
+T14.sandy	Entity 915 925	rd7 retina
+T15.sandy	Entity 938 970	morphologically hybrid cell type
+T18.sandy	Entity 1158 1171;1189 1194	cone-specific genes
+T19.sandy	Entity 1175 1194	cone-enriched genes
+T24.sandy	Entity 1657 1678	molecular differences
+T25.sandy	Entity 1687 1691	rods
+T26.sandy	Entity 1696 1701	cones
+T28.sandy	KeyEntity 2 22	Hybrid Photoreceptor
+T29.sandy	Entity 39 42;52 57	Rod Genes
+T31.sandy	Entity 63 74	Mouse Model
+T32.sandy	KeyEntity 78 102	Enhanced S-Cone Syndrome
+T1.kevin	Entity 114 117;127 141	Rod photoreceptors
+T18.kevin	Entity 1034 1055	in situ hybridization
+T20.kevin	Entity 1128 1138	microarray
+R4.sandy	is_part_of Arg1:T12.sandy Arg2:T11.sandy	
+R5.sandy	is_part_of Arg1:T13.sandy Arg2:T15.sandy	
+R6.sandy	participates_in Arg1:T16.sandy Arg2:T17.sandy	
+R7.sandy	participates_in Arg1:T23.sandy Arg2:T20.sandy	
+R8.sandy	participates_in Arg1:T23.sandy Arg2:T21.sandy	
+R9.sandy	participates_in Arg1:T23.sandy Arg2:T22.sandy	
+T1	Entity 122 141	cone photoreceptors
+T2	Entity 391 410	photoreceptor cells
+T3	Entity 566 580	mouse ortholog
+R1	is_part_of Arg1:T9.sandy Arg2:T3	
+R2	participates_in Arg1:T9.sandy Arg2:T8.sandy	
+T4	Entity 1435 1439	ESCS
+T5	Entity 1423 1429	humans
+R3	interacts_with Arg1:T4 Arg2:T5	
+T6	Entity 1005 1019;991 994	specific genes rod
+T7	Entity 1000 1019	cone-specific genes
+T8	Entity 47 57	Cone Genes
+R4	regulates Arg1:T28.sandy Arg2:T8	
+#1	AnnotatorNotes R4	expresses
+R5	regulates Arg1:T28.sandy Arg2:T29.sandy	
+#2	AnnotatorNotes R5	expresses
+R6	is_part_of Arg1:T13.sandy Arg2:T14.sandy	

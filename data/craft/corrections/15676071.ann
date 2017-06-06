@@ -1,0 +1,38 @@
+T2.sandy	KeyEntity 123 157	Leber's congenital amaurosis (LCA)
+T4.sandy	Entity 352 371	photoreceptor cells
+T5.sandy	Entity 464 498	photoreceptor transcription factor
+T6.sandy	KeyEntity 500 503	Crx
+T10.sandy	Entity 682 699	developing retina
+T12.sandy	Entity 734 761	Outer segment morphogenesis
+T13.sandy	Entity 793 809	elongation stage
+T15.sandy	Entity 891 912	Crx-/- photoreceptors
+T17.sandy	Entity 968 989	outer plexiform layer
+T18.sandy	KeyEntity 1035 1056	synaptogenesis defect
+T19.sandy	KeyEntity 1080 1083	LCA
+T21.sandy	KeyEntity 1243 1246	LCA
+T22.sandy	KeyEntity 0 14	Synaptogenesis
+T23.sandy	KeyEntity 19 42	outer segment formation
+T24.sandy	KeyEntity 64 77	neural retina
+T25.sandy	KeyEntity 81 96	Crx mutant mice
+T3.sandy	KeyEntity 271 284	neural retina
+T9.sandy	Entity 650 674	ultrastructural analysis
+T14.sandy	Entity 853 880	phototransduction apparatus
+T20.sandy	Entity 1162 1187	photoreceptor development
+T2.kevin	Entity 243 263	abnormal development
+T6.kevin	KeyEntity 579 582	LCA
+T7.kevin	Entity 616 630	Crx's function
+T9.kevin	KeyEntity 703 718	Crx mutant mice
+T18.kevin	Entity 935 960	abnormal synaptic endings
+R2.sandy	is_subclass_of Arg1:T6.sandy Arg2:T5.sandy	
+R5.sandy	VERIFY_participates_in Arg1:T12.sandy Arg2:T13.sandy	
+R7.sandy	participates_in Arg1:T18.sandy Arg2:T19.sandy	
+R8.sandy	participates_in Arg1:T20.sandy Arg2:T21.sandy	
+R1.kevin	is_part_of Arg1:T10.sandy Arg2:T9.kevin	
+R3.kevin	is_part_of Arg1:T18.kevin Arg2:T17.sandy	
+R5.kevin	is_part_of Arg1:T24.sandy Arg2:T25.sandy	
+R1	participates_in Arg1:T3.sandy Arg2:T2.kevin	
+T1	KeyEntity 517 534	Crx mutant strain
+R2	interacts_with Arg1:T6.kevin Arg2:T1	
+R3	is_part_of Arg1:T18.kevin Arg2:T15.sandy	
+T2	Entity 538 542	mice
+R4	is_part_of Arg1:T1 Arg2:T2	

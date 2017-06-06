@@ -1,0 +1,43 @@
+T2.sandy	Entity 157 176	immature hair cells
+T3.sandy	Entity 238 247	apoptosis
+T4.sandy	KeyEntity 321 344	neurotrophin expression
+T5.sandy	Entity 356 371	sensory neurons
+T8.sandy	KeyEntity 506 519	neurotrophins
+T10.sandy	Entity 573 577	BDNF
+T11.sandy	Entity 582 586	NT-3
+T14.sandy	Entity 839 879	myosin VIIa-positive immature hair cells
+T15.sandy	Entity 988 1023	mutant vestibular sensory epithelia
+T16.sandy	Entity 1090 1097	cochlea
+T18.sandy	Entity 1235 1263	vestibular sensory epithelia
+T19.sandy	Entity 1285 1298	cochlear apex
+T20.sandy	Entity 1159 1179	vestibular epithelia
+T22.sandy	KeyEntity 1542 1555	neurotrophins
+T23.sandy	Entity 1563 1570	cochlea
+T24.sandy	Entity 1574 1589	Brn3c null mice
+T25.sandy	Entity 1615 1630	sensory neurons
+T26.sandy	Entity 1652 1659	cochlea
+T27.sandy	KeyEntity 0 22	Brn3c null mutant mice
+T30.sandy	KeyEntity 68 98	afferent inner ear innervation
+T1.sandy	Entity 130 148	Brn3c null mutants
+T6.sandy	Entity 380 401	embryonic development
+T12.sandy	Entity 736 760	postnatal day 7/8 (P7/8)
+T17.sandy	Entity 1433 1454	functional hair cells
+T4.kevin	Entity 251 259	neonates
+T10.kevin	Entity 594 618	mutant sensory epithelia
+T11.kevin	Entity 623 634	DiI tracing
+T12.kevin	Entity 704 731	neurotrophin null mutations
+T15.kevin	Entity 899 913	mutant cochlea
+T16.kevin	Entity 955 974	immature hair cells
+T22.kevin	Entity 1311 1338	MyoVIIa positive hair cells
+T23.kevin	Entity 1372 1391	cochlea projections
+T24.kevin	Entity 1413 1415	P8
+T30.kevin	Entity 1724 1745	apical spiral neurons
+R8.sandy	is_part_of Arg1:T23.sandy Arg2:T24.sandy	
+R1.sandy	interacts_with Arg1:T4.sandy Arg2:T5.sandy	
+R2.sandy	participates_in Arg1:T5.sandy Arg2:T6.sandy	
+R7.sandy	participates_in Arg1:T22.sandy Arg2:T23.sandy	
+R9.sandy	regulates Arg1:T22.sandy Arg2:T25.sandy	
+R10.sandy	is_part_of Arg1:T30.sandy Arg2:T27.sandy	
+T1	Entity 467 478	innervation
+R1	participates_in Arg1:T10.sandy Arg2:T10.kevin	
+R2	participates_in Arg1:T11.sandy Arg2:T10.kevin	

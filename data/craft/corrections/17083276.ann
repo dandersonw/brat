@@ -1,0 +1,84 @@
+T3.sandy	Entity 184 204	genome reprogramming
+T4.sandy	FIX_TYPE 252 280	chromatin assembly machinery
+T6.sandy	KeyEntity 321 356	chromatin assembly factor 1 (CAF-1)
+T7.sandy	Entity 364 392	pre-implantation development
+T8.sandy	FIX_TYPE 489 498	p150CAF-1
+T9.sandy	Entity 549 569	developmental arrest
+T10.sandy	Entity 577 590	16-cell stage
+T12.sandy	Entity 691 719	constitutive heterochromatin
+T13.sandy	Entity 768 791	heterochromatin domains
+T14.sandy	Entity 832 862	two-cell and blastocyst stages
+T15.sandy	KeyEntity 1071 1076	CAF-1
+T17.sandy	Entity 1134 1161	preimplantation development
+T18.sandy	Entity 1249 1264	mislocalization
+T20.sandy	Entity 1308 1343	pericentric heterochromatin domains
+T22.sandy	Entity 1469 1496	pericentric heterochromatin
+T23.sandy	FIX_TYPE 1703 1731	heterochromatin organization
+T24.sandy	Entity 1735 1762	pluripotent embryonic cells
+T25.sandy	KeyEntity 1668 1673	CAF-1
+T26.sandy	FIX_TYPE 1803 1831	chromatin assembly machinery
+T27.sandy	Entity 1851 1871	spatial organization
+T28.sandy	Entity 1876 1894	epigenetic marking
+T29.sandy	Entity 1912 1925	early embryos
+T30.sandy	Entity 1930 1950	embryonic stem cells
+T1.sandy	KeyEntity 0 5	CAF-1
+T2.sandy	FIX_TYPE 23 51	Heterochromatin Organization
+T31.sandy	FIX_TYPE 55 82	Pluripotent Embryonic Cells
+T5.sandy	FIX_TYPE 603 612	p150CAF-1
+T11.sandy	VERIFY_KeyEntity 667 687	nuclear organization
+T16.sandy	FIX_SPAN_Entity 1097 1126	maturation of heterochromatin
+T19.sandy	FIX_SPAN_Entity 1266 1284	loss of clustering
+T21.sandy	FIX_SPAN_Entity 1416 1446	epigenetic histone methylation
+T32.sandy	FIX_SPAN_Entity 500 517	Loss of p150CAF-1
+T33.sandy	FIX_SPAN_Entity 867 876	p150CAF-1
+T34.sandy	FIX_SPAN_Entity 1188 1210	depletion of p150CAF-1
+T35.sandy	FIX_SPAN_Entity 1358 1371	loss of CAF-1
+T1.kevin	VERIFY_Entity 101 122	mammalian development
+T2.kevin	VERIFY_Entity 124 142	chromatin dynamics
+T3.kevin	VERIFY_Entity 147 165	epigenetic marking
+T8.kevin	FIX_SPAN_KeyEntity 508 517	p150CAF-1
+T12.kevin	VERIFY_Entity 749 766	wild-type embryos
+T16.kevin	FIX_SPAN_KeyEntity 867 905	p150CAF-1 mutant 16-cell stage embryos
+T17.kevin	VERIFY_Entity 935 950	heterochromatin
+T18.kevin	VERIFY_Entity 993 1008	heterochromatin
+T20.kevin	VERIFY_Entity 1012 1053	two- to four-cell stage wild-type embryos
+T22.kevin	FIX_SPAN_Entity 1111 1126	heterochromatin
+T23.kevin	VERIFY_Entity 1166 1186	embryonic stem cells
+T24.kevin	FIX_SPAN_KeyEntity 1201 1210	p150CAF-1
+T26.kevin	FIX_SPAN_Entity 1274 1284	clustering
+T28.kevin	FIX_SPAN_KeyEntity 1366 1371	CAF-1
+T29.kevin	FIX_SPAN_Entity 1416 1452	epigenetic histone methylation marks
+T31.kevin	VERIFY_KeyEntity 1552 1598	p150CAF-1-depleted mouse embryonic fibroblasts
+T41.kevin	VERIFY_Entity 409 419	mouse line
+R2.sandy	FIX_RELATION_TYPE Arg1:T6.sandy Arg2:T7.sandy	
+R4.sandy	FIX_RELATION_TYPE Arg1:T13.sandy Arg2:T14.sandy	
+R8.sandy	regulates Arg1:T25.sandy Arg2:T23.sandy	
+R9.sandy	FIX_RELATION_TYPE Arg1:T23.sandy Arg2:T24.sandy	
+R10.sandy	FIX_RELATION_TYPE Arg1:T26.sandy Arg2:T27.sandy	
+R11.sandy	FIX_RELATION_TYPE Arg1:T26.sandy Arg2:T28.sandy	
+R12.sandy	participates_in Arg1:T1.sandy Arg2:T2.sandy	
+R13.sandy	FIX_RELATION_TYPE Arg1:T2.sandy Arg2:T31.sandy	
+R3.sandy	VERIFY_participates_in Arg1:T12.sandy Arg2:T11.sandy	
+R5.sandy	VERIFY_regulates Arg1:T15.sandy Arg2:T16.sandy	
+R6.sandy	VERIFY_participates_in Arg1:T16.sandy Arg2:T17.sandy	
+R7.sandy	VERIFY_participates_in Arg1:T21.sandy Arg2:T22.sandy	
+R1.kevin	VERIFY_participates_in Arg1:T3.kevin Arg2:T3.sandy	
+R2.kevin	VERIFY_participates_in Arg1:T2.kevin Arg2:T3.sandy	
+R3.kevin	VERIFY_is_part_of Arg1:T3.sandy Arg2:T1.kevin	
+R5.kevin	VERIFY_is_part_of Arg1:T8.sandy Arg2:T41.kevin	
+R6.kevin	VERIFY_interacts_with Arg1:T8.kevin Arg2:T9.sandy	
+R7.kevin	VERIFY_is_part_of Arg1:T9.sandy Arg2:T10.sandy	
+R8.kevin	VERIFY_interacts_with Arg1:T5.sandy Arg2:T12.sandy	
+R9.kevin	VERIFY_is_part_of Arg1:T13.sandy Arg2:T12.kevin	
+R12.kevin	VERIFY_is_part_of Arg1:T17.kevin Arg2:T16.kevin	
+R13.kevin	VERIFY_is_part_of Arg1:T18.kevin Arg2:T20.kevin	
+R14.kevin	VERIFY_participates_in Arg1:T15.sandy Arg2:T22.kevin	
+R15.kevin	VERIFY_is_part_of Arg1:T22.kevin Arg2:T17.sandy	
+R16.kevin	VERIFY_participates_in Arg1:T24.kevin Arg2:T18.sandy	
+R17.kevin	VERIFY_participates_in Arg1:T24.kevin Arg2:T26.kevin	
+R18.kevin	VERIFY_is_part_of Arg1:T24.kevin Arg2:T23.kevin	
+R19.kevin	VERIFY_participates_in Arg1:T24.kevin Arg2:T20.sandy	
+R20.kevin	VERIFY_participates_in Arg1:T28.kevin Arg2:T29.kevin	
+R21.kevin	VERIFY_is_part_of Arg1:T29.kevin Arg2:T22.sandy	
+R26.kevin	VERIFY_is_part_of Arg1:T28.sandy Arg2:T29.sandy	
+R27.kevin	VERIFY_is_part_of Arg1:T28.sandy Arg2:T30.sandy	

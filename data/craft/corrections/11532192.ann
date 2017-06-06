@@ -1,0 +1,62 @@
+T2.sandy	KeyEntity 150 176	intraocular pressure (IOP)
+T3.sandy	Entity 526 536	IOP ranges
+T7.sandy	Entity 692 706	diurnal rhythm
+T14.sandy	KeyEntity 991 1011	Albino C57BL/6J mice
+T23.sandy	Entity 1529 1532	Tyr
+T1.sandy	KeyEntity 251 255	IOPs
+T27.sandy	Entity 259 293	genetically distinct mouse strains
+T31.sandy	KeyEntity 361 364	IOP
+T33.sandy	KeyEntity 463 466	IOP
+T5.sandy	Entity 612 617	aging
+T6.sandy	Entity 632 644	IOP decrease
+T11.sandy	Entity 944 951	obesity
+T12.sandy	Entity 956 964	diabetes
+T13.sandy	Entity 976 989	increased IOP
+T16.sandy	Entity 1064 1075	higher IOPs
+T17.sandy	Entity 1359 1362	Age
+T18.sandy	Entity 1364 1375	time of day
+T19.sandy	Entity 1377 1384	obesity
+T20.sandy	Entity 1389 1397	diabetes
+T22.sandy	Entity 1520 1524	Lepr
+T24.sandy	Entity 1544 1557	increased IOP
+T25.sandy	KeyEntity 0 20	Intraocular pressure
+T26.sandy	Entity 45 49	mice
+T28.sandy	Entity 333 336	age
+T29.sandy	Entity 338 341	sex
+T30.sandy	Entity 346 357	time of day
+T36.sandy	Entity 65 78	strain survey
+T5.kevin	Entity 435 459	candidate gene mutations
+T7.kevin	Entity 503 516	mouse strains
+T9.kevin	KeyEntity 604 607	IOP
+T12.kevin	KeyEntity 712 715	IOP
+T13.kevin	Entity 769 781	Homozygosity
+T14.kevin	Entity 788 799	null allele
+T15.kevin	KeyEntity 807 841	carbonic anhydrase II gene (Car2n)
+T16.kevin	KeyEntity 857 860	IOP
+T17.kevin	Entity 867 879	homozygosity
+T21.kevin	KeyEntity 1029 1058	tyrosinase mutation (Tyrc-2J)
+T23.kevin	KeyEntity 1213 1217	IOPs
+T24.kevin	KeyEntity 1225 1228	IOP
+T25.kevin	KeyEntity 1354 1357	IOP
+T26.kevin	Entity 1414 1423	mouse IOP
+T30.kevin	KeyEntity 1669 1683	IOP regulation
+T31.kevin	KeyEntity 1717 1720	IOP
+T32.kevin	Entity 1470 1479	Mutations
+R1.sandy	is_part_of Arg1:T1.sandy Arg2:T27.sandy	
+R3.sandy	participates_in Arg1:T5.sandy Arg2:T6.sandy	
+R10.sandy	is_part_of Arg1:T16.sandy Arg2:T14.sandy	
+R11.sandy	participates_in Arg1:T22.sandy Arg2:T24.sandy	
+R12.sandy	participates_in Arg1:T23.sandy Arg2:T24.sandy	
+R13.sandy	participates_in Arg1:T28.sandy Arg2:T31.sandy	
+R14.sandy	participates_in Arg1:T29.sandy Arg2:T31.sandy	
+R15.sandy	participates_in Arg1:T30.sandy Arg2:T31.sandy	
+R17.sandy	is_part_of Arg1:T25.sandy Arg2:T26.sandy	
+R2.kevin	interacts_with Arg1:T5.kevin Arg2:T33.sandy	
+R4.kevin	is_part_of Arg1:T32.kevin Arg2:T23.sandy	
+T2	KeyEntity 902 931	leptin receptor gene (Leprdb)
+R1	is_part_of Arg1:T21.kevin Arg2:T14.sandy	
+R2	participates_in Arg1:T2 Arg2:T11.sandy	
+R3	participates_in Arg1:T2 Arg2:T12.sandy	
+R4	participates_in Arg1:T2 Arg2:T13.sandy	
+R5	is_part_of Arg1:T32.kevin Arg2:T22.sandy	
+R6	interacts_with Arg1:T32.kevin Arg2:T24.sandy	

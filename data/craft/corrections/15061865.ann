@@ -1,0 +1,60 @@
+T3.sandy	Entity 255 279	external sensory stimuli
+T6.sandy	Entity 434 452	dopamine signaling
+T7.sandy	Entity 473 480	D1-like
+T8.sandy	KeyEntity 484 501	D2-like receptors
+T9.sandy	Entity 523 540	D1-like receptors
+T11.sandy	Entity 697 736	dopamine D2 receptor-mediated signaling
+T12.sandy	Entity 799 812	C57Bl/6J mice
+T16.sandy	KeyEntity 1093 1110	reversal learning
+T5.sandy	KeyEntity 629 641	D2 receptors
+T20.sandy	KeyEntity 1165 1200	dopamine D2 receptor deficient mice
+T23.sandy	KeyEntity 1445 1480	dopamine D2 receptor deficient mice
+T26.sandy	KeyEntity 1712 1747	dopamine D2 receptor deficient mice
+T32.sandy	Entity 2110 2145	dopamine D2 receptor deficient mice
+T33.sandy	Entity 2331 2351	dopamine D2 receptor
+T1.sandy	KeyEntity 115 134	Dopamine modulation
+T2.sandy	KeyEntity 138 156	neuronal signaling
+T4.sandy	Entity 306 324	environmental cues
+T10.sandy	Entity 557 580	goal-directed behaviors
+T14.sandy	Entity 967 990	stimulus discrimination
+T15.sandy	Entity 1011 1046	inappropriate behavioral strategies
+T19.sandy	Entity 1123 1160;1196 1200	Mildly food-deprived female wild-type mice
+T22.sandy	Entity 1241 1265	visible food reinforcers
+T35.sandy	Entity 0 21	Dopamine D2 receptors
+T36.sandy	KeyEntity 30 53	two-odor discrimination
+T37.sandy	KeyEntity 58 75	reversal learning
+T38.sandy	Entity 79 91	C57BL/6 mice
+T1.kevin	Entity 164 178	frontal cortex
+T2.kevin	Entity 180 188	midbrain
+T3.kevin	Entity 194 202	striatum
+T12.kevin	KeyEntity 834 866	functional dopamine D2 receptors
+T13.kevin	Entity 870 884	wild-type mice
+T23.kevin	KeyEntity 1879 1899	Inbred C57Bl/6J mice
+T24.kevin	Entity 1940 1972	functional dopamine D2 receptors
+T25.kevin	Entity 1988 1997	olfaction
+T31.kevin	Entity 2041 2080	odor-driven reinforcement contingencies
+R4.sandy	participates_in Arg1:T7.sandy Arg2:T6.sandy	
+R5.sandy	participates_in Arg1:T8.sandy Arg2:T6.sandy	
+R1.sandy	is_part_of Arg1:T1.sandy Arg2:T2.sandy	
+R3.sandy	is_subclass_of Arg1:T4.sandy Arg2:T3.sandy	
+R10.sandy	participates_in Arg1:T15.sandy Arg2:T16.sandy	
+T1	Entity 752 763;777 785	associative learning
+T2	Entity 768 785	reversal learning
+R1	participates_in Arg1:T11.sandy Arg2:T1	
+R2	participates_in Arg1:T11.sandy Arg2:T2	
+R3	is_part_of Arg1:T12.kevin Arg2:T12.sandy	
+#1	AnnotatorNotes R3	*lacking
+R4	participates_in Arg1:T12.kevin Arg2:T14.sandy	
+R5	is_part_of Arg1:T2.sandy Arg2:T1.kevin	
+R6	is_part_of Arg1:T2.sandy Arg2:T2.kevin	
+R7	is_part_of Arg1:T2.sandy Arg2:T3.kevin	
+R8	participates_in Arg1:T2.sandy Arg2:T3.sandy	
+R9	participates_in Arg1:T2.sandy Arg2:T4.sandy	
+T3	Entity 2380 2391;2405 2413	associative learning
+T4	Entity 2396 2413	reversal learning
+R10	regulates Arg1:T33.sandy Arg2:T3	
+R11	regulates Arg1:T33.sandy Arg2:T4	
+R12	is_part_of Arg1:T24.kevin Arg2:T23.kevin	
+#2	AnnotatorNotes R12	*lack
+R13	interacts_with Arg1:T19.sandy Arg2:T22.sandy	
+R14	interacts_with Arg1:T20.sandy Arg2:T22.sandy	

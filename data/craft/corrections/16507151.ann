@@ -1,0 +1,65 @@
+T1.sandy	FIX_TYPE 93 119	Collagen-induced arthritis
+T3.sandy	FIX_TYPE 219 239	rheumatoid arthritis
+T4.sandy	FIX_TYPE 247 273	collagen-induced arthritis
+T7.sandy	Entity 392 412	rheumatoid arthritis
+T8.sandy	FIX_TYPE 519 545	collagen-induced arthritis
+T13.sandy	Entity 859 881	microsatellite markers
+T17.sandy	Entity 1001 1014	chromosome 11
+T18.sandy	FIX_TYPE 1024 1029	Cia40
+T20.sandy	Entity 1075 1092	pregnancy failure
+T25.sandy	Entity 1236 1248	chromosome 1
+T27.sandy	Entity 1327 1359	collagen type II antibody titers
+T28.sandy	Entity 1378 1391	chromosome 13
+T29.sandy	Entity 1427 1436	gene loci
+T30.sandy	Entity 1445 1454	arthritis
+T31.sandy	Entity 1458 1482	aged multiparous females
+T32.sandy	Entity 1535 1552	pregnancy failure
+T21.sandy	FIX_TYPE 18 49	collagen-induced arthritis loci
+T2.sandy	VERIFY_Entity 161 191	autoimmune experimental models
+T5.sandy	VERIFY_Entity 287 304	polygenic disease
+T6.sandy	VERIFY_Entity 357 382	disease-controlling genes
+T9.sandy	FIX_SPAN_Entity 594 599	NFR/N
+T10.sandy	FIX_SPAN_Entity 604 609	B10.Q
+T11.sandy	FIX_SPAN_Entity 611 625	H-2q haplotype
+T12.sandy	VERIFY_Entity 672 694	reproductive histories
+T15.sandy	FIX_SPAN_Entity 951 970	arthritis incidence
+T16.sandy	FIX_SPAN_Entity 972 980	severity
+T19.sandy	VERIFY_Entity 1038 1049	colocalizes
+T22.sandy	VERIFY_Entity 1181 1190	incidence
+T23.sandy	VERIFY_Entity 1192 1200	severity
+T24.sandy	VERIFY_Entity 1205 1217	day of onset
+T14.sandy	FIX_SPAN_Entity 985 997	day of onset
+T26.sandy	FIX_SPAN_Entity 53 81	aged multiparous female mice
+T6.kevin	VERIFY_Entity 558 574	aged female mice
+T7.kevin	FIX_SPAN_KeyEntity 594 626	NFR/N and B10.Q (H-2q haplotype)
+T8.kevin	VERIFY_Entity 822 849	total genome-wide screening
+T10.kevin	VERIFY_Entity 912 936	quantitative trait locus
+T11.kevin	VERIFY_Entity 1057 1062	locus
+T13.kevin	VERIFY_Entity 1109 1133	quantitative trait locus
+T15.kevin	VERIFY_Entity 1286 1310	quantitative trait locus
+T23.kevin	FIX_SPAN_Entity 951 988	arthritis incidence, severity and day
+T26.kevin	FIX_SPAN_Entity 58 81	multiparous female mice
+R16.sandy	regulates Arg1:T29.sandy Arg2:T30.sandy	
+R1.sandy	VERIFY_participates_in Arg1:T1.sandy Arg2:T2.sandy	
+R2.sandy	VERIFY_participates_in Arg1:T3.sandy Arg2:T2.sandy	
+R3.sandy	VERIFY_is_part_of Arg1:T4.sandy Arg2:T5.sandy	
+R4.sandy	VERIFY_is_part_of Arg1:T10.sandy Arg2:T11.sandy	
+R5.sandy	VERIFY_is_part_of Arg1:T9.sandy Arg2:T11.sandy	
+R6.sandy	VERIFY_is_subclass_of Arg1:T8.sandy Arg2:T7.sandy	
+R7.sandy	VERIFY_participates_in Arg1:T17.sandy Arg2:T15.sandy	
+R8.sandy	VERIFY_participates_in Arg1:T17.sandy Arg2:T16.sandy	
+R9.sandy	VERIFY_participates_in Arg1:T17.sandy Arg2:T14.sandy	
+R10.sandy	VERIFY_is_part_of Arg1:T17.sandy Arg2:T18.sandy	
+R11.sandy	VERIFY_participates_in Arg1:T18.sandy Arg2:T20.sandy	
+R12.sandy	VERIFY_participates_in Arg1:T22.sandy Arg2:T25.sandy	
+R13.sandy	VERIFY_participates_in Arg1:T23.sandy Arg2:T25.sandy	
+R14.sandy	VERIFY_participates_in Arg1:T24.sandy Arg2:T25.sandy	
+R15.sandy	VERIFY_participates_in Arg1:T27.sandy Arg2:T28.sandy	
+R17.sandy	VERIFY_participates_in Arg1:T29.sandy Arg2:T32.sandy	
+R18.sandy	VERIFY_is_part_of Arg1:T21.sandy Arg2:T26.sandy	
+R2.kevin	VERIFY_participates_in Arg1:T13.sandy Arg2:T8.kevin	
+R3.kevin	VERIFY_participates_in Arg1:T10.kevin Arg2:T23.kevin	
+R5.kevin	VERIFY_regulates Arg1:T11.kevin Arg2:T20.sandy	
+R7.kevin	VERIFY_is_part_of Arg1:T15.kevin Arg2:T28.sandy	
+R8.kevin	VERIFY_is_part_of Arg1:T10.kevin Arg2:T17.sandy	
+R10.kevin	VERIFY_is_part_of Arg1:T29.sandy Arg2:T31.sandy	

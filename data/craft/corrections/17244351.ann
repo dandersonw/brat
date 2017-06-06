@@ -1,0 +1,38 @@
+T2.sandy	FIX_TYPE 354 396	small-effect quantitative trait loci (QTL)
+T4.sandy	FIX_TYPE 400 432	collagen induced arthritis (CIA)
+T5.sandy	Entity 503 526	genome linkage analysis
+T10.sandy	FIX_TYPE 989 1001	CIA severity
+T13.sandy	FIX_TYPE 10 23	global genome
+T14.sandy	FIX_TYPE 28 41	transcriptome
+T16.sandy	FIX_TYPE 128 154	collagen-induced arthritis
+T6.sandy	VERIFY_Entity 638 662	gene expression patterns
+T7.sandy	FIX_SPAN_Entity 771 792	genomic region linked
+T8.sandy	FIX_SPAN_Entity 810 826	disease-specific
+T9.sandy	FIX_SPAN_Entity 877 892	strain-specific
+T11.sandy	FIX_SPAN_Entity 954 976	Eight small-effect QTL
+T12.sandy	FIX_SPAN_Entity 1205 1223	8 small-effect QTL
+T15.sandy	FIX_SPAN_Entity 69 124	candidate genes of small-effect quantitative trait loci
+T3.kevin	VERIFY_Entity 457 481	transcriptome approaches
+T5.kevin	VERIFY_Entity 530 540	F2 progeny
+T6.kevin	VERIFY_Entity 548 585	CIA susceptible and resistant strains
+T7.kevin	VERIFY_KeyEntity 600 616	small-effect QTL
+T8.kevin	VERIFY_KeyEntity 686 689	CIA
+T9.kevin	FIX_SPAN_Entity 771 785	genomic region
+T10.kevin	VERIFY_KeyEntity 796 799	CIA
+T11.kevin	FIX_SPAN_Entity 810 841	disease-specific differentially
+T12.kevin	VERIFY_KeyEntity 859 862	CIA
+T13.kevin	FIX_SPAN_Entity 877 907	strain-specific differentially
+T14.kevin	FIX_SPAN_KeyEntity 960 976	small-effect QTL
+T16.kevin	VERIFY_Entity 1059 1110	strain-specific and disease-specific differentially
+T17.kevin	VERIFY_Entity 1128 1131	CIA
+T18.kevin	FIX_SPAN_KeyEntity 1207 1223	small-effect QTL
+T19.kevin	VERIFY_Entity 439 452	global genome
+T22.kevin	FIX_SPAN_Entity 88 124	small-effect quantitative trait loci
+R3.sandy	VERIFY_participates_in Arg1:T11.sandy Arg2:T10.sandy	
+R4.sandy	VERIFY_interacts_with Arg1:T13.sandy Arg2:T15.sandy	
+R5.sandy	VERIFY_interacts_with Arg1:T14.sandy Arg2:T15.sandy	
+R1.kevin	VERIFY_participates_in Arg1:T2.sandy Arg2:T4.sandy	
+R2.kevin	VERIFY_is_subclass_of Arg1:T5.kevin Arg2:T6.kevin	
+R3.kevin	VERIFY_is_part_of Arg1:T9.kevin Arg2:T10.kevin	
+R5.kevin	VERIFY_regulates Arg1:T14.kevin Arg2:T10.sandy	
+R6.kevin	VERIFY_participates_in Arg1:T16.kevin Arg2:T17.kevin	

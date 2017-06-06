@@ -1,0 +1,30 @@
+T3.sandy	Entity 113 143	proprioceptive neuron survival
+T6.sandy	KeyEntity 186 204	NT-3 knockout mice
+T8.sandy	Entity 263 274	axon growth
+T12.sandy	Entity 357 376	dorsal root ganglia
+T15.sandy	Entity 493 508	muscle spindles
+T16.sandy	Entity 524 543	TrkC-positive axons
+T18.sandy	Entity 590 610	proprioceptive axons
+T24.sandy	Entity 742 768	dorsal root ganglion axons
+T25.sandy	KeyEntity 808 812	NT-3
+T26.sandy	Entity 823 860	short-distance axon guidance molecule
+T27.sandy	Entity 865 889	muscle sensory afferents
+T7.sandy	Entity 219 226	neurons
+T11.sandy	Entity 338 351	central axons
+T19.sandy	Entity 621 636	ectopic regions
+T20.sandy	Entity 644 655	spinal cord
+T21.sandy	Entity 675 682	midline
+T22.sandy	Entity 707 730	chemoattractant effects
+T23.sandy	KeyEntity 734 738	NT-3
+T29.sandy	KeyEntity 35 63	Proprioceptive Axon Guidance
+T1.kevin	KeyEntity 75 96	Neurotrophin-3 (NT-3)
+T3.kevin	KeyEntity 161 182	proapoptotic gene Bax
+T6.kevin	Entity 293 307	NT-3 signaling
+R1.kevin	participates_in Arg1:T1.kevin Arg2:T3.sandy	
+R2.kevin	is_part_of Arg1:T3.kevin Arg2:T6.sandy	
+T1	KeyEntity 27 31	NT-3
+T2	Entity 2 17	Chemoattractant
+T3	Entity 309 333;346 351	TrkC-positive peripheral axons
+T4	Entity 570 577	muscles
+R1	interacts_with Arg1:T25.sandy Arg2:T27.sandy	
+R2	interacts_with Arg1:T22.sandy Arg2:T24.sandy	
