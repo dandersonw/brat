@@ -1,5 +1,5 @@
 T3.sandy	Entity 113 143	proprioceptive neuron survival
-T6.sandy	FIX_TYPE 186 204	NT-3 knockout mice
+T6.sandy	KeyEntity 186 204	NT-3 knockout mice
 T8.sandy	Entity 263 274	axon growth
 T12.sandy	Entity 357 376	dorsal root ganglia
 T15.sandy	Entity 493 508	muscle spindles
@@ -9,41 +9,22 @@ T24.sandy	Entity 742 768	dorsal root ganglion axons
 T25.sandy	KeyEntity 808 812	NT-3
 T26.sandy	Entity 823 860	short-distance axon guidance molecule
 T27.sandy	Entity 865 889	muscle sensory afferents
-T1.sandy	FIX_SPAN_KeyEntity 75 89	Neurotrophin-3
-T2.sandy	FIX_SPAN_KeyEntity 91 95	NT-3
-T4.sandy	FIX_SPAN_Entity 161 178	proapoptotic gene
-T5.sandy	FIX_SPAN_Entity 179 182	Bax
-T7.sandy	VERIFY_Entity 219 226	neurons
-T9.sandy	FIX_SPAN_Entity 282 307	absence of NT-3 signaling
-T10.sandy	FIX_SPAN_Entity 309 333	TrkC-positive peripheral
-T11.sandy	FIX_SPAN_Entity 338 351	central axons
-T13.sandy	VERIFY_Entity 455 472	fail to innervate
-T14.sandy	VERIFY_Entity 424 433	proximity
-T17.sandy	VERIFY_Entity 563 577	target muscles
-T19.sandy	FIX_SPAN_Entity 621 636	ectopic regions
-T20.sandy	FIX_SPAN_Entity 644 655	spinal cord
-T21.sandy	VERIFY_Entity 675 682	midline
-T22.sandy	FIX_SPAN_Entity 707 730	chemoattractant effects
-T23.sandy	FIX_SPAN_KeyEntity 734 738	NT-3
-T28.sandy	VERIFY_KeyEntity 2 22;27 31	Chemoattractant Role NT-3
-T29.sandy	VERIFY_KeyEntity 35 63	Proprioceptive Axon Guidance
-T1.kevin	FIX_SPAN_KeyEntity 75 96	Neurotrophin-3 (NT-3)
-T3.kevin	FIX_SPAN_KeyEntity 161 182	proapoptotic gene Bax
-T6.kevin	FIX_SPAN_Entity 293 307	NT-3 signaling
-T7.kevin	FIX_SPAN_Entity 309 333;338 351	TrkC-positive peripheral central axons
-T15.kevin	FIX_SPAN_KeyEntity 707 738	chemoattractant effects of NT-3
-T16.kevin	FIX_SPAN_Entity 621 636;644 655	ectopic regions spinal cord
-R3.sandy	VERIFY_is_subclass_of Arg1:T5.sandy Arg2:T4.sandy	
-R4.sandy	VERIFY_participates_in Arg1:T6.sandy Arg2:T7.sandy	
-R5.sandy	VERIFY_participates_in Arg1:T6.sandy Arg2:T8.sandy	
-R6.sandy	VERIFY_participates_in Arg1:T10.sandy Arg2:T13.sandy	
-R7.sandy	VERIFY_participates_in Arg1:T11.sandy Arg2:T13.sandy	
-R9.sandy	VERIFY_interacts_with Arg1:T18.sandy Arg2:T19.sandy	
-R10.sandy	VERIFY_interacts_with Arg1:T18.sandy Arg2:T20.sandy	
-R11.sandy	VERIFY_is_part_of Arg1:T22.sandy Arg2:T23.sandy	
-R12.sandy	VERIFY_participates_in Arg1:T23.sandy Arg2:T24.sandy	
-R13.sandy	VERIFY_interacts_with Arg1:T25.sandy Arg2:T26.sandy	
-R14.sandy	VERIFY_interacts_with Arg1:T25.sandy Arg2:T27.sandy	
-R1.kevin	VERIFY_participates_in Arg1:T1.kevin Arg2:T3.sandy	
-R2.kevin	VERIFY_is_part_of Arg1:T3.kevin Arg2:T6.sandy	
-R3.kevin	VERIFY_participates_in Arg1:T15.kevin Arg2:T24.sandy	
+T7.sandy	Entity 219 226	neurons
+T11.sandy	Entity 338 351	central axons
+T19.sandy	Entity 621 636	ectopic regions
+T20.sandy	Entity 644 655	spinal cord
+T21.sandy	Entity 675 682	midline
+T22.sandy	Entity 707 730	chemoattractant effects
+T23.sandy	KeyEntity 734 738	NT-3
+T29.sandy	KeyEntity 35 63	Proprioceptive Axon Guidance
+T1.kevin	KeyEntity 75 96	Neurotrophin-3 (NT-3)
+T3.kevin	KeyEntity 161 182	proapoptotic gene Bax
+T6.kevin	Entity 293 307	NT-3 signaling
+R1.kevin	participates_in Arg1:T1.kevin Arg2:T3.sandy	
+R2.kevin	is_part_of Arg1:T3.kevin Arg2:T6.sandy	
+T1	KeyEntity 27 31	NT-3
+T2	Entity 2 17	Chemoattractant
+T3	Entity 309 333;346 351	TrkC-positive peripheral axons
+T4	Entity 570 577	muscles
+R1	interacts_with Arg1:T25.sandy Arg2:T27.sandy	
+R2	interacts_with Arg1:T22.sandy Arg2:T24.sandy	

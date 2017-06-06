@@ -1,9 +1,9 @@
-T1.sandy	Entity 150 160	Huntingtin
-T2.sandy	FIX_TYPE 166 173	HD gene
+T1.sandy	KeyEntity 150 160	Huntingtin
+T2.sandy	KeyEntity 166 173	HD gene
 T4.sandy	Entity 228 248	Huntington's disease
 T5.sandy	Entity 265 287	extraembryonic tissues
 T10.sandy	Entity 435 468	whole mount in situ hybridization
-T11.sandy	FIX_TYPE 480 500	embryonic patterning
+T11.sandy	KeyEntity 480 500	embryonic patterning
 T12.sandy	Entity 505 518	morphogenesis
 T17.sandy	Entity 744 770	shortened primitive streak
 T23.sandy	Entity 990 1017	failure of head development
@@ -18,73 +18,58 @@ T46.sandy	Entity 1866 1888	extraembryonic tissues
 T48.sandy	Entity 2023 2055	dominant polyglutamine expansion
 T49.sandy	Entity 2059 2069	huntingtin
 T51.sandy	Entity 2104 2124	Huntington's disease
-T3.sandy	VERIFY_Entity 201 224	polyglutamine expansion
-T6.sandy	FIX_SPAN_Entity 292 311	proper gastrulation
-T7.sandy	VERIFY_Entity 343 352	nutrition
-T8.sandy	VERIFY_Entity 356 366	patterning
-T9.sandy	VERIFY_Entity 374 391	developing embryo
-T13.sandy	FIX_SPAN_Entity 522 541	homozygous Hdhex4/5
-T14.sandy	FIX_SPAN_Entity 542 570	huntingtin deficient embryos
-T15.sandy	VERIFY_Entity 661 677	E7.0–7.5 embryos
-T16.sandy	VERIFY_Entity 710 728	patterning defects
-T18.sandy	FIX_SPAN_Entity 785 796	proper node
-T19.sandy	FIX_SPAN_Entity 826 853	anterior streak derivatives
-T20.sandy	FIX_SPAN_Entity 903 930	decreased paraxial mesoderm
-T21.sandy	FIX_SPAN_Entity 935 958	reduced Otx2 expression
-T22.sandy	VERIFY_Entity 971 980	headfolds
-T24.sandy	FIX_SPAN_Entity 863 868	Wnt3a
-T25.sandy	VERIFY_Entity 870 874	Tbx6
-T26.sandy	VERIFY_Entity 879 883	Dll1
-T27.sandy	VERIFY_Entity 1101 1110	posterior
-T28.sandy	FIX_SPAN_Entity 1154 1159	Nodal
-T29.sandy	FIX_SPAN_Entity 1161 1165	Fgf8
-T30.sandy	FIX_SPAN_Entity 1170 1173	Gsc
-T35.sandy	VERIFY_Entity 1328 1355	anterior/posterior polarity
-T36.sandy	VERIFY_Entity 1374 1397	single primitive streak
-T37.sandy	VERIFY_Entity 1441 1458	anterior epiblast
-T38.sandy	FIX_SPAN_Entity 1463 1489	anterior visceral endoderm
-T40.sandy	VERIFY_Entity 1555 1571	early patterning
-T41.sandy	VERIFY_Entity 1579 1585	embryo
-T42.sandy	FIX_SPAN_Entity 1607 1622	anterior region
-T43.sandy	FIX_SPAN_Entity 1630 1646	primitive streak
-T47.sandy	FIX_SPAN_Entity 1908 1935	anterior streak development
-T50.sandy	VERIFY_Entity 2085 2100	loss of neurons
-T52.sandy	VERIFY_KeyEntity 20 51	Huntington's disease gene (Hdh)
-T53.sandy	VERIFY_KeyEntity 60 85	anterior streak formation
-T54.sandy	VERIFY_KeyEntity 90 106	early patterning
-T55.sandy	VERIFY_Entity 114 126	mouse embryo
-T5.kevin	FIX_SPAN_Entity 299 311	gastrulation
-T9.kevin	FIX_SPAN_KeyEntity 522 570	homozygous Hdhex4/5 huntingtin deficient embryos
-T2.kevin	VERIFY_Entity 600 610	huntingtin
-T12.kevin	FIX_SPAN_Entity 772 796	absence of a proper node
-T13.kevin	FIX_SPAN_Entity 801 853	diminished production of anterior streak derivatives
-T14.kevin	FIX_SPAN_Entity 863 868;884 894	Wnt3a expression
-T17.kevin	FIX_SPAN_Entity 913 930	paraxial mesoderm
-T18.kevin	FIX_SPAN_Entity 943 958	Otx2 expression
-T20.kevin	FIX_SPAN_Entity 1132 1173	ectopic expression of Nodal, Fgf8 and Gsc
-T22.kevin	FIX_SPAN_Entity 1463 1495	anterior visceral endoderm (AVE)
-T24.kevin	FIX_SPAN_Entity 1607 1646	anterior region of the primitive streak
-T27.kevin	VERIFY_Entity 1848 1858	huntingtin
-T29.kevin	FIX_SPAN_Entity 1901 1935	normal anterior streak development
-T36.kevin	VERIFY_Entity 1259 1318	impaired posterior restriction and anterior streak deficits
-R2.sandy	VERIFY_is_part_of Arg1:T3.sandy Arg2:T2.sandy	
-R3.sandy	VERIFY_regulates Arg1:T2.sandy Arg2:T5.sandy	
-R4.sandy	VERIFY_participates_in Arg1:T13.sandy Arg2:T11.sandy	
-R5.sandy	VERIFY_participates_in Arg1:T13.sandy Arg2:T12.sandy	
-R6.sandy	VERIFY_participates_in Arg1:T24.sandy Arg2:T23.sandy	
-R7.sandy	VERIFY_participates_in Arg1:T25.sandy Arg2:T23.sandy	
-R8.sandy	VERIFY_participates_in Arg1:T26.sandy Arg2:T23.sandy	
-R9.sandy	VERIFY_participates_in Arg1:T28.sandy Arg2:T27.sandy	
-R10.sandy	VERIFY_participates_in Arg1:T29.sandy Arg2:T27.sandy	
-R11.sandy	VERIFY_participates_in Arg1:T30.sandy Arg2:T27.sandy	
-R12.sandy	VERIFY_regulates Arg1:T39.sandy Arg2:T40.sandy	
-R13.sandy	VERIFY_participates_in Arg1:T39.sandy Arg2:T42.sandy	
-R14.sandy	VERIFY_regulates Arg1:T39.sandy Arg2:T44.sandy	
-R15.sandy	VERIFY_participates_in Arg1:T39.sandy Arg2:T45.sandy	
-R16.sandy	VERIFY_is_part_of Arg1:T48.sandy Arg2:T49.sandy	
-R17.sandy	VERIFY_participates_in Arg1:T48.sandy Arg2:T50.sandy	
-R2.kevin	VERIFY_participates_in Arg1:T5.sandy Arg2:T5.kevin	
-R3.kevin	VERIFY_interacts_with Arg1:T12.sandy Arg2:T9.kevin	
-R4.kevin	VERIFY_interacts_with Arg1:T11.sandy Arg2:T9.kevin	
-R5.kevin	VERIFY_is_part_of Arg1:T27.kevin Arg2:T46.sandy	
-R6.kevin	VERIFY_regulates Arg1:T46.sandy Arg2:T29.kevin	
+T3.sandy	Entity 201 224	polyglutamine expansion
+T7.sandy	Entity 343 352	nutrition
+T8.sandy	KeyEntity 356 366	patterning
+T9.sandy	Entity 374 391	developing embryo
+T15.sandy	Entity 661 677	E7.0–7.5 embryos
+T16.sandy	KeyEntity 710 728	patterning defects
+T19.sandy	Entity 826 853	anterior streak derivatives
+T22.sandy	Entity 971 980	headfolds
+T25.sandy	Entity 870 874;884 894	Tbx6 expression
+T26.sandy	Entity 879 883;884 894	Dll1 expression
+T27.sandy	Entity 1101 1110	posterior
+T28.sandy	Entity 1154 1159	Nodal
+T29.sandy	Entity 1161 1165	Fgf8
+T30.sandy	Entity 1170 1173	Gsc
+T36.sandy	Entity 1374 1397	single primitive streak
+T37.sandy	Entity 1441 1458	anterior epiblast
+T40.sandy	KeyEntity 1555 1571	early patterning
+T41.sandy	Entity 1579 1585	embryo
+T42.sandy	Entity 1607 1622	anterior region
+T43.sandy	Entity 1630 1646	primitive streak
+T52.sandy	KeyEntity 20 51	Huntington's disease gene (Hdh)
+T53.sandy	KeyEntity 60 85	anterior streak formation
+T54.sandy	KeyEntity 90 106	early patterning
+T55.sandy	Entity 114 126	mouse embryo
+T5.kevin	Entity 299 311	gastrulation
+T9.kevin	Entity 522 570	homozygous Hdhex4/5 huntingtin deficient embryos
+T2.kevin	KeyEntity 600 610	huntingtin
+T14.kevin	Entity 863 868;884 894	Wnt3a expression
+T17.kevin	Entity 913 930	paraxial mesoderm
+T18.kevin	Entity 943 958	Otx2 expression
+T22.kevin	Entity 1463 1495	anterior visceral endoderm (AVE)
+T27.kevin	KeyEntity 1848 1858	huntingtin
+T29.kevin	Entity 1901 1935	normal anterior streak development
+R2.sandy	is_part_of Arg1:T3.sandy Arg2:T2.sandy	
+R3.sandy	regulates Arg1:T2.sandy Arg2:T5.sandy	
+R7.sandy	participates_in Arg1:T25.sandy Arg2:T23.sandy	
+R8.sandy	participates_in Arg1:T26.sandy Arg2:T23.sandy	
+R12.sandy	regulates Arg1:T39.sandy Arg2:T40.sandy	
+R13.sandy	participates_in Arg1:T39.sandy Arg2:T42.sandy	
+R14.sandy	regulates Arg1:T39.sandy Arg2:T44.sandy	
+R15.sandy	regulates Arg1:T39.sandy Arg2:T45.sandy	
+R16.sandy	is_part_of Arg1:T48.sandy Arg2:T49.sandy	
+R2.kevin	participates_in Arg1:T5.sandy Arg2:T5.kevin	
+R3.kevin	participates_in Arg1:T9.kevin Arg2:T12.sandy	
+R4.kevin	participates_in Arg1:T9.kevin Arg2:T11.sandy	
+R5.kevin	is_part_of Arg1:T27.kevin Arg2:T46.sandy	
+R6.kevin	regulates Arg1:T46.sandy Arg2:T29.kevin	
+T1	Entity 792 796	node
+T2	Entity 1328 1336;1347 1355	anterior polarity
+T3	Entity 1337 1355	posterior polarity
+T4	Entity 1259 1289	impaired posterior restriction
+T5	Entity 1294 1318	anterior streak deficits
+R1	participates_in Arg1:T14.kevin Arg2:T23.sandy	
+T6	Entity 2093 2100	neurons
+R2	regulates Arg1:T48.sandy Arg2:T6	

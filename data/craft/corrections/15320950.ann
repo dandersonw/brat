@@ -2,12 +2,11 @@ T1.sandy	Entity 142 158	Pendred syndrome
 T2.sandy	Entity 169 197	autosomal-recessive disorder
 T3.sandy	Entity 215 234	congenital deafness
 T4.sandy	Entity 239 245	goiter
-T5.sandy	FIX_TYPE 273 280	SLC26A4
+T5.sandy	KeyEntity 273 280	SLC26A4
 T6.sandy	Entity 298 305	pendrin
-T7.sandy	FIX_TYPE 348 355	pendrin
-T8.sandy	FIX_TYPE 360 368	deafness
-T9.sandy	FIX_TYPE 391 401	Slc26a4+/+
-T10.sandy	FIX_TYPE 436 446	Slc26a4-/-
+T7.sandy	Entity 348 355	pendrin
+T8.sandy	Entity 360 368	deafness
+T9.sandy	Entity 391 401	Slc26a4+/+
 T11.sandy	Entity 473 480	pendrin
 T12.sandy	Entity 518 546	confocal immunocytochemistry
 T13.sandy	Entity 598 604	RT-PCR
@@ -27,66 +26,56 @@ T27.sandy	Entity 1019 1039	spindle-shaped cells
 T28.sandy	Entity 1043 1059	stria vascularis
 T30.sandy	Entity 1081 1091	root cells
 T31.sandy	Entity 1093 1109	Endolymph volume
-T32.sandy	FIX_TYPE 1113 1128	Slc26a4-/- mice
+T32.sandy	KeyEntity 1113 1128	Slc26a4-/- mice
 T33.sandy	Entity 1191 1215	type I and II fibrocytes
 T35.sandy	Entity 1257 1279	endocochlear potential
 T36.sandy	Entity 1311 1329	basal cell barrier
 T38.sandy	Entity 1337 1354	K+ channel KCNJ10
 T39.sandy	Entity 1388 1404	Stria vascularis
 T41.sandy	Entity 1449 1468	free radical damage
-T43.sandy	FIX_TYPE 1533 1544	KCNJ10 mRNA
-T44.sandy	FIX_TYPE 1562 1576	KCNJ10 protein
+T43.sandy	Entity 1533 1544	KCNJ10 mRNA
+T44.sandy	Entity 1562 1576	KCNJ10 protein
 T45.sandy	Entity 1589 1620	Endolymphatic K+ concentrations
 T47.sandy	Entity 1669 1681	K+ secretion
-T53.sandy	FIX_TYPE 0 33	Loss of KCNJ10 protein expression
-T54.sandy	FIX_TYPE 44 66	endocochlear potential
-T19.sandy	VERIFY_Entity 841 875	morphometric distance measurements
-T29.sandy	VERIFY_Entity 1147 1160	tissue masses
-T34.sandy	FIX_SPAN_Entity 1230 1240	Slc26a4-/-
-T40.sandy	VERIFY_Entity 1409 1423	hyperpigmented
-T42.sandy	VERIFY_Entity 1474 1492	basal cell barrier
-T46.sandy	VERIFY_Entity 1637 1654	membrane proteins
-T48.sandy	FIX_SPAN_Entity 1721 1726	KCNQ1
-T49.sandy	VERIFY_Entity 1731 1736	KCNE1
-T50.sandy	FIX_SPAN_Entity 1738 1763	Na+/2Cl-/K+ cotransporter
-T51.sandy	FIX_SPAN_Entity 1764 1771	SLC12A2
-T52.sandy	FIX_SPAN_Entity 1793 1797	GJB2
-T55.sandy	VERIFY_Entity 78 86	deafness
-T56.sandy	FIX_SPAN_KeyEntity 90 106	Pendred syndrome
-T57.sandy	FIX_SPAN_Entity 422 429	Slc26a4
-T10.kevin	FIX_SPAN_KeyEntity 406 410;422 434	lack Slc26a4 gene
-T21.kevin	VERIFY_Entity 1849 1868	pendrin dysfunction
-T22.kevin	VERIFY_Entity 1880 1913	loss of KCNJ10 protein expression
-T23.kevin	VERIFY_Entity 1920 1954	loss of the endocochlear potential
-T24.kevin	VERIFY_Entity 2001 2017	Pendred syndrome
-T25.kevin	VERIFY_Entity 1989 1997	deafness
-T31.kevin	VERIFY_Entity 1064 1076	outer sulcus
-T36.kevin	FIX_SPAN_Entity 1230 1245	Slc26a4-/- mice
-T46.kevin	FIX_SPAN_Entity 1710 1726	K+ channel KCNQ1
-T48.kevin	FIX_SPAN_Entity 1738 1771	Na+/2Cl-/K+ cotransporter SLC12A2
-T49.kevin	FIX_SPAN_Entity 1780 1797	gap junction GJB2
-T53.kevin	VERIFY_Entity 1510 1528	intermediate cells
-T56.kevin	FIX_SPAN_Entity 90 118	Pendred syndrome mouse model
+T54.sandy	Entity 44 66	endocochlear potential
+T19.sandy	Entity 841 875	morphometric distance measurements
+T29.sandy	Entity 1147 1160	tissue masses
+T40.sandy	Entity 1409 1423	hyperpigmented
+T42.sandy	Entity 1474 1492	basal cell barrier
+T46.sandy	Entity 1637 1654	membrane proteins
+T49.sandy	Entity 1731 1736	KCNE1
+T55.sandy	Entity 78 86	deafness
+T21.kevin	Entity 1849 1868	pendrin dysfunction
+T24.kevin	Entity 2001 2017	Pendred syndrome
+T25.kevin	Entity 1989 1997	deafness
+T31.kevin	Entity 1064 1076	outer sulcus
+T36.kevin	KeyEntity 1230 1245	Slc26a4-/- mice
+T46.kevin	Entity 1710 1726	K+ channel KCNQ1
+T48.kevin	Entity 1738 1771	Na+/2Cl-/K+ cotransporter SLC12A2
+T49.kevin	Entity 1780 1797	gap junction GJB2
+T53.kevin	Entity 1510 1528	intermediate cells
+T56.kevin	Entity 90 118	Pendred syndrome mouse model
 #1	AnnotatorNotes T12.sandy	experimental_test
 #2	AnnotatorNotes T13.sandy	experimental_test
 #3	AnnotatorNotes T16.sandy	experimental_procedure
 #6	AnnotatorNotes T18.sandy	experimental_procedure
 #4	AnnotatorNotes T21.sandy	experimental_test
 R1.sandy	is_subclass_of Arg1:T1.sandy Arg2:T2.sandy	
-R2.sandy	VERIFY_participates_in Arg1:T3.sandy Arg2:T1.sandy	
-R3.sandy	VERIFY_participates_in Arg1:T4.sandy Arg2:T1.sandy	
-R4.sandy	VERIFY_regulates Arg1:T5.sandy Arg2:T6.sandy	
-R5.sandy	VERIFY_interacts_with Arg1:T5.sandy Arg2:T1.sandy	
-R13.sandy	VERIFY_is_part_of Arg1:T23.sandy Arg2:T24.sandy	
-R14.sandy	VERIFY_is_part_of Arg1:T23.sandy Arg2:T28.sandy	
-R15.sandy	VERIFY_participates_in Arg1:T31.sandy Arg2:T32.sandy	
-R16.sandy	VERIFY_participates_in Arg1:T29.sandy Arg2:T33.sandy	
-R17.sandy	VERIFY_participates_in Arg1:T34.sandy Arg2:T35.sandy	
-R18.sandy	VERIFY_regulates Arg1:T38.sandy Arg2:T36.sandy	
-R20.sandy	VERIFY_participates_in Arg1:T41.sandy Arg2:T39.sandy	
-R21.sandy	VERIFY_regulates Arg1:T46.sandy Arg2:T47.sandy	
-R6.kevin	VERIFY_is_part_of Arg1:T25.sandy Arg2:T26.sandy	
-R5.kevin	VERIFY_is_part_of Arg1:T26.sandy Arg2:T24.sandy	
-R7.kevin	VERIFY_is_part_of Arg1:T27.sandy Arg2:T28.sandy	
-R8.kevin	VERIFY_is_part_of Arg1:T28.sandy Arg2:T24.sandy	
-R11.kevin	VERIFY_interacts_with Arg1:T53.sandy Arg2:T54.sandy	
+R2.sandy	participates_in Arg1:T3.sandy Arg2:T1.sandy	
+R3.sandy	participates_in Arg1:T4.sandy Arg2:T1.sandy	
+R4.sandy	regulates Arg1:T5.sandy Arg2:T6.sandy	
+R5.sandy	regulates Arg1:T5.sandy Arg2:T1.sandy	
+R13.sandy	is_part_of Arg1:T23.sandy Arg2:T24.sandy	
+R14.sandy	is_part_of Arg1:T23.sandy Arg2:T28.sandy	
+R15.sandy	is_part_of Arg1:T31.sandy Arg2:T32.sandy	
+R21.sandy	regulates Arg1:T46.sandy Arg2:T47.sandy	
+R6.kevin	is_part_of Arg1:T25.sandy Arg2:T26.sandy	
+R7.kevin	is_part_of Arg1:T27.sandy Arg2:T28.sandy	
+R8.kevin	is_part_of Arg1:T28.sandy Arg2:T24.sandy	
+T1	Entity 422 447	Slc26a4 gene (Slc26a4-/-)
+T2	Entity 8 33	KCNJ10 protein expression
+R1	participates_in Arg1:T2 Arg2:T54.sandy	
+T3	Entity 1888 1913	KCNJ10 protein expression
+T4	Entity 1932 1954	endocochlear potential
+R2	is_part_of Arg1:T25.sandy Arg2:T27.sandy	
+R3	is_part_of Arg1:T26.sandy Arg2:T28.sandy	

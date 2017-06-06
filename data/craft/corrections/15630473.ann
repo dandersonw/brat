@@ -1,5 +1,5 @@
 T1.sandy	Entity 148 176	multipotent epithelial sheet
-T2.sandy	FIX_TYPE 234 247	bud structure
+T2.sandy	Entity 234 247	bud structure
 T4.sandy	Entity 429 446	adhesion dynamics
 T5.sandy	Entity 451 464	proliferation
 T11.sandy	Entity 724 743	Snail misexpression
@@ -7,52 +7,47 @@ T12.sandy	Entity 753 771	hyperproliferation
 T13.sandy	Entity 778 813	reduction in intercellular adhesion
 T14.sandy	Entity 820 830	E-cadherin
 T17.sandy	Entity 879 896	adhesion proteins
-T19.sandy	FIX_TYPE 1008 1027	Ras-MAPK activation
+T19.sandy	Entity 1008 1027	Ras-MAPK activation
 T21.sandy	Entity 1069 1086	multipotent cells
 T22.sandy	Entity 1167 1180	proliferation
 T23.sandy	Entity 1182 1203	junctional remodeling
 T24.sandy	Entity 1209 1222	bud formation
-T3.sandy	VERIFY_Entity 384 411	multiple extracellular cues
-T6.sandy	VERIFY_Entity 478 494	cluster of cells
-T7.sandy	FIX_SPAN_KeyEntity 519 558	transforming growth factor β2 signaling
-T8.sandy	FIX_SPAN_KeyEntity 598 624	transcription factor Snail
-T10.sandy	FIX_SPAN_KeyEntity 642 685	Ras-mitogen-activated protein kinase (MAPK)
-T15.sandy	VERIFY_Entity 834 866	transcriptionally down-regulated
-T16.sandy	FIX_SPAN_Entity 934 966	released from cell-cell contacts
-T18.sandy	VERIFY_Entity 920 929	signaling
-T20.sandy	VERIFY_Entity 1128 1151	transcriptional changes
-T25.sandy	VERIFY_Entity 2 19	Signaling Pathway
-T26.sandy	VERIFY_KeyEntity 30 36	TGF-β2
-T27.sandy	VERIFY_KeyEntity 41 46	Snail
-T28.sandy	VERIFY_KeyEntity 50 77	Hair Follicle Morphogenesis
-T1.kevin	VERIFY_Entity 110 123	organogenesis
-T3.kevin	VERIFY_Entity 255 277	hair bud morphogenesis
-T4.kevin	VERIFY_Entity 305 324	mutant mouse models
-T5.kevin	VERIFY_KeyEntity 338 351	keratinocytes
-T7.kevin	FIX_SPAN_Entity 532 558	growth factor β2 signaling
-T8.kevin	FIX_SPAN_KeyEntity 619 624	Snail
-T9.kevin	FIX_SPAN_Entity 598 618	transcription factor
-T10.kevin	FIX_SPAN_KeyEntity 642 693	Ras-mitogen-activated protein kinase (MAPK) pathway
-T16.kevin	FIX_SPAN_Entity 948 966	cell-cell contacts
-T22.kevin	VERIFY_Entity 1298 1308	morphogens
-T23.kevin	VERIFY_Entity 1313 1346	downstream transcriptional events
-T24.kevin	VERIFY_Entity 1358 1376	hair bud formation
-T27.kevin	VERIFY_Entity 701 704	bud
+T3.sandy	Entity 384 411	multiple extracellular cues
+T7.sandy	Entity 519 558	transforming growth factor β2 signaling
+T8.sandy	KeyEntity 598 624	transcription factor Snail
+T15.sandy	Entity 834 866	transcriptionally down-regulated
+T20.sandy	Entity 1128 1151	transcriptional changes
+T25.sandy	Entity 2 19	Signaling Pathway
+T26.sandy	KeyEntity 30 36	TGF-β2
+T27.sandy	KeyEntity 41 46	Snail
+T28.sandy	KeyEntity 50 77	Hair Follicle Morphogenesis
+T1.kevin	Entity 110 123	organogenesis
+T3.kevin	Entity 255 277	hair bud morphogenesis
+T4.kevin	Entity 305 324	mutant mouse models
+T5.kevin	Entity 338 351	keratinocytes
+T10.kevin	Entity 642 693	Ras-mitogen-activated protein kinase (MAPK) pathway
+T16.kevin	Entity 948 966	cell-cell contacts
+T22.kevin	Entity 1298 1308	morphogens
+T23.kevin	Entity 1313 1346	downstream transcriptional events
+T24.kevin	Entity 1358 1376	hair bud formation
+T27.kevin	Entity 701 704	bud
 R9.sandy	participates_in Arg1:T11.sandy Arg2:T12.sandy	
 R10.sandy	participates_in Arg1:T11.sandy Arg2:T13.sandy	
-R1.sandy	VERIFY_participates_in Arg1:T1.sandy Arg2:T2.sandy	
-R2.sandy	VERIFY_regulates Arg1:T3.sandy Arg2:T4.sandy	
-R3.sandy	VERIFY_regulates Arg1:T3.sandy Arg2:T5.sandy	
-R4.sandy	VERIFY_participates_in Arg1:T5.sandy Arg2:T6.sandy	
-R5.sandy	VERIFY_participates_in Arg1:T4.sandy Arg2:T6.sandy	
-R6.sandy	VERIFY_regulates Arg1:T7.sandy Arg2:T8.sandy	
-R7.sandy	VERIFY_regulates Arg1:T7.sandy Arg2:T10.sandy	
-R11.sandy	VERIFY_is_part_of Arg1:T15.sandy Arg2:T14.sandy	
-R12.sandy	VERIFY_participates_in Arg1:T17.sandy Arg2:T16.sandy	
-R13.sandy	VERIFY_participates_in Arg1:T16.sandy Arg2:T19.sandy	
-R14.sandy	VERIFY_regulates Arg1:T20.sandy Arg2:T21.sandy	
-R15.sandy	VERIFY_participates_in Arg1:T26.sandy Arg2:T28.sandy	
-R16.sandy	VERIFY_participates_in Arg1:T27.sandy Arg2:T28.sandy	
-R1.kevin	VERIFY_participates_in Arg1:T1.sandy Arg2:T1.kevin	
-R2.kevin	VERIFY_is_subclass_of Arg1:T8.kevin Arg2:T9.kevin	
-R3.kevin	VERIFY_is_part_of Arg1:T10.kevin Arg2:T27.kevin	
+R1.sandy	participates_in Arg1:T1.sandy Arg2:T2.sandy	
+R2.sandy	regulates Arg1:T3.sandy Arg2:T4.sandy	
+R3.sandy	regulates Arg1:T3.sandy Arg2:T5.sandy	
+R6.sandy	regulates Arg1:T7.sandy Arg2:T8.sandy	
+R14.sandy	regulates Arg1:T20.sandy Arg2:T21.sandy	
+R15.sandy	participates_in Arg1:T26.sandy Arg2:T28.sandy	
+R16.sandy	participates_in Arg1:T27.sandy Arg2:T28.sandy	
+R1.kevin	participates_in Arg1:T1.sandy Arg2:T1.kevin	
+R3.kevin	is_part_of Arg1:T10.kevin Arg2:T27.kevin	
+T1	Entity 489 494	cells
+R1	participates_in Arg1:T4.sandy Arg2:T1	
+R2	participates_in Arg1:T5.sandy Arg2:T1	
+R3	regulates Arg1:T7.sandy Arg2:T10.kevin	
+R4	regulates Arg1:T14.sandy Arg2:T17.sandy	
+R5	regulates Arg1:T14.sandy Arg2:T19.sandy	
+R6	regulates Arg1:T20.sandy Arg2:T22.sandy	
+R7	regulates Arg1:T20.sandy Arg2:T23.sandy	
+R8	regulates Arg1:T20.sandy Arg2:T24.sandy	

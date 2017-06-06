@@ -5,20 +5,18 @@ T4.sandy	KeyEntity 396 401	BRCA2
 T5.sandy	Entity 428 450	recombinational repair
 T6.sandy	KeyEntity 452 457	BRCA2
 T9.sandy	KeyEntity 733 738	BRCA2
-T10.sandy	FIX_TYPE 742 763	RAD51–mediated repair
-T7.sandy	VERIFY_Entity 481 494	recombination
-T8.sandy	FIX_SPAN_KeyEntity 550 555	RAD51
-T11.sandy	VERIFY_KeyEntity 0 5	BRCA2
-T12.sandy	VERIFY_KeyEntity 10 34	homologous recombination
-T1.kevin	VERIFY_KeyEntity 147 152	BRCA2
-T2.kevin	VERIFY_Entity 156 166	DNA repair
-T9.kevin	FIX_SPAN_KeyEntity 550 563	RAD51 [1,2,3]
-T12.kevin	VERIFY_Entity 527 549	eukaryotic recombinase
-R1.sandy	FIX_RELATION_TYPE Arg1:T1.sandy Arg2:T2.sandy	
-R3.sandy	FIX_RELATION_TYPE Arg1:T4.sandy Arg2:T5.sandy	
+T10.sandy	KeyEntity 742 763	RAD51–mediated repair
+T7.sandy	Entity 481 494	recombination
+T11.sandy	KeyEntity 0 5	BRCA2
+T12.sandy	KeyEntity 10 34	homologous recombination
+T1.kevin	KeyEntity 147 152	BRCA2
+T2.kevin	Entity 156 166	DNA repair
+T9.kevin	KeyEntity 550 563	RAD51 [1,2,3]
+T12.kevin	Entity 527 549	eukaryotic recombinase
+R1.sandy	participates_in Arg1:T1.sandy Arg2:T2.sandy	
+R3.sandy	participates_in Arg1:T4.sandy Arg2:T5.sandy	
 R6.sandy	participates_in Arg1:T9.sandy Arg2:T10.sandy	
-R2.sandy	VERIFY_participates_in Arg1:T2.sandy Arg2:T3.sandy	
-R4.sandy	VERIFY_participates_in Arg1:T6.sandy Arg2:T7.sandy	
-R5.sandy	VERIFY_interacts_with Arg1:T7.sandy Arg2:T8.sandy	
-R2.kevin	VERIFY_participates_in Arg1:T3.sandy Arg2:T2.sandy	
-R4.kevin	VERIFY_is_subclass_of Arg1:T9.kevin Arg2:T12.kevin	
+R4.sandy	participates_in Arg1:T6.sandy Arg2:T7.sandy	
+R2.kevin	participates_in Arg1:T3.sandy Arg2:T2.sandy	
+R4.kevin	is_subclass_of Arg1:T9.kevin Arg2:T12.kevin	
+R1	interacts_with Arg1:T6.sandy Arg2:T9.kevin	

@@ -1,40 +1,35 @@
 T1.sandy	KeyEntity 92 98	ADAM22
 T2.sandy	Entity 118 134	ADAM gene family
 T4.sandy	Entity 280 295	integrin binder
-T5.sandy	FIX_TYPE 215 221	ADAM22
-T8.sandy	FIX_TYPE 406 412	ADAM22
+T5.sandy	KeyEntity 215 221	ADAM22
+T8.sandy	KeyEntity 406 412	ADAM22
 T11.sandy	Entity 841 856	hypomyelination
 T12.sandy	Entity 864 881	peripheral nerves
 T13.sandy	KeyEntity 951 957	ADAM22
 T15.sandy	Entity 1012 1026	nervous system
-T16.sandy	FIX_TYPE 1048 1054	ADAM22
+T16.sandy	KeyEntity 1048 1054	ADAM22
 T17.sandy	Entity 1132 1150	epileptic seizures
 T18.sandy	Entity 1155 1176	peripheral neuropathy
-T3.sandy	VERIFY_Entity 182 197	nervous systems
-T6.sandy	FIX_SPAN_Entity 323 332	cell-cell
-T7.sandy	FIX_SPAN_Entity 336 360	cell-matrix interactions
-T9.sandy	FIX_SPAN_Entity 613 626	severe ataxia
-T10.sandy	VERIFY_Entity 698 709	convulsions
-T14.sandy	VERIFY_Entity 985 1004	correct functioning
-T19.sandy	VERIFY_KeyEntity 0 6	Ataxia
-T20.sandy	VERIFY_KeyEntity 11 43	peripheral nerve hypomyelination
-T21.sandy	VERIFY_Entity 47 68	ADAM22-deficient mice
-T4.kevin	VERIFY_Entity 253 258	ADAMs
-T6.kevin	FIX_SPAN_Entity 323 332;348 360	cell-cell interactions
-T9.kevin	VERIFY_KeyEntity 453 473	ADAM22 knockout mice
-T10.kevin	VERIFY_KeyEntity 485 506	ADAM22-deficient mice
-T11.kevin	VERIFY_Entity 551 566	Mendelian ratio
-T12.kevin	FIX_SPAN_Entity 620 626	ataxia
-T13.kevin	VERIFY_Entity 649 660	homozygotes
-T14.kevin	VERIFY_Entity 768 783	cerebral cortex
-T15.kevin	VERIFY_Entity 787 797	cerebellum
+T3.sandy	Entity 182 197	nervous systems
+T7.sandy	Entity 336 360	cell-matrix interactions
+T9.sandy	KeyEntity 613 626	severe ataxia
+T10.sandy	Entity 698 709	convulsions
+T19.sandy	KeyEntity 0 6	Ataxia
+T20.sandy	KeyEntity 11 43	peripheral nerve hypomyelination
+T21.sandy	KeyEntity 47 68	ADAM22-deficient mice
+T4.kevin	KeyEntity 253 258	ADAMs
+T6.kevin	Entity 323 332;348 360	cell-cell interactions
+T9.kevin	KeyEntity 453 473	ADAM22 knockout mice
+T10.kevin	KeyEntity 485 506	ADAM22-deficient mice
+T11.kevin	Entity 551 566	Mendelian ratio
+T13.kevin	Entity 649 660	homozygotes
+T14.kevin	Entity 768 783	cerebral cortex
+T15.kevin	Entity 787 797	cerebellum
 R1.sandy	is_subclass_of Arg1:T1.sandy Arg2:T2.sandy	
-R2.sandy	VERIFY_participates_in Arg1:T1.sandy Arg2:T3.sandy	
-R3.sandy	VERIFY_is_part_of Arg1:T5.sandy Arg2:T4.sandy	
-R4.sandy	VERIFY_participates_in Arg1:T5.sandy Arg2:T6.sandy	
-R5.sandy	VERIFY_participates_in Arg1:T5.sandy Arg2:T7.sandy	
-R6.sandy	VERIFY_participates_in Arg1:T10.sandy Arg2:T9.sandy	
-R7.sandy	VERIFY_participates_in Arg1:T11.sandy Arg2:T12.sandy	
-R8.sandy	VERIFY_regulates Arg1:T13.sandy Arg2:T14.sandy	
-R9.sandy	VERIFY_interacts_with Arg1:T14.sandy Arg2:T15.sandy	
-R3.kevin	VERIFY_participates_in Arg1:T5.sandy Arg2:T6.kevin	
+R2.sandy	interacts_with Arg1:T3.sandy Arg2:T1.sandy	
+R5.sandy	participates_in Arg1:T5.sandy Arg2:T7.sandy	
+R6.sandy	participates_in Arg1:T10.sandy Arg2:T9.sandy	
+R7.sandy	participates_in Arg1:T12.sandy Arg2:T11.sandy	
+R3.kevin	participates_in Arg1:T5.sandy Arg2:T6.kevin	
+R1	regulates Arg1:T13.sandy Arg2:T15.sandy	
+#1	AnnotatorNotes R2.sandy	*expresses

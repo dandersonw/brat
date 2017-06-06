@@ -1,5 +1,5 @@
-T1.sandy	FIX_TYPE 89 120	Congenital diaphragmatic hernia
-T2.sandy	FIX_TYPE 325 338	E18.5 embryos
+T1.sandy	KeyEntity 89 120	Congenital diaphragmatic hernia
+T2.sandy	Entity 325 338	E18.5 embryos
 T3.sandy	Entity 370 391	N-ethyl-N-nitrosourea
 T4.sandy	Entity 430 450	pulmonary hypoplasia
 T9.sandy	Entity 554 592	N-ethyl-N-nitrosourea-induced mutation
@@ -9,58 +9,53 @@ T13.sandy	Entity 904 924	premature stop codon
 T15.sandy	Entity 1028 1061	abnormally muscularized diaphragm
 T16.sandy	KeyEntity 1123 1127	Fog2
 T19.sandy	KeyEntity 1232 1236	FOG2
-T20.sandy	FIX_TYPE 1289 1340	nonsyndromic human congenital diaphragmatic defects
+T20.sandy	Entity 1289 1340	nonsyndromic human congenital diaphragmatic defects
 T21.sandy	Entity 1416 1424	neonates
 T22.sandy	Entity 1430 1461	congenital diaphragmatic hernia
 T23.sandy	Entity 1476 1521	primary pulmonary developmental abnormalities
 T24.sandy	KeyEntity 0 4	Fog2
-T25.sandy	FIX_TYPE 21 37;47 58	Normal Diaphragm Development
 T27.sandy	Entity 62 66	Mice
 T28.sandy	Entity 71 77	Humans
-T5.sandy	FIX_SPAN_Entity 455 489	abnormal diaphragmatic development
-T6.sandy	FIX_SPAN_KeyEntity 491 495	Fog2
-T7.sandy	FIX_SPAN_Entity 497 502	Zfpm2
-T8.sandy	VERIFY_Entity 520 540	recombinant interval
-T10.sandy	FIX_SPAN_Entity 598 620	DNA sequencing of Fog2
-T14.sandy	FIX_SPAN_Entity 983 1020	severe bilateral pulmonary hypoplasia
-T17.sandy	FIX_SPAN_Entity 1151 1160	diaphragm
-T18.sandy	FIX_SPAN_Entity 1165 1181	lung development
-T2.kevin	VERIFY_Entity 223 231	neonates
-T4.kevin	VERIFY_Entity 352 356	mice
-T7.kevin	FIX_SPAN_Entity 455 477	abnormal diaphragmatic
-T8.kevin	VERIFY_Entity 409 417	mutation
-T9.kevin	FIX_SPAN_KeyEntity 491 503	Fog2 (Zfpm2)
-T11.kevin	FIX_SPAN_Entity 616 620	Fog2
-T12.kevin	VERIFY_Entity 759 779	diaphragmatic defect
-T13.kevin	VERIFY_Entity 784 804	pulmonary hypoplasia
-T14.kevin	VERIFY_KeyEntity 837 841	FOG2
-T15.kevin	VERIFY_Entity 734 747	Human autopsy
-T18.kevin	FIX_SPAN_Entity 990 1020	bilateral pulmonary hypoplasia
-T21.kevin	FIX_SPAN_Entity 1144 1181	normal diaphragm and lung development
-T23.kevin	VERIFY_Entity 1273 1285	pathogenesis
-T26.kevin	VERIFY_Entity 634 642	mutation
+T5.sandy	Entity 455 489	abnormal diaphragmatic development
+T8.sandy	Entity 520 540	recombinant interval
+T14.sandy	Entity 983 1020	severe bilateral pulmonary hypoplasia
+T17.sandy	Entity 1151 1160;1170 1181	diaphragm development
+T18.sandy	Entity 1165 1181	lung development
+T2.kevin	Entity 223 231	neonates
+T4.kevin	Entity 352 356	mice
+T8.kevin	Entity 409 417	mutation
+T9.kevin	Entity 491 503	Fog2 (Zfpm2)
+T11.kevin	Entity 616 620	Fog2
+T12.kevin	Entity 759 779	diaphragmatic defect
+T13.kevin	Entity 784 804	pulmonary hypoplasia
+T14.kevin	KeyEntity 837 841	FOG2
+T23.kevin	Entity 1273 1285	pathogenesis
+T26.kevin	Entity 634 642	mutation
 #1	AnnotatorNotes T8.kevin	basic noun
-R4.sandy	FIX_RELATION_TYPE Arg1:T12.sandy Arg2:T13.sandy	
-R13.sandy	FIX_RELATION_TYPE Arg1:T24.sandy Arg2:T25.sandy	
-R1.sandy	VERIFY_interacts_with Arg1:T2.sandy Arg2:T3.sandy	
-R3.sandy	VERIFY_is_part_of Arg1:T11.sandy Arg2:T6.sandy	
-R5.sandy	VERIFY_participates_in Arg1:T13.sandy Arg2:T14.sandy	
-R6.sandy	VERIFY_participates_in Arg1:T13.sandy Arg2:T15.sandy	
-R7.sandy	VERIFY_regulates Arg1:T16.sandy Arg2:T17.sandy	
-R8.sandy	VERIFY_regulates Arg1:T16.sandy Arg2:T18.sandy	
-R9.sandy	VERIFY_participates_in Arg1:T19.sandy Arg2:T20.sandy	
-R10.sandy	VERIFY_participates_in Arg1:T21.sandy Arg2:T22.sandy	
-R11.sandy	VERIFY_participates_in Arg1:T21.sandy Arg2:T23.sandy	
-R1.kevin	VERIFY_participates_in Arg1:T1.sandy Arg2:T2.kevin	
-R2.kevin	VERIFY_is_part_of Arg1:T3.sandy Arg2:T4.kevin	
-R3.kevin	VERIFY_is_part_of Arg1:T4.kevin Arg2:T2.sandy	
-R4.kevin	VERIFY_participates_in Arg1:T8.kevin Arg2:T4.sandy	
-R5.kevin	VERIFY_participates_in Arg1:T8.kevin Arg2:T7.kevin	
-R6.kevin	VERIFY_is_part_of Arg1:T8.kevin Arg2:T2.sandy	
-R7.kevin	VERIFY_is_part_of Arg1:T12.kevin Arg2:T15.kevin	
-R8.kevin	VERIFY_is_part_of Arg1:T13.kevin Arg2:T15.kevin	
-R11.kevin	VERIFY_is_part_of Arg1:T20.sandy Arg2:T23.kevin	
-R12.kevin	VERIFY_participates_in Arg1:T19.sandy Arg2:T23.kevin	
-R13.kevin	VERIFY_is_part_of Arg1:T9.sandy Arg2:T9.kevin	
-R14.kevin	VERIFY_participates_in Arg1:T26.kevin Arg2:T11.sandy	
-R15.kevin	VERIFY_is_part_of Arg1:T26.kevin Arg2:T11.kevin	
+R4.sandy	regulates Arg1:T12.sandy Arg2:T13.sandy	
+R5.sandy	participates_in Arg1:T13.sandy Arg2:T14.sandy	
+R6.sandy	participates_in Arg1:T13.sandy Arg2:T15.sandy	
+R8.sandy	regulates Arg1:T16.sandy Arg2:T18.sandy	
+R9.sandy	participates_in Arg1:T19.sandy Arg2:T20.sandy	
+R10.sandy	is_part_of Arg1:T22.sandy Arg2:T21.sandy	
+R11.sandy	is_part_of Arg1:T23.sandy Arg2:T21.sandy	
+R1.kevin	is_part_of Arg1:T1.sandy Arg2:T2.kevin	
+R4.kevin	participates_in Arg1:T8.kevin Arg2:T4.sandy	
+R6.kevin	is_part_of Arg1:T8.kevin Arg2:T2.sandy	
+R11.kevin	is_part_of Arg1:T20.sandy Arg2:T23.kevin	
+R12.kevin	participates_in Arg1:T19.sandy Arg2:T23.kevin	
+R13.kevin	is_part_of Arg1:T9.sandy Arg2:T9.kevin	
+R14.kevin	regulates Arg1:T26.kevin Arg2:T11.sandy	
+R15.kevin	is_part_of Arg1:T26.kevin Arg2:T11.kevin	
+T1	KeyEntity 42 58	Lung Development
+T2	Entity 28 37;47 58	Diaphragm Development
+R1	regulates Arg1:T24.sandy Arg2:T2	
+R2	regulates Arg1:T24.sandy Arg2:T1	
+T3	Entity 734 753	Human autopsy cases
+R3	is_part_of Arg1:T12.kevin Arg2:T3	
+R4	is_part_of Arg1:T13.kevin Arg2:T3	
+R5	participates_in Arg1:T8.kevin Arg2:T5.sandy	
+R6	regulates Arg1:T16.sandy Arg2:T17.sandy	
+R7	regulates Arg1:T9.kevin Arg2:T11.sandy	
+R8	interacts_with Arg1:T4.kevin Arg2:T3.sandy	
+R9	is_part_of Arg1:T2.sandy Arg2:T4.kevin	

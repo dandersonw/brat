@@ -10,7 +10,7 @@ T21.sandy	Entity 676 687	mon mutants
 T22.sandy	Entity 768 773	gata1
 T23.sandy	Entity 787 796	apoptosis
 T25.sandy	Entity 845 866	premature stop codons
-T26.sandy	FIX_TYPE 895 915	wild-type tif1γ mRNA
+T26.sandy	Entity 895 915	wild-type tif1γ mRNA
 T27.sandy	Entity 924 947	embryonic hematopoiesis
 T28.sandy	Entity 951 973	homozygous mon mutants
 T29.sandy	Entity 1005 1034	zygotic tif1γ mRNA expression
@@ -21,71 +21,54 @@ T40.sandy	Entity 1374 1386	nuclear foci
 T41.sandy	Entity 1420 1445	erythroid cell maturation
 T42.sandy	Entity 1491 1526	transcriptional intermediary factor
 T44.sandy	Entity 1553 1572	hematopoietic cells
-T16.sandy	FIX_TYPE 4 28	Zebrafish moonshine Gene
-T35.sandy	FIX_TYPE 37 75	Transcriptional Intermediary Factor 1γ
-T2.sandy	FIX_SPAN_Entity 188 208	DNA-binding proteins
-T7.sandy	FIX_SPAN_KeyEntity 301 326	zebrafish moonshine (mon)
-T8.sandy	FIX_SPAN_Entity 358 367	embryonic
-T10.sandy	FIX_SPAN_Entity 372 391	adult hematopoiesis
-T11.sandy	FIX_SPAN_Entity 413 435	red blood cell aplasia
-T14.sandy	FIX_SPAN_KeyEntity 500 546	transcriptional intermediary factor 1γ (TIF1γ)
-T15.sandy	VERIFY_Entity 468 486	zebrafish ortholog
-T20.sandy	FIX_SPAN_Entity 721 748	hematopoietic transcription
-T24.sandy	FIX_SPAN_Entity 814 824	mon mutant
-T31.sandy	FIX_SPAN_Entity 1070 1093	hematopoietic stem cell
-T32.sandy	FIX_SPAN_Entity 1098 1118	progenitor formation
-T33.sandy	FIX_SPAN_Entity 1128 1144	gata1 expression
-T34.sandy	FIX_SPAN_KeyEntity 1182 1187	tif1γ
-T36.sandy	VERIFY_Entity 1237 1252	differentiation
-T37.sandy	VERIFY_Entity 1256 1276	erythroid precursors
-T43.sandy	VERIFY_Entity 1534 1549	differentiation
-T45.sandy	FIX_SPAN_KeyEntity 90 116	Regulator of Hematopoiesis
-T6.sandy	FIX_SPAN_Entity 551 557	TRIM33
-T2.kevin	FIX_SPAN_Entity 171 208	lineage-specific DNA-binding proteins
-T6.kevin	FIX_SPAN_KeyEntity 301 331	zebrafish moonshine (mon) gene
-T7.kevin	FIX_SPAN_Entity 358 391	embryonic and adult hematopoiesis
-T8.kevin	FIX_SPAN_Entity 417 435	blood cell aplasia
-T9.kevin	VERIFY_Entity 284 293	Mutations
-T11.kevin	FIX_SPAN_KeyEntity 490 558	mammalian transcriptional intermediary factor 1γ (TIF1γ) (or TRIM33)
-T12.kevin	VERIFY_Entity 576 587	TIF1 family
-T17.kevin	FIX_SPAN_Entity 721 756	hematopoietic transcription factors
-T20.kevin	FIX_SPAN_Entity 814 832	mon mutant alleles
-T26.kevin	FIX_SPAN_Entity 1070 1118	hematopoietic stem cell and progenitor formation
-T27.kevin	FIX_SPAN_Entity 1128 1133	gata1
-T28.kevin	FIX_SPAN_Entity 1182 1197	tif1γ functions
-T35.kevin	VERIFY_Entity 1576 1587	vertebrates
-T39.kevin	FIX_SPAN_Entity 103 116	Hematopoiesis
-R1.sandy	FIX_RELATION_TYPE Arg1:T4.sandy Arg2:T3.sandy	
-R2.sandy	FIX_RELATION_TYPE Arg1:T5.sandy Arg2:T3.sandy	
-R11.sandy	FIX_RELATION_TYPE Arg1:T19.sandy Arg2:T21.sandy	
+T16.sandy	KeyEntity 4 28	Zebrafish moonshine Gene
+T35.sandy	KeyEntity 37 75	Transcriptional Intermediary Factor 1γ
+T10.sandy	Entity 372 391	adult hematopoiesis
+T11.sandy	Entity 413 435	red blood cell aplasia
+T15.sandy	Entity 468 486	zebrafish ortholog
+T33.sandy	Entity 1128 1144	gata1 expression
+T34.sandy	KeyEntity 1182 1187	tif1γ
+T36.sandy	Entity 1237 1252	differentiation
+T37.sandy	Entity 1256 1276	erythroid precursors
+T43.sandy	Entity 1534 1549	differentiation
+T2.kevin	Entity 171 208	lineage-specific DNA-binding proteins
+T6.kevin	KeyEntity 301 331	zebrafish moonshine (mon) gene
+T9.kevin	Entity 284 293	Mutations
+T11.kevin	KeyEntity 490 558	mammalian transcriptional intermediary factor 1γ (TIF1γ) (or TRIM33)
+T12.kevin	Entity 576 587	TIF1 family
+T17.kevin	Entity 721 756	hematopoietic transcription factors
+T20.kevin	Entity 814 832	mon mutant alleles
+T35.kevin	Entity 1576 1587	vertebrates
+T39.kevin	Entity 103 116	Hematopoiesis
+R11.sandy	is_part_of Arg1:T19.sandy Arg2:T21.sandy	
 R13.sandy	participates_in Arg1:T19.sandy Arg2:T23.sandy	
-R16.sandy	FIX_RELATION_TYPE Arg1:T29.sandy Arg2:T30.sandy	
-R21.sandy	FIX_RELATION_TYPE Arg1:T39.sandy Arg2:T40.sandy	
-R3.sandy	VERIFY_regulates Arg1:T2.sandy Arg2:T1.sandy	
-R7.sandy	VERIFY_participates_in Arg1:T7.sandy Arg2:T11.sandy	
-R8.sandy	VERIFY_regulates Arg1:T12.sandy Arg2:T14.sandy	
-R9.sandy	VERIFY_is_part_of Arg1:T17.sandy Arg2:T14.sandy	
-R10.sandy	VERIFY_is_part_of Arg1:T18.sandy Arg2:T14.sandy	
-R17.sandy	VERIFY_participates_in Arg1:T29.sandy Arg2:T32.sandy	
-R18.sandy	VERIFY_participates_in Arg1:T29.sandy Arg2:T31.sandy	
-R19.sandy	VERIFY_participates_in Arg1:T34.sandy Arg2:T36.sandy	
-R20.sandy	VERIFY_is_part_of Arg1:T39.sandy Arg2:T38.sandy	
-R22.sandy	VERIFY_interacts_with Arg1:T42.sandy Arg2:T43.sandy	
-R1.kevin	VERIFY_regulates Arg1:T2.kevin Arg2:T3.sandy	
-R2.kevin	VERIFY_participates_in Arg1:T2.kevin Arg2:T1.sandy	
-R5.kevin	VERIFY_is_part_of Arg1:T9.kevin Arg2:T6.kevin	
-R6.kevin	VERIFY_participates_in Arg1:T9.kevin Arg2:T7.kevin	
-R7.kevin	VERIFY_participates_in Arg1:T7.kevin Arg2:T8.kevin	
-R9.kevin	VERIFY_is_subclass_of Arg1:T11.kevin Arg2:T12.kevin	
-R10.kevin	VERIFY_is_subclass_of Arg1:T18.sandy Arg2:T12.kevin	
-R11.kevin	VERIFY_is_subclass_of Arg1:T17.sandy Arg2:T12.kevin	
-R13.kevin	VERIFY_is_subclass_of Arg1:T22.sandy Arg2:T17.kevin	
-R16.kevin	VERIFY_participates_in Arg1:T20.kevin Arg2:T25.sandy	
-R17.kevin	VERIFY_regulates Arg1:T20.kevin Arg2:T26.sandy	
-R18.kevin	VERIFY_participates_in Arg1:T26.sandy Arg2:T27.sandy	
-R19.kevin	VERIFY_participates_in Arg1:T27.sandy Arg2:T28.sandy	
-R21.kevin	VERIFY_participates_in Arg1:T30.sandy Arg2:T26.kevin	
-R23.kevin	VERIFY_participates_in Arg1:T39.sandy Arg2:T41.sandy	
-R24.kevin	VERIFY_interacts_with Arg1:T42.sandy Arg2:T44.sandy	
-R25.kevin	VERIFY_is_part_of Arg1:T44.sandy Arg2:T35.kevin	
-R26.kevin	VERIFY_regulates Arg1:T35.sandy Arg2:T39.kevin	
+R16.sandy	regulates Arg1:T29.sandy Arg2:T30.sandy	
+R21.sandy	is_part_of Arg1:T39.sandy Arg2:T40.sandy	
+R19.sandy	participates_in Arg1:T34.sandy Arg2:T36.sandy	
+R20.sandy	is_part_of Arg1:T39.sandy Arg2:T38.sandy	
+R22.sandy	participates_in Arg1:T42.sandy Arg2:T43.sandy	
+R1.kevin	regulates Arg1:T2.kevin Arg2:T3.sandy	
+R2.kevin	participates_in Arg1:T2.kevin Arg2:T1.sandy	
+R5.kevin	is_part_of Arg1:T9.kevin Arg2:T6.kevin	
+R9.kevin	is_subclass_of Arg1:T11.kevin Arg2:T12.kevin	
+R10.kevin	is_subclass_of Arg1:T18.sandy Arg2:T12.kevin	
+R11.kevin	is_subclass_of Arg1:T17.sandy Arg2:T12.kevin	
+R13.kevin	is_subclass_of Arg1:T22.sandy Arg2:T17.kevin	
+R16.kevin	regulates Arg1:T20.kevin Arg2:T25.sandy	
+R17.kevin	regulates Arg1:T20.kevin Arg2:T26.sandy	
+R18.kevin	participates_in Arg1:T26.sandy Arg2:T27.sandy	
+R19.kevin	participates_in Arg1:T27.sandy Arg2:T28.sandy	
+R23.kevin	participates_in Arg1:T39.sandy Arg2:T41.sandy	
+R25.kevin	is_part_of Arg1:T44.sandy Arg2:T35.kevin	
+R26.kevin	regulates Arg1:T35.sandy Arg2:T39.kevin	
+R1	regulates Arg1:T12.sandy Arg2:T11.kevin	
+T1	Entity 358 367;378 391	embryonic hematopoiesis
+R2	participates_in Arg1:T6.kevin Arg2:T1	
+R3	participates_in Arg1:T6.kevin Arg2:T10.sandy	
+R4	interacts_with Arg1:T2.kevin Arg2:T4.sandy	
+R5	interacts_with Arg1:T2.kevin Arg2:T5.sandy	
+R6	participates_in Arg1:T44.sandy Arg2:T43.sandy	
+T2	Entity 1070 1093;1109 1118	hematopoietic stem cell formation
+T3	Entity 1070 1083;1098 1118	hematopoietic progenitor formation
+R7	participates_in Arg1:T29.sandy Arg2:T3	
+R8	participates_in Arg1:T29.sandy Arg2:T2	

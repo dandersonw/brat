@@ -1,9 +1,9 @@
 T2.sandy	Entity 170 201	mammalian embryonic development
-T5.sandy	FIX_TYPE 310 336	Smith-Lemli-Opitz syndrome
+T5.sandy	KeyEntity 310 336	Smith-Lemli-Opitz syndrome
 T6.sandy	Entity 477 496	respiratory failure
 T7.sandy	Entity 504 541	developmental pulmonary abnormalities
-T8.sandy	FIX_TYPE 605 627	cholesterol deficiency
-T9.sandy	FIX_TYPE 631 647	lung development
+T8.sandy	KeyEntity 605 627	cholesterol deficiency
+T9.sandy	KeyEntity 631 647	lung development
 T13.sandy	Entity 994 1022	delayed saccular development
 T15.sandy	Entity 1088 1112	pre-alveolar development
 T16.sandy	Entity 1144 1162	cell proliferation
@@ -13,49 +13,36 @@ T23.sandy	Entity 1844 1866	cholesterol deficiency
 T24.sandy	KeyEntity 1877 1882	Dhcr7
 T26.sandy	Entity 1998 2011	alveolar sacs
 T28.sandy	Entity 2061 2086	immature vascular network
-T1.sandy	FIX_SPAN_Entity 107 152	Normal post-squalene cholesterol biosynthesis
-T3.sandy	FIX_SPAN_Entity 236 267	dehydrocholesterol Δ7-reductase
-T4.sandy	FIX_SPAN_KeyEntity 269 274	Dhcr7
-T10.sandy	VERIFY_Entity 675 693	growth retardation
-T11.sandy	VERIFY_Entity 708 719	E14.5~E16.5
-T12.sandy	VERIFY_Entity 899 927	Lung branching morphogenesis
-T14.sandy	VERIFY_Entity 1064 1069	E17.5
-T17.sandy	FIX_SPAN_Entity 1191 1223	type I alveolar epithelial cells
-T18.sandy	FIX_SPAN_KeyEntity 1225 1229	AECs
-T19.sandy	FIX_SPAN_Entity 1172 1187	differentiation
-T22.sandy	VERIFY_Entity 1509 1541	maternal transfer of cholesterol
-T25.sandy	FIX_SPAN_Entity 1919 1943	lung saccular hypoplasia
-T27.sandy	FIX_SPAN_Entity 2023 2053	differentiation of type I AECs
-T29.sandy	VERIFY_Entity 2151 2167	lung development
-T30.sandy	FIX_SPAN_Entity 2184 2201	sterol deficiency
-T31.sandy	FIX_SPAN_Entity 2205 2215	Dhcr7 loss
-T32.sandy	FIX_SPAN_Entity 2299 2322	Shh-Patched-Gli pathway
-T33.sandy	VERIFY_KeyEntity 0 32	Late gestational lung hypoplasia
-T34.sandy	VERIFY_Entity 38 49	mouse model
-T35.sandy	VERIFY_KeyEntity 57 83	Smith-Lemli-Opitz syndrome
-T1.kevin	FIX_SPAN_Entity 114 152	post-squalene cholesterol biosynthesis
-T3.kevin	VERIFY_Entity 203 216	Neonatal mice
-T4.kevin	FIX_SPAN_KeyEntity 236 275	dehydrocholesterol Δ7-reductase (Dhcr7)
-T10.kevin	VERIFY_KeyEntity 737 753	Dhcr7-/- embryos
-T11.kevin	VERIFY_KeyEntity 859 875	Dhcr7-/- embryos
-T12.kevin	VERIFY_KeyEntity 951 959	Dhcr7-/-
-T14.kevin	VERIFY_Entity 1042 1058	Dhcr7-/- embryos
-T17.kevin	FIX_SPAN_Entity 1172 1230	differentiation of type I alveolar epithelial cells (AECs)
-T20.kevin	VERIFY_Entity 1367 1396	surfactant protein (SP) mRNAs
-T21.kevin	VERIFY_Entity 1401 1420	SP-C immunostaining
-T22.kevin	VERIFY_Entity 1610 1630	sonic hedgehog (Shh)
-T23.kevin	VERIFY_Entity 1736 1739	Shh
-T24.kevin	VERIFY_Entity 1789 1805	Dhcr7-/- embryos
-T27.kevin	FIX_SPAN_Entity 1910 1943	distinct lung saccular hypoplasia
-T29.kevin	FIX_SPAN_Entity 2042 2053	type I AECs
-T31.kevin	VERIFY_Entity 2090 2113	late gestational stages
-T32.kevin	FIX_SPAN_Entity 2184 2215	sterol deficiency by Dhcr7 loss
-T33.kevin	FIX_SPAN_Entity 2286 2322	dysregulated Shh-Patched-Gli pathway
-R1.sandy	VERIFY_participates_in Arg1:T1.sandy Arg2:T2.sandy	
-R3.sandy	VERIFY_is_part_of Arg1:T8.sandy Arg2:T9.sandy	
-R7.sandy	VERIFY_regulates Arg1:T31.sandy Arg2:T30.sandy	
-R8.sandy	VERIFY_regulates Arg1:T24.sandy Arg2:T23.sandy	
-R9.sandy	VERIFY_is_part_of Arg1:T25.sandy Arg2:T26.sandy	
-R10.sandy	VERIFY_is_part_of Arg1:T25.sandy Arg2:T27.sandy	
-R11.sandy	VERIFY_is_part_of Arg1:T25.sandy Arg2:T28.sandy	
-R1.kevin	VERIFY_participates_in Arg1:T7.sandy Arg2:T6.sandy	
+T10.sandy	Entity 675 693	growth retardation
+T12.sandy	Entity 899 927	Lung branching morphogenesis
+T25.sandy	Entity 1919 1943	lung saccular hypoplasia
+T27.sandy	Entity 2023 2053	differentiation of type I AECs
+T29.sandy	Entity 2151 2167	lung development
+T30.sandy	Entity 2184 2201	sterol deficiency
+T33.sandy	KeyEntity 0 32	Late gestational lung hypoplasia
+T34.sandy	Entity 38 49	mouse model
+T35.sandy	KeyEntity 57 83	Smith-Lemli-Opitz syndrome
+T1.kevin	Entity 114 152	post-squalene cholesterol biosynthesis
+T3.kevin	Entity 203 216	Neonatal mice
+T4.kevin	Entity 236 275	dehydrocholesterol Δ7-reductase (Dhcr7)
+T10.kevin	KeyEntity 737 753	Dhcr7-/- embryos
+T11.kevin	KeyEntity 859 875	Dhcr7-/- embryos
+T12.kevin	KeyEntity 951 959	Dhcr7-/-
+T14.kevin	KeyEntity 1042 1058	Dhcr7-/- embryos
+T20.kevin	Entity 1367 1396	surfactant protein (SP) mRNAs
+T21.kevin	Entity 1401 1420	SP-C immunostaining
+T22.kevin	Entity 1610 1630	sonic hedgehog (Shh)
+T23.kevin	Entity 1736 1739	Shh
+T24.kevin	KeyEntity 1789 1805	Dhcr7-/- embryos
+T31.kevin	Entity 2090 2113	late gestational stages
+T33.kevin	Entity 2286 2322	dysregulated Shh-Patched-Gli pathway
+R3.sandy	participates_in Arg1:T8.sandy Arg2:T9.sandy	
+R8.sandy	regulates Arg1:T24.sandy Arg2:T23.sandy	
+R9.sandy	participates_in Arg1:T26.sandy Arg2:T25.sandy	
+R10.sandy	participates_in Arg1:T27.sandy Arg2:T25.sandy	
+R11.sandy	participates_in Arg1:T28.sandy Arg2:T25.sandy	
+R1.kevin	participates_in Arg1:T7.sandy Arg2:T6.sandy	
+R1	participates_in Arg1:T1.kevin Arg2:T2.sandy	
+T1	Entity 1172 1230	differentiation of type I alveolar epithelial cells (AECs)
+T2	Entity 2205 2210	Dhcr7
+R2	regulates Arg1:T2 Arg2:T30.sandy	

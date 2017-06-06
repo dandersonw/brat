@@ -11,7 +11,7 @@ T16.sandy	Entity 586 605	perinatal lethality
 T17.sandy	Entity 607 625	growth retardation
 T20.sandy	Entity 740 755	eye development
 T21.sandy	Entity 807 830	retinal differentiation
-T23.sandy	FIX_TYPE 884 898	Ptdsr -/- mice
+T23.sandy	KeyEntity 884 898	Ptdsr -/- mice
 T24.sandy	Entity 904 916	anophthalmia
 T26.sandy	Entity 958 994	ectopic retinal-pigmented epithelium
 T27.sandy	Entity 998 1012	nasal cavities
@@ -20,57 +20,45 @@ T29.sandy	Entity 1180 1207	Ptdsr-deficient macrophages
 T30.sandy	Entity 1225 1270	pro- and anti-inflammatory cytokine signaling
 T31.sandy	Entity 1294 1309	apoptotic cells
 T32.sandy	Entity 1318 1336	lipopolysaccharide
-T33.sandy	FIX_TYPE 1351 1356	Ptdsr
-T36.sandy	Entity 1436 1449	embryogenesis
+T33.sandy	KeyEntity 1351 1356	Ptdsr
+T36.sandy	KeyEntity 1436 1449	embryogenesis
 T39.sandy	KeyEntity 1486 1491	Ptdsr
 T40.sandy	Entity 1721 1750	macrophage cytokine responses
 T41.sandy	KeyEntity 1607 1612	Ptdsr
-T6.sandy	FIX_SPAN_Entity 250 277	phosphatidylserine receptor
-T7.sandy	FIX_SPAN_KeyEntity 279 284	Ptdsr
-T8.sandy	VERIFY_Entity 327 338	recognition
-T9.sandy	VERIFY_Entity 343 353	engulfment
-T14.sandy	VERIFY_Entity 527 532	mouse
-T15.sandy	FIX_SPAN_KeyEntity 556 570	Ptdsr function
-T18.sandy	FIX_SPAN_Entity 641 665	terminal differentiation
-T19.sandy	VERIFY_Entity 715 728	embryogenesis
-T22.sandy	FIX_SPAN_Entity 843 882	unilateral or bilateral absence of eyes
-T25.sandy	VERIFY_Entity 925 938	novel lesions
-T34.sandy	FIX_SPAN_Entity 1394 1409	differentiation
-T35.sandy	FIX_SPAN_Entity 1422 1428	organs
-T37.sandy	VERIFY_Entity 1526 1548	developmental function
-T38.sandy	VERIFY_Entity 1565 1595	differentiation-promoting gene
-T42.sandy	FIX_SPAN_Entity 1378 1389	development
-T43.sandy	VERIFY_KeyEntity 4 31	phosphatidylserine receptor
-T44.sandy	VERIFY_KeyEntity 63 76	embryogenesis
-T45.sandy	VERIFY_KeyEntity 81 110	not in apoptotic cell removal
-T6.kevin	FIX_SPAN_KeyEntity 250 285	phosphatidylserine receptor (Ptdsr)
-T7.kevin	VERIFY_Entity 289 299	phagocytes
-T12.kevin	FIX_SPAN_Entity 544 578	Ablation of Ptdsr function in mice
-T15.kevin	FIX_SPAN_Entity 632 707	delay in terminal differentiation of the kidney, intestine, liver and lungs
-T18.kevin	FIX_SPAN_Entity 834 882	complete unilateral or bilateral absence of eyes
-T24.kevin	VERIFY_KeyEntity 1155 1174	Ptdsr knockout mice
-T31.kevin	VERIFY_Entity 1462 1484	apoptotic cell removal
-T34.kevin	VERIFY_Entity 1633 1657	apoptotic cell clearance
-T35.kevin	VERIFY_Entity 1661 1672	macrophages
-T37.kevin	VERIFY_Entity 1811 1838	phosphatidylserine receptor
-T38.kevin	VERIFY_Entity 1862 1886	apoptotic cell clearance
-T39.kevin	FIX_SPAN_Entity 1378 1428	development and differentiation of multiple organs
-#2	AnnotatorNotes T45.sandy	no relation
+T8.sandy	Entity 327 338	recognition
+T9.sandy	Entity 343 353	engulfment
+T14.sandy	Entity 527 532	mouse
+T15.sandy	KeyEntity 556 570	Ptdsr function
+T18.sandy	Entity 641 665	terminal differentiation
+T19.sandy	KeyEntity 715 728	embryogenesis
+T34.sandy	Entity 1394 1409	differentiation
+T35.sandy	Entity 1422 1428	organs
+T37.sandy	Entity 1526 1548	developmental function
+T38.sandy	Entity 1565 1595	differentiation-promoting gene
+T42.sandy	Entity 1378 1389	development
+T43.sandy	KeyEntity 4 31	phosphatidylserine receptor
+T44.sandy	KeyEntity 63 76	embryogenesis
+T6.kevin	KeyEntity 250 285	phosphatidylserine receptor (Ptdsr)
+T7.kevin	Entity 289 299	phagocytes
+T24.kevin	KeyEntity 1155 1174	Ptdsr knockout mice
+T31.kevin	Entity 1462 1484	apoptotic cell removal
+T34.kevin	Entity 1633 1657	apoptotic cell clearance
+T35.kevin	Entity 1661 1672	macrophages
+T37.kevin	KeyEntity 1811 1838	phosphatidylserine receptor
+T38.kevin	Entity 1862 1886	apoptotic cell clearance
 R11.sandy	participates_in Arg1:T29.sandy Arg2:T30.sandy	
-R2.sandy	VERIFY_is_part_of Arg1:T1.sandy Arg2:T2.sandy	
-R3.sandy	VERIFY_participates_in Arg1:T7.sandy Arg2:T11.sandy	
-R4.sandy	VERIFY_interacts_with Arg1:T12.sandy Arg2:T13.sandy	
-R5.sandy	VERIFY_participates_in Arg1:T15.sandy Arg2:T16.sandy	
-R6.sandy	VERIFY_participates_in Arg1:T15.sandy Arg2:T17.sandy	
-R7.sandy	VERIFY_participates_in Arg1:T15.sandy Arg2:T18.sandy	
-R8.sandy	VERIFY_is_subclass_of Arg1:T21.sandy Arg2:T20.sandy	
-R9.sandy	VERIFY_is_subclass_of Arg1:T22.sandy Arg2:T20.sandy	
-R10.sandy	VERIFY_is_part_of Arg1:T24.sandy Arg2:T25.sandy	
-R12.sandy	VERIFY_regulates Arg1:T33.sandy Arg2:T42.sandy	
-R13.sandy	VERIFY_regulates Arg1:T33.sandy Arg2:T34.sandy	
-R14.sandy	VERIFY_participates_in Arg1:T39.sandy Arg2:T37.sandy	
-R15.sandy	VERIFY_is_part_of Arg1:T39.sandy Arg2:T38.sandy	
-R16.sandy	VERIFY_regulates Arg1:T41.sandy Arg2:T40.sandy	
-R1.kevin	VERIFY_is_part_of Arg1:T6.kevin Arg2:T7.kevin	
-R2.kevin	VERIFY_participates_in Arg1:T6.kevin Arg2:T11.sandy	
-R5.kevin	VERIFY_participates_in Arg1:T33.sandy Arg2:T39.kevin	
+R5.sandy	participates_in Arg1:T15.sandy Arg2:T16.sandy	
+R6.sandy	participates_in Arg1:T15.sandy Arg2:T17.sandy	
+R7.sandy	participates_in Arg1:T15.sandy Arg2:T18.sandy	
+R8.sandy	is_subclass_of Arg1:T21.sandy Arg2:T20.sandy	
+R12.sandy	regulates Arg1:T33.sandy Arg2:T42.sandy	
+R13.sandy	regulates Arg1:T33.sandy Arg2:T34.sandy	
+R14.sandy	participates_in Arg1:T39.sandy Arg2:T37.sandy	
+R15.sandy	is_part_of Arg1:T39.sandy Arg2:T38.sandy	
+R16.sandy	regulates Arg1:T41.sandy Arg2:T40.sandy	
+R1.kevin	is_part_of Arg1:T6.kevin Arg2:T7.kevin	
+R2.kevin	participates_in Arg1:T6.kevin Arg2:T11.sandy	
+R1	participates_in Arg1:T35.sandy Arg2:T34.sandy	
+R2	participates_in Arg1:T35.sandy Arg2:T42.sandy	
+T1	Entity 88 110	apoptotic cell removal
+R3	regulates Arg1:T13.sandy Arg2:T12.sandy	

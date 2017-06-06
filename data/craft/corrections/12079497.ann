@@ -1,68 +1,57 @@
 T1.sandy	Entity 151 189	Non-invasive autofluorescent reporters
-T4.sandy	FIX_TYPE 279 310	green fluorescent protein (GFP)
+T4.sandy	KeyEntity 279 310	green fluorescent protein (GFP)
 T6.sandy	Entity 345 362	Aequoria Victoria
 T7.sandy	Entity 590 611	chromogenic substrate
-T12.sandy	FIX_TYPE 717 758	enhanced green fluorescent protein (EGFP)
-T19.sandy	FIX_TYPE 898 938	enhanced cyan fluorescent protein (ECFP)
-T23.sandy	FIX_TYPE 1080 1086	DsRed1
+T12.sandy	KeyEntity 717 758	enhanced green fluorescent protein (EGFP)
+T19.sandy	KeyEntity 898 938	enhanced cyan fluorescent protein (ECFP)
+T23.sandy	KeyEntity 1080 1086	DsRed1
 T24.sandy	Entity 1098 1130	red fluorescent protein reporter
 T25.sandy	Entity 1156 1172	Discostoma coral
-T26.sandy	Entity 1339 1343	ECFP
+T26.sandy	Entity 1339 1343;1352 1373	ECFP GFP-variant reporters
 T27.sandy	Entity 1347 1373	EYFP GFP-variant reporters
-T28.sandy	FIX_TYPE 1422 1428	DsRed1
+T28.sandy	KeyEntity 1422 1428	DsRed1
 T33.sandy	Entity 1837 1858	GFP variant reporters
 T34.sandy	Entity 1882 1923	non-invasive multi-spectral visualization
 T40.sandy	Entity 2119 2127	chimeras
 T41.sandy	Entity 2131 2147	transplantations
 T42.sandy	Entity 0 20	Embryonic stem cells
-T3.sandy	FIX_TYPE 943 985	enhanced yellow fluorescent protein (EYFP)
+T3.sandy	KeyEntity 943 985	enhanced yellow fluorescent protein (EYFP)
 T11.sandy	Entity 1954 1989	EYFP-expressing transgenic ES cells
-T2.sandy	VERIFY_Entity 210 226	lineage labeling
-T5.sandy	VERIFY_Entity 320 344	bioluminescent jellyfish
-T8.sandy	VERIFY_Entity 632 639	in vivo
-T9.sandy	VERIFY_Entity 677 684	utility
-T10.sandy	VERIFY_Entity 689 713	developmental neutrality
-T14.sandy	FIX_SPAN_Entity 762 781	embryonic stem (ES)
-T15.sandy	FIX_SPAN_Entity 409 431	gene targeting regimes
-T17.sandy	FIX_SPAN_Entity 839 858	embryonic stem (ES)
-T18.sandy	FIX_SPAN_Entity 859 885	cell-mediated transgenesis
-T29.sandy	VERIFY_Entity 1462 1489	not developmentally neutral
-T30.sandy	VERIFY_Entity 1498 1518	transgene expression
-T31.sandy	FIX_SPAN_Entity 1665 1687	ECFP and EYFP ES cells
-T32.sandy	VERIFY_Entity 1758 1777	individual reporter
-T38.sandy	FIX_SPAN_Entity 2078 2117	double-tagged recombination experiments
-T39.sandy	FIX_SPAN_Entity 2063 2076	combinatorial
-T43.sandy	VERIFY_Entity 25 29	mice
-T44.sandy	VERIFY_Entity 41 63	different GFP variants
-T45.sandy	VERIFY_Entity 77 98	non-invasive reporter
-T4.kevin	VERIFY_Entity 388 404	mouse transgenic
-T5.kevin	FIX_SPAN_Entity 414 431	targeting regimes
-T6.kevin	VERIFY_Entity 514 518	lacZ
-T7.kevin	VERIFY_Entity 523 543	alkaline phosphatase
-T9.kevin	FIX_SPAN_Entity 762 787	embryonic stem (ES) cells
-T10.kevin	VERIFY_Entity 792 796	mice
-T11.kevin	FIX_SPAN_KeyEntity 839 885	embryonic stem (ES) cell-mediated transgenesis
-T14.kevin	VERIFY_KeyEntity 1022 1058	color variants of wild type (wt) GFP
-T18.kevin	VERIFY_Entity 1202 1205	GFP
-T22.kevin	VERIFY_KeyEntity 1452 1458	DsRed1
-T24.kevin	FIX_SPAN_Entity 1674 1687	EYFP ES cells
-T26.kevin	VERIFY_Entity 1945 1949	ECFP
-T30.kevin	FIX_SPAN_Entity 2063 2117	combinatorial, double-tagged recombination experiments
-T31.kevin	VERIFY_Entity 484 504	gene-based reporters
-T33.kevin	VERIFY_Entity 1249 1257	ES cells
-T34.kevin	VERIFY_Entity 1555 1585;1625 1633	Balanced (diploid <-> diploid) chimeras
-R1.sandy	VERIFY_participates_in Arg1:T1.sandy Arg2:T2.sandy	
-R4.sandy	VERIFY_participates_in Arg1:T9.sandy Arg2:T12.sandy	
-R5.sandy	VERIFY_participates_in Arg1:T10.sandy Arg2:T12.sandy	
-R8.sandy	VERIFY_interacts_with Arg1:T18.sandy Arg2:T19.sandy	
-R12.sandy	VERIFY_participates_in Arg1:T29.sandy Arg2:T28.sandy	
-R13.sandy	VERIFY_participates_in Arg1:T30.sandy Arg2:T28.sandy	
-R14.sandy	VERIFY_interacts_with Arg1:T32.sandy Arg2:T31.sandy	
-R15.sandy	VERIFY_is_part_of Arg1:T33.sandy Arg2:T34.sandy	
-R1.kevin	VERIFY_is_part_of Arg1:T4.sandy Arg2:T6.sandy	
-R2.kevin	VERIFY_is_subclass_of Arg1:T6.kevin Arg2:T31.kevin	
-R3.kevin	VERIFY_is_subclass_of Arg1:T7.kevin Arg2:T31.kevin	
-R5.kevin	VERIFY_is_part_of Arg1:T12.sandy Arg2:T9.kevin	
-R6.kevin	VERIFY_is_subclass_of Arg1:T19.sandy Arg2:T14.kevin	
-R7.kevin	VERIFY_is_subclass_of Arg1:T3.sandy Arg2:T14.kevin	
-R8.kevin	VERIFY_is_subclass_of Arg1:T23.sandy Arg2:T24.sandy	
+T2.sandy	Entity 210 226	lineage labeling
+T5.sandy	Entity 320 344	bioluminescent jellyfish
+T8.sandy	Entity 632 639	in vivo
+T30.sandy	Entity 1498 1518	transgene expression
+T32.sandy	Entity 1758 1777	individual reporter
+T43.sandy	Entity 25 29	mice
+T44.sandy	Entity 41 63	different GFP variants
+T45.sandy	Entity 77 98	non-invasive reporter
+T4.kevin	Entity 388 404	mouse transgenic
+T6.kevin	Entity 514 518	lacZ
+T7.kevin	Entity 523 543	alkaline phosphatase
+T9.kevin	Entity 762 787	embryonic stem (ES) cells
+T10.kevin	Entity 792 796	mice
+T11.kevin	Entity 839 885	embryonic stem (ES) cell-mediated transgenesis
+T14.kevin	KeyEntity 1022 1058	color variants of wild type (wt) GFP
+T18.kevin	KeyEntity 1202 1205	GFP
+T22.kevin	KeyEntity 1452 1458	DsRed1
+T24.kevin	Entity 1674 1687	EYFP ES cells
+T26.kevin	KeyEntity 1945 1949	ECFP
+T30.kevin	Entity 2063 2117	combinatorial, double-tagged recombination experiments
+T31.kevin	Entity 484 504	gene-based reporters
+T33.kevin	Entity 1249 1257	ES cells
+T34.kevin	Entity 1555 1585;1625 1633	Balanced (diploid <-> diploid) chimeras
+R1.sandy	participates_in Arg1:T1.sandy Arg2:T2.sandy	
+R13.sandy	participates_in Arg1:T30.sandy Arg2:T28.sandy	
+R15.sandy	participates_in Arg1:T33.sandy Arg2:T34.sandy	
+R1.kevin	is_part_of Arg1:T4.sandy Arg2:T6.sandy	
+R2.kevin	is_subclass_of Arg1:T6.kevin Arg2:T31.kevin	
+R3.kevin	is_subclass_of Arg1:T7.kevin Arg2:T31.kevin	
+R5.kevin	is_part_of Arg1:T12.sandy Arg2:T9.kevin	
+R6.kevin	is_subclass_of Arg1:T19.sandy Arg2:T14.kevin	
+R7.kevin	is_subclass_of Arg1:T3.sandy Arg2:T14.kevin	
+R8.kevin	is_subclass_of Arg1:T23.sandy Arg2:T24.sandy	
+R1	interacts_with Arg1:T11.kevin Arg2:T19.sandy	
+T1	Entity 388 393;409 423	mouse gene targeting
+T2	Entity 1665 1669;1679 1687	ECFP ES cells
+R2	interacts_with Arg1:T2 Arg2:T32.sandy	
+R3	interacts_with Arg1:T24.kevin Arg2:T32.sandy	
