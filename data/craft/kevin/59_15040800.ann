@@ -58,3 +58,6 @@ R12	other_relation Arg1:T15 Arg2:T16
 #7	AnnotatorNotes R12	required 
 R13	interacts_with Arg1:T17 Arg2:T18	
 R14	interacts_with Arg1:T19 Arg2:T18	
+T40	Entity 17 31;2 13	sitosterolemia mouse model
+T41	Entity 44 60	Abcg8/sterolin-2
+T42	Entity 91 110	biliary cholesterol

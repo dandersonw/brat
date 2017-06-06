@@ -42,3 +42,9 @@ R9	interacts_with Arg1:T24 Arg2:T23
 R10	other_relation Arg1:T25 Arg2:T23	
 #3	AnnotatorNotes R10	attribute
 T31	Entity 2041 2080	odor-driven reinforcement contingencies
+T32	KeyEntity 0 21	Dopamine D2 receptors
+T33	KeyEntity 79 91	C57BL/6 mice
+T34	Entity 30 53	two-odor discrimination
+T35	Entity 58 75	reversal learning
+R11	participates_in Arg1:T32 Arg2:T34	
+R12	participates_in Arg1:T32 Arg2:T35	

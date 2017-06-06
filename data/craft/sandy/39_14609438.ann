@@ -285,7 +285,7 @@ R41	is_part_of Arg1:T237 Arg2:T238
 T239	Entity 12044 12069	substrate-binding pockets
 T240	Entity 12071 12073	S1
 T241	Entity 12082 12084	S3
-T242	Entity 12172 12177	P1-P3
+T242	Entity 12175 12177	P3
 T243	Entity 12185 12194	inhibitor
 R42	is_part_of Arg1:T242 Arg2:T243	
 T244	Entity 12307 12316	sedolisin
@@ -294,8 +294,8 @@ T246	Entity 12337 12347	inhibitors
 T247	Entity 12365 12373	tyrosine
 T248	Entity 12379 12392	phenylalanine
 T249	Entity 12407 12416	S1 pocket
-R43	interacts_with Arg1:T248 Arg2:T249	
-R44	interacts_with Arg1:T247 Arg2:T249	
+R43	participates_in Arg1:T248 Arg2:T249	
+R44	participates_in Arg1:T247 Arg2:T249	
 T250	Entity 12443 12458	fully conserved
 T251	Entity 12475 12485	sedolisins
 T252	Entity 12525 12540;12548 12554	right-hand side pocket
@@ -304,7 +304,7 @@ T254	Entity 12622 12638	residues 164–165
 T255	KeyEntity 12719 12729	human CLN2
 T256	Entity 12749 12759	main chain
 T257	Entity 12787 12814	hydrogen-bonded interaction
-T258	Entity 12824 12844	side chain of Thr279
+T258	Entity 12824 12834;12838 12844	side chain Thr279
 R45	interacts_with Arg1:T257 Arg2:T256	
 R46	is_part_of Arg1:T258 Arg2:T257	
 T259	Entity 12858 12883	signature sequence SGTSAS
@@ -323,3 +323,376 @@ T271	Entity 13466 13476	P1 residue
 T272	Entity 13484 13493	substrate
 R47	is_part_of Arg1:T271 Arg2:T272	
 R48	is_part_of Arg1:T269 Arg2:T268	
+T273	Entity 12172 12174	P1
+R49	is_part_of Arg1:T273 Arg2:T243	
+R50	participates_in Arg1:T261 Arg2:T263	
+T274	KeyEntity 13536 13546	human CLN2
+T275	Entity 13584 13605	pseudo-iodotyrostatin
+T276	Entity 13614 13623;13631 13647;13651 13661	inhibitor sedolisin family peptidases
+R51	is_part_of Arg1:T254 Arg2:T253	
+R52	is_part_of Arg1:T253 Arg2:T252	
+R53	is_subclass_of Arg1:T240 Arg2:T239	
+R54	is_subclass_of Arg1:T241 Arg2:T239	
+R55	is_part_of Arg1:T247 Arg2:T244	
+R56	is_part_of Arg1:T248 Arg2:T244	
+R57	is_part_of Arg1:T247 Arg2:T245	
+R58	is_part_of Arg1:T248 Arg2:T245	
+T277	Entity 13780 13791;13799 13808	stick model inhibitor
+T278	Entity 13833 13835;13839 13847	P1 residues
+T279	Entity 13836 13847	P3 residues
+T280	Entity 13963 13972	sedolisin
+T281	Entity 13977 13988	kumamolisin
+T282	Entity 14142 14148	Asp179
+T283	Entity 14152 14163	kumamolisin
+T284	Entity 14095 14101;14109 14115	bottom pocket
+T285	Entity 14183 14189	Ser190
+T286	Entity 14193 14202	sedolisin
+R59	is_part_of Arg1:T285 Arg2:T286	
+R60	is_part_of Arg1:T282 Arg2:T283	
+T287	Entity 14208 14222	hydrogen bonds
+T288	Entity 14230 14241;14249 14258	P1 tyrosine inhibitor
+R61	interacts_with Arg1:T282 Arg2:T288	
+R62	interacts_with Arg1:T285 Arg2:T288	
+T289	KeyEntity 14299 14303	CLN2
+T290	Entity 14307 14313	Thr182
+T291	Entity 14403 14416	hydrogen bond
+T292	Entity 14422 14433	P1 tyrosine
+T293	Entity 14476 14482	Glu175
+T294	Entity 14486 14495	sedolisin
+R63	is_part_of Arg1:T293 Arg2:T294	
+T295	Entity 14518 14524	Asp169
+T296	Entity 14528 14539	kumamolisin
+R64	is_part_of Arg1:T295 Arg2:T296	
+T297	KeyEntity 14576 14580	CLN2
+T298	Entity 14584 14590	Cys170
+R65	is_part_of Arg1:T298 Arg2:T297	
+R66	interacts_with Arg1:T290 Arg2:T291	
+#6	AnnotatorNotes R66	negative
+R67	interacts_with Arg1:T291 Arg2:T292	
+T299	Entity 14692 14698	Glu175
+T300	Entity 14703 14709	Glu171
+T301	Entity 14713 14722	sedolisin
+T302	Entity 14666 14683	polar interaction
+R68	is_part_of Arg1:T299 Arg2:T301	
+R69	is_part_of Arg1:T300 Arg2:T301	
+T303	KeyEntity 14770 14774	CLN2
+T304	Entity 14778 14784	Ser166
+R70	is_part_of Arg1:T304 Arg2:T303	
+T305	Entity 14823 14827;14835 14844	side S1 pocket
+T306	Entity 14896 14902	Arg179
+T307	Entity 14882 14892	side chain
+T308	Entity 14906 14915	sedolisin
+R71	is_part_of Arg1:T306 Arg2:T308	
+R72	is_part_of Arg1:T307 Arg2:T306	
+T309	Entity 14945 14951	Ser174
+T310	KeyEntity 14955 14959	CLN2
+R73	is_part_of Arg1:T309 Arg2:T310	
+T311	Entity 15045 15055;15063 15070	main chain protein
+T312	Entity 15094 15103	substrate
+T313	Entity 15115 15133	not well conserved
+T314	Entity 15158 15169	kumamolisin
+T315	Entity 15199 15207;15215 15246	deletion corresponding sequence position
+R74	participates_in Arg1:T315 Arg2:T314	
+T316	Entity 15264 15273	S1 pocket
+T317	KeyEntity 15277 15281	CLN2
+R75	is_part_of Arg1:T316 Arg2:T317	
+T318	Entity 15286 15306	less polar character
+R76	is_part_of Arg1:T318 Arg2:T317	
+T319	Entity 15374 15394	direct polar anchors
+R77	is_part_of Arg1:T319 Arg2:T317	
+T320	Entity 15460 15469	S2 pocket
+T321	KeyEntity 15473 15477	CLN2
+R78	is_part_of Arg1:T320 Arg2:T321	
+T322	Entity 15515 15522	solvent
+R79	interacts_with Arg1:T322 Arg2:T321	
+T323	Entity 15587 15596	sedolisin
+T324	Entity 15600 15611	kumamolisin
+T325	Entity 15640 15645	Trp81
+T326	Entity 15664 15670	Trp129
+R80	is_part_of Arg1:T325 Arg2:T323	
+R81	is_part_of Arg1:T326 Arg2:T324	
+T327	Entity 15803 15809	Tyr130
+T328	KeyEntity 15850 15854	CLN2
+R82	is_part_of Arg1:T327 Arg2:T328	
+T329	Entity 15905 15915;15923 15932	P2 residue substrate
+R83	interacts_with Arg1:T327 Arg2:T329	
+#7	AnnotatorNotes R83	negative
+T330	KeyEntity 16063 16067	CLN2
+T331	Entity 16111 16120	S3 pocket
+T332	Entity 16144 16165;16174 16180	tripeptidase activity enzyme
+T333	Entity 16202 16215;16223 16232	P3 side chain substrate
+T334	Entity 16321 16337	N-terminal amine
+R84	interacts_with Arg1:T333 Arg2:T334	
+T335	Entity 16348 16374	negatively charged residue
+T336	KeyEntity 16378 16382	CLN2
+T337	Entity 16417 16423	Asp132
+R86	is_part_of Arg1:T337 Arg2:T336	
+T338	Entity 16480 16491	carboxylate
+T339	Entity 16500 16508;16516 16526	nitrogen N-terminus
+T340	Entity 16605 16627	hydrogen-bonding range
+T341	Entity 16659 16673;16681 16688	torsion angles protein
+R85	interacts_with Arg1:T338 Arg2:T339	
+T342	Entity 16749 16762	hydrogen bond
+T343	Entity 16771 16777	Asp132
+T344	Entity 16782 16788	Ser139
+R87	interacts_with Arg1:T343 Arg2:T344	
+T345	Entity 16874 16880	serine
+T346	Entity 16916 16933	CLN2-like enzymes
+R88	is_part_of Arg1:T345 Arg2:T346	
+T347	Entity 17049 17102	classic late-infantile neuronal ceroid lipofuscinosis
+T348	Entity 17199 17215	truncated enzyme
+T349	Entity 17232 17251	intron-exon splices
+T350	Entity 17292 17323	single amino acid substitutions
+T351	Entity 17331 17344	mature enzyme
+R89	is_part_of Arg1:T350 Arg2:T351	
+T352	Entity 17369 17373	I92N
+T353	Entity 17375 17380	E148K
+T354	Entity 17382 17387	C170R
+T355	Entity 17392 17397	C170Y
+T356	Entity 17399 17404	V190D
+T357	Entity 17406 17411	G194E
+T358	Entity 17413 17418	Q227H
+T359	Entity 17420 17425	R252H
+T360	Entity 17427 17432	A259E
+T361	Entity 17438 17443	S280L
+T362	Entity 17536 17552	catalytic serine
+T363	KeyEntity 17556 17560	CLN2
+R90	is_part_of Arg1:T362 Arg2:T363	
+T364	Entity 17603 17621	enzymatic activity
+R91	participates_in Arg1:T362 Arg2:T364	
+T365	Entity 17715 17721	Val190
+T366	Entity 17723 17729	Gly194
+T367	Entity 17735 17741	Arg252
+T368	Entity 17751 17767	highly conserved
+T369	KeyEntity 17780 17784	CLN2
+T370	Entity 17803 17813	sedolisins
+R92	is_part_of Arg1:T367 Arg2:T369	
+R93	is_part_of Arg1:T366 Arg2:T369	
+R94	is_part_of Arg1:T365 Arg2:T369	
+T371	Entity 17916 17920;17924 17942	loss enzymatic activity
+T372	KeyEntity 18076 18080	CLN2
+T373	Entity 18059 18072	modifications
+R95	participates_in Arg1:T373 Arg2:T372	
+T374	Entity 18141 18152;18160 18167	development disease
+R96	participates_in Arg1:T373 Arg2:T374	
+T375	KeyEntity 18199 18203	CLN2
+T376	Entity 18185 18195	inhibitors
+T377	Entity 18170 18180	Substrates
+R97	is_part_of Arg1:T376 Arg2:T375	
+R98	is_part_of Arg1:T377 Arg2:T375	
+T378	KeyEntity 18276 18280	CLN2
+T379	Entity 18311 18322	truncations
+T380	Entity 18327 18348	single-site mutations
+T381	KeyEntity 18352 18356	CLN2
+R99	is_part_of Arg1:T379 Arg2:T381	
+R100	is_part_of Arg1:T380 Arg2:T381	
+T382	Entity 18423 18468	late-infantile neuronal ceroid lipofuscinosis
+T383	Entity 18517 18529;18536 18560	accumulation autofluorescent material
+T384	Entity 18562 18579	ceroid-lipofuscin
+T385	Entity 18584 18608	lysosomal storage bodies
+T386	Entity 18649 18663	nervous system
+R101	participates_in Arg1:T384 Arg2:T385	
+R102	is_part_of Arg1:T385 Arg2:T386	
+T387	Entity 18725 18734;18738 18764	subunit c mitochondrial ATP synthase
+T388	Entity 18814 18831;18839 18847	biological target protease
+T389	KeyEntity 18881 18885	CLN2
+T390	Entity 18925 18935	N terminus
+T391	Entity 18910 18917	subunit
+R103	is_part_of Arg1:T391 Arg2:T390	
+R104	interacts_with Arg1:T389 Arg2:T391	
+T392	KeyEntity 19032 19036	CLN2
+T393	Entity 19084 19112	angiotensin-derived peptides
+R105	interacts_with Arg1:T392 Arg2:T393	
+T394	Entity 19128 19138;19142 19150	efficiency cleavage
+T395	Entity 19168 19174;19183 19191	length peptides
+T396	Entity 19245 19259	14 amino acids
+T397	Entity 19270 19292	tripeptide Asp-Arg-Val
+T398	Entity 19310 19320	N terminus
+R106	participates_in Arg1:T397 Arg2:T398	
+T399	KeyEntity 19335 19339	CLN2
+T400	Entity 19398 19404;19412 19434	P side substrate-binding site
+T401	Entity 19478 19493;19501 19510	long P' portion substrate
+R107	interacts_with Arg1:T399 Arg2:T400	
+T402	Entity 19562 19580	peptide acetylated
+T403	Entity 19588 19598	N terminus
+R108	is_part_of Arg1:T402 Arg2:T403	
+T404	Entity 19671 19693	N-terminal amino group
+T405	Entity 19717 19723	Asp132
+R109	interacts_with Arg1:T404 Arg2:T405	
+T406	Entity 19771 19795	tripeptidase specificity
+T407	KeyEntity 19799 19803	CLN2
+R110	is_part_of Arg1:T406 Arg2:T407	
+R111	participates_in Arg1:T405 Arg2:T406	
+T408	Entity 19827 19838	tripeptides
+T409	Entity 19870 19878	glucagon
+R112	is_part_of Arg1:T408 Arg2:T409	
+T410	Entity 19951 19962	tripeptides
+T411	Entity 19997 20019	substrate-binding site
+T412	KeyEntity 20027 20031	CLN2
+R113	is_part_of Arg1:T411 Arg2:T412	
+R114	participates_in Arg1:T410 Arg2:T411	
+T413	Entity 20098 20113	cholecystokinin
+T414	Entity 20133 20146	neuropeptides
+T415	KeyEntity 20180 20184	CLN2
+T416	Entity 20219 20244	collagen-related peptides
+R115	interacts_with Arg1:T415 Arg2:T416	
+T417	Entity 20255 20266	tripeptides
+T418	Entity 20306 20317	Gly-Pro-Met
+T419	Entity 20319 20330	Gly-Pro-Arg
+T420	Entity 20336 20347	Gly-Pro-Ala
+R116	is_subclass_of Arg1:T418 Arg2:T417	
+R117	is_subclass_of Arg1:T419 Arg2:T417	
+R118	is_subclass_of Arg1:T420 Arg2:T417	
+T421	Entity 20384 20395	kumamolisin
+T422	Entity 20445 20490	Alicyclobacillus sendaiensis (kumamolisin-As)
+T423	Entity 20523 20548	collagen-related peptides
+R119	interacts_with Arg1:T421 Arg2:T423	
+R120	interacts_with Arg1:T422 Arg2:T423	
+T424	Entity 20559 20581	native type I collagen
+R121	interacts_with Arg1:T422 Arg2:T424	
+R122	interacts_with Arg1:T421 Arg2:T424	
+T425	Entity 20597 20619	substrate-binding site
+T426	KeyEntity 20623 20627	CLN2
+T427	KeyEntity 20780 20784	CLN2
+R123	is_part_of Arg1:T425 Arg2:T426	
+T428	Entity 20647 20658	kumamolisin
+T429	Entity 20669 20678	sedolisin
+T430	Entity 20752 20771	collagen-processing
+R124	participates_in Arg1:T427 Arg2:T430	
+T431	Entity 20846 20865	catalytic machinery
+T432	KeyEntity 20869 20873	CLN2
+R125	is_part_of Arg1:T431 Arg2:T432	
+T433	Entity 20898 20907	sedolisin
+T434	Entity 20909 20920	kumamolisin
+T435	Entity 20957 20983	serine-carboxyl peptidases
+T436	Entity 20989 21008	enzymatic mechanism
+T437	Entity 21055 21061;21065 21084	Design inhibitors specific
+T438	KeyEntity 21089 21093	CLN2
+R126	interacts_with Arg1:T437 Arg2:T438	
+T439	Entity 21217 21239	aldehyde functionality
+T440	Entity 21258 21279	covalent interactions
+T441	Entity 21289 21305	catalytic serine
+T442	Entity 21329 21348	chloromethyl ketone
+T443	Entity 21447 21457	sedolisins
+T444	Entity 21481 21492	tripeptides
+T445	Entity 21504 21519;21529 21538	blocking groups N termini
+T446	Entity 21544 21571	tripeptide-based inhibitors
+T447	Entity 21577 21591	free N termini
+R127	is_part_of Arg1:T447 Arg2:T446	
+T448	Entity 21671 21689	binding properties
+T449	Entity 21755 21772	peptide sequences
+T450	KeyEntity 21799 21803	CLN2
+R128	interacts_with Arg1:T437 Arg2:T439	
+R129	interacts_with Arg1:T437 Arg2:T440	
+R130	interacts_with Arg1:T440 Arg2:T441	
+R131	interacts_with Arg1:T437 Arg2:T442	
+T451	Entity 21834 21844	S1 subsite
+T452	Entity 21875 21884	sedolisin
+T453	Entity 21888 21899	kumamolisin
+T454	Entity 21929 21937	P1 group
+R132	is_part_of Arg1:T451 Arg2:T450	
+T455	Entity 21992 22022	experimental crystal structure
+T456	Entity 22037 22043;22047 22057	design inhibitors
+T457	KeyEntity 22114 22118	CLN2
+T458	Entity 22153 22170	Homology modeling
+T459	KeyEntity 22214 22218	CLN2
+T460	Entity 22279 22288;22305 22313	sedolisin proteins
+T461	Entity 22293 22313	kumamolisin proteins
+T462	Entity 22345 22354;22358 22366	273 pairs Cα atoms
+T463	Entity 22467 22509	sedolisin/serine-carboxyl peptidase family
+T464	Entity 22671 22680	sedolisin
+T465	Entity 22685 22696	kumamolisin
+T466	Entity 22645 22653	1GA4.pdb
+T467	Entity 22658 22666	1GT9.pdb
+R133	other_relation Arg1:T466 Arg2:T464	
+#8	AnnotatorNotes R133	database
+R134	other_relation Arg1:T467 Arg2:T465	
+#9	AnnotatorNotes R134	database
+T468	Entity 22811 22827	sedolisin family
+T469	Entity 22742 22748;22750 22777	global multiple sequence alignment
+T470	Entity 22892 22925	amino acid residue-type variation
+T471	Entity 22930 22942	conservation
+T472	Entity 22951 22957;22961 22980	family homologous proteins
+T473	Entity 23020 23048	pair-wise sequence alignment
+R135	is_part_of Arg1:T470 Arg2:T472	
+R136	is_part_of Arg1:T471 Arg2:T472	
+T474	Entity 23147 23163	GenBank database
+#10	AnnotatorNotes T474	database
+T475	Entity 23175 23184	sedolisin
+T476	Entity 23186 23197	kumamolisin
+T477	KeyEntity 23207 23217	human CLN2
+T478	Entity 23271 23284	BLAST program
+T479	Entity 23310 23329	sequence alignments
+T480	Entity 23351 23376	ClustalX computer program
+T481	Entity 23424 23449	highly-conserved segments
+T482	Entity 23476 23517	crystal structure-identified core regions
+T483	Entity 23525 23534;23551 23560	sedolisin sequences
+T484	Entity 23539 23560	kumamolisin sequences
+R137	is_part_of Arg1:T482 Arg2:T484	
+R138	is_part_of Arg1:T482 Arg2:T483	
+T485	Entity 23636 23645	sedolisin
+T486	Entity 23651 23662	kumamolisin
+T487	Entity 23753 23773	structural alignment
+T488	Entity 23781 23790;23807 23814	sedolisin protein
+T489	Entity 23795 23814	kumamolisin protein
+T490	Entity 23898 23923	highly conserved residues
+T491	Entity 23931 23943	core regions
+R139	is_part_of Arg1:T490 Arg2:T491	
+T492	KeyEntity 24031 24041	human CLN2
+T493	Entity 24075 24084	sedolisin
+T494	Entity 24104 24131	inhibitor pseudo-tyrostatin
+T495	Entity 24296 24318	tripeptidase character
+T496	KeyEntity 24322 24326	CLN2
+R140	is_part_of Arg1:T495 Arg2:T496	
+T497	Entity 24491 24516;24524 24537	homology modeling modules Look/GeneMine
+T498	Entity 24491 24516;24547 24555	homology modeling modules DeepView
+T499	Entity 24393 24411	atomic coordinates
+T500	Entity 24596 24600;24624 24631	core protein
+T501	Entity 24605 24616;24624 24631	active site protein
+T502	Entity 24649 24667	identical residues
+T503	Entity 24909 24942	Quanta molecular modeling package
+T504	Entity 24980 24989	templates
+T505	Entity 25025 25045	surrounding residues
+T506	Entity 25100 25110	insertions
+T507	Entity 25115 25124	deletions
+T508	Entity 25142 25154;25162 25169	loop regions protein
+T509	Entity 25208 25216	backbone
+T510	Entity 25228 25250	side chain coordinates
+T511	Entity 25317 25329;25333 25362	conformation poorly conserved loop regions
+T512	Entity 25407 25421	homology model
+T513	Entity 24741 24749;24754 24765;24769 24777	position side chains residues
+T514	Entity 25494 25505	active site
+T515	Entity 25575 25591;25593 25610	highly conserved functional region
+T516	Entity 25688 25707	energy minimization
+T517	Entity 25708 25716	in vacuo
+T518	Entity 25743 25749	CHARMM
+T519	Entity 25799 25816	covalent geometry
+T520	Entity 25821 25844	non-bonded interactions
+T521	Entity 25940 25962	adjusting bond lengths
+T522	Entity 25964 25978	3-point angles
+T523	Entity 25983 26006	4-point dihedral angles
+T524	Entity 26031 26045	atomic overlap
+T525	Entity 26058 26070	salt-bridges
+T526	Entity 26075 26089	hydrogen bonds
+T527	Entity 26111 26137	potential energy functions
+T528	Entity 26159 26178	atomic-scale models
+T529	Entity 26404 26412	PROCHECK
+T530	Entity 26454 26457	PDB
+T531	Entity 26464 26483	accession code 1R60
+R141	interacts_with Arg1:T494 Arg2:T493	
+R142	participates_in Arg1:T503 Arg2:T504	
+R143	participates_in Arg1:T503 Arg2:T505	
+T532	KeyEntity 26668 26672	CLN2
+T533	Entity 26637 26664	three-dimensional structure
+T534	Entity 26553 26573	genomic distribution
+T535	Entity 26582 26588;26592 26599	family enzymes
+T536	Entity 26719 26737;26741 26751	crystal structures sedolisins
+T537	Entity 26820 26846	serine-carboxyl peptidases
+T538	Entity 26855 26861;26871 26881	design inhibitors
+T539	Entity 26904 26933	substrate-enzyme interactions
+T540	Entity 26938 26956	enzyme specificity
+T541	Entity 27266 27302	Grant-in-Aid for Scientific Research
+T542	Entity 27413 27431	NIH grants DK18865
+T543	Entity 27413 27422;27436 27443	NIH grant AI39211
+T544	Entity 27497 27522	National Cancer Institute
+T545	Entity 27524 27553	National Institutes of Health

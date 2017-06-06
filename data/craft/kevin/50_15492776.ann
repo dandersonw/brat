@@ -32,3 +32,7 @@ T30	Entity 1974 1994	human osteoarthritis
 T31	Entity 2033 2055	BMP receptor signaling
 T32	Entity 710 727	developing joints
 R2	is_part_of Arg1:T7 Arg2:T8	
+T33	Entity 0 22	BMP Receptor Signaling
+T34	Entity 39 60	Postnatal Maintenance
+T35	Entity 64 83	Articular Cartilage
+R3	participates_in Arg1:T33 Arg2:T34	

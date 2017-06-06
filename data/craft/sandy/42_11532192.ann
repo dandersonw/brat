@@ -1,23 +1,20 @@
 T2	KeyEntity 150 176	intraocular pressure (IOP)
-T3	Entity 526 536	IOP ranges
+T3	KeyEntity 526 536	IOP ranges
 T4	Entity 556 569	10 to 20 mmHg
 T5	Entity 612 617	aging
-T6	Entity 632 644	IOP decrease
+T6	KeyEntity 632 644	IOP decrease
 T7	Entity 692 706	diurnal rhythm
 T8	Entity 745 756	dark period
-T9	Entity 902 922	leptin receptor gene
-T10	Entity 924 930	Leprdb
+T10	Entity 902 931	leptin receptor gene (Leprdb)
 T11	Entity 944 951	obesity
 T12	Entity 956 964	diabetes
-T13	Entity 976 989	increased IOP
+T13	KeyEntity 976 989	increased IOP
 T14	Entity 991 1011	Albino C57BL/6J mice
-T15	Entity 1050 1057	Tyrc-2J
-T16	Entity 1064 1075	higher IOPs
+T15	Entity 1012 1022;1029 1058	homozygous tyrosinase mutation (Tyrc-2J)
+T16	KeyEntity 1064 1075	higher IOPs
 R2	participates_in Arg1:T3 Arg2:T4	
 R3	participates_in Arg1:T5 Arg2:T6	
 R4	interacts_with Arg1:T8 Arg2:T7	
-R5	other_relation Arg1:T10 Arg2:T9	
-#2	AnnotatorNotes R5	equivalent
 R6	participates_in Arg1:T10 Arg2:T11	
 R7	participates_in Arg1:T10 Arg2:T12	
 R8	participates_in Arg1:T10 Arg2:T13	
@@ -27,14 +24,14 @@ T17	Entity 1359 1362	Age
 T18	Entity 1364 1375	time of day
 T19	Entity 1377 1384	obesity
 T20	Entity 1389 1397	diabetes
-T21	KeyEntity 1420 1423	IOP
+T21	KeyEntity 1414 1423	mouse IOP
 T22	Entity 1520 1524	Lepr
 T23	Entity 1529 1532	Tyr
-T24	Entity 1544 1557	increased IOP
+T24	KeyEntity 1544 1557	increased IOP
 R11	participates_in Arg1:T22 Arg2:T24	
 R12	participates_in Arg1:T23 Arg2:T24	
 T25	KeyEntity 0 20	Intraocular pressure
-T26	Entity 45 49	mice
+T26	Entity 24 49	genetically distinct mice
 T1	KeyEntity 251 255	IOPs
 T27	Entity 259 293	genetically distinct mouse strains
 R1	is_part_of Arg1:T1 Arg2:T27	
@@ -48,7 +45,358 @@ R15	interacts_with Arg1:T30 Arg2:T31
 T32	Entity 426 459	specific candidate gene mutations
 T33	KeyEntity 463 466	IOP
 R16	interacts_with Arg1:T32 Arg2:T33	
-T34	Entity 1340 1357	regulation of IOP
-T35	Entity 1657 1683	genetics of IOP regulation
+T34	KeyEntity 1340 1350;1354 1357	regulation IOP
+T35	KeyEntity 1657 1665;1669 1683	genetics IOP regulation
 R17	is_part_of Arg1:T25 Arg2:T26	
 T36	Entity 65 78	strain survey
+T37	Entity 571 577	Gender
+T38	KeyEntity 604 607	IOP
+T39	KeyEntity 712 715	IOP
+T40	Entity 807 841	carbonic anhydrase II gene (Car2n)
+T41	KeyEntity 857 860	IOP
+T9	Entity 1125 1159	Genetically distinct mouse strains
+T42	KeyEntity 1213 1217	IOPs
+T43	KeyEntity 1225 1228	IOP
+T44	Entity 1259 1290	interstrain genetic differences
+T45	Entity 1688 1705	disease processes
+T46	KeyEntity 1717 1720	IOP
+R5	interacts_with Arg1:T45 Arg2:T46	
+R18	interacts_with Arg1:T17 Arg2:T21	
+R19	interacts_with Arg1:T18 Arg2:T21	
+R20	interacts_with Arg1:T19 Arg2:T21	
+R21	interacts_with Arg1:T20 Arg2:T21	
+T47	KeyEntity 1753 1761	Glaucoma
+T48	Entity 1784 1793	blindness
+T49	Entity 1802 1820	molecular etiology
+T50	KeyEntity 1843 1851	Glaucoma
+T51	Entity 1861 1888	retinal ganglion cell death
+T52	Entity 1893 1911	optic nerve damage
+T53	KeyEntity 1951 1977	intraocular pressure (IOP)
+T54	KeyEntity 2039 2047	glaucoma
+T55	Entity 2055 2072	genetic component
+T56	Entity 2132 2151	chromosomal regions
+T57	Entity 2156 2161	genes
+T58	KeyEntity 2181 2189	glaucoma
+R22	participates_in Arg1:T57 Arg2:T58	
+R23	participates_in Arg1:T56 Arg2:T58	
+T59	KeyEntity 2290 2298	glaucoma
+T60	Entity 2215 2219	loci
+T61	Entity 2317 2322	genes
+T62	KeyEntity 2339 2351	elevated IOP
+T63	KeyEntity 2356 2364	glaucoma
+T64	Entity 2475 2498;2502 2514	experimental dissection pathogenesis
+T65	Entity 2452 2470;2502 2514	hypothesis testing pathogenesis
+T66	Entity 2540 2560	mammalian physiology
+T67	Entity 2524 2536	conservation
+T68	Entity 2587 2601	mouse genetics
+T69	Entity 2684 2690;2712 2717	health genes
+T70	Entity 2695 2702;2712 2717	disease genes
+T71	Entity 2741 2751;2756 2768	sequencing human genome
+T72	KeyEntity 2826 2829	IOP
+T73	KeyEntity 2834 2842	glaucoma
+T74	Entity 2920 2925	genes
+T75	KeyEntity 2953 2956	IOP
+R24	participates_in Arg1:T74 Arg2:T75	
+T76	Entity 2986 2997	optic nerve
+T77	Entity 3002 3008	retina
+T78	KeyEntity 3012 3031	glaucomatous damage
+R25	participates_in Arg1:T77 Arg2:T78	
+R26	regulates Arg1:T76 Arg2:T78	
+T79	KeyEntity 3083 3086	IOP
+T80	KeyEntity 3115 3130	IOP fluctuation
+T81	Entity 3144 3148	time
+T82	KeyEntity 3212 3215	IOP
+T83	KeyEntity 3274 3283	mouse IOP
+T84	Entity 3313 3331;3335 3343	direct measurement pressure
+T85	Entity 3354 3365;3373 3389	cannulation anterior chamber
+T86	Entity 3454 3472	ocular cannulation
+T87	KeyEntity 3500 3503	IOP
+T88	KeyEntity 3587 3614	intraocular pressure levels
+T89	Entity 3684 3707	extensive strain survey
+T90	Entity 2809 2821	mouse system
+R27	participates_in Arg1:T72 Arg2:T90	
+R28	participates_in Arg1:T73 Arg2:T90	
+T91	KeyEntity 3840 3844	IOPs
+T92	Entity 3853 3860	strains
+R29	participates_in Arg1:T91 Arg2:T92	
+T93	KeyEntity 3889 3892	IOP
+T94	Entity 3908 3928	inbred mouse strains
+T95	KeyEntity 4009 4012	IOP
+T96	Entity 4025 4032	BALB/cJ
+T97	KeyEntity 4051 4069	lowest average IOP
+T98	Entity 4100 4107	CBA/CaJ
+T99	KeyEntity 4119 4130	highest IOP
+R30	participates_in Arg1:T98 Arg2:T99	
+R31	participates_in Arg1:T96 Arg2:T97	
+T100	KeyEntity 4300 4314;4318 4321	two-fold range IOP
+T101	Entity 4330 4364	genetically distinct mouse strains
+R32	interacts_with Arg1:T100 Arg2:T101	
+T102	KeyEntity 4371 4380	IOP ± SEM
+T103	Entity 4488 4495	RIIIS/J
+T104	Entity 4532 4550	6 to 12 months old
+T105	Entity 4563 4571	SEC/1ReJ
+T106	Entity 4576 4581	SB/Le
+T107	Entity 4592 4609	2 to 3 months old
+T108	Entity 4637 4641	CE/J
+T109	Entity 4663 4670	BUB/BnJ
+T110	Entity 4681 4694	16 months old
+T111	KeyEntity 4741 4744	IOP
+T112	Entity 4786 4803	CBA/CaHN-Btkxid/J
+T113	Entity 4822 4830	CBA/CaHN
+R33	other_relation Arg1:T112 Arg2:T113	
+#1	AnnotatorNotes R33	equivalent
+T114	Entity 4846 4867	histological analysis
+T115	Entity 4833 4841;4859 4867	Clinical analysis
+T116	Entity 4875 4879	eyes
+T117	Entity 4934 4942;4957 4965	anatomic features
+T118	Entity 4946 4965	pathologic features
+T119	KeyEntity 5008 5011	IOP
+T120	Entity 5030 5048	iridocorneal angle
+T121	Entity 5053 5086	aqueous humor drainage structures
+T122	Entity 5103 5119	anterior chamber
+T123	Entity 5129 5146	normal morphology
+T124	Entity 5155 5162;5175 5179	BALB/cJ mice
+T125	Entity 5167 5179	CBA/CaJ mice
+T126	Entity 5209 5221	CBA/CaJ mice
+T127	KeyEntity 5226 5230	IOPs
+T128	KeyEntity 5273 5281	glaucoma
+T129	Entity 5382 5394	optic nerves
+T130	Entity 5399 5406	retinas
+T131	KeyEntity 5432 5440	glaucoma
+R34	interacts_with Arg1:T120 Arg2:T122	
+R35	interacts_with Arg1:T121 Arg2:T122	
+T132	Entity 5460 5479	iridocorneal angles
+T133	KeyEntity 5496 5500;5509 5512	high IOP
+T134	KeyEntity 5505 5512	low IOP
+T135	Entity 5518 5536	iridocorneal angle
+T136	Entity 5555 5588	aqueous humor drainage structures
+T137	Entity 5590 5610	Schlemm's canal (SC)
+T138	Entity 5615 5639	trabecular meshwork (TM)
+T139	Entity 5675 5696	CBA/CaJ (A, high IOP)
+T140	Entity 5698 5718	BALB/cJ (B, low IOP)
+T141	Entity 5742 5768	Pigment filled macrophages
+T142	Entity 5783 5800	human clump cells
+R36	other_relation Arg1:T141 Arg2:T142	
+#2	AnnotatorNotes R36	homologue
+T143	Entity 5827 5832;5836 5848	angle CBA/CaJ mice
+R37	participates_in Arg1:T141 Arg2:T143	
+T144	Entity 5884 5892	drainage
+T145	KeyEntity 5984 5993	lower IOP
+T146	Entity 5999 6011	angle recess
+T147	Entity 6024 6034	cornea (C)
+T148	Entity 6039 6052	iris root (I)
+R38	interacts_with Arg1:T147 Arg2:T148	
+T149	Entity 6080 6100	Aqueous humor passes
+T150	Entity 6114 6120	recess
+T151	Entity 6141 6160	drainage structures
+R39	interacts_with Arg1:T149 Arg2:T150	
+R40	participates_in Arg1:T149 Arg2:T151	
+T152	Entity 6201 6221	Ocular abnormalities
+T153	Entity 6353 6362;6377 6391;6395 6408	numerator number of mice eyes affected
+T154	Entity 6417 6428;6443 6464	denominator total number analyzed
+T155	Entity 6480 6498	6 to 12 months old
+T156	Entity 6576 6597	Histological analysis
+T157	Entity 6647 6661	calcified cyst
+T158	Entity 6685 6700	iris epithelium
+R41	participates_in Arg1:T157 Arg2:T158	
+T159	Entity 6712 6717	SB/Le
+T160	Entity 6722 6730	SEC/1ReJ
+R42	is_part_of Arg1:T158 Arg2:T159	
+R43	is_part_of Arg1:T158 Arg2:T160	
+T161	Entity 6751 6767	corneal scarring
+T162	Entity 6821 6837	scratched cornea
+R44	participates_in Arg1:T161 Arg2:T162	
+T163	Entity 6860 6880	retinal degeneration
+T164	Entity 6898 6910;6919 6935	homozygosity Pde6brd1mutation
+T165	Entity 6957 6962	SB/Le
+T166	Entity 6964 6969	ST/bJ
+T167	Entity 6971 6978	BUB/BnJ
+T168	Entity 6980 6985	CBA/J
+T169	Entity 6987 6994	C3H/HeJ
+T170	Entity 6996 7001	SJL/J
+T171	Entity 7006 7011	SWR/J
+T172	KeyEntity 7080 7083	IOP
+T173	KeyEntity 7117 7120	IOP
+T174	KeyEntity 7265 7277	IOP spectrum
+T175	Entity 7290 7303	C57BL/6J (B6)
+T176	KeyEntity 7374 7377	IOP
+T177	Entity 7410 7417	CBA/CaJ
+T178	Entity 7419 7427	CBA/CaHN
+T179	Entity 7434 7454	high end of spectrum
+R45	interacts_with Arg1:T178 Arg2:T179	
+R46	interacts_with Arg1:T177 Arg2:T179	
+T180	Entity 7460 7462	B6
+T181	KeyEntity 7560 7563	IOP
+T182	Entity 7568 7571	age
+R47	is_part_of Arg1:T182 Arg2:T181	
+T183	Entity 7719 7733	Strain 129P3/J
+T184	KeyEntity 7780 7783	IOP
+T185	Entity 7654 7675	no more than 1.5 mmHg
+T186	Entity 7805 7813	2.5 mmHg
+R48	is_part_of Arg1:T186 Arg2:T184	
+T187	KeyEntity 7830 7833	IOP
+T188	Entity 7860 7866;7884 7893	stable over time
+T189	Entity 7871 7893	reproducible over time
+T190	KeyEntity 7900 7903	IOP
+T191	KeyEntity 8058 8061	IOP
+T192	Entity 8230 8233	sex
+T193	Entity 8260 8263	age
+T194	Entity 8278 8292	number of mice
+T195	Entity 8314 8325	CBA strains
+T196	Entity 8404 8411	CBA/CaJ
+T197	Entity 8451 8459	CBA/CaHN
+T198	Entity 8500 8507	BALB/cJ
+T199	Entity 8512 8520	C57BL/6J
+T200	Entity 8626 8633	BALB/cJ
+T201	Entity 8660 8671	C57BL/6J 10
+T202	Entity 8706 8723	CBA/CaHN-Btkxid/J
+T203	Entity 8742 8750	CBA/CaHN
+R49	other_relation Arg1:T202 Arg2:T203	
+#3	AnnotatorNotes R49	equivalent
+T204	KeyEntity 8788 8791	IOP
+T205	KeyEntity 8805 8809	IOPs
+T206	KeyEntity 8869 8873	IOPs
+T207	Entity 8877 8889	BALB/cJ mice
+T208	Entity 8891 8910	low end of spectrum
+R50	is_part_of Arg1:T206 Arg2:T207	
+R51	interacts_with Arg1:T207 Arg2:T208	
+T209	KeyEntity 9016 9019	IOP
+T210	KeyEntity 9250 9253	IOP
+T211	Entity 9257 9260	A/J
+R52	is_part_of Arg1:T210 Arg2:T211	
+T212	KeyEntity 9378 9381	IOP
+T213	Entity 9385 9388	A/J
+T214	KeyEntity 9429 9432	IOP
+T215	KeyEntity 9516 9519	IOP
+T216	Entity 9532 9534	B6
+T217	Entity 9539 9546	C3H/HeJ
+T218	Entity 9580 9582	B6
+T219	Entity 9652 9659	C3H/HeJ
+T220	Entity 9740 9743	age
+T221	KeyEntity 9747 9750	IOP
+R53	interacts_with Arg1:T220 Arg2:T221	
+T222	Entity 9784 9786	B6
+T223	Entity 9788 9795	129P3/J
+T224	Entity 9800 9807	C3H/HeJ
+T225	Entity 9844 9847	age
+T226	Entity 9851 9854	IOP
+R54	interacts_with Arg1:T225 Arg2:T226	
+T227	Entity 9870 9872	B6
+T228	Entity 9874 9877	age
+T229	Entity 9906 9909	IOP
+R55	interacts_with Arg1:T228 Arg2:T229	
+T230	KeyEntity 9923 9926	IOP
+T231	Entity 9940 9949;9958 9967	decreased 12 months
+T232	Entity 9940 9949;9990 9999	decreased 19 months
+R56	interacts_with Arg1:T230 Arg2:T232	
+R57	interacts_with Arg1:T230 Arg2:T231	
+T233	KeyEntity 10200 10204	IOPs
+T234	Entity 10283 10285	B6
+T235	Entity 10405 10407	B6
+T236	KeyEntity 10423 10426	IOP
+T237	Entity 10030 10038	3 months
+T238	Entity 10061 10069	7 months
+T239	KeyEntity 10523 10526;10536 10541	IOP lower
+T240	Entity 10558 10565	B6 mice
+T241	KeyEntity 10599 10610	average IOP
+T242	KeyEntity 10704 10707	IOP
+T243	Entity 10721 10735	increasing Age
+R58	regulates Arg1:T243 Arg2:T242	
+T244	KeyEntity 10743 10746	IOP
+T245	KeyEntity 10806 10809;10810 10819	IOP decreased
+T246	Entity 10845 10853	C57BL/6J
+T247	Entity 10858 10865	129P3/J
+R59	interacts_with Arg1:T245 Arg2:T246	
+R60	interacts_with Arg1:T245 Arg2:T247	
+T248	Entity 10887 10895	C57BL/6J
+T249	Entity 10900 10907	129P3/J
+T250	Entity 10995 11002	C3H/HeJ
+T251	Entity 11156 11164	C57BL/6J
+T252	Entity 11186 11193	129P3/J
+T253	Entity 11215 11222	C3H/HeJ
+T254	Entity 11253 11260	129P3/J
+T255	KeyEntity 11262 11265	IOP
+T256	Entity 11336 11341;11345 11362	lower 18 month old mice
+T257	KeyEntity 11439 11442	IOP
+T258	KeyEntity 11482 11485	IOP
+T259	Entity 11506 11518	C3H/HeJ mice
+T260	Entity 11749 11768;11784 11791	glaucomatous DBA/2J strains
+T261	Entity 11773 11791	AKXD-28/Ty strains
+T262	Entity 11812 11815	sex
+T263	KeyEntity 11819 11822	IOP
+R61	interacts_with Arg1:T262 Arg2:T263	
+T264	Entity 11879 11882	sex
+T265	KeyEntity 11886 11889	IOP
+R62	interacts_with Arg1:T264 Arg2:T265	
+T266	Entity 11907 11931	sex specific differences
+T267	Entity 11974 11981	strains
+R63	other_relation Arg1:T266 Arg2:T267	
+#4	AnnotatorNotes R63	no_relation
+T268	Entity 12118 12120	B6
+T269	Entity 12125 12132	129P3/J
+T270	Entity 12214 12229	Sex differences
+T271	Entity 12259 12266	129P3/J
+T272	Entity 12298 12300	B6
+T273	Entity 12312 12314;12325 12330	B6 males
+T274	Entity 12362 12372	higher IOP
+R64	interacts_with Arg1:T273 Arg2:T274	
+T275	Entity 12420 12427	6 males
+T276	Entity 12435 12446	average IOP
+R65	interacts_with Arg1:T275 Arg2:T276	
+T277	Entity 12564 12587	sporadic sex difference
+T278	Entity 12648 12650	B6
+T279	Entity 12592 12612	not dependent on age
+R66	interacts_with Arg1:T277 Arg2:T279	
+T280	Entity 12742 12761	Anesthesia protocol
+T281	KeyEntity 12769 12783	IOP alteration
+T282	Entity 12808 12827	diurnal differences
+T283	KeyEntity 12833 12837	IOPs
+T284	Entity 12861 12878	anesthetic regime
+T285	Entity 12891 12899	ketamine
+T286	Entity 12912 12920	xylazine
+T287	Entity 13009 13017	ketamine
+T288	Entity 13030 13038	xylazine
+T289	Entity 13043 13053	anesthesia
+R67	is_subclass_of Arg1:T287 Arg2:T289	
+R68	is_subclass_of Arg1:T288 Arg2:T289	
+R69	is_part_of Arg1:T285 Arg2:T284	
+R70	is_part_of Arg1:T286 Arg2:T284	
+T290	KeyEntity 13071 13074	IOP
+T291	KeyEntity 13111 13114	IOP
+T292	Entity 13241 13251	anesthesia
+T293	KeyEntity 13265 13268	IOP
+T294	Entity 13304 13311	B6 mice
+T295	KeyEntity 13427 13440	IOP decreased
+T296	Entity 13416 13425	all doses
+R71	interacts_with Arg1:T296 Arg2:T295	
+T297	Entity 13481 13488;13493 13497	greater dose
+T298	Entity 13502 13509;13514 13522	greater decrease
+T299	KeyEntity 13526 13529	IOP
+R72	interacts_with Arg1:T298 Arg2:T299	
+R73	interacts_with Arg1:T297 Arg2:T298	
+T300	KeyEntity 13569 13572	IOP
+T301	Entity 13622 13639	anesthetic effect
+T302	KeyEntity 13643 13646	IOP
+R74	interacts_with Arg1:T301 Arg2:T302	
+#5	AnnotatorNotes R74	no_relation
+T303	KeyEntity 13732 13735	IOP
+T304	Entity 13755 13772	anesthetic effect
+R75	interacts_with Arg1:T303 Arg2:T304	
+T305	Entity 13801 13813	anesthetized
+T306	KeyEntity 13835 13838	IOP
+T307	KeyEntity 13938 13946	mean IOP
+T308	KeyEntity 14030 14033	IOP
+T309	Entity 14034 14051	depressing effect
+T310	Entity 14055 14065	anesthesia
+R76	is_part_of Arg1:T309 Arg2:T310	
+R77	interacts_with Arg1:T308 Arg2:T309	
+T311	Entity 14164 14171;14194 14198	129P3/J mice
+T312	Entity 14187 14198	DBA/2J mice
+T313	Entity 14217 14224	129P3/J
+T314	Entity 14235 14241	DBA/2J
+T315	Entity 14285 14295	anesthesia
+T316	KeyEntity 14388 14401	increased IOP
+T317	Entity 14413 14417;14440 14446	dark period
+R78	interacts_with Arg1:T316 Arg2:T317	
+T318	KeyEntity 14518 14521	IOP
+T319	Entity 14594 14604	anesthesia

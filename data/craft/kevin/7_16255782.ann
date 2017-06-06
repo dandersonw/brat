@@ -110,3 +110,8 @@ T82	Entity 4041 4055	BC individuals
 T83	KeyEntity 4102 4112	GSTP1/GPX1
 T84	KeyEntity 4114 4122	CAT/GPX3
 T85	KeyEntity 4128 4137	GPX3/SOD1
+T86	KeyEntity 0 26	CEBPG transcription factor
+T87	Entity 43 54;70 75	antioxidant genes
+T88	Entity 59 75	DNA repair genes
+T89	Entity 86 112	bronchial epithelial cells
+T90	Entity 141 163	bronchogenic carcinoma

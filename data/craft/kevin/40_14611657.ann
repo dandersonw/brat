@@ -32,3 +32,7 @@ T31	Entity 2549 2579	computational regulatory motif
 T32	Entity 2607 2637	olfactory receptor microarrays
 R1	is_part_of Arg1:T17 Arg2:T16	
 T33	Entity 1736 1766	5' and 3' untranslated regions
+T34	Entity 0 16	Odorant receptor
+T35	Entity 53 73	olfactory expression
+T36	Entity 103 121	alternate splicing
+T37	Entity 134 151	expression levels

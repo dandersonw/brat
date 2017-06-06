@@ -41,3 +41,12 @@ R8	is_part_of Arg1:T21 Arg2:T22
 R9	is_part_of Arg1:T22 Arg2:T23	
 R10	other_relation Arg1:T24 Arg2:T26	
 #4	AnnotatorNotes R10	required
+T30	Entity 0 17	PGC-1α Deficiency
+T31	Entity 38 67	Energy Metabolic Derangements
+T32	Entity 69 87	Muscle Dysfunction
+T33	Entity 89 112	Abnormal Weight Control
+T34	Entity 117 134	Hepatic Steatosis
+R11	is_part_of Arg1:T32 Arg2:T31	
+R12	is_part_of Arg1:T33 Arg2:T31	
+R13	is_part_of Arg1:T34 Arg2:T31	
+R14	participates_in Arg1:T30 Arg2:T31	

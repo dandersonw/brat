@@ -44,3 +44,6 @@ R11	regulates Arg1:T25 Arg2:T31
 T32	Entity 1720 1737	stable structures
 R12	regulates Arg1:T32 Arg2:T16	
 #2	AnnotatorNotes R12	attribute
+T33	Entity 11 22	Amyloidosis
+T34	Entity 48 61	Aβ Production
+T35	Entity 67 83;87 104	Transgenic Model Alzheimer Disease

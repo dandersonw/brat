@@ -1,4 +1,4 @@
-T1	Entity 144 211	α-amino-3-hydroxy-5-methyl-4-isoxazolepropionate receptors (AMPARs)
+T1	KeyEntity 144 211	α-amino-3-hydroxy-5-methyl-4-isoxazolepropionate receptors (AMPARs)
 T2	KeyEntity 344 365	Ca2+-permeable AMPARs
 T3	KeyEntity 389 407	AMPAR modification
 T4	Entity 441 455	GluR-B subunit
@@ -31,3 +31,11 @@ T24	Entity 548 552	Mice
 R7	is_part_of Arg1:T7 Arg2:T24	
 T25	Entity 898 914	olfactory memory
 R8	participates_in Arg1:T13 Arg2:T25	
+T26	Entity 0 28	Enhanced Odor Discrimination
+T27	Entity 33 58	Impaired Olfactory Memory
+T28	Entity 93 107	AMPA Receptors
+T29	Entity 62 89	Spatially Controlled Switch
+R9	other_relation Arg1:T29 Arg2:T28	
+#1	AnnotatorNotes R9	attribute
+R10	participates_in Arg1:T29 Arg2:T27	
+R11	participates_in Arg1:T29 Arg2:T26	

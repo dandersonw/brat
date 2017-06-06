@@ -18,3 +18,5 @@ T17	Entity 742 768	dorsal root ganglion axons
 R1	participates_in Arg1:T1 Arg2:T2	
 R2	is_part_of Arg1:T3 Arg2:T4	
 R3	participates_in Arg1:T15 Arg2:T17	
+T18	KeyEntity 27 31	NT-3
+T19	Entity 35 63	Proprioceptive Axon Guidance

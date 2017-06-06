@@ -33,3 +33,6 @@ R8	interacts_with Arg1:T17 Arg2:T18
 T24	KeyEntity 1454 1468	“null” alleles
 R9	participates_in Arg1:T24 Arg2:T20	
 T25	Entity 1590 1611	phenotypic plasticity
+T26	Entity 10 18	Progeria
+T27	Entity 22 41	Trichothiodystrophy
+T28	KeyEntity 45 74	Homozygous Lethal Xpd Alleles

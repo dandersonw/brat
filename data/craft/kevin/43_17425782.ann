@@ -47,3 +47,10 @@ T46	Entity 1826 1830	Klk5
 T47	Entity 1841 1849	Timeless
 T48	Entity 1867 1888	candidate Wnt targets
 T49	Entity 1892 1910	kidney development
+T50	KeyEntity 0 5	Pygo1
+T51	KeyEntity 10 15	Pygo2
+T52	Entity 25 38	Wnt signaling
+T53	Entity 42 70	mammalian kidney development
+R1	participates_in Arg1:T51 Arg2:T52	
+R2	participates_in Arg1:T50 Arg2:T52	
+R3	participates_in Arg1:T52 Arg2:T53	

@@ -27,3 +27,8 @@ T21	Entity 1132 1150	epileptic seizures
 T22	Entity 1155 1176	peripheral neuropathy
 R5	other_relation Arg1:T11 Arg2:T10	
 #2	AnnotatorNotes R5	attribute
+T23	Entity 0 6	Ataxia
+T24	Entity 11 43	peripheral nerve hypomyelination
+T25	KeyEntity 47 68	ADAM22-deficient mice
+R6	is_part_of Arg1:T24 Arg2:T25	
+R7	is_part_of Arg1:T23 Arg2:T25	

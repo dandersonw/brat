@@ -46,3 +46,4 @@ T36	Entity 1882 1923	non-invasive multi-spectral visualization
 R9	other_relation Arg1:T36 Arg2:T25	
 #2	AnnotatorNotes R9	attribute
 T37	Entity 0 20	Embryonic stem cells
+T38	Entity 25 29	mice

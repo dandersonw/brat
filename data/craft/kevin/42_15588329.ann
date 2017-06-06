@@ -38,3 +38,8 @@ R4	other_relation Arg1:T12 Arg2:T14
 #3	AnnotatorNotes R4	required
 R5	participates_in Arg1:T15 Arg2:T16	
 T32	Entity 1391 1407	oxidative stress
+T33	Entity 0 20	Membrane trafficking
+T34	Entity 25 52	mitochondrial abnormalities
+T35	Entity 61 81	subunit c deposition
+T36	Entity 87 108	cerebellar cell model
+T37	KeyEntity 112 151	juvenile neuronal ceroid lipofuscinosis

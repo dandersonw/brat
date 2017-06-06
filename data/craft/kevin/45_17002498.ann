@@ -36,3 +36,10 @@ R6	is_part_of Arg1:T15 Arg2:T14
 R7	is_part_of Arg1:T18 Arg2:T19	
 R8	is_subclass_of Arg1:T20 Arg2:T19	
 R9	participates_in Arg1:T24 Arg2:T26	
+T28	Entity 0 32	Adenomatous Polyposis Coli (APC)
+T29	Entity 49 67;71 75	Normal Development Skin
+T30	Entity 49 67;80 86	Normal Development Thymus
+R10	participates_in Arg1:T28 Arg2:T30	
+#3	AnnotatorNotes R10	required
+R11	participates_in Arg1:T28 Arg2:T29	
+#4	AnnotatorNotes R11	required

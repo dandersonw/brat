@@ -62,3 +62,8 @@ R18	other_relation Arg1:T29 Arg2:T30
 #5	AnnotatorNotes R18	attribute
 R19	participates_in Arg1:T29 Arg2:T31	
 R20	participates_in Arg1:T36 Arg2:T37	
+T40	KeyEntity 0 9	m-Calpain
+T41	Entity 26 63	preimplantation embryonic development
+T42	Entity 67 71	mice
+R21	is_part_of Arg1:T41 Arg2:T42	
+R22	participates_in Arg1:T40 Arg2:T41	

@@ -28,3 +28,6 @@ T20	KeyEntity 1400 1406	Mcoln1
 T21	Entity 1425 1461	development of mouse models for MLIV
 T22	Entity 932 968	murine specific alternative splicing
 T23	Entity 1022 1033	c-terminus.
+T24	KeyEntity 36 53	mouse Mcoln1 gene
+T25	Entity 65 97	alternatively spliced transcript
+T26	Entity 0 28	Cloning and characterization
