@@ -1,0 +1,63 @@
+T5.sandy	Entity 307 321	skeletogenesis
+T6.sandy	Entity 802 821	limb bud mesenchyme
+T9.sandy	Entity 934 953	Sonic Hedghog (SHH)
+T11.sandy	Entity 1017 1040	interdigital mesenchyme
+T12.sandy	Entity 1055 1069	digit identity
+T13.sandy	Entity 1108 1121	BMP signaling
+T16.sandy	Entity 1182 1208	chondrogenic condensations
+T17.sandy	Entity 1319 1347	chondrogenic differentiation
+T18.sandy	Entity 1512 1524	osteogenesis
+T19.sandy	FIX_TYPE 227 231	BMPs
+T20.sandy	FIX_TYPE 882 886	BMPs
+T21.sandy	FIX_TYPE 1249 1253	BMP2
+T1.sandy	FIX_TYPE 33 37	BMP2
+T8.sandy	FIX_TYPE 39 43	BMP4
+T24.sandy	FIX_TYPE 49 53	BMP7
+T25.sandy	FIX_TYPE 57 72	Limb Patterning
+T26.sandy	FIX_TYPE 77 91	Skeletogenesis
+T27.sandy	FIX_TYPE 162 166	BMP2
+T28.sandy	FIX_TYPE 168 172	BMP4
+T29.sandy	FIX_TYPE 178 182	BMP7
+T30.sandy	FIX_TYPE 413 417	Bmp2
+T31.sandy	FIX_TYPE 422 426	Bmp4
+T32.sandy	Entity 542 555	BMP molecules
+T33.sandy	Entity 465 478	BMP molecules
+T35.sandy	FIX_TYPE 1258 1262	BMP4
+T36.sandy	FIX_TYPE 1389 1393	BMP2
+T37.sandy	FIX_TYPE 1398 1402	BMP7
+T2.sandy	FIX_SPAN_KeyEntity 103 135	Bone morphogenetic protein (BMP)
+T3.sandy	VERIFY_Entity 209 225	limb development
+T4.sandy	FIX_SPAN_Entity 262 277	limb patterning
+T7.sandy	VERIFY_Entity 902 930	secondary signals downstream
+T10.sandy	FIX_SPAN_Entity 972 992	anteroposterior axis
+T14.sandy	VERIFY_Entity 1089 1098	threshold
+T15.sandy	FIX_SPAN_Entity 1151 1165	chondrogenesis
+T22.sandy	VERIFY_Entity 1225 1240	limbs deficient
+T23.sandy	FIX_SPAN_Entity 1464 1477	BMP2 and BMP4
+T34.sandy	VERIFY_Entity 704 708	BMPs
+T38.sandy	FIX_SPAN_Entity 1406 1410	BMP2
+T39.sandy	FIX_SPAN_Entity 1415 1419	BMP4
+T40.sandy	FIX_SPAN_Entity 1142 1147	onset
+T1.kevin	FIX_SPAN_Entity 103 150	Bone morphogenetic protein (BMP) family members
+T6.kevin	FIX_SPAN_Entity 256 277	early limb patterning
+T8.kevin	VERIFY_Entity 369 394	early embryonic lethality
+T13.kevin	VERIFY_Entity 583 599	limb development
+T14.kevin	VERIFY_KeyEntity 751 755	Bmp2
+T15.kevin	VERIFY_KeyEntity 760 764	Bmp4
+T19.kevin	FIX_SPAN_Entity 957 992	patterning the anteroposterior axis
+T23.kevin	FIX_SPAN_Entity 1142 1165	onset of chondrogenesis
+T30.kevin	FIX_SPAN_KeyEntity 1406 1419	BMP2 and BMP4
+T31.kevin	FIX_SPAN_KeyEntity 1464 1468	BMP2
+T32.kevin	FIX_SPAN_KeyEntity 1473 1477	BMP4
+R2.sandy	VERIFY_participates_in Arg1:T2.sandy Arg2:T3.sandy	
+R3.sandy	VERIFY_participates_in Arg1:T19.sandy Arg2:T4.sandy	
+R4.sandy	VERIFY_participates_in Arg1:T19.sandy Arg2:T5.sandy	
+R6.sandy	VERIFY_is_subclass_of Arg1:T7.sandy Arg2:T9.sandy	
+R10.sandy	VERIFY_is_subclass_of Arg1:T14.sandy Arg2:T13.sandy	
+R11.sandy	VERIFY_interacts_with Arg1:T13.sandy Arg2:T15.sandy	
+R12.sandy	VERIFY_interacts_with Arg1:T21.sandy Arg2:T22.sandy	
+R13.sandy	VERIFY_interacts_with Arg1:T23.sandy Arg2:T18.sandy	
+R1.sandy	VERIFY_interacts_with Arg1:T35.sandy Arg2:T22.sandy	
+R1.kevin	VERIFY_is_subclass_of Arg1:T27.sandy Arg2:T1.kevin	
+R2.kevin	VERIFY_is_subclass_of Arg1:T28.sandy Arg2:T1.kevin	
+R3.kevin	VERIFY_is_subclass_of Arg1:T29.sandy Arg2:T1.kevin	

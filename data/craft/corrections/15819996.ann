@@ -1,0 +1,71 @@
+T1.sandy	KeyEntity 90 100	Annexin A7
+T2.sandy	Entity 120 142	annexin protein family
+T3.sandy	Entity 199 212	phospholipids
+T4.sandy	Entity 232 241	Ca2+-ions
+T5.sandy	Entity 278 294	Ca2+-homeostasis
+T6.sandy	Entity 336 357	Ca2+-wave propagation
+T7.sandy	Entity 361 371	astrocytes
+T8.sandy	KeyEntity 411 421	Annexin A7
+T9.sandy	Entity 515 533	Annexin A7 protein
+T10.sandy	Entity 541 560	mouse embryogenesis
+T12.sandy	Entity 613 630	adult mouse brain
+T13.sandy	KeyEntity 642 652	Annexin A7
+T17.sandy	KeyEntity 906 916	Annexin A7
+T18.sandy	Entity 937 970	cytosol of undifferentiated cells
+T21.sandy	Entity 1089 1117	ventricular germinative zone
+T23.sandy	KeyEntity 1185 1195	Annexin A7
+T24.sandy	Entity 1212 1260	intermediate and marginal zone of the neopallium
+T25.sandy	Entity 1380 1438	glial fibrillary acidic protein (GFAP)-positive astrocytes
+T26.sandy	Entity 1455 1487	cytoplasmic and nuclear staining
+T27.sandy	KeyEntity 1345 1355	Annexin A7
+T28.sandy	KeyEntity 1678 1705	translocation of Annexin A7
+T29.sandy	Entity 1709 1715	nuclei
+T30.sandy	Entity 1728 1758	early murine brain development
+T33.sandy	Entity 1825 1837	adult animal
+T11.sandy	FIX_SPAN_Entity 568 601	developing central nervous system
+T14.sandy	VERIFY_Entity 721 745	subcellular localization
+T15.sandy	VERIFY_Entity 751 771	cytoplasm to nucleus
+T16.sandy	FIX_SPAN_Entity 876 896	immunohistochemistry
+T19.sandy	VERIFY_Entity 974 994	embryonic days E5–E8
+T20.sandy	VERIFY_Entity 999 1006	E11–E15
+T22.sandy	VERIFY_Entity 1166 1183	embryonic day E16
+T31.sandy	FIX_SPAN_KeyEntity 1779 1789	Annexin A7
+T32.sandy	FIX_SPAN_Entity 1803 1817	neuronal cells
+T34.sandy	VERIFY_KeyEntity 0 20;24 34	Nuclear localization Annexin A7
+T35.sandy	VERIFY_Entity 42 66	murine brain development
+T9.kevin	VERIFY_Entity 429 446	brain development
+T12.kevin	FIX_SPAN_Entity 579 601	central nervous system
+T15.kevin	VERIFY_Entity 682 698	developing brain
+T16.kevin	VERIFY_Entity 793 802	adult CNS
+T17.kevin	VERIFY_KeyEntity 836 846	Annexin A7
+T18.kevin	FIX_SPAN_Entity 876 905	immunohistochemistry analysis
+T21.kevin	VERIFY_Entity 1043 1059	cytosol of cells
+T23.kevin	VERIFY_Entity 1134 1151	lateral ventricle
+T26.kevin	VERIFY_Entity 1281 1288	nucleus
+T27.kevin	VERIFY_Entity 1290 1304	Neuronal cells
+T29.kevin	VERIFY_Entity 1363 1370	nucleus
+T32.kevin	VERIFY_KeyEntity 1505 1523	nuclear Annexin A7
+T33.kevin	VERIFY_Entity 1559 1570	nucleoplasm
+T34.kevin	VERIFY_Entity 1576 1591	isolated nuclei
+T35.kevin	VERIFY_Entity 1606 1640	neuronal and astroglial cell lines
+T39.kevin	FIX_SPAN_Entity 1779 1817	Annexin A7 in nuclei of neuronal cells
+T41.kevin	VERIFY_KeyEntity 1851 1861	Annexin A7
+R1.sandy	is_subclass_of Arg1:T1.sandy Arg2:T2.sandy	
+R2.sandy	interacts_with Arg1:T1.sandy Arg2:T3.sandy	
+R4.sandy	FIX_RELATION_TYPE Arg1:T1.sandy Arg2:T5.sandy	
+R3.sandy	VERIFY_participates_in Arg1:T4.sandy Arg2:T3.sandy	
+R7.sandy	VERIFY_participates_in Arg1:T9.sandy Arg2:T11.sandy	
+R8.sandy	VERIFY_participates_in Arg1:T13.sandy Arg2:T14.sandy	
+R9.sandy	VERIFY_interacts_with Arg1:T14.sandy Arg2:T15.sandy	
+R11.sandy	VERIFY_interacts_with Arg1:T17.sandy Arg2:T18.sandy	
+R13.sandy	VERIFY_interacts_with Arg1:T23.sandy Arg2:T24.sandy	
+R15.sandy	VERIFY_interacts_with Arg1:T27.sandy Arg2:T25.sandy	
+R16.sandy	VERIFY_participates_in Arg1:T25.sandy Arg2:T26.sandy	
+R17.sandy	VERIFY_interacts_with Arg1:T28.sandy Arg2:T29.sandy	
+R18.sandy	VERIFY_is_part_of Arg1:T29.sandy Arg2:T30.sandy	
+R19.sandy	VERIFY_interacts_with Arg1:T31.sandy Arg2:T32.sandy	
+R4.kevin	VERIFY_is_part_of Arg1:T6.sandy Arg2:T7.sandy	
+R5.kevin	VERIFY_participates_in Arg1:T9.sandy Arg2:T10.sandy	
+R6.kevin	VERIFY_interacts_with Arg1:T10.sandy Arg2:T12.kevin	
+R7.kevin	VERIFY_interacts_with Arg1:T10.sandy Arg2:T12.sandy	
+R8.kevin	VERIFY_is_part_of Arg1:T21.kevin Arg2:T21.sandy	

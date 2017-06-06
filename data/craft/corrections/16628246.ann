@@ -1,0 +1,53 @@
+T1.sandy	KeyEntity 116 120	ATRX
+T3.sandy	Entity 151 162	SNF2 family
+T4.sandy	Entity 166 190	ATPase/helicase proteins
+T5.sandy	Entity 211 226	gene expression
+T6.sandy	Entity 240 249	chromatin
+T7.sandy	KeyEntity 279 283	ATRX
+T9.sandy	KeyEntity 413 417	ATRX
+T14.sandy	KeyEntity 588 592	Atrx
+T18.sandy	Entity 833 859	extraembryonic trophoblast
+T21.sandy	FIX_TYPE 1216 1240	imprinted X-inactivation
+T24.sandy	KeyEntity 1343 1347	Atrx
+T26.sandy	Entity 1374 1392	murine trophoblast
+T27.sandy	FIX_TYPE 1431 1466	imprinted X chromosome inactivation
+T2.sandy	VERIFY_Entity 127 143	X-encoded member
+T8.sandy	VERIFY_Entity 316 337	human genetic disease
+T10.sandy	VERIFY_Entity 421 432	development
+T11.sandy	FIX_SPAN_Entity 473 527	ATR-X (alpha thalassemia mental retardation, X-linked)
+T15.sandy	FIX_SPAN_Entity 601 620	8- to 16-cell stage
+T16.sandy	FIX_SPAN_Entity 641 654	protein, Atrx
+T17.sandy	VERIFY_Entity 777 796	9.5 days postcoitus
+T19.sandy	FIX_SPAN_Entity 688 692	male
+T20.sandy	FIX_SPAN_Entity 1134 1141	females
+T22.sandy	VERIFY_Entity 1310 1318	specific
+T23.sandy	VERIFY_Entity 1324 1333	essential
+T25.sandy	VERIFY_Entity 1355 1366	development
+T12.sandy	VERIFY_KeyEntity 0 12	Loss of Atrx
+T13.sandy	VERIFY_KeyEntity 21 44	Trophoblast Development
+T28.sandy	VERIFY_KeyEntity 53 78	Pattern of X-Inactivation
+T29.sandy	VERIFY_KeyEntity 82 104	Extraembryonic Tissues
+T6.kevin	FIX_SPAN_KeyEntity 473 536	ATR-X (alpha thalassemia mental retardation, X-linked) syndrome
+T8.kevin	FIX_SPAN_Entity 601 635	8- to 16-cell stage of development
+T9.kevin	FIX_SPAN_Entity 650 654	Atrx
+T10.kevin	FIX_SPAN_Entity 688 714	male embryos null for Atrx
+T12.kevin	VERIFY_Entity 878 912	terminally differentiated lineages
+T13.kevin	VERIFY_Entity 939 958	Carrier female mice
+T14.kevin	VERIFY_Entity 974 994	maternal null allele
+T15.kevin	VERIFY_Entity 1034 1046	X chromosome
+T16.kevin	VERIFY_Entity 1074 1096	extraembryonic tissues
+T17.kevin	FIX_SPAN_Entity 1126 1141	carrier females
+T24.kevin	VERIFY_Entity 571 578	homolog
+T25.kevin	VERIFY_Entity 582 586	mice
+R4.sandy	regulates Arg1:T1.sandy Arg2:T5.sandy	
+R15.sandy	FIX_RELATION_TYPE Arg1:T24.sandy Arg2:T26.sandy	
+R1.sandy	VERIFY_is_part_of Arg1:T1.sandy Arg2:T2.sandy	
+R2.sandy	VERIFY_is_part_of Arg1:T1.sandy Arg2:T3.sandy	
+R3.sandy	VERIFY_is_part_of Arg1:T1.sandy Arg2:T4.sandy	
+R5.sandy	VERIFY_interacts_with Arg1:T1.sandy Arg2:T6.sandy	
+R12.sandy	VERIFY_participates_in Arg1:T18.sandy Arg2:T17.sandy	
+R13.sandy	VERIFY_participates_in Arg1:T20.sandy Arg2:T21.sandy	
+R1.kevin	VERIFY_is_subclass_of Arg1:T4.sandy Arg2:T3.sandy	
+R3.kevin	VERIFY_participates_in Arg1:T9.sandy Arg2:T6.kevin	
+R4.kevin	VERIFY_is_part_of Arg1:T14.sandy Arg2:T25.kevin	
+R5.kevin	VERIFY_is_part_of Arg1:T14.kevin Arg2:T13.kevin	

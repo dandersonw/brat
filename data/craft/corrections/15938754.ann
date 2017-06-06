@@ -1,0 +1,64 @@
+T1.sandy	Entity 176 192	gustatory system
+T3.sandy	Entity 336 340	T2Rs
+T4.sandy	Entity 376 396	taste receptor cells
+T5.sandy	Entity 404 410	tongue
+T6.sandy	Entity 415 421	palate
+T10.sandy	Entity 594 618	denatonium benzoate (DB)
+T11.sandy	Entity 849 861	chromosome 6
+T16.sandy	Entity 909 915	Tas2rs
+T17.sandy	Entity 1279 1301	C57BL/6J Tas2r alleles
+T19.sandy	Entity 1324 1328	QHCl
+T20.sandy	Entity 1451 1472	quinine taster status
+T22.sandy	Entity 1557 1560	QTL
+T23.sandy	Entity 1565 1578	quinine taste
+T28.sandy	Entity 1786 1799	Tas2r cluster
+T30.sandy	Entity 1905 1918	T2R receptors
+T34.sandy	FIX_TYPE 63 88	quinine taste sensitivity
+T2.sandy	VERIFY_Entity 252 262	toxic food
+T7.sandy	FIX_SPAN_Entity 561 582	quinine hydrochloride
+T8.sandy	FIX_SPAN_Entity 584 588	QHCl
+T13.sandy	FIX_SPAN_Entity 679 709	BXD/Ty recombinant inbred (RI)
+T14.sandy	FIX_SPAN_Entity 900 906	Tas2rs
+T15.sandy	FIX_SPAN_Entity 894 898	T2Rs
+T18.sandy	VERIFY_Entity 1306 1320	more sensitive
+T21.sandy	FIX_SPAN_Entity 1388 1393	Tas2r
+T24.sandy	FIX_SPAN_Entity 1596 1630	T2R-dependent transduction cascade
+T25.sandy	VERIFY_Entity 1685 1710	quinine taste sensitivity
+T26.sandy	VERIFY_Entity 1745 1758	polymorphisms
+T27.sandy	VERIFY_Entity 1766 1778	coding exons
+T29.sandy	VERIFY_Entity 1867 1890	bitter taste phenotypes
+T31.sandy	VERIFY_Entity 1929 1950	tolerant to variation
+T32.sandy	FIX_SPAN_KeyEntity 0 10;18 29	Haplotypes Tas2r locus
+T33.sandy	FIX_SPAN_Entity 33 52	distal chromosome 6
+T35.sandy	VERIFY_Entity 92 103	inbred mice
+T6.kevin	VERIFY_Entity 459 518	receptor-dependent and -independent transduction mechanisms
+T7.kevin	FIX_SPAN_Entity 561 589	quinine hydrochloride (QHCl)
+T9.kevin	FIX_SPAN_Entity 679 723	BXD/Ty recombinant inbred (RI) mouse strains
+T10.kevin	VERIFY_Entity 741 771	quantitative trait locus (QTL)
+T11.kevin	VERIFY_Entity 797 801	QHCl
+T12.kevin	VERIFY_Entity 808 811	QTL
+T14.kevin	FIX_SPAN_Entity 894 907	T2Rs (Tas2rs)
+T16.kevin	VERIFY_Entity 965 1003	single nucleotide polymorphisms (SNPs)
+T17.kevin	VERIFY_Entity 1020 1046	BXD/Ty RI parental strains
+T18.kevin	VERIFY_Entity 1048 1076	C57BL/6J (quinine-sensitive)
+T19.kevin	VERIFY_Entity 1081 1109	DBA/2J (quinine insensitive)
+T20.kevin	VERIFY_Entity 1171 1179	RI lines
+T21.kevin	VERIFY_Entity 1207 1215;1226 1239	C57BL/6J Tas2r alleles
+T25.kevin	VERIFY_Entity 1355 1369	DBA/2J alleles
+T26.kevin	FIX_SPAN_Entity 1388 1401	Tas2r cluster
+T30.kevin	FIX_SPAN_Entity 1596 1622	T2R-dependent transduction
+T33.kevin	FIX_SPAN_Entity 0 10	Haplotypes
+T34.kevin	FIX_SPAN_Entity 18 29	Tas2r locus
+T35.kevin	FIX_SPAN_Entity 40 52	chromosome 6
+R1.sandy	VERIFY_participates_in Arg1:T2.sandy Arg2:T1.sandy	
+R2.sandy	VERIFY_is_part_of Arg1:T3.sandy Arg2:T4.sandy	
+R3.sandy	VERIFY_is_part_of Arg1:T4.sandy Arg2:T5.sandy	
+R4.sandy	VERIFY_is_part_of Arg1:T4.sandy Arg2:T6.sandy	
+R9.sandy	VERIFY_participates_in Arg1:T17.sandy Arg2:T18.sandy	
+R10.sandy	VERIFY_interacts_with Arg1:T18.sandy Arg2:T19.sandy	
+R11.sandy	VERIFY_participates_in Arg1:T21.sandy Arg2:T20.sandy	
+R12.sandy	VERIFY_participates_in Arg1:T22.sandy Arg2:T23.sandy	
+R13.sandy	VERIFY_regulates Arg1:T24.sandy Arg2:T25.sandy	
+R14.sandy	VERIFY_is_part_of Arg1:T26.sandy Arg2:T27.sandy	
+R15.sandy	VERIFY_is_part_of Arg1:T27.sandy Arg2:T28.sandy	
+R16.sandy	VERIFY_participates_in Arg1:T30.sandy Arg2:T31.sandy	

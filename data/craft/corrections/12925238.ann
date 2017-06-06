@@ -1,0 +1,58 @@
+T1.sandy	FIX_TYPE 158 168	Annexin A7
+T4.sandy	Entity 286 301	membrane fusion
+T5.sandy	Entity 364 376	erythrocytes
+T6.sandy	Entity 443 473	Ca2+-dependent vesicle release
+T7.sandy	KeyEntity 615 625	annexin A7
+T8.sandy	Entity 662 674	erythrocytes
+T9.sandy	FIX_TYPE 680 693	anxA7-/- mice
+T16.sandy	Entity 1357 1378	membrane cytoskeleton
+T17.sandy	Entity 1380 1395	Red blood cells
+T18.sandy	FIX_TYPE 1452 1462	annexin A7
+T21.sandy	Entity 1564 1579	red blood cells
+T2.sandy	FIX_SPAN_Entity 174 178	Ca2+
+T3.sandy	FIX_SPAN_Entity 184 212	phospholipid-binding protein
+T10.sandy	FIX_SPAN_KeyEntity 887 905	lack of annexin A7
+T11.sandy	VERIFY_Entity 916 934	altered cell shape
+T12.sandy	FIX_SPAN_Entity 939 967	increased osmotic resistance
+T13.sandy	VERIFY_Entity 1075 1102	slower aggregation velocity
+T14.sandy	VERIFY_Entity 1139 1168	increased number of platelets
+T15.sandy	VERIFY_Entity 1337 1349	organization
+T19.sandy	VERIFY_Entity 1466 1484	cellular processes
+T20.sandy	FIX_SPAN_Entity 1541 1551	annexin A7
+T22.sandy	VERIFY_Entity 1621 1630	platelets
+T23.sandy	FIX_SPAN_Entity 1655 1673	loss of annexin A7
+T24.sandy	VERIFY_Entity 1674 1700	impairs cellular functions
+T25.sandy	VERIFY_KeyEntity 0 8;38 51	Function of annexin A7
+T28.sandy	VERIFY_Entity 55 64	platelets
+T29.sandy	VERIFY_Entity 69 84	red blood cells
+T30.sandy	VERIFY_Entity 111 134	annexin A7 mutant mouse
+T2.kevin	FIX_SPAN_Entity 174 212	Ca2+- and phospholipid-binding protein
+T9.kevin	VERIFY_Entity 496 511	red blood cells
+T13.kevin	VERIFY_Entity 714 748	Ca2+-mediated vesiculation process
+T14.kevin	FIX_SPAN_KeyEntity 1541 1560	annexin A7 isoforms
+T15.kevin	FIX_SPAN_KeyEntity 1663 1673	annexin A7
+T16.kevin	VERIFY_KeyEntity 1774 1784	annexin A7
+T17.kevin	FIX_SPAN_Entity 895 905	annexin A7
+T18.kevin	FIX_SPAN_Entity 949 967	osmotic resistance
+T19.kevin	VERIFY_KeyEntity 988 998	Annexin A7
+T20.kevin	VERIFY_KeyEntity 1222 1232	annexin A7
+T3.kevin	VERIFY_Entity 333 340	isoform
+T5.kevin	VERIFY_Entity 1022 1031	platelets
+T6.kevin	VERIFY_Entity 1236 1261	membrane fusion processes
+T21.kevin	VERIFY_Entity 1275 1290	red blood cells
+T26.kevin	VERIFY_Entity 1788 1813	membrane fusion processes
+R3.sandy	FIX_RELATION_TYPE Arg1:T1.sandy Arg2:T4.sandy	
+R1.sandy	VERIFY_is_subclass_of Arg1:T1.sandy Arg2:T2.sandy	
+R2.sandy	VERIFY_is_subclass_of Arg1:T1.sandy Arg2:T3.sandy	
+R4.sandy	VERIFY_participates_in Arg1:T5.sandy Arg2:T6.sandy	
+R5.sandy	VERIFY_participates_in Arg1:T10.sandy Arg2:T11.sandy	
+R6.sandy	VERIFY_participates_in Arg1:T10.sandy Arg2:T12.sandy	
+R7.sandy	VERIFY_participates_in Arg1:T15.sandy Arg2:T16.sandy	
+R8.sandy	VERIFY_interacts_with Arg1:T17.sandy Arg2:T18.sandy	
+R9.sandy	VERIFY_participates_in Arg1:T18.sandy Arg2:T19.sandy	
+R10.sandy	VERIFY_is_part_of Arg1:T20.sandy Arg2:T21.sandy	
+R11.sandy	VERIFY_is_part_of Arg1:T20.sandy Arg2:T22.sandy	
+R12.sandy	VERIFY_participates_in Arg1:T23.sandy Arg2:T24.sandy	
+R1.kevin	VERIFY_is_subclass_of Arg1:T1.sandy Arg2:T2.kevin	
+R3.kevin	VERIFY_is_part_of Arg1:T3.kevin Arg2:T5.sandy	
+R4.kevin	VERIFY_regulates Arg1:T3.kevin Arg2:T6.sandy	

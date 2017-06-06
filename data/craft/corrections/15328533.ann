@@ -1,0 +1,34 @@
+T3.sandy	FIX_TYPE 117 153	adaptive muscle fiber transformation
+T6.sandy	KeyEntity 525 577	peroxisome proliferator-activated receptor δ (PPARδ)
+T8.sandy	Entity 650 670	type I muscle fibers
+T1.sandy	VERIFY_Entity 212 228	scripted changes
+T2.sandy	VERIFY_Entity 232 247	gene expression
+T4.sandy	FIX_SPAN_Entity 161 197	increase of mitochondrial biogenesis
+T7.sandy	VERIFY_Entity 614 620	switch
+T9.sandy	FIX_SPAN_KeyEntity 705 710	PPARδ
+T10.sandy	VERIFY_Entity 837 858	resistance to obesity
+T11.sandy	VERIFY_Entity 864 891	improved metabolic profiles
+T12.sandy	VERIFY_Entity 801 829	genetically generated fibers
+T13.sandy	VERIFY_KeyEntity 14 31	Muscle Fiber Type
+T14.sandy	VERIFY_KeyEntity 36 53	Running Endurance
+T15.sandy	VERIFY_KeyEntity 57 62	PPARδ
+T1.kevin	VERIFY_Entity 74 101	Endurance exercise training
+T3.kevin	FIX_SPAN_Entity 173 197	mitochondrial biogenesis
+T4.kevin	VERIFY_Entity 438 458	wild-type littermate
+T6.kevin	VERIFY_Entity 581 596	skeletal muscle
+T8.kevin	VERIFY_Entity 685 699	wild-type mice
+T9.kevin	FIX_SPAN_KeyEntity 705 718	PPARδ agonist
+T10.kevin	VERIFY_Entity 737 765	type I fiber gene expression
+T11.kevin	VERIFY_Entity 261 281	transcription factor
+T12.kevin	VERIFY_Entity 481 500	targeted expression
+R1.sandy	VERIFY_participates_in Arg1:T1.sandy Arg2:T2.sandy	
+R3.sandy	VERIFY_interacts_with Arg1:T6.sandy Arg2:T7.sandy	
+R5.sandy	VERIFY_participates_in Arg1:T12.sandy Arg2:T10.sandy	
+R6.sandy	VERIFY_participates_in Arg1:T10.sandy Arg2:T11.sandy	
+R7.sandy	VERIFY_regulates Arg1:T15.sandy Arg2:T14.sandy	
+R8.sandy	VERIFY_regulates Arg1:T15.sandy Arg2:T13.sandy	
+R1.kevin	VERIFY_participates_in Arg1:T1.kevin Arg2:T3.sandy	
+R2.kevin	VERIFY_participates_in Arg1:T1.kevin Arg2:T3.kevin	
+R3.kevin	VERIFY_is_part_of Arg1:T6.sandy Arg2:T6.kevin	
+R4.kevin	VERIFY_regulates Arg1:T6.sandy Arg2:T8.sandy	
+R5.kevin	VERIFY_interacts_with Arg1:T9.kevin Arg2:T8.kevin	

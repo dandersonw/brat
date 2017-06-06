@@ -1,0 +1,79 @@
+T3.sandy	Entity 255 279	external sensory stimuli
+T6.sandy	FIX_TYPE 434 452	dopamine signaling
+T7.sandy	Entity 473 480	D1-like
+T8.sandy	FIX_TYPE 484 501	D2-like receptors
+T9.sandy	Entity 523 540	D1-like receptors
+T11.sandy	Entity 697 736	dopamine D2 receptor-mediated signaling
+T12.sandy	FIX_TYPE 799 812	C57Bl/6J mice
+T16.sandy	FIX_TYPE 1093 1110	reversal learning
+T5.sandy	FIX_TYPE 629 641	D2 receptors
+T20.sandy	FIX_TYPE 1165 1200	dopamine D2 receptor deficient mice
+T23.sandy	FIX_TYPE 1445 1480	dopamine D2 receptor deficient mice
+T26.sandy	FIX_TYPE 1712 1747	dopamine D2 receptor deficient mice
+T32.sandy	Entity 2110 2145	dopamine D2 receptor deficient mice
+T33.sandy	Entity 2331 2351	dopamine D2 receptor
+T1.sandy	FIX_SPAN_KeyEntity 115 134	Dopamine modulation
+T2.sandy	FIX_SPAN_Entity 138 156	neuronal signaling
+T4.sandy	FIX_SPAN_Entity 306 324	environmental cues
+T10.sandy	VERIFY_Entity 557 580	goal-directed behaviors
+T13.sandy	FIX_SPAN_KeyEntity 845 866	dopamine D2 receptors
+T14.sandy	FIX_SPAN_Entity 967 990	stimulus discrimination
+T15.sandy	VERIFY_Entity 1011 1046	inappropriate behavioral strategies
+T18.sandy	FIX_SPAN_Entity 752 785	associative and reversal learning
+T17.sandy	FIX_SPAN_Entity 937 945	salience
+T19.sandy	VERIFY_Entity 1123 1160	Mildly food-deprived female wild-type
+T21.sandy	VERIFY_Entity 1201 1216	rapidly learned
+T22.sandy	VERIFY_Entity 1241 1265	visible food reinforcers
+T24.sandy	VERIFY_Entity 1504 1515	more trials
+T25.sandy	VERIFY_Entity 1539 1551	discriminate
+T27.sandy	VERIFY_Entity 1759 1772	fail to alter
+T28.sandy	VERIFY_Entity 1779 1796	response patterns
+T29.sandy	FIX_SPAN_Entity 1929 1972	absence of functional dopamine D2 receptors
+T30.sandy	FIX_SPAN_Entity 2013 2066	impaired ability to acquire odor-driven reinforcement
+T31.sandy	VERIFY_Entity 2214 2233	unexpected outcomes
+T34.sandy	FIX_SPAN_Entity 2380 2413	associative and reversal learning
+T35.sandy	VERIFY_KeyEntity 0 21	Dopamine D2 receptors
+T36.sandy	VERIFY_KeyEntity 30 53	two-odor discrimination
+T37.sandy	VERIFY_KeyEntity 58 75	reversal learning
+T38.sandy	VERIFY_Entity 79 91	C57BL/6 mice
+T1.kevin	VERIFY_Entity 164 178	frontal cortex
+T2.kevin	VERIFY_Entity 180 188	midbrain
+T3.kevin	VERIFY_Entity 194 202	striatum
+T4.kevin	FIX_SPAN_Entity 115 134;138 156	Dopamine modulation neuronal signaling
+T12.kevin	FIX_SPAN_KeyEntity 834 866	functional dopamine D2 receptors
+T13.kevin	VERIFY_KeyEntity 870 884	wild-type mice
+T14.kevin	FIX_SPAN_Entity 937 991	salience to external stimuli (stimulus discrimination)
+T15.kevin	FIX_SPAN_Entity 294 324	salience to environmental cues
+T18.kevin	FIX_SPAN_Entity 768 785	reversal learning
+T23.kevin	VERIFY_KeyEntity 1879 1899	Inbred C57Bl/6J mice
+T24.kevin	FIX_SPAN_KeyEntity 1940 1972	functional dopamine D2 receptors
+T25.kevin	VERIFY_Entity 1988 1997	olfaction
+T27.kevin	VERIFY_Entity 2189 2208	reinforced stimulus
+T29.kevin	FIX_SPAN_Entity 2380 2391;2405 2413	associative learning
+T31.kevin	FIX_SPAN_Entity 2041 2080	odor-driven reinforcement contingencies
+R4.sandy	FIX_RELATION_TYPE Arg1:T7.sandy Arg2:T6.sandy	
+R5.sandy	FIX_RELATION_TYPE Arg1:T8.sandy Arg2:T6.sandy	
+R1.sandy	VERIFY_is_part_of Arg1:T1.sandy Arg2:T2.sandy	
+R2.sandy	VERIFY_participates_in Arg1:T3.sandy Arg2:T2.sandy	
+R3.sandy	VERIFY_is_subclass_of Arg1:T4.sandy Arg2:T3.sandy	
+R6.sandy	VERIFY_participates_in Arg1:T11.sandy Arg2:T18.sandy	
+R7.sandy	VERIFY_is_part_of Arg1:T13.sandy Arg2:T12.sandy	
+R8.sandy	VERIFY_interacts_with Arg1:T13.sandy Arg2:T17.sandy	
+R9.sandy	VERIFY_participates_in Arg1:T17.sandy Arg2:T14.sandy	
+R10.sandy	VERIFY_participates_in Arg1:T15.sandy Arg2:T16.sandy	
+R11.sandy	VERIFY_participates_in Arg1:T19.sandy Arg2:T21.sandy	
+R12.sandy	VERIFY_participates_in Arg1:T20.sandy Arg2:T21.sandy	
+R13.sandy	VERIFY_interacts_with Arg1:T21.sandy Arg2:T22.sandy	
+R14.sandy	VERIFY_participates_in Arg1:T23.sandy Arg2:T24.sandy	
+R15.sandy	VERIFY_participates_in Arg1:T24.sandy Arg2:T25.sandy	
+R16.sandy	VERIFY_participates_in Arg1:T26.sandy Arg2:T27.sandy	
+R17.sandy	VERIFY_participates_in Arg1:T27.sandy Arg2:T28.sandy	
+R18.sandy	VERIFY_regulates Arg1:T29.sandy Arg2:T30.sandy	
+R19.sandy	VERIFY_regulates Arg1:T32.sandy Arg2:T31.sandy	
+R20.sandy	VERIFY_regulates Arg1:T33.sandy Arg2:T34.sandy	
+R1.kevin	VERIFY_is_part_of Arg1:T4.kevin Arg2:T1.kevin	
+R2.kevin	VERIFY_is_part_of Arg1:T4.kevin Arg2:T2.kevin	
+R3.kevin	VERIFY_is_part_of Arg1:T4.kevin Arg2:T3.kevin	
+R4.kevin	VERIFY_participates_in Arg1:T4.kevin Arg2:T3.sandy	
+R5.kevin	VERIFY_participates_in Arg1:T4.kevin Arg2:T15.kevin	
+R9.kevin	VERIFY_interacts_with Arg1:T24.kevin Arg2:T23.kevin	

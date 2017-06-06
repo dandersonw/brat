@@ -1,0 +1,48 @@
+T8.sandy	Entity 827 846	electron microscopy
+T9.sandy	Entity 851 870	confocal microscopy
+T12.sandy	Entity 953 968	alphaA/BKO mice
+T1.sandy	FIX_SPAN_KeyEntity 308 340	single alpha-crystallin knockout
+T2.sandy	VERIFY_Entity 480 484	lens
+T3.sandy	FIX_SPAN_Entity 497 514	alphaA and alphaB
+T4.sandy	VERIFY_Entity 541 552	high levels
+T5.sandy	FIX_SPAN_Entity 600 627	gross lenticular morphology
+T6.sandy	FIX_SPAN_Entity 684 719	alphaA- and alphaB-crystallin genes
+T7.sandy	FIX_SPAN_Entity 721 731	alphaA/BKO
+T10.sandy	VERIFY_Entity 896 916	Equatorial and axial
+T11.sandy	VERIFY_Entity 942 948	lenses
+T13.sandy	VERIFY_Entity 1034 1066	posterior sutures or fiber cells
+T14.sandy	VERIFY_Entity 1354 1368	equatorial/bow
+T15.sandy	VERIFY_Entity 1370 1379	posterior
+T16.sandy	VERIFY_Entity 1384 1392	anterior
+T17.sandy	VERIFY_Entity 1404 1410	lenses
+T18.sandy	VERIFY_Entity 1505 1534	alphaA- and alphaB-crystallin
+T19.sandy	VERIFY_Entity 1553 1580	proper fiber cell formation
+T20.sandy	VERIFY_Entity 1635 1653	cataract formation
+T21.sandy	VERIFY_Entity 1595 1622	absence of alpha-crystallin
+T23.sandy	FIX_SPAN_KeyEntity 0 30;50 67	Morphological characterization AlphaB-crystallin
+T24.sandy	VERIFY_Entity 68 94	double knockout mouse lens
+T1.kevin	VERIFY_Entity 177 193	alpha-crystallin
+T2.kevin	VERIFY_Entity 248 269	alpha-crystallin gene
+T3.kevin	FIX_SPAN_Entity 315 345	alpha-crystallin knockout mice
+T4.kevin	VERIFY_Entity 361 377	alpha-crystallin
+T5.kevin	FIX_SPAN_Entity 497 503	alphaA
+T6.kevin	FIX_SPAN_Entity 508 514	alphaB
+T7.kevin	FIX_SPAN_Entity 606 627	lenticular morphology
+T8.kevin	FIX_SPAN_Entity 647 651;684 732	mice alphaA- and alphaB-crystallin genes (alphaA/BKO)
+T9.kevin	VERIFY_Entity 756 771	129SvEvTac mice
+T10.kevin	VERIFY_Entity 776 791	alphaA/BKO mice
+T14.kevin	VERIFY_Entity 1128 1145	alphaA/BKO lenses
+T15.kevin	VERIFY_Entity 1147 1178	Ectopical nucleic acid staining
+T16.kevin	VERIFY_Entity 1199 1227	posterior subcapsular region
+T17.kevin	VERIFY_Entity 1240 1267	anterior subcapsular cortex
+T18.kevin	VERIFY_Entity 1277 1294	alphaA/BKO lenses
+T19.kevin	VERIFY_Entity 1416 1431	alphaA/BKO mice
+T20.kevin	FIX_SPAN_Entity 0 30	Morphological characterization
+T22.kevin	FIX_SPAN_Entity 50 67	AlphaB-crystallin
+R1.sandy	VERIFY_participates_in Arg1:T1.sandy Arg2:T2.sandy	
+R2.sandy	VERIFY_participates_in Arg1:T3.sandy Arg2:T4.sandy	
+R3.sandy	VERIFY_participates_in Arg1:T6.sandy Arg2:T5.sandy	
+R4.sandy	VERIFY_is_subclass_of Arg1:T10.sandy Arg2:T11.sandy	
+R5.sandy	VERIFY_is_part_of Arg1:T11.sandy Arg2:T12.sandy	
+R6.sandy	VERIFY_regulates Arg1:T18.sandy Arg2:T19.sandy	
+R7.sandy	VERIFY_participates_in Arg1:T21.sandy Arg2:T20.sandy	

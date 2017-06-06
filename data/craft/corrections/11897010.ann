@@ -1,0 +1,426 @@
+T2.sandy	FIX_TYPE 140 168	Mucolipidosis type IV (MLIV)
+T3.sandy	Entity 175 221	autosomal recessive lysosomal storage disorder
+T7.sandy	KeyEntity 315 321	MCOLN1
+T10.sandy	KeyEntity 501 507	Mcoln1
+T11.sandy	Entity 528 542	splice variant
+T12.sandy	KeyEntity 641 647	Mcoln1
+T13.sandy	KeyEntity 700 706	MCOLN1
+T14.sandy	KeyEntity 714 720	Mcoln1
+T15.sandy	Entity 729 741	chromosome 8
+T16.sandy	Entity 932 968	murine specific alternative splicing
+T17.sandy	Entity 1022 1032	c-terminus
+T18.sandy	KeyEntity 1048 1054	Mcoln1
+T19.sandy	KeyEntity 1076 1082	MCOLN1
+T20.sandy	Entity 1102 1123	transmembrane domains
+T21.sandy	Entity 1128 1143	ion pore region
+T22.sandy	Entity 1160 1196	endosomal/lysosomal targeting signal
+T23.sandy	Entity 1276 1293	vesicle membranes
+T25.sandy	KeyEntity 1400 1406	Mcoln1
+T4.sandy	FIX_SPAN_Entity 239 256	severe neurologic
+T5.sandy	FIX_SPAN_Entity 261 289	ophthalmologic abnormalities
+T6.sandy	VERIFY_KeyEntity 304 313	MLIV gene
+T8.sandy	FIX_SPAN_Entity 366 400	transient receptor potential (TRP)
+T24.sandy	VERIFY_Entity 1342 1374	species-specific splice variants
+T26.sandy	FIX_SPAN_KeyEntity 1457 1461	MLIV
+T27.sandy	VERIFY_Entity 65 97	alternatively spliced transcript
+T1.sandy	VERIFY_Entity 780 795	580 amino acids
+T29.sandy	VERIFY_Entity 839 843	2 kb
+T30.sandy	VERIFY_Entity 855 863	14 exons
+T9.sandy	VERIFY_Entity 979 1001	611 amino acid protein
+T31.sandy	VERIFY_KeyEntity 1624 1664	Mucolipidosis type IV (MLIV; MIM 252650)
+T32.sandy	VERIFY_Entity 1671 1717	autosomal recessive lysosomal storage disorder
+T33.sandy	VERIFY_Entity 1743 1759	corneal clouding
+T34.sandy	VERIFY_Entity 1761 1792	delayed psychomotor development
+T35.sandy	VERIFY_Entity 1798 1816	mental retardation
+T36.sandy	VERIFY_Entity 1939 1966	constitutively achlorhydric
+T37.sandy	VERIFY_Entity 1983 1997	hypergastremia
+T38.sandy	VERIFY_KeyEntity 2017 2021	MLIV
+T39.sandy	VERIFY_Entity 2025 2028;2034 2062	not mucopolysaccharide excretion
+T42.sandy	VERIFY_Entity 2128 2161	Abnormal lysosomal storage bodies
+T43.sandy	VERIFY_Entity 2166 2180	large vacuoles
+T44.sandy	VERIFY_Entity 2200 2204	skin
+T45.sandy	VERIFY_Entity 2209 2229	conjuctival biopsies
+T46.sandy	VERIFY_Entity 2236 2255	electron-microscopy
+T47.sandy	VERIFY_Entity 2270 2289	gene identification
+T48.sandy	VERIFY_KeyEntity 2392 2396	MLIV
+T49.sandy	VERIFY_Entity 2404 2431	Ashkenazi Jewish population
+T50.sandy	VERIFY_KeyEntity 2535 2541	MCOLN1
+T51.sandy	VERIFY_Entity 2570 2593	chromosome 19p13.2-13.3
+T52.sandy	VERIFY_Entity 2614 2621;2646 2695	protein transient receptor potential (TRP) cation channel
+T53.sandy	VERIFY_Entity 2721 2740	Protein trafficking
+T54.sandy	VERIFY_KeyEntity 2762 2766	MLIV
+T55.sandy	VERIFY_Entity 2800 2822	late endocytic pathway
+T56.sandy	VERIFY_Entity 2846 2859	mucolipidoses
+T57.sandy	VERIFY_Entity 2890 2920	defective lysosomal hydrolases
+T58.sandy	VERIFY_Entity 2945 2967	Caenorhabditis elegans
+T59.sandy	VERIFY_KeyEntity 3026 3032	MCOLN1
+T60.sandy	VERIFY_Entity 3033 3043	C. elegans
+T61.sandy	VERIFY_Entity 3055 3060	cup-5
+T62.sandy	VERIFY_Entity 3093 3104	endocytosis
+T63.sandy	VERIFY_Entity 3106 3136	accumulation of large vacuoles
+T64.sandy	VERIFY_Entity 3144 3191	decreased rate of endocytosed protein breakdown
+T65.sandy	VERIFY_KeyEntity 3293 3318	mouse homologue of MCOLN1
+T66.sandy	VERIFY_KeyEntity 3353 3373	mouse models of MLIV
+T67.sandy	VERIFY_KeyEntity 3458 3480	mouse homologue Mcoln1
+T68.sandy	VERIFY_Entity 3504 3529	mouse homologue of MCOLN1
+T69.sandy	VERIFY_Entity 3581 3620	high throughput genomic sequence (HTGS)
+T70.sandy	VERIFY_Entity 3636 3643	TBLASTN
+T71.sandy	VERIFY_Entity 3666 3715	mouse BAC clone RPCI-23_387H4 (GB No. AC079544.1)
+T72.sandy	VERIFY_Entity 3869 3872	BAC
+T73.sandy	VERIFY_Entity 3882 3894	chromosome 8
+T74.sandy	VERIFY_Entity 3973 3985	BAC sequence
+T75.sandy	VERIFY_Entity 4011 4029	mouse EST database
+T76.sandy	VERIFY_Entity 4036 4042	BLASTN
+T77.sandy	VERIFY_Entity 4086 4103	I.M.A.G.E. clones
+T78.sandy	VERIFY_Entity 4057 4061	ESTs
+T79.sandy	VERIFY_KeyEntity 4167 4185	Mcoln1 gene region
+T80.sandy	VERIFY_Entity 4214 4228	590 kb segment
+T81.sandy	VERIFY_Entity 4232 4250	mouse chromosome 8
+T82.sandy	VERIFY_Entity 4264 4283	human chromosome 19
+T83.sandy	VERIFY_Entity 4307 4311	Insr
+T84.sandy	VERIFY_Entity 4316 4319	Nte
+T85.sandy	VERIFY_Entity 4352 4356	BACs
+T86.sandy	VERIFY_Entity 4358 4383	RPCI-23_334D24 (AC087153)
+T87.sandy	VERIFY_Entity 4385 4409	RPCI-23_312B8 (AC087150)
+T88.sandy	VERIFY_Entity 4415 4439	RPCI-23_387H4 (AC079544)
+T89.sandy	VERIFY_KeyEntity 4467 4473	Mcoln1
+T90.sandy	VERIFY_Entity 4480 4488	14 exons
+T91.sandy	VERIFY_Entity 4590 4597	exon 13
+T92.sandy	VERIFY_Entity 4605 4637	alternatively spliced transcript
+T93.sandy	VERIFY_Entity 4652 4676	UniGene cluster Mm.39099
+T94.sandy	VERIFY_Entity 4701 4734	human zinc finger gene (AC001252)
+T95.sandy	VERIFY_Entity 4815 4827	201 kb scale
+T96.sandy	VERIFY_Entity 4831 4848	BAC RPCI-23_387H4
+T97.sandy	VERIFY_Entity 4865 4879	ID Nos. 604971
+T100.sandy	VERIFY_Entity 4908 4932	UniGene cluster Mm. 8356
+T101.sandy	VERIFY_Entity 4980 4995	2 kb transcript
+T102.sandy	VERIFY_Entity 5004 5041	open reading frame of 580 amino acids
+T103.sandy	VERIFY_Entity 5053 5077	Mcoln1 (GB No. AF302010)
+T104.sandy	VERIFY_Entity 5097 5110	cDNA sequence
+T105.sandy	VERIFY_Entity 5118 5121	BAC
+T106.sandy	VERIFY_Entity 5161 5169	14 exons
+T107.sandy	VERIFY_KeyEntity 5211 5217	Mcoln1
+T108.sandy	VERIFY_Entity 5228 5246	mouse chromosome 8
+T109.sandy	VERIFY_Entity 5285 5310	UniGene Cluster Mm. 39099
+T110.sandy	VERIFY_Entity 5331 5371	human zinc finger gene (GB No. AC001252)
+T111.sandy	VERIFY_Entity 5402 5408	1.8 kb
+T112.sandy	VERIFY_KeyEntity 5429 5435	Mcoln1
+T113.sandy	VERIFY_Entity 5441 5444	Nte
+T114.sandy	VERIFY_Entity 5479 5516	neuropathy target esterase gene (NTE)
+T115.sandy	VERIFY_Entity 5527 5541	130 base pairs
+T116.sandy	VERIFY_Entity 5552 5574	polyadenylation signal
+T117.sandy	VERIFY_KeyEntity 5579 5585	Mcoln1
+T118.sandy	VERIFY_Entity 5632 5638	Mcoln1
+T119.sandy	VERIFY_KeyEntity 5702 5708	MCOLN1
+T120.sandy	VERIFY_Entity 5746 5762	zinc finger gene
+T121.sandy	VERIFY_Entity 5767 5770	Nte
+T122.sandy	VERIFY_Entity 5771 5779;5796 5813	confirms region of synteny
+T123.sandy	VERIFY_Entity 5822 5841	human chromosome 19
+T124.sandy	VERIFY_Entity 5846 5864	mouse chromosome 8
+T125.sandy	VERIFY_Entity 5954 5966	91% identity
+T126.sandy	VERIFY_Entity 5913 5918	mouse
+T127.sandy	VERIFY_Entity 5981 6007	C. elegans homologue cup-5
+T128.sandy	VERIFY_Entity 6014 6026	34% identity
+T129.sandy	VERIFY_KeyEntity 6032 6038	Mcoln1
+T130.sandy	VERIFY_Entity 6043 6058	BLASTP analysis
+T131.sandy	VERIFY_Entity 6062 6068	Mcoln1
+T132.sandy	VERIFY_Entity 6091 6124	Drosophila melanogaster homologue
+T133.sandy	VERIFY_Entity 6136 6148	38% identity
+T134.sandy	VERIFY_KeyEntity 6178 6209	MCOLN1 amino acid substitutions
+T135.sandy	VERIFY_KeyEntity 6225 6229	MLIV
+T136.sandy	VERIFY_Entity 6239 6260	conserved amino acids
+T137.sandy	VERIFY_Entity 6262 6277	TMPred analysis
+T138.sandy	VERIFY_KeyEntity 6336 6342	MCOLN1
+T139.sandy	VERIFY_Entity 6355 6378	6 transmembrane domains
+T141.sandy	VERIFY_Entity 6395 6404	C-termini
+T142.sandy	VERIFY_Entity 6421 6430	cytoplasm
+T143.sandy	VERIFY_Entity 6456 6483	Peptide sequence comparison
+T144.sandy	VERIFY_KeyEntity 6487 6493	Mcoln1
+T145.sandy	VERIFY_Entity 6497 6502	human
+T146.sandy	VERIFY_Entity 6504 6519	D. melanogaster
+T147.sandy	VERIFY_Entity 6525 6543	C. elegans (cup-5)
+T148.sandy	VERIFY_Entity 6576 6597	transmembrane domains
+T149.sandy	VERIFY_Entity 6625 6646	putative channel pore
+T150.sandy	VERIFY_Entity 6677 6727	putative late endosomal/lysosomal targeting signal
+T151.sandy	VERIFY_Entity 6753 6759	Mcoln1
+T152.sandy	VERIFY_Entity 6761 6788	Mouse adult multiple tissue
+T154.sandy	VERIFY_Entity 6803 6817	Northern blots
+T155.sandy	VERIFY_Entity 6863 6884	mouse exon 2 (probe 1
+T156.sandy	VERIFY_Entity 6929 6947	2.4 kb (isoform 1)
+T157.sandy	VERIFY_Entity 6997 7020	4.4 kb band (isoform 2)
+T158.sandy	VERIFY_Entity 7041 7052	2.4 kb band
+T159.sandy	VERIFY_Entity 7126 7131	brain
+T160.sandy	VERIFY_Entity 7133 7138	liver
+T161.sandy	VERIFY_Entity 7143 7149	kidney
+T162.sandy	VERIFY_Entity 7155 7172	fetal tissue blot
+T163.sandy	VERIFY_Entity 7204 7218	2.4 kb message
+T164.sandy	VERIFY_KeyEntity 7262 7279	human MCOLN1 gene
+T165.sandy	VERIFY_Entity 7290 7307	single transcript
+T166.sandy	VERIFY_Entity 7719 7737	chromosome 8 locus
+T167.sandy	VERIFY_Entity 7781 7798	Northern analysis
+T168.sandy	VERIFY_KeyEntity 7802 7808	Mcoln1
+T170.sandy	VERIFY_Entity 7814 7841	Mouse fetal tissue Northern
+T172.sandy	VERIFY_Entity 7850 7897	mouse multiple tissue Northern blots (Clontech)
+T173.sandy	VERIFY_Entity 7937 7962	exon 2 (probe 1, Fig. 1B)
+T174.sandy	VERIFY_Entity 7989 8009	multiple tissue blot
+T175.sandy	VERIFY_Entity 8032 8081	alternatively spliced segment of exon 13 (probe 2
+T176.sandy	VERIFY_Entity 8093 8122	β-Actin control hybridization
+T177.sandy	VERIFY_KeyEntity 8174 8180	Mcoln1
+T178.sandy	VERIFY_Entity 8181 8207	alternative splice variant
+T179.sandy	VERIFY_Entity 8294 8312	mouse EST database
+T180.sandy	VERIFY_Entity 8324 8330	intron
+T181.sandy	VERIFY_Entity 8346 8362	genomic sequence
+T182.sandy	VERIFY_KeyEntity 8376 8387	Mcoln1 gene
+T183.sandy	VERIFY_Entity 8393 8397	ESTs
+T184.sandy	VERIFY_Entity 8443 8469	intron 12 (GB No. AI430291
+T186.sandy	VERIFY_Entity 8530 8576	Clone 408619 (ESTs: GB No. AI430291, AI429558)
+T187.sandy	VERIFY_Entity 8598 8619	1.1 kb before exon 13
+T188.sandy	VERIFY_Entity 8676 8720	exon 14. Clone 1281641 (EST:GB No. AA874645)
+T189.sandy	VERIFY_Entity 8728 8749	175 bp before exon 13
+T190.sandy	VERIFY_Entity 8780 8787	exon 14
+T191.sandy	VERIFY_Entity 8791 8821	mouse multiple tissue Northern
+T192.sandy	VERIFY_Entity 8870 8919	putative intron sequence in clone 408619 (Probe 2
+T193.sandy	VERIFY_Entity 8955 8966	4.4 kb band
+T169.sandy	VERIFY_Entity 9040 9046	RT-PCR
+T171.sandy	VERIFY_Entity 9064 9072	exons 10
+T195.sandy	VERIFY_Entity 9104 9113	intron 12
+T196.sandy	VERIFY_Entity 9134 9162	BALB/c mouse brain total RNA
+T197.sandy	VERIFY_Entity 9305 9321	expanded exon 13
+T198.sandy	VERIFY_Entity 9261 9279	alternative splice
+T199.sandy	VERIFY_Entity 9337 9344	exon 12
+T200.sandy	VERIFY_Entity 9356 9375	bp 436 of intron 12
+T201.sandy	VERIFY_Entity 9388 9409	large 1614 bp exon 13
+T202.sandy	VERIFY_Entity 9436 9443	exon 14
+T203.sandy	VERIFY_Entity 9512 9527	611 amino acids
+T204.sandy	VERIFY_Entity 9529 9550	28 amino acids longer
+T205.sandy	VERIFY_Entity 9583 9600	2.4 kb transcript
+T206.sandy	VERIFY_Entity 9603 9618	TMPred analysis
+T207.sandy	VERIFY_Entity 9633 9642	isoform 2
+T208.sandy	VERIFY_KeyEntity 9687 9693	Mcoln1
+T209.sandy	VERIFY_Entity 9706 9729	6 transmembrane domains
+T210.sandy	VERIFY_Entity 9736 9748	channel pore
+T211.sandy	VERIFY_Entity 9791 9805	amino acid 526
+T212.sandy	VERIFY_Entity 9811 9852	55 amino acid C-terminal cytoplasmic tail
+T213.sandy	VERIFY_Entity 9868 9885	2.4 kb transcript
+T214.sandy	VERIFY_Entity 9919 9937	86 amino acid tail
+T215.sandy	VERIFY_Entity 9953 9986	murine specific 4.4 kb transcript
+T216.sandy	VERIFY_Entity 9997 10028	Clontech Mouse RNA Master Blots
+T217.sandy	VERIFY_Entity 10054 10060	exon 2
+T218.sandy	VERIFY_Entity 10065 10081	intron 12 probes
+T219.sandy	VERIFY_Entity 10332 10357	two alternatively spliced
+T220.sandy	VERIFY_Entity 10358 10373	Mcoln1 isoforms
+T221.sandy	VERIFY_Entity 10297 10324	Peptide sequence comparison
+T222.sandy	VERIFY_Entity 10413 10441	c-terminal cytoplasmic tails
+T223.sandy	VERIFY_Entity 10471 10492	transmembrane domains
+T225.sandy	VERIFY_Entity 10541 10560	amino acid sequence
+T226.sandy	VERIFY_Entity 10568 10606	alternatively spliced mouse transcript
+T227.sandy	VERIFY_KeyEntity 10621 10650	human MCOLN1 genomic sequence
+T228.sandy	VERIFY_Entity 10713 10727	Northern blots
+T229.sandy	VERIFY_Entity 10743 10762	human MCOLN1 probes
+T230.sandy	VERIFY_Entity 10777 10794	2.4 kb transcript
+T231.sandy	VERIFY_Entity 10825 10855	human multiple tissue Northern
+T232.sandy	VERIFY_Entity 10860 10874	human Southern
+T233.sandy	VERIFY_Entity 10891 10906	human intron 12
+T234.sandy	VERIFY_Entity 10927 10934	exon 13
+T235.sandy	VERIFY_Entity 11007 11033	alternate mouse transcript
+T236.sandy	VERIFY_Entity 11080 11088	Southern
+T237.sandy	VERIFY_Entity 11123 11131	Northern
+T238.sandy	VERIFY_KeyEntity 11192 11205	murine Mcoln1
+T239.sandy	VERIFY_Entity 11154 11176	alternative transcript
+T240.sandy	VERIFY_Entity 11214 11229	BLASTP analysis
+T241.sandy	VERIFY_KeyEntity 11237 11264	alternate Mcoln1 transcript
+T242.sandy	VERIFY_Entity 11294 11344	145 amino acid anonymous protein (GB No. BAB25862)
+T243.sandy	VERIFY_Entity 11362 11373	RIKEN clone
+T244.sandy	VERIFY_Entity 11562 11584	Mcoln1 coding sequence
+T245.sandy	VERIFY_KeyEntity 11645 11661	Mcoln1 isoform 1
+T246.sandy	VERIFY_Entity 11723 11733;11749 11754	amino acid level
+T248.sandy	VERIFY_Entity 11771 11792	transmembrane domains
+T249.sandy	VERIFY_Entity 11809 11832	putative cation channel
+T250.sandy	VERIFY_Entity 11859 11894	putative di-leucine (L-L-X-X) motif
+T251.sandy	VERIFY_Entity 11902 11912	C-terminus
+T252.sandy	VERIFY_Entity 11933 11974	late endosomal/lysosomal targeting signal
+T253.sandy	VERIFY_Entity 12042 12051	cup-5[13]
+T254.sandy	VERIFY_KeyEntity 12081 12087	MCOLN1
+T255.sandy	VERIFY_Entity 12095 12116	cellular localization
+T256.sandy	VERIFY_Entity 12166 12180	late endosomes
+T257.sandy	VERIFY_Entity 12188 12197	lysosomes
+T258.sandy	VERIFY_KeyEntity 12204 12221	mouse Mcoln1 gene
+T259.sandy	VERIFY_Entity 12226 12260	two alternatively spliced isoforms
+T260.sandy	VERIFY_Entity 12286 12323	different c-terminal cytoplasmic tail
+T261.sandy	VERIFY_Entity 12336 12365	86 amino acid c-terminal tail
+T262.sandy	VERIFY_Entity 12376 12402	lysosomal targeting signal
+T263.sandy	VERIFY_Entity 12571 12605	alternate subcellular localization
+T264.sandy	VERIFY_Entity 12636 12663	isoform-specific antibodies
+T265.sandy	VERIFY_KeyEntity 12735 12751	Mcoln1 knock-out
+T266.sandy	VERIFY_Entity 12830 12851	mouse gene expression
+T268.sandy	VERIFY_KeyEntity 12887 12908	second Mcoln1 isoform
+T269.sandy	VERIFY_Entity 12955 12983	alternatively spliced region
+T270.sandy	VERIFY_Entity 13077 13121	species specific alternative splice variants
+T271.sandy	VERIFY_Entity 13123 13163	MOG, myelin/oligodendrocyte glycoprotein
+T272.sandy	VERIFY_Entity 13184 13199	splice variants
+T273.sandy	VERIFY_Entity 13243 13266	ATP11B, a P-type ATPase
+T274.sandy	VERIFY_Entity 13274 13304	rabbit-specific splice variant
+T275.sandy	VERIFY_Entity 13310 13317;13320 13340	deletes transmembrane domain
+T276.sandy	VERIFY_Entity 13373 13405	putative function of the protein
+T277.sandy	VERIFY_Entity 13481 13493	32,000 genes
+T278.sandy	VERIFY_Entity 13701 13721	alternative splicing
+T279.sandy	VERIFY_Entity 13734 13752	genetic complexity
+T280.sandy	VERIFY_Entity 13783 13802	splicing regulation
+T281.sandy	VERIFY_Entity 13877 13909	species-specific splice variants
+T282.sandy	VERIFY_Entity 13956 14000	alternatively spliced transcripts progresses
+T283.sandy	VERIFY_Entity 14079 14084	BLAST
+T284.sandy	VERIFY_Entity 14090 14116	Draft Human Genome Browser
+T285.sandy	VERIFY_Entity 14134 14141	UniGene
+T286.sandy	VERIFY_KeyEntity 14168 14174	Mcoln1
+T287.sandy	VERIFY_Entity 14198 14212	motif searches
+T288.sandy	VERIFY_Entity 14219 14230	ProfileScan
+T289.sandy	VERIFY_Entity 14236 14242	TMPred
+T290.sandy	VERIFY_Entity 14285 14297	Pileup (GCG)
+T291.sandy	VERIFY_Entity 14302 14310	Boxshade
+T292.sandy	VERIFY_Entity 14330 14347	I.M.A.G.E. Clones
+T293.sandy	VERIFY_Entity 14439 14464	AmpliCycle sequencing kit
+T294.sandy	VERIFY_Entity 14512 14549	Genomyx LR programmable DNA sequencer
+T295.sandy	VERIFY_Entity 14552 14567	RT-PCR Reaction
+T296.sandy	VERIFY_Entity 14569 14597	BALB/c mouse brain total RNA
+T297.sandy	VERIFY_Entity 14745 14751	RT-PCR
+T298.sandy	VERIFY_Entity 14736 14740	cDNA
+T299.sandy	VERIFY_Entity 14765 14773	hexamers
+T300.sandy	VERIFY_Entity 14778 14793	oligo dT primer
+T301.sandy	VERIFY_Entity 14799 14809	RT product
+T302.sandy	VERIFY_Entity 14834 14860	alternatively spliced form
+T303.sandy	VERIFY_Entity 14957 14960	PCR
+T304.sandy	VERIFY_Entity 14978 15007	annealing temperature of 61°C
+T305.sandy	VERIFY_Entity 15010 15032	Southern Blot Analysis
+T306.sandy	VERIFY_Entity 15040 15057	mouse genomic DNA
+T307.sandy	VERIFY_Entity 15077 15082	EcoRI
+T308.sandy	VERIFY_Entity 15084 15089	BamHI
+T309.sandy	VERIFY_Entity 15091 15095	PstI
+T310.sandy	VERIFY_Entity 15101 15106	XbaI.
+T311.sandy	VERIFY_Entity 15145 15159	1% agarose gel
+T312.sandy	VERIFY_Entity 15163 15166	60V
+T313.sandy	VERIFY_Entity 15205 15223	Hybond N+ membrane
+T314.sandy	VERIFY_Entity 15276 15305	32P-dATP labeled PCR fragment
+T315.sandy	VERIFY_KeyEntity 15313 15333	Mcoln1 coding region
+T316.sandy	VERIFY_Entity 15351 15357	exon 2
+T317.sandy	VERIFY_Entity 15471 15500	annealing temperature of 59°C
+T318.sandy	VERIFY_Entity 15503 15516	Hybridization
+T319.sandy	VERIFY_Entity 15521 15527	washes
+T320.sandy	VERIFY_Entity 15575 15597	Northern Blot Analysis
+T321.sandy	VERIFY_Entity 15599 15641	Mouse embryo multiple-tissue northern blot
+T322.sandy	VERIFY_Entity 15646 15687	mouse adult multiple-tissue northern blot
+T323.sandy	VERIFY_Entity 15792 15821	32P-dATP labeled DNA fragment
+T324.sandy	VERIFY_KeyEntity 15825 15831	Mcoln1
+T325.sandy	VERIFY_Entity 15863 15869	exon 2
+T326.sandy	VERIFY_Entity 15891 15913	alternative transcript
+T327.sandy	VERIFY_Entity 15959 15967	exons 12
+T329.sandy	VERIFY_Entity 16072 16101	annealing temperature of 62°C
+T330.sandy	VERIFY_Entity 16141 16155	β-actin probes
+T331.sandy	VERIFY_Entity 16333 16346	grant NS39995
+T3.kevin	FIX_SPAN_Entity 239 256;276 289	severe neurologic abnormalities
+T6.kevin	FIX_SPAN_Entity 366 427	transient receptor potential (TRP) cation channel superfamily
+T9.kevin	VERIFY_Entity 632 639	synteny
+T21.kevin	FIX_SPAN_Entity 1425 1461	development of mouse models for MLIV
+#1	AnnotatorNotes T46.sandy	experimental_procedure
+#3	AnnotatorNotes T47.sandy	experimental_procedure
+#5	AnnotatorNotes T58.sandy	model_organism
+#6	AnnotatorNotes T60.sandy	model_organism
+#9	AnnotatorNotes T69.sandy	experimental_procedure
+#10	AnnotatorNotes T70.sandy	equipment
+#19	AnnotatorNotes T130.sandy	experimental_procedure
+#22	AnnotatorNotes T137.sandy	experimental_procedure
+#23	AnnotatorNotes T154.sandy	experimental_test
+#24	AnnotatorNotes T162.sandy	experimental_test
+#25	AnnotatorNotes T167.sandy	experimental_test
+#26	AnnotatorNotes T170.sandy	experimental_test
+#27	AnnotatorNotes T172.sandy	experimental_test
+#28	AnnotatorNotes T191.sandy	experimental_test
+#29	AnnotatorNotes T169.sandy	experimental_test
+#30	AnnotatorNotes T196.sandy	experimental_test
+#31	AnnotatorNotes T206.sandy	experimental_test
+#33	AnnotatorNotes T216.sandy	experimental_test
+#34	AnnotatorNotes T221.sandy	experimental_procedure
+#35	AnnotatorNotes T228.sandy	experimental_test
+#36	AnnotatorNotes T231.sandy	experimental_test
+#37	AnnotatorNotes T232.sandy	experimental_test
+#38	AnnotatorNotes T236.sandy	experimental_test
+#39	AnnotatorNotes T237.sandy	experimental_test
+#40	AnnotatorNotes T240.sandy	experimental_test
+#43	AnnotatorNotes T255.sandy	experimental_procedure
+#45	AnnotatorNotes T283.sandy	experimental_procedure
+#46	AnnotatorNotes T284.sandy	equipment
+#47	AnnotatorNotes T287.sandy	experimental_procedure
+#48	AnnotatorNotes T288.sandy	equipment
+#49	AnnotatorNotes T289.sandy	equipment
+#50	AnnotatorNotes T290.sandy	experimental_procedure
+#51	AnnotatorNotes T291.sandy	experimental_procedure
+#52	AnnotatorNotes T293.sandy	equipment
+#53	AnnotatorNotes T294.sandy	equipment
+#54	AnnotatorNotes T295.sandy	experimental_test
+#55	AnnotatorNotes T297.sandy	experimental_test
+#56	AnnotatorNotes T303.sandy	experimental_test
+#57	AnnotatorNotes T304.sandy	experimental_procedure
+#58	AnnotatorNotes T305.sandy	experimental_test
+#59	AnnotatorNotes T317.sandy	experimental_procedure
+#60	AnnotatorNotes T320.sandy	experimental_test
+#61	AnnotatorNotes T321.sandy	experimental_test
+#62	AnnotatorNotes T322.sandy	experimental_test
+#63	AnnotatorNotes T329.sandy	experimental_procedure
+#64	AnnotatorNotes T330.sandy	experimental_procedure
+#65	AnnotatorNotes T331.sandy	funding_agency
+R2.sandy	VERIFY_is_part_of Arg1:T2.sandy Arg2:T3.sandy	
+R3.sandy	VERIFY_is_part_of Arg1:T7.sandy Arg2:T8.sandy	
+R4.sandy	VERIFY_is_part_of Arg1:T10.sandy Arg2:T11.sandy	
+R6.sandy	VERIFY_is_part_of Arg1:T14.sandy Arg2:T15.sandy	
+R7.sandy	VERIFY_interacts_with Arg1:T23.sandy Arg2:T22.sandy	
+R8.sandy	VERIFY_is_part_of Arg1:T24.sandy Arg2:T25.sandy	
+R9.sandy	VERIFY_is_part_of Arg1:T24.sandy Arg2:T26.sandy	
+R1.sandy	VERIFY_is_part_of Arg1:T33.sandy Arg2:T31.sandy	
+R10.sandy	VERIFY_is_part_of Arg1:T34.sandy Arg2:T31.sandy	
+R11.sandy	VERIFY_is_part_of Arg1:T35.sandy Arg2:T31.sandy	
+R12.sandy	VERIFY_regulates Arg1:T50.sandy Arg2:T52.sandy	
+R14.sandy	VERIFY_is_part_of Arg1:T57.sandy Arg2:T56.sandy	
+R16.sandy	VERIFY_participates_in Arg1:T61.sandy Arg2:T62.sandy	
+R17.sandy	VERIFY_participates_in Arg1:T61.sandy Arg2:T63.sandy	
+R18.sandy	VERIFY_participates_in Arg1:T61.sandy Arg2:T64.sandy	
+R19.sandy	VERIFY_regulates Arg1:T59.sandy Arg2:T61.sandy	
+R21.sandy	VERIFY_participates_in Arg1:T72.sandy Arg2:T73.sandy	
+R22.sandy	VERIFY_is_subclass_of Arg1:T86.sandy Arg2:T85.sandy	
+R23.sandy	VERIFY_is_subclass_of Arg1:T87.sandy Arg2:T85.sandy	
+R24.sandy	VERIFY_is_subclass_of Arg1:T88.sandy Arg2:T85.sandy	
+R25.sandy	VERIFY_is_part_of Arg1:T106.sandy Arg2:T105.sandy	
+R26.sandy	VERIFY_is_part_of Arg1:T107.sandy Arg2:T108.sandy	
+R30.sandy	VERIFY_participates_in Arg1:T120.sandy Arg2:T122.sandy	
+R31.sandy	VERIFY_participates_in Arg1:T121.sandy Arg2:T122.sandy	
+R38.sandy	VERIFY_is_part_of Arg1:T135.sandy Arg2:T136.sandy	
+R39.sandy	VERIFY_interacts_with Arg1:T141.sandy Arg2:T142.sandy	
+R41.sandy	VERIFY_participates_in Arg1:T142.sandy Arg2:T139.sandy	
+R42.sandy	VERIFY_is_part_of Arg1:T139.sandy Arg2:T138.sandy	
+R43.sandy	VERIFY_participates_in Arg1:T158.sandy Arg2:T159.sandy	
+R44.sandy	VERIFY_participates_in Arg1:T158.sandy Arg2:T160.sandy	
+R45.sandy	VERIFY_participates_in Arg1:T158.sandy Arg2:T161.sandy	
+R46.sandy	VERIFY_regulates Arg1:T164.sandy Arg2:T165.sandy	
+R47.sandy	VERIFY_interacts_with Arg1:T181.sandy Arg2:T182.sandy	
+R48.sandy	VERIFY_interacts_with Arg1:T180.sandy Arg2:T182.sandy	
+R49.sandy	VERIFY_participates_in Arg1:T192.sandy Arg2:T191.sandy	
+R50.sandy	VERIFY_participates_in Arg1:T198.sandy Arg2:T197.sandy	
+R51.sandy	VERIFY_interacts_with Arg1:T199.sandy Arg2:T200.sandy	
+R52.sandy	VERIFY_regulates Arg1:T207.sandy Arg2:T208.sandy	
+R53.sandy	VERIFY_is_part_of Arg1:T209.sandy Arg2:T208.sandy	
+R54.sandy	VERIFY_is_part_of Arg1:T210.sandy Arg2:T208.sandy	
+R55.sandy	VERIFY_regulates Arg1:T212.sandy Arg2:T213.sandy	
+R56.sandy	VERIFY_regulates Arg1:T214.sandy Arg2:T215.sandy	
+R58.sandy	VERIFY_is_part_of Arg1:T219.sandy Arg2:T220.sandy	
+R59.sandy	VERIFY_is_part_of Arg1:T239.sandy Arg2:T238.sandy	
+R61.sandy	VERIFY_is_part_of Arg1:T246.sandy Arg2:T245.sandy	
+R63.sandy	VERIFY_participates_in Arg1:T250.sandy Arg2:T251.sandy	
+R64.sandy	VERIFY_is_part_of Arg1:T250.sandy Arg2:T252.sandy	
+R66.sandy	VERIFY_is_part_of Arg1:T259.sandy Arg2:T258.sandy	
+R67.sandy	VERIFY_is_part_of Arg1:T260.sandy Arg2:T259.sandy	
+R69.sandy	VERIFY_is_part_of Arg1:T275.sandy Arg2:T273.sandy	
+R70.sandy	VERIFY_participates_in Arg1:T275.sandy Arg2:T276.sandy	
+R71.sandy	VERIFY_is_part_of Arg1:T314.sandy Arg2:T315.sandy	
+R72.sandy	VERIFY_is_part_of Arg1:T323.sandy Arg2:T324.sandy	
+R73.sandy	VERIFY_is_part_of Arg1:T324.sandy Arg2:T325.sandy	
+R74.sandy	VERIFY_is_part_of Arg1:T315.sandy Arg2:T316.sandy	
+R3.kevin	VERIFY_is_part_of Arg1:T3.sandy Arg2:T2.sandy	
+R4.kevin	VERIFY_is_subclass_of Arg1:T7.sandy Arg2:T6.kevin	

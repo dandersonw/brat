@@ -1,0 +1,60 @@
+T1.sandy	Entity 376 393	biallelic effects
+T4.sandy	Entity 489 506	recessive alleles
+T6.sandy	FIX_TYPE 565 588	XPD recessive disorders
+T7.sandy	Entity 691 701	DNA repair
+T8.sandy	Entity 706 725	basal transcription
+T9.sandy	Entity 658 666	helicase
+T11.sandy	Entity 798 819	cancer predisposition
+T13.sandy	Entity 878 895	biallelic effects
+T18.sandy	Entity 1199 1225	differential developmental
+T20.sandy	FIX_TYPE 1268 1287	Xpd allele products
+T21.sandy	Entity 1299 1327	interallelic complementation
+T22.sandy	FIX_TYPE 1472 1485	XPD disorders
+T25.sandy	Entity 592 626	compound heterozygous mouse models
+T26.sandy	FIX_TYPE 1455 1468	null” alleles
+T27.sandy	Entity 95 118	compound heterozygosity
+T2.sandy	VERIFY_Entity 414 425	environment
+T3.sandy	VERIFY_Entity 429 447	genetic background
+T5.sandy	FIX_SPAN_Entity 528 548	enigmatic pleiotropy
+T10.sandy	FIX_SPAN_Entity 779 793	UV sensitivity
+T12.sandy	FIX_SPAN_Entity 835 853	segmental progeria
+T14.sandy	FIX_SPAN_KeyEntity 962 973	Xpd alleles
+T15.sandy	FIX_SPAN_Entity 1037 1048	Xpd alleles
+T16.sandy	FIX_SPAN_Entity 1114 1133	basal transcription
+T17.sandy	VERIFY_Entity 1052 1062	ameliorate
+T19.sandy	FIX_SPAN_Entity 1230 1245	tissue-specific
+T23.sandy	FIX_SPAN_Entity 1577 1611	pathological phenotypic plasticity
+T24.sandy	VERIFY_Entity 1533 1550	recessive alleles
+T28.sandy	VERIFY_KeyEntity 0 18	Rescue of Progeria
+T29.sandy	VERIFY_KeyEntity 22 41	Trichothiodystrophy
+T30.sandy	VERIFY_KeyEntity 45 74	Homozygous Lethal Xpd Alleles
+T2.kevin	VERIFY_Entity 199 222	human recessive disease
+T5.kevin	FIX_SPAN_Entity 538 548	pleiotropy
+T11.kevin	FIX_SPAN_Entity 770 793	elevated UV sensitivity
+T13.kevin	FIX_SPAN_Entity 823 853	accelerated segmental progeria
+T14.kevin	FIX_SPAN_KeyEntity 952 973	recessive Xpd alleles
+T16.kevin	FIX_SPAN_KeyEntity 1019 1048	homozygous lethal Xpd alleles
+T18.kevin	FIX_SPAN_Entity 1230 1255	tissue-specific functions
+T21.kevin	VERIFY_Entity 899 919	organismal phenotype
+T22.kevin	FIX_SPAN_Entity 1114 1142	basal transcription function
+T25.kevin	FIX_SPAN_Entity 1590 1611	phenotypic plasticity
+#1	AnnotatorNotes T25.sandy	model_organism
+R2.sandy	FIX_RELATION_TYPE Arg1:T9.sandy Arg2:T7.sandy	
+R3.sandy	FIX_RELATION_TYPE Arg1:T9.sandy Arg2:T8.sandy	
+R13.sandy	FIX_RELATION_TYPE Arg1:T26.sandy Arg2:T22.sandy	
+R1.sandy	VERIFY_is_part_of Arg1:T5.sandy Arg2:T6.sandy	
+R4.sandy	VERIFY_participates_in Arg1:T9.sandy Arg2:T10.sandy	
+R5.sandy	VERIFY_participates_in Arg1:T9.sandy Arg2:T11.sandy	
+R6.sandy	VERIFY_participates_in Arg1:T11.sandy Arg2:T12.sandy	
+R7.sandy	VERIFY_participates_in Arg1:T10.sandy Arg2:T12.sandy	
+R8.sandy	VERIFY_is_part_of Arg1:T13.sandy Arg2:T14.sandy	
+R9.sandy	VERIFY_regulates Arg1:T15.sandy Arg2:T17.sandy	
+R10.sandy	VERIFY_is_part_of Arg1:T16.sandy Arg2:T17.sandy	
+R11.sandy	VERIFY_is_part_of Arg1:T18.sandy Arg2:T20.sandy	
+R12.sandy	VERIFY_is_part_of Arg1:T19.sandy Arg2:T20.sandy	
+R14.sandy	VERIFY_participates_in Arg1:T24.sandy Arg2:T23.sandy	
+R1.kevin	VERIFY_is_subclass_of Arg1:T27.sandy Arg2:T2.kevin	
+R2.kevin	VERIFY_interacts_with Arg1:T4.sandy Arg2:T5.kevin	
+R4.kevin	VERIFY_is_part_of Arg1:T6.sandy Arg2:T25.sandy	
+R7.kevin	VERIFY_interacts_with Arg1:T20.sandy Arg2:T18.sandy	
+R8.kevin	VERIFY_interacts_with Arg1:T20.sandy Arg2:T18.kevin	

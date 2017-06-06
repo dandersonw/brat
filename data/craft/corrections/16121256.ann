@@ -1,0 +1,47 @@
+T3.sandy	Entity 176 212	mitochondrial fatty acid β-oxidation
+T5.sandy	KeyEntity 310 335	MCAD deficiency (MCAD−/−)
+T12.sandy	Entity 468 484	cold intolerance
+T15.sandy	Entity 632 650	neonatal mortality
+T16.sandy	KeyEntity 654 666	MCAD−/− pups
+T18.sandy	FIX_TYPE 744 767	MCAD-deficient patients
+T20.sandy	KeyEntity 773 793	MCAD-deficient mouse
+T21.sandy	Entity 909 929	fatty acid oxidation
+T22.sandy	Entity 934 946	pathogenesis
+T23.sandy	Entity 975 995	fatty acid oxidation
+T2.sandy	FIX_SPAN_KeyEntity 81 123	Medium-chain acyl-CoA dehydrogenase (MCAD)
+T6.sandy	VERIFY_Entity 339 353	gene targeting
+T8.sandy	FIX_SPAN_KeyEntity 357 376	embryonic stem (ES)
+T9.sandy	FIX_SPAN_KeyEntity 388 395	MCAD−/−
+T10.sandy	FIX_SPAN_Entity 414 430	organic aciduria
+T11.sandy	FIX_SPAN_Entity 435 446	fatty liver
+T13.sandy	FIX_SPAN_Entity 517 541	sporadic cardiac lesions
+T14.sandy	FIX_SPAN_KeyEntity 550 557	MCAD−/−
+T17.sandy	VERIFY_Entity 731 740	mortality
+T19.sandy	VERIFY_Entity 866 871	model
+T24.sandy	VERIFY_KeyEntity 0 35	Medium-Chain Acyl-CoA Dehydrogenase
+T25.sandy	VERIFY_Entity 50 68	Gene-Targeted Mice
+T1.kevin	FIX_SPAN_KeyEntity 81 134	Medium-chain acyl-CoA dehydrogenase (MCAD) deficiency
+T4.kevin	VERIFY_Entity 294 305	mouse model
+T5.kevin	FIX_SPAN_Entity 357 382	embryonic stem (ES) cells
+T6.kevin	FIX_SPAN_KeyEntity 388 400	MCAD−/− mice
+T7.kevin	FIX_SPAN_Entity 414 446	organic aciduria and fatty liver
+T9.kevin	FIX_SPAN_Entity 526 541	cardiac lesions
+T10.kevin	FIX_SPAN_KeyEntity 550 562	MCAD−/− mice
+T11.kevin	VERIFY_Entity 589 608	human MCAD patients
+T16.kevin	VERIFY_Entity 826 847	human MCAD deficiency
+R2.sandy	VERIFY_is_part_of Arg1:T2.sandy Arg2:T3.sandy	
+R4.sandy	VERIFY_interacts_with Arg1:T6.sandy Arg2:T8.sandy	
+R6.sandy	VERIFY_is_part_of Arg1:T10.sandy Arg2:T9.sandy	
+R7.sandy	VERIFY_is_part_of Arg1:T11.sandy Arg2:T9.sandy	
+R8.sandy	VERIFY_participates_in Arg1:T9.sandy Arg2:T12.sandy	
+R9.sandy	VERIFY_participates_in Arg1:T13.sandy Arg2:T14.sandy	
+R10.sandy	VERIFY_interacts_with Arg1:T15.sandy Arg2:T16.sandy	
+R12.sandy	VERIFY_is_part_of Arg1:T17.sandy Arg2:T18.sandy	
+R13.sandy	VERIFY_is_part_of Arg1:T20.sandy Arg2:T19.sandy	
+R14.sandy	VERIFY_participates_in Arg1:T20.sandy Arg2:T21.sandy	
+R15.sandy	VERIFY_is_part_of Arg1:T20.sandy Arg2:T22.sandy	
+R16.sandy	VERIFY_participates_in Arg1:T20.sandy Arg2:T23.sandy	
+R1.kevin	VERIFY_participates_in Arg1:T1.kevin Arg2:T3.sandy	
+R2.kevin	VERIFY_is_part_of Arg1:T5.sandy Arg2:T4.kevin	
+R5.kevin	VERIFY_is_part_of Arg1:T9.kevin Arg2:T10.kevin	
+R7.kevin	VERIFY_is_part_of Arg1:T23.sandy Arg2:T22.sandy	

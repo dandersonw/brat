@@ -1,0 +1,82 @@
+T1.sandy	Entity 168 195	transcriptional coactivator
+T3.sandy	FIX_TYPE 196 264	peroxisome proliferator-activated receptor-γ coactivator-1α (PGC-1α)
+T5.sandy	Entity 413 448	abnormal energy metabolic phenotype
+T7.sandy	Entity 454 479	postnatal growth of heart
+T8.sandy	Entity 484 511	slow-twitch skeletal muscle
+T12.sandy	Entity 702 722	Mitochondrial number
+T13.sandy	Entity 727 747	respiratory capacity
+T14.sandy	Entity 765 792	slow-twitch skeletal muscle
+T24.sandy	Entity 1185 1202	hepatic steatosis
+T25.sandy	Entity 1235 1269	mitochondrial respiratory capacity
+T27.sandy	Entity 1372 1403	diet-induced insulin resistance
+T29.sandy	Entity 1437 1453	vacuolar lesions
+T30.sandy	Entity 1475 1497	central nervous system
+T32.sandy	KeyEntity 1548 1554	PGC-1α
+T36.sandy	Entity 1641 1655	postnatal life
+T6.sandy	VERIFY_Entity 530 558	mitochondrial energy demands
+T9.sandy	FIX_SPAN_Entity 574 583	PGC-1α−/−
+T10.sandy	FIX_SPAN_Entity 648 656	body fat
+T11.sandy	VERIFY_Entity 693 700	females
+T15.sandy	FIX_SPAN_Entity 796 805	PGC-1α−/−
+T16.sandy	VERIFY_Entity 831 849	muscle performance
+T17.sandy	VERIFY_Entity 854 871	exercise capacity
+T18.sandy	FIX_SPAN_Entity 919 935	cardiac function
+T19.sandy	VERIFY_Entity 975 985	heart rate
+T20.sandy	FIX_SPAN_Entity 873 882	PGC-1α−/−
+T21.sandy	FIX_SPAN_Entity 991 1000	PGC-1α−/−
+T22.sandy	VERIFY_Entity 1030 1051	core body temperature
+T23.sandy	VERIFY_Entity 1107 1127	thermogenic response
+T26.sandy	FIX_SPAN_Entity 1301 1316	lipogenic genes
+T28.sandy	FIX_SPAN_Entity 1332 1341	PGC-1α−/−
+T31.sandy	FIX_SPAN_Entity 1501 1510	PGC-1α−/−
+T33.sandy	FIX_SPAN_Entity 1584 1594	adaptation
+T34.sandy	FIX_SPAN_Entity 1602 1611	metabolic
+T35.sandy	FIX_SPAN_Entity 1616 1637	physiologic stressors
+T37.sandy	FIX_SPAN_Entity 287 310	PGC-1α null (PGC-1α−/−)
+T38.sandy	FIX_SPAN_Entity 604 613	PGC-1α−/−
+T39.sandy	FIX_SPAN_Entity 1162 1171	PGC-1α−/−
+T40.sandy	VERIFY_KeyEntity 0 17	PGC-1α Deficiency
+T41.sandy	VERIFY_KeyEntity 25 67	Multi-System Energy Metabolic Derangements
+T42.sandy	VERIFY_Entity 69 87	Muscle Dysfunction
+T43.sandy	VERIFY_Entity 89 112	Abnormal Weight Control
+T44.sandy	VERIFY_Entity 117 134	Hepatic Steatosis
+T3.kevin	FIX_SPAN_KeyEntity 287 315	PGC-1α null (PGC-1α−/−) mice
+T7.kevin	FIX_SPAN_KeyEntity 574 588	PGC-1α−/− mice
+T8.kevin	FIX_SPAN_KeyEntity 604 618	PGC-1α−/− mice
+T12.kevin	FIX_SPAN_KeyEntity 796 810	PGC-1α−/− mice
+T13.kevin	FIX_SPAN_KeyEntity 873 887	PGC-1α−/− mice
+T14.kevin	FIX_SPAN_Entity 905 935	diminution in cardiac function
+T15.kevin	FIX_SPAN_KeyEntity 991 1005	PGC-1α−/− mice
+T16.kevin	FIX_SPAN_KeyEntity 1162 1176	PGC-1α−/− mice
+T18.kevin	FIX_SPAN_KeyEntity 1332 1346	PGC-1α−/− mice
+T20.kevin	VERIFY_Entity 1409 1427	wild-type controls
+T23.kevin	FIX_SPAN_KeyEntity 1501 1515	PGC-1α−/− mice
+T26.kevin	FIX_SPAN_Entity 1584 1637	adaptation to the metabolic and physiologic stressors
+T27.kevin	FIX_SPAN_Entity 638 656	increased body fat
+T28.kevin	FIX_SPAN_Entity 1287 1316	expression of lipogenic genes
+R2.sandy	is_subclass_of Arg1:T3.sandy Arg2:T1.sandy	
+R15.sandy	FIX_RELATION_TYPE Arg1:T25.sandy Arg2:T24.sandy	
+R18.sandy	FIX_RELATION_TYPE Arg1:T29.sandy Arg2:T30.sandy	
+R4.sandy	VERIFY_participates_in Arg1:T7.sandy Arg2:T6.sandy	
+R5.sandy	VERIFY_participates_in Arg1:T8.sandy Arg2:T6.sandy	
+R6.sandy	VERIFY_participates_in Arg1:T38.sandy Arg2:T10.sandy	
+R7.sandy	VERIFY_interacts_with Arg1:T12.sandy Arg2:T14.sandy	
+R8.sandy	VERIFY_interacts_with Arg1:T13.sandy Arg2:T14.sandy	
+R9.sandy	VERIFY_is_part_of Arg1:T15.sandy Arg2:T14.sandy	
+R10.sandy	VERIFY_participates_in Arg1:T20.sandy Arg2:T18.sandy	
+R11.sandy	VERIFY_participates_in Arg1:T18.sandy Arg2:T19.sandy	
+R12.sandy	VERIFY_participates_in Arg1:T21.sandy Arg2:T22.sandy	
+R13.sandy	VERIFY_participates_in Arg1:T21.sandy Arg2:T23.sandy	
+R14.sandy	VERIFY_participates_in Arg1:T39.sandy Arg2:T24.sandy	
+R16.sandy	VERIFY_is_part_of Arg1:T26.sandy Arg2:T24.sandy	
+R17.sandy	VERIFY_participates_in Arg1:T28.sandy Arg2:T27.sandy	
+R19.sandy	VERIFY_is_part_of Arg1:T29.sandy Arg2:T31.sandy	
+R20.sandy	VERIFY_regulates Arg1:T32.sandy Arg2:T33.sandy	
+R21.sandy	VERIFY_regulates Arg1:T32.sandy Arg2:T34.sandy	
+R22.sandy	VERIFY_regulates Arg1:T32.sandy Arg2:T35.sandy	
+R23.sandy	VERIFY_is_part_of Arg1:T42.sandy Arg2:T41.sandy	
+R24.sandy	VERIFY_is_part_of Arg1:T43.sandy Arg2:T41.sandy	
+R25.sandy	VERIFY_is_part_of Arg1:T44.sandy Arg2:T41.sandy	
+R3.kevin	VERIFY_is_part_of Arg1:T14.sandy Arg2:T12.kevin	
+R7.kevin	VERIFY_interacts_with Arg1:T28.kevin Arg2:T24.sandy	
+R9.kevin	VERIFY_is_part_of Arg1:T30.sandy Arg2:T23.kevin	

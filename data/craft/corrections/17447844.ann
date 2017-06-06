@@ -1,0 +1,118 @@
+T1.sandy	FIX_TYPE 115 128	Gametogenesis
+T2.sandy	Entity 134 160	sexually dimorphic process
+T3.sandy	Entity 195 220	germ cell differentiation
+T4.sandy	Entity 268 297	heteromorphic sex chromosomes
+T6.sandy	Entity 470 477	XY body
+T7.sandy	Entity 442 464	heterochromatin domain
+T8.sandy	KeyEntity 641 646	DMRT7
+T9.sandy	Entity 650 673	mammal-specific protein
+T10.sandy	Entity 689 719	invertebrate sexual regulators
+T11.sandy	FIX_TYPE 720 729	Doublesex
+T12.sandy	FIX_TYPE 734 739	MAB-3
+T13.sandy	KeyEntity 754 759	DMRT7
+T14.sandy	Entity 792 799	XY body
+T15.sandy	Entity 807 822	pachytene stage
+T16.sandy	Entity 826 842	meiotic prophase
+T17.sandy	Entity 863 875	male meiosis
+T18.sandy	FIX_TYPE 880 893	Dmrt7 mutants
+T19.sandy	Entity 1057 1066	apoptosis
+T22.sandy	Entity 1248 1274	heterochromatin protein 1β
+T24.sandy	Entity 1506 1534	sex chromatin transformation
+T25.sandy	KeyEntity 1480 1485	DMRT7
+T26.sandy	Entity 1555 1564	pachynema
+T27.sandy	Entity 1569 1578	diplonema
+T28.sandy	KeyEntity 1596 1601	DMRT7
+T29.sandy	Entity 1639 1674	meiotic sex chromosome inactivation
+T30.sandy	Entity 1678 1703	postmeiotic sex chromatin
+T32.sandy	FIX_TYPE 1805 1810	Dmrt7
+T37.sandy	Entity 483 490	XY body
+T38.sandy	KeyEntity 1385 1390	DMRT7
+T41.sandy	Entity 1448 1461	Dmrt7 mutants
+T42.sandy	Entity 895 910	meiotic pairing
+T5.sandy	VERIFY_Entity 301 306	males
+T20.sandy	VERIFY_Entity 1177 1199	abnormal sex chromatin
+T21.sandy	FIX_SPAN_Entity 1208 1243	histone H3K9 di- and trimethylation
+T23.sandy	VERIFY_Entity 1275 1287	accumulation
+T31.sandy	FIX_SPAN_Entity 1829 1849	evolution of meiosis
+T33.sandy	VERIFY_KeyEntity 18 35	Doublesex Homolog
+T34.sandy	VERIFY_Entity 2 17	Mammal-Specific
+T35.sandy	VERIFY_KeyEntity 52 70	Male Sex Chromatin
+T36.sandy	VERIFY_KeyEntity 91 103	Male Meiosis
+T39.sandy	FIX_SPAN_Entity 1398 1405	XY body
+T40.sandy	FIX_SPAN_Entity 1414 1435	sex chromatin defects
+T5.kevin	VERIFY_Entity 361 387	incomplete X and Y pairing
+T6.kevin	VERIFY_Entity 395 411	meiotic prophase
+T10.kevin	VERIFY_Entity 326 349	sex-specific challenges
+T11.kevin	VERIFY_Entity 510 518	prophase
+T12.kevin	VERIFY_Entity 595 602	meiosis
+T25.kevin	VERIFY_Entity 915 928	recombination
+T26.kevin	VERIFY_Entity 950 984	transcriptionally silenced XY body
+T28.kevin	VERIFY_Entity 1074 1083	pachynema
+T29.kevin	VERIFY_Entity 1128 1137	diplonema
+T30.kevin	FIX_SPAN_Entity 1208 1224	histone H3K9 di-
+T31.kevin	FIX_SPAN_Entity 1229 1243	trimethylation
+T33.kevin	VERIFY_Entity 1331 1340	pachynema
+T34.kevin	VERIFY_Entity 1345 1354	diplonema
+T36.kevin	FIX_SPAN_Entity 1398 1405;1428 1435	XY body defects
+T46.kevin	FIX_SPAN_Entity 1842 1849	meiosis
+T47.kevin	VERIFY_Entity 1857 1870	sex chromatin
+T48.kevin	VERIFY_KeyEntity 1929 1938	Doublesex
+T49.kevin	VERIFY_Entity 1942 1952	Drosophila
+T50.kevin	VERIFY_Entity 2042 2052	roundworms
+T51.kevin	VERIFY_Entity 2056 2063	mammals
+T52.kevin	VERIFY_KeyEntity 2115 2125	Dmrt7 gene
+T53.kevin	VERIFY_Entity 2187 2189	XX
+T54.kevin	VERIFY_Entity 2204 2206	XY
+T55.kevin	VERIFY_Entity 2278 2291	meiotic phase
+T56.kevin	VERIFY_Entity 2295 2321	male germ cell development
+T57.kevin	VERIFY_Entity 2385 2386;2393 2404	X chromosomes
+T59.kevin	VERIFY_Entity 2445 2452	XY body
+T60.kevin	VERIFY_Entity 243 250	mammals
+T61.kevin	VERIFY_KeyEntity 2467 2480	DMRT7 protein
+T62.kevin	VERIFY_Entity 2495 2505	germ cells
+T63.kevin	VERIFY_Entity 2524 2536	male XY body
+T64.kevin	VERIFY_Entity 2544 2551	meiosis
+T65.kevin	VERIFY_Entity 2609 2616	XY body
+T66.kevin	VERIFY_Entity 2708 2724	histone proteins
+T67.kevin	VERIFY_Entity 2737 2746	pachytene
+T68.kevin	VERIFY_Entity 2751 2767	diplotene stages
+T69.kevin	VERIFY_KeyEntity 2823 2841	Dmrt7 mutant cells
+T70.kevin	VERIFY_KeyEntity 2882 2887	Dmrt7
+T71.kevin	VERIFY_Entity 1623 1633	transition
+T72.kevin	VERIFY_Entity 1707 1712	males
+T73.kevin	VERIFY_Entity 1792 1803	vertebrates
+T74.kevin	VERIFY_Entity 1766 1773	mammals
+T75.kevin	VERIFY_Entity 1980 1998	sexual development
+T76.kevin	VERIFY_Entity 2771 2778	meiosis
+T77.kevin	VERIFY_Entity 2805 2818	sex chromatin
+T78.kevin	VERIFY_Entity 2916 2923	mammals
+T79.kevin	VERIFY_Entity 2942 2953	vertebrates
+R5.sandy	FIX_RELATION_TYPE Arg1:T8.sandy Arg2:T9.sandy	
+R6.sandy	FIX_RELATION_TYPE Arg1:T11.sandy Arg2:T10.sandy	
+R7.sandy	FIX_RELATION_TYPE Arg1:T12.sandy Arg2:T10.sandy	
+R8.sandy	FIX_RELATION_TYPE Arg1:T13.sandy Arg2:T14.sandy	
+R13.sandy	FIX_RELATION_TYPE Arg1:T25.sandy Arg2:T24.sandy	
+R2.sandy	VERIFY_regulates Arg1:T3.sandy Arg2:T1.sandy	
+R3.sandy	VERIFY_is_part_of Arg1:T4.sandy Arg2:T5.sandy	
+R9.sandy	VERIFY_participates_in Arg1:T15.sandy Arg2:T16.sandy	
+R10.sandy	VERIFY_participates_in Arg1:T18.sandy Arg2:T19.sandy	
+R11.sandy	VERIFY_is_part_of Arg1:T21.sandy Arg2:T20.sandy	
+R12.sandy	VERIFY_participates_in Arg1:T22.sandy Arg2:T23.sandy	
+R14.sandy	VERIFY_interacts_with Arg1:T28.sandy Arg2:T29.sandy	
+R15.sandy	VERIFY_interacts_with Arg1:T28.sandy Arg2:T30.sandy	
+R16.sandy	VERIFY_is_part_of Arg1:T32.sandy Arg2:T31.sandy	
+R1.kevin	VERIFY_is_subclass_of Arg1:T5.kevin Arg2:T10.kevin	
+R2.kevin	VERIFY_participates_in Arg1:T5.kevin Arg2:T6.kevin	
+R3.kevin	VERIFY_is_subclass_of Arg1:T1.sandy Arg2:T2.sandy	
+R5.kevin	VERIFY_is_part_of Arg1:T8.sandy Arg2:T10.sandy	
+R9.kevin	VERIFY_participates_in Arg1:T13.sandy Arg2:T16.sandy	
+R10.kevin	VERIFY_participates_in Arg1:T4.sandy Arg2:T10.kevin	
+R14.kevin	VERIFY_participates_in Arg1:T29.sandy Arg2:T71.kevin	
+R15.kevin	VERIFY_participates_in Arg1:T30.sandy Arg2:T71.kevin	
+R16.kevin	VERIFY_regulates Arg1:T28.sandy Arg2:T71.kevin	
+R17.kevin	VERIFY_is_part_of Arg1:T71.kevin Arg2:T72.kevin	
+R18.kevin	VERIFY_is_part_of Arg1:T48.kevin Arg2:T49.kevin	
+R19.kevin	VERIFY_regulates Arg1:T48.kevin Arg2:T75.kevin	
+R21.kevin	VERIFY_is_part_of Arg1:T57.kevin Arg2:T59.kevin	
+R22.kevin	VERIFY_is_part_of Arg1:T61.kevin Arg2:T63.kevin	
+R23.kevin	VERIFY_is_part_of Arg1:T63.kevin Arg2:T62.kevin	

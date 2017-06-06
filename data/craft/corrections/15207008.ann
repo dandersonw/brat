@@ -1,0 +1,51 @@
+T3.sandy	FIX_TYPE 768 781	TACC proteins
+T5.sandy	Entity 886 897	human TACC3
+T6.sandy	Entity 903 908	RHAMM
+T7.sandy	Entity 997 1002	TACCs
+T8.sandy	Entity 1035 1045	C. elegans
+T9.sandy	Entity 1050 1065	D. melanogaster
+T12.sandy	Entity 1311 1333	ancestral TACC protein
+T15.sandy	Entity 1389 1402	TACC proteins
+T16.sandy	Entity 1448 1467	protein translation
+T17.sandy	Entity 1469 1483	RNA processing
+T20.sandy	Entity 1973 1993	chromatin remodeling
+T21.sandy	KeyEntity 1810 1823	TACC proteins
+T26.sandy	FIX_TYPE 0 28	Structure-function evolution
+T27.sandy	FIX_TYPE 36 73	Transforming acidic coiled coil genes
+T28.sandy	FIX_TYPE 98 132	phylogenetically diverse organisms
+T2.sandy	FIX_SPAN_Entity 333 371	transforming acidic coiled coil (TACC)
+T4.sandy	FIX_SPAN_Entity 852 864	rabbit TACC4
+T10.sandy	FIX_SPAN_Entity 1197 1226	direct binding of human TACC2
+T11.sandy	FIX_SPAN_Entity 1234 1264	nuclear hormone receptor RXRβ.
+T13.sandy	FIX_SPAN_Entity 1351 1362	centrosomal
+T14.sandy	FIX_SPAN_Entity 1363 1387	mitotic spindle dynamics
+T18.sandy	VERIFY_Entity 1488 1501	transcription
+T19.sandy	VERIFY_Entity 1532 1549	bridging proteins
+T22.sandy	FIX_SPAN_Entity 1995 2010	transcriptional
+T23.sandy	FIX_SPAN_Entity 2015 2044	posttranscriptional complexes
+T24.sandy	VERIFY_Entity 1629 1646	directly interact
+T25.sandy	FIX_SPAN_Entity 1582 1586	TACC
+T3.kevin	VERIFY_Entity 292 300	homologs
+T4.kevin	FIX_SPAN_KeyEntity 333 383	transforming acidic coiled coil (TACC) gene family
+T5.kevin	VERIFY_KeyEntity 655 660	TACCs
+T7.kevin	FIX_SPAN_KeyEntity 859 864	TACC4
+T13.kevin	VERIFY_Entity 1096 1100	TACC
+T14.kevin	FIX_SPAN_Entity 1215 1226	human TACC2
+T15.kevin	FIX_SPAN_Entity 1242 1264	hormone receptor RXRβ.
+T17.kevin	FIX_SPAN_Entity 1351 1387	centrosomal/mitotic spindle dynamics
+T22.kevin	FIX_SPAN_KeyEntity 1582 1595	TACC proteins
+T23.kevin	VERIFY_Entity 1695 1707	LSm proteins
+T24.kevin	VERIFY_Entity 1709 1734	nuclear hormone receptors
+T25.kevin	VERIFY_Entity 1736 1741	GAS41
+T26.kevin	VERIFY_Entity 1747 1768	transcription factors
+T30.kevin	FIX_SPAN_Entity 1995 2010;2035 2044	transcriptional complexes
+R5.sandy	participates_in Arg1:T15.sandy Arg2:T16.sandy	
+R6.sandy	participates_in Arg1:T15.sandy Arg2:T17.sandy	
+R2.sandy	VERIFY_interacts_with Arg1:T10.sandy Arg2:T11.sandy	
+R4.sandy	VERIFY_participates_in Arg1:T12.sandy Arg2:T14.sandy	
+R7.sandy	VERIFY_participates_in Arg1:T15.sandy Arg2:T18.sandy	
+R8.sandy	VERIFY_participates_in Arg1:T21.sandy Arg2:T20.sandy	
+R9.sandy	VERIFY_participates_in Arg1:T21.sandy Arg2:T22.sandy	
+R10.sandy	VERIFY_participates_in Arg1:T21.sandy Arg2:T23.sandy	
+R1.kevin	VERIFY_interacts_with Arg1:T14.kevin Arg2:T15.kevin	
+R2.kevin	VERIFY_interacts_with Arg1:T12.sandy Arg2:T17.kevin	

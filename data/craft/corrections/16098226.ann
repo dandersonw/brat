@@ -1,0 +1,66 @@
+T1.sandy	FIX_TYPE 145 157	PAX6 protein
+T4.sandy	Entity 219 243	neurological development
+T5.sandy	FIX_TYPE 309 318	PAX6 gene
+T9.sandy	FIX_TYPE 498 502	PAX6
+T11.sandy	Entity 566 590	highly conserved peptide
+T12.sandy	Entity 598 608	C-terminus
+T13.sandy	FIX_TYPE 616 628	PAX6 protein
+T15.sandy	Entity 745 763	C-terminal peptide
+T16.sandy	FIX_TYPE 784 825	PAX6 proline-serine-threonine-rich domain
+T20.sandy	FIX_TYPE 934 954	dynein subunit DNCL1
+T21.sandy	FIX_TYPE 964 995	tripartite motif protein TRIM11
+T22.sandy	FIX_TYPE 1178 1182	PAX6
+T23.sandy	FIX_TYPE 1198 1204	HOMER3
+T24.sandy	FIX_TYPE 1206 1211	DNCL1
+T25.sandy	FIX_TYPE 1216 1222	TRIM11
+T26.sandy	FIX_TYPE 1259 1263	PAX6
+T27.sandy	FIX_TYPE 1269 1275	HOMER3
+T28.sandy	FIX_TYPE 1280 1285	DNCL1
+T29.sandy	FIX_TYPE 1310 1329	synaptic activation
+T30.sandy	FIX_TYPE 1355 1388	neuronal transcriptional activity
+T32.sandy	FIX_TYPE 1445 1459	PAX6 mutations
+T2.sandy	VERIFY_Entity 163 188	transcriptional regulator
+T3.sandy	VERIFY_Entity 208 214	ocular
+T6.sandy	FIX_SPAN_Entity 324 337	malformations
+T7.sandy	FIX_SPAN_Entity 345 348	eye
+T8.sandy	FIX_SPAN_Entity 353 358	brain
+T10.sandy	VERIFY_Entity 470 478	proteins
+T14.sandy	VERIFY_Entity 697 721	brain-expressed proteins
+T18.sandy	FIX_SPAN_Entity 886 913	post-synaptic density (PSD)
+T19.sandy	FIX_SPAN_Entity 922 928	HOMER3
+T31.sandy	VERIFY_Entity 1491 1519	protein-protein interactions
+T33.sandy	VERIFY_KeyEntity 93 99	HOMER3
+T34.sandy	VERIFY_KeyEntity 101 106	DNCL1
+T35.sandy	VERIFY_KeyEntity 111 117	TRIM11
+T36.sandy	VERIFY_KeyEntity 41 45	PAX6
+T37.sandy	VERIFY_KeyEntity 47 67	C-terminal mutations
+T5.kevin	VERIFY_KeyEntity 402 406	PAX6
+T7.kevin	VERIFY_Entity 262 301	heterozygous loss-of-function mutations
+T8.kevin	FIX_SPAN_Entity 324 337;345 358	malformations eye and brain
+T12.kevin	VERIFY_Entity 630 662	Yeast two-hybrid library screens
+T15.kevin	VERIFY_Entity 839 864	PAX6-interacting proteins
+T16.kevin	FIX_SPAN_KeyEntity 886 928	post-synaptic density (PSD) protein HOMER3
+T19.kevin	VERIFY_Entity 1003 1028	C-terminal PAX6 mutations
+R8.sandy	is_part_of Arg1:T11.sandy Arg2:T12.sandy	
+R9.sandy	is_part_of Arg1:T12.sandy Arg2:T13.sandy	
+R13.sandy	interacts_with Arg1:T22.sandy Arg2:T23.sandy	
+R14.sandy	interacts_with Arg1:T22.sandy Arg2:T24.sandy	
+R15.sandy	interacts_with Arg1:T22.sandy Arg2:T25.sandy	
+R1.sandy	VERIFY_is_part_of Arg1:T1.sandy Arg2:T2.sandy	
+R2.sandy	VERIFY_regulates Arg1:T2.sandy Arg2:T3.sandy	
+R3.sandy	VERIFY_regulates Arg1:T2.sandy Arg2:T4.sandy	
+R4.sandy	VERIFY_participates_in Arg1:T5.sandy Arg2:T6.sandy	
+R5.sandy	VERIFY_is_part_of Arg1:T6.sandy Arg2:T7.sandy	
+R6.sandy	VERIFY_is_part_of Arg1:T6.sandy Arg2:T8.sandy	
+R7.sandy	VERIFY_interacts_with Arg1:T10.sandy Arg2:T9.sandy	
+R10.sandy	VERIFY_interacts_with Arg1:T14.sandy Arg2:T15.sandy	
+R11.sandy	VERIFY_interacts_with Arg1:T14.sandy Arg2:T16.sandy	
+R16.sandy	VERIFY_interacts_with Arg1:T29.sandy Arg2:T30.sandy	
+R17.sandy	VERIFY_interacts_with Arg1:T32.sandy Arg2:T31.sandy	
+R2.kevin	VERIFY_regulates Arg1:T1.sandy Arg2:T4.sandy	
+R3.kevin	VERIFY_is_part_of Arg1:T7.kevin Arg2:T5.sandy	
+R6.kevin	VERIFY_is_subclass_of Arg1:T16.kevin Arg2:T15.kevin	
+R7.kevin	VERIFY_is_subclass_of Arg1:T20.sandy Arg2:T15.kevin	
+R8.kevin	VERIFY_is_subclass_of Arg1:T21.sandy Arg2:T15.kevin	
+R12.kevin	VERIFY_interacts_with Arg1:T26.sandy Arg2:T27.sandy	
+R13.kevin	VERIFY_interacts_with Arg1:T26.sandy Arg2:T28.sandy	

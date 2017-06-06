@@ -1,0 +1,79 @@
+T2.sandy	KeyEntity 150 176	intraocular pressure (IOP)
+T3.sandy	FIX_TYPE 526 536	IOP ranges
+T7.sandy	Entity 692 706	diurnal rhythm
+T14.sandy	FIX_TYPE 991 1011	Albino C57BL/6J mice
+T23.sandy	FIX_TYPE 1529 1532	Tyr
+T1.sandy	KeyEntity 251 255	IOPs
+T27.sandy	Entity 259 293	genetically distinct mouse strains
+T31.sandy	KeyEntity 361 364	IOP
+T33.sandy	KeyEntity 463 466	IOP
+T4.sandy	VERIFY_Entity 556 569	10 to 20 mmHg
+T5.sandy	VERIFY_Entity 612 617	aging
+T6.sandy	FIX_SPAN_Entity 632 644	IOP decrease
+T8.sandy	VERIFY_Entity 745 756	dark period
+T9.sandy	FIX_SPAN_Entity 902 922	leptin receptor gene
+T10.sandy	FIX_SPAN_Entity 924 930	Leprdb
+T11.sandy	VERIFY_Entity 944 951	obesity
+T12.sandy	VERIFY_Entity 956 964	diabetes
+T13.sandy	FIX_SPAN_Entity 976 989	increased IOP
+T15.sandy	FIX_SPAN_Entity 1050 1057	Tyrc-2J
+T16.sandy	VERIFY_Entity 1064 1075	higher IOPs
+T17.sandy	VERIFY_Entity 1359 1362	Age
+T18.sandy	VERIFY_Entity 1364 1375	time of day
+T19.sandy	VERIFY_Entity 1377 1384	obesity
+T20.sandy	VERIFY_Entity 1389 1397	diabetes
+T21.sandy	FIX_SPAN_KeyEntity 1420 1423	IOP
+T22.sandy	FIX_SPAN_Entity 1520 1524	Lepr
+T24.sandy	FIX_SPAN_Entity 1544 1557	increased IOP
+T25.sandy	VERIFY_KeyEntity 0 20	Intraocular pressure
+T26.sandy	VERIFY_Entity 45 49	mice
+T28.sandy	VERIFY_Entity 333 336	age
+T29.sandy	VERIFY_Entity 338 341	sex
+T30.sandy	VERIFY_Entity 346 357	time of day
+T32.sandy	FIX_SPAN_Entity 426 459	specific candidate gene mutations
+T34.sandy	FIX_SPAN_Entity 1340 1357	regulation of IOP
+T35.sandy	FIX_SPAN_Entity 1657 1683	genetics of IOP regulation
+T36.sandy	VERIFY_Entity 65 78	strain survey
+T5.kevin	FIX_SPAN_Entity 435 459	candidate gene mutations
+T7.kevin	VERIFY_Entity 503 516	mouse strains
+T9.kevin	VERIFY_KeyEntity 604 607	IOP
+T10.kevin	FIX_SPAN_KeyEntity 632 635	IOP
+T12.kevin	VERIFY_KeyEntity 712 715	IOP
+T13.kevin	VERIFY_Entity 769 781	Homozygosity
+T14.kevin	VERIFY_Entity 788 799	null allele
+T15.kevin	VERIFY_KeyEntity 807 841	carbonic anhydrase II gene (Car2n)
+T16.kevin	VERIFY_KeyEntity 857 860	IOP
+T17.kevin	VERIFY_Entity 867 879	homozygosity
+T18.kevin	FIX_SPAN_Entity 902 931	leptin receptor gene (Leprdb)
+T19.kevin	FIX_SPAN_KeyEntity 986 989	IOP
+T21.kevin	FIX_SPAN_Entity 1029 1058	tyrosinase mutation (Tyrc-2J)
+T22.kevin	VERIFY_KeyEntity 1076 1080	than
+T23.kevin	VERIFY_KeyEntity 1213 1217	IOPs
+T24.kevin	VERIFY_KeyEntity 1225 1228	IOP
+T25.kevin	FIX_SPAN_KeyEntity 1354 1357	IOP
+T26.kevin	FIX_SPAN_KeyEntity 1414 1423	mouse IOP
+T27.kevin	FIX_SPAN_KeyEntity 1519 1524	(Lepr
+T29.kevin	FIX_SPAN_KeyEntity 1554 1557	IOP
+T30.kevin	FIX_SPAN_KeyEntity 1669 1683	IOP regulation
+T31.kevin	VERIFY_KeyEntity 1717 1720	IOP
+T32.kevin	VERIFY_Entity 1470 1479	Mutations
+R1.sandy	is_part_of Arg1:T1.sandy Arg2:T27.sandy	
+R2.sandy	VERIFY_participates_in Arg1:T3.sandy Arg2:T4.sandy	
+R3.sandy	VERIFY_participates_in Arg1:T5.sandy Arg2:T6.sandy	
+R4.sandy	VERIFY_interacts_with Arg1:T8.sandy Arg2:T7.sandy	
+R6.sandy	VERIFY_participates_in Arg1:T10.sandy Arg2:T11.sandy	
+R7.sandy	VERIFY_participates_in Arg1:T10.sandy Arg2:T12.sandy	
+R8.sandy	VERIFY_participates_in Arg1:T10.sandy Arg2:T13.sandy	
+R9.sandy	VERIFY_is_part_of Arg1:T15.sandy Arg2:T14.sandy	
+R10.sandy	VERIFY_is_part_of Arg1:T16.sandy Arg2:T14.sandy	
+R11.sandy	VERIFY_participates_in Arg1:T22.sandy Arg2:T24.sandy	
+R12.sandy	VERIFY_participates_in Arg1:T23.sandy Arg2:T24.sandy	
+R13.sandy	VERIFY_interacts_with Arg1:T28.sandy Arg2:T31.sandy	
+R14.sandy	VERIFY_interacts_with Arg1:T29.sandy Arg2:T31.sandy	
+R15.sandy	VERIFY_interacts_with Arg1:T30.sandy Arg2:T31.sandy	
+R16.sandy	VERIFY_interacts_with Arg1:T32.sandy Arg2:T33.sandy	
+R17.sandy	VERIFY_is_part_of Arg1:T25.sandy Arg2:T26.sandy	
+R2.kevin	VERIFY_interacts_with Arg1:T5.kevin Arg2:T33.sandy	
+R3.kevin	VERIFY_is_part_of Arg1:T32.kevin Arg2:T27.kevin	
+R4.kevin	VERIFY_is_part_of Arg1:T32.kevin Arg2:T23.sandy	
+R5.kevin	VERIFY_interacts_with Arg1:T32.kevin Arg2:T29.kevin	

@@ -1,0 +1,50 @@
+T2.sandy	KeyEntity 126 158	Maple Syrup Urine Disease (MSUD)
+T4.sandy	KeyEntity 258 262	MSUD
+T8.sandy	FIX_TYPE 568 572	MSUD
+T9.sandy	Entity 831 844	human E2 cDNA
+T10.sandy	Entity 996 1011	E2 subunit gene
+T11.sandy	Entity 1015 1053	branched-chain keto acid dehydrogenase
+T12.sandy	FIX_TYPE 1105 1109	MSUD
+T14.sandy	Entity 1196 1215	E2 immunoreactivity
+T18.sandy	Entity 1467 1514	Branched-chain keto acid dehydrogenase activity
+T24.sandy	FIX_TYPE 1964 1968	MSUD
+T3.sandy	FIX_SPAN_Entity 204 256	deficiency of branched-chain keto acid dehydrogenase
+T5.sandy	FIX_SPAN_Entity 322 339	enzyme deficiency
+T6.sandy	FIX_SPAN_Entity 662 692	lacked a functional E2 subunit
+T7.sandy	FIX_SPAN_Entity 701 739	branched-chain keto acid dehydrogenase
+T13.sandy	FIX_SPAN_Entity 1246 1284	circulating branched-chain amino acids
+T15.sandy	FIX_SPAN_Entity 1147 1185	branched-chain keto acid dehydrogenase
+T16.sandy	VERIFY_Entity 1327 1345	neonatal lethality
+T17.sandy	VERIFY_Entity 1606 1651	circulating branched-chain amino acids levels
+T19.sandy	VERIFY_Entity 1519 1533	5–6% of normal
+T20.sandy	VERIFY_Entity 1115 1139	homozygous knockout mice
+T21.sandy	VERIFY_Entity 2002 2024	therapeutic strategies
+T22.sandy	VERIFY_Entity 2034 2061	gene and cellular therapies
+T23.sandy	VERIFY_Entity 2077 2106	devastating metabolic disease
+T26.sandy	VERIFY_Entity 15 48	characterization of murine models
+T27.sandy	VERIFY_KeyEntity 64 102	intermediate maple syrup urine disease
+T2.kevin	FIX_SPAN_KeyEntity 218 256	branched-chain keto acid dehydrogenase
+T4.kevin	FIX_SPAN_Entity 312 339	degree of enzyme deficiency
+T6.kevin	VERIFY_Entity 582 596	gene targeting
+T7.kevin	VERIFY_Entity 601 633	embryonic stem cell technologies
+T8.kevin	FIX_SPAN_Entity 682 739	E2 subunit gene of branched-chain keto acid dehydrogenase
+T9.kevin	VERIFY_Entity 753 765	murine model
+T10.kevin	VERIFY_Entity 769 786	intermediate MSUD
+T15.kevin	FIX_SPAN_Entity 1147 1194	branched-chain keto acid dehydrogenase activity
+T17.kevin	FIX_SPAN_Entity 1258 1284	branched-chain amino acids
+T18.kevin	VERIFY_Entity 1374 1427	human E2 cDNA in the liver of the E2 knockout animals
+T19.kevin	VERIFY_Entity 1461 1465	MSUD
+T21.kevin	VERIFY_Entity 1710 1726	MSUD mouse model
+T22.kevin	VERIFY_Entity 1878 1882	MSUD
+R2.sandy	VERIFY_is_part_of Arg1:T3.sandy Arg2:T2.sandy	
+R3.sandy	VERIFY_is_part_of Arg1:T5.sandy Arg2:T4.sandy	
+R4.sandy	VERIFY_participates_in Arg1:T8.sandy Arg2:T6.sandy	
+R5.sandy	VERIFY_is_part_of Arg1:T6.sandy Arg2:T7.sandy	
+R6.sandy	VERIFY_is_part_of Arg1:T10.sandy Arg2:T11.sandy	
+R7.sandy	VERIFY_is_part_of Arg1:T15.sandy Arg2:T20.sandy	
+R8.sandy	VERIFY_is_part_of Arg1:T14.sandy Arg2:T20.sandy	
+R9.sandy	VERIFY_is_part_of Arg1:T13.sandy Arg2:T20.sandy	
+R10.sandy	VERIFY_participates_in Arg1:T18.sandy Arg2:T17.sandy	
+R11.sandy	VERIFY_is_part_of Arg1:T24.sandy Arg2:T23.sandy	
+R1.kevin	VERIFY_participates_in Arg1:T2.kevin Arg2:T2.sandy	
+R2.kevin	VERIFY_regulates Arg1:T4.kevin Arg2:T4.sandy	

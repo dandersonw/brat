@@ -1,0 +1,40 @@
+T2.sandy	FIX_TYPE 123 157	Leber's congenital amaurosis (LCA)
+T4.sandy	Entity 352 371	photoreceptor cells
+T5.sandy	Entity 464 498	photoreceptor transcription factor
+T6.sandy	KeyEntity 500 503	Crx
+T10.sandy	Entity 682 699	developing retina
+T12.sandy	Entity 734 761	Outer segment morphogenesis
+T13.sandy	Entity 793 809	elongation stage
+T15.sandy	Entity 891 912	Crx-/- photoreceptors
+T17.sandy	Entity 968 989	outer plexiform layer
+T18.sandy	Entity 1035 1056	synaptogenesis defect
+T19.sandy	FIX_TYPE 1080 1083	LCA
+T21.sandy	FIX_TYPE 1243 1246	LCA
+T22.sandy	FIX_TYPE 0 14	Synaptogenesis
+T23.sandy	FIX_TYPE 19 42	outer segment formation
+T24.sandy	FIX_TYPE 64 77	neural retina
+T25.sandy	FIX_TYPE 81 96	Crx mutant mice
+T3.sandy	FIX_SPAN_Entity 271 284	neural retina
+T7.sandy	FIX_SPAN_Entity 517 527	Crx mutant
+T8.sandy	FIX_SPAN_Entity 569 582	model for LCA
+T9.sandy	VERIFY_Entity 650 674	ultrastructural analysis
+T11.sandy	FIX_SPAN_Entity 703 713	Crx mutant
+T14.sandy	VERIFY_Entity 853 880	phototransduction apparatus
+T16.sandy	FIX_SPAN_Entity 926 960	severely abnormal synaptic endings
+T20.sandy	VERIFY_Entity 1162 1187	photoreceptor development
+T2.kevin	FIX_SPAN_Entity 243 263;271 284	abnormal development neural retina
+T5.kevin	FIX_SPAN_KeyEntity 517 542	Crx mutant strain of mice
+T6.kevin	FIX_SPAN_Entity 579 582	LCA
+T7.kevin	VERIFY_Entity 616 630	Crx's function
+T9.kevin	FIX_SPAN_Entity 703 718	Crx mutant mice
+T18.kevin	FIX_SPAN_Entity 935 960	abnormal synaptic endings
+R2.sandy	is_subclass_of Arg1:T6.sandy Arg2:T5.sandy	
+R3.sandy	VERIFY_participates_in Arg1:T7.sandy Arg2:T8.sandy	
+R4.sandy	VERIFY_participates_in Arg1:T11.sandy Arg2:T10.sandy	
+R5.sandy	VERIFY_participates_in Arg1:T12.sandy Arg2:T13.sandy	
+R6.sandy	VERIFY_participates_in Arg1:T15.sandy Arg2:T16.sandy	
+R7.sandy	VERIFY_participates_in Arg1:T18.sandy Arg2:T19.sandy	
+R8.sandy	VERIFY_participates_in Arg1:T20.sandy Arg2:T21.sandy	
+R1.kevin	VERIFY_is_part_of Arg1:T10.sandy Arg2:T9.kevin	
+R3.kevin	VERIFY_is_part_of Arg1:T18.kevin Arg2:T17.sandy	
+R5.kevin	VERIFY_is_part_of Arg1:T24.sandy Arg2:T25.sandy	

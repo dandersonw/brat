@@ -1,0 +1,68 @@
+T7.sandy	FIX_TYPE 437 465	excessive mucus accumulation
+T10.sandy	Entity 512 550	distal intestinal obstruction syndrome
+T15.sandy	FIX_TYPE 1187 1218	reduced intestinal inflammation
+T17.sandy	FIX_TYPE 1316 1342	reduced mucus accumulation
+T19.sandy	FIX_TYPE 1755 1762	D1Mit36
+T20.sandy	FIX_TYPE 1796 1803	D9Mit90
+T21.sandy	Entity 1843 1851	D10Mit14
+T24.sandy	Entity 1876 1892	modifier regions
+T2.sandy	FIX_SPAN_KeyEntity 197 255	cystic fibrosis transmembrane conductance regulator (CFTR)
+T3.sandy	VERIFY_Entity 333 347	modifier genes
+T4.sandy	VERIFY_Entity 266 285	severity of disease
+T5.sandy	FIX_SPAN_KeyEntity 353 371	intestines of Cftr
+T6.sandy	VERIFY_Entity 422 433	obstruction
+T8.sandy	VERIFY_Entity 493 507	meconium ileus
+T9.sandy	FIX_SPAN_Entity 397 407	Cftrtm1Unc
+T11.sandy	VERIFY_Entity 720 732	inflammation
+T12.sandy	VERIFY_Entity 740 755	small intestine
+T13.sandy	VERIFY_Entity 775 782	smaller
+T14.sandy	VERIFY_Entity 1101 1117	mixed background
+T16.sandy	VERIFY_Entity 1282 1300	normal body weight
+T18.sandy	VERIFY_Entity 1398 1411	gender effect
+T22.sandy	VERIFY_Entity 1705 1721	milder phenotype
+T23.sandy	VERIFY_Entity 1916 1931	positive impact
+T25.sandy	VERIFY_Entity 1939 1961	inflammatory phenotype
+T26.sandy	FIX_SPAN_Entity 1978 1993	small intestine
+T27.sandy	VERIFY_Entity 1998 2013	animal survival
+T28.sandy	VERIFY_KeyEntity 35 74	cystic fibrosis intestinal inflammatory
+T29.sandy	VERIFY_Entity 10 27	genetic modifiers
+T30.sandy	VERIFY_Entity 88 107	mouse chromosomes 1
+T1.kevin	VERIFY_Entity 151 166	cystic fibrosis
+T2.kevin	FIX_SPAN_KeyEntity 197 260	cystic fibrosis transmembrane conductance regulator (CFTR) gene
+T3.kevin	FIX_SPAN_KeyEntity 367 408	Cftr deficient mice (CF mice: Cftrtm1Unc)
+T6.kevin	FIX_SPAN_Entity 353 363	intestines
+T8.kevin	VERIFY_KeyEntity 635 653	C57Bl/6 background
+T9.kevin	VERIFY_Entity 671 678	CF mice
+T10.kevin	VERIFY_Entity 697 713	solid mouse chow
+T11.kevin	VERIFY_Entity 788 809	wild type littermates
+T12.kevin	VERIFY_Entity 843 878	loci of the CF intestinal phenotype
+T13.kevin	VERIFY_Entity 906 913	CF mice
+T14.kevin	VERIFY_Entity 919 943	mixed genetic background
+T15.kevin	VERIFY_KeyEntity 949 956	C57Bl/6
+T16.kevin	VERIFY_KeyEntity 964 969	129Sv
+T17.kevin	VERIFY_Entity 988 1004	CF mice congenic
+T18.kevin	VERIFY_KeyEntity 1012 1030	C57Bl/6 background
+T19.kevin	VERIFY_Entity 1061 1084	intestinal CF phenotype
+T20.kevin	VERIFY_Entity 1086 1093	CF mice
+T21.kevin	VERIFY_Entity 1166 1180	dry mouse chow
+T23.kevin	VERIFY_Entity 1234 1253	quantitative RT-PCR
+T25.kevin	VERIFY_Entity 1350 1367	intestinal crypts
+T26.kevin	VERIFY_Entity 1609 1640	genome-wide PCR allele scanning
+T30.kevin	FIX_SPAN_Entity 1969 1993	CF mouse small intestine
+T32.kevin	VERIFY_Entity 2154 2177	CF intestinal phenotype
+R2.sandy	VERIFY_interacts_with Arg1:T4.sandy Arg2:T3.sandy	
+R3.sandy	VERIFY_participates_in Arg1:T6.sandy Arg2:T5.sandy	
+R4.sandy	VERIFY_participates_in Arg1:T7.sandy Arg2:T5.sandy	
+R5.sandy	VERIFY_participates_in Arg1:T14.sandy Arg2:T15.sandy	
+R6.sandy	VERIFY_participates_in Arg1:T14.sandy Arg2:T16.sandy	
+R7.sandy	VERIFY_participates_in Arg1:T14.sandy Arg2:T17.sandy	
+R8.sandy	VERIFY_participates_in Arg1:T19.sandy Arg2:T22.sandy	
+R9.sandy	VERIFY_participates_in Arg1:T20.sandy Arg2:T22.sandy	
+R10.sandy	VERIFY_participates_in Arg1:T21.sandy Arg2:T22.sandy	
+R11.sandy	VERIFY_participates_in Arg1:T24.sandy Arg2:T23.sandy	
+R12.sandy	VERIFY_participates_in Arg1:T24.sandy Arg2:T25.sandy	
+R13.sandy	VERIFY_is_part_of Arg1:T25.sandy Arg2:T26.sandy	
+R14.sandy	VERIFY_is_part_of Arg1:T25.sandy Arg2:T27.sandy	
+R1.kevin	VERIFY_is_part_of Arg1:T6.kevin Arg2:T3.kevin	
+R2.kevin	VERIFY_participates_in Arg1:T15.kevin Arg2:T14.kevin	
+R3.kevin	VERIFY_participates_in Arg1:T16.kevin Arg2:T14.kevin	

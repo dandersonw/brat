@@ -1,0 +1,75 @@
+T3.sandy	KeyEntity 282 295	CLN3 mutation
+T5.sandy	Entity 360 386	mitochondrial ATP synthase
+T6.sandy	Entity 388 397	subunit c
+T7.sandy	Entity 421 432	CNS neurons
+T9.sandy	KeyEntity 511 524	JNCL mutation
+T10.sandy	Entity 534 549	mutant battenin
+T11.sandy	Entity 562 581	JNCL-like pathology
+T12.sandy	FIX_TYPE 637 650	JNCL mutation
+T13.sandy	Entity 654 668	neuronal cells
+T14.sandy	FIX_TYPE 678 705	P4 knock-in mouse cerebella
+T17.sandy	Entity 857 862	MAP-2
+T18.sandy	Entity 867 880	NeuN-positive
+T19.sandy	Entity 882 899	neuron-like cells
+T23.sandy	Entity 1102 1123	cathepsin D transport
+T25.sandy	Entity 1208 1222	lysosomal size
+T27.sandy	Entity 1257 1268	endocytosis
+T28.sandy	Entity 1294 1306	mitochondria
+T30.sandy	Entity 1391 1407	oxidative stress
+T34.sandy	Entity 1461 1469	battenin
+T35.sandy	Entity 1486 1520	intracellular membrane trafficking
+T36.sandy	Entity 1525 1547	mitochondrial function
+T37.sandy	Entity 1615 1635	JNCL disease process
+T38.sandy	Entity 1664 1681	neuronal survival
+T1.sandy	FIX_SPAN_KeyEntity 175 249	JNCL is a recessively inherited, childhood-onset neurodegenerative disease
+T4.sandy	FIX_SPAN_Entity 311 336	loss of battenin activity
+T8.sandy	FIX_SPAN_Entity 458 468	Cln3Δex7/8
+T15.sandy	FIX_SPAN_KeyEntity 746 752	CbCln3
+T16.sandy	FIX_SPAN_Entity 793 822	neuronal precursor cell lines
+T20.sandy	FIX_SPAN_Entity 901 924	Homozygous CbCln3Δex7/8
+T21.sandy	FIX_SPAN_Entity 970 978	battenin
+T22.sandy	FIX_SPAN_Entity 1009 1037	accumulate ATPase subunit c.
+T24.sandy	VERIFY_Entity 1128 1138	processing
+T26.sandy	VERIFY_Entity 1227 1239	distribution
+T29.sandy	FIX_SPAN_Entity 1333 1345	cellular ATP
+T31.sandy	VERIFY_Entity 1038 1058	Recessive phenotypes
+T32.sandy	VERIFY_Entity 1322 1331	elongated
+T33.sandy	VERIFY_Entity 1372 1380	survival
+T39.sandy	VERIFY_KeyEntity 0 20	Membrane trafficking
+T40.sandy	VERIFY_KeyEntity 25 52	mitochondrial abnormalities
+T41.sandy	VERIFY_KeyEntity 61 81	subunit c deposition
+T42.sandy	VERIFY_Entity 87 108	cerebellar cell model
+T43.sandy	VERIFY_KeyEntity 112 151	juvenile neuronal ceroid lipofuscinosis
+T1.kevin	FIX_SPAN_Entity 175 179	JNCL
+T2.kevin	FIX_SPAN_Entity 185 249	recessively inherited, childhood-onset neurodegenerative disease
+T4.kevin	FIX_SPAN_Entity 319 336	battenin activity
+T8.kevin	FIX_SPAN_KeyEntity 458 482	Cln3Δex7/8 knock-in mice
+T20.kevin	FIX_SPAN_KeyEntity 746 822	CbCln3 wild-type, heterozygous, and homozygous neuronal precursor cell lines
+T24.kevin	FIX_SPAN_KeyEntity 901 940	Homozygous CbCln3Δex7/8 precursor cells
+T25.kevin	FIX_SPAN_Entity 963 978	mutant battenin
+T26.kevin	FIX_SPAN_Entity 1020 1037	ATPase subunit c.
+T31.kevin	FIX_SPAN_Entity 1333 1352;1357 1366	cellular ATP levels decreased
+R9.sandy	is_part_of Arg1:T12.sandy Arg2:T13.sandy	
+R26.sandy	participates_in Arg1:T37.sandy Arg2:T38.sandy	
+R2.sandy	VERIFY_participates_in Arg1:T3.sandy Arg2:T1.sandy	
+R3.sandy	VERIFY_participates_in Arg1:T4.sandy Arg2:T5.sandy	
+R4.sandy	VERIFY_participates_in Arg1:T4.sandy Arg2:T6.sandy	
+R5.sandy	VERIFY_participates_in Arg1:T4.sandy Arg2:T7.sandy	
+R6.sandy	VERIFY_participates_in Arg1:T9.sandy Arg2:T8.sandy	
+R7.sandy	VERIFY_participates_in Arg1:T8.sandy Arg2:T10.sandy	
+R8.sandy	VERIFY_participates_in Arg1:T8.sandy Arg2:T11.sandy	
+R10.sandy	VERIFY_is_part_of Arg1:T14.sandy Arg2:T12.sandy	
+R11.sandy	VERIFY_is_subclass_of Arg1:T17.sandy Arg2:T19.sandy	
+R12.sandy	VERIFY_is_subclass_of Arg1:T18.sandy Arg2:T19.sandy	
+R13.sandy	VERIFY_is_subclass_of Arg1:T19.sandy Arg2:T16.sandy	
+R15.sandy	VERIFY_participates_in Arg1:T20.sandy Arg2:T22.sandy	
+R16.sandy	VERIFY_participates_in Arg1:T23.sandy Arg2:T31.sandy	
+R17.sandy	VERIFY_participates_in Arg1:T24.sandy Arg2:T31.sandy	
+R18.sandy	VERIFY_participates_in Arg1:T25.sandy Arg2:T31.sandy	
+R19.sandy	VERIFY_participates_in Arg1:T26.sandy Arg2:T31.sandy	
+R20.sandy	VERIFY_participates_in Arg1:T27.sandy Arg2:T31.sandy	
+R21.sandy	VERIFY_participates_in Arg1:T28.sandy Arg2:T32.sandy	
+R22.sandy	VERIFY_participates_in Arg1:T28.sandy Arg2:T29.sandy	
+R23.sandy	VERIFY_is_part_of Arg1:T30.sandy Arg2:T33.sandy	
+R24.sandy	VERIFY_participates_in Arg1:T34.sandy Arg2:T35.sandy	
+R25.sandy	VERIFY_is_part_of Arg1:T34.sandy Arg2:T36.sandy	

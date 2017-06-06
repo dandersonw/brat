@@ -1,0 +1,59 @@
+T1.sandy	FIX_TYPE 343 382	mouse olfactory epithelium cDNA library
+T4.sandy	Entity 555 569	gene structure
+T5.sandy	Entity 574 599	putative promoter regions
+T6.sandy	FIX_TYPE 472 490	olfactory function
+T8.sandy	Entity 1393 1413	olfactory epithelium
+T9.sandy	FIX_TYPE 1433 1452	olfactory receptors
+T12.sandy	Entity 1667 1700	multiple transcriptional variants
+T13.sandy	FIX_TYPE 1639 1658	olfactory receptors
+T15.sandy	Entity 1933 1966	nonfunctional olfactory receptors
+T17.sandy	Entity 2061 2079	olfactory function
+T23.sandy	Entity 2607 2637	olfactory receptor microarrays
+T2.sandy	FIX_SPAN_Entity 406 448	olfactory receptor expressed sequence tags
+T3.sandy	FIX_SPAN_Entity 500 530	additional olfactory receptors
+T7.sandy	VERIFY_KeyEntity 1798 1810	splice sites
+T10.sandy	VERIFY_Entity 1529 1564	unequal numbers of expressing cells
+T11.sandy	VERIFY_Entity 1569 1594	unequal transcript levels
+T14.sandy	VERIFY_Entity 1822 1835	coding region
+T16.sandy	FIX_SPAN_Entity 1989 2016	increase receptor diversity
+T18.sandy	FIX_SPAN_KeyEntity 2112 2137	mouse olfactory receptors
+T19.sandy	VERIFY_Entity 2349 2359	one-neuron
+T20.sandy	VERIFY_Entity 2361 2387	one-gene expression regime
+T21.sandy	VERIFY_Entity 2297 2324	different expression levels
+T22.sandy	FIX_SPAN_Entity 2549 2588	computational regulatory motif searches
+T24.sandy	VERIFY_KeyEntity 0 16	Odorant receptor
+T25.sandy	VERIFY_Entity 27 40	sequence tags
+T26.sandy	VERIFY_KeyEntity 53 73	olfactory expression
+T27.sandy	VERIFY_Entity 82 91	400 genes
+T28.sandy	VERIFY_KeyEntity 93 121	extensive alternate splicing
+T29.sandy	VERIFY_KeyEntity 126 151	unequal expression levels
+T1.kevin	VERIFY_Entity 221 246	mouse olfactory receptors
+T2.kevin	VERIFY_Entity 285 303	olfactory function
+T4.kevin	FIX_SPAN_KeyEntity 406 424;435 448	olfactory receptor sequence tags
+T6.kevin	FIX_SPAN_Entity 511 530	olfactory receptors
+T9.kevin	VERIFY_Entity 628 658	olfactory receptor gene family
+T10.kevin	VERIFY_Entity 774 799	mouse olfactory receptors
+T11.kevin	VERIFY_Entity 838 856	olfactory function
+T12.kevin	VERIFY_Entity 883 902	olfactory receptors
+T13.kevin	VERIFY_KeyEntity 928 967	mouse olfactory epithelium cDNA library
+T14.kevin	VERIFY_KeyEntity 1213 1235	odorant receptor cDNAs
+T15.kevin	VERIFY_Entity 1276 1289	real-time PCR
+T17.kevin	VERIFY_Entity 1368 1385	transcript levels
+T21.kevin	VERIFY_Entity 1853 1898	stereotyped olfactory receptor gene structure
+T23.kevin	FIX_SPAN_Entity 1998 2016	receptor diversity
+T25.kevin	FIX_SPAN_Entity 2088 2137	one-third of the intact mouse olfactory receptors
+T26.kevin	VERIFY_Entity 2188 2207	olfactory receptors
+T27.kevin	VERIFY_Entity 2224 2243	sequence similarity
+T28.kevin	VERIFY_Entity 2423 2455	5' untranslated region sequences
+T29.kevin	VERIFY_Entity 2460 2486	candidate promoter regions
+T30.kevin	VERIFY_Entity 2505 2524	olfactory receptors
+T31.kevin	FIX_SPAN_Entity 2549 2579	computational regulatory motif
+T33.kevin	VERIFY_Entity 1736 1766	5' and 3' untranslated regions
+R1.sandy	VERIFY_is_part_of Arg1:T2.sandy Arg2:T1.sandy	
+R2.sandy	VERIFY_participates_in Arg1:T8.sandy Arg2:T9.sandy	
+R3.sandy	VERIFY_participates_in Arg1:T13.sandy Arg2:T12.sandy	
+R4.sandy	VERIFY_interacts_with Arg1:T7.sandy Arg2:T14.sandy	
+R5.sandy	VERIFY_participates_in Arg1:T15.sandy Arg2:T16.sandy	
+R6.sandy	VERIFY_regulates Arg1:T19.sandy Arg2:T21.sandy	
+R7.sandy	VERIFY_regulates Arg1:T20.sandy Arg2:T21.sandy	
+R1.kevin	VERIFY_is_part_of Arg1:T17.kevin Arg2:T8.sandy	

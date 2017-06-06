@@ -1,0 +1,82 @@
+T1.sandy	Entity 182 192	STSL locus
+T4.sandy	FIX_TYPE 305 319	sitosterolemia
+T6.sandy	Entity 360 378	sterol trafficking
+T8.sandy	FIX_TYPE 477 493	ABCG5/sterolin-1
+T9.sandy	KeyEntity 498 514	ABCG8/sterolin-2
+T10.sandy	Entity 547 568	obligate heterodimers
+T11.sandy	Entity 757 777	dietary sterol entry
+T12.sandy	Entity 782 806	biliary sterol secretion
+T14.sandy	Entity 938 965	Abcg8/sterolin-2 deficiency
+T18.sandy	Entity 1214 1230	Abcg5/sterolin-1
+T19.sandy	Entity 1253 1258	liver
+T20.sandy	Entity 1263 1272	intestine
+T28.sandy	Entity 1633 1657	biliary sterol secretion
+T29.sandy	KeyEntity 1724 1740	Abcg8/sterolin-2
+T30.sandy	Entity 1758 1782	biliary sterol secretion
+T32.sandy	Entity 1849 1878	biliary cholesterol secretion
+T2.sandy	FIX_SPAN_Entity 194 239	ATP-binding cassette (ABC)-transporters ABCG5
+T3.sandy	FIX_SPAN_KeyEntity 266 271	ABCG8
+T5.sandy	FIX_SPAN_Entity 328 347	autosomal recessive
+T7.sandy	FIX_SPAN_Entity 396 425	increased plasma plant sterol
+T13.sandy	FIX_SPAN_KeyEntity 910 924	sitosterolemia
+T15.sandy	FIX_SPAN_KeyEntity 1065 1070	Abcg8
+T16.sandy	VERIFY_Entity 1090 1106	increased plasma
+T17.sandy	VERIFY_Entity 1111 1137	tissue plant sterol levels
+T21.sandy	VERIFY_Entity 1333 1350	apical expression
+T22.sandy	FIX_SPAN_Entity 1276 1302	Abcg8/sterolin-2 deficient
+T23.sandy	FIX_SPAN_Entity 1364 1379	Abcg8 deficient
+T24.sandy	VERIFY_Entity 1412 1441	secrete cholesterol into bile
+T25.sandy	VERIFY_Entity 1479 1497	secrete sitosterol
+T26.sandy	VERIFY_Entity 1517 1539	intermediate phenotype
+T27.sandy	FIX_SPAN_Entity 1583 1601	not sitosterolemic
+T31.sandy	FIX_SPAN_Entity 1792 1816	loss of Abcg8/sterolin-2
+T33.sandy	VERIFY_KeyEntity 17 31	sitosterolemia
+T34.sandy	VERIFY_Entity 2 13	mouse model
+T35.sandy	VERIFY_KeyEntity 33 60	absence of Abcg8/sterolin-2
+T37.sandy	VERIFY_Entity 72 79;83 110	failure secrete biliary cholesterol
+T2.kevin	FIX_SPAN_KeyEntity 194 261	ATP-binding cassette (ABC)-transporters ABCG5 (encoding sterolin-1)
+T3.kevin	FIX_SPAN_KeyEntity 266 293	ABCG8 (encoding sterolin-2)
+T6.kevin	FIX_SPAN_Entity 406 432	plasma plant sterol levels
+T7.kevin	VERIFY_KeyEntity 461 475	sitosterolemia
+T11.kevin	VERIFY_KeyEntity 660 665	ABCG5
+T12.kevin	VERIFY_KeyEntity 669 674	ABCG8
+T17.kevin	FIX_SPAN_KeyEntity 1800 1816	Abcg8/sterolin-2
+T19.kevin	VERIFY_Entity 1884 1894	sitosterol
+T20.kevin	VERIFY_Entity 1902 1930	biliary sitosterol secretion
+T21.kevin	VERIFY_Entity 1974 1993	sitosterolemic mice
+T22.kevin	VERIFY_KeyEntity 2051 2067	Abcg8/sterolin-2
+T23.kevin	FIX_SPAN_Entity 895 924	mouse model of sitosterolemia
+T25.kevin	VERIFY_Entity 973 997	Homozygous knockout mice
+T26.kevin	VERIFY_Entity 1021 1035	sitosterolemia
+T27.kevin	FIX_SPAN_KeyEntity 1047 1070	Mice deficient in Abcg8
+T28.kevin	VERIFY_Entity 1139 1149	sitosterol
+T29.kevin	VERIFY_Entity 1154 1165	campesterol
+T30.kevin	VERIFY_Entity 1183 1197	sitosterolemia
+T34.kevin	FIX_SPAN_Entity 1276 1307	Abcg8/sterolin-2 deficient mice
+T35.kevin	FIX_SPAN_KeyEntity 1364 1384	Abcg8 deficient mice
+T36.kevin	VERIFY_Entity 1547 1573	heterozygous Abcg8+/- mice
+T37.kevin	FIX_SPAN_Entity 1587 1601	sitosterolemic
+T39.kevin	FIX_SPAN_Entity 328 356	autosomal recessive disorder
+R1.sandy	VERIFY_participates_in Arg1:T2.sandy Arg2:T4.sandy	
+R2.sandy	VERIFY_participates_in Arg1:T3.sandy Arg2:T4.sandy	
+R3.sandy	VERIFY_is_part_of Arg1:T4.sandy Arg2:T5.sandy	
+R4.sandy	VERIFY_is_part_of Arg1:T4.sandy Arg2:T6.sandy	
+R5.sandy	VERIFY_participates_in Arg1:T8.sandy Arg2:T10.sandy	
+R6.sandy	VERIFY_participates_in Arg1:T9.sandy Arg2:T10.sandy	
+R7.sandy	VERIFY_is_part_of Arg1:T14.sandy Arg2:T13.sandy	
+R8.sandy	VERIFY_participates_in Arg1:T18.sandy Arg2:T19.sandy	
+R9.sandy	VERIFY_participates_in Arg1:T18.sandy Arg2:T20.sandy	
+R10.sandy	VERIFY_participates_in Arg1:T22.sandy Arg2:T21.sandy	
+R11.sandy	VERIFY_participates_in Arg1:T23.sandy Arg2:T24.sandy	
+R12.sandy	VERIFY_participates_in Arg1:T23.sandy Arg2:T25.sandy	
+R13.sandy	VERIFY_is_part_of Arg1:T26.sandy Arg2:T27.sandy	
+R14.sandy	VERIFY_participates_in Arg1:T26.sandy Arg2:T28.sandy	
+R15.sandy	VERIFY_regulates Arg1:T29.sandy Arg2:T30.sandy	
+R16.sandy	VERIFY_participates_in Arg1:T31.sandy Arg2:T32.sandy	
+R1.kevin	VERIFY_is_part_of Arg1:T2.kevin Arg2:T1.sandy	
+R2.kevin	VERIFY_is_part_of Arg1:T3.kevin Arg2:T1.sandy	
+R3.kevin	VERIFY_is_subclass_of Arg1:T4.sandy Arg2:T39.kevin	
+R8.kevin	VERIFY_participates_in Arg1:T29.kevin Arg2:T30.kevin	
+R9.kevin	VERIFY_participates_in Arg1:T28.kevin Arg2:T30.kevin	
+R13.kevin	VERIFY_interacts_with Arg1:T17.kevin Arg2:T32.sandy	
+R14.kevin	VERIFY_interacts_with Arg1:T19.kevin Arg2:T32.sandy	

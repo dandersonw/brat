@@ -1,0 +1,64 @@
+T1.sandy	FIX_TYPE 71 80	Helicases
+T4.sandy	Entity 132 147	DNA replication
+T6.sandy	Entity 272 304	thymine-rich single-stranded DNA
+T7.sandy	KeyEntity 423 431	Mcm4/6/7
+T9.sandy	Entity 471 513	5′-proximal 25 nt single-stranded segments
+T13.sandy	Entity 667 685	unwinding efficacy
+T14.sandy	Entity 703 737	concurrent bidirectional unwinding
+T17.sandy	FIX_TYPE 830 838	Mcm4/6/7
+T18.sandy	Entity 906 933	single-stranded 3′-tail DNA
+T19.sandy	Entity 949 968	helicase activation
+T20.sandy	Entity 984 1015	sequence context of the 3′-tail
+T26.sandy	FIX_TYPE 0 11	DNA binding
+T27.sandy	FIX_TYPE 16 24	helicase
+T28.sandy	FIX_TYPE 36 59	mouse MCM4/6/7 helicase
+T2.sandy	VERIFY_Entity 103 113	initiation
+T3.sandy	VERIFY_Entity 118 128	elongation
+T5.sandy	FIX_SPAN_Entity 225 241	Mcm4/6/7 complex
+T8.sandy	VERIFY_Entity 438 461	symmetric dual contacts
+T10.sandy	VERIFY_Entity 530 543	branch points
+T11.sandy	VERIFY_Entity 567 582	double hexamers
+T12.sandy	FIX_SPAN_Entity 584 608	Loss of thymine residues
+T15.sandy	FIX_SPAN_Entity 743 775	single double hexameric Mcm4/6/7
+T16.sandy	VERIFY_Entity 795 814	efficient unwinding
+T21.sandy	VERIFY_Entity 1070 1090	more thymine content
+T22.sandy	VERIFY_Entity 1231 1253	cytosine–inosine pairs
+T23.sandy	VERIFY_Entity 1277 1286	unwinding
+T24.sandy	FIX_SPAN_Entity 1449 1459	activation
+T25.sandy	FIX_SPAN_Entity 1464 1484	substrate preference
+T3.kevin	VERIFY_Entity 177 207	helicase and ATPase activities
+T4.kevin	FIX_SPAN_KeyEntity 215 241	mammalian Mcm4/6/7 complex
+T8.kevin	FIX_SPAN_Entity 592 608	thymine residues
+T11.kevin	FIX_SPAN_KeyEntity 767 775	Mcm4/6/7
+T13.kevin	VERIFY_Entity 865 894	fork and extension structures
+T17.kevin	VERIFY_KeyEntity 1115 1123	Mcm4/6/7
+T18.kevin	VERIFY_Entity 1092 1111	Strand displacement
+T19.kevin	VERIFY_Entity 1304 1331	mammalian Mcm4/6/7 helicase
+T20.kevin	VERIFY_Entity 1369 1387	base-paired duplex
+T21.kevin	FIX_SPAN_Entity 1449 1484	activation and substrate preference
+T22.kevin	VERIFY_Entity 1492 1523	eukaryotic replicative helicase
+T23.kevin	VERIFY_Entity 1145 1155	GC content
+R1.sandy	VERIFY_participates_in Arg1:T1.sandy Arg2:T2.sandy	
+R2.sandy	VERIFY_participates_in Arg1:T1.sandy Arg2:T3.sandy	
+R3.sandy	VERIFY_regulates Arg1:T3.sandy Arg2:T4.sandy	
+R4.sandy	VERIFY_regulates Arg1:T2.sandy Arg2:T4.sandy	
+R5.sandy	VERIFY_regulates Arg1:T5.sandy Arg2:T6.sandy	
+R6.sandy	VERIFY_participates_in Arg1:T7.sandy Arg2:T8.sandy	
+R7.sandy	VERIFY_interacts_with Arg1:T7.sandy Arg2:T9.sandy	
+R8.sandy	VERIFY_regulates Arg1:T7.sandy Arg2:T11.sandy	
+R9.sandy	VERIFY_participates_in Arg1:T12.sandy Arg2:T13.sandy	
+R10.sandy	VERIFY_regulates Arg1:T15.sandy Arg2:T16.sandy	
+R11.sandy	VERIFY_is_part_of Arg1:T21.sandy Arg2:T20.sandy	
+R12.sandy	VERIFY_interacts_with Arg1:T24.sandy Arg2:T25.sandy	
+R1.kevin	VERIFY_participates_in Arg1:T1.sandy Arg2:T4.sandy	
+R2.kevin	VERIFY_is_part_of Arg1:T3.kevin Arg2:T4.kevin	
+R3.kevin	VERIFY_regulates Arg1:T6.sandy Arg2:T3.kevin	
+R4.kevin	VERIFY_is_part_of Arg1:T9.sandy Arg2:T7.sandy	
+R5.kevin	VERIFY_regulates Arg1:T8.kevin Arg2:T13.sandy	
+R6.kevin	VERIFY_participates_in Arg1:T11.kevin Arg2:T14.sandy	
+R7.kevin	VERIFY_is_part_of Arg1:T18.sandy Arg2:T13.kevin	
+R8.kevin	VERIFY_regulates Arg1:T17.sandy Arg2:T13.kevin	
+R9.kevin	VERIFY_regulates Arg1:T20.sandy Arg2:T19.sandy	
+R10.kevin	VERIFY_participates_in Arg1:T17.kevin Arg2:T18.kevin	
+R11.kevin	VERIFY_is_part_of Arg1:T21.kevin Arg2:T22.kevin	
+R12.kevin	VERIFY_participates_in Arg1:T23.kevin Arg2:T18.kevin	

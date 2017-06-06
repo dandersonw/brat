@@ -1,0 +1,56 @@
+T6.sandy	Entity 206 217	vasopressin
+T7.sandy	FIX_TYPE 239 269	nephrogenic diabetes insipidus
+T12.sandy	Entity 545 578	ethylnitrosourea-mutagenized mice
+T13.sandy	FIX_TYPE 650 653	NDI
+T14.sandy	FIX_TYPE 663 677	F204V mutation
+T18.sandy	FIX_TYPE 1033 1060	improper AQP2 translocation
+T20.sandy	FIX_TYPE 1088 1118	nephrogenic diabetes insipidus
+T21.sandy	FIX_TYPE 1215 1225	AQP2-F204V
+T28.sandy	FIX_TYPE 1464 1467	NDI
+T2.sandy	FIX_TYPE 0 18	Diabetes Insipidus
+T1.sandy	FIX_SPAN_KeyEntity 81 117	nephrogenic diabetes insipidus (NDI)
+T3.sandy	FIX_SPAN_Entity 70 80	Congenital
+T4.sandy	VERIFY_Entity 163 169	kidney
+T5.sandy	VERIFY_Entity 173 190	concentrate urine
+T9.sandy	FIX_SPAN_Entity 313 343	vasopressin receptor 2 (Avpr2)
+T10.sandy	FIX_SPAN_Entity 356 410	vasopressin-sensitive water channel aquaporin-2 (Aqp2)
+T15.sandy	FIX_SPAN_Entity 685 689	Aqp2
+T16.sandy	VERIFY_KeyEntity 741 744	NDI
+T19.sandy	VERIFY_Entity 1068 1084	molecular defect
+T22.sandy	VERIFY_Entity 1246 1267	endoplasmic reticulum
+T23.sandy	VERIFY_Entity 1282 1303	abnormal localization
+T24.sandy	VERIFY_Entity 1322 1339	wild-type protein
+T25.sandy	VERIFY_Entity 1383 1402	mechanistic studies
+T26.sandy	VERIFY_Entity 1425 1440	pharmacological
+T27.sandy	VERIFY_Entity 1445 1459	gene therapies
+T17.sandy	VERIFY_Entity 810 824	human disorder
+T29.sandy	VERIFY_Entity 1352 1363	mouse model
+T8.sandy	FIX_SPAN_KeyEntity 46 57	Aquaporin-2
+T1.kevin	FIX_SPAN_Entity 70 111	Congenital nephrogenic diabetes insipidus
+T2.kevin	FIX_SPAN_Entity 113 116	NDI
+T5.kevin	FIX_SPAN_KeyEntity 313 335	vasopressin receptor 2
+T6.kevin	FIX_SPAN_KeyEntity 337 342	Avpr2
+T7.kevin	FIX_SPAN_KeyEntity 356 403	vasopressin-sensitive water channel aquaporin-2
+T8.kevin	FIX_SPAN_KeyEntity 405 409	Aqp2
+T12.kevin	FIX_SPAN_KeyEntity 685 694	Aqp2 gene
+T13.kevin	VERIFY_Entity 724 737	murine models
+T14.kevin	VERIFY_Entity 862 878	renal cell lines
+T15.kevin	VERIFY_KeyEntity 887 911	recessive Aqp2 mutations
+T21.kevin	VERIFY_Entity 22 26	Mice
+T22.kevin	FIX_SPAN_KeyEntity 34 57	Mutation in Aquaporin-2
+R13.sandy	FIX_RELATION_TYPE Arg1:T18.sandy Arg2:T20.sandy	
+R3.sandy	VERIFY_interacts_with Arg1:T4.sandy Arg2:T5.sandy	
+R4.sandy	VERIFY_interacts_with Arg1:T4.sandy Arg2:T6.sandy	
+R6.sandy	VERIFY_is_part_of Arg1:T9.sandy Arg2:T7.sandy	
+R8.sandy	VERIFY_is_part_of Arg1:T10.sandy Arg2:T7.sandy	
+R9.sandy	VERIFY_is_part_of Arg1:T14.sandy Arg2:T12.sandy	
+R10.sandy	VERIFY_is_part_of Arg1:T15.sandy Arg2:T12.sandy	
+R12.sandy	VERIFY_is_subclass_of Arg1:T18.sandy Arg2:T19.sandy	
+R14.sandy	VERIFY_participates_in Arg1:T21.sandy Arg2:T22.sandy	
+R1.kevin	VERIFY_is_subtype_of Arg1:T1.kevin Arg2:T2.kevin	
+R2.kevin	VERIFY_participates_in Arg1:T6.sandy Arg2:T2.kevin	
+R3.kevin	VERIFY_regulates Arg1:T5.kevin Arg2:T7.sandy	
+R4.kevin	VERIFY_regulates Arg1:T7.kevin Arg2:T7.sandy	
+R7.kevin	VERIFY_interacts_with Arg1:T14.sandy Arg2:T12.kevin	
+R8.kevin	VERIFY_is_part_of Arg1:T12.kevin Arg2:T12.sandy	
+R11.kevin	VERIFY_is_part_of Arg1:T22.kevin Arg2:T21.kevin	

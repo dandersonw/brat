@@ -1,0 +1,67 @@
+T3.sandy	KeyEntity 344 365	Ca2+-permeable AMPARs
+T4.sandy	Entity 369 387	olfactory behavior
+T5.sandy	Entity 441 455	GluR-B subunit
+T13.sandy	Entity 775 791	GluR-B depletion
+T14.sandy	Entity 795 804	forebrain
+T17.sandy	Entity 918 929	hippocampus
+T18.sandy	Entity 934 940	cortex
+T20.sandy	Entity 977 1005	transgenic GluR-B expression
+T21.sandy	Entity 1020 1035	piriform cortex
+T22.sandy	Entity 1040 1051	hippocampus
+T1.sandy	FIX_SPAN_Entity 144 202	α-amino-3-hydroxy-5-methyl-4-isoxazolepropionate receptors
+T2.sandy	FIX_SPAN_KeyEntity 204 210	AMPARs
+T6.sandy	FIX_SPAN_Entity 482 491	GluR-B(Q)
+T7.sandy	FIX_SPAN_Entity 509 536	increased Ca2+ permeability
+T8.sandy	FIX_SPAN_KeyEntity 540 546	AMPARs
+T9.sandy	FIX_SPAN_Entity 622 655	enhanced olfactory discrimination
+T10.sandy	VERIFY_Entity 660 679	more rapid learning
+T11.sandy	FIX_SPAN_Entity 685 714	go/no-go operant conditioning
+T12.sandy	VERIFY_KeyEntity 721 737	Olfactory memory
+T15.sandy	VERIFY_Entity 809 829	ectopically variable
+T16.sandy	FIX_SPAN_Entity 888 914	decreased olfactory memory
+T19.sandy	VERIFY_Entity 955 961	memory
+T23.sandy	FIX_SPAN_Entity 1197 1205	behavior
+T24.sandy	FIX_SPAN_Entity 1220 1237	GluR-B expression
+T25.sandy	VERIFY_Entity 1248 1259	mechanistic
+T26.sandy	VERIFY_Entity 1264 1282	spatial dissection
+T27.sandy	FIX_SPAN_Entity 1286 1304	olfactory learning
+T28.sandy	FIX_SPAN_Entity 1306 1320	discrimination
+T29.sandy	FIX_SPAN_Entity 1326 1345	memory capabilities
+T30.sandy	VERIFY_KeyEntity 0 28	Enhanced Odor Discrimination
+T31.sandy	VERIFY_KeyEntity 33 58	Impaired Olfactory Memory
+T32.sandy	VERIFY_Entity 62 89	Spatially Controlled Switch
+T33.sandy	VERIFY_KeyEntity 93 107	AMPA Receptors
+T1.kevin	FIX_SPAN_Entity 144 211	α-amino-3-hydroxy-5-methyl-4-isoxazolepropionate receptors (AMPARs)
+T3.kevin	VERIFY_KeyEntity 389 407	AMPAR modification
+T5.kevin	FIX_SPAN_Entity 473 491	unedited GluR-B(Q)
+T6.kevin	FIX_SPAN_Entity 519 536;540 546	Ca2+ permeability AMPARs
+T7.kevin	VERIFY_KeyEntity 574 586	AMPAR switch
+T8.kevin	VERIFY_Entity 263 299	sensory coding, learning, and memory
+T10.kevin	VERIFY_Entity 604 613	forebrain
+T11.kevin	FIX_SPAN_Entity 631 655	olfactory discrimination
+T12.kevin	FIX_SPAN_Entity 694 719	operant conditioning task
+T20.kevin	VERIFY_Entity 1112 1130	GluR-B variability
+T21.kevin	VERIFY_Entity 1135 1163	transgenic GluR-B expression
+T22.kevin	FIX_SPAN_Entity 1197 1216;1220 1237	behavior and levels GluR-B expression
+T23.kevin	FIX_SPAN_Entity 1286 1345	olfactory learning, discrimination, and memory capabilities
+T24.kevin	VERIFY_Entity 548 552	Mice
+T25.kevin	FIX_SPAN_Entity 898 914	olfactory memory
+R5.sandy	participates_in Arg1:T3.sandy Arg2:T4.sandy	
+R1.sandy	VERIFY_regulates Arg1:T6.sandy Arg2:T7.sandy	
+R2.sandy	VERIFY_regulates Arg1:T5.sandy Arg2:T7.sandy	
+R3.sandy	VERIFY_participates_in Arg1:T7.sandy Arg2:T8.sandy	
+R6.sandy	VERIFY_participates_in Arg1:T13.sandy Arg2:T15.sandy	
+R7.sandy	VERIFY_regulates Arg1:T20.sandy Arg2:T19.sandy	
+R8.sandy	VERIFY_interacts_with Arg1:T23.sandy Arg2:T24.sandy	
+R9.sandy	VERIFY_participates_in Arg1:T25.sandy Arg2:T27.sandy	
+R10.sandy	VERIFY_participates_in Arg1:T26.sandy Arg2:T27.sandy	
+R11.sandy	VERIFY_participates_in Arg1:T26.sandy Arg2:T29.sandy	
+R12.sandy	VERIFY_regulates Arg1:T33.sandy Arg2:T31.sandy	
+R13.sandy	VERIFY_regulates Arg1:T33.sandy Arg2:T30.sandy	
+R1.kevin	VERIFY_interacts_with Arg1:T1.kevin Arg2:T8.kevin	
+R3.kevin	VERIFY_interacts_with Arg1:T5.sandy Arg2:T3.kevin	
+R4.kevin	VERIFY_interacts_with Arg1:T5.kevin Arg2:T3.kevin	
+R5.kevin	VERIFY_participates_in Arg1:T13.sandy Arg2:T14.sandy	
+R6.kevin	VERIFY_is_part_of Arg1:T7.kevin Arg2:T10.kevin	
+R7.kevin	VERIFY_is_part_of Arg1:T7.kevin Arg2:T24.kevin	
+R8.kevin	VERIFY_participates_in Arg1:T13.sandy Arg2:T25.kevin	

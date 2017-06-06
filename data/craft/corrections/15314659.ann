@@ -1,0 +1,43 @@
+T2.sandy	FIX_TYPE 122 156	Systemic lupus erythematosus (SLE)
+T3.sandy	Entity 162 193	multisystem autoimmune disorder
+T4.sandy	Entity 340 350	null genes
+T5.sandy	FIX_TYPE 495 519	spontaneous autoimmunity
+T8.sandy	KeyEntity 1007 1039	129-derived Chromosome 1 segment
+T10.sandy	FIX_TYPE 1236 1271	epistatic modifiers of autoimmunity
+T14.sandy	FIX_TYPE 66 78	Autoimmunity
+T15.sandy	Entity 92 110	Gene-Targeted Mice
+T6.sandy	FIX_SPAN_Entity 671 697	expression of autoimmunity
+T7.sandy	FIX_SPAN_Entity 916 934	lupus-prone hybrid
+T9.sandy	FIX_SPAN_Entity 1124 1140	nuclear antigens
+T11.sandy	VERIFY_Entity 1321 1335	gene targeting
+T3.kevin	VERIFY_Entity 319 322	SLE
+T4.kevin	VERIFY_Entity 270 288	gene-targeted mice
+T6.kevin	VERIFY_KeyEntity 412 432	129 and C57BL/6 mice
+T8.kevin	VERIFY_Entity 581 608	autoimmune phenotype of SLE
+T9.kevin	VERIFY_Entity 612 630	gene-targeted mice
+T10.kevin	FIX_SPAN_Entity 685 697	autoimmunity
+T11.kevin	VERIFY_Entity 794 822	genome-wide linkage analysis
+T12.kevin	VERIFY_KeyEntity 880 900	129 and C57BL/6 mice
+T13.kevin	FIX_SPAN_KeyEntity 916 956	lupus-prone hybrid (129 × C57BL/6) model
+T14.kevin	VERIFY_KeyEntity 972 995	C57BL/6 congenic strain
+T16.kevin	FIX_SPAN_Entity 1111 1140	tolerance to nuclear antigens
+T17.kevin	VERIFY_Entity 846 865	susceptibility loci
+T18.kevin	VERIFY_KeyEntity 1060 1072	129 interval
+T20.kevin	VERIFY_KeyEntity 1275 1304	129 and C57BL/6 mouse strains
+T21.kevin	VERIFY_Entity 1412 1429	autoimmune traits
+T22.kevin	VERIFY_Entity 1448 1475	gene-targeted models of SLE
+T23.kevin	VERIFY_Entity 0 24	Spontaneous Autoimmunity
+T24.kevin	VERIFY_Entity 28 48	129 and C57BL/6 Mice
+R2.sandy	is_subclass_of Arg1:T2.sandy Arg2:T3.sandy	
+R3.sandy	VERIFY_participates_in Arg1:T8.sandy Arg2:T9.sandy	
+R4.sandy	VERIFY_participates_in Arg1:T10.sandy Arg2:T11.sandy	
+R2.kevin	VERIFY_is_part_of Arg1:T3.kevin Arg2:T4.kevin	
+R3.kevin	VERIFY_participates_in Arg1:T4.sandy Arg2:T4.kevin	
+R4.kevin	VERIFY_is_part_of Arg1:T5.sandy Arg2:T6.kevin	
+R5.kevin	VERIFY_is_part_of Arg1:T8.kevin Arg2:T9.kevin	
+R7.kevin	VERIFY_is_part_of Arg1:T17.kevin Arg2:T13.kevin	
+R8.kevin	VERIFY_is_part_of Arg1:T8.sandy Arg2:T14.kevin	
+R9.kevin	VERIFY_participates_in Arg1:T18.kevin Arg2:T16.kevin	
+R10.kevin	VERIFY_is_part_of Arg1:T10.sandy Arg2:T20.kevin	
+R11.kevin	VERIFY_is_part_of Arg1:T21.kevin Arg2:T22.kevin	
+R12.kevin	VERIFY_is_part_of Arg1:T23.kevin Arg2:T24.kevin	

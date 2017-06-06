@@ -1,0 +1,48 @@
+T1.sandy	Entity 286 310	gene expression patterns
+T2.sandy	Entity 312 324	morphologies
+T3.sandy	Entity 330 353	synaptic connectivities
+T7.sandy	KeyEntity 483 514	enhanced S-cone syndrome (ESCS)
+T8.sandy	Entity 538 558	spontaneous deletion
+T10.sandy	Entity 594 638	orphan nuclear receptor transcription factor
+T11.sandy	FIX_TYPE 735 745	rd7 retina
+T12.sandy	Entity 786 810	S-opsin–expressing cells
+T16.sandy	FIX_TYPE 1107 1124	rd7 mutant retina
+T17.sandy	Entity 1284 1311	glucose/glycogen metabolism
+T20.sandy	Entity 1333 1360	abnormal electroretinograms
+T21.sandy	Entity 1362 1387	slow retinal degeneration
+T22.sandy	Entity 1393 1414	retinal dysmorphology
+T23.sandy	Entity 1500 1530	hybrid photoreceptor cell type
+T27.sandy	KeyEntity 650 654	ESCS
+T4.sandy	Entity 681 711	in situ hybridization analysis
+T5.sandy	FIX_SPAN_KeyEntity 418 459	retinal degeneration 7 (rd7) mutant mouse
+T9.sandy	FIX_SPAN_KeyEntity 584 589	NR2E3
+T13.sandy	FIX_SPAN_Entity 893 907	photoreceptors
+T14.sandy	FIX_SPAN_KeyEntity 915 925	rd7 retina
+T15.sandy	VERIFY_Entity 938 970	morphologically hybrid cell type
+T18.sandy	VERIFY_Entity 1158 1171	cone-specific
+T19.sandy	VERIFY_Entity 1175 1194	cone-enriched genes
+T24.sandy	VERIFY_Entity 1657 1678	molecular differences
+T25.sandy	FIX_SPAN_Entity 1687 1691	rods
+T26.sandy	FIX_SPAN_Entity 1696 1701	cones
+T28.sandy	VERIFY_KeyEntity 2 22	Hybrid Photoreceptor
+T29.sandy	VERIFY_Entity 39 42;52 57	Rod Genes
+T31.sandy	VERIFY_KeyEntity 63 74	Mouse Model
+T32.sandy	VERIFY_KeyEntity 78 102	Enhanced S-Cone Syndrome
+T1.kevin	VERIFY_Entity 114 117;127 141	Rod photoreceptors
+T6.kevin	FIX_SPAN_KeyEntity 391 459	photoreceptor cells of the retinal degeneration 7 (rd7) mutant mouse
+T9.kevin	FIX_SPAN_Entity 566 589	mouse ortholog of NR2E3
+T16.kevin	FIX_SPAN_KeyEntity 893 925	photoreceptors in the rd7 retina
+T17.kevin	VERIFY_Entity 991 1019	rod- and cone-specific genes
+T18.kevin	VERIFY_Entity 1034 1055	in situ hybridization
+T20.kevin	VERIFY_Entity 1128 1138	microarray
+T25.kevin	VERIFY_KeyEntity 1423 1439	humans with ESCS
+T27.kevin	FIX_SPAN_Entity 1687 1701	rods and cones
+R3.sandy	VERIFY_participates_in Arg1:T8.sandy Arg2:T10.sandy	
+R4.sandy	VERIFY_participates_in Arg1:T11.sandy Arg2:T12.sandy	
+R5.sandy	VERIFY_is_part_of Arg1:T13.sandy Arg2:T15.sandy	
+R6.sandy	VERIFY_participates_in Arg1:T16.sandy Arg2:T17.sandy	
+R7.sandy	VERIFY_participates_in Arg1:T23.sandy Arg2:T20.sandy	
+R8.sandy	VERIFY_participates_in Arg1:T23.sandy Arg2:T21.sandy	
+R9.sandy	VERIFY_participates_in Arg1:T23.sandy Arg2:T22.sandy	
+R10.sandy	VERIFY_is_part_of Arg1:T29.sandy Arg2:T28.sandy	
+R1.kevin	VERIFY_is_part_of Arg1:T8.sandy Arg2:T9.kevin	

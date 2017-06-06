@@ -1,0 +1,103 @@
+T6.sandy	KeyEntity 622 628	RanBP2
+T7.sandy	Entity 686 716	mitochondrial metallochaperone
+T8.sandy	FIX_TYPE 718 723	Cox11
+T11.sandy	KeyEntity 758 781	hexokinase type I (HKI)
+T14.sandy	KeyEntity 935 940	Cox11
+T16.sandy	KeyEntity 1121 1126	Cox11
+T18.sandy	KeyEntity 1161 1167	RanBP2
+T19.sandy	FIX_TYPE 1206 1211	Cox11
+T23.sandy	Entity 1782 1821	photosensory and postreceptoral neurons
+T24.sandy	KeyEntity 1830 1836	RanBP2
+T25.sandy	Entity 1887 1899	neuronal HKI
+T26.sandy	Entity 1901 1919	glucose catabolism
+T27.sandy	Entity 1921 1939	energy homeostasis
+T31.sandy	KeyEntity 972 978	RanBP2
+T32.sandy	FIX_TYPE 1001 1017	Cox11 biogenesis
+T35.sandy	KeyEntity 0 6	RanBP2
+T36.sandy	KeyEntity 17 22	Cox11
+T38.sandy	FIX_TYPE 55 83	Haploinsufficiency of RanBP2
+T1.sandy	FIX_SPAN_Entity 137 158	Ran-binding protein 2
+T2.sandy	FIX_SPAN_Entity 160 166	RanBP2
+T3.sandy	FIX_SPAN_Entity 179 191	multimodular
+T4.sandy	FIX_SPAN_Entity 196 215	pleiotropic protein
+T5.sandy	VERIFY_Entity 665 676	colocalizes
+T9.sandy	VERIFY_Entity 733 756	pacemaker of glycolysis
+T12.sandy	FIX_SPAN_Entity 815 844	leucine-rich domain of RanBP2
+T13.sandy	FIX_SPAN_Entity 859 884	strong chaperone activity
+T15.sandy	VERIFY_Entity 954 968	chaperone role
+T17.sandy	FIX_SPAN_Entity 1139 1155	inhibitor of HKI
+T20.sandy	FIX_SPAN_Entity 1600 1612	growth rates
+T21.sandy	FIX_SPAN_Entity 1617 1635	glucose catabolism
+T22.sandy	VERIFY_Entity 1748 1778	electrophysiological responses
+T28.sandy	VERIFY_Entity 1957 1966	metabolic
+T29.sandy	VERIFY_Entity 1968 1983	aging disorders
+T30.sandy	VERIFY_Entity 1988 2007	allied neuropathies
+T33.sandy	FIX_SPAN_Entity 1560 1574	RanBP2+/− mice
+T34.sandy	VERIFY_Entity 1873 1883	modulators
+T37.sandy	FIX_SPAN_KeyEntity 27 39	Hexokinase I
+T39.sandy	FIX_SPAN_KeyEntity 91 121	Deficits in Glucose Metabolism
+T1.kevin	FIX_SPAN_KeyEntity 137 167	Ran-binding protein 2 (RanBP2)
+T2.kevin	FIX_SPAN_Entity 179 215	multimodular and pleiotropic protein
+T3.kevin	VERIFY_KeyEntity 319 325	RanBP2
+T4.kevin	VERIFY_KeyEntity 397 403	RanBP2
+T5.kevin	VERIFY_KeyEntity 449 455	RanBP2
+T6.kevin	VERIFY_KeyEntity 556 562	RanBP2
+T7.kevin	VERIFY_KeyEntity 597 603	RanBP2
+T8.kevin	VERIFY_Entity 609 620	mouse model
+T13.kevin	VERIFY_Entity 790 809	leucine-rich domain
+T14.kevin	FIX_SPAN_Entity 815 834	leucine-rich domain
+T15.kevin	FIX_SPAN_KeyEntity 838 844	RanBP2
+T16.kevin	FIX_SPAN_Entity 866 884	chaperone activity
+T20.kevin	VERIFY_Entity 986 993	cytosol
+T21.kevin	VERIFY_KeyEntity 1019 1024	Cox11
+T22.kevin	VERIFY_KeyEntity 1052 1055	HKI
+T24.kevin	FIX_SPAN_KeyEntity 1152 1155	HKI
+T27.kevin	VERIFY_KeyEntity 1217 1220	HKI
+T28.kevin	VERIFY_KeyEntity 1257 1263	RanBP2
+T29.kevin	VERIFY_Entity 1280 1292	HKI function
+T30.kevin	VERIFY_Entity 1296 1307	mouse model
+T31.kevin	VERIFY_Entity 1332 1354	disrupted RanBP2 locus
+T32.kevin	VERIFY_KeyEntity 1370 1379	RanBP2−/−
+T33.kevin	VERIFY_Entity 1479 1509	decrease of HKI and ATP levels
+T35.kevin	VERIFY_Entity 1529 1551	central nervous system
+T34.kevin	FIX_SPAN_KeyEntity 1553 1574	Inbred RanBP2+/− mice
+T41.kevin	FIX_SPAN_Entity 1600 1635	growth rates and glucose catabolism
+T42.kevin	VERIFY_Entity 1658 1672	glucose uptake
+T43.kevin	VERIFY_Entity 1677 1692	gluconeogenesis
+T47.kevin	FIX_SPAN_Entity 27 50	Hexokinase I Activities
+T49.kevin	FIX_SPAN_Entity 103 121	Glucose Metabolism
+#1	AnnotatorNotes T6.sandy	All relations with this one mean they are overlapping in the same region, but there wasn't a relation for this
+R7.sandy	FIX_RELATION_TYPE Arg1:T6.sandy Arg2:T11.sandy	
+R14.sandy	regulates Arg1:T18.sandy Arg2:T19.sandy	
+R18.sandy	regulates Arg1:T35.sandy Arg2:T36.sandy	
+R2.sandy	VERIFY_is_part_of Arg1:T3.sandy Arg2:T2.sandy	
+R3.sandy	VERIFY_is_part_of Arg1:T4.sandy Arg2:T2.sandy	
+R4.sandy	VERIFY_participates_in Arg1:T6.sandy Arg2:T5.sandy	
+R5.sandy	VERIFY_participates_in Arg1:T5.sandy Arg2:T7.sandy	
+R9.sandy	VERIFY_is_part_of Arg1:T11.sandy Arg2:T9.sandy	
+R10.sandy	VERIFY_regulates Arg1:T12.sandy Arg2:T13.sandy	
+R11.sandy	VERIFY_is_part_of Arg1:T31.sandy Arg2:T15.sandy	
+R12.sandy	VERIFY_participates_in Arg1:T31.sandy Arg2:T32.sandy	
+R13.sandy	VERIFY_regulates Arg1:T16.sandy Arg2:T17.sandy	
+R15.sandy	VERIFY_participates_in Arg1:T33.sandy Arg2:T20.sandy	
+R16.sandy	VERIFY_participates_in Arg1:T33.sandy Arg2:T21.sandy	
+R17.sandy	VERIFY_participates_in Arg1:T24.sandy Arg2:T34.sandy	
+R19.sandy	VERIFY_regulates Arg1:T35.sandy Arg2:T37.sandy	
+R20.sandy	VERIFY_interacts_with Arg1:T38.sandy Arg2:T39.sandy	
+R1.kevin	VERIFY_is_subclass_of Arg1:T1.kevin Arg2:T2.kevin	
+R2.kevin	VERIFY_is_part_of Arg1:T6.sandy Arg2:T7.sandy	
+R3.kevin	VERIFY_is_part_of Arg1:T13.kevin Arg2:T11.sandy	
+R4.kevin	VERIFY_is_part_of Arg1:T6.sandy Arg2:T8.sandy	
+R6.kevin	VERIFY_is_part_of Arg1:T14.kevin Arg2:T15.kevin	
+R7.kevin	VERIFY_regulates Arg1:T15.kevin Arg2:T14.sandy	
+R8.kevin	VERIFY_participates_in Arg1:T16.kevin Arg2:T20.kevin	
+R9.kevin	VERIFY_participates_in Arg1:T16.kevin Arg2:T32.sandy	
+R11.kevin	VERIFY_regulates Arg1:T16.sandy Arg2:T24.kevin	
+R13.kevin	VERIFY_regulates Arg1:T19.sandy Arg2:T27.kevin	
+R14.kevin	VERIFY_regulates Arg1:T28.kevin Arg2:T29.kevin	
+R15.kevin	VERIFY_is_part_of Arg1:T31.kevin Arg2:T30.kevin	
+R16.kevin	VERIFY_participates_in Arg1:T32.kevin Arg2:T33.kevin	
+R17.kevin	VERIFY_is_part_of Arg1:T33.kevin Arg2:T35.kevin	
+R19.kevin	VERIFY_regulates Arg1:T24.sandy Arg2:T25.sandy	
+R20.kevin	VERIFY_regulates Arg1:T24.sandy Arg2:T26.sandy	
+R21.kevin	VERIFY_regulates Arg1:T24.sandy Arg2:T27.sandy	
