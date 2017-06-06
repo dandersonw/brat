@@ -47,3 +47,6 @@ T39	Entity 1779 1817	Annexin A7 in nuclei of neuronal cells
 T40	Entity 1825 1837	adult animal
 T41	KeyEntity 1851 1861	Annexin A7
 R8	is_part_of Arg1:T21 Arg2:T22	
+T42	Entity 0 20	Nuclear localization
+T43	KeyEntity 24 34	Annexin A7
+T44	Entity 42 66	murine brain development

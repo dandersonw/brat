@@ -103,3 +103,9 @@ T77	Entity 2805 2818	sex chromatin
 T78	Entity 2916 2923	mammals
 T79	Entity 2942 2953	vertebrates
 T80	Entity 1414 1435	sex chromatin defects
+T81	Entity 2 35	Mammal-Specific Doublesex Homolog
+T82	Entity 52 70	Male Sex Chromatin
+T83	Entity 91 103	Male Meiosis
+R24	participates_in Arg1:T82 Arg2:T83	
+R25	participates_in Arg1:T81 Arg2:T83	
+R26	interacts_with Arg1:T81 Arg2:T82	

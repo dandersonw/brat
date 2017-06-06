@@ -43,3 +43,7 @@ R3	other_relation Arg1:T23 Arg2:T24
 R4	participates_in Arg1:T25 Arg2:T26	
 T39	Entity 1378 1428	development and differentiation of multiple organs
 R5	participates_in Arg1:T29 Arg2:T39	
+T40	Entity 4 31	phosphatidylserine receptor
+T41	Entity 63 76	embryogenesis
+T42	Entity 88 110	apoptotic cell removal
+R6	participates_in Arg1:T40 Arg2:T41	

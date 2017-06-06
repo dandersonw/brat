@@ -1,0 +1,89 @@
+T1	KeyEntity 8 14	KCNJ10
+T2	KeyEntity 44 66	endocochlear potential
+T3	KeyEntity 78 86	deafness
+T4	KeyEntity 90 106	Pendred syndrome
+T5	KeyEntity 107 118	mouse model
+T6	KeyEntity 142 158	Pendred syndrome
+T7	Entity 169 197	autosomal-recessive disorder
+T8	Entity 215 234	congenital deafness
+T9	Entity 239 245	goiter
+T10	Entity 273 280	SLC26A4
+T11	Entity 298 305	pendrin
+T12	KeyEntity 348 355	pendrin
+T13	Entity 360 368	deafness
+T14	Entity 375 379	mice
+T15	Entity 391 401	Slc26a4+/+
+T16	Entity 422 429	Slc26a4
+T17	KeyEntity 436 446	Slc26a4-/-
+T18	KeyEntity 473 480	pendrin
+T19	Entity 518 546	confocal immunocytochemistry
+T20	Entity 562 566	mRNA
+T21	Entity 585 604	quantitative RT-PCR
+T22	KeyEntity 610 632	endocochlear potential
+T23	Entity 641 671	endolymphatic K+ concentration
+T24	Entity 691 722	double-barreled microelectrodes
+T25	Entity 750 770	stria marginal cells
+T26	Entity 792 807	vibrating probe
+T27	Entity 841 875	morphometric distance measurements
+T28	Entity 880 892	pigmentation
+T29	Entity 911 923	densitometry
+T31	KeyEntity 935 942	Pendrin
+T32	Entity 960 967	cochlea
+T33	Entity 971 987	apical membranes
+T34	Entity 991 1014	spiral prominence cells
+T35	Entity 1019 1039	spindle-shaped cells
+T36	Entity 1043 1059	stria vascularis
+T37	Entity 1064 1076	outer sulcus
+T38	Entity 1081 1091	root cells
+T39	Entity 1093 1109	Endolymph volume
+T41	KeyEntity 1113 1128	Slc26a4-/- mice
+T42	KeyEntity 1230 1245	Slc26a4-/- mice
+T43	Entity 1257 1279	endocochlear potential
+T44	Entity 1311 1329	basal cell barrier
+T45	KeyEntity 1337 1354	K+ channel KCNJ10
+T46	Entity 1368 1386	intermediate cells
+T47	Entity 1388 1404	Stria vascularis
+T48	Entity 1409 1423	hyperpigmented
+T49	Entity 1449 1468	free radical damage
+T50	Entity 1474 1492	basal cell barrier
+T51	Entity 1510 1528	intermediate cells
+T52	KeyEntity 1533 1539	KCNJ10
+T53	Entity 1540 1544	mRNA
+T54	KeyEntity 1562 1568	KCNJ10
+T55	Entity 1569 1576	protein
+T56	Entity 1589 1620	Endolymphatic K+ concentrations
+T57	Entity 1637 1654	membrane proteins
+T58	Entity 1710 1726	K+ channel KCNQ1
+T59	Entity 1731 1736	KCNE1
+T60	Entity 1738 1771	Na+/2Cl-/K+ cotransporter SLC12A2
+T61	Entity 1780 1797	gap junction GJB2
+T62	KeyEntity 1849 1856	pendrin
+T63	KeyEntity 1888 1894	KCNJ10
+T64	Entity 1895 1902	protein
+T65	KeyEntity 1932 1954	endocochlear potential
+T66	KeyEntity 1989 1997	deafness
+T67	KeyEntity 2001 2017	Pendred syndrome
+R1	is_subclass_of Arg1:T6 Arg2:T7	
+R2	participates_in Arg1:T10 Arg2:T11	
+R3	is_subclass_of Arg1:T15 Arg2:T14	
+R4	is_subclass_of Arg1:T17 Arg2:T14	
+T30	Entity 491 499	proteins
+R5	is_subclass_of Arg1:T18 Arg2:T30	
+T40	Entity 724 732	Currents
+T68	Entity 809 822	Tissue masses
+R6	is_part_of Arg1:T33 Arg2:T34	
+R7	is_part_of Arg1:T34 Arg2:T32	
+R8	is_part_of Arg1:T35 Arg2:T36	
+R9	is_part_of Arg1:T36 Arg2:T32	
+R10	is_part_of Arg1:T37 Arg2:T32	
+R11	is_part_of Arg1:T38 Arg2:T32	
+T69	Entity 1147 1160	tissue masses
+T70	Entity 1191 1197;1205 1215	type I fibrocytes
+T71	Entity 1202 1215	II fibrocytes
+R12	is_part_of Arg1:T45 Arg2:T46	
+T72	Entity 1669 1681	K+ secretion
+R13	regulates Arg1:T57 Arg2:T72	
+R14	is_subclass_of Arg1:T58 Arg2:T57	
+R15	is_subclass_of Arg1:T59 Arg2:T57	
+R16	is_subclass_of Arg1:T60 Arg2:T57	
+R17	is_subclass_of Arg1:T61 Arg2:T57	

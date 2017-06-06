@@ -17,3 +17,8 @@ T11	Entity 261 281	transcription factor
 T12	Entity 481 500	targeted expression
 R6	other_relation Arg1:T8 Arg2:T10	
 #1	AnnotatorNotes R6	attribute
+T13	Entity 14 31	Muscle Fiber Type
+T14	Entity 36 53	Running Endurance
+T15	KeyEntity 57 62	PPARδ
+R7	regulates Arg1:T15 Arg2:T14	
+R8	regulates Arg1:T15 Arg2:T13	

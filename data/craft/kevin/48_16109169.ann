@@ -43,3 +43,9 @@ R5	is_part_of Arg1:T27 Arg2:T28
 R6	regulates Arg1:T28 Arg2:T29	
 R7	other_relation Arg1:T30 Arg2:T31	
 #2	AnnotatorNotes R7	attribute
+T37	KeyEntity 20 51	Huntington's disease gene (Hdh)
+#3	AnnotatorNotes T37	Activation 
+T38	Entity 114 126;60 85	mouse embryo anterior streak formation
+T39	Entity 114 126;90 106	mouse embryo early patterning
+R8	participates_in Arg1:T37 Arg2:T38	
+R9	participates_in Arg1:T37 Arg2:T39	

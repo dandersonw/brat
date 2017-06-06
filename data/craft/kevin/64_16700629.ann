@@ -63,3 +63,11 @@ R24	regulates Arg1:T2 Arg2:T4
 R25	regulates Arg1:T2 Arg2:T5	
 T37	Entity 301 312;321 326	development mouse
 R26	interacts_with Arg1:T19 Arg2:T18	
+T38	KeyEntity 0 4	Fgf9
+T39	KeyEntity 9 13	Wnt4
+T40	Entity 21 41	Antagonistic Signals
+T41	Entity 54 81	Mammalian Sex Determination
+R27	regulates Arg1:T39 Arg2:T41	
+R28	regulates Arg1:T38 Arg2:T41	
+R29	is_part_of Arg1:T39 Arg2:T40	
+R30	is_part_of Arg1:T38 Arg2:T40	

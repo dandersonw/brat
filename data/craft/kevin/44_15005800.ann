@@ -32,3 +32,5 @@ T30	Entity 2061 2086	immature vascular network
 T31	Entity 2090 2113	late gestational stages
 T32	Entity 2184 2215	sterol deficiency by Dhcr7 loss
 T33	Entity 2286 2322	dysregulated Shh-Patched-Gli pathway
+T34	Entity 0 32	Late gestational lung hypoplasia
+T35	Entity 57 83	Smith-Lemli-Opitz syndrome

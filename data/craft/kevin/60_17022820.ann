@@ -66,3 +66,5 @@ T61	KeyEntity 2326 2333	A/J QTL
 T62	Entity 2426 2460	vascular injury induced thrombosis
 T63	Entity 2469 2488	tail bleeding assay
 T64	Entity 2558 2574	thrombotic risk.
+T65	Entity 42 52	hemostasis
+T66	Entity 57 67	thrombosis

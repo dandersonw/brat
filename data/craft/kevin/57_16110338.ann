@@ -34,3 +34,11 @@ R4	other_relation Arg1:T23 Arg2:T25
 R5	other_relation Arg1:T22 Arg2:T25	
 #4	AnnotatorNotes R5	attribute
 T27	Entity 1687 1701	rods and cones
+T28	Entity 2 22	Hybrid Photoreceptor
+T29	Entity 47 57	Cone Genes
+T30	Entity 39 42;52 57	Rod Genes
+T31	Entity 78 102	Enhanced S-Cone Syndrome
+R6	other_relation Arg1:T28 Arg2:T30	
+#5	AnnotatorNotes R6	expresses
+R7	other_relation Arg1:T28 Arg2:T29	
+#6	AnnotatorNotes R7	expresses

@@ -41,3 +41,8 @@ R8	is_subclass_of Arg1:T27 Arg2:T28
 T33	Entity 1675 1704	cellular anti-cadmium defense
 T34	KeyEntity 1782 1793	glutathione
 R9	regulates Arg1:T31 Arg2:T29	
+T35	Entity 22 42	anti-cadmium defense
+T36	KeyEntity 57 79	MTF-1/metallothioneins
+T37	KeyEntity 84 95	glutathione
+R10	is_subclass_of Arg1:T36 Arg2:T35	
+R11	is_subclass_of Arg1:T37 Arg2:T35	

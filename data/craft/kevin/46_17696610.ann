@@ -62,3 +62,6 @@ R11	is_subclass_of Arg1:T18 Arg2:T22
 R12	is_subclass_of Arg1:T20 Arg2:T19	
 R13	is_subclass_of Arg1:T21 Arg2:T19	
 R14	participates_in Arg1:T40 Arg2:T41	
+T51	KeyEntity 0 37	Mouse Pachytene Checkpoint 2 (Trip13)
+T52	Entity 65 86	Meiotic Recombination
+T53	Entity 95 103	Synapsis

@@ -40,3 +40,8 @@ R12	interacts_with Arg1:T24 Arg2:T25
 R13	interacts_with Arg1:T24 Arg2:T26	
 T28	Entity 1310 1329	synaptic activation
 T29	Entity 1355 1388	neuronal transcriptional activity
+T30	KeyEntity 41 45	PAX6
+T31	Entity 47 67	C-terminal mutations
+T32	KeyEntity 93 99	HOMER3
+T33	KeyEntity 101 106	DNCL1
+T34	KeyEntity 111 117	TRIM11

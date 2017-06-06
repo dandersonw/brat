@@ -38,3 +38,8 @@ R4	other_relation Arg1:T14 Arg2:T13
 R5	other_relation Arg1:T18 Arg2:T17	
 #2	AnnotatorNotes R5	attribute
 T33	Entity 1876 1892	modifier regions
+T34	Entity 35 84	cystic fibrosis intestinal inflammatory phenotype
+T35	Entity 88 118	mouse chromosomes 1, 9, and 10
+T36	Entity 10 27	genetic modifiers
+R6	participates_in Arg1:T36 Arg2:T34	
+R7	is_part_of Arg1:T36 Arg2:T35	

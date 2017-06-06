@@ -28,3 +28,12 @@ T23	Entity 1380 1395	Red blood cells
 T24	KeyEntity 1452 1462	annexin A7
 T25	Entity 1564 1579	red blood cells
 T26	Entity 1788 1813	membrane fusion processes
+T27	Entity 0 20;25 37	Function, expression localization
+T28	KeyEntity 41 51	annexin A7
+T29	Entity 55 64	platelets
+T30	Entity 69 84	red blood cells
+T31	KeyEntity 111 134	annexin A7 mutant mouse
+R5	other_relation Arg1:T27 Arg2:T28	
+#1	AnnotatorNotes R5	attribute
+R6	is_part_of Arg1:T28 Arg2:T29	
+R7	is_part_of Arg1:T28 Arg2:T30	

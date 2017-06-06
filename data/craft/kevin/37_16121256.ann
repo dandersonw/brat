@@ -27,3 +27,4 @@ R6	other_relation Arg1:T12 Arg2:T13
 T18	Entity 934 946	pathogenesis
 T19	Entity 975 995	fatty acid oxidation
 R7	is_part_of Arg1:T19 Arg2:T18	
+T20	Entity 13 35	Acyl-CoA Dehydrogenase

@@ -32,3 +32,10 @@ R4	participates_in Arg1:T11 Arg2:T12
 R5	participates_in Arg1:T11 Arg2:T13	
 R6	other_relation Arg1:T15 Arg2:T16	
 #1	AnnotatorNotes R6	released
+T28	KeyEntity 30 36	TGF-β2
+T29	Entity 41 46	Snail
+T30	Entity 50 77	Hair Follicle Morphogenesis
+T31	Entity 2 19	Signaling Pathway
+R7	participates_in Arg1:T28 Arg2:T31	
+R8	participates_in Arg1:T29 Arg2:T31	
+R9	is_part_of Arg1:T31 Arg2:T30	

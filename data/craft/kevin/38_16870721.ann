@@ -17,3 +17,7 @@ T15	Entity 890 936	inverted heterologous recombinase target sites
 T16	Entity 940 974	positive/negative selection marker
 T17	Entity 994 1011	germline capacity
 T18	Entity 1033 1056	power of mouse genetics
+T19	KeyEntity 0 9	RMCE-ASAP
+T20	Entity 39 41	ES
+T21	Entity 46 59	somatic cells
+T22	Entity 74 92	phenotype analyses

@@ -36,3 +36,10 @@ T28	KeyEntity 2058 2083	spinocerebellar ataxia 15
 R7	participates_in Arg1:T27 Arg2:T28	
 T29	Entity 2087 2093	humans
 R8	participates_in Arg1:T28 Arg2:T29	
+T30	KeyEntity 12 17	ITPR1
+T31	Entity 28 34	Ataxia
+T32	Entity 38 42	Mice
+R9	participates_in Arg1:T31 Arg2:T32	
+T33	KeyEntity 47 72	Spinocerebellar Ataxia 15
+T34	Entity 76 82	Humans
+R10	participates_in Arg1:T33 Arg2:T34	

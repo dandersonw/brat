@@ -30,3 +30,7 @@ T21	Entity 922 967	improper trafficking of the mutant water pore
 R6	participates_in Arg1:T12 Arg2:T21	
 R7	participates_in Arg1:T13 Arg2:T14	
 R8	is_part_of Arg1:T16 Arg2:T17	
+T22	Entity 0 18	Diabetes Insipidus
+T23	Entity 22 26	Mice
+R9	regulates Arg1:T22 Arg2:T23	
+T24	KeyEntity 46 57	Aquaporin-2

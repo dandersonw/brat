@@ -35,3 +35,4 @@ T32	Entity 1470 1479	Mutations
 R3	is_part_of Arg1:T32 Arg2:T27	
 R4	is_part_of Arg1:T32 Arg2:T28	
 R5	interacts_with Arg1:T32 Arg2:T29	
+T33	Entity 0 20	Intraocular pressure
