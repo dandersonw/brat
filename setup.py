@@ -7,6 +7,5 @@ setup(name='ai2_brat',
       packages=['ai2_brat'],
       install_requires=["numpy",
                         "scipy",
-                        "spacy",
-                        "en_core_web_md"],
+                        "spacy"],
       zip_safe=False)
