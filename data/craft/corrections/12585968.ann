@@ -13,12 +13,12 @@ T19.sandy	Entity 1285 1298	cochlear apex
 T20.sandy	Entity 1159 1179	vestibular epithelia
 T22.sandy	KeyEntity 1542 1555	neurotrophins
 T23.sandy	Entity 1563 1570	cochlea
-T24.sandy	Entity 1574 1589	Brn3c null mice
+T24.sandy	KeyEntity 1574 1589	Brn3c null mice
 T25.sandy	Entity 1615 1630	sensory neurons
 T26.sandy	Entity 1652 1659	cochlea
 T27.sandy	KeyEntity 0 22	Brn3c null mutant mice
 T30.sandy	KeyEntity 68 98	afferent inner ear innervation
-T1.sandy	Entity 130 148	Brn3c null mutants
+T1.sandy	KeyEntity 130 148	Brn3c null mutants
 T6.sandy	Entity 380 401	embryonic development
 T12.sandy	Entity 736 760	postnatal day 7/8 (P7/8)
 T17.sandy	Entity 1433 1454	functional hair cells

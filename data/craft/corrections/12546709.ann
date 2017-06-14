@@ -1,5 +1,5 @@
 T9.sandy	Entity 851 870	confocal microscopy
-T12.sandy	Entity 953 968	alphaA/BKO mice
+T12.sandy	KeyEntity 953 968	alphaA/BKO mice
 T2.sandy	Entity 480 484	lens
 T4.sandy	Entity 541 552	high levels
 T11.sandy	Entity 942 948	lenses
@@ -8,20 +8,20 @@ T15.sandy	Entity 1370 1379	posterior
 T16.sandy	Entity 1384 1392	anterior
 T17.sandy	Entity 1404 1410	lenses
 T20.sandy	Entity 1635 1653	cataract formation
-T1.kevin	Entity 177 193	alpha-crystallin
-T2.kevin	Entity 248 269	alpha-crystallin gene
+T1.kevin	KeyEntity 177 193	alpha-crystallin
+T2.kevin	KeyEntity 248 269	alpha-crystallin gene
 T4.kevin	Entity 361 377	alpha-crystallin
 T5.kevin	Entity 497 503	alphaA
 T6.kevin	Entity 508 514	alphaB
 T7.kevin	Entity 606 627	lenticular morphology
 T9.kevin	Entity 756 771	129SvEvTac mice
-T10.kevin	Entity 776 791	alphaA/BKO mice
-T14.kevin	Entity 1128 1145	alphaA/BKO lenses
+T10.kevin	KeyEntity 776 791	alphaA/BKO mice
+T14.kevin	KeyEntity 1128 1145	alphaA/BKO lenses
 T15.kevin	Entity 1147 1178	Ectopical nucleic acid staining
 T16.kevin	Entity 1199 1227	posterior subcapsular region
 T17.kevin	Entity 1240 1267	anterior subcapsular cortex
-T18.kevin	Entity 1277 1294	alphaA/BKO lenses
-T19.kevin	Entity 1416 1431	alphaA/BKO mice
+T18.kevin	KeyEntity 1277 1294	alphaA/BKO lenses
+T19.kevin	KeyEntity 1416 1431	alphaA/BKO mice
 T20.kevin	Entity 0 30	Morphological characterization
 R5.sandy	is_part_of Arg1:T11.sandy Arg2:T12.sandy	
 T1	Entity 818 846	scanning electron microscopy
@@ -29,21 +29,20 @@ T2	KeyEntity 38 45;57 94	AlphaA- crystallin double knockout mouse lens
 T3	KeyEntity 50 94	AlphaB-crystallin double knockout mouse lens
 R1	participates_in Arg1:T5.kevin Arg2:T4.sandy	
 R2	participates_in Arg1:T6.kevin Arg2:T4.sandy	
-T4	Entity 647 651	mice
 T5	Entity 308 345	single alpha-crystallin knockout mice
 T6	Entity 1034 1051	posterior sutures
 T7	Entity 1055 1066	fiber cells
-T8	Entity 684 691;703 727;728 731	alphaA- crystallin genes (alphaA BKO
-T9	Entity 696 719;728 731	alphaB-crystallin genes BKO
+T8	KeyEntity 684 691;703 727;728 731	alphaA- crystallin genes (alphaA BKO
+T9	KeyEntity 696 719;728 731	alphaB-crystallin genes BKO
 R3	participates_in Arg1:T9 Arg2:T7.kevin	
 R4	participates_in Arg1:T8 Arg2:T7.kevin	
 R5	participates_in Arg1:T4.kevin Arg2:T2.sandy	
 T10	Entity 896 906;928 938	Equatorial dimensions
 T11	Entity 911 916;928 938	axial dimensions
 T12	Entity 1560 1580	fiber cell formation
-T13	Entity 1505 1512;1524 1534	alphaA- crystallin
-T14	Entity 1517 1534	alphaB-crystallin
+T13	KeyEntity 1505 1512;1524 1534	alphaA- crystallin
+T14	KeyEntity 1517 1534	alphaB-crystallin
 R6	regulates Arg1:T14 Arg2:T12	
 R7	regulates Arg1:T13 Arg2:T12	
-T15	Entity 1595 1602;1606 1622	absence alpha-crystallin
+T15	KeyEntity 1606 1622	alpha-crystallin
 R8	participates_in Arg1:T15 Arg2:T20.sandy	

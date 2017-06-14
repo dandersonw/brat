@@ -6,7 +6,7 @@ T5.sandy	KeyEntity 273 280	SLC26A4
 T6.sandy	Entity 298 305	pendrin
 T7.sandy	Entity 348 355	pendrin
 T8.sandy	Entity 360 368	deafness
-T9.sandy	Entity 391 401	Slc26a4+/+
+T9.sandy	KeyEntity 391 401	Slc26a4+/+
 T11.sandy	Entity 473 480	pendrin
 T12.sandy	Entity 518 546	confocal immunocytochemistry
 T13.sandy	Entity 598 604	RT-PCR
@@ -33,8 +33,8 @@ T36.sandy	Entity 1311 1329	basal cell barrier
 T38.sandy	Entity 1337 1354	K+ channel KCNJ10
 T39.sandy	Entity 1388 1404	Stria vascularis
 T41.sandy	Entity 1449 1468	free radical damage
-T43.sandy	Entity 1533 1544	KCNJ10 mRNA
-T44.sandy	Entity 1562 1576	KCNJ10 protein
+T43.sandy	KeyEntity 1533 1544	KCNJ10 mRNA
+T44.sandy	KeyEntity 1562 1576	KCNJ10 protein
 T45.sandy	Entity 1589 1620	Endolymphatic K+ concentrations
 T47.sandy	Entity 1669 1681	K+ secretion
 T54.sandy	Entity 44 66	endocochlear potential
@@ -72,10 +72,10 @@ R21.sandy	regulates Arg1:T46.sandy Arg2:T47.sandy
 R6.kevin	is_part_of Arg1:T25.sandy Arg2:T26.sandy	
 R7.kevin	is_part_of Arg1:T27.sandy Arg2:T28.sandy	
 R8.kevin	is_part_of Arg1:T28.sandy Arg2:T24.sandy	
-T1	Entity 422 447	Slc26a4 gene (Slc26a4-/-)
-T2	Entity 8 33	KCNJ10 protein expression
+T1	KeyEntity 422 447	Slc26a4 gene (Slc26a4-/-)
+T2	KeyEntity 8 33	KCNJ10 protein expression
 R1	participates_in Arg1:T2 Arg2:T54.sandy	
-T3	Entity 1888 1913	KCNJ10 protein expression
+T3	KeyEntity 1888 1913	KCNJ10 protein expression
 T4	Entity 1932 1954	endocochlear potential
 R2	is_part_of Arg1:T25.sandy Arg2:T27.sandy	
 R3	is_part_of Arg1:T26.sandy Arg2:T28.sandy	

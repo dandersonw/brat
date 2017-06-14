@@ -1,15 +1,15 @@
 T2.sandy	KeyEntity 107 154	Metal-responsive transcription factor 1 (MTF-1)
 T4.sandy	Entity 246 262	heavy metal load
 T5.sandy	Entity 398 425	embryonic liver development
-T7.sandy	FIX_TYPE 524 554	Mtf1 conditional knockout mice
+T7.sandy	KeyEntity 524 554	Mtf1 conditional knockout mice
 T9.sandy	Entity 618 646	liver-specific transcription
-T13.sandy	FIX_TYPE 840 855	selenoprotein W
+T13.sandy	KeyEntity 840 855	selenoprotein W
 T14.sandy	KeyEntity 794 799	MTF-1
-T16.sandy	FIX_TYPE 857 878	muscle 1 gene (Sepw1)
+T16.sandy	KeyEntity 857 878	muscle 1 gene (Sepw1)
 T20.sandy	KeyEntity 969 974	MTF-1
 T21.sandy	KeyEntity 1022 1027	MTF-1
 T22.sandy	Entity 1041 1067	cadmium-induced expression
-T24.sandy	FIX_TYPE 1071 1112	N-myc downstream regulated gene 1 (Ndrg1)
+T24.sandy	KeyEntity 1071 1112	N-myc downstream regulated gene 1 (Ndrg1)
 T27.sandy	KeyEntity 1198 1203	MTF-1
 T31.sandy	Entity 1322 1347	cytoskeletal organization
 T32.sandy	KeyEntity 1362 1367	MTF-1
@@ -18,68 +18,60 @@ T37.sandy	Entity 1585 1612	cadmium-binding antioxidant
 T38.sandy	Entity 1675 1704	cellular anti-cadmium defense
 T39.sandy	KeyEntity 1714 1719	MTF-1
 T40.sandy	Entity 1750 1766	metallothioneins
-T41.sandy	FIX_TYPE 1782 1793	glutathione
-T42.sandy	FIX_TYPE 1823 1839	selenoprotein W.
+T41.sandy	KeyEntity 1782 1793	glutathione
+T42.sandy	KeyEntity 1823 1839	selenoprotein W.
 T45.sandy	Entity 1402 1410	Slc39a10
-T1.sandy	FIX_TYPE 1469 1474	MTF-1
-T3.sandy	VERIFY_Entity 219 236	stress conditions
-T6.sandy	FIX_SPAN_Entity 445 461	deletion of Mtf1
-T8.sandy	VERIFY_Entity 598 613	cadmium-treated
-T10.sandy	FIX_SPAN_Entity 751 761	MRE motifs
-T11.sandy	FIX_SPAN_Entity 727 745	MTF-1 target genes
-T12.sandy	VERIFY_Entity 820 836	basal expression
-T17.sandy	FIX_SPAN_Entity 894 913	glutathione-binding
-T18.sandy	FIX_SPAN_Entity 918 946	putative antioxidant protein
-T19.sandy	VERIFY_Entity 982 1007	oxidative stress response
-T25.sandy	VERIFY_Entity 1142 1159	stress conditions
-T26.sandy	VERIFY_Entity 1189 1196	cancers
-T28.sandy	FIX_SPAN_Entity 1228 1244	cadmium response
-T30.sandy	FIX_SPAN_Entity 1248 1297	cysteine- and glycine-rich protein 1 gene (Csrp1)
-T33.sandy	VERIFY_Entity 1382 1398	basal expression
-T34.sandy	FIX_SPAN_Entity 1423 1439	zinc transporter
-T36.sandy	FIX_SPAN_Entity 1554 1581	regeneration of glutathione
-T43.sandy	FIX_SPAN_Entity 279 302	metal response elements
-T44.sandy	FIX_SPAN_Entity 304 308	MREs
-T46.sandy	VERIFY_KeyEntity 22 42	anti-cadmium defense
-T47.sandy	VERIFY_KeyEntity 57 79	MTF-1/metallothioneins
-T48.sandy	VERIFY_KeyEntity 84 95	glutathione
-T3.kevin	FIX_SPAN_Entity 279 309	metal response elements (MREs)
-T4.kevin	VERIFY_Entity 183 195	target genes
-T6.kevin	FIX_SPAN_KeyEntity 457 461	Mtf1
-T8.kevin	VERIFY_Entity 559 578	control littermates
-T10.kevin	VERIFY_Entity 692 713	metallothionein genes
-T11.kevin	FIX_SPAN_KeyEntity 727 761	MTF-1 target genes with MRE motifs
-T15.kevin	FIX_SPAN_Entity 894 946	glutathione-binding and putative antioxidant protein
-T21.kevin	FIX_SPAN_Entity 1228 1297	cadmium response of cysteine- and glycine-rich protein 1 gene (Csrp1)
-T24.kevin	FIX_SPAN_Entity 1414 1439	putative zinc transporter
-T27.kevin	FIX_SPAN_Entity 1570 1581	glutathione
-R7.sandy	FIX_RELATION_TYPE Arg1:T14.sandy Arg2:T13.sandy	
+T1.sandy	KeyEntity 1469 1474	MTF-1
+T3.sandy	Entity 219 236	stress conditions
+T8.sandy	Entity 598 613	cadmium-treated
+T10.sandy	Entity 751 761	MRE motifs
+T11.sandy	KeyEntity 727 745	MTF-1 target genes
+T12.sandy	Entity 820 836	basal expression
+T17.sandy	Entity 894 913;939 946	glutathione-binding protein
+T18.sandy	Entity 918 946	putative antioxidant protein
+T19.sandy	Entity 982 1007	oxidative stress response
+T25.sandy	Entity 1142 1159	stress conditions
+T28.sandy	Entity 1228 1244	cadmium response
+T30.sandy	KeyEntity 1248 1297	cysteine- and glycine-rich protein 1 gene (Csrp1)
+T33.sandy	Entity 1382 1398	basal expression
+T34.sandy	Entity 1423 1439	zinc transporter
+T46.sandy	KeyEntity 22 42	anti-cadmium defense
+T47.sandy	KeyEntity 57 79	MTF-1/metallothioneins
+T48.sandy	KeyEntity 84 95	glutathione
+T3.kevin	Entity 279 309	metal response elements (MREs)
+T4.kevin	Entity 183 195	target genes
+T6.kevin	KeyEntity 457 461	Mtf1
+T8.kevin	Entity 559 578	control littermates
+T10.kevin	Entity 692 713	metallothionein genes
+T27.kevin	KeyEntity 1570 1581	glutathione
+R7.sandy	regulates Arg1:T14.sandy Arg2:T13.sandy	
 R21.sandy	regulates Arg1:T32.sandy Arg2:T45.sandy	
-R2.sandy	VERIFY_regulates Arg1:T2.sandy Arg2:T3.sandy	
-R3.sandy	VERIFY_is_subclass_of Arg1:T4.sandy Arg2:T3.sandy	
-R4.sandy	VERIFY_interacts_with Arg1:T2.sandy Arg2:T43.sandy	
-R5.sandy	VERIFY_participates_in Arg1:T7.sandy Arg2:T8.sandy	
-R6.sandy	VERIFY_is_part_of Arg1:T10.sandy Arg2:T11.sandy	
-R8.sandy	VERIFY_is_part_of Arg1:T12.sandy Arg2:T13.sandy	
-R10.sandy	VERIFY_regulates Arg1:T16.sandy Arg2:T17.sandy	
-R11.sandy	VERIFY_regulates Arg1:T16.sandy Arg2:T18.sandy	
-R12.sandy	VERIFY_participates_in Arg1:T20.sandy Arg2:T19.sandy	
-R13.sandy	VERIFY_interacts_with Arg1:T16.sandy Arg2:T20.sandy	
-R14.sandy	VERIFY_regulates Arg1:T21.sandy Arg2:T24.sandy	
-R15.sandy	VERIFY_is_part_of Arg1:T22.sandy Arg2:T24.sandy	
-R17.sandy	VERIFY_is_part_of Arg1:T27.sandy Arg2:T28.sandy	
-R19.sandy	VERIFY_participates_in Arg1:T27.sandy Arg2:T30.sandy	
-R20.sandy	VERIFY_is_part_of Arg1:T30.sandy Arg2:T31.sandy	
-R23.sandy	VERIFY_is_subclass_of Arg1:T33.sandy Arg2:T45.sandy	
-R24.sandy	VERIFY_participates_in Arg1:T35.sandy Arg2:T36.sandy	
-R26.sandy	VERIFY_participates_in Arg1:T39.sandy Arg2:T38.sandy	
-R27.sandy	VERIFY_is_subclass_of Arg1:T40.sandy Arg2:T39.sandy	
-R28.sandy	VERIFY_participates_in Arg1:T41.sandy Arg2:T38.sandy	
-R29.sandy	VERIFY_participates_in Arg1:T42.sandy Arg2:T38.sandy	
-R1.kevin	VERIFY_regulates Arg1:T2.sandy Arg2:T4.kevin	
-R2.kevin	VERIFY_is_subclass_of Arg1:T45.sandy Arg2:T24.kevin	
-R4.kevin	VERIFY_regulates Arg1:T21.sandy Arg2:T22.sandy	
-R5.kevin	VERIFY_is_part_of Arg1:T24.sandy Arg2:T22.sandy	
-R6.kevin	VERIFY_interacts_with Arg1:T27.sandy Arg2:T21.kevin	
-R8.kevin	VERIFY_is_subclass_of Arg1:T27.kevin Arg2:T37.sandy	
-R9.kevin	VERIFY_regulates Arg1:T39.sandy Arg2:T40.sandy	
+R3.sandy	is_subclass_of Arg1:T4.sandy Arg2:T3.sandy	
+R5.sandy	participates_in Arg1:T7.sandy Arg2:T8.sandy	
+R6.sandy	is_part_of Arg1:T10.sandy Arg2:T11.sandy	
+R8.sandy	participates_in Arg1:T13.sandy Arg2:T12.sandy	
+R10.sandy	regulates Arg1:T16.sandy Arg2:T17.sandy	
+R11.sandy	regulates Arg1:T16.sandy Arg2:T18.sandy	
+R12.sandy	participates_in Arg1:T20.sandy Arg2:T19.sandy	
+R13.sandy	interacts_with Arg1:T16.sandy Arg2:T20.sandy	
+R14.sandy	regulates Arg1:T21.sandy Arg2:T24.sandy	
+R17.sandy	participates_in Arg1:T27.sandy Arg2:T28.sandy	
+R20.sandy	participates_in Arg1:T30.sandy Arg2:T31.sandy	
+R23.sandy	participates_in Arg1:T45.sandy Arg2:T33.sandy	
+R26.sandy	participates_in Arg1:T39.sandy Arg2:T38.sandy	
+R28.sandy	participates_in Arg1:T41.sandy Arg2:T38.sandy	
+R29.sandy	participates_in Arg1:T42.sandy Arg2:T38.sandy	
+R1.kevin	regulates Arg1:T2.sandy Arg2:T4.kevin	
+R4.kevin	regulates Arg1:T21.sandy Arg2:T22.sandy	
+R8.kevin	is_subclass_of Arg1:T27.kevin Arg2:T37.sandy	
+R9.kevin	regulates Arg1:T39.sandy Arg2:T40.sandy	
+R1	interacts_with Arg1:T2.sandy Arg2:T3.kevin	
+T1	Entity 589 594;606 613	mock- treated
+R2	participates_in Arg1:T8.kevin Arg2:T1	
+R3	is_subclass_of Arg1:T45.sandy Arg2:T34.sandy	
+T2	Entity 1540 1549	synthesis
+T3	Entity 1554 1566	regeneration
+R4	participates_in Arg1:T27.kevin Arg2:T3	
+R5	participates_in Arg1:T27.kevin Arg2:T2	
+R6	regulates Arg1:T35.sandy Arg2:T2	
+R7	regulates Arg1:T35.sandy Arg2:T3	

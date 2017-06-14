@@ -1,8 +1,8 @@
-T3.sandy	FIX_TYPE 351 380	pachytene checkpoint 2 (PCH2)
+T3.sandy	Entity 351 380	pachytene checkpoint 2 (PCH2)
 T7.sandy	Entity 571 589	spermatocyte death
-T9.sandy	FIX_TYPE 761 766	RAD51
-T10.sandy	FIX_TYPE 768 771	BLM
-T11.sandy	FIX_TYPE 777 780	RPA
+T9.sandy	Entity 761 766	RAD51
+T10.sandy	Entity 768 771	BLM
+T11.sandy	Entity 777 780	RPA
 T12.sandy	Entity 722 749	recombination intermediates
 T13.sandy	Entity 819 836	chiasmata markers
 T14.sandy	Entity 837 841	MLH1
@@ -10,74 +10,66 @@ T15.sandy	Entity 846 850	MLH3
 T16.sandy	Entity 856 878	okadaic acid treatment
 T17.sandy	Entity 882 902	mutant spermatocytes
 T19.sandy	Entity 1115 1121	TRIP13
-T21.sandy	FIX_TYPE 1196 1202	TRIP13
+T21.sandy	KeyEntity 1196 1202	TRIP13
 T23.sandy	Entity 1486 1507	unrepaired DNA damage
 T24.sandy	Entity 1530 1559	pachytene checkpoint response
-T1.sandy	FIX_SPAN_KeyEntity 340 346	Trip13
-T4.sandy	VERIFY_Entity 412 431	synapsis checkpoint
-T5.sandy	FIX_SPAN_Entity 504 525	completion of meiosis
-T6.sandy	FIX_SPAN_Entity 541 557	TRIP13-deficient
-T8.sandy	FIX_SPAN_Entity 607 622	loss of oocytes
-T18.sandy	FIX_SPAN_Entity 910 936	progression to metaphase I
-T20.sandy	FIX_SPAN_Entity 1136 1163	meiotic checkpoint function
-T22.sandy	VERIFY_Entity 1264 1284	recombination events
-T25.sandy	VERIFY_KeyEntity 0 37	Mouse Pachytene Checkpoint 2 (Trip13)
-T26.sandy	VERIFY_Entity 65 86	Meiotic Recombination
-T27.sandy	VERIFY_Entity 91 103	Not Synapsis
-T1.kevin	VERIFY_Entity 118 135	mammalian meiosis
-T2.kevin	VERIFY_Entity 137 167	homologous chromosome synapsis
-T3.kevin	VERIFY_Entity 184 197	recombination
-T4.kevin	VERIFY_Entity 210 220	eukaryotes
-T5.kevin	VERIFY_Entity 222 241	mammalian meiocytes
-T6.kevin	FIX_SPAN_KeyEntity 324 347	mouse ortholog (Trip13)
-T8.kevin	VERIFY_Entity 435 459	Saccharomyces cerevisiae
-T9.kevin	VERIFY_Entity 464 486	Caenorhabditis elegans
-T10.kevin	FIX_SPAN_Entity 518 525	meiosis
-T11.kevin	FIX_SPAN_Entity 541 562	TRIP13-deficient mice
-T13.kevin	VERIFY_Entity 593 602	pachynema
-T14.kevin	FIX_SPAN_Entity 615 622	oocytes
-T15.kevin	VERIFY_Entity 641 652;656 676	chromosomes mutant spermatocytes
-T25.kevin	FIX_SPAN_Entity 925 936	metaphase I
-T26.kevin	VERIFY_Entity 942 962	bivalent chromosomes
-T27.kevin	VERIFY_Entity 964 986	Double mutant analysis
-T28.kevin	VERIFY_Entity 1042 1047	Spo11
-T29.kevin	VERIFY_Entity 1049 1053	Mei1
-T30.kevin	VERIFY_Entity 1055 1059	Rec8
-T31.kevin	VERIFY_Entity 1065 1069	Dmc1
-T32.kevin	VERIFY_Entity 1091 1097	Trip13
-T34.kevin	FIX_SPAN_Entity 1136 1154	meiotic checkpoint
-T36.kevin	VERIFY_Entity 1221 1236	strand invasion
-T37.kevin	VERIFY_Entity 1390 1411	recombination defects
-T38.kevin	VERIFY_Entity 1417 1426	asynapsis
-T39.kevin	VERIFY_Entity 1430 1447	mammalian meiosis
-T42.kevin	VERIFY_Entity 1563 1567	mice
-T43.kevin	VERIFY_Entity 1757 1764	meiosis
-T44.kevin	VERIFY_KeyEntity 2329 2341	mouse Trip13
-T45.kevin	VERIFY_Entity 2396 2422	meiotic checkpoint control
-T46.kevin	VERIFY_KeyEntity 2493 2499	Trip13
-T47.kevin	VERIFY_Entity 2531 2572	major classes of recombination in meiosis
-T48.kevin	VERIFY_Entity 2594 2624	repairing broken DNA molecules
-T49.kevin	VERIFY_Entity 2861 2889	detect unrepaired DNA damage
-T50.kevin	VERIFY_Entity 2905 2925	failed recombination
+T4.sandy	Entity 412 431	synapsis checkpoint
+T20.sandy	Entity 1136 1163	meiotic checkpoint function
+T22.sandy	Entity 1264 1284	recombination events
+T25.sandy	KeyEntity 0 37	Mouse Pachytene Checkpoint 2 (Trip13)
+T26.sandy	Entity 65 86	Meiotic Recombination
+T1.kevin	Entity 118 135	mammalian meiosis
+T2.kevin	Entity 137 167	homologous chromosome synapsis
+T3.kevin	Entity 184 197	recombination
+T5.kevin	Entity 222 241	mammalian meiocytes
+T6.kevin	KeyEntity 324 347	mouse ortholog (Trip13)
+T8.kevin	Entity 435 459	Saccharomyces cerevisiae
+T9.kevin	Entity 464 486	Caenorhabditis elegans
+T10.kevin	Entity 518 525	meiosis
+T11.kevin	KeyEntity 541 562	TRIP13-deficient mice
+T13.kevin	Entity 593 602	pachynema
+T14.kevin	Entity 615 622	oocytes
+T25.kevin	Entity 925 936	metaphase I
+T26.kevin	Entity 942 962	bivalent chromosomes
+T27.kevin	Entity 964 986	Double mutant analysis
+T28.kevin	Entity 1042 1047	Spo11
+T29.kevin	Entity 1049 1053	Mei1
+T30.kevin	Entity 1055 1059	Rec8
+T31.kevin	Entity 1065 1069	Dmc1
+T32.kevin	KeyEntity 1091 1097	Trip13
+T37.kevin	Entity 1390 1411	recombination defects
+T38.kevin	Entity 1417 1426	asynapsis
+T39.kevin	Entity 1430 1447	mammalian meiosis
+T43.kevin	Entity 1757 1764	meiosis
+T44.kevin	KeyEntity 2329 2341	mouse Trip13
+T45.kevin	Entity 2396 2422	meiotic checkpoint control
+T46.kevin	KeyEntity 2493 2499	Trip13
+T48.kevin	Entity 2594 2624	repairing broken DNA molecules
 R6.sandy	is_subclass_of Arg1:T9.sandy Arg2:T12.sandy	
 R7.sandy	is_subclass_of Arg1:T10.sandy Arg2:T12.sandy	
 R8.sandy	is_subclass_of Arg1:T11.sandy Arg2:T12.sandy	
 R9.sandy	is_subclass_of Arg1:T14.sandy Arg2:T13.sandy	
 R10.sandy	is_subclass_of Arg1:T15.sandy Arg2:T13.sandy	
-R14.sandy	FIX_RELATION_TYPE Arg1:T23.sandy Arg2:T24.sandy	
-R1.sandy	VERIFY_is_subclass_of Arg1:T1.sandy Arg2:T3.sandy	
-R3.sandy	VERIFY_regulates Arg1:T1.sandy Arg2:T5.sandy	
-R4.sandy	VERIFY_participates_in Arg1:T6.sandy Arg2:T7.sandy	
-R5.sandy	VERIFY_participates_in Arg1:T6.sandy Arg2:T8.sandy	
-R11.sandy	VERIFY_participates_in Arg1:T16.sandy Arg2:T18.sandy	
-R12.sandy	VERIFY_participates_in Arg1:T19.sandy Arg2:T20.sandy	
-R13.sandy	VERIFY_regulates Arg1:T21.sandy Arg2:T22.sandy	
-R15.sandy	VERIFY_regulates Arg1:T25.sandy Arg2:T26.sandy	
-R1.kevin	VERIFY_participates_in Arg1:T44.kevin Arg2:T45.kevin	
-R2.kevin	VERIFY_participates_in Arg1:T46.kevin Arg2:T47.kevin	
-R3.kevin	VERIFY_participates_in Arg1:T47.kevin Arg2:T48.kevin	
-R4.kevin	VERIFY_participates_in Arg1:T2.kevin Arg2:T1.kevin	
-R5.kevin	VERIFY_participates_in Arg1:T3.kevin Arg2:T1.kevin	
-R6.kevin	VERIFY_is_part_of Arg1:T6.kevin Arg2:T3.sandy	
-R7.kevin	VERIFY_is_part_of Arg1:T3.sandy Arg2:T8.kevin	
-R8.kevin	VERIFY_is_part_of Arg1:T3.sandy Arg2:T9.kevin	
+R14.sandy	regulates Arg1:T23.sandy Arg2:T24.sandy	
+R12.sandy	participates_in Arg1:T19.sandy Arg2:T20.sandy	
+R13.sandy	regulates Arg1:T21.sandy Arg2:T22.sandy	
+R15.sandy	regulates Arg1:T25.sandy Arg2:T26.sandy	
+R1.kevin	participates_in Arg1:T44.kevin Arg2:T45.kevin	
+R4.kevin	participates_in Arg1:T2.kevin Arg2:T1.kevin	
+R5.kevin	participates_in Arg1:T3.kevin Arg2:T1.kevin	
+R6.kevin	is_part_of Arg1:T6.kevin Arg2:T3.sandy	
+T1	Entity 95 103	Synapsis
+T2	Entity 656 676	mutant spermatocytes
+R1	regulates Arg1:T6.kevin Arg2:T10.kevin	
+R2	participates_in Arg1:T6.kevin Arg2:T4.sandy	
+R3	participates_in Arg1:T8.kevin Arg2:T4.sandy	
+R4	participates_in Arg1:T9.kevin Arg2:T4.sandy	
+R5	participates_in Arg1:T11.kevin Arg2:T7.sandy	
+R6	participates_in Arg1:T16.sandy Arg2:T25.kevin	
+#1	AnnotatorNotes R12.sandy	does not participate in 
+T3	Entity 2868 2889	unrepaired DNA damage
+T4	Entity 2912 2925	recombination
+T5	Entity 2565 2572	meiosis
+T6	Entity 2548 2561	recombination
+R7	participates_in Arg1:T46.kevin Arg2:T6	
+R8	participates_in Arg1:T46.kevin Arg2:T48.kevin	

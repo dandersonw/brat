@@ -1,25 +1,25 @@
-T1.sandy	FIX_TYPE 91 101	Thrombosis
+T1.sandy	KeyEntity 91 101	Thrombosis
 T2.sandy	Entity 144 167	cardiovascular diseases
 T3.sandy	KeyEntity 262 270	C57BL/6J
 T4.sandy	KeyEntity 275 278	A/J
 T5.sandy	Entity 325 332	obesity
 T6.sandy	Entity 334 349	atherosclerosis
 T7.sandy	Entity 355 372	vessel remodeling
-T8.sandy	FIX_TYPE 472 482	thrombosis
-T9.sandy	Entity 487 497	hemostasis
-T10.sandy	FIX_TYPE 543 553	thrombosis
-T11.sandy	Entity 558 568	hemostasis
+T8.sandy	KeyEntity 472 482	thrombosis
+T9.sandy	KeyEntity 487 497	hemostasis
+T10.sandy	KeyEntity 543 553	thrombosis
+T11.sandy	KeyEntity 558 568	hemostasis
 T12.sandy	Entity 582 596	inbred strains
 T14.sandy	KeyEntity 638 653	A/J chromosomes
 T15.sandy	KeyEntity 661 680	C57BL/6J background
 T16.sandy	Entity 240 260	inbred mouse strains
-T19.sandy	FIX_TYPE 748 758	thrombosis
-T20.sandy	Entity 763 773	hemostasis
+T19.sandy	KeyEntity 748 758	thrombosis
+T20.sandy	KeyEntity 763 773	hemostasis
 T21.sandy	Entity 777 785	thrombus
 T22.sandy	Entity 805 819	carotid artery
 T23.sandy	Entity 861 876	ferric chloride
-T27.sandy	FIX_TYPE 984 994	thrombosis
-T28.sandy	Entity 999 1009	hemostasis
+T27.sandy	KeyEntity 984 994	thrombosis
+T28.sandy	KeyEntity 999 1009	hemostasis
 T29.sandy	Entity 1199 1218	tail bleeding assay
 T30.sandy	KeyEntity 1123 1138	A/J chromosomes
 T34.sandy	Entity 1230 1253	Thrombus occlusion time
@@ -27,81 +27,78 @@ T35.sandy	KeyEntity 1284 1292	A/J mice
 T36.sandy	KeyEntity 1305 1318	C57BL/6J mice
 T38.sandy	KeyEntity 1421 1429	A/J mice
 T39.sandy	KeyEntity 1442 1455	C57BL/6J mice
-T43.sandy	FIX_TYPE 1612 1622	B6-Chr5A/J
-T44.sandy	FIX_TYPE 1624 1635	B6-Chr11A/J
-T45.sandy	FIX_TYPE 1641 1652	B6-Chr17A/J
+T43.sandy	KeyEntity 1612 1622	B6-Chr5A/J
+T44.sandy	KeyEntity 1624 1635	B6-Chr11A/J
+T45.sandy	KeyEntity 1641 1652	B6-Chr17A/J
 T46.sandy	KeyEntity 1726 1733	/J mice
-T47.sandy	FIX_TYPE 1890 1901	B6-Chr17A/J
+T47.sandy	KeyEntity 1890 1901	B6-Chr17A/J
 T48.sandy	Entity 1957 1983	doubly heterosomic progeny
 T49.sandy	Entity 2044 2063	arterial thrombosis
 T50.sandy	Entity 2068 2079	haemostasis
-T53.sandy	FIX_TYPE 2224 2226	/J
-T55.sandy	FIX_TYPE 2284 2297	A/J phenotype
-T56.sandy	FIX_TYPE 2326 2333	A/J QTL
+T55.sandy	KeyEntity 2284 2297	A/J phenotype
+T56.sandy	KeyEntity 2326 2333	A/J QTL
 T57.sandy	Entity 2558 2573	thrombotic risk
 T58.sandy	Entity 2426 2460	vascular injury induced thrombosis
-T62.sandy	FIX_TYPE 1875 1885	B6-Chr5A/J
-T63.sandy	FIX_TYPE 1808 1821	C57BL/6J mice
+T62.sandy	KeyEntity 1875 1885	B6-Chr5A/J
+T63.sandy	KeyEntity 1808 1821	C57BL/6J mice
 T65.sandy	Entity 850 857	carotid
-T13.sandy	VERIFY_Entity 615 634	phenotypic response
-T17.sandy	FIX_SPAN_KeyEntity 693 695	/J
-T18.sandy	VERIFY_KeyEntity 700 708	C57Bl/6J
-T24.sandy	VERIFY_Entity 881 891	blood flow
-T25.sandy	VERIFY_Entity 1079 1113	Twenty-one chromosome substitution
-T26.sandy	VERIFY_Entity 962 979	surrogate markers
-T31.sandy	FIX_SPAN_KeyEntity 1144 1152	C57BL/6J
-T32.sandy	FIX_SPAN_Entity 928 936	Bleeding
-T33.sandy	FIX_SPAN_Entity 941 957	rebleeding times
-T37.sandy	FIX_SPAN_Entity 1375 1385	rebleeding
-T40.sandy	FIX_SPAN_Entity 1513 1526	tail collagen
-T41.sandy	FIX_SPAN_Entity 1539 1552	higher in A/J
-T42.sandy	FIX_SPAN_Entity 1558 1571	C57BL/6J mice
-T51.sandy	FIX_SPAN_Entity 2107 2112	C57BL
-T52.sandy	FIX_SPAN_Entity 2118 2125	/J mice
-T54.sandy	FIX_SPAN_Entity 2247 2255	C57Bl/6J
-T59.sandy	VERIFY_KeyEntity 42 52	hemostasis
-T60.sandy	VERIFY_KeyEntity 57 67	thrombosis
-T61.sandy	VERIFY_Entity 0 18	Genetic background
-T64.sandy	FIX_SPAN_Entity 2133 2168	A/J chromosome substitution strains
-T16.kevin	FIX_SPAN_KeyEntity 693 695;709 713	/J mice
-T26.kevin	VERIFY_Entity 1066 1077	warm saline
-T28.kevin	FIX_SPAN_KeyEntity 1144 1163	C57BL/6J background
-T33.kevin	VERIFY_Entity 1320 1338	Tail bleeding time
-T34.kevin	FIX_SPAN_Entity 1375 1390	rebleeding time
-T35.kevin	FIX_SPAN_Entity 928 957	Bleeding and rebleeding times
-T38.kevin	VERIFY_Entity 1457 1474	Coagulation times
-T39.kevin	VERIFY_Entity 1479 1494	tail morphology
-T40.kevin	FIX_SPAN_Entity 1513 1534	tail collagen content
-T41.kevin	FIX_SPAN_KeyEntity 1549 1552;1567 1571	A/J mice
-T46.kevin	VERIFY_Entity 1685 1700	rebleeding time
-T48.kevin	VERIFY_Entity 1780 1796	rebleeding times
-T52.kevin	VERIFY_KeyEntity 1921 1934	A/J phenotype
-T56.kevin	FIX_SPAN_KeyEntity 2107 2125	C57BL/and A/J mice
-T57.kevin	FIX_SPAN_KeyEntity 2133 2147	A/J chromosome
-T59.kevin	FIX_SPAN_KeyEntity 2247 2266	C57Bl/6J background
-T63.kevin	VERIFY_Entity 2469 2488	tail bleeding assay
-R2.sandy	FIX_RELATION_TYPE Arg1:T3.sandy Arg2:T16.sandy	
-R3.sandy	FIX_RELATION_TYPE Arg1:T4.sandy Arg2:T16.sandy	
-R10.sandy	participates_in Arg1:T17.sandy Arg2:T19.sandy	
-R11.sandy	participates_in Arg1:T18.sandy Arg2:T20.sandy	
-R23.sandy	participates_in Arg1:T49.sandy Arg2:T51.sandy	
-R25.sandy	participates_in Arg1:T50.sandy Arg2:T52.sandy	
-R1.sandy	VERIFY_is_subclass_of Arg1:T1.sandy Arg2:T2.sandy	
-R4.sandy	VERIFY_participates_in Arg1:T16.sandy Arg2:T5.sandy	
-R5.sandy	VERIFY_participates_in Arg1:T16.sandy Arg2:T6.sandy	
-R6.sandy	VERIFY_participates_in Arg1:T16.sandy Arg2:T7.sandy	
-R7.sandy	VERIFY_interacts_with Arg1:T10.sandy Arg2:T13.sandy	
-R8.sandy	VERIFY_interacts_with Arg1:T11.sandy Arg2:T13.sandy	
-R9.sandy	VERIFY_is_subclass_of Arg1:T14.sandy Arg2:T15.sandy	
-R14.sandy	VERIFY_interacts_with Arg1:T21.sandy Arg2:T22.sandy	
-R15.sandy	VERIFY_is_part_of Arg1:T32.sandy Arg2:T26.sandy	
-R16.sandy	VERIFY_is_part_of Arg1:T33.sandy Arg2:T26.sandy	
-R17.sandy	VERIFY_is_part_of Arg1:T25.sandy Arg2:T30.sandy	
-R18.sandy	VERIFY_is_subclass_of Arg1:T31.sandy Arg2:T30.sandy	
-R19.sandy	VERIFY_interacts_with Arg1:T34.sandy Arg2:T35.sandy	
-R20.sandy	VERIFY_interacts_with Arg1:T37.sandy Arg2:T38.sandy	
-R21.sandy	VERIFY_participates_in Arg1:T40.sandy Arg2:T41.sandy	
-R22.sandy	VERIFY_is_subclass_of Arg1:T47.sandy Arg2:T48.sandy	
-R27.sandy	VERIFY_is_subclass_of Arg1:T62.sandy Arg2:T48.sandy	
-R3.kevin	VERIFY_interacts_with Arg1:T23.sandy Arg2:T65.sandy	
-R4.kevin	VERIFY_is_part_of Arg1:T30.sandy Arg2:T28.kevin	
+T13.sandy	Entity 615 634	phenotypic response
+T24.sandy	Entity 881 891	blood flow
+T26.sandy	Entity 962 979	surrogate markers
+T32.sandy	Entity 928 936;952 957	Bleeding times
+T33.sandy	Entity 941 957	rebleeding times
+T42.sandy	KeyEntity 1558 1571	C57BL/6J mice
+T59.sandy	KeyEntity 42 52	hemostasis
+T60.sandy	KeyEntity 57 67	thrombosis
+T61.sandy	Entity 0 18	Genetic background
+T64.sandy	Entity 2133 2168	A/J chromosome substitution strains
+T28.kevin	KeyEntity 1144 1163	C57BL/6J background
+T33.kevin	Entity 1320 1338	Tail bleeding time
+T34.kevin	Entity 1375 1390	rebleeding time
+T38.kevin	Entity 1457 1474	Coagulation times
+T39.kevin	Entity 1479 1494	tail morphology
+T40.kevin	Entity 1513 1534	tail collagen content
+T41.kevin	KeyEntity 1549 1552;1567 1571	A/J mice
+T46.kevin	Entity 1685 1700	rebleeding time
+T48.kevin	Entity 1780 1796	rebleeding times
+T52.kevin	KeyEntity 1921 1934	A/J phenotype
+T59.kevin	KeyEntity 2247 2266	C57Bl/6J background
+T63.kevin	Entity 2469 2488	tail bleeding assay
+R2.sandy	is_subclass_of Arg1:T3.sandy Arg2:T16.sandy	
+R3.sandy	is_subclass_of Arg1:T4.sandy Arg2:T16.sandy	
+R1.sandy	participates_in Arg1:T2.sandy Arg2:T1.sandy	
+R4.sandy	participates_in Arg1:T16.sandy Arg2:T5.sandy	
+R5.sandy	participates_in Arg1:T16.sandy Arg2:T6.sandy	
+R6.sandy	participates_in Arg1:T16.sandy Arg2:T7.sandy	
+R7.sandy	is_part_of Arg1:T10.sandy Arg2:T13.sandy	
+R8.sandy	is_part_of Arg1:T11.sandy Arg2:T13.sandy	
+R9.sandy	is_part_of Arg1:T14.sandy Arg2:T15.sandy	
+R14.sandy	interacts_with Arg1:T21.sandy Arg2:T22.sandy	
+R15.sandy	is_subclass_of Arg1:T32.sandy Arg2:T26.sandy	
+R16.sandy	is_subclass_of Arg1:T33.sandy Arg2:T26.sandy	
+R19.sandy	interacts_with Arg1:T34.sandy Arg2:T35.sandy	
+R27.sandy	participates_in Arg1:T62.sandy Arg2:T48.sandy	
+R3.kevin	interacts_with Arg1:T23.sandy Arg2:T65.sandy	
+R4.kevin	is_part_of Arg1:T30.sandy Arg2:T28.kevin	
+T1	Entity 415 434	genetic backgrounds
+T2	KeyEntity 2223 2226	A/J
+T3	KeyEntity 2117 2125	A/J mice
+T4	KeyEntity 2107 2113;2121 2125	C57BL/ mice
+R1	participates_in Arg1:T4 Arg2:T50.sandy	
+R2	participates_in Arg1:T4 Arg2:T49.sandy	
+R3	participates_in Arg1:T3 Arg2:T50.sandy	
+R4	participates_in Arg1:T3 Arg2:T49.sandy	
+R5	is_part_of Arg1:T40.kevin Arg2:T41.kevin	
+R6	is_part_of Arg1:T40.kevin Arg2:T42.sandy	
+R7	interacts_with Arg1:T38.sandy Arg2:T34.kevin	
+R8	interacts_with Arg1:T39.sandy Arg2:T34.kevin	
+R9	interacts_with Arg1:T36.sandy Arg2:T34.sandy	
+T5	Entity 1090 1121	chromosome substitution strains
+R10	is_part_of Arg1:T5 Arg2:T30.sandy	
+R11	participates_in Arg1:T47.sandy Arg2:T48.sandy	
+T6	KeyEntity 700 713	C57Bl/6J mice
+T7	KeyEntity 692 695;709 713	A/J mice
+R12	participates_in Arg1:T7 Arg2:T19.sandy	
+R13	participates_in Arg1:T7 Arg2:T20.sandy	
+R14	participates_in Arg1:T6 Arg2:T19.sandy	
+R15	participates_in Arg1:T6 Arg2:T20.sandy	

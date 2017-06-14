@@ -28,7 +28,7 @@ T27	Entity 1298 1313	plasma membrane
 T28	Entity 1332 1342	Acdp genes
 T29	KeyEntity 1475 1479	Acdp
 T30	KeyEntity 1506 1510	Acdp
-T31	Entity 1546 1558	CorC protein
+T31	Entity 1537 1558	bacteria CorC protein
 T32	KeyEntity 1638 1642	Acdp
 T33	Entity 723 733;749 758	nucleotide sequences
 T34	Entity 738 758	amino acid sequences
@@ -47,3 +47,117 @@ T1	Entity 1688 1701	ion transport
 T37	Entity 0 17	Molecular cloning
 T38	Entity 22 38	characterization
 T39	Entity 46 68	mouse Acdp gene family
+T40	Entity 1594 1609	plasma membrane
+T41	Entity 1802 1841	ancient conserved domain protein (ACDP)
+T42	Entity 1983 1991	bacteria
+T43	Entity 1993 1998	yeast
+T44	Entity 2000 2010	C. elegans
+T45	Entity 2016 2031	D. melanogaster
+T46	Entity 2035 2042	mammals
+T47	Entity 2228 2244	ACDP gene family
+T48	KeyEntity 2274 2278	Acdp
+T49	Entity 2284 2299;2307 2329	mouse homologue human ACDP gene family
+R9	other_relation Arg1:T49 Arg2:T48	
+#3	AnnotatorNotes R9	attribute
+T50	Entity 2366 2382	Acdp gene family
+T51	Entity 2341 2358	Molecular cloning
+T52	Entity 2397 2413	mouse Acdp genes
+T53	Entity 2419 2434	human ACDP cDNA
+T54	Entity 2439 2466	predicted protein sequences
+T55	Entity 2491 2509	mouse EST database
+T56	Entity 2519 2525;2538 2546	blastn programs
+T57	Entity 2530 2546	tblastn programs
+T58	Entity 2548 2565	Mouse EST markers
+T59	Entity 2588 2599	Acdp member
+T60	Entity 2635 2649	EST H3086H12-5
+T61	Entity 2665 2670	Acdp1
+T62	Entity 2672 2678	W98010
+T63	Entity 2683 2688	Acdp2
+T64	Entity 2690 2701	603299135F1
+T65	Entity 2706 2711	Acdp3
+T66	Entity 2716 2724	BG083791
+T67	Entity 2729 2734	Acdp4
+T68	Entity 2738 2755	modified oligo-dT
+T69	Entity 2763 2771	M13 tail
+T70	Entity 2789 2800	RT reaction
+T71	Entity 2829 2839	EST marker
+T72	Entity 2848 2858	M13 primer
+T73	Entity 2804 2818	forward primer
+T74	Entity 2860 2872	olig-dT tail
+R10	is_subclass_of Arg1:T72 Arg2:T74	
+T75	Entity 2938 2947	Acdp gene
+T76	Entity 3012 3022	Acdp genes
+T77	Entity 3046 3056	nested PCR
+T78	Entity 3078 3083;3094 3101	mouse primers
+T79	Entity 3088 3101	human primers
+T81	Entity 3200 3210	Acdp genes
+T80	Entity 3163 3170	BAC DNA
+R11	is_part_of Arg1:T81 Arg2:T80	
+T82	Entity 3216 3226	BAC clones
+T83	KeyEntity 3258 3284	CITB mouse BAC DNA library
+T84	Entity 3373 3379	RT-PCR
+T85	Entity 3385 3395	Acdp1 gene
+T86	Entity 3512 3522	Acdp genes
+T87	Entity 3524 3529	Acdp2
+T88	Entity 3524 3528;3531 3532	Acdp 3
+T89	Entity 3524 3528;3537 3538	Acdp 4
+T90	Entity 3720 3742	Northern blot analyses
+T91	Entity 3750 3766	Acdp gene family
+T92	Entity 3815 3822	Origene
+T93	Entity 3929 3940	Acdp member
+T95	Entity 4001 4014	PCR fragments
+T96	Entity 4080 4099	mouse Acdp messages
+T97	Entity 4151 4167	human ACDP genes
+T98	Entity 4169 4182	Acdp1 message
+T99	KeyEntity 4279 4284	Acdp2
+T100	KeyEntity 4356 4372	Acdp2 transcript
+T101	KeyEntity 4490 4495	Acdp3
+T102	KeyEntity 4500 4505	Acdp4
+T103	KeyEntity 4595 4600	Acdp3
+T104	KeyEntity 4775 4780	Acdp3
+T105	KeyEntity 4775 4779;4785 4786	Acdp 4
+T106	Entity 4839 4846	β-actin
+T107	Entity 5061 5074	Acdp proteins
+T108	Entity 4210 4215	brain
+T109	Entity 4223 4229	kidney
+T110	Entity 4234 4240	testis
+R12	is_part_of Arg1:T98 Arg2:T108	
+T111	Entity 4318 4323	brain
+T112	Entity 4325 4331	kidney
+T113	Entity 4336 4341	liver
+R13	is_part_of Arg1:T99 Arg2:T111	
+R14	is_part_of Arg1:T99 Arg2:T112	
+R15	is_part_of Arg1:T99 Arg2:T113	
+T114	Entity 4396 4411	skeleton muscle
+T115	Entity 4416 4420	skin
+T116	Entity 4622 4627	brain
+T117	Entity 4629 4635	kidney
+T118	Entity 4637 4642	liver
+T119	Entity 4647 4652	heart
+R16	is_part_of Arg1:T103 Arg2:T116	
+R17	is_part_of Arg1:T103 Arg2:T117	
+R18	is_part_of Arg1:T103 Arg2:T118	
+R19	is_part_of Arg1:T103 Arg2:T119	
+T120	KeyEntity 4686 4691	Acdp4
+T121	Entity 4713 4719	kidney
+T122	Entity 4721 4736	small intestine
+T123	Entity 4741 4747	testis
+R20	is_part_of Arg1:T120 Arg2:T121	
+R21	is_part_of Arg1:T120 Arg2:T122	
+R22	is_part_of Arg1:T120 Arg2:T123	
+T124	Entity 4790 4805	skeleton muscle
+T125	Entity 5200 5222	Northern blot analyses
+T126	Entity 5230 5246	Acdp gene family
+T127	Entity 5413 5437	Radiation hybrid mapping
+T128	KeyEntity 5457 5467	Acdp1 gene
+T129	Entity 5476 5489	chromosome 19
+T130	Entity 5506 5515;5534 5547	D19Mit119 and D19Mit112
+T131	KeyEntity 5570 5580	Acdp2 gene
+T132	KeyEntity 5614 5619	Acdp1
+T133	Entity 5623 5636	chromosome 19
+T134	Entity 5645 5652;5671 5683	D19Mit9 and D19Mit38
+T135	KeyEntity 5706 5711	Acdp3
+T136	KeyEntity 5716 5721	Acdp4
+T137	Entity 5735 5747	chromosome 1
+T138	Entity 5759 5768	BAC clone
+T139	Entity 5803 5811	D1Mit171

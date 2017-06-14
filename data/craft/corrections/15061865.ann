@@ -1,6 +1,6 @@
 T3.sandy	Entity 255 279	external sensory stimuli
 T6.sandy	Entity 434 452	dopamine signaling
-T7.sandy	Entity 473 480	D1-like
+T7.sandy	Entity 473 480;492 501	D1-like receptors
 T8.sandy	KeyEntity 484 501	D2-like receptors
 T9.sandy	Entity 523 540	D1-like receptors
 T11.sandy	Entity 697 736	dopamine D2 receptor-mediated signaling
@@ -20,7 +20,7 @@ T14.sandy	Entity 967 990	stimulus discrimination
 T15.sandy	Entity 1011 1046	inappropriate behavioral strategies
 T19.sandy	Entity 1123 1160;1196 1200	Mildly food-deprived female wild-type mice
 T22.sandy	Entity 1241 1265	visible food reinforcers
-T35.sandy	Entity 0 21	Dopamine D2 receptors
+T35.sandy	KeyEntity 0 21	Dopamine D2 receptors
 T36.sandy	KeyEntity 30 53	two-odor discrimination
 T37.sandy	KeyEntity 58 75	reversal learning
 T38.sandy	Entity 79 91	C57BL/6 mice
@@ -29,7 +29,7 @@ T2.kevin	Entity 180 188	midbrain
 T3.kevin	Entity 194 202	striatum
 T12.kevin	KeyEntity 834 866	functional dopamine D2 receptors
 T13.kevin	Entity 870 884	wild-type mice
-T23.kevin	KeyEntity 1879 1899	Inbred C57Bl/6J mice
+T23.kevin	Entity 1879 1899	Inbred C57Bl/6J mice
 T24.kevin	Entity 1940 1972	functional dopamine D2 receptors
 T25.kevin	Entity 1988 1997	olfaction
 T31.kevin	Entity 2041 2080	odor-driven reinforcement contingencies
@@ -48,8 +48,6 @@ R4	participates_in Arg1:T12.kevin Arg2:T14.sandy
 R5	is_part_of Arg1:T2.sandy Arg2:T1.kevin	
 R6	is_part_of Arg1:T2.sandy Arg2:T2.kevin	
 R7	is_part_of Arg1:T2.sandy Arg2:T3.kevin	
-R8	participates_in Arg1:T2.sandy Arg2:T3.sandy	
-R9	participates_in Arg1:T2.sandy Arg2:T4.sandy	
 T3	Entity 2380 2391;2405 2413	associative learning
 T4	Entity 2396 2413	reversal learning
 R10	regulates Arg1:T33.sandy Arg2:T3	
@@ -58,3 +56,4 @@ R12	is_part_of Arg1:T24.kevin Arg2:T23.kevin
 #2	AnnotatorNotes R12	*lack
 R13	interacts_with Arg1:T19.sandy Arg2:T22.sandy	
 R14	interacts_with Arg1:T20.sandy Arg2:T22.sandy	
+R8	participates_in Arg1:T3.sandy Arg2:T2.sandy	

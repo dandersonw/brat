@@ -1,58 +1,56 @@
-T9.sandy	FIX_TYPE 362 365	QTL
-T16.sandy	FIX_TYPE 506 529	wild type C57Bl/6J (B6)
-T18.sandy	FIX_TYPE 663 667	MMU2
+T9.sandy	KeyEntity 362 365	QTL
+T16.sandy	Entity 506 529	wild type C57Bl/6J (B6)
+T18.sandy	Entity 663 667	MMU2
 T24.sandy	Entity 931 942	hg deletion
 T25.sandy	Entity 1005 1018	HG background
 T27.sandy	Entity 782 792	MMU2 panel
 T31.sandy	Entity 1293 1296	QTL
 T33.sandy	Entity 1413 1435	speed congenic strains
-T2.sandy	FIX_SPAN_KeyEntity 106 122	High growth (hg)
-T4.sandy	FIX_SPAN_KeyEntity 159 188	quantitative trait loci (QTL)
-T5.sandy	VERIFY_Entity 221 240	carcass composition
-T6.sandy	VERIFY_Entity 199 205	growth
-T7.sandy	VERIFY_Entity 207 216	adiposity
-T8.sandy	FIX_SPAN_Entity 290 293	MMU
-T11.sandy	FIX_SPAN_Entity 436 451	CAST/EiJ (CAST)
-T12.sandy	FIX_SPAN_Entity 452 463	QTL alleles
-T14.sandy	FIX_SPAN_KeyEntity 483 502	C57Bl/6J-hg/hg (HG)
-T17.sandy	VERIFY_Entity 571 591	speed congenic panel
-T19.sandy	FIX_SPAN_KeyEntity 694 696	HG
-T20.sandy	VERIFY_KeyEntity 701 703	B6
-T21.sandy	VERIFY_Entity 807 818	segregation
-T22.sandy	VERIFY_Entity 822 837	multiple growth
-T23.sandy	FIX_SPAN_Entity 842 853	obesity QTL
-T26.sandy	VERIFY_Entity 948 960	second panel
-T28.sandy	VERIFY_Entity 1169 1175	growth
-T29.sandy	VERIFY_Entity 1183 1190	obesity
-T30.sandy	VERIFY_Entity 1235 1245	phenotypes
-T32.sandy	VERIFY_Entity 1374 1394	sex-specific effects
-T34.sandy	VERIFY_Entity 1478 1494	genomic resource
-T35.sandy	VERIFY_Entity 1557 1574	genetic variation
-T36.sandy	VERIFY_Entity 1587 1593	growth
-T37.sandy	VERIFY_Entity 1598 1605	obesity
-T3.sandy	FIX_SPAN_KeyEntity 60 82	speed congenic strains
-T1.kevin	FIX_SPAN_Entity 106 131	High growth (hg) modifier
-T2.kevin	FIX_SPAN_Entity 147 188	independent quantitative trait loci (QTL)
-T5.kevin	VERIFY_Entity 387 403	congenic strains
-T6.kevin	FIX_SPAN_Entity 436 463	CAST/EiJ (CAST) QTL alleles
-T7.kevin	FIX_SPAN_Entity 476 502	mutant C57Bl/6J-hg/hg (HG)
-T11.kevin	FIX_SPAN_Entity 694 696;704 715	HG backgrounds
-T14.kevin	FIX_SPAN_Entity 850 853	QTL
-T17.kevin	VERIFY_Entity 1028 1031	QTL
-T18.kevin	VERIFY_Entity 1035 1059	MMU1, 5, 8, 9, 11 and 17
-T20.kevin	FIX_SPAN_Entity 271 319	mouse chromosomes (MMU) 1, 2, 5, 8, 9, 11 and 17
-T21.kevin	VERIFY_Entity 36 47	obesity QTL
-T23.kevin	FIX_SPAN_Entity 54 82	mouse speed congenic strains
-T24.kevin	VERIFY_Entity 0 21	Genome-wide isolation
-R6.sandy	VERIFY_participates_in Arg1:T12.sandy Arg2:T14.sandy	
-R7.sandy	VERIFY_participates_in Arg1:T12.sandy Arg2:T16.sandy	
-R8.sandy	VERIFY_is_part_of Arg1:T18.sandy Arg2:T17.sandy	
-R9.sandy	VERIFY_is_part_of Arg1:T19.sandy Arg2:T17.sandy	
-R10.sandy	VERIFY_is_part_of Arg1:T20.sandy Arg2:T17.sandy	
-R11.sandy	VERIFY_interacts_with Arg1:T21.sandy Arg2:T24.sandy	
-R12.sandy	VERIFY_interacts_with Arg1:T23.sandy Arg2:T24.sandy	
-R13.sandy	VERIFY_is_part_of Arg1:T25.sandy Arg2:T26.sandy	
-R14.sandy	VERIFY_is_part_of Arg1:T33.sandy Arg2:T34.sandy	
-R15.sandy	VERIFY_participates_in Arg1:T33.sandy Arg2:T35.sandy	
-R16.sandy	VERIFY_participates_in Arg1:T36.sandy Arg2:T35.sandy	
-R17.sandy	VERIFY_participates_in Arg1:T37.sandy Arg2:T35.sandy	
+T5.sandy	Entity 221 240	carcass composition
+T6.sandy	Entity 199 205	growth
+T7.sandy	Entity 207 216	adiposity
+T17.sandy	KeyEntity 571 591	speed congenic panel
+T23.sandy	KeyEntity 842 853	obesity QTL
+T28.sandy	Entity 1169 1175	growth
+T29.sandy	Entity 1183 1190	obesity
+T32.sandy	Entity 1374 1394	sex-specific effects
+T35.sandy	Entity 1557 1574	genetic variation
+T36.sandy	Entity 1587 1593	growth
+T37.sandy	Entity 1598 1605	obesity
+T1.kevin	KeyEntity 106 131	High growth (hg) modifier
+T2.kevin	KeyEntity 147 188	independent quantitative trait loci (QTL)
+T6.kevin	Entity 436 463	CAST/EiJ (CAST) QTL alleles
+T7.kevin	Entity 476 502	mutant C57Bl/6J-hg/hg (HG)
+T11.kevin	KeyEntity 694 696;704 715	HG backgrounds
+T17.kevin	KeyEntity 1028 1031	QTL
+T21.kevin	KeyEntity 36 47	obesity QTL
+T23.kevin	KeyEntity 54 82	mouse speed congenic strains
+T24.kevin	Entity 0 21	Genome-wide isolation
+R15.sandy	participates_in Arg1:T33.sandy Arg2:T35.sandy	
+R16.sandy	participates_in Arg1:T35.sandy Arg2:T36.sandy	
+R17.sandy	participates_in Arg1:T35.sandy Arg2:T37.sandy	
+T1	KeyEntity 25 31;44 47	growth QTL
+T2	KeyEntity 381 403	speed congenic strains
+T3	Entity 271 296	mouse chromosomes (MMU) 1
+T4	Entity 271 294;298 299	mouse chromosomes (MMU) 2
+T5	Entity 271 294;301 302	mouse chromosomes (MMU) 5
+T6	Entity 271 294;304 305	mouse chromosomes (MMU) 8
+T7	Entity 271 294;307 308	mouse chromosomes (MMU) 9
+T8	Entity 271 294;310 312	mouse chromosomes (MMU) 11
+T9	Entity 271 294;317 319	mouse chromosomes (MMU) 17
+R1	is_part_of Arg1:T6.kevin Arg2:T7.kevin	
+R2	is_part_of Arg1:T6.kevin Arg2:T16.sandy	
+T10	KeyEntity 701 715	B6 backgrounds
+R3	is_part_of Arg1:T11.kevin Arg2:T17.sandy	
+R4	is_part_of Arg1:T10 Arg2:T17.sandy	
+T11	Entity 831 837;850 853	growth QTL
+T12	Entity 955 960	panel
+R5	is_part_of Arg1:T25.sandy Arg2:T12	
+T13	Entity 1035 1039	MMU1
+T14	Entity 1035 1038;1041 1042	MMU 5
+T15	Entity 1035 1038;1044 1045	MMU 8
+T16	Entity 1035 1038;1047 1048	MMU 9
+T17	Entity 1035 1038;1050 1052	MMU 11
+T18	Entity 1035 1038;1057 1059	MMU 17
+R6	participates_in Arg1:T11 Arg2:T24.sandy	
+R7	participates_in Arg1:T23.sandy Arg2:T24.sandy	

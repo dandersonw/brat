@@ -33,7 +33,7 @@ T20.kevin	Entity 1902 1930	biliary sitosterol secretion
 T21.kevin	Entity 1974 1993	sitosterolemic mice
 T22.kevin	KeyEntity 2051 2067	Abcg8/sterolin-2
 T25.kevin	Entity 973 997	Homozygous knockout mice
-T26.kevin	Entity 1021 1035	sitosterolemia
+T26.kevin	KeyEntity 1021 1035	sitosterolemia
 T28.kevin	Entity 1139 1149	sitosterol
 T29.kevin	Entity 1154 1165	campesterol
 T30.kevin	KeyEntity 1183 1197	sitosterolemia

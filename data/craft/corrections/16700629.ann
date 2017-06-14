@@ -1,4 +1,4 @@
-T2.sandy	FIX_TYPE 127 171	wingless-related MMTV integration site (WNT)
+T2.sandy	KeyEntity 127 171;207 215	wingless-related MMTV integration site (WNT) families
 T5.sandy	Entity 227 233	growth
 T6.sandy	Entity 235 248	morphogenesis
 T7.sandy	Entity 254 269	differentiation
@@ -9,80 +9,66 @@ T15.sandy	Entity 479 505	partial testis development
 T16.sandy	Entity 509 518	XX gonads
 T18.sandy	KeyEntity 681 714	fibroblast growth factor 9 (FGF9)
 T19.sandy	KeyEntity 719 723	WNT4
-T20.sandy	FIX_TYPE 760 777	sex determination
-T23.sandy	FIX_TYPE 1022 1026	Sox9
+T20.sandy	KeyEntity 760 777	sex determination
+T23.sandy	KeyEntity 1022 1026	Sox9
 T25.sandy	KeyEntity 1132 1136	Fgf9
-T26.sandy	Entity 1078 1095	fate of the gonad
 T27.sandy	KeyEntity 1141 1145	Wnt4
-T28.sandy	FIX_TYPE 802 805	Sry
+T28.sandy	KeyEntity 802 805	Sry
 T29.sandy	Entity 827 844	feed-forward loop
-T4.sandy	FIX_SPAN_KeyEntity 176 206	fibroblast growth factor (FGF)
-T8.sandy	FIX_SPAN_Entity 301 312	development
-T11.sandy	VERIFY_KeyEntity 389 406	sex determination
-T12.sandy	FIX_SPAN_Entity 408 420	Loss of Fgf9
-T14.sandy	FIX_SPAN_Entity 455 467	loss of Wnt4
-T21.sandy	FIX_SPAN_Entity 958 970	loss of Wnt4
-T22.sandy	FIX_SPAN_Entity 1001 1017	up-regulate Fgf9
-T24.sandy	FIX_SPAN_Entity 1034 1048	absence of Sry
-T30.sandy	VERIFY_KeyEntity 1299 1316	sex determination
-T31.sandy	VERIFY_Entity 1362 1368	switch
-T32.sandy	VERIFY_KeyEntity 0 4	Fgf9
-T33.sandy	VERIFY_KeyEntity 9 13	Wnt4
-T34.sandy	VERIFY_KeyEntity 21 41	Antagonistic Signals
-T35.sandy	VERIFY_KeyEntity 54 81	Mammalian Sex Determination
-T2.kevin	FIX_SPAN_Entity 176 215	fibroblast growth factor (FGF) families
-T8.kevin	VERIFY_Entity 359 365	gonads
-T9.kevin	FIX_SPAN_KeyEntity 416 420	Fgf9
-T11.kevin	FIX_SPAN_KeyEntity 463 467	Wnt4
-T14.kevin	VERIFY_KeyEntity 603 606	Sry
-T18.kevin	VERIFY_Entity 786 800	mouse XY gonad
-T20.kevin	VERIFY_KeyEntity 853 857	Sox9
-T21.kevin	VERIFY_KeyEntity 862 866	Fgf9
-T22.kevin	VERIFY_KeyEntity 887 891	Fgf9
-T23.kevin	VERIFY_KeyEntity 906 910	Wnt4
-T24.kevin	VERIFY_Entity 928 942	testis pathway
-T25.kevin	FIX_SPAN_Entity 966 970	Wnt4
-T26.kevin	VERIFY_Entity 974 983	XX gonads
-T27.kevin	FIX_SPAN_KeyEntity 1013 1017	Fgf9
-T28.kevin	VERIFY_Entity 731 747	opposing signals
-T31.kevin	FIX_SPAN_KeyEntity 1045 1048	Sry
-T34.kevin	VERIFY_Entity 1113 1123	antagonism
-T36.kevin	VERIFY_KeyEntity 1191 1194	Sry
-T37.kevin	FIX_SPAN_Entity 301 312;321 326	development mouse
+T11.sandy	KeyEntity 389 406	sex determination
+T30.sandy	KeyEntity 1299 1316	sex determination
+T31.sandy	Entity 1362 1368	switch
+T32.sandy	KeyEntity 0 4	Fgf9
+T33.sandy	KeyEntity 9 13	Wnt4
+T34.sandy	Entity 21 41	Antagonistic Signals
+T35.sandy	KeyEntity 54 81	Mammalian Sex Determination
+T2.kevin	KeyEntity 176 215	fibroblast growth factor (FGF) families
+T8.kevin	Entity 359 365	gonads
+T9.kevin	KeyEntity 416 420	Fgf9
+T11.kevin	KeyEntity 463 467	Wnt4
+T14.kevin	KeyEntity 603 606	Sry
+T18.kevin	Entity 786 800	mouse XY gonad
+T20.kevin	KeyEntity 853 857	Sox9
+T21.kevin	KeyEntity 862 866	Fgf9
+T22.kevin	KeyEntity 887 891	Fgf9
+T23.kevin	KeyEntity 906 910	Wnt4
+T24.kevin	KeyEntity 928 942	testis pathway
+T25.kevin	KeyEntity 966 970	Wnt4
+T26.kevin	Entity 974 983	XX gonads
+T27.kevin	KeyEntity 1013 1017	Fgf9
+T31.kevin	KeyEntity 1045 1048	Sry
+T34.kevin	Entity 1113 1123	antagonism
+T36.kevin	KeyEntity 1191 1194	Sry
+T37.kevin	Entity 321 326	mouse
 R10.sandy	regulates Arg1:T28.sandy Arg2:T29.sandy	
-R3.sandy	VERIFY_regulates Arg1:T9.sandy Arg2:T11.sandy	
-R4.sandy	VERIFY_regulates Arg1:T10.sandy Arg2:T11.sandy	
-R5.sandy	VERIFY_participates_in Arg1:T12.sandy Arg2:T13.sandy	
-R6.sandy	VERIFY_participates_in Arg1:T14.sandy Arg2:T15.sandy	
-R8.sandy	VERIFY_regulates Arg1:T18.sandy Arg2:T20.sandy	
-R9.sandy	VERIFY_regulates Arg1:T19.sandy Arg2:T20.sandy	
-R11.sandy	VERIFY_participates_in Arg1:T21.sandy Arg2:T22.sandy	
-R12.sandy	VERIFY_participates_in Arg1:T21.sandy Arg2:T23.sandy	
-R13.sandy	VERIFY_regulates Arg1:T25.sandy Arg2:T26.sandy	
-R14.sandy	VERIFY_regulates Arg1:T27.sandy Arg2:T26.sandy	
-R15.sandy	VERIFY_is_part_of Arg1:T33.sandy Arg2:T34.sandy	
-R16.sandy	VERIFY_is_part_of Arg1:T32.sandy Arg2:T34.sandy	
-R17.sandy	VERIFY_regulates Arg1:T34.sandy Arg2:T35.sandy	
-R3.kevin	VERIFY_participates_in Arg1:T9.kevin Arg2:T13.sandy	
-R4.kevin	VERIFY_interacts_with Arg1:T11.kevin Arg2:T15.sandy	
-R5.kevin	VERIFY_interacts_with Arg1:T15.sandy Arg2:T16.sandy	
-R6.kevin	VERIFY_regulates Arg1:T28.kevin Arg2:T20.sandy	
-R7.kevin	VERIFY_interacts_with Arg1:T18.sandy Arg2:T28.kevin	
-R8.kevin	VERIFY_interacts_with Arg1:T19.sandy Arg2:T28.kevin	
-R10.kevin	VERIFY_interacts_with Arg1:T20.kevin Arg2:T29.sandy	
-R11.kevin	VERIFY_interacts_with Arg1:T21.kevin Arg2:T29.sandy	
-R12.kevin	VERIFY_regulates Arg1:T29.sandy Arg2:T22.kevin	
-R13.kevin	VERIFY_regulates Arg1:T29.sandy Arg2:T23.kevin	
-R14.kevin	VERIFY_is_part_of Arg1:T25.kevin Arg2:T26.kevin	
-R15.kevin	VERIFY_regulates Arg1:T25.kevin Arg2:T27.kevin	
-R16.kevin	VERIFY_regulates Arg1:T25.kevin Arg2:T23.sandy	
-R17.kevin	VERIFY_regulates Arg1:T34.kevin Arg2:T26.sandy	
-R18.kevin	VERIFY_interacts_with Arg1:T25.sandy Arg2:T34.kevin	
-R19.kevin	VERIFY_interacts_with Arg1:T27.sandy Arg2:T34.kevin	
-R20.kevin	VERIFY_regulates Arg1:T2.sandy Arg2:T5.sandy	
-R21.kevin	VERIFY_regulates Arg1:T2.sandy Arg2:T6.sandy	
-R22.kevin	VERIFY_regulates Arg1:T2.sandy Arg2:T7.sandy	
-R23.kevin	VERIFY_regulates Arg1:T2.kevin Arg2:T5.sandy	
-R24.kevin	VERIFY_regulates Arg1:T2.kevin Arg2:T6.sandy	
-R25.kevin	VERIFY_regulates Arg1:T2.kevin Arg2:T7.sandy	
-R26.kevin	VERIFY_interacts_with Arg1:T28.sandy Arg2:T18.kevin	
+R8.sandy	regulates Arg1:T18.sandy Arg2:T20.sandy	
+R9.sandy	regulates Arg1:T19.sandy Arg2:T20.sandy	
+R15.sandy	is_part_of Arg1:T33.sandy Arg2:T34.sandy	
+R16.sandy	is_part_of Arg1:T32.sandy Arg2:T34.sandy	
+R17.sandy	regulates Arg1:T34.sandy Arg2:T35.sandy	
+R3.kevin	participates_in Arg1:T9.kevin Arg2:T13.sandy	
+R4.kevin	participates_in Arg1:T11.kevin Arg2:T15.sandy	
+R5.kevin	is_part_of Arg1:T15.sandy Arg2:T16.sandy	
+R11.kevin	participates_in Arg1:T21.kevin Arg2:T29.sandy	
+R12.kevin	regulates Arg1:T29.sandy Arg2:T22.kevin	
+R13.kevin	regulates Arg1:T29.sandy Arg2:T23.kevin	
+R14.kevin	is_part_of Arg1:T25.kevin Arg2:T26.kevin	
+R15.kevin	regulates Arg1:T25.kevin Arg2:T27.kevin	
+R16.kevin	regulates Arg1:T25.kevin Arg2:T23.sandy	
+R18.kevin	participates_in Arg1:T25.sandy Arg2:T34.kevin	
+R19.kevin	participates_in Arg1:T27.sandy Arg2:T34.kevin	
+R20.kevin	regulates Arg1:T2.sandy Arg2:T5.sandy	
+R21.kevin	regulates Arg1:T2.sandy Arg2:T6.sandy	
+R22.kevin	regulates Arg1:T2.sandy Arg2:T7.sandy	
+R23.kevin	regulates Arg1:T2.kevin Arg2:T5.sandy	
+R24.kevin	regulates Arg1:T2.kevin Arg2:T6.sandy	
+R25.kevin	regulates Arg1:T2.kevin Arg2:T7.sandy	
+R26.kevin	interacts_with Arg1:T28.sandy Arg2:T18.kevin	
+T1	Entity 731 747	opposing signals
+R1	participates_in Arg1:T20.kevin Arg2:T29.sandy	
+R2	interacts_with Arg1:T20.kevin Arg2:T21.kevin	
+R3	interacts_with Arg1:T25.sandy Arg2:T27.sandy	
+T2	Entity 1090 1095	gonad
+R4	regulates Arg1:T34.kevin Arg2:T2	
+R5	regulates Arg1:T25.sandy Arg2:T2	
+R6	regulates Arg1:T27.sandy Arg2:T2	

@@ -4,64 +4,49 @@ T9.sandy	Entity 326 338	homozygosity
 T10.sandy	Entity 249 275	Heterozygous knockout mice
 T11.sandy	KeyEntity 395 398	Apc
 T12.sandy	Entity 429 442	floxed allele
-T13.sandy	FIX_TYPE 489 504	Cre recombinase
-T18.sandy	Entity 697 714	K14-cre transgene
+T13.sandy	KeyEntity 489 504	Cre recombinase
+T18.sandy	KeyEntity 697 714	K14-cre transgene
 T24.sandy	Entity 1015 1034	squamous metaplasia
 T25.sandy	Entity 1059 1085	epithelial-derived tissues
 T26.sandy	Entity 1183 1203	thymic abnormalities
-T27.sandy	FIX_TYPE 1207 1214	K14-cre
-T28.sandy	Entity 1216 1231	ApcCKO/CKO mice
 T30.sandy	Entity 1267 1282	embryonic cells
 T31.sandy	Entity 1294 1315	epithelial cell fates
 T32.sandy	Entity 1339 1374	epithelial–mesenchymal interactions
-T1.sandy	VERIFY_Entity 102 123	tumor suppressor gene
-T2.sandy	FIX_SPAN_KeyEntity 124 127	Apc
-T3.sandy	FIX_SPAN_Entity 129 155	adenomatous polyposis coli
-T5.sandy	FIX_SPAN_Entity 218 229	development
-T6.sandy	FIX_SPAN_Entity 234 247	tumorigenesis
-T7.sandy	VERIFY_Entity 291 321	tumor predisposition phenotype
-T14.sandy	FIX_SPAN_Entity 536 546	Keratin 14
-T15.sandy	FIX_SPAN_Entity 548 551	K14
-T16.sandy	FIX_SPAN_Entity 582 606	basal cells of epidermis
-T17.sandy	FIX_SPAN_Entity 628 637	epithelia
-T19.sandy	FIX_SPAN_Entity 834 850	K14-cre–mediated
-T20.sandy	FIX_SPAN_Entity 851 859	Apc loss
-T21.sandy	VERIFY_Entity 872 887	aberrant growth
-T22.sandy	FIX_SPAN_Entity 917 935	squamous epithelia
-T23.sandy	FIX_SPAN_Entity 896 908	ectodermally
-T29.sandy	FIX_SPAN_KeyEntity 1244 1247	Apc
-T33.sandy	VERIFY_Entity 1385 1396	development
-T34.sandy	FIX_SPAN_Entity 639 654	Mice homozygous
-T35.sandy	VERIFY_Entity 735 749	stunted growth
-T36.sandy	VERIFY_KeyEntity 0 32	Adenomatous Polyposis Coli (APC)
-T1.kevin	FIX_SPAN_KeyEntity 124 156	Apc (adenomatous polyposis coli)
-T3.kevin	FIX_SPAN_Entity 218 247	development and tumorigenesis
-T7.kevin	VERIFY_KeyEntity 280 283	Apc
-T11.kevin	FIX_SPAN_Entity 530 561	human Keratin 14 (K14) promoter
-T12.kevin	FIX_SPAN_Entity 582 593	basal cells
-T13.kevin	FIX_SPAN_Entity 617 637	stratified epithelia
-T14.kevin	FIX_SPAN_Entity 639 654;663 676	Mice homozygous floxed allele
-T16.kevin	FIX_SPAN_Entity 834 854	K14-cre–mediated Apc
-T17.kevin	FIX_SPAN_Entity 896 935	ectodermally derived squamous epithelia
-T20.kevin	VERIFY_Entity 1101 1107	thymus
-T24.kevin	FIX_SPAN_KeyEntity 1244 1252	Apc gene
+T5.sandy	Entity 218 229	development
+T6.sandy	Entity 234 247	tumorigenesis
+T7.sandy	Entity 291 321	tumor predisposition phenotype
+T21.sandy	Entity 872 887	aberrant growth
+T33.sandy	Entity 1385 1396	development
+T34.sandy	Entity 639 654	Mice homozygous
+T36.sandy	KeyEntity 0 32	Adenomatous Polyposis Coli (APC)
+T1.kevin	KeyEntity 124 156	Apc (adenomatous polyposis coli)
+T7.kevin	KeyEntity 280 283	Apc
+T11.kevin	Entity 530 561	human Keratin 14 (K14) promoter
+T12.kevin	Entity 582 593	basal cells
+T13.kevin	Entity 617 637	stratified epithelia
+T17.kevin	Entity 896 935	ectodermally derived squamous epithelia
+T20.kevin	Entity 1101 1107	thymus
+T24.kevin	KeyEntity 1244 1252	Apc gene
 R14.sandy	is_part_of Arg1:T24.sandy Arg2:T25.sandy	
-R3.sandy	VERIFY_is_part_of Arg1:T2.sandy Arg2:T4.sandy	
-R4.sandy	VERIFY_is_part_of Arg1:T5.sandy Arg2:T4.sandy	
-R5.sandy	VERIFY_is_part_of Arg1:T6.sandy Arg2:T4.sandy	
-R6.sandy	VERIFY_is_part_of Arg1:T7.sandy Arg2:T10.sandy	
-R7.sandy	VERIFY_is_part_of Arg1:T8.sandy Arg2:T9.sandy	
-R8.sandy	VERIFY_interacts_with Arg1:T13.sandy Arg2:T15.sandy	
-R9.sandy	VERIFY_interacts_with Arg1:T16.sandy Arg2:T15.sandy	
-R10.sandy	VERIFY_interacts_with Arg1:T17.sandy Arg2:T15.sandy	
-R11.sandy	VERIFY_participates_in Arg1:T34.sandy Arg2:T18.sandy	
-R12.sandy	VERIFY_participates_in Arg1:T20.sandy Arg2:T21.sandy	
-R13.sandy	VERIFY_participates_in Arg1:T20.sandy Arg2:T22.sandy	
-R15.sandy	VERIFY_is_part_of Arg1:T26.sandy Arg2:T27.sandy	
-R17.sandy	VERIFY_interacts_with Arg1:T31.sandy Arg2:T32.sandy	
-R1.kevin	VERIFY_participates_in Arg1:T1.kevin Arg2:T4.sandy	
-R2.kevin	VERIFY_participates_in Arg1:T1.kevin Arg2:T3.kevin	
-R4.kevin	VERIFY_regulates Arg1:T11.kevin Arg2:T13.sandy	
-R6.kevin	VERIFY_is_part_of Arg1:T18.sandy Arg2:T14.kevin	
-R8.kevin	VERIFY_is_subclass_of Arg1:T20.kevin Arg2:T25.sandy	
-R9.kevin	VERIFY_participates_in Arg1:T24.kevin Arg2:T31.sandy	
+R4.sandy	participates_in Arg1:T4.sandy Arg2:T5.sandy	
+R5.sandy	participates_in Arg1:T4.sandy Arg2:T6.sandy	
+R6.sandy	is_part_of Arg1:T7.sandy Arg2:T10.sandy	
+R7.sandy	participates_in Arg1:T9.sandy Arg2:T8.sandy	
+R11.sandy	is_part_of Arg1:T18.sandy Arg2:T34.sandy	
+R17.sandy	participates_in Arg1:T31.sandy Arg2:T32.sandy	
+R1.kevin	participates_in Arg1:T1.kevin Arg2:T4.sandy	
+R4.kevin	regulates Arg1:T11.kevin Arg2:T13.sandy	
+R8.kevin	is_subclass_of Arg1:T20.kevin Arg2:T25.sandy	
+R9.kevin	participates_in Arg1:T24.kevin Arg2:T31.sandy	
+T1	Entity 102 123	tumor suppressor gene
+T2	KeyEntity 834 859	K14-cre–mediated Apc loss
+R1	participates_in Arg1:T2 Arg2:T21.sandy	
+R2	participates_in Arg1:T17.kevin Arg2:T21.sandy	
+T3	KeyEntity 1207 1231	K14-cre; ApcCKO/CKO mice
+R3	is_part_of Arg1:T26.sandy Arg2:T3	
+T4	Entity 663 676	floxed allele
+R4	is_part_of Arg1:T4 Arg2:T34.sandy	
+T5	Entity 597 606	epidermis
+R5	is_part_of Arg1:T12.kevin Arg2:T5	
+R6	is_part_of Arg1:T11.kevin Arg2:T12.kevin	
+R7	is_part_of Arg1:T11.kevin Arg2:T13.kevin	

@@ -1,33 +1,29 @@
-T4.sandy	FIX_TYPE 1011 1027	gonadal fat mass
-T6.sandy	FIX_TYPE 1127 1141	sex-dependence
-T9.sandy	FIX_TYPE 1288 1304	gonadal fat mass
+T4.sandy	KeyEntity 1011 1027	gonadal fat mass
+T6.sandy	KeyEntity 1127 1141	sex-dependence
+T9.sandy	KeyEntity 1288 1304	gonadal fat mass
 T10.sandy	Entity 1344 1370	female-biased heritability
-T1.sandy	VERIFY_Entity 269 275	gender
-T2.sandy	FIX_SPAN_Entity 354 371	genetical genomic
-T3.sandy	FIX_SPAN_Entity 683 701	metabolic syndrome
-T5.sandy	VERIFY_Entity 1050 1073	sex-specific regulation
-T7.sandy	FIX_SPAN_Entity 1154 1178	cis and trans regulation
-T8.sandy	FIX_SPAN_Entity 1182 1197	gene expression
-T11.sandy	FIX_SPAN_Entity 588 609	apolipoprotein E null
-T12.sandy	FIX_SPAN_Entity 611 618	ApoE−/−
-T13.sandy	VERIFY_KeyEntity 0 7;20 28	Genetic Analysis
-T15.sandy	VERIFY_KeyEntity 34 48	Fat Mass Trait
-T16.sandy	VERIFY_Entity 54 73	Complex Inheritance
-T17.sandy	VERIFY_KeyEntity 89 104	Sex Specificity
-T1.kevin	VERIFY_Entity 161 177	linkage analysis
-T2.kevin	FIX_SPAN_Entity 354 381	genetical genomic” analyses
-T3.kevin	VERIFY_Entity 509 522	F2 intercross
-T4.kevin	VERIFY_Entity 561 569	C57BL/6J
-T5.kevin	VERIFY_Entity 574 581	C3H/HeJ
-T6.kevin	FIX_SPAN_KeyEntity 588 630	apolipoprotein E null (ApoE−/−) background
-T7.kevin	VERIFY_Entity 637 659	BXH.ApoE−/− population
-T8.kevin	FIX_SPAN_Entity 682 713	“metabolic syndrome” phenotypes
-T9.kevin	VERIFY_Entity 864 909	liver gene expression quantitative trait loci
-T12.kevin	FIX_SPAN_Entity 1154 1197	cis and trans regulation of gene expression
-R2.sandy	VERIFY_is_part_of Arg1:T4.sandy Arg2:T5.sandy	
-R3.sandy	VERIFY_regulates Arg1:T8.sandy Arg2:T6.sandy	
-R4.sandy	VERIFY_participates_in Arg1:T9.sandy Arg2:T10.sandy	
-R5.sandy	VERIFY_participates_in Arg1:T15.sandy Arg2:T17.sandy	
-R1.kevin	VERIFY_participates_in Arg1:T4.kevin Arg2:T3.kevin	
-R2.kevin	VERIFY_participates_in Arg1:T5.kevin Arg2:T3.kevin	
-R3.kevin	VERIFY_is_part_of Arg1:T3.kevin Arg2:T6.kevin	
+T1.sandy	Entity 269 275	gender
+T5.sandy	KeyEntity 1050 1073	sex-specific regulation
+T8.sandy	Entity 1182 1197	gene expression
+T13.sandy	Entity 0 7;20 28	Genetic Analysis
+T15.sandy	KeyEntity 34 48	Fat Mass Trait
+T16.sandy	Entity 54 73	Complex Inheritance
+T17.sandy	KeyEntity 89 104	Sex Specificity
+T1.kevin	Entity 161 177	linkage analysis
+T2.kevin	Entity 354 381	genetical genomic” analyses
+T3.kevin	Entity 509 522	F2 intercross
+T4.kevin	Entity 561 569	C57BL/6J
+T5.kevin	Entity 574 581	C3H/HeJ
+T6.kevin	KeyEntity 588 630	apolipoprotein E null (ApoE−/−) background
+T7.kevin	KeyEntity 637 659	BXH.ApoE−/− population
+T8.kevin	Entity 682 713	“metabolic syndrome” phenotypes
+T9.kevin	Entity 864 909	liver gene expression quantitative trait loci
+R2.sandy	participates_in Arg1:T4.sandy Arg2:T5.sandy	
+R3.sandy	regulates Arg1:T8.sandy Arg2:T6.sandy	
+R4.sandy	participates_in Arg1:T9.sandy Arg2:T10.sandy	
+R5.sandy	participates_in Arg1:T15.sandy Arg2:T17.sandy	
+R1.kevin	participates_in Arg1:T4.kevin Arg2:T3.kevin	
+R2.kevin	participates_in Arg1:T5.kevin Arg2:T3.kevin	
+T1	Entity 12 28	Genomic Analysis
+T2	Entity 1162 1178	trans regulation
+T3	Entity 1154 1157;1168 1178	cis regulation

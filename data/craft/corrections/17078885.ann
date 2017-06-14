@@ -1,52 +1,46 @@
 T1.sandy	Entity 162 196	Congenital cardiovascular diseases
-T6.sandy	Entity 384 427	pluripotent cardiac neural crest stem cells
-T9.sandy	Entity 495 524	neural crest cell development
-T13.sandy	FIX_TYPE 737 741	ALK5
+T6.sandy	KeyEntity 384 427	pluripotent cardiac neural crest stem cells
+T9.sandy	KeyEntity 495 524	neural crest cell development
+T13.sandy	KeyEntity 737 741	ALK5
 T19.sandy	Entity 947 965	truncus arteriosus
-T20.sandy	FIX_TYPE 973 977	ALK5
-T23.sandy	Entity 1187 1210	ALK5-mediated signaling
+T20.sandy	KeyEntity 973 977	ALK5
+T23.sandy	KeyEntity 1187 1210	ALK5-mediated signaling
 T24.sandy	Entity 1214 1232	neural crest cells
-T26.sandy	Entity 1280 1290	pharyngeal
-T27.sandy	Entity 1295 1328	cardiac outflow tract development
-T29.sandy	Entity 32 44	neural crest
-T30.sandy	Entity 64 105	postmigratory neural crest cell apoptosis
-T2.sandy	VERIFY_Entity 225 238	birth defects
-T3.sandy	VERIFY_Entity 328 337	induction
-T4.sandy	VERIFY_Entity 339 348	migration
-T5.sandy	VERIFY_Entity 350 365	differentiation
-T7.sandy	VERIFY_Entity 370 380	patterning
-T8.sandy	FIX_SPAN_Entity 435 452	TGF-β-superfamily
-T10.sandy	FIX_SPAN_Entity 632 653	TGF-β type I receptor
-T11.sandy	FIX_SPAN_KeyEntity 654 658	Alk5
-T12.sandy	VERIFY_Entity 685 710	neural crest cell lineage
-T14.sandy	FIX_SPAN_Entity 751 772	severe cardiovascular
-T15.sandy	FIX_SPAN_Entity 777 795	pharyngeal defects
-T16.sandy	FIX_SPAN_Entity 821 859	remodeling of pharyngeal arch arteries
-T17.sandy	FIX_SPAN_Entity 870 892	aortic sac development
-T18.sandy	FIX_SPAN_Entity 905 931	pharyngeal organ migration
-T21.sandy	FIX_SPAN_Entity 1090 1116	survival of post-migratory
-T22.sandy	FIX_SPAN_Entity 1117 1143	cardiac neural crest cells
-T25.sandy	VERIFY_Entity 1252 1267	cell-autonomous
-T28.sandy	FIX_SPAN_KeyEntity 10 24	ALK5 signaling
-T31.sandy	VERIFY_Entity 117 138	outflow tract defects
-T3.kevin	FIX_SPAN_Entity 435 462	TGF-β-superfamily signaling
-T5.kevin	FIX_SPAN_Entity 632 658	TGF-β type I receptor Alk5
-T7.kevin	FIX_SPAN_Entity 758 795	cardiovascular and pharyngeal defects
-T8.kevin	FIX_SPAN_Entity 835 859	pharyngeal arch arteries
-T9.kevin	FIX_SPAN_Entity 861 892	abnormal aortic sac development
-T10.kevin	FIX_SPAN_Entity 894 931	failure in pharyngeal organ migration
-T13.kevin	FIX_SPAN_Entity 1102 1143	post-migratory cardiac neural crest cells
-T18.kevin	FIX_SPAN_Entity 0 24	Defective ALK5 signaling
+T26.sandy	Entity 1280 1290;1317 1328	pharyngeal development
+T27.sandy	KeyEntity 1295 1328	cardiac outflow tract development
+T29.sandy	KeyEntity 32 44	neural crest
+T30.sandy	KeyEntity 64 105	postmigratory neural crest cell apoptosis
+T2.sandy	Entity 225 238	birth defects
+T3.sandy	Entity 328 337	induction
+T4.sandy	Entity 339 348	migration
+T5.sandy	Entity 350 365	differentiation
+T7.sandy	Entity 370 380	patterning
+T10.sandy	Entity 632 653	TGF-β type I receptor
+T11.sandy	KeyEntity 654 658	Alk5
+T12.sandy	KeyEntity 685 710	neural crest cell lineage
+T15.sandy	Entity 777 795	pharyngeal defects
+T18.sandy	Entity 905 931	pharyngeal organ migration
+T28.sandy	KeyEntity 10 24	ALK5 signaling
+T31.sandy	KeyEntity 117 138	outflow tract defects
+T3.kevin	Entity 435 462	TGF-β-superfamily signaling
+T8.kevin	Entity 835 859	pharyngeal arch arteries
+T9.kevin	Entity 861 892	abnormal aortic sac development
+T13.kevin	KeyEntity 1102 1143	post-migratory cardiac neural crest cells
 #1	AnnotatorNotes T30.sandy	increased
 #2	AnnotatorNotes T31.sandy	severe
-R1.sandy	VERIFY_is_part_of Arg1:T1.sandy Arg2:T2.sandy	
-R2.sandy	VERIFY_participates_in Arg1:T7.sandy Arg2:T6.sandy	
-R3.sandy	VERIFY_participates_in Arg1:T5.sandy Arg2:T6.sandy	
-R4.sandy	VERIFY_participates_in Arg1:T4.sandy Arg2:T6.sandy	
-R5.sandy	VERIFY_participates_in Arg1:T3.sandy Arg2:T6.sandy	
-R6.sandy	VERIFY_is_subclass_of Arg1:T11.sandy Arg2:T10.sandy	
-R7.sandy	VERIFY_participates_in Arg1:T13.sandy Arg2:T14.sandy	
-R8.sandy	VERIFY_participates_in Arg1:T13.sandy Arg2:T15.sandy	
-R9.sandy	VERIFY_participates_in Arg1:T20.sandy Arg2:T21.sandy	
-R10.sandy	VERIFY_interacts_with Arg1:T23.sandy Arg2:T24.sandy	
-R11.sandy	VERIFY_participates_in Arg1:T23.sandy Arg2:T25.sandy	
+R1.sandy	participates_in Arg1:T1.sandy Arg2:T2.sandy	
+R2.sandy	participates_in Arg1:T6.sandy Arg2:T7.sandy	
+R3.sandy	participates_in Arg1:T6.sandy Arg2:T5.sandy	
+R4.sandy	participates_in Arg1:T6.sandy Arg2:T4.sandy	
+R5.sandy	participates_in Arg1:T6.sandy Arg2:T3.sandy	
+R6.sandy	is_subclass_of Arg1:T11.sandy Arg2:T10.sandy	
+R8.sandy	participates_in Arg1:T13.sandy Arg2:T15.sandy	
+R10.sandy	is_part_of Arg1:T23.sandy Arg2:T24.sandy	
+T1	Entity 758 772;788 795	cardiovascular defects
+R1	participates_in Arg1:T13.sandy Arg2:T1	
+T2	Entity 1252 1272	cell-autonomous role
+T3	Entity 1090 1098	survival
+R2	participates_in Arg1:T13.kevin Arg2:T3	
+R3	participates_in Arg1:T20.sandy Arg2:T3	
+R4	participates_in Arg1:T23.sandy Arg2:T27.sandy	
+R5	participates_in Arg1:T23.sandy Arg2:T26.sandy	

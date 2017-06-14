@@ -44,7 +44,6 @@ T3	Entity 406 424	olfactory receptor
 T4	Entity 435 448	sequence tags
 R2	is_part_of Arg1:T4 Arg2:T1.sandy	
 T5	Entity 2349 2387	one-neuron, one-gene expression regime
-R3	regulates Arg1:T5 Arg2:T21.sandy	
 R1	is_part_of Arg1:T4 Arg2:T3	
 #1	AnnotatorNotes R1	**expresses
 R4	is_part_of Arg1:T9.sandy Arg2:T8.sandy	

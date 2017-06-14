@@ -35,3 +35,402 @@ R5	is_part_of Arg1:T27 Arg2:T28
 T29	Entity 12 28	spatial learning
 T30	Entity 33 51	motor coordination
 T31	KeyEntity 55 76	ADAM11-deficient mice
+T32	Entity 1288 1307	synaptic regulation
+T33	Entity 1357 1404	ADAM (A Disintegrin And Metalloprotease) family
+T34	Entity 1468 1497	metalloproteinase-like domain
+T35	Entity 1504 1527	disintegrin-like domain
+T36	Entity 1415 1454	membrane-spanning multi-domain proteins
+R6	is_part_of Arg1:T34 Arg2:T36	
+R7	is_part_of Arg1:T35 Arg2:T36	
+T37	Entity 1555 1560	ADAMs
+T38	Entity 1565 1602	catalytically active metalloproteases
+T39	Entity 1650 1659	cytokines
+T40	Entity 1661 1675	growth factors
+T41	Entity 1677 1686	receptors
+T42	Entity 1688 1706	adhesion molecules
+T43	Entity 1630 1640	substrates
+R8	is_subclass_of Arg1:T39 Arg2:T43	
+R9	is_subclass_of Arg1:T40 Arg2:T43	
+R10	is_subclass_of Arg1:T41 Arg2:T43	
+R11	is_subclass_of Arg1:T42 Arg2:T43	
+T44	Entity 1770 1788;1797 1801	physiological role ADAM
+T45	Entity 1816 1822	ADAM10
+T46	Entity 1824 1830	ADAM17
+T47	Entity 1835 1841	ADAM19
+T48	Entity 1859 1877	normal development
+R12	regulates Arg1:T47 Arg2:T48	
+R13	regulates Arg1:T46 Arg2:T48	
+R14	regulates Arg1:T45 Arg2:T48	
+T49	Entity 1975 1980	ADAM8
+T50	Entity 1982 1987	ADAM9
+T51	Entity 1989 1995	ADAM12
+T52	Entity 2000 2006	ADAM15
+T53	Entity 2029 2042	embryogenesis
+T54	Entity 2099 2107	protease
+T55	Entity 2066 2087	functional redundancy
+R15	participates_in Arg1:T49 Arg2:T53	
+R16	participates_in Arg1:T50 Arg2:T53	
+R17	participates_in Arg1:T51 Arg2:T53	
+R18	participates_in Arg1:T52 Arg2:T53	
+T56	Entity 2146 2164	non-protease-ADAMs
+T57	Entity 2184 2202	adhesion molecules
+R19	is_subclass_of Arg1:T56 Arg2:T57	
+T58	Entity 2218 2223	ADAMs
+T59	Entity 2251 2282	integrin-mediated cell adhesion
+R20	other_relation Arg1:T59 Arg2:T58	
+#2	AnnotatorNotes R20	attribute
+T60	Entity 2348 2380	integrin-mediated cell migration
+T61	Entity 2384 2404	tissue culture cells
+T62	Entity 2435 2440	ADAMs
+T63	Entity 2450 2460	C. elegans
+T64	Entity 2462 2473	unc-71 gene
+T65	Entity 2483 2508	non-protease-ADAM protein
+R21	other_relation Arg1:T64 Arg2:T65	
+#3	AnnotatorNotes R21	expressed
+T66	Entity 2543 2564	cell migration events
+T67	Entity 2283 2291	in vitro
+T68	Entity 2565 2572	in vivo
+R22	participates_in Arg1:T64 Arg2:T66	
+T69	Entity 2615 2643	mammalian non-protease-ADAMs
+T70	Entity 2666 2673	in vivo
+T71	Entity 2592 2611	physiological roles
+R23	is_part_of Arg1:T71 Arg2:T69	
+T72	Entity 2675 2699	Genetic deletion studies
+T73	Entity 2729 2739;2755 2767	Adam2-null male mutants
+T74	Entity 2744 2767	Adam3-null male mutants
+T75	Entity 2772 2781	infertile
+T76	Entity 2792 2830	spermatozoa lack egg-binding abilities
+#4	AnnotatorNotes T76	Need future clarification
+T77	KeyEntity 2925 2931;2951 2956	ADAM11 genes
+T78	Entity 2933 2939;2951 2956	ADAM22 genes
+T79	Entity 2944 2956	ADAM23 genes
+T80	Entity 3006 3028	murine nervous systems
+T81	Entity 2996 3001;3013 3028	human nervous systems
+T82	Entity 3044 3049	ADAMs
+T83	Entity 3057 3072	catalytic motif
+T84	Entity 3090 3116	metalloproteinase activity
+T85	Entity 3179 3184	ADAMs
+T86	Entity 3205 3219	cell migration
+T87	Entity 3221 3236	differentiation
+T88	Entity 3241 3249	survival
+T89	Entity 3253 3272	synaptic regulation
+T90	Entity 3287 3296	integrins
+T91	Entity 3298 3319	cell-surface proteins
+T92	Entity 3323 3357	intracellular signalling molecules
+R24	participates_in Arg1:T85 Arg2:T86	
+R25	participates_in Arg1:T85 Arg2:T87	
+R26	participates_in Arg1:T85 Arg2:T88	
+R27	participates_in Arg1:T85 Arg2:T89	
+T93	Entity 3384 3397	severe ataxia
+T94	Entity 3399 3407	seizures
+T95	Entity 3452 3467;3475 3500	hypomyelination peripheral nervous system
+T96	KeyEntity 3504 3527	Adam22-null mutant mice
+T97	Entity 3578 3589	Adam23 gene
+T98	Entity 3614 3629	premature death
+T99	Entity 3646 3652	ataxia
+T100	Entity 3657 3663	tremor
+R28	is_part_of Arg1:T99 Arg2:T98	
+R29	is_part_of Arg1:T100 Arg2:T98	
+T101	Entity 3772 3783;3800 3804	Adam22-null mice
+T102	Entity 3788 3804	Adam23-null mice
+T103	KeyEntity 3807 3813	ADAM11
+T104	Entity 3840 3846	ADAM22
+T105	Entity 3851 3857	ADAM23
+T106	Entity 3896 3907	vertebrates
+T107	Entity 3920 3933	invertebrates
+T108	KeyEntity 3965 3988	Xenopus ADAM11 ortholog
+T109	KeyEntity 3990 3997	xMDC11a
+R30	other_relation Arg1:T108 Arg2:T109	
+#5	AnnotatorNotes R30	equivalent 
+T110	Entity 4041 4059	neural development
+T111	Entity 4085 4099	cell migration
+T112	Entity 4149 4162	Northern blot
+T113	Entity 4167 4188	in situ hybridisation
+T114	KeyEntity 4206 4224	murine Adam11 gene
+T115	Entity 4265 4285	adult nervous system
+T116	Entity 4250 4260;4271 4285	developing nervous system
+T117	KeyEntity 4337 4343	ADAM11
+T118	Entity 4350 4365	integrin binder
+T119	Entity 4402 4416	nervous system
+T120	Entity 4424 4430	ADAM22
+T121	Entity 4435 4441	ADAM23
+R31	is_subclass_of Arg1:T117 Arg2:T118	
+R32	participates_in Arg1:T117 Arg2:T119	
+R33	participates_in Arg1:T120 Arg2:T119	
+R34	participates_in Arg1:T121 Arg2:T119	
+T123	KeyEntity 4521 4546	Adam11 gene-targeted mice
+T122	KeyEntity 4487 4493	ADAM11
+T124	KeyEntity 4572 4593	ADAM11-deficient mice
+T125	KeyEntity 4638 4649	Adam11 gene
+T126	Entity 4668 4692	homologous recombination
+T127	Entity 4747 4769	Southern blot analysis
+T128	Entity 4856 4862	exon 5
+T129	Entity 4870 4888	pro-protein domain
+T130	Entity 4820 4837	termination codon
+T131	KeyEntity 4899 4913;4921 4935	truncated form ADAM11 protein
+T132	Entity 4992 5010	pro-protein domain
+T133	Entity 5034 5065	mature functional ADAM-proteins
+T134	Entity 5069 5089	furin-like proteases
+T135	Entity 5156 5170;5174 5188	truncated form ADAM11 protein
+T136	Entity 5218 5225;5229 5250	Absence mature ADAM11 protein
+T137	Entity 5254 5272	homozygous mutants
+T138	Entity 5290 5311	Western blot analysis
+T139	KeyEntity 5358 5372	ADAM11 protein
+T140	Entity 5396 5408	Western blot
+T141	Entity 5421 5441	heterozygous mutants
+T142	KeyEntity 5497 5511	ADAM11 protein
+T143	Entity 4595 4599	Mice
+T144	Entity 4611 4628	targeted mutation
+R35	is_part_of Arg1:T144 Arg2:T143	
+R36	is_part_of Arg1:T144 Arg2:T125	
+R37	is_part_of Arg1:T130 Arg2:T128	
+R38	is_part_of Arg1:T128 Arg2:T129	
+R39	is_part_of Arg1:T136 Arg2:T137	
+T145	KeyEntity 5514 5535	ADAM11-deficient mice
+T146	Entity 5566 5572;5576 5593	Mating mice heterozygous
+T147	KeyEntity 5602 5617	ADAM11 mutation
+T148	Entity 5628 5668	near-Mendelian distribution of genotypes
+T149	KeyEntity 5795 5821	ADAM11-deficient male mice
+T150	KeyEntity 5852 5863	C57BL/6NCrj
+T151	Entity 5890 5910	behavioural analyses
+T152	Entity 5915 5946	anatomical-histological studies
+T153	KeyEntity 5948 5980	Homozygous ADAM11-deficient mice
+T154	KeyEntity 6034 6045	Adam11 gene
+T155	KeyEntity 6661 6667	Adam11
+T156	Entity 6702 6713	hippocampus
+T157	Entity 6718 6728	cerebellum
+T158	Entity 6741 6752;6757 6798	hippocampus cerebellum-dependent behavioural analyses
+T159	Entity 6821 6842	ADAM11-deficient mice
+T160	Entity 6801 6817	Spatial learning
+T161	KeyEntity 6870 6876	ADAM11
+T162	Entity 6884 6895	hippocampus
+R40	is_part_of Arg1:T161 Arg2:T162	
+T163	Entity 6913 6937	spatial learning ability
+T164	KeyEntity 6941 6962	ADAM11-deficient mice
+T165	Entity 6973 6995	Morris Water Maze task
+R41	other_relation Arg1:T163 Arg2:T164	
+#6	AnnotatorNotes R41	attribute
+T166	Entity 7009 7013	mice
+T167	Entity 7032 7052	hidden platform task
+T168	KeyEntity 7128 7145	Adam11 (-/-) mice
+T169	Entity 6096 6129	gain in body weight of (-/-) mice
+T170	Entity 7181 7192;7196 7222	longer time locate the hidden platform
+R42	other_relation Arg1:T170 Arg2:T168	
+#7	AnnotatorNotes R42	attribute
+T171	Entity 8082 8109	spatial learning impairment
+T172	Entity 8113 8123	(-/-) mice
+R43	other_relation Arg1:T171 Arg2:T172	
+#8	AnnotatorNotes R43	attribute
+T173	Entity 8293 8325	(+/+), (+/-) and (-/-) genotypes
+T174	Entity 8241 8262	visible platform task
+T175	Entity 8393 8413;8421 8428;8433 8454	progressive decrease latency locating the platform
+T176	Entity 8598 8608	(-/-) mice
+T177	Entity 8614 8628	normal visible
+T178	Entity 8614 8620;8633 8647	normal motor function
+R44	other_relation Arg1:T177 Arg2:T176	
+#9	AnnotatorNotes R44	attribute
+R45	other_relation Arg1:T178 Arg2:T176	
+#10	AnnotatorNotes R45	attribute
+T179	Entity 8699 8713	Motor function
+T180	KeyEntity 8717 8738	ADAM11-deficient mice
+T181	KeyEntity 8766 8772	ADAM11
+T182	Entity 8780 8790	cerebellum
+T183	Entity 8808 8822	motor function
+T184	KeyEntity 8826 8847	ADAM11-deficient mice
+T185	Entity 8856 8873	rotating rod task
+T186	Entity 9120 9130	(+/-) mice
+T187	Entity 9136 9144;9148 9173	tendency decreased retention times
+R46	other_relation Arg1:T187 Arg2:T186	
+#11	AnnotatorNotes R46	attribute
+T188	KeyEntity 10319 10325	ADAM11
+T189	Entity 10340 10344	mice
+T191	KeyEntity 10350 10356;10361 10372	lacked Adam11 gene
+R47	is_part_of Arg1:T191 Arg2:T189	
+T190	KeyEntity 10404 10415	Adam11 gene
+T192	Entity 10436 10441	brain
+T193	Entity 10443 10448	heart
+T194	Entity 10450 10455	liver
+T195	Entity 10460 10466	testis
+T196	Entity 10485 10507	Northern blot analysis
+R48	other_relation Arg1:T190 Arg2:T192	
+#12	AnnotatorNotes R48	expressed
+R49	other_relation Arg1:T190 Arg2:T193	
+#13	AnnotatorNotes R49	expressed
+R50	other_relation Arg1:T190 Arg2:T194	
+#14	AnnotatorNotes R50	expressed
+R51	other_relation Arg1:T190 Arg2:T195	
+#15	AnnotatorNotes R51	expressed
+T197	KeyEntity 10529 10550	ADAM11-deficient mice
+T198	KeyEntity 10719 10730	Adam11 gene
+T199	KeyEntity 10817 10832;10836 10847	high expression ADAM11 mRNA
+T200	Entity 10855 10866	hippocampus
+T201	Entity 10871 10881	cerebellum
+R52	is_part_of Arg1:T199 Arg2:T200	
+R53	is_part_of Arg1:T199 Arg2:T201	
+T202	Entity 10921 10932;10938 10976	hippocampus cerebellum-dependent behavioural tests
+T203	KeyEntity 11003 11009	ADAM11
+T204	Entity 11017 11031	nervous system
+T205	Entity 11065 11076	hippocampus
+T206	Entity 11096 11107;11115 11161	performance hidden platform version of the water maze test
+T207	Entity 11169 11176;11184 11204	lesions hippocampal pathways
+T208	Entity 11222 11232;11236 11257	impairment learning in this task
+T209	KeyEntity 11293 11314	ADAM11-deficient mice
+R54	participates_in Arg1:T207 Arg2:T208	
+R55	participates_in Arg1:T205 Arg2:T206	
+T210	Entity 11375 11391	Spatial learning
+T211	KeyEntity 11657 11678	ADAM11-deficient mice
+T212	KeyEntity 11916 11937	ADAM11-deficient mice
+T213	Entity 11947 11974	spatial learning impairment
+R56	other_relation Arg1:T213 Arg2:T212	
+#16	AnnotatorNotes R56	attribute
+T214	Entity 11981 11991	cerebellum
+T215	Entity 12012 12031;12035 12057	smooth coordination somatic motor activity
+T216	Entity 12073 12084	muscle tone
+T217	Entity 12129 12140	equilibrium
+R57	regulates Arg1:T214 Arg2:T216	
+R58	regulates Arg1:T214 Arg2:T215	
+R59	regulates Arg1:T214 Arg2:T217	
+T218	Entity 12178 12188	cerebellum
+T219	Entity 12208 12219;12227 12244	performance rotating rod task
+R60	participates_in Arg1:T218 Arg2:T219	
+T220	KeyEntity 12579 12600	ADAM11-deficient mice
+T221	KeyEntity 12485 12506	ADAM11-deficient mice
+T222	KeyEntity 12701 12722	ADAM11-deficient mice
+T223	Entity 12730 12737;12741 12759	deficit motor coordination
+T224	Entity 12835 12848;12853 12861	motor ability swimming
+T225	KeyEntity 12865 12886	ADAM11-deficient mice
+T226	KeyEntity 28909 28930	ADAM11-deficient mice
+T227	KeyEntity 28713 28734	ADAM11-deficient mice
+T228	Entity 28604 28625	ADAM11-deficient mice
+T229	Entity 28367 28388	ADAM11-deficient mice
+T230	Entity 27667 27689	Morris water maze task
+T231	KeyEntity 27693 27714	ADAM11-deficient mice
+T232	KeyEntity 26293 26299	Adam11
+T233	KeyEntity 26330 26344	ADAM11 protein
+T234	KeyEntity 26500 26511	Adam11 gene
+T235	Entity 26716 26738	Southern blot analysis
+T236	Entity 27166 27187	Western blot analysis
+T237	KeyEntity 27191 27208	ADAM11 expression
+T238	KeyEntity 27245 27259	ADAM11 protein
+T239	Entity 25351 25368	buffered formalin
+T240	Entity 25373 25393	embedded in paraffin
+T241	Entity 21400 21422	Morris water maze task
+T242	Entity 21446 21466	Hidden platform task
+T243	Entity 22102 22113	Probe trial
+T244	Entity 22566 22587	Visible platform task
+T245	Entity 19618 19632	ADAM11 protein
+T246	Entity 19668 19689	Western blot analysis
+T247	Entity 19364 19386	Southern blot analysis
+T248	Entity 18736 18740	AGN1
+T249	Entity 18807 18813	SGN033
+T250	KeyEntity 18045 18056	Adam11 gene
+T251	KeyEntity 18221 18232	Adam11 gene
+T252	Entity 18103 18106	PCR
+T253	KeyEntity 17327 17348	ADAM11-deficient mice
+T254	Entity 17582 17620;17695 17703	hippocampus-dependent spatial learning impaired
+T255	Entity 17625 17664;17695 17703	cerebellum-dependent motor coordination impaired
+T256	KeyEntity 17668 17689	ADAM11-deficient mice
+R61	other_relation Arg1:T255 Arg2:T256	
+#17	AnnotatorNotes R61	attribute
+R62	other_relation Arg1:T254 Arg2:T256	
+#18	AnnotatorNotes R62	attribute
+T257	Entity 17722 17732;17750 17755	water maze tasks
+T258	Entity 17738 17755	otating rod tasks
+T259	KeyEntity 16461 16482	ADAM11-deficient mice
+T260	Entity 16560 16567;16571 16587;16592 16609	deficit spatial learning motor dysfunction
+R63	other_relation Arg1:T260 Arg2:T259	
+#19	AnnotatorNotes R63	attribute
+T261	KeyEntity 16630 16642;16647 16658	mice lacking Adam22 gene
+T262	Entity 16673 16679	ataxia
+T263	Entity 16681 16713;16721 16738	exhibited marked hypomyelination peripheral nerves
+T264	Entity 16744 16763	died before weaning
+T265	KeyEntity 16787 16798	Adam23 gene
+T266	KeyEntity 16889 16895	ADAM11
+T267	KeyEntity 16897 16903	ADAM22
+T268	KeyEntity 16908 16914	ADAM23
+T269	KeyEntity 17019 17025	ADAM11
+T270	KeyEntity 17027 17033	ADAM22
+T271	KeyEntity 17038 17044	ADAM23
+T272	Entity 13062 13072	cerebellum
+T273	Entity 13125 13185	learning associated with component movement (motor learning)
+R64	participates_in Arg1:T272 Arg2:T273	
+T274	Entity 13196 13210;13214 13262	retention time synaptotagmin (Syt) IV-deficient mice on the rod
+T275	Entity 13267 13288	significantly shorter
+R65	other_relation Arg1:T275 Arg2:T274	
+#20	AnnotatorNotes R65	attribute
+T276	Entity 13460 13479;13487 13526	performance deficit rotating rod task in the Syt IV mutants
+T277	Entity 13533 13551	motor coordination
+R66	participates_in Arg1:T277 Arg2:T276	
+T278	KeyEntity 13628 13649	ADAM11-deficient mice
+T279	Entity 13687 13717	mproved motor learning ability
+T280	Entity 13725 13749	rotating rod performance
+R67	other_relation Arg1:T279 Arg2:T278	
+#21	AnnotatorNotes R67	attribute
+T281	KeyEntity 13793 13814	ADAM11-deficient mice
+T282	KeyEntity 13962 13983	ADAM11-deficient mice
+R68	other_relation Arg1:T223 Arg2:T222	
+#22	AnnotatorNotes R68	attribute
+T283	Entity 14497 14508	hippocampus
+T284	Entity 14513 14523	cerebellum
+T285	Entity 14549 14567	dominant phenotype
+T286	Entity 14569 14596	spatial learning impairment
+T287	Entity 14601 14622	motor discoordination
+R69	participates_in Arg1:T284 Arg2:T285	
+R70	participates_in Arg1:T284 Arg2:T286	
+R71	participates_in Arg1:T284 Arg2:T287	
+R72	participates_in Arg1:T283 Arg2:T285	
+R73	participates_in Arg1:T283 Arg2:T286	
+R74	participates_in Arg1:T283 Arg2:T287	
+T288	KeyEntity 14626 14647	ADAM11-deficient mice
+R75	is_part_of Arg1:T283 Arg2:T288	
+R76	is_part_of Arg1:T284 Arg2:T288	
+T289	Entity 14649 14679	In situ hybridisation analysis
+T290	KeyEntity 14693 14715	Adam11 gene expression
+T291	Entity 14723 14738	pyramidal cells
+R77	other_relation Arg1:T290 Arg2:T291	
+#23	AnnotatorNotes R77	attribute
+T292	Entity 14742 14756	CA1–CA3 fields
+T293	Entity 14761 14774	granule cells
+R78	is_part_of Arg1:T291 Arg2:T292	
+R79	other_relation Arg1:T290 Arg2:T293	
+#24	AnnotatorNotes R79	attribute
+T294	Entity 14782 14795	dentate gyrus
+R80	is_part_of Arg1:T293 Arg2:T294	
+T295	Entity 14803 14814	hippocampus
+T296	Entity 14822 14836	granular cells
+T297	Entity 14844 14854	cerebellum
+R81	is_part_of Arg1:T296 Arg2:T297	
+T298	KeyEntity 15093 15114	ADAM11-deficient mice
+T299	Entity 15154 15165	HE staining
+T300	KeyEntity 15203 15209	ADAM11
+T301	Entity 15226 15239;15256 15273	neuron-neuron cell interactions
+T302	Entity 15243 15273	neuron-glial cell interactions
+R82	participates_in Arg1:T300 Arg2:T302	
+R83	participates_in Arg1:T300 Arg2:T301	
+T303	Entity 15360 15378	adhesion molecules
+T304	Entity 15388 15424	neural cell adhesion molecule (NCAM)
+R84	is_subclass_of Arg1:T304 Arg2:T303	
+T305	Entity 15453 15504	cell interactions during nervous system development
+T306	Entity 15556 15603	synaptic plasticity in the adult nervous system
+R85	participates_in Arg1:T303 Arg2:T305	
+R86	regulates Arg1:T303 Arg2:T306	
+T308	Entity 15648 15659	hippocampus
+T309	Entity 15756 15784	long-term potentiation (LTP)
+T310	Entity 15820 15836	synaptic changes
+T307	Entity 15610 15640	Changes in neuron excitability
+R87	participates_in Arg1:T307 Arg2:T309	
+T311	Entity 15857 15876	learning and memory
+R88	participates_in Arg1:T310 Arg2:T311	
+R89	other_relation Arg1:T310 Arg2:T309	
+#25	AnnotatorNotes R89	equivalent 
+T312	Entity 15914 15940	mice lacking NMDA receptor
+T313	Entity 15950 15954;15964 15972	NR2A subunits
+T314	Entity 15959 15972	NR2C subunits
+T315	Entity 16091 16115	cerebellar granule cells
+T316	Entity 16011 16015;16040 16087	loss evoked excitatory postsynaptic currents (EPSCs)
+T317	Entity 16011 16015;16024 16035;16047 16087	loss spontaneous excitatory postsynaptic currents (EPSCs)
+T318	Entity 15980 15997	motor dysfunction
+R90	is_part_of Arg1:T316 Arg2:T312	
+R91	is_part_of Arg1:T317 Arg2:T312	
+R92	is_part_of Arg1:T318 Arg2:T312	
+T319	KeyEntity 16330 16336	ADAM11

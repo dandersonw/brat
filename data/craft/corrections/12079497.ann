@@ -7,8 +7,8 @@ T19.sandy	KeyEntity 898 938	enhanced cyan fluorescent protein (ECFP)
 T23.sandy	KeyEntity 1080 1086	DsRed1
 T24.sandy	Entity 1098 1130	red fluorescent protein reporter
 T25.sandy	Entity 1156 1172	Discostoma coral
-T26.sandy	Entity 1339 1343;1352 1373	ECFP GFP-variant reporters
-T27.sandy	Entity 1347 1373	EYFP GFP-variant reporters
+T26.sandy	KeyEntity 1339 1343;1352 1373	ECFP GFP-variant reporters
+T27.sandy	KeyEntity 1347 1373	EYFP GFP-variant reporters
 T28.sandy	KeyEntity 1422 1428	DsRed1
 T33.sandy	Entity 1837 1858	GFP variant reporters
 T34.sandy	Entity 1882 1923	non-invasive multi-spectral visualization
@@ -16,7 +16,7 @@ T40.sandy	Entity 2119 2127	chimeras
 T41.sandy	Entity 2131 2147	transplantations
 T42.sandy	Entity 0 20	Embryonic stem cells
 T3.sandy	KeyEntity 943 985	enhanced yellow fluorescent protein (EYFP)
-T11.sandy	Entity 1954 1989	EYFP-expressing transgenic ES cells
+T11.sandy	KeyEntity 1954 1989	EYFP-expressing transgenic ES cells
 T2.sandy	Entity 210 226	lineage labeling
 T5.sandy	Entity 320 344	bioluminescent jellyfish
 T8.sandy	Entity 632 639	in vivo
@@ -34,8 +34,8 @@ T11.kevin	Entity 839 885	embryonic stem (ES) cell-mediated transgenesis
 T14.kevin	KeyEntity 1022 1058	color variants of wild type (wt) GFP
 T18.kevin	KeyEntity 1202 1205	GFP
 T22.kevin	KeyEntity 1452 1458	DsRed1
-T24.kevin	Entity 1674 1687	EYFP ES cells
-T26.kevin	KeyEntity 1945 1949	ECFP
+T24.kevin	KeyEntity 1674 1687	EYFP ES cells
+T26.kevin	KeyEntity 1945 1949;1958 1989	ECFP -expressing transgenic ES cells
 T30.kevin	Entity 2063 2117	combinatorial, double-tagged recombination experiments
 T31.kevin	Entity 484 504	gene-based reporters
 T33.kevin	Entity 1249 1257	ES cells
@@ -52,6 +52,6 @@ R7.kevin	is_subclass_of Arg1:T3.sandy Arg2:T14.kevin
 R8.kevin	is_subclass_of Arg1:T23.sandy Arg2:T24.sandy	
 R1	interacts_with Arg1:T11.kevin Arg2:T19.sandy	
 T1	Entity 388 393;409 423	mouse gene targeting
-T2	Entity 1665 1669;1679 1687	ECFP ES cells
+T2	KeyEntity 1665 1669;1679 1687	ECFP ES cells
 R2	interacts_with Arg1:T2 Arg2:T32.sandy	
 R3	interacts_with Arg1:T24.kevin Arg2:T32.sandy	

@@ -31,7 +31,7 @@ T34.sandy	Entity 1653 1676	dorsolateral mesenchyme
 T36.sandy	Entity 1820 1830	T-box gene
 T37.sandy	Entity 1841 1862	embryonic development
 T38.sandy	Entity 2065 2080	body morphology
-T40.sandy	Entity 1910 1933	dorsoventral patterning
+T40.sandy	KeyEntity 1910 1933	dorsoventral patterning
 T41.sandy	Entity 744 764	embryonic expression
 T42.sandy	Entity 1393 1413	embryonic expression
 T43.sandy	Entity 1620 1640	Embryonic expression

@@ -1,77 +1,61 @@
 T1.sandy	Entity 132 141	proteases
 T2.sandy	Entity 143 153	secretases
-T6.sandy	FIX_TYPE 199 230	amyloid precursor protein (APP)
-T7.sandy	Entity 318 335	Alzheimer disease
-T11.sandy	FIX_TYPE 791 804	Aβ production
-T13.sandy	FIX_TYPE 929 940	doxycycline
+T6.sandy	KeyEntity 199 230	amyloid precursor protein (APP)
+T7.sandy	KeyEntity 318 335	Alzheimer disease
+T11.sandy	KeyEntity 791 804	Aβ production
+T13.sandy	KeyEntity 929 940	doxycycline
 T14.sandy	Entity 1012 1039	fulminant amyloid pathology
 T17.sandy	Entity 1090 1115	transgenic APP expression
-T19.sandy	Entity 1216 1239	transgenic Aβ synthesis
-T22.sandy	Entity 1348 1364	amyloid deposits
-T24.sandy	FIX_TYPE 1474 1487	APP synthesis
-T25.sandy	FIX_TYPE 1546 1557	Aβ deposits
-T26.sandy	Entity 1674 1689	amyloid lesions
-T27.sandy	Entity 1803 1826	arresting Aβ production
-T30.sandy	FIX_TYPE 1967 1983	amyloid deposits
-T4.sandy	FIX_SPAN_KeyEntity 167 181	amyloid-β (Aβ)
-T8.sandy	FIX_SPAN_Entity 366 388	reducing Aβ production
-T9.sandy	VERIFY_Entity 510 534	repair of damaged tissue
-T10.sandy	FIX_SPAN_Entity 539 565	removal of amyloid lesions
-T12.sandy	FIX_SPAN_Entity 867 889	overexpress mutant APP
-T15.sandy	FIX_SPAN_Entity 967 995	high-level expression of APP
-T16.sandy	FIX_SPAN_Entity 1054 1065	doxycycline
-T18.sandy	FIX_SPAN_Entity 1140 1161	reduces Aβ production
-T20.sandy	FIX_SPAN_Entity 1288 1305	amyloid pathology
-T21.sandy	VERIFY_Entity 1316 1344	formation and disaggregation
-T23.sandy	VERIFY_Entity 1381 1395	disequilibrium
-T28.sandy	VERIFY_Entity 1869 1889	halt the progression
-T29.sandy	VERIFY_Entity 1913 1928	early treatment
-T31.sandy	FIX_SPAN_Entity 1713 1737	highly stable structures
-T32.sandy	VERIFY_Entity 1755 1775	slow to disaggregate
-T33.sandy	VERIFY_KeyEntity 0 22	Persistent Amyloidosis
-T34.sandy	VERIFY_KeyEntity 33 61	Suppression of Aβ Production
-T35.sandy	VERIFY_KeyEntity 87 104	Alzheimer Disease
-T2.kevin	FIX_SPAN_Entity 167 189	amyloid-β (Aβ) peptide
-T5.kevin	FIX_SPAN_KeyEntity 375 388	Aβ production
-T6.kevin	VERIFY_Entity 396 401	brain
-T7.kevin	FIX_SPAN_Entity 550 565	amyloid lesions
-T9.kevin	VERIFY_Entity 730 752	transgenic mouse model
-T11.kevin	VERIFY_Entity 834 854	secretase inhibitors
-T12.kevin	VERIFY_Entity 862 866	mice
-T13.kevin	FIX_SPAN_KeyEntity 879 889	mutant APP
-T15.kevin	FIX_SPAN_Entity 967 988;992 995	high-level expression APP
-T17.kevin	VERIFY_Entity 1693 1708	transgenic mice
-T19.kevin	VERIFY_Entity 1830 1861	patients with Alzheimer disease
-T22.kevin	FIX_SPAN_KeyEntity 1054 1080	doxycycline administration
-T24.kevin	FIX_SPAN_Entity 1148 1161	Aβ production
-T29.kevin	VERIFY_Entity 1580 1592	amyloid load
-T30.kevin	VERIFY_Entity 1181 1199	nontransgenic mice
-T31.kevin	FIX_SPAN_Entity 1273 1305	progression of amyloid pathology
-T32.kevin	FIX_SPAN_Entity 1720 1737	stable structures
+T19.sandy	KeyEntity 1216 1239	transgenic Aβ synthesis
+T22.sandy	KeyEntity 1348 1364	amyloid deposits
+T24.sandy	KeyEntity 1474 1487	APP synthesis
+T25.sandy	KeyEntity 1546 1557	Aβ deposits
+T26.sandy	KeyEntity 1674 1689	amyloid lesions
+T27.sandy	KeyEntity 1803 1826	arresting Aβ production
+T30.sandy	KeyEntity 1967 1983	amyloid deposits
+T8.sandy	KeyEntity 366 388	reducing Aβ production
+T12.sandy	Entity 867 889	overexpress mutant APP
+T18.sandy	KeyEntity 1140 1161	reduces Aβ production
+T20.sandy	KeyEntity 1288 1305	amyloid pathology
+T23.sandy	Entity 1381 1395	disequilibrium
+T31.sandy	Entity 1713 1737	highly stable structures
+T33.sandy	KeyEntity 0 22	Persistent Amyloidosis
+T35.sandy	KeyEntity 87 104	Alzheimer Disease
+T2.kevin	KeyEntity 167 189	amyloid-β (Aβ) peptide
+T7.kevin	Entity 550 565	amyloid lesions
+T9.kevin	Entity 730 752	transgenic mouse model
+T11.kevin	Entity 834 854	secretase inhibitors
+T12.kevin	Entity 862 866	mice
+T15.kevin	Entity 967 988	high-level expression
+T17.kevin	Entity 1693 1708	transgenic mice
+T22.kevin	KeyEntity 1054 1080	doxycycline administration
+T29.kevin	KeyEntity 1580 1592	amyloid load
+T30.kevin	Entity 1181 1199	nontransgenic mice
 R1.sandy	is_subclass_of Arg1:T2.sandy Arg2:T1.sandy	
-R4.sandy	VERIFY_interacts_with Arg1:T6.sandy Arg2:T7.sandy	
-R5.sandy	VERIFY_participates_in Arg1:T8.sandy Arg2:T9.sandy	
-R6.sandy	VERIFY_participates_in Arg1:T8.sandy Arg2:T10.sandy	
-R7.sandy	VERIFY_regulates Arg1:T13.sandy Arg2:T12.sandy	
-R8.sandy	VERIFY_regulates Arg1:T15.sandy Arg2:T14.sandy	
-R9.sandy	VERIFY_regulates Arg1:T16.sandy Arg2:T17.sandy	
-R10.sandy	VERIFY_regulates Arg1:T16.sandy Arg2:T18.sandy	
-R11.sandy	VERIFY_participates_in Arg1:T19.sandy Arg2:T20.sandy	
-R12.sandy	VERIFY_participates_in Arg1:T21.sandy Arg2:T22.sandy	
-R13.sandy	VERIFY_participates_in Arg1:T22.sandy Arg2:T23.sandy	
-R14.sandy	VERIFY_interacts_with Arg1:T24.sandy Arg2:T25.sandy	
-R15.sandy	VERIFY_participates_in Arg1:T26.sandy Arg2:T31.sandy	
-R16.sandy	VERIFY_participates_in Arg1:T26.sandy Arg2:T32.sandy	
-R17.sandy	VERIFY_regulates Arg1:T27.sandy Arg2:T28.sandy	
-R18.sandy	VERIFY_interacts_with Arg1:T34.sandy Arg2:T33.sandy	
-R19.sandy	VERIFY_participates_in Arg1:T33.sandy Arg2:T35.sandy	
-R2.kevin	VERIFY_interacts_with Arg1:T1.sandy Arg2:T2.kevin	
-R3.kevin	VERIFY_is_part_of Arg1:T2.kevin Arg2:T6.sandy	
-R5.kevin	VERIFY_regulates Arg1:T13.sandy Arg2:T12.kevin	
-R6.kevin	VERIFY_is_part_of Arg1:T26.sandy Arg2:T17.kevin	
-R7.kevin	VERIFY_participates_in Arg1:T27.sandy Arg2:T19.kevin	
-R8.kevin	VERIFY_participates_in Arg1:T15.kevin Arg2:T14.sandy	
-R9.kevin	VERIFY_regulates Arg1:T22.kevin Arg2:T17.sandy	
-R10.kevin	VERIFY_interacts_with Arg1:T22.kevin Arg2:T24.kevin	
-R11.kevin	VERIFY_regulates Arg1:T19.sandy Arg2:T31.kevin	
-R12.kevin	VERIFY_regulates Arg1:T32.kevin Arg2:T26.sandy	
+R7.sandy	regulates Arg1:T13.sandy Arg2:T12.sandy	
+R11.sandy	regulates Arg1:T19.sandy Arg2:T20.sandy	
+R13.sandy	participates_in Arg1:T22.sandy Arg2:T23.sandy	
+R15.sandy	participates_in Arg1:T26.sandy Arg2:T31.sandy	
+R19.sandy	participates_in Arg1:T33.sandy Arg2:T35.sandy	
+R2.kevin	interacts_with Arg1:T1.sandy Arg2:T2.kevin	
+R3.kevin	is_part_of Arg1:T2.kevin Arg2:T6.sandy	
+R6.kevin	is_part_of Arg1:T26.sandy Arg2:T17.kevin	
+R9.kevin	regulates Arg1:T22.kevin Arg2:T17.sandy	
+T1	KeyEntity 1844 1861	Alzheimer disease
+R1	regulates Arg1:T27.sandy Arg2:T1	
+T2	Entity 1763 1775	disaggregate
+R2	participates_in Arg1:T26.sandy Arg2:T2	
+R3	regulates Arg1:T22.kevin Arg2:T18.sandy	
+T3	KeyEntity 48 61	Aβ Production
+T4	Entity 520 534	damaged tissue
+R4	participates_in Arg1:T8.sandy Arg2:T4	
+R5	participates_in Arg1:T8.sandy Arg2:T7.kevin	
+R6	participates_in Arg1:T3 Arg2:T33.sandy	
+T5	KeyEntity 992 995	APP
+R7	participates_in Arg1:T5 Arg2:T15.kevin	
+R8	regulates Arg1:T5 Arg2:T14.sandy	
+T6	Entity 1316 1325	formation
+T7	Entity 1330 1344	disaggregation
+R9	participates_in Arg1:T22.sandy Arg2:T7	
+R10	participates_in Arg1:T22.sandy Arg2:T6	
+R11	participates_in Arg1:T1.sandy Arg2:T7.sandy	

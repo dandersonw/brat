@@ -7,7 +7,7 @@ T11.sandy	Entity 681 699	growth retardation
 T12.sandy	Entity 701 727	altered kidney development
 T13.sandy	Entity 747 758	exencephaly
 T14.sandy	Entity 763 775	cleft palate
-T19.sandy	FIX_TYPE 1151 1156	Pygo1
+T19.sandy	KeyEntity 1151 1156;1167 1172	Pygo1 genes
 T21.sandy	Entity 1259 1283	stromal cell compartment
 T22.sandy	Entity 1363 1375	ureteric bud
 T23.sandy	Entity 1380 1423	metanephric mesenchyme-derived compartments
@@ -25,67 +25,57 @@ T39.sandy	Entity 1970 2000	normal branching morphogenesis
 T42.sandy	Entity 2261 2278	Pygo1/Pygo2 genes
 T43.sandy	Entity 2386 2410	quantitative transducers
 T44.sandy	Entity 2430 2450	Wnt signal intensity
-T3.sandy	FIX_SPAN_Entity 163 205	Armadillo (β-catenin) transcription factor
-T5.sandy	FIX_SPAN_KeyEntity 217 240	canonical Wnt signaling
-T9.sandy	FIX_SPAN_Entity 497 516	critical PHD domain
-T15.sandy	FIX_SPAN_KeyEntity 971 997	BAT-gal transgene reporter
-T16.sandy	FIX_SPAN_KeyEntity 1001 1024	canonical Wnt signaling
-T17.sandy	VERIFY_Entity 1096 1121	tissue-specific variation
-T18.sandy	VERIFY_Entity 1214 1231	developing kidney
-T20.sandy	FIX_SPAN_KeyEntity 1161 1166	Pygo2
-T24.sandy	VERIFY_Entity 1487 1500	expanded tips
-T25.sandy	VERIFY_Entity 1425 1448	Branching morphogenesis
-T27.sandy	VERIFY_Entity 1505 1524	reduced tip density
-T28.sandy	FIX_SPAN_Entity 1641 1661	condensed mesenchyme
-T37.sandy	VERIFY_Entity 1310 1331	double mutant kidneys
-T40.sandy	FIX_SPAN_Entity 2008 2020	ureteric bud
-T41.sandy	FIX_SPAN_Entity 2028 2046	kidney development
-T2.sandy	VERIFY_KeyEntity 0 5	Pygo1
-T4.sandy	VERIFY_KeyEntity 10 15	Pygo2
-T45.sandy	VERIFY_KeyEntity 25 38	Wnt signaling
-T46.sandy	VERIFY_KeyEntity 42 70	mammalian kidney development
-T2.kevin	VERIFY_Entity 114 124	Drosophila
-T3.kevin	FIX_SPAN_Entity 163 213	Armadillo (β-catenin) transcription factor complex
-T4.kevin	FIX_SPAN_KeyEntity 227 240	Wnt signaling
-T5.kevin	VERIFY_KeyEntity 280 320	Pygopus-mediated canonical Wnt signaling
-T11.kevin	FIX_SPAN_Entity 2008 2046	ureteric bud during kidney development
-T12.kevin	VERIFY_Entity 2108 2114	kidney
-T13.kevin	VERIFY_Entity 2169 2212	evolutionary divergence of Pygopus function
-T14.kevin	VERIFY_Entity 2233 2243	Drosophila
-T15.kevin	VERIFY_Entity 2221 2228	mammals
-T17.kevin	VERIFY_Entity 2311 2334	canonical Wnt signaling
-T20.kevin	FIX_SPAN_Entity 506 516	PHD domain
-T21.kevin	VERIFY_Entity 566 590	Pygo2 homozygous mutants
-T27.kevin	VERIFY_Entity 777 801	Pygo1 homozygous mutants
-T28.kevin	VERIFY_Entity 886 916	Pygo1/Pygo2 homozygous mutants
-T29.kevin	FIX_SPAN_Entity 971 1024	BAT-gal transgene reporter of canonical Wnt signaling
-T30.kevin	VERIFY_Entity 1032 1089	reduced levels of expression in Pygo1-/-/Pygo2-/- mutants
-T31.kevin	VERIFY_Entity 1125 1145	degree of diminution
-T33.kevin	FIX_SPAN_Entity 1161 1172	Pygo2 genes
-T35.kevin	VERIFY_Entity 1285 1302	Confocal analysis
-T39.kevin	FIX_SPAN_Entity 1651 1661	mesenchyme
-T41.kevin	VERIFY_Entity 1688 1705	Nephron formation
-T42.kevin	VERIFY_Entity 1736 1755	Microarray analysis
-R3.sandy	VERIFY_participates_in Arg1:T3.sandy Arg2:T5.sandy	
-R4.sandy	VERIFY_participates_in Arg1:T15.sandy Arg2:T16.sandy	
-R5.sandy	VERIFY_participates_in Arg1:T15.sandy Arg2:T17.sandy	
-R6.sandy	VERIFY_is_part_of Arg1:T19.sandy Arg2:T18.sandy	
-R7.sandy	VERIFY_is_part_of Arg1:T20.sandy Arg2:T18.sandy	
-R8.sandy	VERIFY_is_part_of Arg1:T21.sandy Arg2:T18.sandy	
-R9.sandy	VERIFY_participates_in Arg1:T37.sandy Arg2:T22.sandy	
-R10.sandy	VERIFY_participates_in Arg1:T37.sandy Arg2:T23.sandy	
-R11.sandy	VERIFY_interacts_with Arg1:T25.sandy Arg2:T26.sandy	
-R12.sandy	VERIFY_interacts_with Arg1:T28.sandy Arg2:T29.sandy	
-R13.sandy	VERIFY_is_subclass_of Arg1:T32.sandy Arg2:T30.sandy	
-R14.sandy	VERIFY_is_subclass_of Arg1:T33.sandy Arg2:T30.sandy	
-R15.sandy	VERIFY_is_subclass_of Arg1:T34.sandy Arg2:T30.sandy	
-R16.sandy	VERIFY_is_subclass_of Arg1:T35.sandy Arg2:T30.sandy	
-R17.sandy	VERIFY_is_subclass_of Arg1:T36.sandy Arg2:T30.sandy	
-R18.sandy	VERIFY_participates_in Arg1:T30.sandy Arg2:T31.sandy	
-R19.sandy	VERIFY_regulates Arg1:T38.sandy Arg2:T39.sandy	
-R20.sandy	VERIFY_participates_in Arg1:T39.sandy Arg2:T40.sandy	
-R22.sandy	VERIFY_is_part_of Arg1:T42.sandy Arg2:T43.sandy	
-R23.sandy	VERIFY_participates_in Arg1:T43.sandy Arg2:T44.sandy	
-R1.sandy	VERIFY_participates_in Arg1:T4.sandy Arg2:T45.sandy	
-R2.sandy	VERIFY_participates_in Arg1:T2.sandy Arg2:T45.sandy	
-R24.sandy	VERIFY_is_part_of Arg1:T45.sandy Arg2:T46.sandy	
+T15.sandy	KeyEntity 971 997	BAT-gal transgene reporter
+T16.sandy	KeyEntity 1001 1024	canonical Wnt signaling
+T17.sandy	Entity 1096 1121	tissue-specific variation
+T18.sandy	Entity 1214 1231	developing kidney
+T24.sandy	Entity 1487 1500	expanded tips
+T25.sandy	Entity 1425 1448	Branching morphogenesis
+T27.sandy	Entity 1505 1524	reduced tip density
+T28.sandy	Entity 1641 1661	condensed mesenchyme
+T37.sandy	Entity 1310 1331	double mutant kidneys
+T40.sandy	Entity 2008 2020	ureteric bud
+T41.sandy	Entity 2028 2046	kidney development
+T2.sandy	KeyEntity 0 5	Pygo1
+T4.sandy	KeyEntity 10 15	Pygo2
+T45.sandy	KeyEntity 25 38	Wnt signaling
+T46.sandy	KeyEntity 42 70	mammalian kidney development
+T2.kevin	Entity 114 124	Drosophila
+T3.kevin	Entity 163 213	Armadillo (β-catenin) transcription factor complex
+T5.kevin	KeyEntity 280 320	Pygopus-mediated canonical Wnt signaling
+T13.kevin	Entity 2169 2212	evolutionary divergence of Pygopus function
+T14.kevin	Entity 2233 2243	Drosophila
+T17.kevin	KeyEntity 2311 2334	canonical Wnt signaling
+T20.kevin	Entity 506 516	PHD domain
+T21.kevin	KeyEntity 566 590	Pygo2 homozygous mutants
+T27.kevin	KeyEntity 777 801	Pygo1 homozygous mutants
+T28.kevin	KeyEntity 886 916	Pygo1/Pygo2 homozygous mutants
+T33.kevin	KeyEntity 1161 1172	Pygo2 genes
+T35.kevin	Entity 1285 1302	Confocal analysis
+T41.kevin	Entity 1688 1705	Nephron formation
+T42.kevin	Entity 1736 1755	Microarray analysis
+R4.sandy	participates_in Arg1:T15.sandy Arg2:T16.sandy	
+R5.sandy	participates_in Arg1:T15.sandy Arg2:T17.sandy	
+R8.sandy	is_part_of Arg1:T21.sandy Arg2:T18.sandy	
+R9.sandy	is_part_of Arg1:T22.sandy Arg2:T37.sandy	
+R10.sandy	is_part_of Arg1:T23.sandy Arg2:T37.sandy	
+R11.sandy	participates_in Arg1:T26.sandy Arg2:T25.sandy	
+R12.sandy	interacts_with Arg1:T28.sandy Arg2:T29.sandy	
+R13.sandy	is_subclass_of Arg1:T32.sandy Arg2:T30.sandy	
+R14.sandy	is_subclass_of Arg1:T33.sandy Arg2:T30.sandy	
+R15.sandy	is_subclass_of Arg1:T34.sandy Arg2:T30.sandy	
+R16.sandy	is_subclass_of Arg1:T35.sandy Arg2:T30.sandy	
+R17.sandy	is_subclass_of Arg1:T36.sandy Arg2:T30.sandy	
+R18.sandy	participates_in Arg1:T30.sandy Arg2:T31.sandy	
+R19.sandy	regulates Arg1:T38.sandy Arg2:T39.sandy	
+R20.sandy	participates_in Arg1:T40.sandy Arg2:T39.sandy	
+R22.sandy	is_subclass_of Arg1:T42.sandy Arg2:T43.sandy	
+R1.sandy	participates_in Arg1:T4.sandy Arg2:T45.sandy	
+R2.sandy	participates_in Arg1:T2.sandy Arg2:T45.sandy	
+R24.sandy	participates_in Arg1:T45.sandy Arg2:T46.sandy	
+T1	KeyEntity 217 240	canonical Wnt signaling
+R1	participates_in Arg1:T3.kevin Arg2:T1	
+R2	participates_in Arg1:T19.sandy Arg2:T18.sandy	
+R3	participates_in Arg1:T33.kevin Arg2:T18.sandy	
+T2	KeyEntity 1064 1089	Pygo1-/-/Pygo2-/- mutants
+R4	regulates Arg1:T42.sandy Arg2:T44.sandy	

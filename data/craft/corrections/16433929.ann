@@ -4,77 +4,62 @@ T3.sandy	Entity 214 236	degenerative processes
 T4.sandy	Entity 241 251	cell death
 T5.sandy	KeyEntity 95 104	μ-calpain
 T6.sandy	KeyEntity 109 118	m-calpain
-T9.sandy	FIX_TYPE 420 425	Capn4
+T9.sandy	KeyEntity 420 425	Capn4
 T11.sandy	Entity 527 546	embryonic lethality
 T12.sandy	KeyEntity 729 737	-calpain
 T17.sandy	Entity 988 1009	embryonic stems cells
 T20.sandy	KeyEntity 1395 1405	Capn2 gene
 T21.sandy	Entity 1417 1453	pre-implantation embryonic lethality
-T24.sandy	FIX_TYPE 1517 1526	μ-calpain
+T24.sandy	KeyEntity 1517 1526	μ-calpain
 T25.sandy	KeyEntity 1531 1540	m-calpain
-T7.sandy	FIX_SPAN_KeyEntity 337 342	Capn1
-T8.sandy	FIX_SPAN_Entity 358 363	Capn2
-T10.sandy	FIX_SPAN_KeyEntity 451 461	Capn4 gene
-T13.sandy	VERIFY_Entity 744 754	compensate
-T14.sandy	FIX_SPAN_Entity 794 811	loss of m-calpain
-T15.sandy	FIX_SPAN_Entity 832 837	death
-T16.sandy	FIX_SPAN_Entity 974 979	Capn2
-T18.sandy	FIX_SPAN_KeyEntity 1296 1302	morula
-T19.sandy	FIX_SPAN_Entity 1244 1274	preimplantation mutant embryos
-T22.sandy	FIX_SPAN_KeyEntity 1466 1472	morula
-T23.sandy	VERIFY_Entity 1477 1487	blastocyst
-T26.sandy	FIX_SPAN_Entity 1588 1609	vital for development
-T27.sandy	FIX_SPAN_Entity 1617 1646	preimplantation murine embryo
-T28.sandy	FIX_SPAN_KeyEntity 344 353	μ-calpain
-T29.sandy	FIX_SPAN_KeyEntity 365 374	m-calpain
-T30.sandy	VERIFY_KeyEntity 1 9	-Calpain
-T31.sandy	VERIFY_KeyEntity 26 63	preimplantation embryonic development
-T32.sandy	VERIFY_Entity 67 71	mice
-T3.kevin	VERIFY_Entity 123 155	ubiquitously expressed proteases
-T8.kevin	VERIFY_Entity 259 280	heterodimeric enzymes
-T9.kevin	FIX_SPAN_KeyEntity 337 354	Capn1 (μ-calpain)
-T10.kevin	FIX_SPAN_KeyEntity 358 375	Capn2 (m-calpain)
-T12.kevin	FIX_SPAN_Entity 445 461	mouse Capn4 gene
-T14.kevin	VERIFY_KeyEntity 491 509	m-calpain activity
-T16.kevin	VERIFY_Entity 623 646	mammalian embryogenesis
-T17.kevin	VERIFY_KeyEntity 666 676	Capn1 gene
-T18.kevin	VERIFY_Entity 694 706	fertile mice
-T20.kevin	VERIFY_KeyEntity 771 780	μ-calpain
-T21.kevin	FIX_SPAN_KeyEntity 802 811	m-calpain
-T22.kevin	FIX_SPAN_KeyEntity 832 837;841 854	death Capn4-/- mice
-T23.kevin	FIX_SPAN_KeyEntity 968 984	mouse Capn2 gene
-T25.kevin	VERIFY_Entity 1181 1211	nested PCR genotyping protocol
-T26.kevin	FIX_SPAN_Entity 1233 1274	homozygous preimplantation mutant embryos
-T27.kevin	FIX_SPAN_Entity 1296 1302;1329 1334	morula stage
-T29.kevin	VERIFY_Entity 1366 1387	homozygous disruption
-T32.kevin	FIX_SPAN_Entity 1466 1472;1488 1493	morula stage
-T36.kevin	VERIFY_KeyEntity 1576 1584	-calpain
-T37.kevin	FIX_SPAN_Entity 1598 1646	development of the preimplantation murine embryo
-T38.kevin	VERIFY_Entity 306 324	catalytic subunits
-T39.kevin	VERIFY_Entity 390 408	regulatory subunit
-R1.sandy	VERIFY_participates_in Arg1:T12.sandy Arg2:T13.sandy	
-R2.sandy	VERIFY_participates_in Arg1:T14.sandy Arg2:T15.sandy	
-R3.sandy	VERIFY_participates_in Arg1:T19.sandy Arg2:T18.sandy	
-R4.sandy	VERIFY_is_part_of Arg1:T16.sandy Arg2:T17.sandy	
-R5.sandy	VERIFY_regulates Arg1:T25.sandy Arg2:T26.sandy	
-R6.sandy	VERIFY_is_part_of Arg1:T26.sandy Arg2:T27.sandy	
-R7.sandy	VERIFY_regulates Arg1:T7.sandy Arg2:T28.sandy	
-R8.sandy	VERIFY_regulates Arg1:T8.sandy Arg2:T29.sandy	
-R9.sandy	VERIFY_participates_in Arg1:T10.sandy Arg2:T11.sandy	
-R10.sandy	VERIFY_participates_in Arg1:T20.sandy Arg2:T21.sandy	
-R11.sandy	VERIFY_regulates Arg1:T30.sandy Arg2:T31.sandy	
-R1.kevin	VERIFY_is_subclass_of Arg1:T6.sandy Arg2:T3.kevin	
-R2.kevin	VERIFY_is_subclass_of Arg1:T5.sandy Arg2:T3.kevin	
-R3.kevin	VERIFY_participates_in Arg1:T6.sandy Arg2:T1.sandy	
-R4.kevin	VERIFY_participates_in Arg1:T6.sandy Arg2:T2.sandy	
-R5.kevin	VERIFY_participates_in Arg1:T6.sandy Arg2:T3.sandy	
-R6.kevin	VERIFY_participates_in Arg1:T6.sandy Arg2:T4.sandy	
-R7.kevin	VERIFY_participates_in Arg1:T5.sandy Arg2:T1.sandy	
-R8.kevin	VERIFY_participates_in Arg1:T5.sandy Arg2:T2.sandy	
-R9.kevin	VERIFY_participates_in Arg1:T5.sandy Arg2:T3.sandy	
-R10.kevin	VERIFY_participates_in Arg1:T5.sandy Arg2:T4.sandy	
-R11.kevin	VERIFY_is_subclass_of Arg1:T38.kevin Arg2:T8.kevin	
-R14.kevin	VERIFY_is_subclass_of Arg1:T39.kevin Arg2:T8.kevin	
-R16.kevin	VERIFY_is_part_of Arg1:T23.kevin Arg2:T17.sandy	
-R19.kevin	VERIFY_participates_in Arg1:T29.kevin Arg2:T21.sandy	
-R20.kevin	VERIFY_participates_in Arg1:T36.kevin Arg2:T37.kevin	
+T15.sandy	Entity 832 837	death
+T27.sandy	KeyEntity 1617 1646	preimplantation murine embryo
+T31.sandy	KeyEntity 26 63	preimplantation embryonic development
+T32.sandy	Entity 67 71	mice
+T3.kevin	Entity 123 155	ubiquitously expressed proteases
+T8.kevin	Entity 259 280	heterodimeric enzymes
+T9.kevin	KeyEntity 337 354	Capn1 (μ-calpain)
+T10.kevin	KeyEntity 358 375	Capn2 (m-calpain)
+T12.kevin	KeyEntity 445 461	mouse Capn4 gene
+T14.kevin	KeyEntity 491 509	m-calpain activity
+T16.kevin	Entity 623 646	mammalian embryogenesis
+T17.kevin	KeyEntity 666 676	Capn1 gene
+T18.kevin	Entity 694 706	fertile mice
+T20.kevin	KeyEntity 771 780	μ-calpain
+T21.kevin	KeyEntity 802 811	m-calpain
+T22.kevin	KeyEntity 841 854	Capn4-/- mice
+T23.kevin	KeyEntity 968 984	mouse Capn2 gene
+T25.kevin	Entity 1181 1211	nested PCR genotyping protocol
+T26.kevin	Entity 1233 1274	homozygous preimplantation mutant embryos
+T27.kevin	Entity 1296 1302;1329 1334	morula stage
+T29.kevin	Entity 1366 1387	homozygous disruption
+T32.kevin	Entity 1466 1472;1488 1493	morula stage
+T38.kevin	Entity 306 324	catalytic subunits
+T39.kevin	Entity 390 408	regulatory subunit
+R10.sandy	participates_in Arg1:T20.sandy Arg2:T21.sandy	
+R1.kevin	is_subclass_of Arg1:T6.sandy Arg2:T3.kevin	
+R2.kevin	is_subclass_of Arg1:T5.sandy Arg2:T3.kevin	
+R3.kevin	participates_in Arg1:T6.sandy Arg2:T1.sandy	
+R4.kevin	participates_in Arg1:T6.sandy Arg2:T2.sandy	
+R5.kevin	participates_in Arg1:T6.sandy Arg2:T3.sandy	
+R6.kevin	participates_in Arg1:T6.sandy Arg2:T4.sandy	
+R7.kevin	participates_in Arg1:T5.sandy Arg2:T1.sandy	
+R8.kevin	participates_in Arg1:T5.sandy Arg2:T2.sandy	
+R9.kevin	participates_in Arg1:T5.sandy Arg2:T3.sandy	
+R10.kevin	participates_in Arg1:T5.sandy Arg2:T4.sandy	
+R11.kevin	is_part_of Arg1:T38.kevin Arg2:T8.kevin	
+R14.kevin	is_part_of Arg1:T39.kevin Arg2:T8.kevin	
+R16.kevin	is_part_of Arg1:T23.kevin Arg2:T17.sandy	
+T1	KeyEntity 0 9	m-Calpain
+T2	KeyEntity 477 486;501 509	μ-calpain activity
+R1	participates_in Arg1:T12.kevin Arg2:T11.sandy	
+R2	participates_in Arg1:T22.kevin Arg2:T15.sandy	
+R3	regulates Arg1:T21.kevin Arg2:T15.sandy	
+T3	Entity 1318 1334	blastocyts stage
+R4	participates_in Arg1:T26.kevin Arg2:T27.kevin	
+R5	participates_in Arg1:T20.sandy Arg2:T29.kevin	
+T4	Entity 1477 1493	blastocyst stage
+T5	KeyEntity 1575 1584	m-calpain
+T6	Entity 1598 1609	development
+R6	participates_in Arg1:T27.sandy Arg2:T6	
+R7	participates_in Arg1:T5 Arg2:T6	
