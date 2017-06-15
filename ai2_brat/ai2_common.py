@@ -111,7 +111,7 @@ class Entity:
             self.character_spans.append((l, r))
         self.brat_annotation.spans = self.character_spans
         doc_text = self.parent_doc.document_text
-        new = "".join((doc_text[span[0]:span[1]] for span in self.character_spans))
+        new = " ".join((doc_text[span[0]:span[1]] for span in self.character_spans))
         self.brat_annotation.text = new
 
     def __str__(self):
