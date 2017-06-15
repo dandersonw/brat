@@ -52,17 +52,18 @@ def print_overlapping_entity_mentions(a, b, source_text):
     a_idx = 0
     b_idx = 0
     while a_idx < a_len or b_idx < b_len:
-        j = min(a.spans[a_idx][0], b.spans[b_idx][0])
+        j = min(a.spans[a_idx][0] if a_idx < a_len else sys.maxsize,
+                b.spans[b_idx][0] if b_idx < b_len else sys.maxsize)
         sys.stdout.write(source_text[i: j])
         i = j
-        if b_idx == b_len or a.spans[a_idx][0] < b.spans[b_idx][0]:
+        if b_idx == b_len or (a_idx != a_len and a.spans[a_idx][0] < b.spans[b_idx][0]):
             sys.stdout.write(YELLOW)
-            j = min(a.spans[a_idx][1], b.spans[b_idx][0])
+            j = min(a.spans[a_idx][1], b.spans[b_idx][0] if b_idx < b_len else sys.maxsize)
             sys.stdout.write(source_text[i: j])
             i = j
-        elif a_idx == a_len or b.spans[b_idx][0] < a.spans[a_idx][0]:
+        elif a_idx == a_len or (b_idx != b_len and b.spans[b_idx][0] < a.spans[a_idx][0]):
             sys.stdout.write(BLUE)
-            j = min(b.spans[b_idx][1], a.spans[a_idx][0])
+            j = min(b.spans[b_idx][1], a.spans[a_idx][0] if a_idx < a_len else sys.maxsize)
             sys.stdout.write(source_text[i: j])
             i = j
         else:
@@ -76,7 +77,7 @@ def print_overlapping_entity_mentions(a, b, source_text):
                 if i == a.spans[a_idx][1]:
                     a_idx += 1
                 else:
-                    j = min(a.spans[a_idx][1], b.spans[b_idx][1] if b_idx < b_len else sys.maxint)
+                    j = min(a.spans[a_idx][1], b.spans[b_idx][1] if b_idx < b_len else sys.maxsize)
                     sys.stdout.write(GREEN)
                     sys.stdout.write(source_text[i: j])
                     i = j
@@ -86,7 +87,7 @@ def print_overlapping_entity_mentions(a, b, source_text):
                 if i == b.spans[b_idx][1]:
                     b_idx += 1
                 else:
-                    j = min(b.spans[b_idx][1], a.spans[a_idx][1] if a_idx < a_len else sys.maxint)
+                    j = min(b.spans[b_idx][1], a.spans[a_idx][1] if a_idx < a_len else sys.maxsize)
                     sys.stdout.write(GREEN)
                     sys.stdout.write(source_text[i: j])
                     i = j
