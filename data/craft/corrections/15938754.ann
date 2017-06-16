@@ -46,8 +46,6 @@ R13.sandy	regulates Arg1:T24.sandy Arg2:T25.sandy
 R14.sandy	is_part_of Arg1:T26.sandy Arg2:T27.sandy	
 R15.sandy	is_part_of Arg1:T27.sandy Arg2:T28.sandy	
 T2	Entity 1219 1239	DBA/2J Tas2r alleles
-R1	VERIFY_interacts_with Arg1:T17.sandy Arg2:T19.sandy	
-R2	VERIFY_participates_in Arg1:T26.kevin Arg2:T20.sandy	
 T3	Entity 1941 1950	variation
 R3	participates_in Arg1:T30.sandy Arg2:T3	
 #1	AnnotatorNotes R3	does not participate in 

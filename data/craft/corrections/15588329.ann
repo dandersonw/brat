@@ -37,10 +37,6 @@ T26.kevin	Entity 1020 1037	ATPase subunit c.
 T31.kevin	Entity 1333 1352	cellular ATP levels
 R9.sandy	is_part_of Arg1:T12.sandy Arg2:T13.sandy	
 R26.sandy	participates_in Arg1:T37.sandy Arg2:T38.sandy	
-R10.sandy	VERIFY_is_part_of Arg1:T14.sandy Arg2:T12.sandy	
-R16.sandy	VERIFY_participates_in Arg1:T23.sandy Arg2:T31.sandy	
-R18.sandy	VERIFY_participates_in Arg1:T25.sandy Arg2:T31.sandy	
-R20.sandy	VERIFY_participates_in Arg1:T27.sandy Arg2:T31.sandy	
 R24.sandy	participates_in Arg1:T34.sandy Arg2:T35.sandy	
 R25.sandy	participates_in Arg1:T34.sandy Arg2:T36.sandy	
 R1	regulates Arg1:T3.sandy Arg2:T1.kevin	
@@ -48,8 +44,6 @@ R2	participates_in Arg1:T4.kevin Arg2:T5.sandy
 R3	participates_in Arg1:T4.kevin Arg2:T6.sandy	
 R4	participates_in Arg1:T4.kevin Arg2:T7.sandy	
 R5	regulates Arg1:T24.kevin Arg2:T26.kevin	
-R6	VERIFY_is_part_of Arg1:T9.sandy Arg2:T8.kevin	
-R7	VERIFY_is_part_of Arg1:T10.sandy Arg2:T8.kevin	
 T1	Entity 746 762;793 822	CbCln3 wild-type neuronal precursor cell lines
 T2	Entity 746 752;764 776;793 822	CbCln3 heterozygous neuronal precursor cell lines
 T3	Entity 746 752;782 822	CbCln3 homozygous neuronal precursor cell lines

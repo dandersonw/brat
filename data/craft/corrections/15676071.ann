@@ -24,7 +24,6 @@ T7.kevin	Entity 616 630	Crx's function
 T9.kevin	KeyEntity 703 718	Crx mutant mice
 T18.kevin	Entity 935 960	abnormal synaptic endings
 R2.sandy	is_subclass_of Arg1:T6.sandy Arg2:T5.sandy	
-R5.sandy	VERIFY_participates_in Arg1:T12.sandy Arg2:T13.sandy	
 R7.sandy	participates_in Arg1:T18.sandy Arg2:T19.sandy	
 R8.sandy	participates_in Arg1:T20.sandy Arg2:T21.sandy	
 R1.kevin	is_part_of Arg1:T10.sandy Arg2:T9.kevin	

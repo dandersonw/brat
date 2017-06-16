@@ -30,14 +30,11 @@ T35.sandy	KeyEntity 1522 1524	Rb
 T37.sandy	KeyEntity 0 36	Rb-Mediated Neuronal Differentiation
 T38.sandy	Entity 45 78	Cell-Cycle–Independent Regulation
 T39.sandy	KeyEntity 82 87	E2f3a
-T6.sandy	Entity 415 430	differentiation
 T7.sandy	Entity 435 478	light-evoked electrophysiological responses
-T9.sandy	FIX_SPAN_Entity 526 542	ectopic division
-T10.sandy	FIX_SPAN_Entity 547 556	apoptosis
+T9.sandy	Entity 526 542	ectopic division
+T10.sandy	Entity 547 556	apoptosis
 T26.sandy	Entity 1180 1197	developing retina
 T9.kevin	KeyEntity 1116 1129	E2f3 activity
-T21.kevin	FIX_SPAN_Entity 526 556	ectopic division and apoptosis
-T3.kevin	FIX_SPAN_Entity 415 478	differentiation and light-evoked electrophysiological responses
 T33.kevin	KeyEntity 1294 1305	Rb function
 T34.kevin	KeyEntity 1688 1715	retinoblastoma protein (Rb)
 T35.kevin	Entity 1730 1746	tumor suppressor
@@ -58,10 +55,6 @@ T52.kevin	KeyEntity 2697 2700	E2f
 T53.kevin	KeyEntity 1389 1392	E2f
 T54.kevin	KeyEntity 2702 2707	E2f3a
 T55.kevin	KeyEntity 2777 2791	Rb–E2f pathway
-T59.kevin	VERIFY_Entity 4116 4120	RPCs
-T60.kevin	VERIFY_Entity 4381 4385	RPCs
-#1	AnnotatorNotes T5.sandy	neuronal death
-#1	AnnotatorNotes T5.sandy	neuronal death
 R1.sandy	participates_in Arg1:T1.sandy Arg2:T2.sandy	
 R2.sandy	regulates Arg1:T3.sandy Arg2:T4.sandy	
 R3.sandy	regulates Arg1:T3.sandy Arg2:T5.sandy	
@@ -79,16 +72,10 @@ R19.sandy	is_part_of Arg1:T14.sandy Arg2:T15.sandy
 R21.sandy	is_part_of Arg1:T12.sandy Arg2:T14.sandy	
 R22.sandy	regulates Arg1:T18.sandy Arg2:T20.sandy	
 R25.sandy	regulates Arg1:T35.sandy Arg2:T31.sandy	
-R4.sandy	VERIFY_genetically_interacts_with Arg1:T8.sandy Arg2:T7.sandy	
-R5.sandy	VERIFY_genetically_interacts_with Arg1:T8.sandy Arg2:T6.sandy	
-R6.sandy	VERIFY_participates_in Arg1:T11.sandy Arg2:T10.sandy	
-R7.sandy	VERIFY_regulates Arg1:T11.sandy Arg2:T9.sandy	
+R7.sandy	regulates Arg1:T11.sandy Arg2:T9.sandy	
 R20.sandy	regulates Arg1:T32.sandy Arg2:T31.sandy	
-R5.kevin	VERIFY_regulates Arg1:T21.kevin Arg2:T8.sandy	
-R6.kevin	VERIFY_participates_in Arg1:T11.sandy Arg2:T21.kevin	
 R10.kevin	regulates Arg1:T9.kevin Arg2:T33.sandy	
 R11.kevin	regulates Arg1:T23.sandy Arg2:T9.kevin	
-R4.kevin	VERIFY_genetically_interacts_with Arg1:T3.kevin Arg2:T8.sandy	
 R24.kevin	regulates Arg1:T24.sandy Arg2:T33.kevin	
 R25.kevin	is_subclass_of Arg1:T34.kevin Arg2:T35.kevin	
 R26.kevin	regulates Arg1:T34.kevin Arg2:T36.kevin	
@@ -97,3 +84,5 @@ R28.kevin	regulates Arg1:T50.kevin Arg2:T54.kevin
 R29.kevin	is_subclass_of Arg1:T54.kevin Arg2:T52.kevin	
 T1	Entity 2557 2581	neuronal differentiation
 R1	regulates Arg1:T48.kevin Arg2:T1	
+R2	interacts_with Arg1:T8.sandy Arg2:T7.sandy	
+R3	participates_in Arg1:T11.sandy Arg2:T10.sandy	
