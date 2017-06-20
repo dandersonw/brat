@@ -1,302 +1,461 @@
-T1.sandy	KeyEntity 100 106	ADAM11
-T2.sandy	Entity 126 142	ADAM gene family
-T3.sandy	Entity 174 188	nervous system
-T4.sandy	Entity 213 230	adhesion molecule
-T5.sandy	Entity 247 270	disintegrin-like domain
-T7.sandy	FIX_TYPE 386 407	ADAM11-deficient mice
-T9.sandy	KeyEntity 602 608	ADAM11
-T12.sandy	Entity 792 809	rotating rod task
-T13.sandy	Entity 636 647	hippocampus
-T14.sandy	Entity 652 662	cerebellum
-T20.sandy	KeyEntity 1155 1161	ADAM11
-T21.sandy	Entity 1221 1243	cell adhesion molecule
-T22.sandy	Entity 1251 1258	synapse
-T188.sandy	KeyEntity 55 76	ADAM11-deficient mice
-T189.sandy	FIX_TYPE 12 28	spatial learning
-T186.sandy	FIX_TYPE 33 51	motor coordination
-T187.sandy	KeyEntity 446 467	ADAM11-deficient mice
-T190.sandy	Entity 892 909	hidden water maze
-T6.sandy	FIX_SPAN_Entity 295 319	cell-matrix interactions
-T8.sandy	VERIFY_Entity 420 434	gene targeting
-T10.sandy	FIX_SPAN_Entity 719 753	visual and hidden water maze tasks
-T11.sandy	VERIFY_Entity 765 783	motor coordination
-T15.sandy	FIX_SPAN_KeyEntity 681 687	ADAM11
-T16.sandy	FIX_SPAN_Entity 914 938	rotating rod task skills
-T17.sandy	FIX_SPAN_Entity 943 976	impaired in ADAM11-deficient mice
-T18.sandy	FIX_SPAN_KeyEntity 1017 1023	ADAM11
-T19.sandy	FIX_SPAN_Entity 1116 1147	learning and motor coordination
-T23.sandy	VERIFY_Entity 1288 1307	synaptic regulation
-T24.sandy	VERIFY_Entity 1319 1338	behavioural changes
-T26.sandy	VERIFY_KeyEntity 1357 1397	ADAM (A Disintegrin And Metalloprotease)
-T27.sandy	VERIFY_Entity 1415 1454	membrane-spanning multi-domain proteins
-T28.sandy	VERIFY_Entity 1468 1497	metalloproteinase-like domain
-T29.sandy	VERIFY_Entity 1504 1527	disintegrin-like domain
-T30.sandy	VERIFY_Entity 1565 1602	catalytically active metalloproteases
-T31.sandy	VERIFY_Entity 2184 2202	adhesion molecules
-T32.sandy	VERIFY_Entity 2066 2087	functional redundancy
-T33.sandy	VERIFY_Entity 1891 1905	growth signals
-T34.sandy	VERIFY_Entity 2251 2282	integrin-mediated cell adhesion
-T35.sandy	VERIFY_Entity 2792 2830	spermatozoa lack egg-binding abilities
-T36.sandy	VERIFY_Entity 2729 2739	Adam2-null
-T37.sandy	VERIFY_Entity 2744 2759	Adam3-null male
-T38.sandy	VERIFY_KeyEntity 1555 1560	ADAMs
-T39.sandy	VERIFY_Entity 1816 1841	ADAM10, ADAM17 and ADAM19
-T40.sandy	VERIFY_Entity 1975 2006	ADAM8, ADAM9, ADAM12 and ADAM15
-T41.sandy	VERIFY_Entity 2146 2164	non-protease-ADAMs
-T42.sandy	VERIFY_KeyEntity 3044 3049	ADAMs
-T43.sandy	VERIFY_Entity 3057 3072	catalytic motif
-T44.sandy	VERIFY_Entity 3090 3116	metalloproteinase activity
-T45.sandy	VERIFY_KeyEntity 3179 3184	ADAMs
-T46.sandy	VERIFY_Entity 3205 3219	cell migration
-T47.sandy	VERIFY_Entity 3221 3236	differentiation
-T48.sandy	VERIFY_Entity 3253 3272	synaptic regulation
-T49.sandy	VERIFY_Entity 3287 3296	integrins
-T50.sandy	VERIFY_Entity 3298 3319	cell-surface proteins
-T51.sandy	VERIFY_Entity 3323 3357	intracellular signalling molecules
-T52.sandy	VERIFY_Entity 3391 3397	ataxia
-T53.sandy	VERIFY_Entity 3399 3407	seizures
-T54.sandy	VERIFY_Entity 3413 3418	death
-T55.sandy	VERIFY_Entity 3452 3467	hypomyelination
-T56.sandy	VERIFY_Entity 3475 3500	peripheral nervous system
-T57.sandy	VERIFY_Entity 3564 3589	disruption of Adam23 gene
-T58.sandy	VERIFY_Entity 3614 3629	premature death
-T59.sandy	VERIFY_KeyEntity 3807 3813	ADAM11
-T60.sandy	VERIFY_Entity 4041 4059	neural development
-T61.sandy	VERIFY_Entity 4085 4099	cell migration
-T62.sandy	VERIFY_KeyEntity 4213 4219	Adam11
-T63.sandy	VERIFY_Entity 4250 4285	developing and adult nervous system
-T64.sandy	VERIFY_KeyEntity 4337 4343	ADAM11
-T65.sandy	VERIFY_Entity 4350 4365	integrin binder
-T66.sandy	VERIFY_Entity 4402 4416	nervous system
-T67.sandy	VERIFY_Entity 4668 4692	homologous recombination
-T68.sandy	VERIFY_Entity 4638 4644	Adam11
-T69.sandy	VERIFY_Entity 4747 4769	Southern blot analysis
-T70.sandy	VERIFY_Entity 4820 4837	termination codon
-T71.sandy	VERIFY_Entity 4899 4935	truncated form of the ADAM11 protein
-T72.sandy	VERIFY_Entity 5156 5188	truncated form of ADAM11 protein
-T73.sandy	VERIFY_Entity 5203 5211	function
-T74.sandy	VERIFY_Entity 5290 5311	Western blot analysis
-T75.sandy	VERIFY_Entity 5320 5337	specific antibody
-T76.sandy	VERIFY_KeyEntity 5236 5242	ADAM11
-T77.sandy	VERIFY_KeyEntity 5052 5065	ADAM-proteins
-T78.sandy	VERIFY_Entity 5465 5486	half of the wild-type
-T79.sandy	VERIFY_Entity 5421 5441	heterozygous mutants
-T80.sandy	VERIFY_KeyEntity 5795 5816	ADAM11-deficient male
-T81.sandy	VERIFY_Entity 5890 5910	behavioural analyses
-T82.sandy	VERIFY_Entity 5915 5946	anatomical-histological studies
-T83.sandy	VERIFY_Entity 6096 6115	gain in body weight
-T84.sandy	VERIFY_Entity 6913 6937	spatial learning ability
-T85.sandy	VERIFY_KeyEntity 6941 6962	ADAM11-deficient mice
-T86.sandy	VERIFY_Entity 6973 6990	Morris Water Maze
-T87.sandy	VERIFY_Entity 7167 7192	significantly longer time
-T88.sandy	VERIFY_Entity 7128 7140	Adam11 (-/-)
-T89.sandy	VERIFY_Entity 7566 7571	lower
-T90.sandy	VERIFY_Entity 7861 7866	lower
-T91.sandy	VERIFY_Entity 8082 8109	spatial learning impairment
-T92.sandy	VERIFY_Entity 8113 8123	(-/-) mice
-T93.sandy	VERIFY_Entity 8393 8428	progressive decrease in the latency
-T94.sandy	VERIFY_Entity 8614 8647	normal visible and motor function
-T96.sandy	VERIFY_Entity 8656 8666	motivation
-T97.sandy	VERIFY_Entity 8598 8608	(-/-) mice
-T95.sandy	VERIFY_Entity 9148 9173	decreased retention times
-T98.sandy	VERIFY_Entity 9414 9424	(-/-) mice
-T99.sandy	VERIFY_Entity 9425 9442	fell more quickly
-T100.sandy	VERIFY_Entity 9521 9531	p = 0.0002
-T101.sandy	VERIFY_Entity 9560 9569	p = 0.003
-T102.sandy	VERIFY_Entity 9598 9608	p = 0.0002
-T103.sandy	VERIFY_KeyEntity 10319 10325	ADAM11
-T104.sandy	VERIFY_KeyEntity 10404 10410	Adam11
-T105.sandy	VERIFY_Entity 10436 10441	brain
-T106.sandy	VERIFY_Entity 10443 10448	heart
-T107.sandy	VERIFY_Entity 10450 10455	liver
-T108.sandy	VERIFY_Entity 10460 10466	testis
-T109.sandy	VERIFY_Entity 10485 10507	Northern blot analysis
-T110.sandy	VERIFY_KeyEntity 10529 10550	ADAM11-deficient mice
-T25.sandy	VERIFY_Entity 9899 9909	(-/-) mice
-T111.sandy	VERIFY_Entity 9919 9937	high grip strength
-T112.sandy	VERIFY_Entity 10768 10789	in situ hybridisation
-T113.sandy	VERIFY_Entity 11065 11076	hippocampus
-T114.sandy	VERIFY_Entity 11169 11204	lesions of the hippocampal pathways
-T115.sandy	VERIFY_Entity 11215 11244	severe impairment of learning
-T116.sandy	VERIFY_KeyEntity 11293 11314	ADAM11-deficient mice
-T117.sandy	VERIFY_Entity 11322 11331	more time
-T118.sandy	VERIFY_Entity 11354 11373	than wild-type mice
-T119.sandy	VERIFY_KeyEntity 11657 11678	ADAM11-deficient mice
-T120.sandy	VERIFY_Entity 11683 11705	not search selectively
-T121.sandy	VERIFY_Entity 11947 11974	spatial learning impairment
-T122.sandy	VERIFY_KeyEntity 11916 11937	ADAM11-deficient mice
-T123.sandy	VERIFY_Entity 11981 11991	cerebellum
-T124.sandy	VERIFY_Entity 12012 12031	smooth coordination
-T125.sandy	VERIFY_Entity 12035 12057	somatic motor activity
-T126.sandy	VERIFY_Entity 12073 12084	muscle tone
-T127.sandy	VERIFY_Entity 12129 12140	equilibrium
-T128.sandy	VERIFY_KeyEntity 12579 12600	ADAM11-deficient mice
-T129.sandy	VERIFY_Entity 12601 12618	fell more quickly
-T130.sandy	VERIFY_KeyEntity 12701 12722	ADAM11-deficient mice
-T131.sandy	VERIFY_Entity 12741 12759	motor coordination
-T132.sandy	VERIFY_Entity 13062 13072	cerebellum
-T133.sandy	VERIFY_Entity 13170 13184	motor learning
-T134.sandy	VERIFY_Entity 13214 13233	synaptotagmin (Syt)
-T135.sandy	VERIFY_Entity 13512 13526	Syt IV mutants
-T136.sandy	VERIFY_Entity 13533 13551	motor coordination
-T137.sandy	VERIFY_Entity 14497 14508	hippocampus
-T138.sandy	VERIFY_Entity 14513 14523	cerebellum
-T139.sandy	VERIFY_Entity 14569 14596	spatial learning impairment
-T140.sandy	VERIFY_Entity 14601 14622	motor discoordination
-T141.sandy	VERIFY_Entity 14649 14670	In situ hybridisation
-T142.sandy	VERIFY_Entity 14723 14749	pyramidal cells of CA1–CA3
-T143.sandy	VERIFY_Entity 14761 14795	granule cells of the dentate gyrus
-T144.sandy	VERIFY_Entity 14803 14814	hippocampus
-T145.sandy	VERIFY_Entity 14822 14854	granular cells in the cerebellum
-T146.sandy	VERIFY_KeyEntity 14693 14699	Adam11
-T147.sandy	VERIFY_Entity 15388 15424	neural cell adhesion molecule (NCAM)
-T148.sandy	VERIFY_Entity 15543 15575	mediators of synaptic plasticity
-T149.sandy	VERIFY_Entity 15583 15603	adult nervous system
-T150.sandy	VERIFY_Entity 15621 15640	neuron excitability
-T151.sandy	VERIFY_Entity 15648 15659	hippocampus
-T152.sandy	VERIFY_Entity 15686 15726	post-burst after hyperpolarization (AHP)
-T153.sandy	VERIFY_Entity 15756 15784	long-term potentiation (LTP)
-T154.sandy	VERIFY_Entity 15927 15940	NMDA receptor
-T155.sandy	VERIFY_Entity 15980 15997	motor dysfunction
-T156.sandy	VERIFY_Entity 15950 15963	NR2A and NR2C
-T157.sandy	VERIFY_Entity 16047 16087	excitatory postsynaptic currents (EPSCs)
-T158.sandy	VERIFY_KeyEntity 16461 16482	ADAM11-deficient mice
-T159.sandy	VERIFY_Entity 16560 16587	deficit in spatial learning
-T160.sandy	VERIFY_Entity 16592 16609	motor dysfunction
-T161.sandy	VERIFY_Entity 16647 16658	Adam22 gene
-T162.sandy	VERIFY_Entity 16673 16679	ataxia
-T163.sandy	VERIFY_Entity 16698 16738	hypomyelination of the peripheral nerves
-T164.sandy	VERIFY_Entity 17582 17620	hippocampus-dependent spatial learning
-T165.sandy	VERIFY_Entity 17625 17664	cerebellum-dependent motor coordination
-T166.sandy	VERIFY_KeyEntity 17668 17689	ADAM11-deficient mice
-T167.sandy	VERIFY_Entity 17722 17732	water maze
-T168.sandy	VERIFY_Entity 17737 17755	rotating rod tasks
-T169.sandy	VERIFY_Entity 17878 17902	ADAM proteins' functions
-T170.sandy	VERIFY_Entity 18103 18106	PCR
-T171.sandy	VERIFY_Entity 18248 18263	PGKneo cassette
-T172.sandy	VERIFY_Entity 19364 19386	Southern blot analysis
-T173.sandy	VERIFY_Entity 19668 19680	Western blot
-T174.sandy	VERIFY_Entity 21264 21295	VERSAMAX equipment and software
-T175.sandy	VERIFY_Entity 21224 21237	Plexiglas box
-T176.sandy	VERIFY_Entity 21608 21646	circular, transparent acrylic platform
-T177.sandy	VERIFY_Entity 21400 21422	Morris water maze task
-T178.sandy	VERIFY_Entity 23596 23614	traction apparatus
-T179.sandy	VERIFY_Entity 25351 25393	buffered formalin and embedded in paraffin
-T180.sandy	VERIFY_Entity 26716 26738	Southern blot analysis
-T181.sandy	VERIFY_Entity 26944 26966	Southern blot analysis
-T182.sandy	VERIFY_Entity 27166 27187	Western blot analysis
-T183.sandy	VERIFY_Entity 27376 27406	HA-tagged mouse ADAM11 protein
-T184.sandy	VERIFY_Entity 27420 27430	HeLa cells
-T185.sandy	VERIFY_Entity 27667 27689	Morris water maze task
-T6.kevin	FIX_SPAN_Entity 282 291;307 319	cell-cell interactions
-T8.kevin	VERIFY_KeyEntity 365 371	ADAM11
-T11.kevin	VERIFY_Entity 572 577	brain
-T12.kevin	VERIFY_Entity 581 592	spinal cord
-T16.kevin	FIX_SPAN_KeyEntity 681 699	ADAM11 mutant mice
-T17.kevin	FIX_SPAN_Entity 730 753	hidden water maze tasks
-T19.kevin	FIX_SPAN_Entity 955 976	ADAM11-deficient mice
-T20.kevin	VERIFY_Entity 841 863	visual water maze task
-T22.kevin	FIX_SPAN_Entity 914 931	rotating rod task
-T23.kevin	FIX_SPAN_KeyEntity 1017 1032	ADAM11 mutation
-T25.kevin	FIX_SPAN_Entity 1129 1147	motor coordination
-T26.kevin	FIX_SPAN_Entity 1116 1124	learning
-#4	AnnotatorNotes T86.sandy	experimental_test
-#6	AnnotatorNotes T100.sandy	statistical_significance
-#7	AnnotatorNotes T101.sandy	statistical significance
-#8	AnnotatorNotes T102.sandy	statistical significance
-#9	AnnotatorNotes T109.sandy	experimental_test
-#10	AnnotatorNotes T112.sandy	experimental_test
-#11	AnnotatorNotes T141.sandy	experimental_test
-#13	AnnotatorNotes T167.sandy	experimental_test
-#12	AnnotatorNotes T168.sandy	experimental_test
-#14	AnnotatorNotes T170.sandy	experimental_test
-#15	AnnotatorNotes T171.sandy	experimental_test
-#16	AnnotatorNotes T172.sandy	experimental_test
-#17	AnnotatorNotes T173.sandy	experimental_test
-#18	AnnotatorNotes T174.sandy	equipment
-#19	AnnotatorNotes T175.sandy	equipment
-#20	AnnotatorNotes T176.sandy	equipment
-#21	AnnotatorNotes T177.sandy	experimental_test
-#22	AnnotatorNotes T178.sandy	equipment
-#23	AnnotatorNotes T179.sandy	experimental_procedure
-#24	AnnotatorNotes T180.sandy	experimental_test
-#25	AnnotatorNotes T181.sandy	experimental_test
-#26	AnnotatorNotes T182.sandy	experimental_test
-#27	AnnotatorNotes T185.sandy	experimental_test
-R1.sandy	FIX_RELATION_TYPE Arg1:T1.sandy Arg2:T2.sandy	
-R10.sandy	is_part_of Arg1:T21.sandy Arg2:T22.sandy	
-R58.sandy	participates_in Arg1:T139.sandy Arg2:T137.sandy	
-R60.sandy	participates_in Arg1:T140.sandy Arg2:T138.sandy	
-R2.sandy	VERIFY_is_part_of Arg1:T3.sandy Arg2:T1.sandy	
-R3.sandy	VERIFY_participates_in Arg1:T5.sandy Arg2:T6.sandy	
-R4.sandy	VERIFY_participates_in Arg1:T7.sandy Arg2:T8.sandy	
-R5.sandy	VERIFY_is_part_of Arg1:T9.sandy Arg2:T13.sandy	
-R6.sandy	VERIFY_is_part_of Arg1:T9.sandy Arg2:T14.sandy	
-R7.sandy	VERIFY_participates_in Arg1:T17.sandy Arg2:T16.sandy	
-R8.sandy	VERIFY_regulates Arg1:T18.sandy Arg2:T19.sandy	
-R9.sandy	VERIFY_participates_in Arg1:T20.sandy Arg2:T21.sandy	
-R11.sandy	VERIFY_participates_in Arg1:T20.sandy Arg2:T23.sandy	
-R13.sandy	VERIFY_is_part_of Arg1:T28.sandy Arg2:T26.sandy	
-R14.sandy	VERIFY_is_part_of Arg1:T29.sandy Arg2:T26.sandy	
-R15.sandy	VERIFY_is_part_of Arg1:T38.sandy Arg2:T30.sandy	
-R16.sandy	VERIFY_is_part_of Arg1:T39.sandy Arg2:T33.sandy	
-R17.sandy	VERIFY_is_part_of Arg1:T40.sandy Arg2:T32.sandy	
-R18.sandy	VERIFY_is_part_of Arg1:T41.sandy Arg2:T31.sandy	
-R19.sandy	VERIFY_participates_in Arg1:T36.sandy Arg2:T35.sandy	
-R20.sandy	VERIFY_participates_in Arg1:T37.sandy Arg2:T35.sandy	
-R21.sandy	VERIFY_is_part_of Arg1:T43.sandy Arg2:T42.sandy	
-R22.sandy	VERIFY_participates_in Arg1:T43.sandy Arg2:T44.sandy	
-R23.sandy	VERIFY_participates_in Arg1:T45.sandy Arg2:T46.sandy	
-R24.sandy	VERIFY_participates_in Arg1:T45.sandy Arg2:T47.sandy	
-R25.sandy	VERIFY_participates_in Arg1:T45.sandy Arg2:T48.sandy	
-R26.sandy	VERIFY_interacts_with Arg1:T45.sandy Arg2:T49.sandy	
-R27.sandy	VERIFY_interacts_with Arg1:T45.sandy Arg2:T50.sandy	
-R28.sandy	VERIFY_interacts_with Arg1:T45.sandy Arg2:T51.sandy	
-R29.sandy	VERIFY_participates_in Arg1:T55.sandy Arg2:T56.sandy	
-R30.sandy	VERIFY_participates_in Arg1:T57.sandy Arg2:T58.sandy	
-R31.sandy	VERIFY_interacts_with Arg1:T62.sandy Arg2:T63.sandy	
-R32.sandy	VERIFY_is_part_of Arg1:T64.sandy Arg2:T65.sandy	
-R33.sandy	VERIFY_interacts_with Arg1:T64.sandy Arg2:T66.sandy	
-R34.sandy	VERIFY_participates_in Arg1:T68.sandy Arg2:T67.sandy	
-R35.sandy	VERIFY_interacts_with Arg1:T70.sandy Arg2:T71.sandy	
-R36.sandy	VERIFY_participates_in Arg1:T72.sandy Arg2:T73.sandy	
-R38.sandy	VERIFY_participates_in Arg1:T79.sandy Arg2:T78.sandy	
-R39.sandy	VERIFY_participates_in Arg1:T88.sandy Arg2:T87.sandy	
-R41.sandy	VERIFY_is_part_of Arg1:T91.sandy Arg2:T92.sandy	
-R42.sandy	VERIFY_participates_in Arg1:T97.sandy Arg2:T94.sandy	
-R43.sandy	VERIFY_participates_in Arg1:T97.sandy Arg2:T96.sandy	
-R44.sandy	VERIFY_participates_in Arg1:T98.sandy Arg2:T99.sandy	
-R12.sandy	VERIFY_participates_in Arg1:T25.sandy Arg2:T111.sandy	
-R45.sandy	VERIFY_regulates Arg1:T114.sandy Arg2:T115.sandy	
-R46.sandy	VERIFY_participates_in Arg1:T116.sandy Arg2:T117.sandy	
-R48.sandy	VERIFY_participates_in Arg1:T119.sandy Arg2:T120.sandy	
-R49.sandy	VERIFY_participates_in Arg1:T122.sandy Arg2:T121.sandy	
-R50.sandy	VERIFY_regulates Arg1:T123.sandy Arg2:T124.sandy	
-R51.sandy	VERIFY_interacts_with Arg1:T124.sandy Arg2:T125.sandy	
-R52.sandy	VERIFY_regulates Arg1:T123.sandy Arg2:T126.sandy	
-R53.sandy	VERIFY_regulates Arg1:T123.sandy Arg2:T127.sandy	
-R54.sandy	VERIFY_participates_in Arg1:T128.sandy Arg2:T129.sandy	
-R55.sandy	VERIFY_participates_in Arg1:T130.sandy Arg2:T131.sandy	
-R56.sandy	VERIFY_regulates Arg1:T132.sandy Arg2:T133.sandy	
-R57.sandy	VERIFY_participates_in Arg1:T135.sandy Arg2:T136.sandy	
-R62.sandy	VERIFY_participates_in Arg1:T146.sandy Arg2:T142.sandy	
-R63.sandy	VERIFY_participates_in Arg1:T146.sandy Arg2:T143.sandy	
-R64.sandy	VERIFY_participates_in Arg1:T143.sandy Arg2:T144.sandy	
-R65.sandy	VERIFY_participates_in Arg1:T143.sandy Arg2:T145.sandy	
-R66.sandy	VERIFY_regulates Arg1:T147.sandy Arg2:T148.sandy	
-R67.sandy	VERIFY_participates_in Arg1:T148.sandy Arg2:T149.sandy	
-R68.sandy	VERIFY_participates_in Arg1:T150.sandy Arg2:T151.sandy	
-R69.sandy	VERIFY_participates_in Arg1:T150.sandy Arg2:T152.sandy	
-R70.sandy	VERIFY_participates_in Arg1:T150.sandy Arg2:T153.sandy	
-R71.sandy	VERIFY_is_subclass_of Arg1:T156.sandy Arg2:T154.sandy	
-R72.sandy	VERIFY_regulates Arg1:T154.sandy Arg2:T155.sandy	
-R73.sandy	VERIFY_regulates Arg1:T154.sandy Arg2:T157.sandy	
-R74.sandy	VERIFY_participates_in Arg1:T158.sandy Arg2:T159.sandy	
-R75.sandy	VERIFY_participates_in Arg1:T158.sandy Arg2:T160.sandy	
-R76.sandy	VERIFY_participates_in Arg1:T161.sandy Arg2:T162.sandy	
-R77.sandy	VERIFY_participates_in Arg1:T161.sandy Arg2:T163.sandy	
-R78.sandy	VERIFY_regulates Arg1:T166.sandy Arg2:T165.sandy	
-R79.sandy	VERIFY_regulates Arg1:T166.sandy Arg2:T164.sandy	
-R80.sandy	VERIFY_participates_in Arg1:T17.sandy Arg2:T190.sandy	
-R3.kevin	VERIFY_is_part_of Arg1:T11.kevin Arg2:T187.sandy	
-R4.kevin	VERIFY_is_part_of Arg1:T12.kevin Arg2:T187.sandy	
+T1.kevin-tmp	KeyEntity 100 106	ADAM11
+T2.kevin-tmp	Entity 126 142	ADAM gene family
+T3.kevin-tmp	Entity 174 188	nervous system
+T4.kevin-tmp	Entity 213 230	adhesion molecule
+T5.kevin-tmp	Entity 247 270	disintegrin-like domain
+T7.kevin-tmp	Entity 295 319	cell-matrix interactions
+T9.kevin-tmp	KeyEntity 386 407	ADAM11-deficient mice
+T10.kevin-tmp	KeyEntity 446 467	ADAM11-deficient mice
+T13.kevin-tmp	KeyEntity 602 608	ADAM11
+T14.kevin-tmp	Entity 636 647	hippocampus
+T15.kevin-tmp	Entity 652 662	cerebellum
+T18.kevin-tmp	Entity 792 809	rotating rod task
+T21.kevin-tmp	Entity 892 909;927 938	hidden water maze task skills
+T24.kevin-tmp	KeyEntity 1155 1161	ADAM11
+T27.kevin-tmp	Entity 1221 1243	cell adhesion molecule
+T28.kevin-tmp	Entity 1251 1258	synapse
+T29.kevin-tmp	Entity 12 28	spatial learning
+T30.kevin-tmp	Entity 33 51	motor coordination
+T31.kevin-tmp	KeyEntity 55 76	ADAM11-deficient mice
+T32.kevin-tmp	Entity 1288 1307	synaptic regulation
+T34.kevin-tmp	Entity 1468 1497	metalloproteinase-like domain
+T35.kevin-tmp	Entity 1504 1527	disintegrin-like domain
+T36.kevin-tmp	Entity 1415 1454	membrane-spanning multi-domain proteins
+T37.kevin-tmp	Entity 1555 1560	ADAMs
+T38.kevin-tmp	Entity 1565 1602	catalytically active metalloproteases
+T56.kevin-tmp	Entity 2146 2164	non-protease-ADAMs
+T57.kevin-tmp	Entity 2184 2202	adhesion molecules
+T59.kevin-tmp	Entity 2251 2282	integrin-mediated cell adhesion
+T82.kevin-tmp	KeyEntity 3044 3049	ADAMs
+T83.kevin-tmp	Entity 3057 3072	catalytic motif
+T84.kevin-tmp	Entity 3090 3116	metalloproteinase activity
+T85.kevin-tmp	Entity 3179 3184	ADAMs
+T86.kevin-tmp	Entity 3205 3219	cell migration
+T87.kevin-tmp	Entity 3221 3236	differentiation
+T89.kevin-tmp	Entity 3253 3272	synaptic regulation
+T90.kevin-tmp	Entity 3287 3296	integrins
+T91.kevin-tmp	Entity 3298 3319	cell-surface proteins
+T92.kevin-tmp	Entity 3323 3357	intracellular signalling molecules
+T94.kevin-tmp	Entity 3399 3407	seizures
+T98.kevin-tmp	Entity 3614 3629	premature death
+T103.kevin-tmp	KeyEntity 3807 3813	ADAM11
+T110.kevin-tmp	Entity 4041 4059	neural development
+T111.kevin-tmp	Entity 4085 4099	cell migration
+T117.kevin-tmp	KeyEntity 4337 4343	ADAM11
+T118.kevin-tmp	Entity 4350 4365	integrin binder
+T119.kevin-tmp	Entity 4402 4416	nervous system
+T126.kevin-tmp	Entity 4668 4692	homologous recombination
+T127.kevin-tmp	Entity 4747 4769	Southern blot analysis
+T130.kevin-tmp	Entity 4820 4837	termination codon
+T138.kevin-tmp	Entity 5290 5311	Western blot analysis
+T141.kevin-tmp	Entity 5421 5441	heterozygous mutants
+T151.kevin-tmp	Entity 5890 5910	behavioural analyses
+T152.kevin-tmp	Entity 5915 5946	anatomical-histological studies
+T163.kevin-tmp	Entity 6913 6937	spatial learning ability
+T164.kevin-tmp	KeyEntity 6941 6962	ADAM11-deficient mice
+T171.kevin-tmp	Entity 8082 8109	spatial learning impairment
+T176.kevin-tmp	Entity 8598 8608	(-/-) mice
+T188.kevin-tmp	KeyEntity 10319 10325	ADAM11
+T192.kevin-tmp	Entity 10436 10441	brain
+T193.kevin-tmp	Entity 10443 10448	heart
+T194.kevin-tmp	Entity 10450 10455	liver
+T195.kevin-tmp	Entity 10460 10466	testis
+T196.kevin-tmp	Entity 10485 10507	Northern blot analysis
+T197.kevin-tmp	KeyEntity 10529 10550	ADAM11-deficient mice
+T205.kevin-tmp	Entity 11065 11076	hippocampus
+T209.kevin-tmp	KeyEntity 11293 11314	ADAM11-deficient mice
+T211.kevin-tmp	KeyEntity 11657 11678	ADAM11-deficient mice
+T212.kevin-tmp	KeyEntity 11916 11937	ADAM11-deficient mice
+T213.kevin-tmp	Entity 11947 11974	spatial learning impairment
+T214.kevin-tmp	Entity 11981 11991	cerebellum
+T216.kevin-tmp	Entity 12073 12084	muscle tone
+T217.kevin-tmp	Entity 12129 12140	equilibrium
+T220.kevin-tmp	KeyEntity 12579 12600	ADAM11-deficient mice
+T222.kevin-tmp	KeyEntity 12701 12722	ADAM11-deficient mice
+T230.kevin-tmp	Entity 27667 27689	Morris water maze task
+T235.kevin-tmp	Entity 26716 26738	Southern blot analysis
+T236.kevin-tmp	Entity 27166 27187	Western blot analysis
+T241.kevin-tmp	Entity 21400 21422	Morris water maze task
+T247.kevin-tmp	Entity 19364 19386	Southern blot analysis
+T252.kevin-tmp	Entity 18103 18106	PCR
+T256.kevin-tmp	KeyEntity 17668 17689	ADAM11-deficient mice
+T259.kevin-tmp	KeyEntity 16461 16482	ADAM11-deficient mice
+T262.kevin-tmp	Entity 16673 16679	ataxia
+T272.kevin-tmp	Entity 13062 13072	cerebellum
+T277.kevin-tmp	Entity 13533 13551	motor coordination
+T283.kevin-tmp	Entity 14497 14508	hippocampus
+T284.kevin-tmp	Entity 14513 14523	cerebellum
+T286.kevin-tmp	Entity 14569 14596	spatial learning impairment
+T287.kevin-tmp	Entity 14601 14622	motor discoordination
+T295.kevin-tmp	Entity 14803 14814	hippocampus
+T304.kevin-tmp	Entity 15388 15424	neural cell adhesion molecule (NCAM)
+T308.kevin-tmp	Entity 15648 15659	hippocampus
+T309.kevin-tmp	Entity 15756 15784	long-term potentiation (LTP)
+T318.kevin-tmp	Entity 15980 15997	motor dysfunction
+T6.kevin-tmp	Entity 282 291;307 319	cell-cell interactions
+T8.kevin-tmp	KeyEntity 365 371	ADAM11
+T11.kevin-tmp	Entity 572 577	brain
+T12.kevin-tmp	Entity 581 592	spinal cord
+T16.kevin-tmp	KeyEntity 681 699	ADAM11 mutant mice
+T17.kevin-tmp	Entity 730 753	hidden water maze tasks
+T19.kevin-tmp	KeyEntity 955 976	ADAM11-deficient mice
+T20.kevin-tmp	Entity 841 863	visual water maze task
+T23.kevin-tmp	KeyEntity 1017 1032	ADAM11 mutation
+T25.kevin-tmp	Entity 1129 1147	motor coordination
+T26.kevin-tmp	Entity 1116 1124	learning
+T33.kevin-tmp	Entity 1357 1404	ADAM (A Disintegrin And Metalloprotease) family
+T39.kevin-tmp	Entity 1650 1659	cytokines
+T40.kevin-tmp	Entity 1661 1675	growth factors
+T41.kevin-tmp	Entity 1677 1686	receptors
+T42.kevin-tmp	Entity 1688 1706	adhesion molecules
+T43.kevin-tmp	Entity 1630 1640	substrates
+T45.kevin-tmp	Entity 1816 1822	ADAM10
+T46.kevin-tmp	Entity 1824 1830	ADAM17
+T47.kevin-tmp	Entity 1835 1841	ADAM19
+T48.kevin-tmp	Entity 1859 1877	normal development
+T49.kevin-tmp	Entity 1975 1980	ADAM8
+T50.kevin-tmp	Entity 1982 1987	ADAM9
+T51.kevin-tmp	Entity 1989 1995	ADAM12
+T52.kevin-tmp	Entity 2000 2006	ADAM15
+T53.kevin-tmp	Entity 2029 2042	embryogenesis
+T58.kevin-tmp	Entity 2218 2223	ADAMs
+T60.kevin-tmp	Entity 2348 2380	integrin-mediated cell migration
+T61.kevin-tmp	Entity 2384 2404	tissue culture cells
+T62.kevin-tmp	Entity 2435 2440	ADAMs
+T63.kevin-tmp	Entity 2450 2460	C. elegans
+T64.kevin-tmp	Entity 2462 2473	unc-71 gene
+T65.kevin-tmp	Entity 2483 2508	non-protease-ADAM protein
+T66.kevin-tmp	Entity 2543 2564	cell migration events
+T69.kevin-tmp	Entity 2615 2643	mammalian non-protease-ADAMs
+T72.kevin-tmp	Entity 2675 2699	Genetic deletion studies
+T73.kevin-tmp	Entity 2729 2739;2755 2767	Adam2-null male mutants
+T74.kevin-tmp	Entity 2744 2767	Adam3-null male mutants
+T77.kevin-tmp	KeyEntity 2925 2931;2951 2956	ADAM11 genes
+T78.kevin-tmp	KeyEntity 2933 2939;2951 2956	ADAM22 genes
+T79.kevin-tmp	KeyEntity 2944 2956	ADAM23 genes
+T80.kevin-tmp	Entity 3006 3028	murine nervous systems
+T81.kevin-tmp	Entity 2996 3001;3013 3028	human nervous systems
+T88.kevin-tmp	Entity 3241 3249	survival
+T96.kevin-tmp	KeyEntity 3504 3527	Adam22-null mutant mice
+T97.kevin-tmp	KeyEntity 3578 3589	Adam23 gene
+T99.kevin-tmp	Entity 3646 3652	ataxia
+T100.kevin-tmp	Entity 3657 3663	tremor
+T101.kevin-tmp	KeyEntity 3772 3783;3800 3804	Adam22-null mice
+T102.kevin-tmp	KeyEntity 3788 3804	Adam23-null mice
+T104.kevin-tmp	KeyEntity 3840 3846	ADAM22
+T105.kevin-tmp	KeyEntity 3851 3857	ADAM23
+T108.kevin-tmp	KeyEntity 3965 3988	Xenopus ADAM11 ortholog
+T109.kevin-tmp	KeyEntity 3990 3997	xMDC11a
+T112.kevin-tmp	Entity 4149 4162	Northern blot
+T113.kevin-tmp	Entity 4167 4188	in situ hybridisation
+T114.kevin-tmp	KeyEntity 4206 4224	murine Adam11 gene
+T115.kevin-tmp	Entity 4265 4285	adult nervous system
+T116.kevin-tmp	Entity 4250 4260;4271 4285	developing nervous system
+T120.kevin-tmp	KeyEntity 4424 4430	ADAM22
+T121.kevin-tmp	KeyEntity 4435 4441	ADAM23
+T123.kevin-tmp	KeyEntity 4521 4546	Adam11 gene-targeted mice
+T122.kevin-tmp	KeyEntity 4487 4493	ADAM11
+T124.kevin-tmp	KeyEntity 4572 4593	ADAM11-deficient mice
+T125.kevin-tmp	KeyEntity 4638 4649	Adam11 gene
+T128.kevin-tmp	Entity 4856 4862	exon 5
+T129.kevin-tmp	Entity 4870 4888	pro-protein domain
+T131.kevin-tmp	KeyEntity 4921 4935	ADAM11 protein
+T132.kevin-tmp	Entity 4992 5010	pro-protein domain
+T133.kevin-tmp	Entity 5034 5065	mature functional ADAM-proteins
+T134.kevin-tmp	Entity 5069 5089	furin-like proteases
+T135.kevin-tmp	KeyEntity 5174 5188	ADAM11 protein
+T137.kevin-tmp	Entity 5254 5272	homozygous mutants
+T139.kevin-tmp	KeyEntity 5358 5372	ADAM11 protein
+T140.kevin-tmp	Entity 5396 5408	Western blot
+T142.kevin-tmp	KeyEntity 5497 5511	ADAM11 protein
+T143.kevin-tmp	Entity 4595 4599	Mice
+T144.kevin-tmp	Entity 4611 4628	targeted mutation
+T145.kevin-tmp	KeyEntity 5514 5535	ADAM11-deficient mice
+T147.kevin-tmp	KeyEntity 5602 5617	ADAM11 mutation
+T149.kevin-tmp	KeyEntity 5795 5821	ADAM11-deficient male mice
+T153.kevin-tmp	KeyEntity 5948 5980	Homozygous ADAM11-deficient mice
+T154.kevin-tmp	KeyEntity 6034 6045	Adam11 gene
+T155.kevin-tmp	KeyEntity 6661 6667	Adam11
+T156.kevin-tmp	Entity 6702 6713	hippocampus
+T157.kevin-tmp	Entity 6718 6728	cerebellum
+T159.kevin-tmp	KeyEntity 6821 6842	ADAM11-deficient mice
+T160.kevin-tmp	Entity 6801 6817	Spatial learning
+T161.kevin-tmp	KeyEntity 6870 6876	ADAM11
+T162.kevin-tmp	Entity 6884 6895	hippocampus
+T165.kevin-tmp	Entity 6973 6995	Morris Water Maze task
+T166.kevin-tmp	Entity 7009 7013	mice
+T167.kevin-tmp	Entity 7032 7052	hidden platform task
+T168.kevin-tmp	KeyEntity 7128 7145	Adam11 (-/-) mice
+T174.kevin-tmp	Entity 8241 8262	visible platform task
+T177.kevin-tmp	FIX_SPAN_Entity 8614 8628	normal visible
+T178.kevin-tmp	FIX_SPAN_Entity 8614 8620;8633 8647	normal motor function
+T179.kevin-tmp	Entity 8699 8713	Motor function
+T180.kevin-tmp	KeyEntity 8717 8738	ADAM11-deficient mice
+T181.kevin-tmp	KeyEntity 8766 8772	ADAM11
+T182.kevin-tmp	Entity 8780 8790	cerebellum
+T183.kevin-tmp	Entity 8808 8822	motor function
+T184.kevin-tmp	KeyEntity 8826 8847	ADAM11-deficient mice
+T185.kevin-tmp	Entity 8856 8873	rotating rod task
+T186.kevin-tmp	Entity 9126 9130	mice
+T187.kevin-tmp	Entity 9158 9173	retention times
+T189.kevin-tmp	Entity 10340 10344	mice
+T191.kevin-tmp	KeyEntity 10361 10372	Adam11 gene
+T190.kevin-tmp	KeyEntity 10404 10415	Adam11 gene
+T198.kevin-tmp	KeyEntity 10719 10730	Adam11 gene
+T199.kevin-tmp	Entity 10817 10832	high expression
+T200.kevin-tmp	Entity 10855 10866	hippocampus
+T201.kevin-tmp	Entity 10871 10881	cerebellum
+T203.kevin-tmp	KeyEntity 11003 11009	ADAM11
+T204.kevin-tmp	Entity 11017 11031	nervous system
+T210.kevin-tmp	Entity 11375 11391	Spatial learning
+T218.kevin-tmp	Entity 12178 12188	cerebellum
+T219.kevin-tmp	Entity 12227 12244	rotating rod task
+T221.kevin-tmp	KeyEntity 12485 12506	ADAM11-deficient mice
+T223.kevin-tmp	Entity 12741 12759	motor coordination
+T224.kevin-tmp	Entity 12835 12848	motor ability
+T225.kevin-tmp	KeyEntity 12865 12886	ADAM11-deficient mice
+T226.kevin-tmp	KeyEntity 28909 28930	ADAM11-deficient mice
+T227.kevin-tmp	KeyEntity 28713 28734	ADAM11-deficient mice
+T228.kevin-tmp	KeyEntity 28604 28625	ADAM11-deficient mice
+T229.kevin-tmp	KeyEntity 28367 28388	ADAM11-deficient mice
+T231.kevin-tmp	KeyEntity 27693 27714	ADAM11-deficient mice
+T232.kevin-tmp	KeyEntity 26293 26299	Adam11
+T233.kevin-tmp	KeyEntity 26330 26344	ADAM11 protein
+T234.kevin-tmp	KeyEntity 26500 26511	Adam11 gene
+T237.kevin-tmp	KeyEntity 27191 27208	ADAM11 expression
+T238.kevin-tmp	KeyEntity 27245 27259	ADAM11 protein
+T239.kevin-tmp	Entity 25351 25368	buffered formalin
+T242.kevin-tmp	Entity 21446 21466	Hidden platform task
+T243.kevin-tmp	Entity 22102 22113	Probe trial
+T244.kevin-tmp	Entity 22566 22587	Visible platform task
+T245.kevin-tmp	KeyEntity 19618 19632	ADAM11 protein
+T246.kevin-tmp	Entity 19668 19689	Western blot analysis
+T248.kevin-tmp	Entity 18736 18740	AGN1
+T249.kevin-tmp	Entity 18807 18813	SGN033
+T250.kevin-tmp	KeyEntity 18045 18056	Adam11 gene
+T251.kevin-tmp	KeyEntity 18221 18232	Adam11 gene
+T253.kevin-tmp	KeyEntity 17327 17348	ADAM11-deficient mice
+T257.kevin-tmp	Entity 17722 17732;17750 17755	water maze tasks
+T263.kevin-tmp	Entity 16721 16738	peripheral nerves
+T265.kevin-tmp	KeyEntity 16787 16798	Adam23 gene
+T266.kevin-tmp	KeyEntity 16889 16895	ADAM11
+T267.kevin-tmp	KeyEntity 16897 16903	ADAM22
+T268.kevin-tmp	KeyEntity 16908 16914	ADAM23
+T269.kevin-tmp	KeyEntity 17019 17025	ADAM11
+T270.kevin-tmp	KeyEntity 17027 17033	ADAM22
+T271.kevin-tmp	KeyEntity 17038 17044	ADAM23
+T274.kevin-tmp	Entity 13196 13210	retention time
+T278.kevin-tmp	KeyEntity 13628 13649	ADAM11-deficient mice
+T279.kevin-tmp	Entity 13695 13717	motor learning ability
+T280.kevin-tmp	Entity 13725 13749	rotating rod performance
+T281.kevin-tmp	KeyEntity 13793 13814	ADAM11-deficient mice
+T282.kevin-tmp	KeyEntity 13962 13983	ADAM11-deficient mice
+T285.kevin-tmp	Entity 14549 14567	dominant phenotype
+T288.kevin-tmp	KeyEntity 14626 14647	ADAM11-deficient mice
+T289.kevin-tmp	Entity 14649 14679	In situ hybridisation analysis
+T290.kevin-tmp	KeyEntity 14693 14715	Adam11 gene expression
+T291.kevin-tmp	Entity 14723 14738	pyramidal cells
+T292.kevin-tmp	Entity 14742 14756	CA1–CA3 fields
+T293.kevin-tmp	Entity 14761 14774	granule cells
+T294.kevin-tmp	Entity 14782 14795	dentate gyrus
+T296.kevin-tmp	Entity 14822 14836	granular cells
+T297.kevin-tmp	Entity 14844 14854	cerebellum
+T298.kevin-tmp	KeyEntity 15093 15114	ADAM11-deficient mice
+T299.kevin-tmp	Entity 15154 15165	HE staining
+T300.kevin-tmp	KeyEntity 15203 15209	ADAM11
+T301.kevin-tmp	Entity 15226 15239;15256 15273	neuron-neuron cell interactions
+T302.kevin-tmp	Entity 15243 15273	neuron-glial cell interactions
+T303.kevin-tmp	Entity 15360 15378	adhesion molecules
+T310.kevin-tmp	Entity 15820 15836	synaptic changes
+T313.kevin-tmp	Entity 15950 15954;15964 15972	NR2A subunits
+T314.kevin-tmp	Entity 15959 15972	NR2C subunits
+T315.kevin-tmp	Entity 16091 16115	cerebellar granule cells
+T319.kevin-tmp	KeyEntity 16330 16336	ADAM11
+T8.sandy-tmp	Entity 420 434	gene targeting
+T11.sandy-tmp	Entity 765 783	motor coordination
+T16.sandy-tmp	Entity 914 938	rotating rod task skills
+T24.sandy-tmp	Entity 1319 1338	behavioural changes
+T52.sandy-tmp	Entity 3391 3397	ataxia
+T55.sandy-tmp	Entity 3452 3467	hypomyelination
+T56.sandy-tmp	Entity 3475 3500	peripheral nervous system
+T112.sandy-tmp	Entity 10768 10789	in situ hybridisation
+T118.sandy-tmp	Entity 11359 11373	wild-type mice
+T125.sandy-tmp	Entity 12035 12057	somatic motor activity
+T135.sandy-tmp	Entity 13512 13526	Syt IV mutants
+T150.sandy-tmp	Entity 15621 15640	neuron excitability
+T154.sandy-tmp	Entity 15927 15940	NMDA receptor
+T157.sandy-tmp	Entity 16047 16087	excitatory postsynaptic currents (EPSCs)
+T160.sandy-tmp	Entity 16592 16609	motor dysfunction
+T161.sandy-tmp	KeyEntity 16647 16658	Adam22 gene
+T164.sandy-tmp	Entity 17582 17620	hippocampus-dependent spatial learning
+T165.sandy-tmp	Entity 17625 17664	cerebellum-dependent motor coordination
+T168.sandy-tmp	Entity 17737 17755	rotating rod tasks
+T169.sandy-tmp	Entity 17878 17902	ADAM proteins' functions
+T171.sandy-tmp	Entity 18248 18263	PGKneo cassette
+T178.sandy-tmp	Entity 23596 23614	traction apparatus
+T181.sandy-tmp	Entity 26944 26966	Southern blot analysis
+T183.sandy-tmp	KeyEntity 27376 27406	HA-tagged mouse ADAM11 protein
+T184.sandy-tmp	Entity 27420 27430	HeLa cells
+#9	AnnotatorNotes T196.kevin-tmp	experimental_test
+#27	AnnotatorNotes T230.kevin-tmp	experimental_test
+#24	AnnotatorNotes T235.kevin-tmp	experimental_test
+#26	AnnotatorNotes T236.kevin-tmp	experimental_test
+#21	AnnotatorNotes T241.kevin-tmp	experimental_test
+#16	AnnotatorNotes T247.kevin-tmp	experimental_test
+#14	AnnotatorNotes T252.kevin-tmp	experimental_test
+#10	AnnotatorNotes T112.sandy-tmp	experimental_test
+#12	AnnotatorNotes T168.sandy-tmp	experimental_test
+#15	AnnotatorNotes T171.sandy-tmp	experimental_test
+#22	AnnotatorNotes T178.sandy-tmp	equipment
+#25	AnnotatorNotes T181.sandy-tmp	experimental_test
+R1.kevin-tmp	is_subclass_of Arg1:T1.kevin-tmp Arg2:T2.kevin-tmp	
+R5.kevin-tmp	interacts_with Arg1:T27.kevin-tmp Arg2:T28.kevin-tmp	
+R24.kevin-tmp	participates_in Arg1:T85.kevin-tmp Arg2:T86.kevin-tmp	
+R25.kevin-tmp	participates_in Arg1:T85.kevin-tmp Arg2:T87.kevin-tmp	
+R27.kevin-tmp	participates_in Arg1:T85.kevin-tmp Arg2:T89.kevin-tmp	
+R31.kevin-tmp	is_subclass_of Arg1:T117.kevin-tmp Arg2:T118.kevin-tmp	
+R32.kevin-tmp	participates_in Arg1:T117.kevin-tmp Arg2:T119.kevin-tmp	
+R57.kevin-tmp	regulates Arg1:T214.kevin-tmp Arg2:T216.kevin-tmp	
+R59.kevin-tmp	regulates Arg1:T214.kevin-tmp Arg2:T217.kevin-tmp	
+R3.kevin-tmp	is_part_of Arg1:T11.kevin-tmp Arg2:T10.kevin-tmp	
+R4.kevin-tmp	is_part_of Arg1:T12.kevin-tmp Arg2:T10.kevin-tmp	
+R6.kevin-tmp	is_part_of Arg1:T34.kevin-tmp Arg2:T36.kevin-tmp	
+R7.kevin-tmp	is_part_of Arg1:T35.kevin-tmp Arg2:T36.kevin-tmp	
+R8.kevin-tmp	is_subclass_of Arg1:T39.kevin-tmp Arg2:T43.kevin-tmp	
+R9.kevin-tmp	is_subclass_of Arg1:T40.kevin-tmp Arg2:T43.kevin-tmp	
+R10.kevin-tmp	is_subclass_of Arg1:T41.kevin-tmp Arg2:T43.kevin-tmp	
+R11.kevin-tmp	is_subclass_of Arg1:T42.kevin-tmp Arg2:T43.kevin-tmp	
+R12.kevin-tmp	regulates Arg1:T47.kevin-tmp Arg2:T48.kevin-tmp	
+R13.kevin-tmp	regulates Arg1:T46.kevin-tmp Arg2:T48.kevin-tmp	
+R14.kevin-tmp	regulates Arg1:T45.kevin-tmp Arg2:T48.kevin-tmp	
+R15.kevin-tmp	participates_in Arg1:T49.kevin-tmp Arg2:T53.kevin-tmp	
+R16.kevin-tmp	participates_in Arg1:T50.kevin-tmp Arg2:T53.kevin-tmp	
+R17.kevin-tmp	participates_in Arg1:T51.kevin-tmp Arg2:T53.kevin-tmp	
+R18.kevin-tmp	participates_in Arg1:T52.kevin-tmp Arg2:T53.kevin-tmp	
+R22.kevin-tmp	participates_in Arg1:T64.kevin-tmp Arg2:T66.kevin-tmp	
+R26.kevin-tmp	participates_in Arg1:T85.kevin-tmp Arg2:T88.kevin-tmp	
+R28.kevin-tmp	participates_in Arg1:T99.kevin-tmp Arg2:T98.kevin-tmp	
+R29.kevin-tmp	participates_in Arg1:T100.kevin-tmp Arg2:T98.kevin-tmp	
+R33.kevin-tmp	participates_in Arg1:T120.kevin-tmp Arg2:T119.kevin-tmp	
+R34.kevin-tmp	participates_in Arg1:T121.kevin-tmp Arg2:T119.kevin-tmp	
+R36.kevin-tmp	is_part_of Arg1:T144.kevin-tmp Arg2:T125.kevin-tmp	
+R37.kevin-tmp	is_part_of Arg1:T130.kevin-tmp Arg2:T128.kevin-tmp	
+R38.kevin-tmp	is_part_of Arg1:T128.kevin-tmp Arg2:T129.kevin-tmp	
+R40.kevin-tmp	is_part_of Arg1:T161.kevin-tmp Arg2:T162.kevin-tmp	
+R47.kevin-tmp	is_part_of Arg1:T191.kevin-tmp Arg2:T189.kevin-tmp	
+R69.kevin-tmp	participates_in Arg1:T284.kevin-tmp Arg2:T285.kevin-tmp	
+R70.kevin-tmp	participates_in Arg1:T284.kevin-tmp Arg2:T286.kevin-tmp	
+R71.kevin-tmp	participates_in Arg1:T284.kevin-tmp Arg2:T287.kevin-tmp	
+R72.kevin-tmp	participates_in Arg1:T283.kevin-tmp Arg2:T285.kevin-tmp	
+R73.kevin-tmp	participates_in Arg1:T283.kevin-tmp Arg2:T286.kevin-tmp	
+R74.kevin-tmp	participates_in Arg1:T283.kevin-tmp Arg2:T287.kevin-tmp	
+R75.kevin-tmp	is_part_of Arg1:T283.kevin-tmp Arg2:T288.kevin-tmp	
+R76.kevin-tmp	is_part_of Arg1:T284.kevin-tmp Arg2:T288.kevin-tmp	
+R78.kevin-tmp	is_part_of Arg1:T291.kevin-tmp Arg2:T292.kevin-tmp	
+R80.kevin-tmp	is_part_of Arg1:T293.kevin-tmp Arg2:T294.kevin-tmp	
+R81.kevin-tmp	is_part_of Arg1:T296.kevin-tmp Arg2:T297.kevin-tmp	
+R82.kevin-tmp	participates_in Arg1:T300.kevin-tmp Arg2:T302.kevin-tmp	
+R83.kevin-tmp	participates_in Arg1:T300.kevin-tmp Arg2:T301.kevin-tmp	
+R84.kevin-tmp	is_subclass_of Arg1:T304.kevin-tmp Arg2:T303.kevin-tmp	
+R2.sandy-tmp	is_part_of Arg1:T3.kevin-tmp Arg2:T1.kevin-tmp	
+R5.sandy-tmp	is_part_of Arg1:T13.kevin-tmp Arg2:T14.kevin-tmp	
+R6.sandy-tmp	is_part_of Arg1:T13.kevin-tmp Arg2:T15.kevin-tmp	
+R11.sandy-tmp	participates_in Arg1:T24.kevin-tmp Arg2:T32.kevin-tmp	
+R15.sandy-tmp	is_subclass_of Arg1:T37.kevin-tmp Arg2:T38.kevin-tmp	
+R21.sandy-tmp	is_part_of Arg1:T83.kevin-tmp Arg2:T82.kevin-tmp	
+R22.sandy-tmp	participates_in Arg1:T83.kevin-tmp Arg2:T84.kevin-tmp	
+R26.sandy-tmp	interacts_with Arg1:T85.kevin-tmp Arg2:T90.kevin-tmp	
+R27.sandy-tmp	interacts_with Arg1:T85.kevin-tmp Arg2:T91.kevin-tmp	
+R28.sandy-tmp	interacts_with Arg1:T85.kevin-tmp Arg2:T92.kevin-tmp	
+R29.sandy-tmp	participates_in Arg1:T56.sandy-tmp Arg2:T55.sandy-tmp	
+R49.sandy-tmp	participates_in Arg1:T212.kevin-tmp Arg2:T213.kevin-tmp	
+R68.sandy-tmp	is_part_of Arg1:T150.sandy-tmp Arg2:T308.kevin-tmp	
+R70.sandy-tmp	participates_in Arg1:T150.sandy-tmp Arg2:T309.kevin-tmp	
+R72.sandy-tmp	regulates Arg1:T154.sandy-tmp Arg2:T318.kevin-tmp	
+R73.sandy-tmp	regulates Arg1:T154.sandy-tmp Arg2:T157.sandy-tmp	
+R75.sandy-tmp	participates_in Arg1:T259.kevin-tmp Arg2:T160.sandy-tmp	
+T1	Entity 1797 1801	ADAM
+T2	KeyEntity 10836 10847	ADAM11 mRNA
+T3	Entity 719 725;737 753	visual water maze tasks
+R1	is_part_of Arg1:T21.kevin-tmp Arg2:T19.kevin-tmp	
+#1	AnnotatorNotes R1	not a part of 
+R2	is_part_of Arg1:T16.sandy-tmp Arg2:T19.kevin-tmp	
+#2	AnnotatorNotes R2	not a part of 
+R3	participates_in Arg1:T23.kevin-tmp Arg2:T26.kevin-tmp	
+R4	participates_in Arg1:T23.kevin-tmp Arg2:T25.kevin-tmp	
+R5	is_subclass_of Arg1:T36.kevin-tmp Arg2:T33.kevin-tmp	
+R6	participates_in Arg1:T61.kevin-tmp Arg2:T60.kevin-tmp	
+T4	Entity 2792 2803	spermatozoa
+T5	Entity 2809 2830	egg-binding abilities
+R7	participates_in Arg1:T4 Arg2:T5	
+#3	AnnotatorNotes R7	does not participate in 
+R8	is_part_of Arg1:T4 Arg2:T73.kevin-tmp	
+R9	is_part_of Arg1:T4 Arg2:T74.kevin-tmp	
+#5	AnnotatorNotes R21.sandy-tmp	is not part of 
+T6	Entity 3413 3418	death
+T7	KeyEntity 5229 5242	mature ADAM11
+R10	is_part_of Arg1:T7 Arg2:T137.kevin-tmp	
+#6	AnnotatorNotes R10	is not part of 
+T8	Entity 6741 6753;6768 6798	hippocampus- dependent behavioural analyses
+T9	Entity 6757 6798	cerebellum-dependent behavioural analyses
+T10	Entity 5576 5580	mice
+T11	Entity 8887 8904	rotating rod test
+#7	AnnotatorNotes R47.kevin-tmp	is not part of
+R11	participates_in Arg1:T2 Arg2:T199.kevin-tmp	
+R12	is_part_of Arg1:T2 Arg2:T200.kevin-tmp	
+R13	is_part_of Arg1:T2 Arg2:T201.kevin-tmp	
+T12	Entity 10938 10976	cerebellum-dependent behavioural tests
+T13	Entity 10921 10933;10949 10976	hippocampus- dependent behavioural tests
+T14	Entity 11115 11138	hidden platform version
+T15	Entity 11146 11161	water maze test
+R14	is_subclass_of Arg1:T14 Arg2:T15	
+T16	Entity 11096 11107	performance
+R15	participates_in Arg1:T205.kevin-tmp Arg2:T16	
+T17	Entity 11687 11705	search selectively
+R16	participates_in Arg1:T211.kevin-tmp Arg2:T17	
+R17	regulates Arg1:T214.kevin-tmp Arg2:T125.sandy-tmp	
+R18	participates_in Arg1:T218.kevin-tmp Arg2:T219.kevin-tmp	
+T18	Entity 8119 8123	mice
+R19	participates_in Arg1:T18 Arg2:T171.kevin-tmp	
+T19	Entity 13150 13185	component movement (motor learning)
+R20	participates_in Arg1:T272.kevin-tmp Arg2:T19	
+T20	Entity 16571 16587	spatial learning
+R21	participates_in Arg1:T259.kevin-tmp Arg2:T20	
+T21	Entity 16630 16634	mice
+T23	Entity 16698 16713	hypomyelination
+R22	is_part_of Arg1:T161.sandy-tmp Arg2:T21	
+#8	AnnotatorNotes R22	not a part of
+R23	participates_in Arg1:T21 Arg2:T262.kevin-tmp	
+R24	participates_in Arg1:T263.kevin-tmp Arg2:T23	
+R25	is_part_of Arg1:T263.kevin-tmp Arg2:T21	
+T22	Entity 15453 15470	cell interactions
+T24	Entity 15478 15504	nervous system development
+R26	participates_in Arg1:T303.kevin-tmp Arg2:T22	
+T25	Entity 15556 15575	synaptic plasticity
+T26	Entity 15583 15603	adult nervous system
+R27	participates_in Arg1:T26 Arg2:T25	
+R28	participates_in Arg1:T24 Arg2:T22	
+R29	regulates Arg1:T303.kevin-tmp Arg2:T25	
+T27	Entity 15697 15726	after hyperpolarization (AHP)
+R30	is_part_of Arg1:T125.kevin-tmp Arg2:T143.kevin-tmp	
+R31	participates_in Arg1:T125.kevin-tmp Arg2:T126.kevin-tmp	
+T28	Entity 6125 6129	mice
+T29	Entity 6172 6176	mice
+T30	Entity 6506 6510	mice
+T31	Entity 6635 6639	mice
+T32	Entity 11184 11204	hippocampal pathways
+T33	Entity 11236 11244	learning
+R32	regulates Arg1:T32 Arg2:T33	
+T34	Entity 11169 11176	lesions
+R33	is_part_of Arg1:T34 Arg2:T32	
+T35	Entity 13214 13251	synaptotagmin (Syt) IV-deficient mice
+T36	Entity 15857 15865	learning
+T37	Entity 15870 15876	memory
+R34	participates_in Arg1:T310.kevin-tmp Arg2:T36	
+R35	participates_in Arg1:T310.kevin-tmp Arg2:T37	
+R36	participates_in Arg1:T97.kevin-tmp Arg2:T98.kevin-tmp	
+R37	is_part_of Arg1:T114.kevin-tmp Arg2:T116.kevin-tmp	
+R38	is_part_of Arg1:T114.kevin-tmp Arg2:T115.kevin-tmp	
+T38	Entity 15914 15918	mice
+R39	is_part_of Arg1:T154.sandy-tmp Arg2:T38	
+#11	AnnotatorNotes R39	is not part of 

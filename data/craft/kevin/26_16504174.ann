@@ -43,3 +43,49 @@ R5	other_relation Arg1:T1 Arg2:T4
 R6	other_relation Arg1:T1 Arg2:T5	
 #5	AnnotatorNotes R6	expressed in
 T34	Entity 400 425	chromosomal localizations
+T35	Entity 1869 1894	Embryonic stem (ES) cells
+T36	Entity 1923 1942	blastocysts of mice
+T37	Entity 1981 1989	ES cells
+T38	Entity 2035 2056	maintain pluripotency
+T39	Entity 2130 2149	rapid proliferation
+T40	Entity 2178 2192	mouse ES cells
+T41	Entity 2459 2471	pluripotency
+T42	Entity 2476 2495	rapid proliferation
+T43	Entity 2499 2507	ES cells
+T44	Entity 2613 2621	ES cells
+T45	Entity 2673 2695	transcriptome analyses
+T46	Entity 2740 2748	ES cells
+T47	Entity 2753 2766	early embryos
+T48	Entity 2794 2817	DNA microarray analyses
+T49	Entity 2826 2857	expressed sequence tag analyses
+T50	Entity 2915 2919	ESG1
+T51	Entity 2945 2950	dppa5
+T52	Entity 2954 2959	ECAT2
+T53	Entity 2962 2966	ESG1
+T54	Entity 2998 3013	transcript Ph34
+T55	Entity 3041 3054	retinoic acid
+T56	Entity 3058 3083	embryonic carcinoma cells
+T57	Entity 3134 3138	mice
+T58	Entity 3142 3155	early embryos
+T59	Entity 3160 3170	germ cells
+T60	Entity 3201 3218	pluripotent cells
+T61	Entity 3230 3238	ES cells
+T62	Entity 3240 3260	embryonic germ cells
+T63	Entity 3266 3297	multipotent germline stem cells
+T64	Entity 3304 3308	ESG1
+T65	Entity 3373 3382	KH domain
+T66	Entity 3396 3414	RNA-binding domain
+T67	Entity 3453 3457	ESG1
+T68	Entity 3474 3493	RNA-binding protein
+T69	Entity 21119 21137	wild-type ES cells
+T70	Entity 21142 21158	ESG1-/- ES cells
+T71	Entity 3618 3633	mouse ESG1 gene
+T72	Entity 3734 3743	ESG1 gene
+T73	Entity 3938 3963	chromosomal localizations
+T74	Entity 3971 3986	mouse ESG1 gene
+T75	Entity 4222 4226	ESG1
+T76	Entity 4345 4370	chromosomal localizations
+T77	Entity 4378 4393	mouse ESG1 gene
+T78	Entity 4426 4440	Blast analysis
+T79	Entity 4480 4498	ESG1 cDNA sequence
+T80	Entity 4573 4586	chromosomes 1

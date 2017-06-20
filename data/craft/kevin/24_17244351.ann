@@ -28,3 +28,23 @@ T20	Entity 10 23	global genome
 T21	Entity 28 41	transcriptome
 T22	Entity 88 124	small-effect quantitative trait loci
 T23	Entity 128 154	collagen-induced arthritis
+T24	Entity 1411 1436	rheumatoid arthritis (RA)
+T25	Entity 1455 1488	multifactorial autoimmune disease
+R7	is_subclass_of Arg1:T24 Arg2:T25	
+T26	Entity 1559 1561	RA
+T27	Entity 1946 1953	HLA-DR4
+T28	Entity 1955 1960	PADI4
+T29	Entity 1962 1968	PTPN22
+T30	Entity 1973 1978	FCRL3
+T31	Entity 1914 1916	RA
+T32	Entity 1997 2004	HLA-DR4
+T33	Entity 2127 2138;2142 2144	mouse model RA
+T34	Entity 2280 2309	quantitative trait loci (QTL)
+T35	Entity 2313 2345	collagen-induced arthritis (CIA)
+T36	Entity 2386 2388	RA
+T37	Entity 2399 2402	QTL
+T38	Entity 2404 2408	Cia2
+T39	Entity 2446 2458	CIA severity
+T40	Entity 2469 2472	QTL
+T41	Entity 5935 5940;5951 5955	DBA/1 mice
+T42	Entity 5945 5955	FVB/N mice

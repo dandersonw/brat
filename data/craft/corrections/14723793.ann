@@ -1,431 +1,383 @@
-T2.sandy	FIX_TYPE 160 199	ancient conserved domain protein (ACDP)
-T4.sandy	Entity 316 331	mouse homologue
-T6.sandy	FIX_TYPE 394 399	Acdp1
-T7.sandy	FIX_TYPE 401 406	Acdp2
-T8.sandy	FIX_TYPE 408 413	Acdp3
-T9.sandy	FIX_TYPE 418 423	Acdp4
-T10.sandy	Entity 478 492	cDNA sequences
-T14.sandy	Entity 655 675	amino acid sequences
-T15.sandy	Entity 770 800	Ancient Conserved Domain (ACD)
-T18.sandy	FIX_TYPE 927 948	bacteria CorC protein
-T20.sandy	Entity 1298 1313	plasma membrane
-T25.sandy	FIX_TYPE 1688 1701	ion transport
-T26.sandy	Entity 1705 1720	mammalian cells
-T27.sandy	Entity 1189 1195	kidney
-T28.sandy	Entity 1200 1206	testis
-T12.sandy	FIX_TYPE 578 594	mouse Acdp genes
-T30.sandy	FIX_TYPE 873 886	Acdp proteins
-T31.sandy	FIX_TYPE 1040 1050	Acdp genes
-T32.sandy	KeyEntity 1226 1231	Acdp1
-T33.sandy	FIX_TYPE 1332 1342	Acdp genes
-T34.sandy	KeyEntity 1506 1510	Acdp
-T319.sandy	FIX_TYPE 0 17	Molecular cloning
-T321.sandy	KeyEntity 306 310	Acdp
-T324.sandy	Entity 738 758	amino acid sequences
-T5.sandy	FIX_SPAN_Entity 339 354	human ACDP gene
-T13.sandy	VERIFY_Entity 640 650	nucleotide
-T16.sandy	VERIFY_Entity 805 821	highly conserved
-T17.sandy	FIX_SPAN_KeyEntity 894 919	very strong AA homologies
-T19.sandy	FIX_SPAN_Entity 1021 1034	cobalt efflux
-T21.sandy	VERIFY_KeyEntity 1347 1371	evolutionarily conserved
-T11.sandy	VERIFY_Entity 1429 1440	development
-T22.sandy	VERIFY_Entity 1445 1458	adult tissues
-T23.sandy	FIX_SPAN_Entity 1537 1558	bacteria CorC protein
-T24.sandy	VERIFY_KeyEntity 1594 1609	plasma membrane
-T3.sandy	VERIFY_Entity 1150 1155	brain
-T29.sandy	FIX_SPAN_Entity 1235 1246	hippocampus
-T35.sandy	VERIFY_KeyEntity 1802 1841	ancient conserved domain protein (ACDP)
-T1.sandy	VERIFY_Entity 1983 1991	bacteria
-T36.sandy	VERIFY_Entity 1993 1998	yeast
-T37.sandy	VERIFY_Entity 2000 2010	C. elegans
-T38.sandy	VERIFY_Entity 2016 2031	D. melanogaster
-T39.sandy	VERIFY_Entity 2419 2434	human ACDP cDNA
-T40.sandy	VERIFY_Entity 2789 2800	RT reaction
-T41.sandy	VERIFY_Entity 3373 3379	RT-PCR
-T42.sandy	VERIFY_Entity 3720 3733	Northern blot
-T43.sandy	VERIFY_KeyEntity 3750 3766	Acdp gene family
-T44.sandy	VERIFY_KeyEntity 4169 4182	Acdp1 message
-T45.sandy	VERIFY_Entity 4210 4215	brain
-T46.sandy	VERIFY_Entity 4223 4229	kidney
-T47.sandy	VERIFY_Entity 4234 4240	testis
-T48.sandy	VERIFY_KeyEntity 4279 4284	Acdp2
-T49.sandy	VERIFY_Entity 4318 4323	brain
-T50.sandy	VERIFY_Entity 4325 4341	kidney and liver
-T51.sandy	VERIFY_KeyEntity 4595 4600	Acdp3
-T52.sandy	VERIFY_Entity 4622 4627	brain
-T53.sandy	VERIFY_KeyEntity 4686 4691	Acdp4
-T54.sandy	VERIFY_Entity 4713 4719	kidney
-T55.sandy	VERIFY_Entity 4721 4736	small intestine
-T56.sandy	VERIFY_Entity 4741 4747	testis
-T57.sandy	VERIFY_Entity 4629 4635	kidney
-T58.sandy	VERIFY_Entity 4637 4652	liver and heart
-T59.sandy	VERIFY_Entity 5200 5213	Northern blot
-T60.sandy	VERIFY_Entity 5413 5437	Radiation hybrid mapping
-T61.sandy	VERIFY_KeyEntity 6098 6109	human ACDP2
-T62.sandy	VERIFY_KeyEntity 6118 6134	mouse Acdp2 gene
-T63.sandy	VERIFY_Entity 6365 6386	Acdp2 5' UTR sequence
-T64.sandy	VERIFY_KeyEntity 6929 6942	Acdp proteins
-T65.sandy	VERIFY_Entity 7220 7225	Amip3
-T66.sandy	VERIFY_KeyEntity 7137 7150	Acdp proteins
-T67.sandy	VERIFY_Entity 7159 7178	yeast Amip3 protein
-T68.sandy	VERIFY_Entity 7289 7302	Amip3 mutants
-T69.sandy	VERIFY_Entity 7880 7896	AF202994 (Acdp1)
-T70.sandy	VERIFY_Entity 7898 7914	AF216961 (Acdp2)
-T71.sandy	VERIFY_Entity 7916 7932	AF216964 (Acdp3)
-T72.sandy	VERIFY_Entity 7937 7953	AF216963 (Acdp4)
-T73.sandy	VERIFY_Entity 9285 9320	four distinct transmembrane domains
-T74.sandy	VERIFY_Entity 9331 9346	two CBS domains
-T75.sandy	VERIFY_Entity 9353 9365	DUF21 domain
-T76.sandy	VERIFY_Entity 9568 9590	stable globular domain
-T77.sandy	VERIFY_Entity 9528 9548	Pairs of CBS domains
-T78.sandy	VERIFY_Entity 11392 11404	Western-blot
-T79.sandy	VERIFY_Entity 12500 12525	Acdp1 C-terminus antibody
-T80.sandy	VERIFY_Entity 12566 12581	localize Acdp-1
-T81.sandy	VERIFY_Entity 12602 12615	Northern blot
-T82.sandy	VERIFY_Entity 12692 12716	subcellular localization
-T83.sandy	VERIFY_Entity 12720 12739	hippocampus neurons
-T84.sandy	VERIFY_Entity 13289 13299	Immunoblot
-T85.sandy	VERIFY_Entity 13352 13366	Immunoblotting
-T86.sandy	VERIFY_Entity 13392 13408	Western blotting
-T87.sandy	VERIFY_Entity 13734 13744	Immunoblot
-T88.sandy	VERIFY_Entity 13968 14001	Subcellular localization of Acdp1
-T89.sandy	VERIFY_Entity 14005 14024	hippocampus neurons
-T90.sandy	VERIFY_Entity 14440 14464	evolutionarily conserved
-T91.sandy	VERIFY_Entity 14581 14603	ubiquitously expressed
-T92.sandy	VERIFY_Entity 14615 14644	development and adult tissues
-T93.sandy	VERIFY_Entity 15216 15246	efflux of magnesium and cobalt
-T94.sandy	VERIFY_Entity 15146 15151	Amip3
-T95.sandy	VERIFY_Entity 15903 15938	Acdp localization in neuronal cells
-T96.sandy	VERIFY_Entity 16093 16118	Acdp1 C-terminus antibody
-T97.sandy	VERIFY_KeyEntity 16135 16140	Acdp1
-T98.sandy	VERIFY_Entity 16144 16149	brain
-T99.sandy	VERIFY_KeyEntity 16291 16295	Acdp
-T100.sandy	VERIFY_Entity 16317 16330	ion transport
-T101.sandy	VERIFY_Entity 16907 16924	Molecular cloning
-T102.sandy	VERIFY_Entity 17124 17156	DNA and amino acid conservations
-T103.sandy	VERIFY_Entity 17165 17170	mouse
-T104.sandy	VERIFY_Entity 17190 17199	Acdp gene
-T105.sandy	VERIFY_Entity 17214 17230	Acdp gene family
-T106.sandy	VERIFY_Entity 17291 17312	functional redundancy
-T107.sandy	VERIFY_Entity 17316 17323	overlap
-T108.sandy	VERIFY_KeyEntity 17539 17544	Acdp1
-T109.sandy	VERIFY_Entity 17579 17594	plasma membrane
-T110.sandy	VERIFY_Entity 17598 17617	hippocampus neurons
-T111.sandy	VERIFY_Entity 17753 17765	cDNA cloning
-T112.sandy	VERIFY_Entity 17773 17789	Acdp gene family
-T113.sandy	VERIFY_Entity 17886 17896	ACDP cDNAs
-T114.sandy	VERIFY_Entity 18504 18507	PCR
-T115.sandy	VERIFY_Entity 18916 18929	Northern Blot
-T116.sandy	VERIFY_Entity 19038 19047	Acdp gene
-T117.sandy	VERIFY_Entity 19055 19067	PCR fragment
-T118.sandy	VERIFY_Entity 19164 19194	random primer extension system
-T119.sandy	VERIFY_Entity 19216 19230	Hybridizations
-T120.sandy	VERIFY_Entity 19294 19310	washing buffer I
-T121.sandy	VERIFY_Entity 19376 19393	washing buffer II
-T122.sandy	VERIFY_Entity 19576 19607	KLH (keyhole limpet hemacyanin)
-T123.sandy	VERIFY_Entity 19783 19796	Western blots
-T124.sandy	VERIFY_Entity 20054 20086	T31 mouse radiation hybrid panel
-T125.sandy	VERIFY_Entity 21050 21077	Hippocampal neuron cultures
-T126.sandy	VERIFY_Entity 21134 21147	hippocampuses
-T127.sandy	VERIFY_Entity 21172 21196	mouse embryos at 16 days
-T128.sandy	VERIFY_Entity 21243 21264	20 min at 37°C in MEM
-T130.sandy	VERIFY_Entity 21349 21362	0.25% trypsin
-T131.sandy	VERIFY_Entity 21305 21323	suspension culture
-T132.sandy	VERIFY_Entity 21575 21606	37°C in a humidified atmosphere
-T133.sandy	VERIFY_Entity 21612 21618	5% CO2
-T134.sandy	VERIFY_Entity 21694 21716	culture flasks at 37°C
-T135.sandy	VERIFY_Entity 21749 21771	5% CO2 until confluent
-T136.sandy	VERIFY_Entity 21799 21826	10-5 M cytosine arabinoside
-T137.sandy	VERIFY_Entity 21863 21880	12–24 hrs at 37°C
-T138.sandy	VERIFY_Entity 21979 21993	immunostaining
-T139.sandy	VERIFY_Entity 22063 22088	4% paraformaldehyde (PFA)
-T140.sandy	VERIFY_Entity 22151 22157	4% PFA
-T141.sandy	VERIFY_Entity 22162 22179	0.4% Triton X-100
-T142.sandy	VERIFY_Entity 22352 22397	rabbit polyclonal anti-ACDP antibody (1:3000)
-T143.sandy	VERIFY_Entity 22506 22544	Alex 488 conjugated secondary antibody
-T144.sandy	VERIFY_KeyEntity 2228 2244	ACDP gene family
-T145.sandy	VERIFY_Entity 2491 2509	mouse EST database
-T146.sandy	VERIFY_Entity 2519 2525	blastn
-T147.sandy	VERIFY_Entity 2530 2537	tblastn
-T148.sandy	VERIFY_Entity 2548 2565	Mouse EST markers
-T149.sandy	VERIFY_Entity 2588 2599	Acdp member
-T150.sandy	VERIFY_Entity 2848 2873	M13 primer (olig-dT tail)
-T151.sandy	VERIFY_Entity 2829 2839	EST marker
-T152.sandy	VERIFY_KeyEntity 2938 2947	Acdp gene
-T153.sandy	VERIFY_Entity 3053 3056	PCR
-T154.sandy	VERIFY_KeyEntity 3385 3390	Acdp1
-T155.sandy	VERIFY_KeyEntity 3512 3516	Acdp
-T156.sandy	VERIFY_Entity 3981 3995	Northern bolts
-T157.sandy	VERIFY_Entity 4001 4014	PCR fragments
-T158.sandy	VERIFY_KeyEntity 4086 4090	Acdp
-T159.sandy	VERIFY_KeyEntity 4356 4361	Acdp2
-T160.sandy	VERIFY_KeyEntity 4490 4495	Acdp3
-T161.sandy	VERIFY_KeyEntity 4500 4505	Acdp4
-T162.sandy	VERIFY_KeyEntity 4775 4786	Acdp3 and 4
-T163.sandy	VERIFY_Entity 4839 4846	β-actin
-T164.sandy	VERIFY_Entity 4964 4974	ubiquitous
-T165.sandy	VERIFY_KeyEntity 5457 5467	Acdp1 gene
-T166.sandy	VERIFY_Entity 5476 5489	chromosome 19
-T167.sandy	VERIFY_KeyEntity 5570 5575	Acdp2
-T168.sandy	VERIFY_Entity 5614 5619	Acdp1
-T169.sandy	VERIFY_Entity 5623 5636	chromosome 19
-T170.sandy	VERIFY_KeyEntity 5706 5711	Acdp3
-T171.sandy	VERIFY_KeyEntity 5716 5721	Acdp4
-T172.sandy	VERIFY_Entity 5735 5747	chromosome 1
-T173.sandy	VERIFY_Entity 6332 6346	human homologs
-T174.sandy	VERIFY_KeyEntity 6617 6647	ancient conserved domain (ACD)
-T175.sandy	VERIFY_Entity 6465 6478	UTR sequences
-T176.sandy	VERIFY_Entity 6552 6562	Acdp genes
-T177.sandy	VERIFY_Entity 6707 6736	mouse and human ACDP proteins
-T178.sandy	VERIFY_KeyEntity 6751 6761	ACD domain
-T179.sandy	VERIFY_Entity 6765 6789	evolutionarily conserved
-T180.sandy	VERIFY_Entity 7057 7084	magnesium and cobalt efflux
-T181.sandy	VERIFY_Entity 7849 7856	GenBank
-T182.sandy	VERIFY_Entity 8262 8274	conservation
-T183.sandy	VERIFY_KeyEntity 8278 8288	ACD domain
-T184.sandy	VERIFY_Entity 8309 8314	Amip3
-T185.sandy	VERIFY_Entity 8333 8369	Saccharomyces cerevisiae (NP_014581)
-T186.sandy	VERIFY_Entity 8371 8375	CanG
-T187.sandy	VERIFY_Entity 8394 8421	Candida glabrata (AAF33142)
-T188.sandy	VERIFY_Entity 8423 8438	NeuC (EAA31204)
-T189.sandy	VERIFY_Entity 8470 8487	Neurospora crassa
-T190.sandy	VERIFY_Entity 8489 8493	DroM
-T191.sandy	VERIFY_Entity 8517 8532	D. melanogaster
-T192.sandy	VERIFY_Entity 8583 8624	BDGP (Berkeley Drosophila Genome Project)
-T193.sandy	VERIFY_Entity 8626 8630	AnoG
-T194.sandy	VERIFY_Entity 8661 8694	anopheles gambiae str. (EAA01004)
-T195.sandy	VERIFY_Entity 8696 8711	CaeE (AAK77203)
-T196.sandy	VERIFY_Entity 8747 8768	Caenohabditis elegans
-T197.sandy	VERIFY_Entity 8770 8774	CorC
-T198.sandy	VERIFY_Entity 8786 8830	bacteria magnesium and cobalt efflux protein
-T199.sandy	VERIFY_Entity 8840 8861	Shewanella oneidensis
-T200.sandy	VERIFY_Entity 8863 8867	XyFD
-T201.sandy	VERIFY_Entity 8903 8941	Xylella fastidiosa Dixon (ZP_00038107)
-T202.sandy	VERIFY_Entity 8954 8971	Phylogenetic tree
-T203.sandy	VERIFY_KeyEntity 9024 9034	ACD domain
-T204.sandy	VERIFY_KeyEntity 9264 9276	Acdp members
-T205.sandy	VERIFY_Entity 9384 9397	bacteria CorC
-T206.sandy	VERIFY_Entity 9402 9422	yeast Amip3 proteins
-T207.sandy	VERIFY_Entity 9424 9435	CBS domains
-T208.sandy	VERIFY_Entity 9811 9879	cNMP-binding domain (cyclic nucleotide-monophosphate-binding domain)
-T209.sandy	VERIFY_Entity 9897 9909	Acdp members
-T210.sandy	VERIFY_Entity 9927 9948	transmembrane domains
-T211.sandy	VERIFY_Entity 9956 9969	Acdp4 protein
-T212.sandy	VERIFY_Entity 10015 10028	TMHMM program
-T213.sandy	VERIFY_Entity 9971 9992	Transmembrane domains
-T214.sandy	VERIFY_Entity 10077 10101	inside /outside/TM helix
-T215.sandy	VERIFY_Entity 10367 10386	Alanine-rich region
-T216.sandy	VERIFY_Entity 10408 10427	Leucine-rich region
-T217.sandy	VERIFY_Entity 10498 10517	Proline-rich region
-T218.sandy	VERIFY_Entity 10588 10607	two amidation sites
-T219.sandy	VERIFY_KeyEntity 10640 10645	Acdp2
-T220.sandy	VERIFY_Entity 10652 10671	glycine-rich region
-T221.sandy	VERIFY_KeyEntity 10707 10712	Acdp3
-T222.sandy	VERIFY_Entity 10731 10750	alanine-rich region
-T223.sandy	VERIFY_Entity 10771 10790	leucine-rich region
-T224.sandy	VERIFY_KeyEntity 10802 10807	Acdp4
-T225.sandy	VERIFY_Entity 10819 10841	leucine zipper pattern
-T226.sandy	VERIFY_Entity 11089 11108	ACD domain of Acdp1
-T227.sandy	VERIFY_Entity 11172 11185	Sigma Genosys
-T228.sandy	VERIFY_Entity 11417 11444	mouse brain tissue extracts
-T229.sandy	VERIFY_Entity 11492 11510	C-terminal peptide
-T230.sandy	VERIFY_KeyEntity 11533 11538	Acdp1
-T231.sandy	VERIFY_Entity 11575 11593	N-terminal peptide
-T232.sandy	VERIFY_KeyEntity 11605 11610	Acdp4
-T233.sandy	VERIFY_KeyEntity 11626 11631	Acdp1
-T234.sandy	VERIFY_Entity 11891 11907	Acdp1 C-terminus
-T235.sandy	VERIFY_Entity 11933 11939	HEK293
-T236.sandy	VERIFY_Entity 11941 11944	3T3
-T237.sandy	VERIFY_Entity 11949 11953	PC12
-T238.sandy	VERIFY_Entity 12135 12154	HEK293 cell lysates
-T239.sandy	VERIFY_Entity 12175 12178	3T3
-T240.sandy	VERIFY_Entity 12183 12187	PC12
-T241.sandy	VERIFY_KeyEntity 12233 12238	Acdp1
-T242.sandy	VERIFY_Entity 12302 12308	HEK293
-T243.sandy	VERIFY_KeyEntity 12427 12432	Acdp1
-T244.sandy	VERIFY_KeyEntity 12468 12474	Acdp-1
-T245.sandy	VERIFY_KeyEntity 10349 10354	Acdp1
-T246.sandy	VERIFY_Entity 10994 10999	Acdp1
-T247.sandy	VERIFY_KeyEntity 12656 12661	Acdp1
-T248.sandy	VERIFY_Entity 12852 12877	mouse cortical astrocytes
-T249.sandy	VERIFY_Entity 12889 12903	Immunostaining
-T250.sandy	VERIFY_Entity 12918 12952	Acdp1 C-terminus specific antibody
-T251.sandy	VERIFY_Entity 12954 12970	Confocal imaging
-T252.sandy	VERIFY_KeyEntity 12985 12990	Acdp1
-T253.sandy	VERIFY_Entity 13025 13040	plasma membrane
-T254.sandy	VERIFY_Entity 13144 13166	Acdp1-immunoreactivity
-T255.sandy	VERIFY_KeyEntity 13254 13267	Acdp proteins
-T256.sandy	VERIFY_KeyEntity 13312 13325	Acdp proteins
-T257.sandy	VERIFY_Entity 13550 13564	Acdp1 (115 kD)
-T258.sandy	VERIFY_Entity 13566 13580	Acdp2 (100 kD)
-T259.sandy	VERIFY_Entity 13582 13595	Acdp4 (90 kD)
-T260.sandy	VERIFY_Entity 13600 13613	Acdp3 (80 kD)
-T261.sandy	VERIFY_Entity 13860 13866	Acdp-1
-T262.sandy	VERIFY_Entity 13757 13762	Acdp1
-T263.sandy	VERIFY_Entity 14093 14112	anti-Acdp1 antibody
-T264.sandy	VERIFY_Entity 14274 14290	ACDP gene family
-T265.sandy	VERIFY_Entity 14354 14358	ACDP
-T266.sandy	VERIFY_KeyEntity 14711 14720	Acdp gene
-T267.sandy	VERIFY_Entity 14863 14876	Acdp proteins
-T268.sandy	VERIFY_Entity 14896 14909	AA homologies
-T269.sandy	VERIFY_Entity 14917 14938	bacteria CorC protein
-T270.sandy	VERIFY_Entity 14943 14962	yeast Amip3 protein
-T271.sandy	VERIFY_Entity 15182 15194	CorC protein
-T272.sandy	VERIFY_Entity 15260 15265	Amip3
-T273.sandy	VERIFY_Entity 15294 15309	copper toxicity
-T274.sandy	VERIFY_KeyEntity 15311 15324	Acdp proteins
-T275.sandy	VERIFY_Entity 15368 15381	bacteria CorC
-T276.sandy	VERIFY_Entity 15386 15406	yeast Amip3 proteins
-T277.sandy	VERIFY_Entity 15420 15431	CBS domains
-T278.sandy	VERIFY_Entity 15433 15445	DUF21 domain
-T279.sandy	VERIFY_Entity 15450 15471	transmembrane domains
-T280.sandy	VERIFY_Entity 15488 15507	cNMP-binding domain
-T281.sandy	VERIFY_Entity 15525 15538	Acdp proteins
-T282.sandy	VERIFY_Entity 15644 15668	Acdp1 C-terminal peptide
-T283.sandy	VERIFY_KeyEntity 15689 15694	Acdp1
-T284.sandy	VERIFY_Entity 15729 15744	plasma membrane
-T285.sandy	VERIFY_Entity 15748 15767	hippocampus neurons
-T286.sandy	VERIFY_Entity 15807 15820	ACDP proteins
-T287.sandy	VERIFY_Entity 15856 15863	nucleus
-T288.sandy	VERIFY_Entity 18046 18078	human ACDP 5' cDNA coding region
-T289.sandy	VERIFY_Entity 18105 18125	mouse reverse primer
-T290.sandy	VERIFY_Entity 18135 18151	mouse EST marker
-T291.sandy	VERIFY_Entity 18220 18255	low annealing temperature (45–50°C)
-T292.sandy	VERIFY_Entity 18266 18269	PCR
-T293.sandy	VERIFY_Entity 18456 18489	high annealing temperature (62°C)
-T294.sandy	VERIFY_Entity 18440 18443	PCR
-T295.sandy	VERIFY_Entity 18576 18602	ABI377 automatic sequencer
-T296.sandy	VERIFY_Entity 18855 18873	BAC DNA sequencing
-T297.sandy	VERIFY_Entity 20411 20428	Sequence assembly
-T298.sandy	VERIFY_Entity 20456 20466	Sequencher
-T299.sandy	VERIFY_Entity 20486 20510	Protein and DNA homology
-T300.sandy	VERIFY_Entity 20542 20549	tblastn
-T301.sandy	VERIFY_Entity 20551 20558	tblastx
-T302.sandy	VERIFY_Entity 20560 20566	blastp
-T303.sandy	VERIFY_Entity 20571 20577	blastn
-T304.sandy	VERIFY_Entity 20638 20645	GeneDoc
-T305.sandy	VERIFY_Entity 20708 20727	BCM Search Launcher
-T306.sandy	VERIFY_Entity 20730 20741	ProfileScan
-T307.sandy	VERIFY_Entity 20744 20765	sequence motif search
-T308.sandy	VERIFY_Entity 20768 20774	ExPASy
-T309.sandy	VERIFY_Entity 20780 20786	3Dpssm
-T310.sandy	VERIFY_Entity 20848 20865	Phylogenetic tree
-T311.sandy	VERIFY_Entity 20885 20893	Clustalw
-T312.sandy	VERIFY_Entity 20923 20985	UPGMA (Unweighted Pair Group Method using Arithmetic averages)
-T313.sandy	VERIFY_Entity 21489 21514	mouse cortical astrocytes
-T314.sandy	VERIFY_Entity 21388 21419	dissociated hippocampal neurons
-T315.sandy	VERIFY_Entity 22663 22686	goat serum PBS solution
-T316.sandy	VERIFY_Entity 22751 22789	glycerol-based anti-photobleach medium
-T317.sandy	VERIFY_Entity 23004 23018	cDNA sequences
-T318.sandy	VERIFY_Entity 23027 23036	Acdp gene
-T320.sandy	FIX_SPAN_KeyEntity 52 68	Acdp gene family
-T3.kevin	FIX_SPAN_Entity 339 361	human ACDP gene family
-T6.kevin	VERIFY_Entity 382 392	Acdp genes
-T12.kevin	VERIFY_Entity 547 558	amino acids
-T18.kevin	FIX_SPAN_Entity 906 919	AA homologies
-T20.kevin	FIX_SPAN_Entity 1007 1016;1028 1034	magnesium efflux
-T23.kevin	VERIFY_KeyEntity 1105 1110	Acdp1
-T29.kevin	VERIFY_KeyEntity 1475 1479	Acdp
-T31.kevin	FIX_SPAN_Entity 1546 1558	CorC protein
-T32.kevin	VERIFY_KeyEntity 1638 1642	Acdp
-T35.kevin	FIX_SPAN_Entity 1235 1254	hippocampus neurons
-T38.kevin	VERIFY_Entity 22 38	characterization
-T39.kevin	FIX_SPAN_Entity 46 68	mouse Acdp gene family
-#4	AnnotatorNotes T40.sandy	experimental_test
-#5	AnnotatorNotes T41.sandy	experimental_test
-#6	AnnotatorNotes T42.sandy	experimental_test
-#7	AnnotatorNotes T59.sandy	experimental_test
-#8	AnnotatorNotes T60.sandy	experimental_test
-#10	AnnotatorNotes T78.sandy	experimental_test
-#11	AnnotatorNotes T81.sandy	experimental_test
-#12	AnnotatorNotes T84.sandy	experimental_test
-#14	AnnotatorNotes T85.sandy	experimental_test
-#13	AnnotatorNotes T86.sandy	experimental_test
-#15	AnnotatorNotes T87.sandy	experimental_test
-#16	AnnotatorNotes T101.sandy	experimental_test
-#18	AnnotatorNotes T111.sandy	experimental_test
-#19	AnnotatorNotes T114.sandy	experimental_test
-#20	AnnotatorNotes T115.sandy	experimental_test
-#21	AnnotatorNotes T118.sandy	experimental_procedure
-#22	AnnotatorNotes T119.sandy	experimental_procedure
-#23	AnnotatorNotes T120.sandy	experimental_procedure
-#24	AnnotatorNotes T121.sandy	experimental_procedure
-#25	AnnotatorNotes T123.sandy	experimental_test
-#26	AnnotatorNotes T124.sandy	experimental_test
-#27	AnnotatorNotes T127.sandy	time_stage
-#28	AnnotatorNotes T128.sandy	experimental_procedure
-#29	AnnotatorNotes T130.sandy	experimental_procedure
-#30	AnnotatorNotes T131.sandy	experimental_procedure
-#31	AnnotatorNotes T132.sandy	experimental_procedure
-#32	AnnotatorNotes T133.sandy	experimental_procedure
-#33	AnnotatorNotes T134.sandy	experimental_procedure
-#34	AnnotatorNotes T135.sandy	experimental_procedure
-#35	AnnotatorNotes T136.sandy	experimental_procedure
-#36	AnnotatorNotes T137.sandy	experimental_procedure
-#37	AnnotatorNotes T138.sandy	experimental_test
-#38	AnnotatorNotes T139.sandy	experimental_procedure
-#39	AnnotatorNotes T140.sandy	experimental_procedure
-#40	AnnotatorNotes T141.sandy	experimental_procedure
-#41	AnnotatorNotes T142.sandy	experimental_procedure
-#42	AnnotatorNotes T143.sandy	experimental_procedure
-#43	AnnotatorNotes T153.sandy	experimental_test
-#44	AnnotatorNotes T156.sandy	experimental_test
-#45	AnnotatorNotes T249.sandy	experimental_test
-#46	AnnotatorNotes T251.sandy	experimental_test
-#49	AnnotatorNotes T292.sandy	experimental_test
-#50	AnnotatorNotes T294.sandy	experimental_test
-R56.sandy	is_part_of Arg1:T321.sandy Arg2:T4.sandy	
-R2.sandy	VERIFY_is_part_of Arg1:T12.sandy Arg2:T13.sandy	
-R3.sandy	VERIFY_is_part_of Arg1:T12.sandy Arg2:T14.sandy	
-R4.sandy	VERIFY_participates_in Arg1:T15.sandy Arg2:T16.sandy	
-R6.sandy	VERIFY_regulates Arg1:T30.sandy Arg2:T19.sandy	
-R7.sandy	VERIFY_regulates Arg1:T31.sandy Arg2:T3.sandy	
-R8.sandy	VERIFY_regulates Arg1:T31.sandy Arg2:T27.sandy	
-R9.sandy	VERIFY_regulates Arg1:T31.sandy Arg2:T28.sandy	
-R10.sandy	VERIFY_is_part_of Arg1:T20.sandy Arg2:T29.sandy	
-R11.sandy	VERIFY_regulates Arg1:T33.sandy Arg2:T11.sandy	
-R12.sandy	VERIFY_regulates Arg1:T33.sandy Arg2:T22.sandy	
-R14.sandy	VERIFY_participates_in Arg1:T25.sandy Arg2:T26.sandy	
-R15.sandy	VERIFY_participates_in Arg1:T44.sandy Arg2:T45.sandy	
-R16.sandy	VERIFY_participates_in Arg1:T48.sandy Arg2:T49.sandy	
-R17.sandy	VERIFY_participates_in Arg1:T48.sandy Arg2:T50.sandy	
-R19.sandy	VERIFY_is_part_of Arg1:T77.sandy Arg2:T76.sandy	
-R20.sandy	VERIFY_interacts_with Arg1:T79.sandy Arg2:T80.sandy	
-R21.sandy	VERIFY_is_part_of Arg1:T82.sandy Arg2:T83.sandy	
-R22.sandy	VERIFY_is_part_of Arg1:T88.sandy Arg2:T89.sandy	
-R23.sandy	VERIFY_regulates Arg1:T94.sandy Arg2:T93.sandy	
-R24.sandy	VERIFY_interacts_with Arg1:T96.sandy Arg2:T97.sandy	
-R25.sandy	VERIFY_participates_in Arg1:T97.sandy Arg2:T98.sandy	
-R26.sandy	VERIFY_regulates Arg1:T99.sandy Arg2:T100.sandy	
-R28.sandy	VERIFY_interacts_with Arg1:T108.sandy Arg2:T109.sandy	
-R29.sandy	VERIFY_participates_in Arg1:T109.sandy Arg2:T110.sandy	
-R30.sandy	VERIFY_participates_in Arg1:T104.sandy Arg2:T106.sandy	
-R31.sandy	VERIFY_is_part_of Arg1:T126.sandy Arg2:T127.sandy	
-R32.sandy	VERIFY_is_part_of Arg1:T184.sandy Arg2:T185.sandy	
-R33.sandy	VERIFY_is_part_of Arg1:T186.sandy Arg2:T187.sandy	
-R34.sandy	VERIFY_is_part_of Arg1:T188.sandy Arg2:T189.sandy	
-R35.sandy	VERIFY_is_part_of Arg1:T190.sandy Arg2:T191.sandy	
-R36.sandy	VERIFY_is_part_of Arg1:T193.sandy Arg2:T194.sandy	
-R37.sandy	VERIFY_is_part_of Arg1:T195.sandy Arg2:T196.sandy	
-R38.sandy	VERIFY_is_part_of Arg1:T197.sandy Arg2:T199.sandy	
-R39.sandy	VERIFY_is_part_of Arg1:T200.sandy Arg2:T201.sandy	
-R40.sandy	VERIFY_is_part_of Arg1:T208.sandy Arg2:T209.sandy	
-R41.sandy	VERIFY_is_part_of Arg1:T73.sandy Arg2:T204.sandy	
-R42.sandy	VERIFY_is_part_of Arg1:T74.sandy Arg2:T73.sandy	
-R43.sandy	VERIFY_is_part_of Arg1:T75.sandy Arg2:T73.sandy	
-R44.sandy	VERIFY_is_part_of Arg1:T220.sandy Arg2:T219.sandy	
-R45.sandy	VERIFY_is_part_of Arg1:T222.sandy Arg2:T221.sandy	
-R46.sandy	VERIFY_is_part_of Arg1:T223.sandy Arg2:T221.sandy	
-R47.sandy	VERIFY_is_part_of Arg1:T225.sandy Arg2:T224.sandy	
-R48.sandy	VERIFY_interacts_with Arg1:T230.sandy Arg2:T229.sandy	
-R49.sandy	VERIFY_interacts_with Arg1:T232.sandy Arg2:T231.sandy	
-R52.sandy	VERIFY_is_part_of Arg1:T272.sandy Arg2:T273.sandy	
-R53.sandy	VERIFY_participates_in Arg1:T283.sandy Arg2:T284.sandy	
-R54.sandy	VERIFY_participates_in Arg1:T284.sandy Arg2:T285.sandy	
-R55.sandy	VERIFY_participates_in Arg1:T286.sandy Arg2:T287.sandy	
-R1.sandy	VERIFY_is_subclass_of Arg1:T321.sandy Arg2:T5.sandy	
-R2.kevin	VERIFY_is_subclass_of Arg1:T6.sandy Arg2:T6.kevin	
-R3.kevin	VERIFY_is_subclass_of Arg1:T7.sandy Arg2:T6.kevin	
-R4.kevin	VERIFY_is_subclass_of Arg1:T8.sandy Arg2:T6.kevin	
-R5.kevin	VERIFY_is_subclass_of Arg1:T9.sandy Arg2:T6.kevin	
-R6.kevin	VERIFY_is_subclass_of Arg1:T321.sandy Arg2:T3.kevin	
+T2.kevin-tmp	KeyEntity 306 310	Acdp
+T4.kevin-tmp	KeyEntity 160 199	ancient conserved domain protein (ACDP)
+T5.kevin-tmp	Entity 316 331	mouse homologue
+T7.kevin-tmp	KeyEntity 394 399	Acdp1
+T8.kevin-tmp	KeyEntity 401 406	Acdp2
+T9.kevin-tmp	KeyEntity 408 413	Acdp3
+T10.kevin-tmp	KeyEntity 418 423	Acdp4
+T11.kevin-tmp	Entity 478 492	cDNA sequences
+T13.kevin-tmp	KeyEntity 578 594	mouse Acdp genes
+T15.kevin-tmp	Entity 655 675	amino acid sequences
+T16.kevin-tmp	Entity 770 800	Ancient Conserved Domain (ACD)
+T17.kevin-tmp	KeyEntity 873 886	Acdp proteins
+T19.kevin-tmp	Entity 927 948	bacteria CorC protein
+T20.kevin-tmp	Entity 1007 1016;1028 1034	magnesium efflux
+T21.kevin-tmp	Entity 1021 1034	cobalt efflux
+T22.kevin-tmp	KeyEntity 1040 1050	Acdp genes
+T24.kevin-tmp	Entity 1189 1195	kidney
+T25.kevin-tmp	Entity 1200 1206	testis
+T26.kevin-tmp	KeyEntity 1226 1231	Acdp1
+T27.kevin-tmp	Entity 1298 1313	plasma membrane
+T28.kevin-tmp	KeyEntity 1332 1342	Acdp genes
+T30.kevin-tmp	KeyEntity 1506 1510	Acdp
+T31.kevin-tmp	Entity 1537 1558	bacteria CorC protein
+T33.kevin-tmp	Entity 723 733;749 758	nucleotide sequences
+T34.kevin-tmp	Entity 738 758	amino acid sequences
+T36.kevin-tmp	Entity 1705 1720	mammalian cells
+T1.kevin-tmp	Entity 1688 1701	ion transport
+T37.kevin-tmp	Entity 0 17	Molecular cloning
+T40.kevin-tmp	Entity 1594 1609	plasma membrane
+T41.kevin-tmp	KeyEntity 1802 1841	ancient conserved domain protein (ACDP)
+T42.kevin-tmp	Entity 1983 1991	bacteria
+T43.kevin-tmp	Entity 1993 1998	yeast
+T44.kevin-tmp	Entity 2000 2010	C. elegans
+T45.kevin-tmp	Entity 2016 2031	D. melanogaster
+T47.kevin-tmp	KeyEntity 2228 2244	ACDP gene family
+T53.kevin-tmp	Entity 2419 2434	human ACDP cDNA
+T55.kevin-tmp	Entity 2491 2509	mouse EST database
+T58.kevin-tmp	Entity 2548 2565	Mouse EST markers
+T59.kevin-tmp	Entity 2588 2599	Acdp member
+T70.kevin-tmp	Entity 2789 2800	RT reaction
+T71.kevin-tmp	Entity 2829 2839	EST marker
+T75.kevin-tmp	KeyEntity 2938 2947	Acdp gene
+T84.kevin-tmp	Entity 3373 3379	RT-PCR
+T91.kevin-tmp	KeyEntity 3750 3766	Acdp gene family
+T95.kevin-tmp	Entity 4001 4014	PCR fragments
+T98.kevin-tmp	Entity 4169 4182	Acdp1 message
+T99.kevin-tmp	KeyEntity 4279 4284	Acdp2
+T101.kevin-tmp	KeyEntity 4490 4495	Acdp3
+T102.kevin-tmp	KeyEntity 4500 4505	Acdp4
+T103.kevin-tmp	KeyEntity 4595 4600	Acdp3
+T106.kevin-tmp	Entity 4839 4846	β-actin
+T108.kevin-tmp	Entity 4210 4215	brain
+T109.kevin-tmp	Entity 4223 4229	kidney
+T110.kevin-tmp	Entity 4234 4240	testis
+T111.kevin-tmp	Entity 4318 4323	brain
+T116.kevin-tmp	Entity 4622 4627	brain
+T117.kevin-tmp	Entity 4629 4635	kidney
+T120.kevin-tmp	KeyEntity 4686 4691	Acdp4
+T121.kevin-tmp	Entity 4713 4719	kidney
+T122.kevin-tmp	Entity 4721 4736	small intestine
+T123.kevin-tmp	Entity 4741 4747	testis
+T127.kevin-tmp	Entity 5413 5437	Radiation hybrid mapping
+T128.kevin-tmp	KeyEntity 5457 5467	Acdp1 gene
+T129.kevin-tmp	Entity 5476 5489	chromosome 19
+T132.kevin-tmp	KeyEntity 5614 5619	Acdp1
+T133.kevin-tmp	Entity 5623 5636	chromosome 19
+T135.kevin-tmp	KeyEntity 5706 5711	Acdp3
+T136.kevin-tmp	KeyEntity 5716 5721	Acdp4
+T137.kevin-tmp	Entity 5735 5747	chromosome 1
+T3.kevin-tmp	Entity 339 361	human ACDP gene family
+T6.kevin-tmp	KeyEntity 382 392	Acdp genes
+T14.kevin-tmp	Entity 640 650;666 675	nucleotide sequences
+T18.kevin-tmp	Entity 906 919	AA homologies
+T23.kevin-tmp	KeyEntity 1105 1110	Acdp1
+T29.kevin-tmp	KeyEntity 1475 1479	Acdp
+T32.kevin-tmp	KeyEntity 1638 1642	Acdp
+T35.kevin-tmp	Entity 1235 1254	hippocampus neurons
+T39.kevin-tmp	KeyEntity 46 68	mouse Acdp gene family
+T46.kevin-tmp	Entity 2035 2042	mammals
+T48.kevin-tmp	KeyEntity 2274 2278	Acdp
+T49.kevin-tmp	Entity 2284 2299	mouse homologue
+T50.kevin-tmp	KeyEntity 2366 2382	Acdp gene family
+T51.kevin-tmp	Entity 2341 2358	Molecular cloning
+T52.kevin-tmp	KeyEntity 2397 2413	mouse Acdp genes
+T57.kevin-tmp	Entity 2530 2546	tblastn programs
+T60.kevin-tmp	Entity 2635 2649	EST H3086H12-5
+T61.kevin-tmp	KeyEntity 2665 2670	Acdp1
+T62.kevin-tmp	Entity 2672 2678	W98010
+T63.kevin-tmp	KeyEntity 2683 2688	Acdp2
+T64.kevin-tmp	Entity 2690 2701	603299135F1
+T65.kevin-tmp	KeyEntity 2706 2711	Acdp3
+T66.kevin-tmp	Entity 2716 2724	BG083791
+T67.kevin-tmp	KeyEntity 2729 2734	Acdp4
+T68.kevin-tmp	Entity 2738 2755	modified oligo-dT
+T76.kevin-tmp	KeyEntity 3012 3022	Acdp genes
+T77.kevin-tmp	Entity 3046 3056	nested PCR
+T78.kevin-tmp	Entity 3078 3083;3094 3101	mouse primers
+T79.kevin-tmp	Entity 3088 3101	human primers
+T81.kevin-tmp	KeyEntity 3200 3210	Acdp genes
+T80.kevin-tmp	Entity 3163 3170	BAC DNA
+T82.kevin-tmp	Entity 3216 3226	BAC clones
+T83.kevin-tmp	KeyEntity 3258 3284	CITB mouse BAC DNA library
+T85.kevin-tmp	KeyEntity 3385 3395	Acdp1 gene
+T86.kevin-tmp	KeyEntity 3512 3522	Acdp genes
+T87.kevin-tmp	KeyEntity 3524 3529	Acdp2
+T88.kevin-tmp	KeyEntity 3524 3528;3531 3532	Acdp 3
+T89.kevin-tmp	KeyEntity 3524 3528;3537 3538	Acdp 4
+T90.kevin-tmp	Entity 3720 3742	Northern blot analyses
+T93.kevin-tmp	KeyEntity 3929 3940	Acdp member
+T96.kevin-tmp	Entity 4080 4099	mouse Acdp messages
+T97.kevin-tmp	Entity 4151 4167	human ACDP genes
+T100.kevin-tmp	KeyEntity 4356 4372	Acdp2 transcript
+T104.kevin-tmp	KeyEntity 4775 4780	Acdp3
+T105.kevin-tmp	KeyEntity 4775 4779;4785 4786	Acdp 4
+T107.kevin-tmp	Entity 5061 5074	Acdp proteins
+T112.kevin-tmp	Entity 4325 4331	kidney
+T113.kevin-tmp	Entity 4336 4341	liver
+T118.kevin-tmp	Entity 4637 4642	liver
+T119.kevin-tmp	Entity 4647 4652	heart
+T124.kevin-tmp	Entity 4790 4805	skeleton muscle
+T125.kevin-tmp	Entity 5200 5222	Northern blot analyses
+T126.kevin-tmp	Entity 5230 5246	Acdp gene family
+T131.kevin-tmp	KeyEntity 5570 5580	Acdp2 gene
+T138.kevin-tmp	Entity 5759 5768	BAC clone
+T16.sandy-tmp	Entity 805 821	highly conserved
+T11.sandy-tmp	Entity 1429 1440	development
+T22.sandy-tmp	Entity 1445 1458	adult tissues
+T3.sandy-tmp	Entity 1150 1155	brain
+T61.sandy-tmp	Entity 6098 6109	human ACDP2
+T62.sandy-tmp	KeyEntity 6118 6134	mouse Acdp2 gene
+T63.sandy-tmp	Entity 6365 6386	Acdp2 5' UTR sequence
+T64.sandy-tmp	KeyEntity 6929 6942	Acdp proteins
+T65.sandy-tmp	Entity 7220 7225	Amip3
+T66.sandy-tmp	KeyEntity 7137 7150	Acdp proteins
+T67.sandy-tmp	Entity 7159 7178	yeast Amip3 protein
+T68.sandy-tmp	Entity 7289 7302	Amip3 mutants
+T74.sandy-tmp	Entity 9331 9346	two CBS domains
+T75.sandy-tmp	Entity 9353 9365	DUF21 domain
+T79.sandy-tmp	Entity 12500 12525	Acdp1 C-terminus antibody
+T81.sandy-tmp	Entity 12602 12615	Northern blot
+T83.sandy-tmp	Entity 12720 12739	hippocampus neurons
+T84.sandy-tmp	Entity 13289 13299	Immunoblot
+T85.sandy-tmp	Entity 13352 13366	Immunoblotting
+T86.sandy-tmp	Entity 13392 13408	Western blotting
+T87.sandy-tmp	Entity 13734 13744	Immunoblot
+T89.sandy-tmp	Entity 14005 14024	hippocampus neurons
+T94.sandy-tmp	Entity 15146 15151	Amip3
+T96.sandy-tmp	Entity 16093 16118	Acdp1 C-terminus antibody
+T97.sandy-tmp	KeyEntity 16135 16140	Acdp1
+T98.sandy-tmp	Entity 16144 16149	brain
+T99.sandy-tmp	KeyEntity 16291 16295	Acdp
+T100.sandy-tmp	Entity 16317 16330	ion transport
+T101.sandy-tmp	Entity 16907 16924	Molecular cloning
+T102.sandy-tmp	Entity 17132 17156	amino acid conservations
+T103.sandy-tmp	Entity 17165 17170	mouse
+T104.sandy-tmp	KeyEntity 17190 17199	Acdp gene
+T105.sandy-tmp	KeyEntity 17214 17230	Acdp gene family
+T108.sandy-tmp	KeyEntity 17539 17544	Acdp1
+T109.sandy-tmp	Entity 17579 17594	plasma membrane
+T110.sandy-tmp	Entity 17598 17617	hippocampus neurons
+T111.sandy-tmp	Entity 17753 17765	cDNA cloning
+T112.sandy-tmp	KeyEntity 17773 17789	Acdp gene family
+T113.sandy-tmp	Entity 17886 17896	ACDP cDNAs
+T114.sandy-tmp	Entity 18504 18507	PCR
+T116.sandy-tmp	KeyEntity 19038 19047	Acdp gene
+T122.sandy-tmp	Entity 19576 19607	KLH (keyhole limpet hemacyanin)
+T123.sandy-tmp	Entity 19783 19796	Western blots
+T125.sandy-tmp	Entity 21050 21077	Hippocampal neuron cultures
+T126.sandy-tmp	Entity 21134 21147	hippocampuses
+T131.sandy-tmp	Entity 21305 21323	suspension culture
+T138.sandy-tmp	Entity 21979 21993	immunostaining
+T146.sandy-tmp	Entity 2519 2525;2538 2546	blastn programs
+T150.sandy-tmp	Entity 2848 2873	M13 primer (olig-dT tail)
+T156.sandy-tmp	Entity 3981 3995	Northern bolts
+T173.sandy-tmp	Entity 6332 6346	human homologs
+T174.sandy-tmp	KeyEntity 6617 6647	ancient conserved domain (ACD)
+T178.sandy-tmp	KeyEntity 6751 6761	ACD domain
+T183.sandy-tmp	KeyEntity 8278 8288	ACD domain
+T184.sandy-tmp	Entity 8309 8314	Amip3
+T185.sandy-tmp	Entity 8333 8369	Saccharomyces cerevisiae (NP_014581)
+T186.sandy-tmp	Entity 8371 8375	CanG
+T187.sandy-tmp	Entity 8394 8421	Candida glabrata (AAF33142)
+T188.sandy-tmp	Entity 8423 8438	NeuC (EAA31204)
+T189.sandy-tmp	Entity 8470 8487	Neurospora crassa
+T190.sandy-tmp	Entity 8489 8493	DroM
+T191.sandy-tmp	Entity 8517 8532	D. melanogaster
+T193.sandy-tmp	Entity 8626 8630	AnoG
+T194.sandy-tmp	Entity 8661 8694	anopheles gambiae str. (EAA01004)
+T195.sandy-tmp	Entity 8696 8711	CaeE (AAK77203)
+T196.sandy-tmp	Entity 8747 8768	Caenohabditis elegans
+T197.sandy-tmp	Entity 8770 8774	CorC
+T198.sandy-tmp	Entity 8786 8830	bacteria magnesium and cobalt efflux protein
+T199.sandy-tmp	Entity 8840 8861	Shewanella oneidensis
+T200.sandy-tmp	Entity 8863 8867	XyFD
+T201.sandy-tmp	Entity 8903 8941	Xylella fastidiosa Dixon (ZP_00038107)
+T203.sandy-tmp	KeyEntity 9024 9034	ACD domain
+T204.sandy-tmp	KeyEntity 9264 9276	Acdp members
+T205.sandy-tmp	Entity 9384 9397	bacteria CorC
+T206.sandy-tmp	Entity 9402 9422	yeast Amip3 proteins
+T207.sandy-tmp	Entity 9424 9435	CBS domains
+T208.sandy-tmp	Entity 9811 9879	cNMP-binding domain (cyclic nucleotide-monophosphate-binding domain)
+T209.sandy-tmp	KeyEntity 9897 9909	Acdp members
+T210.sandy-tmp	Entity 9927 9948	transmembrane domains
+T211.sandy-tmp	Entity 9956 9969	Acdp4 protein
+T213.sandy-tmp	Entity 9971 9992	Transmembrane domains
+T219.sandy-tmp	KeyEntity 10640 10645	Acdp2
+T221.sandy-tmp	KeyEntity 10707 10712	Acdp3
+T224.sandy-tmp	KeyEntity 10802 10807	Acdp4
+T228.sandy-tmp	Entity 11417 11444	mouse brain tissue extracts
+T229.sandy-tmp	Entity 11492 11510	C-terminal peptide
+T230.sandy-tmp	KeyEntity 11533 11538	Acdp1
+T231.sandy-tmp	Entity 11575 11593	N-terminal peptide
+T232.sandy-tmp	KeyEntity 11605 11610	Acdp4
+T233.sandy-tmp	KeyEntity 11626 11631	Acdp1
+T234.sandy-tmp	KeyEntity 11891 11907	Acdp1 C-terminus
+T235.sandy-tmp	Entity 11933 11939	HEK293
+T236.sandy-tmp	Entity 11941 11944	3T3
+T237.sandy-tmp	Entity 11949 11953	PC12
+T241.sandy-tmp	KeyEntity 12233 12238	Acdp1
+T242.sandy-tmp	Entity 12302 12308	HEK293
+T243.sandy-tmp	KeyEntity 12427 12432	Acdp1
+T244.sandy-tmp	KeyEntity 12468 12474	Acdp-1
+T245.sandy-tmp	KeyEntity 10349 10354	Acdp1
+T246.sandy-tmp	KeyEntity 10994 10999	Acdp1
+T247.sandy-tmp	KeyEntity 12656 12661	Acdp1
+T249.sandy-tmp	Entity 12889 12903	Immunostaining
+T250.sandy-tmp	Entity 12918 12952	Acdp1 C-terminus specific antibody
+T251.sandy-tmp	Entity 12954 12970	Confocal imaging
+T252.sandy-tmp	KeyEntity 12985 12990	Acdp1
+T253.sandy-tmp	Entity 13025 13040	plasma membrane
+T254.sandy-tmp	Entity 13144 13166	Acdp1-immunoreactivity
+T255.sandy-tmp	KeyEntity 13254 13267	Acdp proteins
+T256.sandy-tmp	KeyEntity 13312 13325	Acdp proteins
+T261.sandy-tmp	KeyEntity 13860 13866	Acdp-1
+T262.sandy-tmp	KeyEntity 13757 13762	Acdp1
+T263.sandy-tmp	KeyEntity 14093 14112	anti-Acdp1 antibody
+T264.sandy-tmp	Entity 14274 14290	ACDP gene family
+T265.sandy-tmp	Entity 14354 14358	ACDP
+T266.sandy-tmp	KeyEntity 14711 14720	Acdp gene
+T267.sandy-tmp	KeyEntity 14863 14876	Acdp proteins
+T268.sandy-tmp	Entity 14896 14909	AA homologies
+T269.sandy-tmp	Entity 14917 14938	bacteria CorC protein
+T270.sandy-tmp	Entity 14943 14962	yeast Amip3 protein
+T271.sandy-tmp	Entity 15182 15194	CorC protein
+T272.sandy-tmp	Entity 15260 15265	Amip3
+T274.sandy-tmp	KeyEntity 15311 15324	Acdp proteins
+T275.sandy-tmp	Entity 15368 15381	bacteria CorC
+T276.sandy-tmp	Entity 15386 15406	yeast Amip3 proteins
+T277.sandy-tmp	Entity 15420 15431	CBS domains
+T278.sandy-tmp	Entity 15433 15445	DUF21 domain
+T279.sandy-tmp	Entity 15450 15471	transmembrane domains
+T280.sandy-tmp	Entity 15488 15507	cNMP-binding domain
+T281.sandy-tmp	KeyEntity 15525 15538	Acdp proteins
+T282.sandy-tmp	Entity 15644 15668	Acdp1 C-terminal peptide
+T283.sandy-tmp	KeyEntity 15689 15694	Acdp1
+T284.sandy-tmp	Entity 15729 15744	plasma membrane
+T285.sandy-tmp	Entity 15748 15767	hippocampus neurons
+T286.sandy-tmp	Entity 15807 15820	ACDP proteins
+T287.sandy-tmp	Entity 15856 15863	nucleus
+T288.sandy-tmp	Entity 18046 18078	human ACDP 5' cDNA coding region
+T289.sandy-tmp	Entity 18105 18125	mouse reverse primer
+T290.sandy-tmp	Entity 18135 18151	mouse EST marker
+T292.sandy-tmp	Entity 18266 18269	PCR
+T294.sandy-tmp	Entity 18440 18443	PCR
+T296.sandy-tmp	Entity 18855 18873	BAC DNA sequencing
+T297.sandy-tmp	Entity 20411 20428	Sequence assembly
+T314.sandy-tmp	Entity 21388 21419	dissociated hippocampal neurons
+T317.sandy-tmp	Entity 23004 23018	cDNA sequences
+T318.sandy-tmp	KeyEntity 23027 23036	Acdp gene
+#4	AnnotatorNotes T70.kevin-tmp	experimental_test
+#5	AnnotatorNotes T84.kevin-tmp	experimental_test
+#8	AnnotatorNotes T127.kevin-tmp	experimental_test
+#11	AnnotatorNotes T81.sandy-tmp	experimental_test
+#12	AnnotatorNotes T84.sandy-tmp	experimental_test
+#14	AnnotatorNotes T85.sandy-tmp	experimental_test
+#13	AnnotatorNotes T86.sandy-tmp	experimental_test
+#15	AnnotatorNotes T87.sandy-tmp	experimental_test
+#16	AnnotatorNotes T101.sandy-tmp	experimental_test
+#18	AnnotatorNotes T111.sandy-tmp	experimental_test
+#19	AnnotatorNotes T114.sandy-tmp	experimental_test
+#25	AnnotatorNotes T123.sandy-tmp	experimental_test
+#30	AnnotatorNotes T131.sandy-tmp	experimental_procedure
+#37	AnnotatorNotes T138.sandy-tmp	experimental_test
+#44	AnnotatorNotes T156.sandy-tmp	experimental_test
+#45	AnnotatorNotes T249.sandy-tmp	experimental_test
+#46	AnnotatorNotes T251.sandy-tmp	experimental_test
+#49	AnnotatorNotes T292.sandy-tmp	experimental_test
+#50	AnnotatorNotes T294.sandy-tmp	experimental_test
+R1.kevin-tmp	is_part_of Arg1:T2.kevin-tmp Arg2:T5.kevin-tmp	
+R12.kevin-tmp	is_part_of Arg1:T98.kevin-tmp Arg2:T108.kevin-tmp	
+R13.kevin-tmp	is_part_of Arg1:T99.kevin-tmp Arg2:T111.kevin-tmp	
+R2.kevin-tmp	is_subclass_of Arg1:T7.kevin-tmp Arg2:T6.kevin-tmp	
+R3.kevin-tmp	is_subclass_of Arg1:T8.kevin-tmp Arg2:T6.kevin-tmp	
+R4.kevin-tmp	is_subclass_of Arg1:T9.kevin-tmp Arg2:T6.kevin-tmp	
+R5.kevin-tmp	is_subclass_of Arg1:T10.kevin-tmp Arg2:T6.kevin-tmp	
+R6.kevin-tmp	is_subclass_of Arg1:T2.kevin-tmp Arg2:T3.kevin-tmp	
+R11.kevin-tmp	is_part_of Arg1:T81.kevin-tmp Arg2:T80.kevin-tmp	
+R14.kevin-tmp	is_part_of Arg1:T99.kevin-tmp Arg2:T112.kevin-tmp	
+R15.kevin-tmp	is_part_of Arg1:T99.kevin-tmp Arg2:T113.kevin-tmp	
+R16.kevin-tmp	is_part_of Arg1:T103.kevin-tmp Arg2:T116.kevin-tmp	
+R17.kevin-tmp	is_part_of Arg1:T103.kevin-tmp Arg2:T117.kevin-tmp	
+R18.kevin-tmp	is_part_of Arg1:T103.kevin-tmp Arg2:T118.kevin-tmp	
+R19.kevin-tmp	is_part_of Arg1:T103.kevin-tmp Arg2:T119.kevin-tmp	
+R20.kevin-tmp	is_part_of Arg1:T120.kevin-tmp Arg2:T121.kevin-tmp	
+R21.kevin-tmp	is_part_of Arg1:T120.kevin-tmp Arg2:T122.kevin-tmp	
+R22.kevin-tmp	is_part_of Arg1:T120.kevin-tmp Arg2:T123.kevin-tmp	
+R4.sandy-tmp	participates_in Arg1:T16.kevin-tmp Arg2:T16.sandy-tmp	
+R7.sandy-tmp	is_part_of Arg1:T22.kevin-tmp Arg2:T3.sandy-tmp	
+R8.sandy-tmp	is_part_of Arg1:T22.kevin-tmp Arg2:T24.kevin-tmp	
+R9.sandy-tmp	is_part_of Arg1:T22.kevin-tmp Arg2:T25.kevin-tmp	
+R11.sandy-tmp	participates_in Arg1:T28.kevin-tmp Arg2:T11.sandy-tmp	
+R12.sandy-tmp	is_part_of Arg1:T28.kevin-tmp Arg2:T22.sandy-tmp	
+R14.sandy-tmp	participates_in Arg1:T36.kevin-tmp Arg2:T1.kevin-tmp	
+R24.sandy-tmp	interacts_with Arg1:T96.sandy-tmp Arg2:T97.sandy-tmp	
+R25.sandy-tmp	is_part_of Arg1:T97.sandy-tmp Arg2:T98.sandy-tmp	
+R26.sandy-tmp	participates_in Arg1:T99.sandy-tmp Arg2:T100.sandy-tmp	
+R28.sandy-tmp	interacts_with Arg1:T108.sandy-tmp Arg2:T109.sandy-tmp	
+R29.sandy-tmp	is_part_of Arg1:T109.sandy-tmp Arg2:T110.sandy-tmp	
+R32.sandy-tmp	is_part_of Arg1:T184.sandy-tmp Arg2:T185.sandy-tmp	
+R33.sandy-tmp	is_part_of Arg1:T186.sandy-tmp Arg2:T187.sandy-tmp	
+R36.sandy-tmp	is_part_of Arg1:T193.sandy-tmp Arg2:T194.sandy-tmp	
+R37.sandy-tmp	is_part_of Arg1:T195.sandy-tmp Arg2:T196.sandy-tmp	
+R38.sandy-tmp	is_part_of Arg1:T197.sandy-tmp Arg2:T199.sandy-tmp	
+R39.sandy-tmp	is_part_of Arg1:T200.sandy-tmp Arg2:T201.sandy-tmp	
+R40.sandy-tmp	is_part_of Arg1:T208.sandy-tmp Arg2:T209.sandy-tmp	
+R53.sandy-tmp	interacts_with Arg1:T283.sandy-tmp Arg2:T284.sandy-tmp	
+R54.sandy-tmp	is_part_of Arg1:T284.sandy-tmp Arg2:T285.sandy-tmp	
+R55.sandy-tmp	is_part_of Arg1:T286.sandy-tmp Arg2:T287.sandy-tmp	
+R1	participates_in Arg1:T19.kevin-tmp Arg2:T20.kevin-tmp	
+R2	participates_in Arg1:T19.kevin-tmp Arg2:T21.kevin-tmp	
+T1	Entity 18876 18898	Northern blot analyses
+T2	Entity 20392 20409	Sequence analyses
+T3	Entity 16509 16519	ACDP genes
+T4	KeyEntity 16636 16646	Acdp genes
+T5	Entity 17739 17751	cDNA cloning
+T6	KeyEntity 11103 11108	Acdp1
+T7	Entity 11392 11413	Western-blot analysis
+T8	Entity 11471 11479	antibody
+T9	Entity 11553 11561	antibody
+T10	KeyEntity 13550 13555	Acdp1
+T11	KeyEntity 13566 13571	Acdp2
+T12	KeyEntity 13582 13587	Acdp4
+T13	KeyEntity 13600 13605	Acdp3
+T14	KeyEntity 12575 12581	Acdp-1
+R3	interacts_with Arg1:T79.sandy-tmp Arg2:T14	
+R4	interacts_with Arg1:T252.sandy-tmp Arg2:T253.sandy-tmp	
+T15	KeyEntity 13996 14001	Acdp1
+R5	is_part_of Arg1:T15 Arg2:T89.sandy-tmp	
+T16	Entity 15216 15222	efflux
+T17	Entity 15226 15235	magnesium
+T18	Entity 15240 15246	cobalt
+R6	participates_in Arg1:T17 Arg2:T16	
+R7	participates_in Arg1:T18 Arg2:T16	
+R8	participates_in Arg1:T271.sandy-tmp Arg2:T16	
+T19	Entity 15924 15938	neuronal cells
+T20	KeyEntity 15903 15907	Acdp
+R9	is_part_of Arg1:T20 Arg2:T19	
+T21	Entity 9299 9320	transmembrane domains
+R10	is_subclass_of Arg1:T74.sandy-tmp Arg2:T21	
+R11	is_subclass_of Arg1:T75.sandy-tmp Arg2:T21	
+R12	is_part_of Arg1:T21 Arg2:T204.sandy-tmp	
+T22	Entity 9537 9548	CBS domains
+T23	Entity 9575 9590	globular domain
+R13	is_part_of Arg1:T22 Arg2:T23	
+R14	interacts_with Arg1:T8 Arg2:T230.sandy-tmp	
+R15	interacts_with Arg1:T9 Arg2:T232.sandy-tmp	
+T24	Entity 11870 11878	antibody
+T25	Entity 10913 10932	Antibody production
+T26	Entity 11728 11736	antibody
+T27	Entity 11271 11281	antibodies
+T28	Entity 11367 11377	antibodies
+T29	Entity 12012 12020	antibody
+T30	KeyEntity 12049 12054	Acdp1
+T31	Entity 12135 12141	HEK293
+T32	Entity 12175 12178	3T3
+T33	Entity 12183 12187	PC12
+T34	Entity 6552 6562	Acdp genes
+T35	Entity 6717 6736	human ACDP proteins
+T36	KeyEntity 6707 6712;6723 6736	mouse ACDP proteins
+T37	Entity 7071 7084	cobalt efflux
+T38	Entity 7057 7066;7078 7084	magnesium efflux
+R16	is_part_of Arg1:T27.kevin-tmp Arg2:T35.kevin-tmp	
+T39	Entity 17124 17127;17143 17156	DNA conservations

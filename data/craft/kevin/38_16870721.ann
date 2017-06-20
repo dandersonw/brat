@@ -21,3 +21,21 @@ T19	KeyEntity 0 9	RMCE-ASAP
 T20	Entity 39 41	ES
 T21	Entity 46 59	somatic cells
 T22	Entity 74 92	phenotype analyses
+T23	Entity 1145 1148	p53
+T24	Entity 1308 1319	p53 mutants
+T25	Entity 1264 1288	transfection of plasmids
+T26	Entity 1360 1363	p53
+T27	Entity 1456 1465;1473 1482	mutations p53 locus
+T28	Entity 1489 1513	homologous recombination
+T29	Entity 1517 1536	embryonic stem (ES)
+T30	Entity 1671 1690	endogenous promoter
+T31	Entity 2053 2077	homologous recombination
+T32	Entity 2081 2089	ES cells
+T33	Entity 2171 2195	homologous recombination
+T34	Entity 2216 2229	low frequency
+T35	Entity 28921 28929	ES cells
+T36	Entity 29020 29044	homologous recombination
+T37	Entity 29049 29053	MEFs
+T38	KeyEntity 27444 27448	RMCE
+T39	Entity 27452 27456	MEFs
+T40	KeyEntity 27462 27466	RMCE

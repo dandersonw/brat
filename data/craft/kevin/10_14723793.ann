@@ -161,3 +161,349 @@ T136	KeyEntity 5716 5721	Acdp4
 T137	Entity 5735 5747	chromosome 1
 T138	Entity 5759 5768	BAC clone
 T139	Entity 5803 5811	D1Mit171
+T94	Entity 5931 5947	mouse Acdp genes
+T140	Entity 6021 6037	human ACDP genes
+T141	KeyEntity 6098 6109;6130 6134	human ACDP2 gene
+T142	KeyEntity 6118 6134	mouse Acdp2 gene
+T143	KeyEntity 6365 6370	Acdp2
+T144	Entity 6552 6562	Acdp genes
+T145	KeyEntity 6570 6575	Acdp4
+T146	Entity 6617 6647	ancient conserved domain (ACD)
+T147	Entity 6717 6736	human ACDP proteins
+T148	Entity 6707 6712;6723 6736	mouse ACDP proteins
+T149	Entity 6751 6761;6780 6789	ACD domain conserved
+T150	Entity 6824 6832	bacteria
+T151	Entity 6834 6839	yeast
+T152	Entity 6841 6851	C. elegans
+T153	Entity 6853 6868	D. melanogaster
+T154	Entity 6870 6875	mouse
+T155	Entity 6879 6884	human
+R23	is_part_of Arg1:T149 Arg2:T150	
+R24	is_part_of Arg1:T149 Arg2:T151	
+R25	is_part_of Arg1:T149 Arg2:T152	
+R26	is_part_of Arg1:T149 Arg2:T153	
+R27	is_part_of Arg1:T149 Arg2:T154	
+R28	is_part_of Arg1:T149 Arg2:T155	
+T156	Entity 6929 6942	Acdp proteins
+T157	Entity 6977 6998	bacteria CorC protein
+T158	Entity 7057 7066;7078 7084	magnesium efflux
+T159	Entity 7071 7084	cobalt efflux
+R29	participates_in Arg1:T157 Arg2:T158	
+R30	participates_in Arg1:T157 Arg2:T159	
+T160	Entity 7137 7150	Acdp proteins
+T161	KeyEntity 7159 7178	yeast Amip3 protein
+T162	KeyEntity 7220 7225	Amip3
+T163	Entity 7262 7283	bacteria CorC protein
+T164	KeyEntity 7289 7294	Amip3
+T165	Entity 7310 7339	resistance to copper toxicity
+R31	other_relation Arg1:T165 Arg2:T164	
+#4	AnnotatorNotes R31	attribute
+T166	Entity 7646 7656;7672 7679	human ACDP members
+T167	Entity 7661 7679	mouse Acdp members
+T168	Entity 7746 7750	ACDP
+T169	Entity 7755 7765	Acdp genes
+T170	Entity 7777 7787	ACD domain
+T171	Entity 7815 7825	Acdp genes
+T172	KeyEntity 7908 7913	Acdp2
+T173	KeyEntity 7926 7931	Acdp3
+T174	KeyEntity 7947 7952	Acdp4
+T175	KeyEntity 7890 7895	Acdp1
+#5	AnnotatorNotes T175	sequence number
+#6	AnnotatorNotes T172	sequence number
+#7	AnnotatorNotes T173	sequence number
+#8	AnnotatorNotes T174	sequence number
+T176	Entity 8262 8274;8278 8288	conservation ACD domain
+T177	Entity 8220 8249	Amino acid sequence alignment
+T178	KeyEntity 8309 8314;8320 8327	Amip3 protein
+T179	Entity 8333 8357	Saccharomyces cerevisiae
+R32	is_part_of Arg1:T178 Arg2:T179	
+T180	Entity 8371 8375;8381 8388	CanG protein
+T181	Entity 8394 8410	Candida glabrata
+R33	is_part_of Arg1:T180 Arg2:T181	
+T182	Entity 8423 8427;8444 8464	NeuC hypothetical protein
+T183	Entity 8470 8487	Neurospora crassa
+R34	is_part_of Arg1:T182 Arg2:T183	
+T184	Entity 8489 8493;8499 8511	DroM gene product
+T185	Entity 8517 8532	D. melanogaster
+R35	is_part_of Arg1:T184 Arg2:T185	
+T186	Entity 8626 8630;8644 8651	AnoG protein
+T187	Entity 8661 8682	anopheles gambiae str
+R36	is_part_of Arg1:T186 Arg2:T187	
+T188	Entity 8696 8700;8717 8737	CaeE hypothetical protein
+T189	Entity 8747 8768	Caenohabditis elegans
+R37	is_part_of Arg1:T188 Arg2:T189	
+T191	Entity 8770 8774;8786 8804;8816 8830	CorC bacteria magnesium efflux protein
+T192	Entity 8770 8774;8786 8794;8809 8830	CorC bacteria cobalt efflux protein
+T193	Entity 8840 8861	Shewanella oneidensis
+T194	Entity 8863 8867;8873 8893	XyFD hypothetical protein
+T195	Entity 8903 8927	Xylella fastidiosa Dixon
+R38	is_part_of Arg1:T194 Arg2:T195	
+R39	is_part_of Arg1:T192 Arg2:T193	
+R40	is_part_of Arg1:T191 Arg2:T193	
+T190	Entity 9024 9034	ACD domain
+T196	Entity 9258 9276	mouse Acdp members
+T197	Entity 9299 9320	transmembrane domains
+R41	other_relation Arg1:T197 Arg2:T196	
+#9	AnnotatorNotes R41	attribute
+T198	Entity 9335 9346	CBS domains
+R42	other_relation Arg1:T198 Arg2:T196	
+#10	AnnotatorNotes R42	attribute
+T199	Entity 9353 9365	DUF21 domain
+R43	other_relation Arg1:T199 Arg2:T196	
+#11	AnnotatorNotes R43	attribute
+T200	Entity 9384 9397;9414 9422	bacteria CorC proteins
+T201	Entity 9402 9422	yeast Amip3 proteins
+R44	is_part_of Arg1:T196 Arg2:T200	
+R45	is_part_of Arg1:T196 Arg2:T201	
+T202	Entity 9424 9435	CBS domains
+T203	Entity 9446 9467	intracellular modules
+R46	other_relation Arg1:T203 Arg2:T202	
+#12	AnnotatorNotes R46	attribute
+T204	Entity 9528 9533;9537 9548	Pairs CBS domains
+T205	Entity 9575 9590	globular domain
+R47	other_relation Arg1:T204 Arg2:T205	
+#13	AnnotatorNotes R47	equivalent
+T206	Entity 9596 9601;9639 9645	DUF21 domain
+T207	Entity 9686 9706	transmembrane region
+T208	Entity 9738 9748;9756 9764	N-terminus proteins
+T209	Entity 9781 9806	intracellular CBS domains
+T210	Entity 9811 9879	cNMP-binding domain (cyclic nucleotide-monophosphate-binding domain)
+T211	Entity 9897 9909	Acdp members
+R48	other_relation Arg1:T210 Arg2:T211	
+#14	AnnotatorNotes R48	attribute
+T212	KeyEntity 9956 9969	Acdp4 protein
+T213	Entity 9927 9948	transmembrane domains
+R49	other_relation Arg1:T213 Arg2:T212	
+#15	AnnotatorNotes R49	attribute
+T214	Entity 9971 9992	Transmembrane domains
+T215	Entity 10015 10028	TMHMM program
+T216	KeyEntity 10349 10354	Acdp1
+T217	Entity 10367 10386	Alanine-rich region
+T218	Entity 10408 10427	Leucine-rich region
+T219	Entity 10498 10517	Proline-rich region
+T220	Entity 10592 10607	amidation sites
+R50	other_relation Arg1:T217 Arg2:T216	
+#16	AnnotatorNotes R50	attribute
+R51	other_relation Arg1:T218 Arg2:T216	
+#17	AnnotatorNotes R51	attribute
+R52	other_relation Arg1:T219 Arg2:T216	
+#18	AnnotatorNotes R52	attribute
+R53	other_relation Arg1:T220 Arg2:T216	
+#19	AnnotatorNotes R53	attribute
+T221	KeyEntity 10640 10645	Acdp2
+T222	Entity 10652 10671	glycine-rich region
+T223	KeyEntity 10707 10712	Acdp3
+T224	Entity 10731 10750	alanine-rich region
+T225	Entity 10771 10790	leucine-rich region
+T226	KeyEntity 10802 10807	Acdp4
+T227	Entity 10819 10841	leucine zipper pattern
+T228	Entity 10883 10897	amidation site
+R54	other_relation Arg1:T224 Arg2:T223	
+#20	AnnotatorNotes R54	attribute
+R55	other_relation Arg1:T225 Arg2:T223	
+#21	AnnotatorNotes R55	attribute
+R56	other_relation Arg1:T227 Arg2:T226	
+#22	AnnotatorNotes R56	attribute
+R57	other_relation Arg1:T228 Arg2:T226	
+#23	AnnotatorNotes R57	attribute
+T229	Entity 23027 23043	Acdp gene family
+T230	Entity 23004 23018	cDNA sequences
+T231	KeyEntity 23118 23123	Acdp1
+T232	KeyEntity 23136 23141	Acdp2
+T233	KeyEntity 23154 23159	Acdp3
+T234	KeyEntity 23175 23180	Acdp4
+T235	Entity 21050 21077	Hippocampal neuron cultures
+T236	Entity 21979 21993	immunostaining
+T237	Entity 20411 20428	Sequence assembly
+T238	Entity 20598 20617	sequence alignments
+T239	Entity 19664 19667	ACD
+T240	KeyEntity 19613 19637	Acdp1 N- and C-terminals
+T241	KeyEntity 19725 19730	Acdp1
+T242	Entity 19739 19751	Acdp members
+T243	Entity 19783 19796	Western blots
+T244	Entity 19576 19607	KLH (keyhole limpet hemacyanin)
+T245	Entity 17753 17765	cDNA cloning
+T246	Entity 17773 17789	Acdp gene family
+T247	Entity 16503 16519	human ACDP genes
+T248	Entity 16692 16696	Acdp
+T249	Entity 16713 16729	single copy gene
+R58	is_subclass_of Arg1:T248 Arg2:T249	
+T250	Entity 16760 16770	C. elegans
+T251	Entity 16772 16778	yeasts
+T252	Entity 16783 16791	bacteria
+R59	is_part_of Arg1:T249 Arg2:T250	
+R60	is_part_of Arg1:T249 Arg2:T251	
+R61	is_part_of Arg1:T249 Arg2:T252	
+T253	Entity 16850 16860	Acdp genes
+T254	Entity 16864 16881	different species
+R62	is_part_of Arg1:T253 Arg2:T254	
+T255	Entity 16820 16846	evolutionary relationships
+R63	other_relation Arg1:T255 Arg2:T253	
+#24	AnnotatorNotes R63	attribute
+T256	Entity 16907 16924	Molecular cloning
+T257	Entity 16929 16945	characterization
+T258	Entity 16949 16972	murine Acdp gene family
+T259	Entity 17124 17127;17143 17156	DNA conservations
+T260	Entity 17132 17156	amino acid conservations
+T261	Entity 17165 17180	mouse and human
+T262	Entity 17190 17199	Acdp gene
+T263	Entity 17214 17230	Acdp gene family
+T264	Entity 17291 17312	functional redundancy
+T265	Entity 17332 17344	Acdp members
+R64	other_relation Arg1:T259 Arg2:T262	
+#25	AnnotatorNotes R64	attribute
+R65	other_relation Arg1:T260 Arg2:T262	
+#26	AnnotatorNotes R65	attribute
+R66	other_relation Arg1:T259 Arg2:T263	
+#27	AnnotatorNotes R66	attribute
+R67	other_relation Arg1:T260 Arg2:T263	
+#28	AnnotatorNotes R67	attribute
+R68	is_part_of Arg1:T262 Arg2:T261	
+R69	is_part_of Arg1:T263 Arg2:T261	
+T266	KeyEntity 17368 17378;17392 17397	antibodies Acdp1
+T267	Entity 17368 17378;17406 17419	antibodies Acdp proteins
+T268	Entity 17425 17450	Acdp1 C-terminus antibody
+T269	KeyEntity 17485 17490	Acdp1
+T270	KeyEntity 17539 17544	Acdp1
+T271	Entity 17579 17594	plasma membrane
+T272	Entity 17598 17617	hippocampus neurons
+R70	is_part_of Arg1:T271 Arg2:T272	
+R71	is_part_of Arg1:T270 Arg2:T271	
+T273	Entity 14274 14290	ACDP gene family
+T274	Entity 14354 14364	ACDP genes
+T275	Entity 14440 14464	evolutionarily conserved
+T276	Entity 14473 14507	phylogenetically divergent species
+T277	Entity 14581 14603	ubiquitously expressed
+T278	Entity 14615 14626;14637 14644	development tissues
+T279	Entity 14631 14644	adult tissues
+T280	Entity 14669 14676	cloning
+T281	Entity 14681 14697	characterization
+T282	Entity 14705 14727	mouse Acdp gene family
+T283	Entity 14822 14848	Sequence homology analyses
+T284	Entity 14863 14876	Acdp proteins
+T285	Entity 14917 14938	bacteria CorC protein
+T286	Entity 14943 14962	yeast Amip3 protein
+T287	Entity 14964 14968;14970 14971	CorA B
+T288	Entity 14964 14968;14979 14980	CorA D
+T289	Entity 14964 14968	CorA
+T290	Entity 14964 14968;14973 14974	CorA C
+T291	Entity 14993 15007	protein family
+T292	Entity 15025 15031;15046 15066	influx magnesium and cobalt
+T293	Entity 15036 15042;15046 15066	efflux magnesium and cobalt
+T294	Entity 15091 15103	CorA mutants
+T295	Entity 15111 15121;15125 15140	resistance cobalt toxicity
+T296	KeyEntity 15146 15151	Amip3
+T297	Entity 15182 15194	CorC protein
+T298	Entity 15216 15235	efflux of magnesium
+T299	Entity 15216 15222;15240 15246	efflux cobalt
+T300	Entity 15250 15258	bacteria
+R72	is_part_of Arg1:T299 Arg2:T300	
+R73	is_part_of Arg1:T298 Arg2:T300	
+T301	Entity 15260 15273	Amip3 mutants
+T302	Entity 15281 15290;15294 15309	resistant copper toxicity
+T303	Entity 15311 15324	Acdp proteins
+T304	Entity 15342 15349	domains
+T305	Entity 15368 15381;15398 15406	bacteria CorC proteins
+T306	Entity 15386 15406	yeast Amip3 proteins
+T307	Entity 15420 15431	CBS domains
+T308	Entity 15433 15445	DUF21 domain
+T309	Entity 15450 15471	transmembrane domains
+T310	Entity 15488 15507	cNMP-binding domain
+T311	Entity 15525 15538	Acdp proteins
+T312	Entity 15568 15580	ion channels
+T313	Entity 15585 15607	cNMP-dependent kinases
+T314	Entity 15644 15668	Acdp1 C-terminal peptide
+T315	KeyEntity 15689 15694	Acdp1
+T316	Entity 15729 15744	plasma membrane
+T317	Entity 15748 15767	hippocampus neurons
+T318	Entity 15801 15820	human ACDP proteins
+T319	Entity 15856 15863	nucleus
+T320	Entity 15867 15877	HeLa cells
+T321	Entity 15903 15920	Acdp localization
+T322	Entity 15924 15938	neuronal cells
+T323	Entity 16022 16044	recombinant ACD domain
+T324	Entity 16093 16118	Acdp1 C-terminus antibody
+T325	KeyEntity 16135 16140	Acdp1
+T326	Entity 16144 16156	brain tissue
+T327	Entity 16201 16213	cell lysates
+T328	Entity 16201 16213	cell lysates
+T329	Entity 16196 16213	PC12 cell lysates
+T330	Entity 16291 16295	Acdp
+T331	Entity 16317 16330	ion transport
+T332	Entity 16334 16349	mammalian cells
+R74	is_subclass_of Arg1:T287 Arg2:T291	
+R75	is_subclass_of Arg1:T288 Arg2:T291	
+R76	is_subclass_of Arg1:T290 Arg2:T291	
+R77	is_subclass_of Arg1:T289 Arg2:T291	
+R78	participates_in Arg1:T291 Arg2:T292	
+R79	participates_in Arg1:T291 Arg2:T293	
+R80	other_relation Arg1:T295 Arg2:T294	
+#29	AnnotatorNotes R80	attribute
+R81	participates_in Arg1:T297 Arg2:T299	
+R82	participates_in Arg1:T297 Arg2:T298	
+R83	other_relation Arg1:T302 Arg2:T301	
+#30	AnnotatorNotes R83	attribute
+R84	is_part_of Arg1:T304 Arg2:T305	
+R85	is_part_of Arg1:T304 Arg2:T306	
+R86	is_subclass_of Arg1:T307 Arg2:T304	
+R87	is_subclass_of Arg1:T308 Arg2:T304	
+R88	is_subclass_of Arg1:T309 Arg2:T304	
+R89	is_part_of Arg1:T304 Arg2:T303	
+R90	is_part_of Arg1:T310 Arg2:T311	
+R91	is_part_of Arg1:T310 Arg2:T312	
+R92	is_part_of Arg1:T310 Arg2:T313	
+R93	is_part_of Arg1:T315 Arg2:T316	
+R94	is_part_of Arg1:T316 Arg2:T317	
+R95	is_part_of Arg1:T318 Arg2:T319	
+R96	is_part_of Arg1:T319 Arg2:T320	
+R97	is_part_of Arg1:T321 Arg2:T322	
+T333	Entity 16188 16191;16201 16213	3T3 cell lysates
+T334	Entity 16180 16186;16201 16213	HEK293 cell lysates
+R98	participates_in Arg1:T330 Arg2:T331	
+R99	is_part_of Arg1:T331 Arg2:T332	
+T335	KeyEntity 13996 14001	Acdp1
+T336	Entity 14005 14024	hippocampus neurons
+R100	is_part_of Arg1:T335 Arg2:T336	
+T337	Entity 13289 13308	Immunoblot analysis
+T338	Entity 13312 13325	Acdp proteins
+T339	Entity 13329 13350	brain tissue extracts
+T340	Entity 13352 13366	Immunoblotting
+T341	Entity 13392 13425	Western blotting detection system
+T342	KeyEntity 13550 13555	Acdp1
+T343	KeyEntity 13566 13571	Acdp2
+T344	KeyEntity 13582 13587	Acdp4
+T345	KeyEntity 13600 13605	Acdp3
+T346	Entity 13645 13661	Acdp1 antibodies
+T347	KeyEntity 13757 13762	Acdp1
+T348	Entity 13766 13772;13787 13792	HEK293 cells
+T349	Entity 13774 13777;13787 13792	3T3 cells
+T350	Entity 13782 13792	PC12 cells
+T351	Entity 13734 13753	Immunoblot analysis
+T352	Entity 10994 11001;11034 11036;11054 11064	Acdp1 N C- terminuses
+T353	Entity 11089 11099	ACD domain
+T354	KeyEntity 11103 11108	Acdp1
+T355	Entity 11392 11413;11417 11444	Western-blot analysis mouse brain tissue extracts
+T356	KeyEntity 11533 11538	Acdp1
+T357	KeyEntity 11605 11610	Acdp4
+T358	KeyEntity 11626 11631	Acdp1
+T359	Entity 11933 11939;11954 11959	HEK293 cells
+T360	Entity 11941 11944;11954 11959	3T3 cells
+T361	Entity 11949 11959	PC12 cells
+T362	Entity 11891 11907	Acdp1 C-terminus
+T363	KeyEntity 12049 12054	Acdp1
+T364	KeyEntity 12233 12238	Acdp1
+T365	Entity 12302 12314	HEK293 cells
+T366	Entity 12379 12400	brain tissue extracts
+T367	Entity 12427 12443	Acdp1 C-terminus
+T368	Entity 12468 12474	Acdp-1
+T369	Entity 12500 12525	Acdp1 C-terminus antibody
+T370	Entity 12575 12581	Acdp-1
+T371	Entity 12602 12615	Northern blot
+T372	KeyEntity 12656 12661	Acdp1
+T373	Entity 12669 12674	brain
+T374	Entity 12720 12739	hippocampus neurons
+T375	Entity 12754 12767	mouse embryos
+T376	Entity 12889 12903	Immunostaining
+T377	Entity 12918 12952	Acdp1 C-terminus specific antibody
+T378	KeyEntity 12985 12990	Acdp1
+T379	Entity 11793 11806	Acdp proteins

@@ -2,11 +2,6 @@ T1	KeyEntity 161 184;200 204	Tripeptidyl-peptidase I CLN2
 T2	Entity 235 274	sedolisins (serine-carboxyl peptidases)
 T3	Entity 367 422	classical late-infantile neuronal ceroid lipofuscinosis
 T4	Entity 663 672;676 686	orthologs human CLN2
-T5	Entity 976 994	Xenopus tropicalis
-T6	Entity 947 952	zebra
-T7	Entity 938 942	fugu
-T8	Entity 932 936	fish
-T9	Entity 969 974	frogs
 T10	Entity 1026 1036	human CLN2
 T11	Entity 1081 1110	Pseudomonas sp. 101 sedolisin
 T12	Entity 1125 1129	CLN2
@@ -15,6 +10,492 @@ T14	Entity 1380 1392	CLN2 enzymes
 T15	Entity 1434 1446	tripeptidase
 T16	Entity 1672 1676	CLN2
 T17	Entity 1658 1668	inhibitors
-T18	Entity 11 41	tripeptidyl-peptidase I (CLN2)
+T18	KeyEntity 11 41	tripeptidyl-peptidase I (CLN2)
 T19	Entity 91 107	sedolisin family
 T20	Entity 111 137	serine-carboxyl peptidases
+T22	KeyEntity 2006 2010	CLN2
+T23	KeyEntity 2305 2309	CLN2
+T24	KeyEntity 2454 2458	CLN2
+T25	KeyEntity 2634 2638	CLN2
+T26	KeyEntity 3159 3163	CLN2
+T27	KeyEntity 3303 3307	CLN2
+T28	KeyEntity 4091 4095	CLN2
+T31	Entity 4621 4625;4678 4683;4685 4692;4694 4697;4699 4704;4706 4709;4715 4718	CLN2 human macaque dog mouse rat cow
+T39	KeyEntity 7629 7633	CLN2
+T40	Entity 7668 7672;7678 7683;7685 7689;7695 7704	CLN2 human fugu zebrafish
+T41	Entity 7753 7757;7761 7779	CLN2 Xenopus tropicalis
+T42	KeyEntity 7926 7930	CLN2
+T43	KeyEntity 8430 8440	human CLN2
+T44	KeyEntity 8614 8618	CLN2
+T46	KeyEntity 8960 8970	human CLN2
+T47	KeyEntity 8998 9002	CLN2
+T48	KeyEntity 9447 9451	CLN2
+T51	KeyEntity 10082 10086	CLN2
+T52	KeyEntity 10297 10301	CLN2
+T54	KeyEntity 10754 10758	CLN2
+T55	KeyEntity 11242 11246	CLN2
+T56	KeyEntity 11401 11405	CLN2
+T58	KeyEntity 11550 11554	CLN2
+T59	KeyEntity 11928 11932	CLN2
+T60	KeyEntity 11986 11990	CLN2
+T63	KeyEntity 14299 14303	CLN2
+T64	KeyEntity 14576 14580	CLN2
+T65	KeyEntity 14770 14774	CLN2
+T66	KeyEntity 14955 14959	CLN2
+T67	KeyEntity 15277 15281	CLN2
+T68	KeyEntity 15473 15477	CLN2
+T69	KeyEntity 15850 15854	CLN2
+T70	KeyEntity 16063 16067	CLN2
+T71	KeyEntity 16378 16382	CLN2
+T73	KeyEntity 17556 17560	CLN2
+T74	Entity 17780 17784	CLN2
+T75	KeyEntity 18076 18080	CLN2
+T76	KeyEntity 18199 18203	CLN2
+T77	KeyEntity 18276 18280	CLN2
+T78	KeyEntity 18352 18356	CLN2
+T79	KeyEntity 18881 18885	CLN2
+T80	KeyEntity 19032 19036	CLN2
+T81	KeyEntity 19335 19339	CLN2
+T82	KeyEntity 19799 19803	CLN2
+T83	KeyEntity 20027 20031	CLN2
+T84	KeyEntity 20180 20184	CLN2
+T85	KeyEntity 20623 20627	CLN2
+T86	KeyEntity 20780 20784	CLN2
+T88	KeyEntity 21089 21093	CLN2
+T89	KeyEntity 21799 21803	CLN2
+T90	KeyEntity 22114 22118	CLN2
+T91	KeyEntity 22214 22218	CLN2
+T94	KeyEntity 24322 24326	CLN2
+T95	KeyEntity 26668 26672	CLN2
+T96	KeyEntity 1717 1748	tripeptidyl-peptidase I (TPP-I)
+T97	KeyEntity 1940 1945	TPP-I
+R1	other_relation Arg1:T97 Arg2:T22	
+#1	AnnotatorNotes R1	synonyms
+T98	Entity 2042 2051;2104 2108	mutations CLN2
+T99	Entity 2136 2177	fatal inherited neurodegenerative disease
+T100	Entity 2179 2234	classical late-infantile neuronal ceroid lipofuscinosis
+R2	is_subclass_of Arg1:T100 Arg2:T99	
+R3	other_relation Arg1:T98 Arg2:T100	
+#2	AnnotatorNotes R3	causes
+T101	Entity 2315 2331	serine peptidase
+R4	is_subclass_of Arg1:T23 Arg2:T101	
+T102	Entity 2411 2425	catalytic site
+T103	Entity 2536 2570	high-resolution crystal structures
+T104	Entity 2578 2595	bacterial enzymes
+T105	Entity 2640 2649	sedolisin
+T106	Entity 2654 2665	kumamolisin
+R5	is_subclass_of Arg1:T105 Arg2:T104	
+R6	is_subclass_of Arg1:T106 Arg2:T104	
+T107	Entity 2754 2764	sedolisins
+T108	Entity 2768 2794	serine-carboxyl peptidases
+R7	other_relation Arg1:T107 Arg2:T108	
+#3	AnnotatorNotes R7	synonyms
+T109	Entity 2858 2889	catalytic triad (Ser, Glu, Asp)
+T110	Entity 2916 2919	Asp
+T111	Entity 2927 2940	oxyanion hole
+R8	is_part_of Arg1:T110 Arg2:T111	
+T112	Entity 2946 2955	Sedolisin
+T113	Entity 2988 2999	kumamolisin
+T114	Entity 3001 3007	aorsin
+T115	Entity 3017 3029	physarolisin
+T116	Entity 3059 3066	archaea
+T117	Entity 3068 3076	bacteria
+T118	Entity 3078 3083	fungi
+T119	Entity 3088 3095	amoebae
+T120	Entity 3195 3205	sedolisins
+T121	Entity 6984 6997	sedolisin-TPP
+T122	Entity 6954 6970	fugu CLN2 analog
+R9	other_relation Arg1:T121 Arg2:T122	
+#4	AnnotatorNotes R9	synonyms
+T123	Entity 7209 7223;7231 7248	amino terminus propeptide region
+T124	Entity 7551 7577	fugu sequencing consortium
+T125	Entity 7591 7600;7608 7625	Sequences catalytic domains
+T126	Entity 8067 8091	sedolisin-TPP (AL594774)
+T127	Entity 8105 8117	EST database
+T128	Entity 8148 8164	catalytic domain
+T129	Entity 8225 8235	N terminus
+T130	Entity 8254 8262;8276 8281	aspartic acids
+T131	Entity 8267 8281	glutamic acids
+T132	Entity 8301 8316	catalytic triad
+R10	is_part_of Arg1:T130 Arg2:T132	
+R11	is_part_of Arg1:T131 Arg2:T132	
+T133	Entity 8388 8406	fugu sedolisin-TPP
+T134	Entity 8476 8485;8496 8506	bacterial sedolisins
+T135	Entity 8489 8506	fungal sedolisins
+T45	Entity 8648 8682	highly conserved CLN2-like enzymes
+T136	Entity 8773 8783	peptidases
+T137	Entity 8931 8939;8947 8956	Modeling structure
+T138	Entity 9453 9462	sedolisin
+T139	Entity 9468 9479	kumamolisin
+T140	Entity 9701 9710	sedolisin
+T141	Entity 10423 10432	sedolisin
+T142	Entity 10530 10539	sedolisin
+T143	Entity 10541 10552	kumamolisin
+T53	KeyEntity 10558 10568	human CLN2
+T145	Entity 10888 10897	sedolisin
+T146	Entity 10902 10913	kumamolisin
+T147	Entity 11630 11639	sedolisin
+T148	Entity 11644 11655	kumamolisin
+T149	Entity 11937 11946	sedolisin
+T150	Entity 12307 12316	sedolisin
+T151	Entity 12320 12331	kumamolisin
+T152	Entity 13631 13640	sedolisin
+T153	Entity 13963 13972	sedolisin
+T154	Entity 13977 13988	kumamolisin
+T155	Entity 14193 14202	sedolisin
+T156	Entity 14486 14495	sedolisin
+T157	Entity 14713 14722	sedolisin
+T158	Entity 14906 14915	sedolisin
+T159	Entity 15587 15596	sedolisin
+T160	Entity 15600 15611	kumamolisin
+T161	Entity 20647 20658	kumamolisin
+T162	Entity 20669 20678	sedolisin
+T163	Entity 20898 20907	sedolisin
+T164	Entity 20909 20920	kumamolisin
+T165	Entity 21875 21884	sedolisin
+T166	Entity 21888 21899	kumamolisin
+T167	Entity 22279 22288	sedolisin
+T168	Entity 22293 22304	kumamolisin
+T169	Entity 22467 22502	sedolisin/serine-carboxyl peptidase
+T170	Entity 22671 22680	sedolisin
+T171	Entity 22685 22696	kumamolisin
+T172	Entity 22811 22820	sedolisin
+T173	Entity 23175 23184	sedolisin
+T174	Entity 23186 23197	kumamolisin
+T92	KeyEntity 23207 23217	human CLN2
+T175	Entity 23636 23645	sedolisin
+T178	Entity 23651 23662	kumamolisin
+T179	Entity 23781 23790	sedolisin
+T180	Entity 23795 23806	kumamolisin
+T30	KeyEntity 4342 4352	human CLN2
+T181	Entity 24075 24084	sedolisin
+T93	KeyEntity 24031 24041	human CLN2
+T62	KeyEntity 13536 13546	human CLN2
+T61	KeyEntity 12719 12729	human CLN2
+T57	KeyEntity 11504 11514	human CLN2
+T50	KeyEntity 9840 9850	human CLN2
+T49	KeyEntity 9615 9625	human CLN2
+T182	Entity 3453 3468;3477 3483	crystallization enzyme
+T183	Entity 3506 3528	experimental structure
+T184	Entity 3541 3556	crystallography
+T185	Entity 3560 3563	NMR
+T186	Entity 3603 3621	molecular modeling
+T187	Entity 3770 3780	inhibitors
+T188	Entity 3826 3834	modeling
+T189	Entity 3859 3871	HIV protease
+T190	Entity 3902 3911	peptidase
+T191	Entity 3919 3930	coronavirus
+T192	Entity 3947 3980	severe acute respiratory syndrome
+T193	Entity 4379 4389	sedolisins
+T194	Entity 4207 4213;4226 4236	design inhibitors
+T29	Entity 4291 4308	CLN2-like enzymes
+R12	is_subclass_of Arg1:T19 Arg2:T20	
+T38	Entity 334 365	fatal neurodegenerative disease
+R13	is_subclass_of Arg1:T3 Arg2:T38	
+T5	Entity 1525 1541	structural model
+T6	Entity 4034 4061	molecular homology modeling
+T7	Entity 4065 4075;4078 4087	predicting structure
+T8	Entity 4559 4582	active catalytic domain
+T9	Entity 4831 4841	prosegment
+T21	Entity 4850 4866	catalytic domain
+T32	Entity 4890 4900	mouse CLN2
+T195	Entity 4912 4927;4935 4945	single deletion prosegment
+R14	other_relation Arg1:T195 Arg2:T32	
+#5	AnnotatorNotes R14	is a characteristic of
+T196	Entity 5271 5294	highly conserved enzyme
+T33	Entity 5240 5254	mammalian CLN2
+T34	Entity 5331 5358	mammalian CLN2-like enzymes
+T197	Entity 5425 5435	prosegment
+T198	Entity 5458 5469	active site
+T199	Entity 5753 5778	maturation cleavage point
+T200	Entity 5794 5804;5812 5825	N terminus active enzyme
+T35	Entity 5887 5904	CLN2-like enzymes
+T36	Entity 6280 6289	fugu CLN2
+T37	Entity 6711 6725	zebrafish CLN2
+T201	Entity 7877 7897	Active site residues
+T202	Entity 9060 9076	protein modeling
+T203	Entity 9093 9098	model
+T204	Entity 9344 9368	water-soluble sedolisins
+T205	Entity 9375 9380	model
+T206	Entity 9589 9611	homology-derived model
+T207	Entity 9652 9666	homology model
+T208	Entity 9718 9744	covalently-bound inhibitor
+T209	Entity 9746 9767	pseudo-iodotyrostatin
+R15	is_subclass_of Arg1:T209 Arg2:T208	
+T210	Entity 9883 9905;9915 9926	aldehyde functionality "C-termini"
+T211	Entity 9953 9963	inhibitors
+T212	Entity 10022 10043	pseudo-iodotyrostatin
+T213	Entity 10057 10066	inhibitor
+T214	Entity 10137 10146	inhibitor
+T215	Entity 10183 10188	model
+T216	Entity 10245 10253;10259 10288	modeling pseudo-iodotyrostatin complex
+T217	Entity 10307 10319	tripeptidase
+R16	is_subclass_of Arg1:T52 Arg2:T217	
+T218	Entity 10335 10344	inhibitor
+T219	Entity 10368 10390	experimental structure
+T220	Entity 10396 10413	tripeptide analog
+R17	interacts_with Arg1:T220 Arg2:T141	
+R18	interacts_with Arg1:T209 Arg2:T140	
+T221	Entity 10445 10463	Sequence alignment
+T222	Entity 10467 10476;10491 10498	bacterial enzymes
+T223	Entity 10481 10498	mammalian enzymes
+T224	Entity 10500 10509;10517 10526	Alignment sequences
+T225	Entity 10581 10593;10601 10606	construction model
+T226	Entity 10778 10800;10804 10813	experimental structure sedolisin
+T144	Entity 10968 10973	model
+T227	Entity 11020 11034	disulfide bond
+T228	Entity 10934 10940;10952 10960	Cys327 residues
+T229	Entity 10945 10960	Cys342 residues
+R19	is_part_of Arg1:T228 Arg2:T144	
+R20	is_part_of Arg1:T229 Arg2:T144	
+T230	Entity 11178 11187	cysteines
+T231	Entity 11317 11337	bacterial sedolisins
+T232	Entity 11353 11362	disulfide
+T233	Entity 11478 11500	homology-derived model
+T234	Entity 11516 11530	Ribbon diagram
+T235	Entity 11538 11546	Cα trace
+T236	Entity 10723 10737	Cα coordinates
+T237	Entity 11605 11626	highly conserved core
+R21	is_part_of Arg1:T237 Arg2:T147	
+R22	is_part_of Arg1:T237 Arg2:T148	
+T238	Entity 11798 11843	late-infantile neuronal ceroid lipofuscinosis
+T239	Entity 11899 11924	substrate binding pockets
+T240	Entity 12004 12016	tripeptidase
+R23	is_subclass_of Arg1:T60 Arg2:T240	
+T241	Entity 12044 12069	substrate-binding pockets
+T242	Entity 12185 12194	inhibitor
+T243	Entity 12337 12347	inhibitors
+T244	Entity 12365 12373	tyrosine
+T245	Entity 12379 12392	phenylalanine
+T246	Entity 12407 12416	S1 pocket
+T247	Entity 12071 12073	S1
+T248	Entity 12082 12084	S3
+T249	Entity 12475 12485	sedolisins
+T250	Entity 12838 12844	Thr279
+T251	Entity 12877 12883	SGTSAS
+T252	Entity 12900 12916	catalytic Ser280
+T253	Entity 12959 12965	Asp165
+T254	Entity 13037 13050	oxyanion hole
+R24	is_part_of Arg1:T253 Arg2:T254	
+T255	Entity 13102 13111	S1 pocket
+T256	Entity 13237 13251	steric barrier
+T257	Entity 13256 13273	excluding solvent
+T258	Entity 13376 13382	Gly131
+R25	is_subclass_of Arg1:T247 Arg2:T241	
+R26	is_subclass_of Arg1:T248 Arg2:T241	
+T259	Entity 13508 13513;13521 13532	model active site
+T260	Entity 13584 13605	pseudo-iodotyrostatin
+R27	interacts_with Arg1:T260 Arg2:T152	
+T261	Entity 13651 13661	peptidases
+R28	is_subclass_of Arg1:T152 Arg2:T261	
+T262	Entity 13799 13808	inhibitor
+T263	Entity 13780 13791	stick model
+T264	Entity 14142 14148	Asp179
+T265	Entity 14152 14163	kumamolisin
+T266	Entity 14183 14189	Ser190
+R29	is_part_of Arg1:T264 Arg2:T265	
+R30	is_part_of Arg1:T266 Arg2:T155	
+T267	Entity 14230 14241	P1 tyrosine
+T268	Entity 14249 14258	inhibitor
+R31	is_part_of Arg1:T267 Arg2:T268	
+R32	interacts_with Arg1:T264 Arg2:T267	
+R33	interacts_with Arg1:T266 Arg2:T267	
+T269	Entity 14307 14313	Thr182
+T270	Entity 14422 14433	P1 tyrosine
+T271	Entity 14441 14455	polar residues
+T272	Entity 14476 14482	Glu175
+R34	is_subclass_of Arg1:T272 Arg2:T271	
+R35	is_part_of Arg1:T272 Arg2:T156	
+T273	Entity 14518 14524	Asp169
+T274	Entity 14528 14539	kumamolisin
+R36	is_part_of Arg1:T273 Arg2:T274	
+R37	is_subclass_of Arg1:T273 Arg2:T271	
+T275	Entity 14584 14590	Cys170
+T276	Entity 14692 14698	Glu175
+T277	Entity 14703 14709	Glu171
+R38	interacts_with Arg1:T276 Arg2:T277	
+T278	Entity 14778 14784	Ser166
+T279	Entity 14835 14844	S1 pocket
+T280	Entity 14896 14902	Arg179
+R39	is_part_of Arg1:T280 Arg2:T158	
+T281	Entity 14945 14951	Ser174
+R40	is_part_of Arg1:T281 Arg2:T66	
+T282	Entity 15158 15169	kumamolisin
+T283	Entity 15264 15273	S1 pocket
+T284	Entity 15460 15469	S2 pocket
+T285	Entity 15515 15522	solvent
+T286	Entity 15640 15645	Trp81
+T287	Entity 15664 15670	Trp129
+R41	is_part_of Arg1:T286 Arg2:T159	
+R42	is_part_of Arg1:T287 Arg2:T160	
+T288	Entity 15803 15809	Tyr130
+R43	is_part_of Arg1:T288 Arg2:T69	
+T289	Entity 15905 15915	P2 residue
+T290	Entity 16040 16059	predicted structure
+T291	Entity 16111 16120	S3 pocket
+T292	Entity 16144 16156	tripeptidase
+R44	is_subclass_of Arg1:T70 Arg2:T292	
+T293	Entity 16202 16215	P3 side chain
+T294	Entity 16321 16337	N-terminal amine
+T295	Entity 16417 16423	Asp132
+R45	is_part_of Arg1:T295 Arg2:T71	
+T296	Entity 16480 16491	carboxylate
+T297	Entity 16449 16454	model
+T298	Entity 16500 16508;16516 16526	nitrogen N-terminus
+T299	Entity 16605 16621	hydrogen-bonding
+T300	Entity 16749 16762	hydrogen bond
+T301	Entity 16771 16777	Asp132
+T302	Entity 16782 16788	Ser139
+R46	interacts_with Arg1:T301 Arg2:T302	
+T72	Entity 16916 16933	CLN2-like enzymes
+T303	Entity 16948 16957	mutations
+T304	Entity 16993 17002	mutations
+T305	Entity 17019 17033	genetic survey
+T306	Entity 17049 17102	classic late-infantile neuronal ceroid lipofuscinosis
+T307	Entity 14403 14416	hydrogen bond
+T308	Entity 17158 17167	mutations
+T309	Entity 17199 17215	truncated enzyme
+T310	Entity 17222 17251	incorrect intron-exon splices
+T311	Entity 17274 17283	mutations
+T312	Entity 17292 17323	single amino acid substitutions
+T313	Entity 17351 17360	mutations
+T314	Entity 17369 17373	I92N
+T315	Entity 17375 17380	E148K
+T316	Entity 17382 17387	C170R
+T317	Entity 17392 17397	C170Y
+T318	Entity 17399 17404	V190D
+T319	Entity 17406 17411	G194E
+T320	Entity 17413 17418	Q227H
+T321	Entity 17420 17425	R252H
+T322	Entity 17427 17432	A259E
+T323	Entity 17438 17443	S280L
+R47	is_subclass_of Arg1:T314 Arg2:T313	
+R48	is_subclass_of Arg1:T315 Arg2:T313	
+R49	is_subclass_of Arg1:T316 Arg2:T313	
+R50	is_subclass_of Arg1:T317 Arg2:T313	
+R51	is_subclass_of Arg1:T318 Arg2:T313	
+R52	is_subclass_of Arg1:T319 Arg2:T313	
+R53	is_subclass_of Arg1:T320 Arg2:T313	
+R54	is_subclass_of Arg1:T321 Arg2:T313	
+R55	is_subclass_of Arg1:T322 Arg2:T313	
+R56	is_subclass_of Arg1:T323 Arg2:T313	
+T324	Entity 17484 17492	mutation
+T325	Entity 17536 17552	catalytic serine
+R57	is_part_of Arg1:T325 Arg2:T73	
+T326	Entity 17603 17621	enzymatic activity
+T327	Entity 17715 17721	Val190
+T328	Entity 17723 17729	Gly194
+T329	Entity 17735 17741	Arg252
+T330	Entity 17803 17813	sedolisins
+T331	Entity 17888 17897	mutations
+T332	Entity 17916 17920;17924 17942	loss enzymatic activity
+T333	Entity 17999 18008	mutations
+T334	Entity 18170 18180	Substrates
+T335	Entity 18185 18195	inhibitors
+T336	Entity 18262 18272	substrates
+T337	Entity 18290 18297	defects
+T338	Entity 18311 18322	truncations
+T339	Entity 18327 18348	single-site mutations
+R58	is_subclass_of Arg1:T338 Arg2:T337	
+R59	is_subclass_of Arg1:T339 Arg2:T337	
+T340	Entity 18423 18468	late-infantile neuronal ceroid lipofuscinosis
+T341	Entity 18517 18529;18536 18579	accumulation autofluorescent material, ceroid-lipofuscin
+T342	Entity 18584 18608	lysosomal storage bodies
+T343	Entity 18649 18663	nervous system
+T344	Entity 18725 18734	subunit c
+T345	Entity 18738 18764	mitochondrial ATP synthase
+R60	is_part_of Arg1:T344 Arg2:T345	
+T346	Entity 18839 18847	protease
+T347	Entity 18925 18935	N terminus
+T348	Entity 19084 19112	angiotensin-derived peptides
+R61	interacts_with Arg1:T80 Arg2:T348	
+T349	Entity 19270 19292	tripeptide Asp-Arg-Val
+T350	Entity 19310 19320	N terminus
+R62	is_part_of Arg1:T349 Arg2:T350	
+T351	Entity 19412 19434	substrate-binding site
+T352	Entity 19570 19580;19588 19598	acetylated N terminus
+R63	is_part_of Arg1:T351 Arg2:T81	
+T353	Entity 19671 19693	N-terminal amino group
+T354	Entity 19717 19723	Asp132
+T355	Entity 19771 19783	tripeptidase
+R64	is_subclass_of Arg1:T82 Arg2:T355	
+R65	interacts_with Arg1:T354 Arg2:T353	
+T356	Entity 19827 19838	tripeptides
+T357	Entity 19870 19878	glucagon
+T358	Entity 19997 20019	substrate-binding site
+R66	is_part_of Arg1:T358 Arg2:T83	
+T359	Entity 20098 20113	cholecystokinin
+T360	Entity 20133 20146	neuropeptides
+T361	Entity 20212 20244	cleave collagen-related peptides
+R67	participates_in Arg1:T84 Arg2:T361	
+T362	Entity 20384 20395	kumamolisin
+T363	Entity 20475 20489	kumamolisin-As
+T364	Entity 20523 20548	collagen-related peptides
+T365	Entity 20559 20581	native type I collagen
+R68	interacts_with Arg1:T362 Arg2:T364	
+R69	interacts_with Arg1:T363 Arg2:T364	
+R70	interacts_with Arg1:T362 Arg2:T365	
+R71	interacts_with Arg1:T363 Arg2:T365	
+T366	Entity 20597 20619	substrate-binding site
+R72	is_part_of Arg1:T366 Arg2:T85	
+T367	Entity 20715 20735	collagenase activity
+R73	participates_in Arg1:T161 Arg2:T367	
+T368	Entity 20752 20771	collagen-processing
+T369	Entity 20846 20865;20869 20873	catalytic machinery CLN2
+T87	Entity 20957 20983	serine-carboxyl peptidases
+R74	is_subclass_of Arg1:T163 Arg2:T87	
+R75	is_subclass_of Arg1:T164 Arg2:T87	
+T370	Entity 21065 21075	inhibitors
+T371	Entity 21217 21239	aldehyde functionality
+T372	Entity 21258 21279;21289 21305	covalent interactions catalytic serine
+R76	interacts_with Arg1:T371 Arg2:T372	
+T373	Entity 21329 21348	chloromethyl ketone
+R77	interacts_with Arg1:T373 Arg2:T372	
+T374	Entity 21385 21395	inhibitors
+T375	Entity 21447 21457	sedolisins
+T376	Entity 21481 21492	tripeptides
+T377	Entity 21504 21519;21529 21538	blocking groups N termini
+T378	Entity 21544 21571;21577 21591	tripeptide-based inhibitors free N termini
+T379	Entity 21992 22022	experimental crystal structure
+T380	Entity 22047 22057	inhibitors
+T381	Entity 21834 21844	S1 subsite
+T382	Entity 21929 21937	P1 group
+R78	is_part_of Arg1:T381 Arg2:T89	
+T383	Entity 22153 22170	Homology modeling
+T384	Entity 22172 22210	Three-dimensional, atomic-scale models
+T385	Entity 22759 22777	sequence alignment
+T386	Entity 23020 23048	pair-wise sequence alignment
+T387	Entity 23310 23329	sequence alignments
+T388	Entity 23505 23517;23525 23534;23539 23550	core regions sedolisin kumamolisin
+T176	Entity 23931 23943	core regions
+T177	Entity 24104 24113	inhibitor
+T389	Entity 24114 24131	pseudo-tyrostatin
+R79	is_subclass_of Arg1:T389 Arg2:T177	
+T390	Entity 24204 24218	protein models
+T391	Entity 24257 24266	inhibitor
+T392	Entity 24296 24308	tripeptidase
+R80	is_subclass_of Arg1:T94 Arg2:T392	
+T393	Entity 24491 24508	homology modeling
+T394	Entity 24596 24600	core
+T395	Entity 24605 24616	active site
+T396	Entity 25100 25110	insertions
+T397	Entity 25115 25124	deletions
+T398	Entity 25407 25421	homology model
+T399	Entity 25494 25505	active site
+T400	Entity 25513 25518	model
+T401	Entity 25644 25649	model
+T402	Entity 25655 25660	model
+T403	Entity 25688 25716	energy minimization in vacuo
+T404	Entity 25799 25816	covalent geometry
+T405	Entity 25821 25844	non-bonded interactions
+T406	Entity 25950 25962	bond lengths
+T407	Entity 25964 25978	3-point angles
+T408	Entity 25983 26006	4-point dihedral angles
+T409	Entity 26019 26045	eliminating atomic overlap
+T410	Entity 26058 26070	salt-bridges
+T411	Entity 26075 26089	hydrogen bonds
+T412	Entity 26621 26629;26637 26664	modeling three-dimensional structure
+T413	Entity 26690 26695	model
+T414	Entity 26719 26737;26741 26751	crystal structures sedolisins
+T415	Entity 26820 26846	serine-carboxyl peptidases
+T416	Entity 26871 26881	inhibitors

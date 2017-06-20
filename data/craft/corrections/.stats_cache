@@ -1,7 +1,7 @@
 (lp1
 (lp2
-I322
-aI57
+I250
+aI35
 aI0
 aa(lp3
 I22
@@ -28,8 +28,8 @@ I39
 aI17
 aI0
 aa(lp9
-I275
-aI46
+I521
+aI143
 aI0
 aa(lp10
 I38
@@ -140,8 +140,8 @@ I42
 aI23
 aI0
 aa(lp37
-I333
-aI55
+I308
+aI56
 aI0
 aa(lp38
 I35
@@ -160,8 +160,8 @@ I15
 aI7
 aI0
 aa(lp42
-I202
-aI77
+I336
+aI105
 aI0
 aa(lp43
 I44
