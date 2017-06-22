@@ -39,3 +39,31 @@ T37	Entity 29049 29053	MEFs
 T38	KeyEntity 27444 27448	RMCE
 T39	Entity 27452 27456	MEFs
 T40	KeyEntity 27462 27466	RMCE
+T41	Entity 26581 26602	Germline transmission
+T42	Entity 26610 26630	p53 RMCE-ready locus
+T43	KeyEntity 26632 26650	p53RMCE/+ ES cells
+T44	Entity 26670 26681	blastocysts
+T45	Entity 26694 26707	chimeric mice
+R2	participates_in Arg1:T44 Arg2:T45	
+R3	participates_in Arg1:T43 Arg2:T45	
+T46	KeyEntity 24322 24326	RMCE
+T47	Entity 24330 24338	ES cells
+T48	KeyEntity 24344 24348	RMCE
+T49	Entity 24376 24392	exchange plasmid
+T50	Entity 23399 23407	ES cells
+T51	Entity 23415 23435	p53 RMCE-ready locus
+T52	Entity 23441 23449	p53 gene
+T53	KeyEntity 21991 22000	RMCE-ASAP
+T54	Entity 22008 22032	homologous recombination
+T55	Entity 22309 22328	RMCE-ready ES cells
+T56	KeyEntity 22540 22549	RMCE-ASAP
+T57	KeyEntity 14189 14198	RMCE-ASAP
+T58	Entity 14261 14274	floxed allele
+T59	Entity 14278 14286	ES cells
+R4	is_part_of Arg1:T58 Arg2:T59	
+T60	Entity 14572 14582;14586 14590	efficiency RMCE
+T61	Entity 14594 14602	ES cells
+T62	Entity 14643 14646	p53
+T63	Entity 14656 14659	GFP
+T64	Entity 14688 14691	p53
+T65	Entity 2233 2241	ES cells

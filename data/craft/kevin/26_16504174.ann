@@ -10,7 +10,7 @@ T9	Entity 716 728	chromosome 9
 T10	Entity 846 864	5' flanking region
 T11	Entity 872 881	ESG1 gene
 T12	Entity 995 1020	luciferase reporter assay
-T13	Entity 1066 1075	ESG1 gene
+T13	KeyEntity 1066 1075	ESG1 gene
 T14	Entity 1106 1114	ES cells
 T15	KeyEntity 1122 1136	β-geo cassette
 T16	Entity 1140 1164	homologous recombination
@@ -61,7 +61,7 @@ T49	Entity 2826 2857	expressed sequence tag analyses
 T50	Entity 2915 2919	ESG1
 T51	Entity 2945 2950	dppa5
 T52	Entity 2954 2959	ECAT2
-T53	Entity 2962 2966	ESG1
+T53	KeyEntity 2962 2966	ESG1
 T54	Entity 2998 3013	transcript Ph34
 T55	Entity 3041 3054	retinoic acid
 T56	Entity 3058 3083	embryonic carcinoma cells
@@ -72,20 +72,242 @@ T60	Entity 3201 3218	pluripotent cells
 T61	Entity 3230 3238	ES cells
 T62	Entity 3240 3260	embryonic germ cells
 T63	Entity 3266 3297	multipotent germline stem cells
-T64	Entity 3304 3308	ESG1
+T64	KeyEntity 3304 3308	ESG1
 T65	Entity 3373 3382	KH domain
 T66	Entity 3396 3414	RNA-binding domain
 T67	Entity 3453 3457	ESG1
 T68	Entity 3474 3493	RNA-binding protein
 T69	Entity 21119 21137	wild-type ES cells
 T70	Entity 21142 21158	ESG1-/- ES cells
-T71	Entity 3618 3633	mouse ESG1 gene
+T71	KeyEntity 3618 3633	mouse ESG1 gene
 T72	Entity 3734 3743	ESG1 gene
 T73	Entity 3938 3963	chromosomal localizations
 T74	Entity 3971 3986	mouse ESG1 gene
 T75	Entity 4222 4226	ESG1
 T76	Entity 4345 4370	chromosomal localizations
-T77	Entity 4378 4393	mouse ESG1 gene
+T77	KeyEntity 4378 4393	mouse ESG1 gene
 T78	Entity 4426 4440	Blast analysis
-T79	Entity 4480 4498	ESG1 cDNA sequence
-T80	Entity 4573 4586	chromosomes 1
+T79	KeyEntity 4480 4498	ESG1 cDNA sequence
+T80	Entity 4573 4610;4615 4616	chromosomes 1, 5, 11, 12, 14, 16, 17, X
+R7	regulates Arg1:T55 Arg2:T54	
+R8	is_part_of Arg1:T55 Arg2:T56	
+R9	is_subclass_of Arg1:T61 Arg2:T60	
+R10	is_subclass_of Arg1:T62 Arg2:T60	
+R11	is_subclass_of Arg1:T63 Arg2:T60	
+R12	is_subclass_of Arg1:T65 Arg2:T66	
+R13	is_part_of Arg1:T65 Arg2:T64	
+R14	other_relation Arg1:T68 Arg2:T67	
+#6	AnnotatorNotes R14	attribute
+T81	Entity 3519 3527	ES cells
+T82	Entity 3532 3536	mice
+T83	Entity 3894 3912	retrotransposition
+T84	Entity 3916 3932	ESG1 transcripts
+T85	Entity 4717 4741	chromosomal localization
+T86	Entity 4815 4824	ESG1 cDNA
+T87	Entity 5031 5047	retropseudogenes
+T88	Entity 5065 5096	pluripotent cell-specific genes
+T89	Entity 5114 5129	ESG1pseudogenes
+T90	Entity 5350 5362	chromosome 9
+T91	Entity 5408 5417	ESG1 gene
+T92	Entity 5436 5452	putative introns
+T93	Entity 5525 5534;5542 5560	mutations ESG1 cDNA sequence
+T94	Entity 5635 5644	ESG1 gene
+T95	Entity 5654 5666	chromosome 9
+T96	Entity 5765 5774	ESG1 gene
+T97	Entity 5810 5829	ESG1-like sequences
+T98	Entity 5833 5845	chromosome 9
+T99	Entity 5921 5930	ESG1 gene
+T100	Entity 5892 5905	DNA fragments
+T101	Entity 5948 5994	bacterial artificial chromosome (BAC) DNA pool
+T102	Entity 5998 6001	PCR
+T103	Entity 6114 6136	overlapping BAC clones
+T104	Entity 6138 6160	Southern blot analyses
+T105	Entity 6165 6175	sequencing
+T106	Entity 6262 6271	ESG1 cDNA
+T107	Entity 6300 6316	putative introns
+T108	Entity 6407 6442	GT-AG rule of exon-intron junctions
+T109	Entity 6510 6536	promoter/enhancer activity
+T110	Entity 6540 6566	luciferase reporter assays
+T111	Entity 6570 6595	undifferentiated ES cells
+T112	Entity 6608 6621	somatic cells
+T113	Entity 6718 6731	retinoic acid
+T114	KeyEntity 6772 6781	ESG1 gene
+T115	Entity 6794 6804	BAC clones
+T116	KeyEntity 6820 6829	ESG1 gene
+R15	is_part_of Arg1:T116 Arg2:T115	
+T117	Entity 6836 6863	duplication pseudogene (PS)
+R16	is_part_of Arg1:T117 Arg2:T115	
+T118	Entity 6903 6915	chromosome 9
+T119	Entity 6956 6958	PS
+T120	Entity 6897 6899	PS
+T121	KeyEntity 7229 7238	ESG1 gene
+T122	Entity 7333 7335	PS
+T123	Entity 7358 7386	luciferase reporter plasmids
+T124	Entity 7426 7451	undifferentiated ES cells
+T125	Entity 7468 7498	retinoic acid-treated ES cells
+T126	Entity 7519 7531	NIH3T3 cells
+T127	Entity 7664 7674	BAC clones
+T128	Entity 7693 7711	ESG1-like sequence
+T129	Entity 7829 7847	ESG1-like sequence
+T130	KeyEntity 7916 7925	ESG1 gene
+T131	KeyEntity 8145 8154	ESG1 gene
+T132	Entity 8321 8347	luciferase reporter assays
+T133	Entity 8513 8521	Bierbaum
+T134	KeyEntity 8620 8629	ESG1 gene
+T135	Entity 8800 8815	mouse ESG1 gene
+T136	KeyEntity 8842 8846	ESG1
+T137	Entity 8871 8895	homologous recombination
+T138	Entity 8899 8913	mouse ES cells
+T139	Entity 8971 8990	neomycin-resistance
+T140	Entity 8995 9024	β-galactosidase genes (β-geo)
+T141	Entity 9032 9064	hygromycin resistant gene (HygR)
+T142	Entity 9121 9133	RF8 ES cells
+T143	Entity 9137 9152	electroporation
+T144	Entity 9172 9186	ES cell clones
+T145	Entity 9200 9224	homologous recombination
+T146	Entity 9232 9254	β-geo targeting vector
+T147	Entity 9279 9301	Southern blot analysis
+T148	Entity 9355 9379	homologous recombination
+T149	Entity 9387 9408	HygR targeting vector
+T150	Entity 8957 8963	fusion
+R17	is_part_of Arg1:T139 Arg2:T150	
+R18	is_part_of Arg1:T140 Arg2:T150	
+R19	other_relation Arg1:T146 Arg2:T145	
+#7	AnnotatorNotes R19	attribute
+T151	KeyEntity 9448 9463	mouse ESG1 gene
+T152	Entity 9558 9562	PstI
+T153	Entity 9571 9575	SpeI
+T154	Entity 9601 9623	Southern blot analyses
+T155	Entity 9654 9678	diphtheria toxin A (DTA)
+T156	Entity 9745 9763	negative selection
+T157	Entity 9768 9790	Southern blot analyses
+T158	Entity 9802 9826	homologous recombination
+T159	Entity 10004 10012;9957 9970	analyses Northern blot
+T160	Entity 10004 10012;9983 9995	analyses western blot
+T161	Entity 10016 10039	wild-type ES cells (WT)
+T162	Entity 10041 10059	ESG1-null ES cells
+T163	Entity 10084 10105	heterozygous ES cells
+T164	Entity 10113 10126	Northern blot
+T165	Entity 10297 10323	homozygous mutant ES cells
+T166	Entity 10343 10355	β-geo vector
+T167	Entity 10361 10387	HygR heterozygous ES cells
+T168	Entity 10451 10464	ESG1 deletion
+T169	Entity 10466 10479;10497 10505	Northern blot analyses
+T170	Entity 10484 10505	western blot analyses
+T171	KeyEntity 10520 10527;10531 10535	absence ESG1
+T172	Entity 10582 10594	β-geo vector
+T173	Entity 10612 10623	HygR vector
+T174	Entity 10700 10712	β-geo vector
+T175	KeyEntity 10754 10770	ESG1-/- ES cells
+T176	KeyEntity 10935 10948	ESG1-/- cells
+T177	Entity 10994 11020	leukemia inhibitory factor
+T178	Entity 11036 11059	retinoic acid treatment
+T179	Entity 11143 11152	teratomas
+T180	Entity 11154 11182;11196 11207	tumors containing components germ layers
+T181	KeyEntity 11249 11253	ESG1
+T182	Entity 11305 11317;11321 11329	pluripotency ES cells
+T183	Entity 11342 11350;11354 11372	Analyses ESG1-null ES cells
+T184	Entity 11381 11391;11395 11421	morphology ESG1-null ES cell colonies
+T185	Entity 11431 11447	STO feeder cells
+T186	Entity 11452 11464;11468 11477	Growth curve wild-type
+T187	Entity 11452 11464;11484 11493	Growth curve ESG1-null
+T188	Entity 11452 11464;11504 11516	Growth curve heterozygous
+T189	Entity 11785 11793	teratoma
+T190	Entity 11807 11825	ESG1-null ES cells
+T191	Entity 11827 11838;11847 11855	hematoxylin staining
+T192	Entity 11841 11855	eosin staining
+T193	Entity 11875 11899;11903 11919	gene expression profiles ESG1-/- ES cells
+T194	Entity 11926 11963	oligonucleotide-based DNA microarrays
+T195	Entity 12017 12025	ES cells
+T196	Entity 12027 12031	ESG1
+T197	Entity 20010 20017;20028 20046	Esg1+/- mutant female mice
+T198	Entity 20020 20046	ESG1-/- mutant female mice
+T199	Entity 19345 19352	ES cell
+T200	Entity 18496 18511;18515 18519	coding sequence Esg1
+T201	Entity 17543 17551	ES cells
+T202	Entity 17638 17660	Southern blot analysis
+T203	Entity 16485 16495	ESG1 exons
+T204	Entity 14547 14591	bacterial artificial chromosome (BAC) clones
+T205	Entity 14603 14618	mouse ESG1 gene
+T206	Entity 14633 14652	PCR-based screening
+T207	Entity 14656 14683	mouse BAC library DNA pools
+T208	Entity 14815 14843	restriction enzyme digestion
+T209	Entity 14858 14880;14884 14894	Southern blot analyses BAC clones
+T210	Entity 15161 15174	Hybridization
+T211	Entity 15230 15239	ESG1 gene
+R20	is_part_of Arg1:T205 Arg2:T204	
+T212	KeyEntity 15295 15310	mouse ESG1 gene
+T213	Entity 15543 15558	ESG1 pseudogene
+T214	KeyEntity 15799 15808	ESG1 gene
+T215	Entity 14123 14142;14146 14150	physiological roles ESG1
+T216	Entity 14170 14180	mouse gene
+T217	Entity 14184 14196	chromosome 9
+R21	is_part_of Arg1:T216 Arg2:T217	
+T218	Entity 14215 14239	homologous recombination
+T219	Entity 14243 14251	ES cells
+T220	Entity 14284 14297	early embryos
+T221	Entity 14299 14309	germ cells
+T222	Entity 14315 14332	pluripotent cells
+T223	KeyEntity 14361 14365	ESG1
+T224	Entity 14385 14402	mouse development
+T225	Entity 14404 14423	germ cell formation
+T226	Entity 14429 14449	ES cell self-renewal
+R22	participates_in Arg1:T223 Arg2:T224	
+R23	participates_in Arg1:T223 Arg2:T225	
+R24	participates_in Arg1:T223 Arg2:T226	
+T227	Entity 12751 12775	Gene expression analyses
+T228	Entity 12779 12797	ESG1-null ES cells
+T229	Entity 12802 12825	DNA microarray analyses
+T230	Entity 12842 12860	wild-type ES cells
+T231	Entity 12865 12883	ESG1-null ES cells
+T232	Entity 13050 13071	Western blot analyses
+T233	Entity 13073 13085;13091 13098	Cell lysates ESG1+/-
+T234	Entity 13073 13085;13103 13116	Cell lysates ESG1-/- cells
+T235	Entity 13135 13145;13149 13153	expression ESG1
+T236	Entity 13135 13145;13155 13161	expression Oct3/4
+T237	Entity 13135 13145;13166 13170	expression CDK4
+T238	Entity 13176 13190	immunoblotting
+T239	Entity 13205 13223	ESG1-knockout mice
+T240	Entity 13237 13265	β-geo-ESG1+/- ES cell clones
+T241	Entity 13275 13286	blastocysts
+T242	Entity 13290 13301	C57BL6 mice
+R25	is_part_of Arg1:T241 Arg2:T242	
+T243	Entity 13315 13336	germline transmission
+T244	Entity 13368 13380	ESG1-/- mice
+T245	Entity 13469 13481	ESG1+/- mice
+T246	Entity 13507 13525	normal development
+T247	Entity 13527 13543	gross appearance
+T248	Entity 13549 13558	fertility
+T249	Entity 13572 13596;13600 13606	Histological examination testis
+T250	Entity 13572 13596;13611 13616	Histological examination ovary
+T251	KeyEntity 13696 13700	ESG1
+T252	Entity 13725 13742	mouse development
+T253	Entity 13747 13766	germ cell formation
+T254	Entity 13787 13795	ES cells
+T255	Entity 13801 13812	blastocysts
+T256	Entity 13825 13837;13841 13874	intercrosses ESG1+/- males and ESG1-/- females
+T257	Entity 13889 13902	ES cell lines
+T258	Entity 13947 13965	ESG1-null ES cells
+T259	Entity 13979 14032	normal morphology, proliferation, and differentiation
+T260	KeyEntity 14062 14066	ESG1
+T261	Entity 14085 14093	ES cells
+R26	participates_in Arg1:T260 Arg2:T261	
+R27	other_relation Arg1:T259 Arg2:T258	
+#8	AnnotatorNotes R27	attribute
+T262	Entity 12093 12109	ESG1-/- ES cells
+T263	Entity 12127 12137;12141 12161	expression ES cell marker genes
+T264	Entity 12171 12176	Nanog
+T265	Entity 12181 12187	Oct3/4
+R28	is_subclass_of Arg1:T264 Arg2:T263	
+R29	is_subclass_of Arg1:T265 Arg2:T263	
+T266	Entity 12203 12219	ESG1-/- ES cells
+T267	Entity 12234 12258	normal Oct3/4 expression
+T268	Entity 12280 12292	Western blot
+T269	Entity 12372 12380	ES cells
+T270	Entity 12385 12401	ESG1-/- ES cells
+T271	Entity 12489 12529	Krt1-8, Pem, Ctgf, Ptgs2, Igf2 and Inhba
+T272	Entity 12464 12477	ESG1-/- cells
+T273	KeyEntity 12588 12592	ESG1
+T274	KeyEntity 12600 12604	ESG1
+T275	Entity 12616 12642	KH-type RNA-binding domain
+R30	is_part_of Arg1:T275 Arg2:T274	
