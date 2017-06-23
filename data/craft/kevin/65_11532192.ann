@@ -14,14 +14,13 @@ T11	Entity 692 706	diurnal rhythm
 T12	KeyEntity 712 715	IOP
 T13	Entity 769 781	Homozygosity
 T14	Entity 788 799	null allele
-T15	KeyEntity 807 841	carbonic anhydrase II gene (Car2n)
+T15	Entity 807 841	carbonic anhydrase II gene (Car2n)
 T16	KeyEntity 857 860	IOP
 T17	Entity 867 879	homozygosity
 T18	Entity 902 931	leptin receptor gene (Leprdb)
 T19	KeyEntity 986 989	IOP
-T20	KeyEntity 991 1011	Albino C57BL/6J mice
+T20	Entity 991 1011	Albino C57BL/6J mice
 T21	Entity 1029 1058	tyrosinase mutation (Tyrc-2J)
-T22	KeyEntity 1076 1080	than
 T23	KeyEntity 1213 1217	IOPs
 T24	KeyEntity 1225 1228	IOP
 T25	KeyEntity 1354 1357	IOP
@@ -36,3 +35,750 @@ R3	is_part_of Arg1:T32 Arg2:T27
 R4	is_part_of Arg1:T32 Arg2:T28	
 R5	interacts_with Arg1:T32 Arg2:T29	
 T33	Entity 0 20	Intraocular pressure
+T34	Entity 65 78	strain survey
+T35	Entity 24 49	genetically distinct mice
+T22	Entity 1125 1159	Genetically distinct mouse strains
+T36	Entity 1753 1761	Glaucoma
+T37	Entity 1784 1793	blindness
+T38	Entity 1843 1851	Glaucoma
+T39	Entity 1861 1888	retinal ganglion cell death
+T40	Entity 1893 1911	optic nerve damage
+T41	KeyEntity 1951 1977	intraocular pressure (IOP)
+R6	other_relation Arg1:T36 Arg2:T37	
+#1	AnnotatorNotes R6	causes
+R7	participates_in Arg1:T39 Arg2:T38	
+R8	participates_in Arg1:T40 Arg2:T38	
+R9	participates_in Arg1:T41 Arg2:T39	
+R10	participates_in Arg1:T41 Arg2:T40	
+T42	Entity 2039 2047	glaucoma
+T43	Entity 2181 2189	glaucoma
+T44	Entity 2290 2298	glaucoma
+T45	Entity 2339 2351	elevated IOP
+T46	Entity 2356 2364	glaucoma
+R11	participates_in Arg1:T45 Arg2:T46	
+T47	Entity 2502 2514	pathogenesis
+T48	KeyEntity 2826 2829	IOP
+T49	Entity 2834 2842	glaucoma
+T50	KeyEntity 2953 2956	IOP
+T51	Entity 2986 2997	optic nerve
+T52	Entity 3002 3008	retina
+T53	Entity 3012 3031	glaucomatous damage
+T54	KeyEntity 3083 3086	IOP
+T55	Entity 3115 3130	IOP fluctuation
+T56	Entity 3212 3215	IOP
+T57	Entity 3261 3270;3274 3283	magnitude mouse IOP
+T58	Entity 3313 3331;3335 3343	direct measurement pressure
+T59	Entity 3354 3365;3373 3389	cannulation anterior chamber
+T60	Entity 3454 3472	ocular cannulation
+T61	KeyEntity 3500 3503	IOP
+T62	KeyEntity 3587 3614	intraocular pressure levels
+T63	Entity 3694 3707	strain survey
+T64	KeyEntity 3840 3844	IOPs
+T65	KeyEntity 3889 3892	IOP
+T66	Entity 3908 3928	inbred mouse strains
+T67	KeyEntity 4009 4012	IOP
+T68	Entity 4018 4032	strain BALB/cJ
+T69	KeyEntity 4066 4070	IOPs
+T70	Entity 4093 4107	strain CBA/CaJ
+T71	KeyEntity 4127 4131	IOPs
+T72	KeyEntity 4318 4321	IOP
+T73	Entity 4330 4364	genetically distinct mouse strains
+T74	KeyEntity 4371 4374	IOP
+T75	Entity 4488 4495	RIIIS/J
+T76	Entity 4563 4571	SEC/1ReJ
+T77	Entity 4576 4581	SB/Le
+T78	Entity 4637 4641	CE/J
+T79	Entity 4663 4670	BUB/BnJ
+T80	KeyEntity 4741 4745	IOPs
+T81	Entity 4786 4803	CBA/CaHN-Btkxid/J
+T82	Entity 4822 4830	CBA/CaHN
+R12	other_relation Arg1:T82 Arg2:T81	
+#2	AnnotatorNotes R12	syno
+T83	KeyEntity 5008 5011	IOP
+T84	Entity 5030 5048	iridocorneal angle
+T85	Entity 5053 5086	aqueous humor drainage structures
+T86	Entity 5103 5119	anterior chamber
+T87	Entity 5155 5162	BALB/cJ
+T88	Entity 5167 5174	CBA/CaJ
+T89	Entity 5209 5216	CBA/CaJ
+T90	KeyEntity 5226 5230	IOPs
+T91	Entity 5273 5281	glaucoma
+T92	Entity 5382 5394	optic nerves
+T93	Entity 5399 5406	retinas
+T94	Entity 5432 5440	glaucoma
+T95	Entity 5460 5479	iridocorneal angles
+T96	KeyEntity 5509 5512	IOP
+T97	Entity 5518 5536	iridocorneal angle
+T98	Entity 5555 5588	aqueous humor drainage structures
+T99	Entity 5590 5610	Schlemm's canal (SC)
+T100	Entity 5615 5639	trabecular meshwork (TM)
+R13	is_part_of Arg1:T99 Arg2:T98	
+R14	is_part_of Arg1:T100 Arg2:T98	
+T101	Entity 5675 5682	CBA/CaJ
+T102	Entity 5698 5705	BALB/cJ
+T103	Entity 5757 5768	macrophages
+T104	Entity 5783 5800	human clump cells
+T105	Entity 5836 5843	CBA/CaJ
+T106	KeyEntity 5990 5993	IOP
+T107	KeyEntity 5692 5695	IOP
+T108	KeyEntity 5714 5717	IOP
+T109	KeyEntity 7080 7083	IOP
+T110	KeyEntity 7117 7120	IOP
+T111	KeyEntity 7265 7268	IOP
+T112	KeyEntity 7374 7377	IOP
+T113	KeyEntity 7560 7563	IOP
+T114	KeyEntity 7780 7783	IOP
+T115	KeyEntity 7900 7903	IOP
+T116	Entity 8788 8791	IOP
+T117	KeyEntity 8805 8809	IOPs
+T118	KeyEntity 7830 7834	IOPs
+T119	KeyEntity 8058 8062	IOPs
+T120	KeyEntity 9250 9253	IOP
+T121	KeyEntity 9429 9432	IOP
+T122	KeyEntity 9016 9019	IOP
+T123	KeyEntity 9378 9381	IOP
+T124	KeyEntity 9747 9750	IOP
+T125	KeyEntity 9923 9926	IOP
+T126	KeyEntity 9851 9854	IOP
+T127	KeyEntity 9906 9909	IOP
+T128	KeyEntity 10607 10610	IOP
+T129	KeyEntity 10523 10526	IOP
+T130	KeyEntity 10704 10707	IOP
+T132	KeyEntity 10806 10809	IOP
+T133	KeyEntity 11262 11265	IOP
+T134	KeyEntity 11439 11442	IOP
+T135	KeyEntity 11482 11485	IOP
+T136	KeyEntity 11819 11822	IOP
+T137	KeyEntity 11886 11889	IOP
+T138	KeyEntity 12369 12372	IOP
+T139	KeyEntity 12443 12446	IOP
+T140	KeyEntity 12495 12498	IOP
+T141	KeyEntity 12769 12772	IOP
+T142	KeyEntity 13071 13074	IOP
+T143	KeyEntity 13111 13114	IOP
+T144	KeyEntity 13265 13268	IOP
+T145	KeyEntity 13427 13430	IOP
+T146	KeyEntity 13526 13529	IOP
+T147	KeyEntity 13569 13572	IOP
+T148	KeyEntity 13732 13735	IOP
+T149	KeyEntity 13643 13646	IOP
+T150	KeyEntity 13835 13838	IOP
+T151	Entity 14030 14051	IOP depressing effect
+T152	Entity 14055 14065	anesthesia
+R15	other_relation Arg1:T152 Arg2:T151	
+#3	AnnotatorNotes R15	causal
+T153	Entity 14342 14359;14363 14366	diurnal variation IOP
+T154	KeyEntity 14398 14401	IOP
+T155	KeyEntity 14518 14521	IOP
+T131	KeyEntity 10743 10746	IOP
+T156	KeyEntity 14693 14696	IOP
+T157	KeyEntity 14887 14890	IOP
+T158	KeyEntity 14923 14926	IOP
+T159	KeyEntity 15141 15144	IOP
+T160	KeyEntity 15476 15479	IOP
+T161	KeyEntity 15561 15564	IOP
+T162	KeyEntity 15839 15842	IOP
+T163	KeyEntity 16159 16162	IOP
+T164	KeyEntity 16228 16231	IOP
+T165	KeyEntity 16349 16352	IOP
+T166	KeyEntity 16588 16591	IOP
+T167	KeyEntity 16461 16464	IOP
+T168	KeyEntity 16736 16739	IOP
+T169	KeyEntity 16794 16797	IOP
+T170	KeyEntity 16932 16935	IOP
+T171	KeyEntity 17545 17548	IOP
+T172	KeyEntity 17656 17659	IOP
+T173	KeyEntity 17932 17935	IOP
+T174	KeyEntity 17999 18002	IOP
+T175	KeyEntity 18171 18174	IOP
+T176	KeyEntity 18357 18360	IOP
+T177	KeyEntity 18474 18477	IOP
+T178	KeyEntity 18520 18523	IOP
+T179	KeyEntity 19593 19596	IOP
+T180	KeyEntity 19751 19754	IOP
+T181	KeyEntity 19889 19892	IOP
+T182	KeyEntity 20126 20129	IOP
+T183	KeyEntity 20353 20356	IOP
+T186	KeyEntity 21209 21212	IOP
+T187	KeyEntity 21313 21316	IOP
+T188	KeyEntity 21655 21658	IOP
+T189	KeyEntity 21860 21863	IOP
+T190	KeyEntity 22324 22327	IOP
+T191	KeyEntity 22586 22589	IOP
+T192	KeyEntity 22794 22797	IOP
+T193	KeyEntity 22885 22888	IOP
+T194	KeyEntity 22927 22930	IOP
+T195	KeyEntity 22994 22997	IOP
+T196	KeyEntity 23015 23018	IOP
+T197	KeyEntity 23377 23380	IOP
+T198	KeyEntity 23428 23431	IOP
+T199	KeyEntity 23543 23546	IOP
+T200	KeyEntity 23614 23617	IOP
+T201	KeyEntity 23708 23711	IOP
+T203	KeyEntity 24345 24348	IOP
+T204	KeyEntity 24478 24481	IOP
+T206	Entity 25037 25051	IOP depression
+T207	KeyEntity 25385 25388	IOP
+T208	KeyEntity 26166 26169	IOP
+T209	KeyEntity 26577 26580	IOP
+T210	KeyEntity 26645 26648	IOP
+T211	KeyEntity 26794 26797	IOP
+T212	KeyEntity 26966 26969	IOP
+T213	KeyEntity 27088 27091	IOP
+T214	KeyEntity 27192 27195	IOP
+T215	KeyEntity 27433 27436	IOP
+T216	KeyEntity 27594 27597	IOP
+T217	KeyEntity 27688 27691	IOP
+T218	KeyEntity 27870 27873	IOP
+T219	KeyEntity 27991 27994	IOP
+T220	KeyEntity 28198 28201	IOP
+T221	KeyEntity 28333 28336	IOP
+T222	KeyEntity 28427 28430	IOP
+T223	KeyEntity 28646 28649	IOP
+T224	KeyEntity 28721 28724	IOP
+T225	Entity 28888 28901	increased IOP
+T226	Entity 28906 28914	glaucoma
+R16	other_relation Arg1:T225 Arg2:T226	
+#4	AnnotatorNotes R16	correlated with
+T227	Entity 29025 29037	elevated IOP
+T228	Entity 29042 29050	glaucoma
+R17	other_relation Arg1:T227 Arg2:T228	
+#5	AnnotatorNotes R17	correlated with
+T229	KeyEntity 29141 29144	IOP
+T230	Entity 28761 28768	Obesity
+T231	Entity 28773 28781	diabetes
+T232	Entity 28783 28790	Obesity
+T233	Entity 28794 28816	higher body mass index
+R18	other_relation Arg1:T232 Arg2:T225	
+#6	AnnotatorNotes R18	correlated with
+R19	other_relation Arg1:T233 Arg2:T225	
+#7	AnnotatorNotes R19	correlated with
+T234	Entity 28938 28946	diabetes
+T235	Entity 28969 28977	diabetes
+T236	Entity 28982 28989	obesity
+R20	other_relation Arg1:T236 Arg2:T227	
+#8	AnnotatorNotes R20	correlated with
+R21	other_relation Arg1:T235 Arg2:T227	
+#9	AnnotatorNotes R21	correlated with
+T237	Entity 29077 29098	genetic perturbations
+T238	Entity 29110 29117	obesity
+T239	Entity 29122 29130	diabetes
+R22	other_relation Arg1:T237 Arg2:T238	
+#10	AnnotatorNotes R22	causal
+R23	other_relation Arg1:T237 Arg2:T239	
+#11	AnnotatorNotes R23	causal
+T240	Entity 29265 29294	leptin receptor mutation (db)
+T241	Entity 29311 29330	early onset obesity
+T242	Entity 29335 29343	diabetes
+R24	other_relation Arg1:T240 Arg2:T241	
+#12	AnnotatorNotes R24	causal
+R25	other_relation Arg1:T240 Arg2:T242	
+#13	AnnotatorNotes R25	causal
+T243	Entity 29349 29369	obese, diabetic mice
+T244	Entity 29374 29385	higher IOPs
+R26	other_relation Arg1:T244 Arg2:T243	
+#14	AnnotatorNotes R26	correlated with
+T245	Entity 29472 29485	increased IOP
+T246	Entity 29490 29497	obesity
+T247	Entity 29501 29509	diabetes
+R27	other_relation Arg1:T245 Arg2:T246	
+#15	AnnotatorNotes R27	correlated with
+R28	other_relation Arg1:T245 Arg2:T247	
+#16	AnnotatorNotes R28	correlated with
+T248	Entity 29602 29620;29643 29647	obese non-diabetic mice
+T249	Entity 29624 29647	diabetic non-obese mice
+T250	KeyEntity 29719 29722	IOP
+T251	KeyEntity 29792 29795	IOP
+T252	KeyEntity 30001 30004	IOP
+T253	KeyEntity 30145 30148	IOP
+T254	KeyEntity 30177 30180	IOP
+T255	KeyEntity 30215 30218	IOP
+T256	KeyEntity 30368 30371	IOP
+T257	KeyEntity 30487 30490	IOP
+T258	KeyEntity 30673 30676	IOP
+T259	KeyEntity 30806 30809	IOP
+T260	KeyEntity 31139 31142	IOP
+T261	KeyEntity 31573 31576	IOP
+T262	KeyEntity 31647 31650	IOP
+T263	KeyEntity 32044 32047	IOP
+T264	KeyEntity 32396 32399	IOP
+T265	Entity 32565 32586	Tyrosinase deficiency
+T266	Entity 32598 32611	increased IOP
+R29	other_relation Arg1:T265 Arg2:T266	
+#17	AnnotatorNotes R29	causal
+T267	KeyEntity 32957 32960	IOP
+T268	Entity 32976 32989	increased IOP
+T269	Entity 32993 33025	mice lacking tyrosinase activity
+R30	other_relation Arg1:T269 Arg2:T268	
+#18	AnnotatorNotes R30	causal
+T270	KeyEntity 33103 33106	IOP
+T271	Entity 33253 33268;33272 33283	diurnal pattern IOP changes
+T272	Entity 33523 33537;33541 33544	diurnal rhythm IOP
+T273	KeyEntity 33679 33682	IOP
+T274	KeyEntity 33866 33869	IOP
+T275	KeyEntity 33986 33989	IOP
+T276	KeyEntity 33905 33908	IOP
+T277	Entity 34064 34077	IOP elevation
+T278	Entity 33997 34011	albino B6 mice
+R31	other_relation Arg1:T278 Arg2:T277	
+#19	AnnotatorNotes R31	correlated with
+T279	KeyEntity 34123 34126	IOP
+T280	KeyEntity 34302 34305	IOP
+T281	KeyEntity 34401 34404	IOP
+T282	KeyEntity 34549 34552	IOP
+T283	KeyEntity 34622 34646	mechanisms affecting IOP
+T285	KeyEntity 35806 35826	Intraocular pressure
+T286	KeyEntity 35828 35849	Intraocular pressures
+T287	KeyEntity 36452 36455	IOP
+T288	KeyEntity 36639 36642	IOP
+T289	KeyEntity 37294 37297	IOP
+T290	KeyEntity 37514 37517	IOP
+T293	KeyEntity 8869 8873	IOPs
+T294	KeyEntity 9516 9520	IOPs
+T295	KeyEntity 10200 10204	IOPs
+T296	KeyEntity 10423 10427	IOPs
+T297	KeyEntity 12833 12837	IOPs
+T298	KeyEntity 17018 17022	IOPs
+T299	KeyEntity 17593 17597	IOPs
+T300	KeyEntity 18225 18229	IOPs
+T301	KeyEntity 18831 18835	IOPs
+T302	KeyEntity 18987 18991	IOPs
+T303	KeyEntity 20888 20892	IOPs
+T304	KeyEntity 21736 21740	IOPs
+T305	KeyEntity 22092 22096	IOPs
+T306	KeyEntity 23166 23170	IOPs
+T307	KeyEntity 30577 30581	IOPs
+T308	KeyEntity 31199 31203	IOPs
+T309	KeyEntity 36184 36188	IOPs
+T310	Entity 5999 6011	angle recess
+T311	Entity 6024 6034	cornea (C)
+T312	Entity 6039 6052	iris root (I)
+T313	Entity 6080 6093	Aqueous humor
+T314	Entity 6141 6160	drainage structures
+T315	Entity 6201 6221	Ocular abnormalities
+T316	Entity 6576 6597	Histological analysis
+T317	Entity 6647 6677	calcified cyst like structures
+T318	Entity 6685 6700	iris epithelium
+T319	Entity 6712 6717	SB/Le
+T320	Entity 6722 6730	SEC/1ReJ
+T321	Entity 6751 6767	corneal scarring
+T322	Entity 6821 6837	scratched cornea
+T323	Entity 6860 6880	retinal degeneration
+T324	Entity 6898 6910;6919 6935	homozygosity Pde6brd1mutation
+R32	other_relation Arg1:T324 Arg2:T323	
+#20	AnnotatorNotes R32	causal
+T325	Entity 6957 6962	SB/Le
+T326	Entity 6964 6969	ST/bJ
+T327	Entity 6971 6978	BUB/BnJ
+T328	Entity 6980 6985	CBA/J
+T329	Entity 6987 6994	C3H/HeJ
+T330	Entity 6996 7001	SJL/J
+T331	Entity 7006 7011	SWR/J
+T332	Entity 7290 7303	C57BL/6J (B6)
+T333	Entity 7410 7417	CBA/CaJ
+T334	Entity 7419 7427	CBA/CaHN
+T335	Entity 7460 7462	B6
+T336	Entity 7726 7733	129P3/J
+T337	Entity 8314 8325	CBA strains
+T338	Entity 8404 8411	CBA/CaJ
+T339	Entity 8451 8459	CBA/CaHN
+R33	is_subclass_of Arg1:T338 Arg2:T337	
+R34	is_subclass_of Arg1:T339 Arg2:T337	
+T340	Entity 8500 8507	BALB/cJ
+T341	Entity 8512 8520	C57BL/6J
+T342	Entity 8626 8633	BALB/cJ
+T343	Entity 8660 8668	C57BL/6J
+T344	Entity 8706 8723	CBA/CaHN-Btkxid/J
+T345	Entity 8742 8750	CBA/CaHN
+R35	other_relation Arg1:T345 Arg2:T344	
+#21	AnnotatorNotes R35	synonyms
+T346	Entity 8877 8884	BALB/cJ
+T347	Entity 9257 9260	A/J
+T348	Entity 9385 9388	A/J
+T349	Entity 9532 9534	B6
+T350	Entity 9539 9546	C3H/HeJ
+T351	Entity 9784 9786	B6
+T352	Entity 9788 9795	129P3/J
+T353	Entity 9800 9807	C3H/HeJ
+T354	Entity 9870 9872	B6
+T355	Entity 10283 10285	B6
+T356	Entity 10405 10407	B6
+T357	Entity 10558 10560	B6
+T358	Entity 10845 10853	C57BL/6J
+T359	Entity 10858 10865	129P3/J
+T360	Entity 10874 10881	C3H/HeJ
+T361	Entity 10887 10895	C57BL/6J
+T362	Entity 10900 10907	129P3/J
+T363	Entity 10995 11002	C3H/HeJ
+T364	Entity 11156 11164	C57BL/6J
+T365	Entity 11186 11193	129P3/J
+T366	Entity 11215 11222	C3H/HeJ
+T367	Entity 11253 11260	129P3/J
+T368	Entity 11506 11513	C3H/HeJ
+T369	Entity 11762 11768	DBA/2J
+T370	Entity 11773 11783	AKXD-28/Ty
+T371	Entity 11907 11931	sex specific differences
+T372	Entity 12118 12120	B6
+T373	Entity 12125 12132	129P3/J
+T374	Entity 12259 12266	129P3/J
+T375	Entity 12298 12300	B6
+T376	Entity 12214 12229	Sex differences
+T377	Entity 12312 12314	B6
+T378	Entity 12419 12421	B6
+T379	Entity 12573 12587	sex difference
+T380	Entity 12648 12650	B6
+T381	Entity 12742 12752	Anesthesia
+T382	Entity 12808 12827	diurnal differences
+T383	Entity 12861 12878	anesthetic regime
+T384	Entity 13043 13053	anesthesia
+T385	Entity 13241 13251	anesthesia
+T386	Entity 13304 13306	B6
+T387	Entity 13622 13639	anesthetic effect
+T388	Entity 13755 13772	anesthetic effect
+T389	Entity 13793 13795	B6
+T390	KeyEntity 13943 13946	IOP
+T391	Entity 14164 14171	129P3/J
+T392	Entity 14187 14193	DBA/2J
+T393	Entity 14285 14295	anesthesia
+T394	Entity 14303 14321	general anesthesia
+T395	Entity 14594 14604	anesthesia
+T396	Entity 14633 14648	anesthetic dose
+T397	Entity 14790 14800	anesthetic
+T398	Entity 14983 14993	anesthesia
+T399	Entity 15175 15185	anesthetic
+T400	Entity 15422 15430	C57BL/6J
+T401	Entity 15436 15443	129P3/J
+T402	Entity 15452 15458	DBA/2J
+T403	Entity 15735 15742	CBA/CaJ
+T404	Entity 15772 15777	129B6
+T405	Entity 15798 15837	mixed 129X1/SvJ and C57BL/6J background
+R36	regulates Arg1:T405 Arg2:T404	
+#22	AnnotatorNotes R36	synonyms
+T406	Entity 15895 15902	CBA/CaJ
+T407	Entity 15995 16001	DBA/2J
+T408	Entity 16011 16019	C57BL/6J
+T409	Entity 16030 16039	C57BR/cdJ
+T410	Entity 16049 16054	SWR/J
+T411	Entity 16065 16074	BALB/cByJ
+T412	Entity 16085 16090	129B6
+T413	Entity 16101 16108	CBA/CaJ
+T414	Entity 16120 16134	Blood pressure
+T415	Entity 16209 16223	blood pressure
+T416	Entity 16330 16344	blood pressure
+T417	Entity 16406 16429	systolic blood pressure
+T418	Entity 16564 16578	female CBA/CaJ
+T419	Entity 16634 16641	CBA/CaJ
+T420	Entity 16681 16686	ARK/J
+T421	Entity 16688 16696	C57BL/6J
+T422	Entity 16701 16706	SJL/J
+T423	Entity 16715 16720	ARK/J
+T424	Entity 16742 16754	Myoc alleles
+T425	Entity 16799 16808;16816 16836	Mutations myocilin gene (MYOC)
+T426	Entity 16843 16857	human glaucoma
+R37	other_relation Arg1:T425 Arg2:T426	
+#23	AnnotatorNotes R37	causal
+T427	Entity 16875 16892;16900 16915	allelic variation mouse Myoc gene
+T428	Entity 17083 17103	nucleotide insertion
+T429	Entity 17111 17126	promoter region
+R38	is_part_of Arg1:T428 Arg2:T429	
+T430	Entity 17239 17255	insertion allele
+T431	Entity 17324 17340	insertion allele
+T432	Entity 17372 17384	substitution
+T433	Entity 17394 17403	Thr164Ala
+R39	is_subclass_of Arg1:T433 Arg2:T432	
+T434	Entity 17460 17475	promoter region
+R40	is_part_of Arg1:T431 Arg2:T434	
+T435	Entity 17621 17633	Myoc alleles
+T436	Entity 17688 17695;17699 17703	alleles Myoc
+T437	Entity 17810 17825	promoter region
+T438	Entity 17793 17802	insertion
+R41	is_part_of Arg1:T438 Arg2:T437	
+T439	Entity 17900 17909	insertion
+T440	Entity 17975 17994	Genetic alterations
+T441	Entity 18004 18016	Y Chromosome
+T442	Entity 18022 18034	Y chromosome
+T443	Entity 18058 18100;18104 18108	strain specific blood pressure differences rats
+T444	Entity 18133 18145;18156 18163	Y chromosome 129/Ola
+T445	Entity 18205 18207	B6
+T446	Entity 18238 18246	B6 males
+T447	Entity 18251 18268	consomic B6 males
+T448	Entity 18282 18304	129P2/Ola Y chromosome
+T449	Entity 18447 18466	genetic alterations
+T450	Entity 18571 18580	129P2/Ola
+T451	Entity 18593 18601	C57BL/6J
+T452	Entity 18611 18631	Y chromosome (Y Chr)
+T453	Entity 18637 18646	129 Y Chr
+T454	Entity 18678 18686	C57BL/6J
+T455	Entity 18762 18772;18813 18817	homozygous Car2
+T456	Entity 18895 18905;18914 18961	homozygous Lepr diabetes and obesity causing mutation (db)
+T457	Entity 19180 19198	Blood sugar levels
+T458	Entity 19061 19072	body weight
+T459	Entity 19202 19214	db /db males
+T460	Entity 19252 19260	diabetic
+T461	Entity 19408 19413	db/db
+T462	Entity 19432 19436	db/+
+T463	Entity 19521 19525	Car2
+T464	Entity 19538 19548;19552 19573	deficiency carbonic anhydrase II
+T465	Entity 19620 19633	B6 background
+T466	Entity 19673 19679;19690 19697;19705 19714	normal alleles Car2 gene
+T467	Entity 19683 19689;19690 19697;19705 19714	mutant alleles Car2 gene
+T468	Entity 19808 19812	Lepr
+T469	Entity 19825 19846	genetic perturbations
+T470	Entity 19858 19865	obesity
+T471	Entity 19870 19878	diabetes
+T472	Entity 19990 20019	leptin receptor mutation (db)
+T473	Entity 20036 20043	obesity
+T474	Entity 20048 20056	diabetes
+T475	Entity 20087 20114	C57BLKS/J strain background
+R42	other_relation Arg1:T472 Arg2:T473	
+#24	AnnotatorNotes R42	causal
+R43	other_relation Arg1:T472 Arg2:T474	
+#25	AnnotatorNotes R43	causal
+T476	Entity 20173 20207	obese, diabetic homozygous mutants
+T477	Entity 20238 20275	non-obese, non-diabetic heterozygotes
+T478	Entity 20316 20319	Tyr
+T479	Entity 20337 20345	albinism
+T480	Entity 20370 20372	B6
+T481	Entity 20395 20404	pigmented
+T482	Entity 20408 20414	albino
+T483	Entity 20420 20431	albino mice
+T484	Entity 20437 20447;20452 20462;20469 20506	homozygous coisogenic mutant allele of tyrosinase (Tyrc-2J)
+T485	Entity 20535 20558	pigmented B6 background
+T486	Entity 20581 20605	homozygosity for Tyrc-2J
+T184	Entity 20618 20631	increased IOP
+R44	other_relation Arg1:T486 Arg2:T184	
+#26	AnnotatorNotes R44	causal
+T487	Entity 20662 20687	wild type, pigmented mice
+T488	Entity 20854 20871	pigmented B6 mice
+T489	Entity 20900 20914	albino B6 mice
+T490	Entity 21036 21048	Tyr mutation
+T491	Entity 21078 21101	altered diurnal changes
+T492	Entity 21126 21134	C57BL/6J
+T493	Entity 21149 21159;21168 21196	homozygous spontaneous Tyrc-2J mutation
+T185	Entity 21060 21073	increased IOP
+R45	other_relation Arg1:T490 Arg2:T185	
+#27	AnnotatorNotes R45	causal
+R46	other_relation Arg1:T490 Arg2:T491	
+#28	AnnotatorNotes R46	causal
+T494	Entity 21371 21390	Tyrc-2J homozygotes
+T495	Entity 21462 21465	+/+
+T496	Entity 21470 21479	c-2J/c-2J
+T497	Entity 21493 21496	+/+
+T498	Entity 21504 21513	c-2J/c-2J
+T499	Entity 21527 21530	+/+
+T500	Entity 21538 21547	c-2J/c-2J
+T501	Entity 21618 21629	dark period
+T502	Entity 20960 20964;20983 20989	dark period
+T503	Entity 20977 20989	light period
+T504	Entity 21431 21443	light period
+T505	Entity 21345 21356	dark period
+T506	Entity 14413 14417;14440 14446	dark period
+T507	Entity 14434 14446	light period
+T508	Entity 21704 21720	genetic analyses
+T509	Entity 21752 21787	genetically different mouse strains
+T510	Entity 22181 22211	quantitative trait locus (QTL)
+T511	Entity 22266 22320	chromosomal regions contributing to strain differences
+T512	Entity 22333 22346	strain survey
+T513	Entity 22478 22497	mutagenesis screens
+T514	Entity 22594 22602	glaucoma
+T515	Entity 22667 22689	aqueous humor dynamics
+T516	Entity 22736 22744	glaucoma
+T517	Entity 22771 22790	anesthetic protocol
+T518	Entity 22842 22859	anesthetic agents
+T519	Entity 22870 22878	xylazine
+R47	is_subclass_of Arg1:T519 Arg2:T518	
+T520	Entity 22890 22898	Ketamine
+T521	Entity 22965 22973	ketamine
+T522	Entity 23241 23260	anesthetic protocol
+T523	Entity 23262 23287	intraperitoneal injection
+T524	Entity 23300 23308	ketamine
+T525	Entity 23321 23329	xylazine
+T526	Entity 23335 23345	anesthetic
+T527	Entity 23566 23585	anesthetic protocol
+T528	Entity 23694 23704	anesthesia
+T529	Entity 23787 23812	anesthetic administration
+T530	Entity 14836 14844	ketamine
+T531	Entity 14857 14865	xylazine
+T532	Entity 12891 12899	ketamine
+T533	Entity 12912 12920	xylazine
+T534	Entity 13009 13017	ketamine
+T535	Entity 13030 13038	xylazine
+T536	Entity 23938 23968;23972 23980	intraperitoneal administration ketamine
+T537	Entity 23938 23968;23985 23993	intraperitoneal administration xylazine
+T538	Entity 24228 24267	intraperitoneally administered ketamine
+T539	Entity 23902 23927	cardiovascular depression
+T540	Entity 24018 24028	anesthesia
+T541	Entity 24051 24065	blood pressure
+T542	Entity 24120 24145	strong hypotensive effect
+R48	other_relation Arg1:T540 Arg2:T542	
+#29	AnnotatorNotes R48	causal
+T202	Entity 24301 24313	decrease IOP
+R49	other_relation Arg1:T538 Arg2:T202	
+#30	AnnotatorNotes R49	causal
+T543	Entity 24446 24456	anesthesia
+T544	Entity 24687 24697	anesthesia
+T545	Entity 24802 24812	anesthesia
+T205	Entity 24953 24977	anesthesia decreases IOP
+T546	Entity 25170 25180	anesthesia
+T547	Entity 25223 25233	anesthesia
+T548	Entity 25472 25482	anesthesia
+T549	Entity 25659 25684	Environmental differences
+T550	Entity 25703 25719	Cage cleanliness
+T551	Entity 25721 25739	changing frequency
+T552	Entity 25744 25759	housing density
+T553	Entity 25770 25785	drug metabolism
+T554	Entity 25804 25814	anesthesia
+T555	Entity 25836 25840;25844 25851	type bedding
+T556	Entity 25887 25900	wood shavings
+T557	Entity 25905 25912	bedding
+T558	Entity 25917 25930	wood shavings
+R50	is_subclass_of Arg1:T556 Arg2:T557	
+R51	is_subclass_of Arg1:T558 Arg2:T557	
+T559	Entity 25950 25958	terpenes
+T560	Entity 25960 25967	Terpene
+T561	Entity 25986 26020	environmental exposure to terpenes
+T562	Entity 26024 26037	wood shavings
+T563	Entity 26045 26060	drug resistance
+T564	Entity 26089 26106	anesthetic agents
+R52	other_relation Arg1:T561 Arg2:T563	
+#31	AnnotatorNotes R52	correlated with
+T565	Entity 26176 26199	epidemiological studies
+T566	Entity 26226 26234	diabetes
+T567	Entity 26236 26257	vascular hypertension
+T568	Entity 26259 26279	arterial hypotension
+T569	Entity 26281 26290	vasospasm
+T570	Entity 26292 26329	aberrant autoregulation of blood flow
+T571	Entity 26334 26337	sex
+T572	Entity 26341 26349	glaucoma
+T573	Entity 26411 26419	glaucoma
+T574	Entity 26483 26486	age
+T575	Entity 26488 26494	gender
+T576	Entity 26496 26510	blood pressure
+T577	Entity 26512 26519	obesity
+T578	Entity 26524 26532	diabetes
+T579	Entity 26652 26689	genetically homogeneous mouse strains
+T580	Entity 26720 26723	Age
+T581	Entity 26801 26803	B6
+T582	Entity 26973 26975	B6
+T583	Entity 27024 27034	anesthesia
+T584	Entity 27095 27102	129P3/J
+T585	Entity 26845 26848	age
+T586	Entity 26958 26961	age
+T587	Entity 27128 27131	age
+T588	Entity 27155 27158	age
+T589	Entity 27223 27226	age
+T590	Entity 27234 27259	human Japanese population
+T591	Entity 27288 27290	B6
+T592	Entity 27469 27488	Western populations
+T594	Entity 27534 27554	glaucomatous strains
+T593	Entity 27555 27561	DBA/2J
+T595	Entity 27566 27576	AKXD-28/Ty
+R53	is_subclass_of Arg1:T593 Arg2:T594	
+R54	is_subclass_of Arg1:T595 Arg2:T594	
+T596	Entity 27603 27606	age
+T597	Entity 27442 27445	age
+T598	Entity 27617 27623	Gender
+T599	Entity 27943 27967	sex-specific differences
+T600	Entity 28159 28165	DBA/2J
+T601	Entity 28170 28180	AKXD-28/Ty
+T602	Entity 28241 28255	Blood pressure
+T603	Entity 28341 28355	blood pressure
+T604	Entity 28408 28422	blood pressure
+T605	Entity 28493 28508	blood pressures
+T606	Entity 28615 28629	blood pressure
+T607	Entity 28702 28716	blood pressure
+T608	Entity 28755 28758	age
+T609	Entity 29747 29758	dark period
+T610	Entity 29771 29788	Diurnal variation
+T611	Entity 29885 29899	diurnal rhythm
+T612	Entity 29930 29954	aqueous humor production
+T613	Entity 29930 29943;29958 29962	aqueous humor flow
+T614	Entity 30062 30072;30076 30098	resistance aqueous humor drainage
+T615	Entity 30122 30141	diurnal differences
+T616	Entity 30233 30235	B6
+T617	Entity 30284 30295	dark period
+T618	Entity 30414 30425	dark period
+T619	Entity 30502 30513	dark period
+T620	Entity 30530 30542	light period
+T621	Entity 30688 30692;30715 30721	dark period
+T622	Entity 30709 30721	light period
+T623	Entity 30795 30800	SWR/J
+T624	Entity 30862 30865;30875 30889	rod photoreceptors
+T625	Entity 30870 30889	cone photoreceptors
+T626	Entity 30922 30927	SWR/J
+T627	Entity 30940 30952;30961 30978	homozygosity Pde6brd1 mutation
+T628	Entity 31012 31032;31036 31049	circadian regulation wheel running
+T629	Entity 31099 31103	rods
+T630	Entity 31108 31113	cones
+T631	Entity 31153 31160	CBA/CaJ
+T632	Entity 31323 31337	diurnal rhythm
+T633	KeyEntity 31341 31361	intraocular pressure
+T634	Entity 31446 31453	CBA/CaJ
+T635	Entity 31521 31569	molecular mechanisms controlling diurnal rhythms
+T636	Entity 31605 31613	glaucoma
+T637	Entity 31616 31631	Car2 deficiency
+T638	Entity 31652 31673	Bicarbonate formation
+T639	Entity 31691 31714	aqueous humor secretion
+T640	Entity 31724 31741	ciliary processes
+T641	Entity 31746 31769	carbonic anhydrase (CA)
+T642	Entity 31787 31796	secretion
+R56	regulates Arg1:T641 Arg2:T639	
+T643	Entity 31826 31828	CA
+T644	Entity 31837 31849	CAII isoform
+R55	is_subclass_of Arg1:T644 Arg2:T643	
+T645	Entity 31896 31913	ciliary processes
+T646	Entity 31951 31969;31973 31977	genetic deficiency CAII
+T647	Entity 32003 32011;32019 32028	mutation Car2 gene
+T648	Entity 32049 32062	CAIV activity
+T649	Entity 32096 32113	ciliary processes
+T650	Entity 32175 32179	CAIV
+T651	Entity 32192 32196	CAII
+T652	Entity 32200 32223	aqueous humor secretion
+R57	regulates Arg1:T650 Arg2:T652	
+T653	Entity 32250 32254	CAII
+T654	Entity 32284 32307	aqueous humor secretion
+T655	Entity 32334 32338	CAIV
+T656	Entity 32377 32392	CAII deficiency
+T657	Entity 32403 32419	Car2 mutant mice
+T658	Entity 32479 32489;32493 32495	inhibition CA
+T659	Entity 32524 32533;32537 32554	reduction aqueous secretion
+T660	Entity 32613 32623	Tyrosinase
+T661	Entity 32651 32677	pigment production pathway
+R58	participates_in Arg1:T660 Arg2:T661	
+T662	Entity 32679 32700	Tyrosinase deficiency
+T663	Entity 32708 32716	albinism
+T664	Entity 32733 32752	ocular consequences
+R59	other_relation Arg1:T662 Arg2:T663	
+#32	AnnotatorNotes R59	causal
+T665	Entity 32796 32834	ipsilaterally projecting retinal axons
+T666	Entity 32853 32894	increased light penetration past the iris
+T667	Entity 33070 33087	pigmented B6 mice
+T668	Entity 33131 33136;33146 33152	light period
+T669	Entity 33141 33152	dark period
+T670	Entity 33185 33194;33214 33221	pigmented B6 mice
+T671	Entity 33207 33221	albino B6 mice
+T672	Entity 33229 33237	albinism
+T673	Entity 33326 33337	albino eyes
+T674	Entity 33347 33357;33362 33372	homozygous tyrosinase
+T675	Entity 33347 33357;33376 33403	homozygous pink eye dilution mutations
+T676	Entity 33409 33432	altered diurnal rhythms
+T677	Entity 33445 33459	pigmented mice
+T678	Entity 33466 33474	Albinism
+T679	Entity 33630 33644	albino strains
+T680	Entity 33645 33654	BALB/cByJ
+T681	Entity 33659 33664	SWR/J
+R60	is_subclass_of Arg1:T680 Arg2:T679	
+R61	is_subclass_of Arg1:T681 Arg2:T679	
+T682	Entity 33700 33715	Diurnal rhythms
+T683	Entity 33739 33754	visual pathways
+T684	Entity 33773 33788	light intensity
+T685	Entity 33843 33862	diurnal fluctuation
+T686	Entity 33968 33982	diurnal rhythm
+T687	Entity 34154 34174	inbred mouse strains
+T688	Entity 34181 34195;34199 34202	diurnal rhythm IOP
+T689	Entity 36192 36200	C57BL/6J
+T284	Entity 36714 36716	B6
+T690	Entity 36776 36787	dark period
+T691	Entity 37024 37041	anesthetic agents
+T692	Entity 37075 37085	anesthesia
+T693	Entity 37274 37292	ocular cannulation

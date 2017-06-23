@@ -23,8 +23,6 @@ T19	Entity 1445 1454	arthritis
 T20	Entity 1458 1482	aged multiparous females
 T21	Entity 1535 1552	pregnancy failure
 T22	Entity 1001 1014	chromosome 11
-T23	Entity 951 988	arthritis incidence, severity and day
-R3	participates_in Arg1:T10 Arg2:T23	
 R4	other_relation Arg1:T12 Arg2:T10	
 #2	AnnotatorNotes R4	Name
 T24	Entity 1075 1092	pregnancy failure
@@ -41,33 +39,31 @@ T27	KeyEntity 1631 1663	collagen-induced arthritis (CIA)
 T28	Entity 1594 1619	rheumatoid arthritis (RA)
 T29	Entity 1769 1771	RA
 T30	KeyEntity 2483 2486;2490 2494	CIA mice
-T31	KeyEntity 2690 2693	CIA
+T31	KeyEntity 2677 2686;2690 2693	incidence CIA
 T32	KeyEntity 2922 2925	CIA
-T34	KeyEntity 3595 3598	CIA
+T34	KeyEntity 3582 3591;3595 3598	incidence CIA
 T35	KeyEntity 4195 4198	CIA
 T36	KeyEntity 5638 5641	CIA
 T37	KeyEntity 5703 5706	CIA
 T38	KeyEntity 5718 5721	CIA
 T39	KeyEntity 6262 6265	CIA
 T40	Entity 9805 9822	NFR/N female mice
-T41	KeyEntity 9865 9868	CIA
+T41	KeyEntity 9852 9861;9865 9868	incidence CIA
 T42	KeyEntity 10270 10273	CIA
-T43	KeyEntity 10581 10584	CIA
-T44	KeyEntity 11536 11539	CIA
+T43	KeyEntity 10556 10565;10569 10577;10581 10584	incidence severity CIA
+T44	KeyEntity 11515 11519;11536 11539	loci CIA
 T45	Entity 12185 12211	CIA-susceptible MHC region
 T46	KeyEntity 12811 12814	CIA
 T47	KeyEntity 13410 13429	CIA-associated loci
-T48	KeyEntity 13338 13341	CIA
+T48	KeyEntity 13313 13322;13326 13334;13338 13341	incidence severity CIA
 T49	KeyEntity 13688 13707	CIA-associated loci
-T50	KeyEntity 13933 13936	CIA
-T51	KeyEntity 14517 14520	CIA
+T50	KeyEntity 13908 13917;13921 13929;13933 13936	incidence severity CIA
+T51	KeyEntity 14485 14489;14517 14520	loci CIA
 T52	KeyEntity 15119 15122	CIA
-T53	KeyEntity 15904 15907	CIA
+T53	KeyEntity 15904 15907;15908 15917	CIA incidence
 T54	KeyEntity 15982 15985	CIA
-T55	KeyEntity 16663 16666	CIA
-T56	KeyEntity 17086 17089	CIA
-T57	KeyEntity 17567 17570	CIA
-T58	KeyEntity 17630 17633	CIA
+T55	KeyEntity 16651 16659;16663 16666	severity CIA
+T57	KeyEntity 17542 17551;17555 17563;17567 17570	incidence severity CIA
 T59	Entity 1947 1949	RA
 T60	Entity 1998 2007	pregnancy
 T61	Entity 2072 2074	RA
@@ -87,7 +83,7 @@ T70	Entity 2525 2553	pathological characteristics
 T71	Entity 2559 2567	human RA
 T72	Entity 2662 2671	arthritis
 T73	Entity 2697 2710	sex dependent
-T74	Entity 2734 2736	RA
+T74	Entity 2721 2730;2734 2736	incidence RA
 T75	Entity 2900 2918	Gender differences
 T76	Entity 2982 2989;3015 3025	genetic influences
 T77	Entity 2991 2999;3015 3025	hormonal influences
@@ -169,3 +165,197 @@ T146	Entity 10508 10525	Pregnancy history
 T147	Entity 10661 10680	arthritic incidence
 T148	Entity 10682 10697	arthritis onset
 T149	Entity 10702 10725	maximum arthritic score
+T151	Entity 10753 10791	N2 generation, (NFR/N × B10.Q) × B10.Q
+T152	Entity 10828 10839	pregnancies
+T153	Entity 10870 10891	immunization with CII
+T154	Entity 10961 10970	arthritis
+T155	Entity 10998 11009	pregnancies
+T156	Entity 11116 11132	multiparous mice
+T157	Entity 11182 11193	pregnancies
+T158	Entity 11277 11286	pregnancy
+T159	Entity 11387 11395	pregnant
+T160	Entity 5488 5526	MHC (major histocompatibility complex)
+T161	Entity 5458 5475	allogeneic mating
+T162	Entity 5571 5587	syngeneic mating
+T163	Entity 5600 5603	MHC
+T164	Entity 5626 5637	pregnancies
+T165	Entity 11401 11432	MHC mismatched males (B10.RIII)
+T166	Entity 11483 11508	MHC matched males (B10.Q)
+T150	Entity 11575 11599	genetic linkage analysis
+T167	Entity 11625 11655	quantitative trait locus (QTL)
+T168	Entity 11780 11796	traits incidence
+T169	Entity 11814 11826	day of onset
+T170	Entity 11883 11898	arthritis score
+T171	Entity 11921 11924	QTL
+T172	Entity 12059 12062	QTL
+T173	Entity 12077 12100	anti-CII antibody titer
+T174	Entity 12217 12222;12233 12237	NFR/N mice
+T175	Entity 12227 12237	B10.Q mice
+T176	Entity 12277 12288	NFR/N mouse
+T177	Entity 12302 12319	inbred NMRI mouse
+T178	Entity 12327 12341	H-2q haplotype
+T179	Entity 12370 12381	B10.Q mouse
+T180	Entity 12487 12517	NFR/N × B10.Q) × B10.Q females
+T181	Entity 12554 12566	reproduction
+T182	Entity 12610 12630	breeding performance
+T183	Entity 12844 12869	MHC class II A beta genes
+T184	Entity 12916 12936	inflammatory disease
+T185	Entity 13019 13034;13038 13047	genetic control arthritis
+T186	Entity 13051 13075	aged multiparous females
+T187	Entity 13099 13107	human RA
+T188	Entity 13220 13240	reproductive history
+T189	Entity 13366 13382	linkage analyses
+T190	Entity 13510 13530	old multiparous mice
+T191	Entity 13544 13546	RA
+T192	Entity 13558 13569;13577 13593	older women major risk group
+T193	Entity 13609 13621	NFR/N strain
+T194	Entity 13654 13670	linkage analyses
+T195	Entity 13746 13777	detecting new polymorphic genes
+T196	Entity 13862 13873	multiparity
+T197	Entity 14027 14029;14033 14038	RA women
+T198	Entity 14094 14103	pregnancy
+T199	Entity 14160 14162	RA
+T200	Entity 14242 14251	pregnancy
+T201	Entity 14278 14287	arthritis
+T202	Entity 14393 14411	exacerbation phase
+T203	Entity 14318 14337	temporary remission
+T204	Entity 11554 11569	old female mice
+T205	Entity 14561 14585	arthritis susceptibility
+T206	Entity 14633 14648	anti-CII titers
+T207	Entity 14671 14685	arthritis loci
+R18	regulates Arg1:T51 Arg2:T205	
+R19	regulates Arg1:T51 Arg2:T206	
+T208	Entity 14925 14936	Cia40 locus
+T209	Entity 14950 14968	Ctla4 (CD152) gene
+R20	is_part_of Arg1:T209 Arg2:T208	
+T210	Entity 15014 15034	spontaneous diabetes
+R21	regulates Arg1:T209 Arg2:T210	
+T211	Entity 15049 15056;15065 15070;15075 15100	crosses C57Bl nonobese diabetic strains
+T212	Entity 15230 15242;15254 15259	polymorphism Cia40
+T213	Entity 15277 15307	genes associated with diabetes
+T214	Entity 15381 15386	Cia28
+T215	Entity 15404 15432	anti-CII antibody production
+T216	Entity 15612 15615	QTL
+T217	Entity 15667 15672	Cia28
+T218	Entity 15834 15839	Cia28
+T219	Entity 15638 15651	chromosome 13
+R22	is_part_of Arg1:T217 Arg2:T219	
+R23	regulates Arg1:T214 Arg2:T215	
+T220	Entity 15445 15458	chromosome 13
+R24	is_part_of Arg1:T214 Arg2:T220	
+T221	Entity 15808 15821	chromosome 13
+R25	is_part_of Arg1:T218 Arg2:T221	
+T222	Entity 14650 14663	chromosome 13
+T223	Entity 12119 12132	chromosome 13
+T224	Entity 11679 11692	chromosome 11
+T225	Entity 12012 12024	chromosome 1
+T226	Entity 14721 14733	chromosome 1
+R26	is_part_of Arg1:T207 Arg2:T226	
+T227	Entity 14735 14740	Cia15
+T228	Entity 14755 14760	Cia20
+T229	Entity 14779 14783	Cia9
+R27	is_part_of Arg1:T227 Arg2:T226	
+R28	is_part_of Arg1:T228 Arg2:T226	
+R29	is_part_of Arg1:T229 Arg2:T226	
+T230	Entity 14869 14881	chromosome 1
+T231	Entity 15729 15741	chromosome 1
+T232	Entity 15896 15899	QTL
+T233	Entity 15942 15955	chromosome 11
+T234	Entity 15965 15970	Cia40
+T235	Entity 16043 16055;16059 16072	central part chromosome 11
+T236	Entity 16105 16122	inflammation loci
+T237	Entity 16132 16137	Eae22
+T238	Entity 16139 16144	Eae6b
+T239	Entity 16146 16151	Eae23
+T240	Entity 16156 16160	Eae7
+R30	is_subclass_of Arg1:T237 Arg2:T236	
+R31	is_subclass_of Arg1:T238 Arg2:T236	
+R32	is_subclass_of Arg1:T239 Arg2:T236	
+R33	is_subclass_of Arg1:T240 Arg2:T236	
+R34	is_part_of Arg1:T236 Arg2:T235	
+T241	Entity 16174 16177;16182 16212	QTL proteoglycan-induced arthritis
+T242	Entity 16283 16296	chromosome 11
+R35	is_part_of Arg1:T241 Arg2:T242	
+T243	Entity 16224 16239;16244 16257	female specific disease onset
+T244	Entity 16319 16325	Pgia28
+T245	Entity 16361 16366	Cia40
+T246	Entity 16398 16417;16450 16491	mouse chromosome 11 highly conserved with human chromosome 17
+T247	Entity 16493 16501;16506 16514	Linkages human RA
+T248	Entity 16592 16596	Cia5
+T249	Entity 16612 16629	rat chromosome 10
+T250	Entity 16671 16697	pristane-induced arthritis
+R36	is_part_of Arg1:T248 Arg2:T249	
+R37	regulates Arg1:T249 Arg2:T55	
+R38	regulates Arg1:T249 Arg2:T250	
+T251	Entity 16796 16799	QTL
+T252	Entity 16808 16814	Pregq2
+T253	Entity 16830 16849	pregnancy frequency
+T254	Entity 16878 16883	Cia40
+T255	Entity 16905 16918	chromosome 11
+R39	is_part_of Arg1:T254 Arg2:T255	
+R40	is_part_of Arg1:T252 Arg2:T255	
+R41	regulates Arg1:T252 Arg2:T253	
+T56	Entity 17086 17099;17103 17119	CIA incidence multiparous mice
+T256	Entity 17147 17168;17172 17183	successful deliveries female mice
+T257	Entity 17190 17204	pregnancy rate
+T258	Entity 17228 17276	successful pregnancies per detected vaginal plug
+R42	other_relation Arg1:T258 Arg2:T257	
+#6	AnnotatorNotes R42	Equation
+T259	Entity 17306 17329	early pregnancy failure
+T260	Entity 17368 17380	inflammatory
+T261	Entity 17496 17507	multiparity
+T58	KeyEntity 17630 17648	CIA susceptibility
+T262	Entity 17666 17679	chromosome 11
+T263	Entity 17681 17686	Cia40
+R43	is_part_of Arg1:T263 Arg2:T262	
+R44	regulates Arg1:T262 Arg2:T58	
+T264	Entity 17695 17707	chromosome 1
+R45	regulates Arg1:T264 Arg2:T58	
+T265	Entity 17724 17737	chromosome 13
+T266	Entity 17762 17777	anti-CII titers
+T267	Entity 17831 17836	Cia28
+R46	is_part_of Arg1:T267 Arg2:T265	
+R47	regulates Arg1:T267 Arg2:T266	
+T268	Entity 18671 18692;18696 18705	accumulated incidence arthritis
+T269	Entity 18731 18746;18751 18762	NFR/N and B10.Q female mice
+T270	Entity 18804 18833	quantitative trait loci (QTL)
+T271	KeyEntity 18838 18874	collagen-induced arthritis incidence
+T272	Entity 18878 18891	chromosomes 1
+T273	Entity 18878 18889;18896 18898	chromosomes 11
+T274	Entity 18900 18903	QTL
+T275	Entity 18908 18946	collagen type II (CII) antibody titers
+T276	Entity 18966 18979	chromosome 13
+T277	Entity 19167 19175;19179 19188	Severity arthritis
+T278	Entity 19193 19232	anti-collagen type II (anti-CII) titers
+T279	Entity 19237 19271	NFR/N × B10.Q) × B10.Q female mice
+T280	Entity 19315 19319;19323 19328	days onset
+T281	Entity 19352 19366	arthritic mice
+T282	Entity 19485 19499	arthritic mice
+T283	Entity 19556 19566	B10.Q mice
+T284	Entity 19656 19691	(NFR/N × B10.Q) × B10.Q female mice
+T285	Entity 19618 19627	Incidence
+T286	Entity 19629 19634	onset
+T288	Entity 19714 19718;19722 19727	days onset
+T289	Entity 19751 19765	arthritic mice
+T287	Entity 19875 19889	arthritic mice
+T290	Entity 19994 20001	N2 mice
+T291	Entity 20030 20049	clinical phenotypes
+T292	KeyEntity 20053 20079	collagen-induced arthritis
+T296	Entity 14135 14144	incidence
+T297	Entity 14148 14156	severity
+T301	Entity 9988 9997	incidence
+T304	Entity 10588 10599	female mice
+T305	Entity 10936 10945	incidence
+T306	Entity 10949 10957	severity
+T307	Entity 2330 2339	incidence
+T308	Entity 1181 1190	incidence
+T309	Entity 1192 1200	severity
+T310	Entity 1205 1217	day of onset
+T23	Entity 951 970	arthritis incidence
+T311	Entity 972 980	severity
+T312	Entity 985 997	day of onset
+T313	Entity 672 694	reproductive histories
+T314	Entity 735 740	onset
+T315	Entity 742 751	incidence
+T316	Entity 755 763	severity
+T300	Entity 11960 11969;11973 11980	incidence disease
