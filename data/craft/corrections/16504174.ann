@@ -1,65 +1,583 @@
-T3.sandy	Entity 172 200	KH-domain containing protein
-T4.sandy	Entity 231 244	early embryos
-T5.sandy	Entity 246 256	germ cells
-T13.sandy	Entity 1341 1365	homologous recombination
-T17.sandy	Entity 1692 1704	chromosome 9
-T18.sandy	KeyEntity 1775 1779	ESG1
-T22.sandy	FIX_TYPE 872 881	ESG1 gene
-T2.sandy	FIX_SPAN_Entity 113 152	Embryonic stem cell-specific gene (ESG)
-T6.sandy	FIX_SPAN_Entity 262 276	embryonic stem
-T7.sandy	VERIFY_Entity 734 752	ESG1-like sequence
-T8.sandy	VERIFY_Entity 765 792	multiple critical mutations
-T9.sandy	VERIFY_Entity 819 840	duplicated pseudogene
-T10.sandy	VERIFY_Entity 925 940	strong enhancer
-T11.sandy	VERIFY_Entity 945 962	promoter activity
-T12.sandy	VERIFY_Entity 966 991	undifferentiated ES cells
-T14.sandy	VERIFY_Entity 1409 1434	heterozygous intercrosses
-T15.sandy	FIX_SPAN_Entity 1490 1505	absence of ESG1
-T16.sandy	FIX_SPAN_KeyEntity 1628 1637	ESG1 gene
-T19.sandy	VERIFY_Entity 1783 1794	dispensable
-T20.sandy	FIX_SPAN_Entity 1799 1823	self-renewal of ES cells
-T21.sandy	FIX_SPAN_Entity 1828 1854	establishment of germcells
-T23.sandy	VERIFY_KeyEntity 0 14	Identification
-T24.sandy	VERIFY_KeyEntity 19 38	targeted disruption
-T25.sandy	VERIFY_Entity 46 56	mouse gene
-T26.sandy	FIX_SPAN_Entity 66 89	ESG1 (PH34/ECAT2/DPPA5)
-T1.kevin	FIX_SPAN_Entity 113 154	Embryonic stem cell-specific gene (ESG) 1
-T5.kevin	FIX_SPAN_Entity 262 287	embryonic stem (ES) cells
-T6.kevin	VERIFY_KeyEntity 347 362	mouse ESG1 gene
-T7.kevin	VERIFY_KeyEntity 552 561	ESG1 gene
-T8.kevin	VERIFY_KeyEntity 628 643	mouse ESG1 gene
-T9.kevin	VERIFY_Entity 716 728	chromosome 9
-T10.kevin	VERIFY_Entity 846 864	5' flanking region
-T12.kevin	VERIFY_Entity 995 1020	luciferase reporter assay
-T13.kevin	VERIFY_Entity 1066 1075	ESG1 gene
-T14.kevin	VERIFY_Entity 1106 1114	ES cells
-T15.kevin	VERIFY_KeyEntity 1122 1136	β-geo cassette
-T16.kevin	VERIFY_Entity 1140 1164	homologous recombination
-T17.kevin	VERIFY_Entity 1215 1225	germ cells
-T18.kevin	VERIFY_KeyEntity 1227 1239	ESG1-/- mice
-T19.kevin	VERIFY_KeyEntity 1295 1311	ESG1-/- ES cells
-T21.kevin	VERIFY_Entity 1384 1395	blastocysts
-T22.kevin	VERIFY_Entity 1436 1449;1467 1475	Northern blot analyses
-T24.kevin	FIX_SPAN_Entity 1501 1505	ESG1
-T25.kevin	FIX_SPAN_KeyEntity 1622 1637	mouse ESG1 gene
-T28.kevin	FIX_SPAN_Entity 1815 1823	ES cells
-T29.kevin	VERIFY_Entity 1741 1758	pluripotent cells
-T30.kevin	VERIFY_Entity 1763 1773	germ cells
-T31.kevin	FIX_SPAN_Entity 1845 1854	germcells
-T32.kevin	FIX_SPAN_KeyEntity 66 70	ESG1
-T33.kevin	FIX_SPAN_KeyEntity 72 88	PH34/ECAT2/DPPA5
-T34.kevin	VERIFY_Entity 400 425	chromosomal localizations
-R2.sandy	VERIFY_regulates Arg1:T2.sandy Arg2:T3.sandy	
-R3.sandy	VERIFY_is_part_of Arg1:T8.sandy Arg2:T7.sandy	
-R4.sandy	VERIFY_is_part_of Arg1:T7.sandy Arg2:T9.sandy	
-R5.sandy	VERIFY_participates_in Arg1:T22.sandy Arg2:T10.sandy	
-R6.sandy	VERIFY_participates_in Arg1:T22.sandy Arg2:T11.sandy	
-R7.sandy	VERIFY_interacts_with Arg1:T11.sandy Arg2:T12.sandy	
-R8.sandy	VERIFY_interacts_with Arg1:T10.sandy Arg2:T12.sandy	
-R9.sandy	VERIFY_is_part_of Arg1:T16.sandy Arg2:T17.sandy	
-R10.sandy	VERIFY_participates_in Arg1:T18.sandy Arg2:T19.sandy	
-R11.sandy	VERIFY_participates_in Arg1:T19.sandy Arg2:T20.sandy	
-R12.sandy	VERIFY_participates_in Arg1:T19.sandy Arg2:T21.sandy	
-R13.sandy	VERIFY_participates_in Arg1:T23.sandy Arg2:T26.sandy	
-R14.sandy	VERIFY_participates_in Arg1:T24.sandy Arg2:T26.sandy	
-R2.kevin	VERIFY_is_part_of Arg1:T25.kevin Arg2:T17.sandy	
+T1.kevin-tmp	KeyEntity 113 154	Embryonic stem cell-specific gene (ESG) 1
+T2.kevin-tmp	Entity 172 200	KH-domain containing protein
+T3.kevin-tmp	Entity 231 244	early embryos
+T4.kevin-tmp	Entity 246 256	germ cells
+T7.kevin-tmp	KeyEntity 552 561	ESG1 gene
+T8.kevin-tmp	KeyEntity 628 643	mouse ESG1 gene
+T9.kevin-tmp	Entity 716 728	chromosome 9
+T10.kevin-tmp	Entity 846 864	5' flanking region
+T11.kevin-tmp	KeyEntity 872 881	ESG1 gene
+T12.kevin-tmp	Entity 995 1020	luciferase reporter assay
+T13.kevin-tmp	KeyEntity 1066 1075	ESG1 gene
+T14.kevin-tmp	Entity 1106 1114	ES cells
+T15.kevin-tmp	Entity 1122 1136	β-geo cassette
+T16.kevin-tmp	Entity 1140 1164	homologous recombination
+T17.kevin-tmp	Entity 1215 1225	germ cells
+T18.kevin-tmp	KeyEntity 1227 1239	ESG1-/- mice
+T19.kevin-tmp	KeyEntity 1295 1311	ESG1-/- ES cells
+T20.kevin-tmp	Entity 1341 1365	homologous recombination
+T21.kevin-tmp	Entity 1384 1395	blastocysts
+T25.kevin-tmp	KeyEntity 1622 1637	mouse ESG1 gene
+T26.kevin-tmp	Entity 1692 1704	chromosome 9
+T27.kevin-tmp	KeyEntity 1775 1779	ESG1
+T29.kevin-tmp	Entity 1741 1758	pluripotent cells
+T30.kevin-tmp	Entity 1763 1773	germ cells
+T34.kevin-tmp	Entity 400 425	chromosomal localizations
+T35.kevin-tmp	Entity 1869 1894	Embryonic stem (ES) cells
+T37.kevin-tmp	Entity 1981 1989	ES cells
+T39.kevin-tmp	Entity 2130 2149	rapid proliferation
+T40.kevin-tmp	Entity 2178 2192	mouse ES cells
+T41.kevin-tmp	Entity 2459 2471	pluripotency
+T42.kevin-tmp	Entity 2476 2495	rapid proliferation
+T43.kevin-tmp	Entity 2499 2507	ES cells
+T44.kevin-tmp	Entity 2613 2621	ES cells
+T45.kevin-tmp	Entity 2673 2695	transcriptome analyses
+T46.kevin-tmp	Entity 2740 2748	ES cells
+T47.kevin-tmp	Entity 2753 2766	early embryos
+T50.kevin-tmp	KeyEntity 2915 2919	ESG1
+T51.kevin-tmp	Entity 2945 2950	dppa5
+T52.kevin-tmp	Entity 2954 2959	ECAT2
+T53.kevin-tmp	KeyEntity 2962 2966	ESG1
+T55.kevin-tmp	Entity 3041 3054	retinoic acid
+T56.kevin-tmp	Entity 3058 3083	embryonic carcinoma cells
+T58.kevin-tmp	Entity 3142 3155	early embryos
+T59.kevin-tmp	Entity 3160 3170	germ cells
+T60.kevin-tmp	Entity 3201 3218	pluripotent cells
+T61.kevin-tmp	Entity 3230 3238	ES cells
+T62.kevin-tmp	Entity 3240 3260	embryonic germ cells
+T63.kevin-tmp	Entity 3266 3297	multipotent germline stem cells
+T64.kevin-tmp	KeyEntity 3304 3308	ESG1
+T66.kevin-tmp	Entity 3396 3414	RNA-binding domain
+T67.kevin-tmp	KeyEntity 3453 3457	ESG1
+T68.kevin-tmp	Entity 3474 3493	RNA-binding protein
+T69.kevin-tmp	Entity 21119 21137	wild-type ES cells
+T70.kevin-tmp	KeyEntity 21142 21158	ESG1-/- ES cells
+T71.kevin-tmp	KeyEntity 3618 3633	mouse ESG1 gene
+T72.kevin-tmp	KeyEntity 3734 3743	ESG1 gene
+T73.kevin-tmp	Entity 3938 3963	chromosomal localizations
+T74.kevin-tmp	KeyEntity 3971 3986	mouse ESG1 gene
+T75.kevin-tmp	KeyEntity 4222 4226	ESG1
+T76.kevin-tmp	Entity 4345 4370	chromosomal localizations
+T77.kevin-tmp	KeyEntity 4378 4393	mouse ESG1 gene
+T78.kevin-tmp	Entity 4426 4440	Blast analysis
+T79.kevin-tmp	KeyEntity 4480 4498	ESG1 cDNA sequence
+T81.kevin-tmp	Entity 3519 3527	ES cells
+T83.kevin-tmp	Entity 3894 3912	retrotransposition
+T84.kevin-tmp	KeyEntity 3916 3932	ESG1 transcripts
+T85.kevin-tmp	Entity 4717 4741	chromosomal localization
+T86.kevin-tmp	KeyEntity 4815 4824	ESG1 cDNA
+T87.kevin-tmp	Entity 5031 5047	retropseudogenes
+T88.kevin-tmp	Entity 5065 5096	pluripotent cell-specific genes
+T89.kevin-tmp	KeyEntity 5114 5129	ESG1pseudogenes
+T90.kevin-tmp	Entity 5350 5362	chromosome 9
+T91.kevin-tmp	KeyEntity 5408 5417	ESG1 gene
+T94.kevin-tmp	KeyEntity 5635 5644	ESG1 gene
+T95.kevin-tmp	Entity 5654 5666	chromosome 9
+T96.kevin-tmp	KeyEntity 5765 5774	ESG1 gene
+T97.kevin-tmp	KeyEntity 5810 5829	ESG1-like sequences
+T98.kevin-tmp	Entity 5833 5845	chromosome 9
+T99.kevin-tmp	KeyEntity 5921 5930	ESG1 gene
+T100.kevin-tmp	Entity 5892 5905	DNA fragments
+T101.kevin-tmp	Entity 5948 5994	bacterial artificial chromosome (BAC) DNA pool
+T102.kevin-tmp	Entity 5998 6001	PCR
+T104.kevin-tmp	Entity 6138 6160	Southern blot analyses
+T106.kevin-tmp	KeyEntity 6262 6271	ESG1 cDNA
+T110.kevin-tmp	Entity 6540 6566	luciferase reporter assays
+T111.kevin-tmp	Entity 6570 6595	undifferentiated ES cells
+T112.kevin-tmp	Entity 6608 6621	somatic cells
+T113.kevin-tmp	Entity 6718 6731	retinoic acid
+T114.kevin-tmp	KeyEntity 6772 6781	ESG1 gene
+T115.kevin-tmp	Entity 6794 6804	BAC clones
+T116.kevin-tmp	KeyEntity 6820 6829	ESG1 gene
+T117.kevin-tmp	Entity 6836 6863	duplication pseudogene (PS)
+T118.kevin-tmp	Entity 6903 6915	chromosome 9
+T120.kevin-tmp	Entity 6897 6899	PS
+T121.kevin-tmp	KeyEntity 7229 7238	ESG1 gene
+T123.kevin-tmp	Entity 7358 7386	luciferase reporter plasmids
+T124.kevin-tmp	Entity 7426 7451	undifferentiated ES cells
+T125.kevin-tmp	Entity 7468 7498	retinoic acid-treated ES cells
+T126.kevin-tmp	Entity 7519 7531	NIH3T3 cells
+T127.kevin-tmp	Entity 7664 7674	BAC clones
+T128.kevin-tmp	Entity 7693 7711	ESG1-like sequence
+T129.kevin-tmp	KeyEntity 7829 7847	ESG1-like sequence
+T131.kevin-tmp	KeyEntity 8145 8154	ESG1 gene
+T132.kevin-tmp	Entity 8321 8347	luciferase reporter assays
+T134.kevin-tmp	KeyEntity 8620 8629	ESG1 gene
+T135.kevin-tmp	KeyEntity 8800 8815	mouse ESG1 gene
+T136.kevin-tmp	KeyEntity 8842 8846	ESG1
+T137.kevin-tmp	Entity 8871 8895	homologous recombination
+T138.kevin-tmp	Entity 8899 8913	mouse ES cells
+T139.kevin-tmp	Entity 8971 8990	neomycin-resistance
+T140.kevin-tmp	Entity 8995 9024	β-galactosidase genes (β-geo)
+T141.kevin-tmp	Entity 9032 9064	hygromycin resistant gene (HygR)
+T142.kevin-tmp	Entity 9121 9133	RF8 ES cells
+T143.kevin-tmp	Entity 9137 9152	electroporation
+T144.kevin-tmp	Entity 9172 9186	ES cell clones
+T145.kevin-tmp	Entity 9200 9224	homologous recombination
+T146.kevin-tmp	Entity 9232 9254	β-geo targeting vector
+T147.kevin-tmp	Entity 9279 9301	Southern blot analysis
+T148.kevin-tmp	Entity 9355 9379	homologous recombination
+T149.kevin-tmp	Entity 9387 9408	HygR targeting vector
+T151.kevin-tmp	KeyEntity 9448 9463	mouse ESG1 gene
+T154.kevin-tmp	Entity 9601 9623	Southern blot analyses
+T155.kevin-tmp	Entity 9654 9678	diphtheria toxin A (DTA)
+T156.kevin-tmp	Entity 9745 9763	negative selection
+T157.kevin-tmp	Entity 9768 9790	Southern blot analyses
+T158.kevin-tmp	Entity 9802 9826	homologous recombination
+T161.kevin-tmp	Entity 10016 10039	wild-type ES cells (WT)
+T164.kevin-tmp	Entity 10113 10126	Northern blot
+T165.kevin-tmp	Entity 10297 10323	homozygous mutant ES cells
+T166.kevin-tmp	Entity 10343 10355	β-geo vector
+T167.kevin-tmp	Entity 10361 10387	HygR heterozygous ES cells
+T170.kevin-tmp	Entity 10484 10505	western blot analyses
+T171.kevin-tmp	KeyEntity 10520 10527;10531 10535	absence ESG1
+T172.kevin-tmp	Entity 10582 10594	β-geo vector
+T173.kevin-tmp	Entity 10612 10623	HygR vector
+T174.kevin-tmp	Entity 10700 10712	β-geo vector
+T175.kevin-tmp	KeyEntity 10754 10770	ESG1-/- ES cells
+T176.kevin-tmp	KeyEntity 10935 10948	ESG1-/- cells
+T177.kevin-tmp	Entity 10994 11020	leukemia inhibitory factor
+T178.kevin-tmp	Entity 11036 11059	retinoic acid treatment
+T179.kevin-tmp	Entity 11143 11152	teratomas
+T181.kevin-tmp	KeyEntity 11249 11253	ESG1
+T182.kevin-tmp	Entity 11305 11317;11321 11329	pluripotency ES cells
+T185.kevin-tmp	Entity 11431 11447	STO feeder cells
+T189.kevin-tmp	Entity 11785 11793	teratoma
+T190.kevin-tmp	KeyEntity 11807 11825	ESG1-null ES cells
+T191.kevin-tmp	Entity 11827 11838;11847 11855	hematoxylin staining
+T192.kevin-tmp	Entity 11841 11855	eosin staining
+T194.kevin-tmp	Entity 11926 11963	oligonucleotide-based DNA microarrays
+T195.kevin-tmp	Entity 12017 12025	ES cells
+T196.kevin-tmp	KeyEntity 12027 12031	ESG1
+T203.kevin-tmp	Entity 16485 16495	ESG1 exons
+T204.kevin-tmp	Entity 14547 14591	bacterial artificial chromosome (BAC) clones
+T205.kevin-tmp	KeyEntity 14603 14618	mouse ESG1 gene
+T206.kevin-tmp	Entity 14633 14652	PCR-based screening
+T207.kevin-tmp	Entity 14656 14683	mouse BAC library DNA pools
+T208.kevin-tmp	Entity 14815 14843	restriction enzyme digestion
+T210.kevin-tmp	Entity 15161 15174	Hybridization
+T211.kevin-tmp	KeyEntity 15230 15239	ESG1 gene
+T212.kevin-tmp	KeyEntity 15295 15310	mouse ESG1 gene
+T213.kevin-tmp	Entity 15543 15558	ESG1 pseudogene
+T216.kevin-tmp	Entity 14170 14180	mouse gene
+T217.kevin-tmp	Entity 14184 14196	chromosome 9
+T218.kevin-tmp	Entity 14215 14239	homologous recombination
+T219.kevin-tmp	Entity 14243 14251	ES cells
+T223.kevin-tmp	KeyEntity 14361 14365	ESG1
+T224.kevin-tmp	Entity 14385 14402	mouse development
+T225.kevin-tmp	Entity 14404 14423	germ cell formation
+T226.kevin-tmp	Entity 14429 14449	ES cell self-renewal
+T228.kevin-tmp	KeyEntity 12779 12797	ESG1-null ES cells
+T229.kevin-tmp	Entity 12802 12825	DNA microarray analyses
+T230.kevin-tmp	Entity 12842 12860	wild-type ES cells
+T231.kevin-tmp	KeyEntity 12865 12883	ESG1-null ES cells
+T232.kevin-tmp	Entity 13050 13071	Western blot analyses
+T238.kevin-tmp	Entity 13176 13190	immunoblotting
+T239.kevin-tmp	KeyEntity 13205 13223	ESG1-knockout mice
+T240.kevin-tmp	Entity 13237 13265	β-geo-ESG1+/- ES cell clones
+T241.kevin-tmp	Entity 13275 13286	blastocysts
+T242.kevin-tmp	Entity 13290 13301	C57BL6 mice
+T243.kevin-tmp	Entity 13315 13336	germline transmission
+T244.kevin-tmp	KeyEntity 13368 13380	ESG1-/- mice
+T245.kevin-tmp	KeyEntity 13469 13481	ESG1+/- mice
+T247.kevin-tmp	Entity 13527 13543	gross appearance
+T248.kevin-tmp	Entity 13549 13558	fertility
+T251.kevin-tmp	KeyEntity 13696 13700	ESG1
+T252.kevin-tmp	Entity 13725 13742	mouse development
+T253.kevin-tmp	Entity 13747 13766	germ cell formation
+T254.kevin-tmp	Entity 13787 13795	ES cells
+T255.kevin-tmp	Entity 13801 13812	blastocysts
+T257.kevin-tmp	Entity 13889 13902	ES cell lines
+T258.kevin-tmp	Entity 13947 13965	ESG1-null ES cells
+T260.kevin-tmp	KeyEntity 14062 14066	ESG1
+T261.kevin-tmp	Entity 14085 14093	ES cells
+T262.kevin-tmp	Entity 12093 12109	ESG1-/- ES cells
+T264.kevin-tmp	Entity 12171 12176	Nanog
+T265.kevin-tmp	Entity 12181 12187	Oct3/4
+T266.kevin-tmp	KeyEntity 12203 12219	ESG1-/- ES cells
+T268.kevin-tmp	Entity 12280 12292	Western blot
+T269.kevin-tmp	Entity 12372 12380	ES cells
+T270.kevin-tmp	KeyEntity 12385 12401	ESG1-/- ES cells
+T272.kevin-tmp	KeyEntity 12464 12477	ESG1-/- cells
+T273.kevin-tmp	KeyEntity 12588 12592	ESG1
+T274.kevin-tmp	KeyEntity 12600 12604	ESG1
+T275.kevin-tmp	Entity 12616 12642	KH-type RNA-binding domain
+T5.kevin-tmp	Entity 262 287	embryonic stem (ES) cells
+T6.kevin-tmp	KeyEntity 347 362	mouse ESG1 gene
+T22.kevin-tmp	Entity 1436 1449;1467 1475	Northern blot analyses
+T23.kevin-tmp	Entity 1454 1475	western blot analyses
+T24.kevin-tmp	KeyEntity 1501 1505	ESG1
+T28.kevin-tmp	Entity 1815 1823	ES cells
+T31.kevin-tmp	Entity 1845 1854	germcells
+T32.kevin-tmp	KeyEntity 66 70	ESG1
+T48.kevin-tmp	Entity 2794 2817	DNA microarray analyses
+T49.kevin-tmp	Entity 2826 2857	expressed sequence tag analyses
+T54.kevin-tmp	Entity 2998 3013	transcript Ph34
+T57.kevin-tmp	Entity 3134 3138	mice
+T65.kevin-tmp	Entity 3373 3382	KH domain
+T82.kevin-tmp	Entity 3532 3536	mice
+T105.kevin-tmp	Entity 6165 6175	sequencing
+T119.kevin-tmp	Entity 6956 6958	PS
+T122.kevin-tmp	Entity 7333 7335	PS
+T130.kevin-tmp	KeyEntity 7916 7925	ESG1 gene
+T150.kevin-tmp	Entity 8957 8963	fusion
+T159.kevin-tmp	Entity 10004 10012;9957 9970	analyses Northern blot
+T160.kevin-tmp	Entity 10004 10012;9983 9995	analyses western blot
+T169.kevin-tmp	Entity 10466 10479;10497 10505	Northern blot analyses
+T184.kevin-tmp	Entity 11395 11421	ESG1-null ES cell colonies
+T187.kevin-tmp	Entity 11484 11493	ESG1-null
+T188.kevin-tmp	Entity 11504 11516;11523 11531	heterozygous ES cells
+T197.kevin-tmp	Entity 20010 20017;20028 20046	Esg1+/- mutant female mice
+T198.kevin-tmp	Entity 20020 20046	ESG1-/- mutant female mice
+T214.kevin-tmp	KeyEntity 15799 15808	ESG1 gene
+T227.kevin-tmp	Entity 12751 12775	Gene expression analyses
+T246.kevin-tmp	Entity 13507 13525	normal development
+T249.kevin-tmp	Entity 13600 13606	testis
+T250.kevin-tmp	Entity 13611 13616	ovary
+T259.kevin-tmp	FIX_SPAN_Entity 13979 14032	normal morphology, proliferation, and differentiation
+T7.sandy-tmp	KeyEntity 734 752	ESG1-like sequence
+T9.sandy-tmp	Entity 819 840	duplicated pseudogene
+T10.sandy-tmp	Entity 925 940;954 962	strong enhancer activity
+T11.sandy-tmp	Entity 945 962	promoter activity
+T12.sandy-tmp	Entity 966 991	undifferentiated ES cells
+T14.sandy-tmp	Entity 1409 1434	heterozygous intercrosses
+T24.sandy-tmp	Entity 19 38	targeted disruption
+T25.sandy-tmp	Entity 46 56	mouse gene
+T1.sandy-tmp	Entity 317 331	genomic clones
+T28.sandy-tmp	Entity 491 503	Blast search
+T29.sandy-tmp	Entity 507 530	mouse genomic databases
+T31.sandy-tmp	Entity 585 612	bacterial artificial clones
+T33.sandy-tmp	KeyEntity 662 680	ESG1-like sequence
+T36.sandy-tmp	Entity 903 913	pseudogene
+T42.sandy-tmp	Entity 1197 1210	early embryos
+T49.sandy-tmp	Entity 1528 1536	ES cells
+T50.sandy-tmp	Entity 1569 1582	proliferation
+T51.sandy-tmp	Entity 1588 1603	differentiation
+T52.sandy-tmp	Entity 1557 1567	morphology
+T55.sandy-tmp	Entity 1923 1934	blastocysts
+T57.sandy-tmp	Entity 2044 2056	pluripotency
+T60.sandy-tmp	Entity 2219 2244	gene targeting technology
+T61.sandy-tmp	Entity 2271 2285	human ES cells
+T62.sandy-tmp	Entity 2309 2337	cell transplantation therapy
+T63.sandy-tmp	Entity 2375 2395	spinal cord injuries
+T64.sandy-tmp	Entity 2400 2417	juvenile diabetes
+T88.sandy-tmp	Entity 3319 3330	polypeptide
+T95.sandy-tmp	Entity 3548 3573	genomic library screening
+T96.sandy-tmp	Entity 3644 3655	pseudogenes
+T97.sandy-tmp	Entity 3675 3686	pseudogenes
+T98.sandy-tmp	Entity 3705 3726	exon-intron structure
+T100.sandy-tmp	Entity 3776 3792	gene duplication
+T101.sandy-tmp	Entity 3813 3824	pseudogenes
+T102.sandy-tmp	Entity 3845 3852	introns
+T107.sandy-tmp	Entity 3991 4002	pseudogenes
+T108.sandy-tmp	Entity 4133 4144	pseudogenes
+T109.sandy-tmp	Entity 4088 4098	mouse gene
+T110.sandy-tmp	Entity 4164 4178	gene targeting
+T112.sandy-tmp	Entity 4253 4277	Chromosomal localization
+T113.sandy-tmp	Entity 4296 4311	mouse ESG1 gene
+T114.sandy-tmp	Entity 4316 4326	psedogenes
+T117.sandy-tmp	Entity 4398 4409	pseudogenes
+T119.sandy-tmp	Entity 4448 4470	mouse genomic database
+T121.sandy-tmp	Entity 4542 4553	pseudogenes
+T122.sandy-tmp	Entity 4562 4569	introns
+T123.sandy-tmp	Entity 4573 4586	chromosomes 1
+T124.sandy-tmp	Entity 4573 4584;4588 4589	chromosomes 5
+T125.sandy-tmp	Entity 4573 4584;4591 4593	chromosomes 11
+T126.sandy-tmp	Entity 4573 4584;4595 4597	chromosomes 12
+T127.sandy-tmp	Entity 4573 4584;4599 4601	chromosomes 14
+T128.sandy-tmp	Entity 4573 4584;4603 4605	chromosomes 16
+T129.sandy-tmp	Entity 4573 4584;4607 4609	chromosomes 17
+T130.sandy-tmp	Entity 4573 4584;4615 4616	chromosomes X
+T134.sandy-tmp	Entity 4773 4785	pseudodgenes
+T136.sandy-tmp	Entity 4956 4979	intron-less pseudogenes
+T140.sandy-tmp	Entity 5146 5158	Blast search
+T141.sandy-tmp	Entity 5162 5185	mouse genomic databases
+T148.sandy-tmp	Entity 5445 5452	introns
+T149.sandy-tmp	Entity 5486 5491	exons
+T150.sandy-tmp	KeyEntity 5542 5560	ESG1 cDNA sequence
+T151.sandy-tmp	Entity 5581 5585	exon
+T155.sandy-tmp	Entity 5753 5757	exon
+T164.sandy-tmp	Entity 6068 6079	pseudogenes
+T165.sandy-tmp	Entity 6126 6136	BAC clones
+T168.sandy-tmp	Entity 6309 6316	introns
+T169.sandy-tmp	Entity 6338 6344	intron
+T172.sandy-tmp	Entity 6480 6492	DNA fragment
+T173.sandy-tmp	Entity 6503 6518;6528 6536	strong promoter activity
+T174.sandy-tmp	Entity 6503 6509;6519 6536	strong enhancer activity
+T178.sandy-tmp	Entity 6699 6714	differentiation
+T186.sandy-tmp	Entity 6888 6892	gene
+T187.sandy-tmp	Entity 6947 6951	gene
+T189.sandy-tmp	Entity 7083 7105	Substitution mutations
+T193.sandy-tmp	Entity 7243 7253	pseudogene
+T194.sandy-tmp	Entity 7255 7268	DNA fragments
+T208.sandy-tmp	Entity 8009 8014	exons
+T209.sandy-tmp	Entity 8034 8043	insertion
+T210.sandy-tmp	Entity 8047 8053	exon 2
+T211.sandy-tmp	Entity 8098 8117	3' flanking regions
+T213.sandy-tmp	Entity 8163 8173	pseudogene
+T214.sandy-tmp	Entity 8203 8221	5' flanking region
+T215.sandy-tmp	Entity 8243 8261	5' flanking region
+T219.sandy-tmp	Entity 8489 8511	duplication pseudogene
+T220.sandy-tmp	Entity 8563 8574	pseudogenes
+T221.sandy-tmp	Entity 8588 8612	exon-intron organization
+T223.sandy-tmp	Entity 8678 8689	pseudogenes
+T224.sandy-tmp	Entity 8760 8770	pseudogene
+T226.sandy-tmp	Entity 8773 8792	Targeted disruption
+T230.sandy-tmp	Entity 8937 8942	exons
+T242.sandy-tmp	Entity 9075 9092	targeting vectors
+T243.sandy-tmp	Entity 9421 9440	Targeted disruption
+T247.sandy-tmp	Entity 9558 9566	PstI (P)
+T248.sandy-tmp	Entity 9571 9579	SpeI (S)
+T251.sandy-tmp	Entity 9713 9730	targeting vectors
+T255.sandy-tmp	Entity 9828 9830;9832 9850	WT wild-type ES cells
+T256.sandy-tmp	Entity 9852 9853;9855 9873	β β-geo +/- ES cells
+T257.sandy-tmp	Entity 9875 9876;9878 9900	H HygR +/- ES cells; -/-
+T258.sandy-tmp	KeyEntity 9902 9920	ESG1-null ES cells
+T262.sandy-tmp	Entity 10041 10064	ESG1-null ES cells (-/-
+T263.sandy-tmp	Entity 10084 10111	heterozygous ES cells (+/-)
+T270.sandy-tmp	Entity 10396 10419	G418-resistant colonies
+T271.sandy-tmp	KeyEntity 10436 10446;10451 10464	homozygous ESG1 deletion
+T280.sandy-tmp	Entity 10781 10798	normal morphology
+T281.sandy-tmp	Entity 10949 10972	differentiated normally
+T290.sandy-tmp	KeyEntity 11354 11372	ESG1-null ES cells
+T304.sandy-tmp	KeyEntity 11903 11919	ESG1-/- ES cells
+T309.sandy-tmp	KeyEntity 12141 12161	ES cell marker genes
+T313.sandy-tmp	Entity 12241 12258	Oct3/4 expression
+T319.sandy-tmp	Entity 12489 12495	Krt1-8
+T320.sandy-tmp	Entity 12497 12500	Pem
+T321.sandy-tmp	Entity 12502 12506	Ctgf
+T322.sandy-tmp	Entity 12508 12513	Ptgs2
+T323.sandy-tmp	Entity 12515 12519	Igf2
+T324.sandy-tmp	Entity 12524 12529	Inhba
+T328.sandy-tmp	Entity 12651 12665	stabilize mRNA
+T334.sandy-tmp	Entity 12902 12905	Cy3
+T335.sandy-tmp	Entity 12910 12913	Cy5
+T336.sandy-tmp	Entity 12956 12995	Agilent Mouse Developmental Microarrays
+T338.sandy-tmp	KeyEntity 13091 13098;13111 13116	ESG1+/- cells
+T339.sandy-tmp	Entity 13103 13116	ESG1-/- cells
+T340.sandy-tmp	Entity 13073 13085	Cell lysates
+T341.sandy-tmp	KeyEntity 13149 13153	ESG1
+T342.sandy-tmp	Entity 13155 13161	Oct3/4
+T343.sandy-tmp	Entity 13166 13170	CDK4
+T353.sandy-tmp	KeyEntity 13423 13430	ESG1+/-
+T354.sandy-tmp	KeyEntity 13439 13446	ESG1-/-
+T364.sandy-tmp	KeyEntity 13841 13854	ESG1+/- males
+T365.sandy-tmp	KeyEntity 13859 13874	ESG1-/- females
+T367.sandy-tmp	KeyEntity 13932 13939	ESG1-/-
+T374.sandy-tmp	KeyEntity 14146 14150	ESG1
+T386.sandy-tmp	Entity 14492 14502	BAC clones
+T387.sandy-tmp	KeyEntity 14518 14533	mouse ESG1 gene
+T395.sandy-tmp	Entity 14858 14880	Southern blot analyses
+T396.sandy-tmp	Entity 14884 14894	BAC clones
+T407.sandy-tmp	Entity 15362 15380	XhoI-SalI fragment
+T408.sandy-tmp	Entity 15390 15417	pZERO-2 vector (Invitrogen)
+T409.sandy-tmp	Entity 15419 15426;15437 15455	HindIII digested fragments
+T410.sandy-tmp	Entity 15431 15455	EcoRI-digested fragments
+T411.sandy-tmp	Entity 15493 15510	pBluescript KS(-)
+T414.sandy-tmp	Entity 15596 15614	NotI/XhoI fragment
+T415.sandy-tmp	Entity 15631 15648	pBluescript KS(-)
+T416.sandy-tmp	Entity 15650 15656;15666 15675	BamHI- fragments
+T417.sandy-tmp	Entity 15660 15675	PstI- fragments
+T418.sandy-tmp	Entity 15713 15730	pBluescript KS(-)
+T421.sandy-tmp	Entity 15848 15876	TOPO walker kit (Invitrogen)
+T426.sandy-tmp	Entity 16076 16081;16107 16125	XbaI- digested fragments
+T427.sandy-tmp	Entity 16083 16088;16107 16125	SpeI- digested fragments
+T428.sandy-tmp	Entity 16090 16096;16106 16125	EcoRI- -digested fragments
+T429.sandy-tmp	Entity 16102 16125	PstI-digested fragments
+T430.sandy-tmp	Entity 16156 16173	pBluescript KS(-)
+T431.sandy-tmp	KeyEntity 16244 16253	ESG1 gene
+T434.sandy-tmp	Entity 16409 16419	pseudogene
+T435.sandy-tmp	KeyEntity 16438 16460	ESG1 targeting vectors
+T437.sandy-tmp	Entity 16544 16563	IRES-β-geo cassette
+T438.sandy-tmp	Entity 16575 16593	IRES-HygR cassette
+T439.sandy-tmp	Entity 16597 16620	promoter trap selection
+T447.sandy-tmp	Entity 16984 16994;17008 17017	IRES β-geo cassettes
+T448.sandy-tmp	Entity 16998 17017	IRES HygR cassettes
+T450.sandy-tmp	Entity 17069 17096	diphtheria toxin A cassette
+T460.sandy-tmp	Entity 17383 17388;17405 17423	G418- resistant colonies
+T461.sandy-tmp	Entity 17392 17423	hygromycin B-resistant colonies
+T462.sandy-tmp	Entity 17469 17486	Southern blotting
+T463.sandy-tmp	Entity 17441 17465	homologous recombination
+T465.sandy-tmp	Entity 17517 17541	homologous recombination
+T466.sandy-tmp	Entity 17543 17563	ES cells genomic DNA
+T481.sandy-tmp	Entity 18125 18150	3' Southern blot analysis
+T488.sandy-tmp	Entity 18459 18490	anti-ESG1 polyclonal antibodies
+T489.sandy-tmp	KeyEntity 18515 18519	Esg1
+T490.sandy-tmp	Entity 18537 18540	PCR
+T493.sandy-tmp	Entity 18682 18692	pDONR-pH34
+T494.sandy-tmp	Entity 18708 18718	PCR produc
+T495.sandy-tmp	Entity 18739 18747	pDONR201
+T496.sandy-tmp	Entity 18762 18772	pDONR-pH34
+T497.sandy-tmp	Entity 18793 18800	pDEST17
+T498.sandy-tmp	Entity 18817 18833	LR recombination
+T499.sandy-tmp	Entity 18882 18901	vector pDEST17-pH34
+T500.sandy-tmp	Entity 18907 18922	BL21-AI E. coli
+T501.sandy-tmp	Entity 18937 18967	recombinant protein production
+T502.sandy-tmp	KeyEntity 19021 19042	Histidine-tagged ESG1
+T503.sandy-tmp	Entity 19062 19094	Ni-nitrilotriacetic acid agarose
+T507.sandy-tmp	KeyEntity 19276 19307	anti-ESG1 polyclonal antibodies
+T508.sandy-tmp	Entity 19310 19322	Western blot
+T509.sandy-tmp	Entity 19345 19361	ES cell extracts
+T515.sandy-tmp	Entity 19587 19598	anti-Oct3/4
+T516.sandy-tmp	Entity 19634 19643	anti-CDK4
+T517.sandy-tmp	Entity 19683 19691	anti-GFP
+T518.sandy-tmp	Entity 19726 19771;19787 19802	Horseradish peroxidase-conjugated anti-rabbit immunoglobulins
+T519.sandy-tmp	Entity 19776 19802	anti-mouse immunoglobulins
+T520.sandy-tmp	Entity 19848 19864	antibody binding
+T521.sandy-tmp	Entity 19903 19940	ECL Western Blotting Detection System
+T522.sandy-tmp	KeyEntity 19968 19991	ESG1-deficient ES cells
+T523.sandy-tmp	Entity 19997 20008	blastocysts
+T547.sandy-tmp	Entity 21176 21179	Cy3
+T548.sandy-tmp	Entity 21184 21187	Cy5
+T549.sandy-tmp	Entity 21236 21264	Mouse Development Microarray
+T551.sandy-tmp	Entity 21390 21403	Hybridization
+#2	AnnotatorNotes T12.kevin-tmp	method
+#3	AnnotatorNotes T16.kevin-tmp	method
+#6	AnnotatorNotes T45.kevin-tmp	method
+#14	AnnotatorNotes T102.kevin-tmp	method
+#15	AnnotatorNotes T104.kevin-tmp	method
+#16	AnnotatorNotes T110.kevin-tmp	method
+#17	AnnotatorNotes T132.kevin-tmp	method
+#18	AnnotatorNotes T137.kevin-tmp	method
+#19	AnnotatorNotes T143.kevin-tmp	method
+#20	AnnotatorNotes T147.kevin-tmp	method
+#21	AnnotatorNotes T154.kevin-tmp	method
+#22	AnnotatorNotes T157.kevin-tmp	method
+#25	AnnotatorNotes T164.kevin-tmp	method
+#27	AnnotatorNotes T170.kevin-tmp	method
+#29	AnnotatorNotes T232.kevin-tmp	method
+#28	AnnotatorNotes T268.kevin-tmp	method
+#1	AnnotatorNotes T28.sandy-tmp	method
+#9	AnnotatorNotes T95.sandy-tmp	method
+#12	AnnotatorNotes T140.sandy-tmp	method
+#30	AnnotatorNotes T395.sandy-tmp	method
+#31	AnnotatorNotes T481.sandy-tmp	method
+#32	AnnotatorNotes T490.sandy-tmp	method
+#33	AnnotatorNotes T508.sandy-tmp	method
+#34	AnnotatorNotes T521.sandy-tmp	method
+R1.kevin-tmp	regulates Arg1:T1.kevin-tmp Arg2:T2.kevin-tmp	
+R2.kevin-tmp	is_part_of Arg1:T25.kevin-tmp Arg2:T26.kevin-tmp	
+R3.kevin-tmp	is_part_of Arg1:T10.kevin-tmp Arg2:T11.kevin-tmp	
+R4.kevin-tmp	is_part_of Arg1:T1.kevin-tmp Arg2:T3.kevin-tmp	
+R5.kevin-tmp	is_part_of Arg1:T1.kevin-tmp Arg2:T4.kevin-tmp	
+R15.kevin-tmp	is_part_of Arg1:T116.kevin-tmp Arg2:T115.kevin-tmp	
+R16.kevin-tmp	is_part_of Arg1:T117.kevin-tmp Arg2:T115.kevin-tmp	
+R22.kevin-tmp	regulates Arg1:T223.kevin-tmp Arg2:T224.kevin-tmp	
+R23.kevin-tmp	regulates Arg1:T223.kevin-tmp Arg2:T225.kevin-tmp	
+R24.kevin-tmp	regulates Arg1:T223.kevin-tmp Arg2:T226.kevin-tmp	
+R25.kevin-tmp	is_part_of Arg1:T241.kevin-tmp Arg2:T242.kevin-tmp	
+R26.kevin-tmp	regulates Arg1:T260.kevin-tmp Arg2:T261.kevin-tmp	
+R30.kevin-tmp	is_part_of Arg1:T275.kevin-tmp Arg2:T274.kevin-tmp	
+R6.kevin-tmp	VERIFY_other_relation Arg1:T1.kevin-tmp Arg2:T5.kevin-tmp	
+R8.kevin-tmp	is_part_of Arg1:T55.kevin-tmp Arg2:T56.kevin-tmp	
+R9.kevin-tmp	is_subclass_of Arg1:T61.kevin-tmp Arg2:T60.kevin-tmp	
+R10.kevin-tmp	is_subclass_of Arg1:T62.kevin-tmp Arg2:T60.kevin-tmp	
+R11.kevin-tmp	is_subclass_of Arg1:T63.kevin-tmp Arg2:T60.kevin-tmp	
+R12.kevin-tmp	is_subclass_of Arg1:T65.kevin-tmp Arg2:T66.kevin-tmp	
+R14.kevin-tmp	VERIFY_other_relation Arg1:T68.kevin-tmp Arg2:T67.kevin-tmp	
+R19.kevin-tmp	VERIFY_other_relation Arg1:T146.kevin-tmp Arg2:T145.kevin-tmp	
+R20.kevin-tmp	is_part_of Arg1:T205.kevin-tmp Arg2:T204.kevin-tmp	
+R21.kevin-tmp	is_part_of Arg1:T216.kevin-tmp Arg2:T217.kevin-tmp	
+R27.kevin-tmp	VERIFY_other_relation Arg1:T259.kevin-tmp Arg2:T258.kevin-tmp	
+R5.sandy-tmp	participates_in Arg1:T11.kevin-tmp Arg2:T10.sandy-tmp	
+R6.sandy-tmp	participates_in Arg1:T11.kevin-tmp Arg2:T11.sandy-tmp	
+R7.sandy-tmp	interacts_with Arg1:T11.sandy-tmp Arg2:T12.sandy-tmp	
+R8.sandy-tmp	interacts_with Arg1:T10.sandy-tmp Arg2:T12.sandy-tmp	
+R17.sandy-tmp	is_part_of Arg1:T8.kevin-tmp Arg2:T31.sandy-tmp	
+R18.sandy-tmp	is_part_of Arg1:T33.sandy-tmp Arg2:T9.kevin-tmp	
+R20.sandy-tmp	is_part_of Arg1:T20.kevin-tmp Arg2:T21.kevin-tmp	
+R21.sandy-tmp	is_part_of Arg1:T21.kevin-tmp Arg2:T14.sandy-tmp	
+R25.sandy-tmp	is_part_of Arg1:T53.kevin-tmp Arg2:T56.kevin-tmp	
+R26.sandy-tmp	regulates Arg1:T64.kevin-tmp Arg2:T88.sandy-tmp	
+R30.sandy-tmp	VERIFY_other_relation Arg1:T97.sandy-tmp Arg2:T72.kevin-tmp	
+R31.sandy-tmp	participates_in Arg1:T77.kevin-tmp Arg2:T76.kevin-tmp	
+R32.sandy-tmp	participates_in Arg1:T117.sandy-tmp Arg2:T76.kevin-tmp	
+R33.sandy-tmp	VERIFY_other_relation Arg1:T134.sandy-tmp Arg2:T86.kevin-tmp	
+R35.sandy-tmp	VERIFY_other_relation Arg1:T151.sandy-tmp Arg2:T94.kevin-tmp	
+R36.sandy-tmp	is_part_of Arg1:T97.kevin-tmp Arg2:T98.kevin-tmp	
+R41.sandy-tmp	regulates Arg1:T113.kevin-tmp Arg2:T178.sandy-tmp	
+R44.sandy-tmp	is_part_of Arg1:T120.kevin-tmp Arg2:T118.kevin-tmp	
+R49.sandy-tmp	is_part_of Arg1:T209.sandy-tmp Arg2:T210.sandy-tmp	
+R50.sandy-tmp	is_part_of Arg1:T208.sandy-tmp Arg2:T210.sandy-tmp	
+R51.sandy-tmp	participates_in Arg1:T137.kevin-tmp Arg2:T138.kevin-tmp	
+R55.sandy-tmp	interacts_with Arg1:T155.kevin-tmp Arg2:T251.sandy-tmp	
+R56.sandy-tmp	participates_in Arg1:T151.kevin-tmp Arg2:T243.sandy-tmp	
+R59.sandy-tmp	is_part_of Arg1:T166.kevin-tmp Arg2:T167.kevin-tmp	
+R62.sandy-tmp	is_part_of Arg1:T189.kevin-tmp Arg2:T190.kevin-tmp	
+R64.sandy-tmp	is_subclass_of Arg1:T264.kevin-tmp Arg2:T309.sandy-tmp	
+R65.sandy-tmp	is_subclass_of Arg1:T265.kevin-tmp Arg2:T309.sandy-tmp	
+R67.sandy-tmp	interacts_with Arg1:T328.sandy-tmp Arg2:T274.kevin-tmp	
+R68.sandy-tmp	interacts_with Arg1:T334.sandy-tmp Arg2:T230.kevin-tmp	
+R69.sandy-tmp	interacts_with Arg1:T335.sandy-tmp Arg2:T231.kevin-tmp	
+R71.sandy-tmp	interacts_with Arg1:T240.kevin-tmp Arg2:T241.kevin-tmp	
+R72.sandy-tmp	interacts_with Arg1:T364.sandy-tmp Arg2:T365.sandy-tmp	
+R73.sandy-tmp	is_part_of Arg1:T254.kevin-tmp Arg2:T255.kevin-tmp	
+R75.sandy-tmp	is_part_of Arg1:T251.kevin-tmp Arg2:T253.kevin-tmp	
+R77.sandy-tmp	participates_in Arg1:T219.kevin-tmp Arg2:T218.kevin-tmp	
+R81.sandy-tmp	interacts_with Arg1:T407.sandy-tmp Arg2:T408.sandy-tmp	
+R82.sandy-tmp	is_part_of Arg1:T409.sandy-tmp Arg2:T411.sandy-tmp	
+R83.sandy-tmp	is_part_of Arg1:T410.sandy-tmp Arg2:T411.sandy-tmp	
+R84.sandy-tmp	interacts_with Arg1:T414.sandy-tmp Arg2:T415.sandy-tmp	
+R85.sandy-tmp	interacts_with Arg1:T417.sandy-tmp Arg2:T418.sandy-tmp	
+R86.sandy-tmp	interacts_with Arg1:T416.sandy-tmp Arg2:T418.sandy-tmp	
+R89.sandy-tmp	interacts_with Arg1:T426.sandy-tmp Arg2:T430.sandy-tmp	
+R90.sandy-tmp	interacts_with Arg1:T427.sandy-tmp Arg2:T430.sandy-tmp	
+R91.sandy-tmp	interacts_with Arg1:T428.sandy-tmp Arg2:T430.sandy-tmp	
+R92.sandy-tmp	interacts_with Arg1:T429.sandy-tmp Arg2:T430.sandy-tmp	
+R99.sandy-tmp	interacts_with Arg1:T462.sandy-tmp Arg2:T460.sandy-tmp	
+R100.sandy-tmp	interacts_with Arg1:T462.sandy-tmp Arg2:T461.sandy-tmp	
+R105.sandy-tmp	interacts_with Arg1:T494.sandy-tmp Arg2:T495.sandy-tmp	
+R106.sandy-tmp	interacts_with Arg1:T497.sandy-tmp Arg2:T496.sandy-tmp	
+R107.sandy-tmp	interacts_with Arg1:T503.sandy-tmp Arg2:T502.sandy-tmp	
+R109.sandy-tmp	interacts_with Arg1:T499.sandy-tmp Arg2:T500.sandy-tmp	
+R110.sandy-tmp	interacts_with Arg1:T518.sandy-tmp Arg2:T520.sandy-tmp	
+R111.sandy-tmp	interacts_with Arg1:T519.sandy-tmp Arg2:T520.sandy-tmp	
+R119.sandy-tmp	interacts_with Arg1:T547.sandy-tmp Arg2:T69.kevin-tmp	
+R120.sandy-tmp	interacts_with Arg1:T548.sandy-tmp Arg2:T70.kevin-tmp	
+T1	Entity 13572 13596	Histological examination
+#10	AnnotatorNotes R4.kevin-tmp	expressed
+#11	AnnotatorNotes R5.kevin-tmp	expressed 
+R1	is_part_of Arg1:T6.kevin-tmp Arg2:T1.sandy-tmp	
+T2	Entity 783 792	mutations
+R2	is_part_of Arg1:T2 Arg2:T7.sandy-tmp	
+T3	Entity 1938 1942	mice
+R3	is_part_of Arg1:T55.sandy-tmp Arg2:T3	
+R4	regulates Arg1:T55.kevin-tmp Arg2:T54.kevin-tmp	
+R5	is_part_of Arg1:T65.kevin-tmp Arg2:T88.sandy-tmp	
+R6	participates_in Arg1:T97.sandy-tmp Arg2:T98.sandy-tmp	
+T4	Entity 4646 4669	intron-less pseudogenes
+R7	is_part_of Arg1:T148.sandy-tmp Arg2:T91.kevin-tmp	
+T5	Entity 6453 6471	5' flanking region
+R8	is_part_of Arg1:T5 Arg2:T172.sandy-tmp	
+R9	participates_in Arg1:T5 Arg2:T174.sandy-tmp	
+R10	participates_in Arg1:T5 Arg2:T173.sandy-tmp	
+R11	is_part_of Arg1:T186.sandy-tmp Arg2:T118.kevin-tmp	
+T6	Entity 6920 6939	Sequence comparison
+R12	participates_in Arg1:T187.sandy-tmp Arg2:T6	
+R13	participates_in Arg1:T119.kevin-tmp Arg2:T6	
+T7	Entity 7204 7221	enhancer activity
+T8	Entity 7195 7203;7213 7221	Promoter activity
+R14	participates_in Arg1:T121.kevin-tmp Arg2:T8	
+R15	participates_in Arg1:T121.kevin-tmp Arg2:T7	
+R16	participates_in Arg1:T193.sandy-tmp Arg2:T8	
+R17	participates_in Arg1:T193.sandy-tmp Arg2:T7	
+T9	Entity 7324 7328	gene
+T10	Entity 7297 7316	5' flanking regions
+T11	Entity 7901 7908	introns
+T12	Entity 7891 7896	exons
+T13	Entity 8300 8317	enhancer activity
+T14	Entity 8291 8299;8309 8317	promoter activity
+R18	participates_in Arg1:T139.kevin-tmp Arg2:T150.kevin-tmp	
+R19	participates_in Arg1:T140.kevin-tmp Arg2:T150.kevin-tmp	
+R20	participates_in Arg1:T141.kevin-tmp Arg2:T150.kevin-tmp	
+#4	AnnotatorNotes R75.sandy-tmp	is not part of 
+R21	is_part_of Arg1:T251.kevin-tmp Arg2:T252.kevin-tmp	
+#5	AnnotatorNotes R21	is not part of 
+#7	AnnotatorNotes R26.kevin-tmp	does not regulate 
+#8	AnnotatorNotes R22.kevin-tmp	does not regulate
+#13	AnnotatorNotes R23.kevin-tmp	does not regulate 
+#23	AnnotatorNotes R24.kevin-tmp	does not regulate 
+T15	Entity 15825 15836	pseudogenes
+T16	Entity 17489 17512	Southern blot screening
+T17	Entity 17635 17660	5' Southern blot analysis
+T18	Entity 19559 19568	anti-ESG1

@@ -1,8 +1,8 @@
-T1	Entity 93 119	Collagen-induced arthritis
+T1	KeyEntity 93 119	Collagen-induced arthritis
 T2	Entity 219 239	rheumatoid arthritis
-T3	Entity 247 273	collagen-induced arthritis
+T3	KeyEntity 247 273	collagen-induced arthritis
 T4	Entity 392 412	rheumatoid arthritis
-T5	Entity 519 545	collagen-induced arthritis
+T5	KeyEntity 519 545	collagen-induced arthritis
 T6	Entity 558 574	aged female mice
 T7	KeyEntity 594 626	NFR/N and B10.Q (H-2q haplotype)
 R1	other_relation Arg1:T7 Arg2:T6	
@@ -35,5 +35,137 @@ R7	is_part_of Arg1:T15 Arg2:T17
 R8	is_part_of Arg1:T10 Arg2:T22	
 R9	regulates Arg1:T18 Arg2:T19	
 R10	is_part_of Arg1:T18 Arg2:T20	
-T25	Entity 18 49	collagen-induced arthritis loci
+T25	KeyEntity 18 49	collagen-induced arthritis loci
 T26	Entity 58 81	multiparous female mice
+T27	KeyEntity 1631 1663	collagen-induced arthritis (CIA)
+T28	Entity 1594 1619	rheumatoid arthritis (RA)
+T29	Entity 1769 1771	RA
+T30	KeyEntity 2483 2486;2490 2494	CIA mice
+T31	KeyEntity 2690 2693	CIA
+T32	KeyEntity 2922 2925	CIA
+T34	KeyEntity 3595 3598	CIA
+T35	KeyEntity 4195 4198	CIA
+T36	KeyEntity 5638 5641	CIA
+T37	KeyEntity 5703 5706	CIA
+T38	KeyEntity 5718 5721	CIA
+T39	KeyEntity 6262 6265	CIA
+T40	Entity 9805 9822	NFR/N female mice
+T41	KeyEntity 9865 9868	CIA
+T42	KeyEntity 10270 10273	CIA
+T43	KeyEntity 10581 10584	CIA
+T44	KeyEntity 11536 11539	CIA
+T45	Entity 12185 12211	CIA-susceptible MHC region
+T46	KeyEntity 12811 12814	CIA
+T47	KeyEntity 13410 13429	CIA-associated loci
+T48	KeyEntity 13338 13341	CIA
+T49	KeyEntity 13688 13707	CIA-associated loci
+T50	KeyEntity 13933 13936	CIA
+T51	KeyEntity 14517 14520	CIA
+T52	KeyEntity 15119 15122	CIA
+T53	KeyEntity 15904 15907	CIA
+T54	KeyEntity 15982 15985	CIA
+T55	KeyEntity 16663 16666	CIA
+T56	KeyEntity 17086 17089	CIA
+T57	KeyEntity 17567 17570	CIA
+T58	KeyEntity 17630 17633	CIA
+T59	Entity 1947 1949	RA
+T60	Entity 1998 2007	pregnancy
+T61	Entity 2072 2074	RA
+T62	Entity 2091 2097	parity
+T63	Entity 2103 2116	risk of onset
+T64	Entity 2135 2144	pregnancy
+R11	other_relation Arg1:T63 Arg2:T64	
+#4	AnnotatorNotes R11	reduced by
+T65	Entity 2159 2180	first year postpartum
+T66	Entity 2185 2200	chance of onset
+R12	other_relation Arg1:T66 Arg2:T65	
+#5	AnnotatorNotes R12	correlated with
+T67	Entity 2254 2256	RA
+T68	Entity 2290 2307	pregnancy history
+T69	Entity 2507 2520;2538 2553	immunological characteristics
+T70	Entity 2525 2553	pathological characteristics
+T71	Entity 2559 2567	human RA
+T72	Entity 2662 2671	arthritis
+T73	Entity 2697 2710	sex dependent
+T74	Entity 2734 2736	RA
+T75	Entity 2900 2918	Gender differences
+T76	Entity 2982 2989;3015 3025	genetic influences
+T77	Entity 2991 2999;3015 3025	hormonal influences
+T78	Entity 3004 3025	behavioral influences
+T79	Entity 3091 3093	RA
+T80	Entity 3133 3142;3146 3150	Pregnancy mice
+T81	Entity 3157 3166;3170 3175	pregnancy women
+T82	Entity 3193 3202;3206 3215	remission arthritis
+R13	participates_in Arg1:T80 Arg2:T82	
+R14	participates_in Arg1:T81 Arg2:T82	
+T83	Entity 3230 3242;3256 3266	exacerbation postpartum
+T84	Entity 3278 3305;3309 3312	Pregnancy-induced remission CIA
+T33	Entity 3361 3376	estrogen levels
+R15	regulates Arg1:T33 Arg2:T84	
+T85	Entity 3388 3411	postpartum exacerbation
+T86	Entity 3445 3449;3453 3461	drop estrogen
+R16	regulates Arg1:T86 Arg2:T85	
+T87	Entity 3501 3517	prolactin levels
+T88	Entity 3543 3569	pregnancy history (parity)
+T89	Entity 3678 3680	RA
+T90	Entity 3743 3751	children
+T91	Entity 4061 4072	female mice
+T92	Entity 4121 4126	NFR/N
+T93	Entity 4131 4150	C57BL/B10.Q (B10.Q)
+T94	Entity 4207 4214;4222 4233	females multiparous
+T95	Entity 4273 4290	Inbred NFR/N mice
+T96	Entity 4382 4392	B10.Q mice
+T97	Entity 4468 4491	B10Q × NFR/N)F1 hybrids
+T98	Entity 4497 4527	B10.Q × NFR/N) × B10.Q N2 mice
+T100	Entity 5238 5274	N2 backcross (B10.Q × NFR/N) × B10.Q
+T99	Entity 5558 5563	B10.Q
+T101	Entity 5798 5824	rat collagen type II (CII)
+T102	Entity 5845 5856	acetic acid
+T103	Entity 5737 5761	immunized subcutaneously
+T104	Entity 5890 5915	complete Freud's adjuvant
+T105	Entity 5993 5996	CII
+T106	Entity 6017 6028	acetic acid
+T107	Entity 6062 6089	Freud's incomplete adjuvant
+T108	Entity 6160 6169	arthritis
+T109	Entity 6204 6216	immunization
+T110	Entity 6328 6343	arthritis index
+T111	Entity 6424 6433	arthritis
+T112	Entity 6439 6446;6451 6459;6472 6477	redness swelling joint
+T113	Entity 6483 6495;6499 6514	inflammation multiple joints
+T114	Entity 6524 6543;6558 6561;6569 6578	severe inflammation paw anklebone
+T115	Entity 6666 6680	severity trait
+T116	Entity 6796 6808	immunization
+T117	Entity 6840 6849	arthritis
+T118	Entity 6881 6906	Microsatellite genotyping
+T119	Entity 6911 6927	linkage analysis
+T120	Entity 6929 6942	Tail biopsies
+T121	Entity 6967 6977	N2 females
+T122	Entity 6986 6988	F0
+T123	Entity 7130 7173	fluorescence-labeled microsatellite markers
+T124	Entity 7207 7226	informative markers
+T125	Entity 7291 7298	N2 mice
+T126	Entity 7381 7398	PCR amplification
+T127	Entity 8351 8367	linkage analysis
+T128	Entity 8376 8392	permutation test
+T129	Entity 9025 9058	Enzyme-linked immunosorbent assay
+R17	is_part_of Arg1:T124 Arg2:T123	
+T130	Entity 9143 9160	Anti-CII antibody
+T131	Entity 9195 9209	sandwich ELISA
+T132	Entity 9236 9239	CII
+T133	Entity 9547 9563	CII-specific IgG
+T134	Entity 9591 9631	peroxidase-conjugated goat antimouse IgG
+T135	Entity 9445 9470	mouse anti-CII antibodies
+T136	Entity 9883 9896	B10.Q females
+T137	Entity 9952 9962	NFR/N mice
+T138	Entity 10080 10089	arthritis
+T139	Entity 10138 10148	NFR/N mice
+T140	Entity 10179 10187;10202 10205	swelling paw
+T141	Entity 10211 10221	B10.Q mice
+T142	Entity 10349 10357	anti-CII
+T143	Entity 10380 10400	primary immunization
+T144	Entity 10464 10469;10480 10491	NFR/N female mice
+T145	Entity 10474 10491	B10.Q female mice
+T146	Entity 10508 10525	Pregnancy history
+T147	Entity 10661 10680	arthritic incidence
+T148	Entity 10682 10697	arthritis onset
+T149	Entity 10702 10725	maximum arthritic score

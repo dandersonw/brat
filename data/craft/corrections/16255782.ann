@@ -1,74 +1,58 @@
-T2.sandy	FIX_TYPE 229 256	bronchogenic carcinoma (BC)
+T2.sandy	KeyEntity 229 256	bronchogenic carcinoma (BC)
 T4.sandy	Entity 416 433	antioxidant genes
 T5.sandy	Entity 444 464	transcript abundance
 T7.sandy	Entity 478 518	normal bronchial epithelial cells (NBEC)
 T10.sandy	Entity 702 719	antioxidant genes
-T11.sandy	Entity 759 770	antioxidant
+T11.sandy	Entity 759 770;786 791	antioxidant genes
 T12.sandy	Entity 775 791	DNA repair genes
 T14.sandy	Entity 824 845	transcription factors
 T17.sandy	Entity 1103 1120	antioxidant genes
 T22.sandy	Entity 1348 1364	quantitative PCR
 T23.sandy	Entity 1368 1372	NBEC
-T24.sandy	FIX_TYPE 1419 1445	CEBPG transcription factor
+T24.sandy	KeyEntity 1419 1445	CEBPG transcription factor
 T27.sandy	Entity 1539 1557	non-BC individuals
-T28.sandy	FIX_TYPE 1624 1629	CEBPG
+T28.sandy	KeyEntity 1624 1629	CEBPG
 T29.sandy	Entity 1588 1602	BC individuals
-T30.sandy	FIX_TYPE 1720 1725	XRCC1
-T31.sandy	FIX_TYPE 1727 1732	ERCC5
-T32.sandy	FIX_TYPE 1734 1739	GSTP1
-T33.sandy	FIX_TYPE 1745 1749	SOD1
-T34.sandy	FIX_TYPE 1797 1801	GPX1
-T35.sandy	FIX_TYPE 1918 1922	E2F1
-T36.sandy	FIX_TYPE 1912 1916	E2F1
-T37.sandy	FIX_TYPE 1943 1948	GSTP1
-T38.sandy	FIX_TYPE 1994 1999	CEBPG
-T39.sandy	FIX_TYPE 2137 2142	CEBPG
+T30.sandy	Entity 1720 1725	XRCC1
+T31.sandy	Entity 1727 1732	ERCC5
+T32.sandy	Entity 1734 1739	GSTP1
+T33.sandy	Entity 1745 1749	SOD1
+T34.sandy	Entity 1797 1801	GPX1
+T35.sandy	Entity 1918 1922	E2F1
+T36.sandy	Entity 1912 1916	E2F1
+T37.sandy	Entity 1943 1948	GSTP1
+T38.sandy	KeyEntity 1994 1999	CEBPG
+T39.sandy	KeyEntity 2137 2142	CEBPG
 T40.sandy	Entity 2150 2170	transcription factor
-T45.sandy	Entity 2405 2416	antioxidant
-T46.sandy	Entity 2421 2437	DNA repair genes
-T47.sandy	FIX_TYPE 2441 2446	CEBPG
-T51.sandy	FIX_TYPE 299 301	BC
+T45.sandy	KeyEntity 2405 2416;2432 2437	antioxidant genes
+T46.sandy	KeyEntity 2421 2437	DNA repair genes
+T47.sandy	KeyEntity 2441 2446	CEBPG
+T51.sandy	KeyEntity 299 301	BC
 T53.sandy	Entity 549 567	non-BC individuals
-T54.sandy	FIX_TYPE 1016 1018	BC
-T3.sandy	VERIFY_Entity 360 382	genetically determined
-T8.sandy	FIX_SPAN_Entity 604 608	NBEC
-T9.sandy	FIX_SPAN_Entity 618 645	transcript abundance values
-T13.sandy	VERIFY_Entity 796 808	co-regulated
-T15.sandy	VERIFY_Entity 855 881	inter-individual variation
-T16.sandy	FIX_SPAN_Entity 1043 1081	transcription factor recognition sites
-T18.sandy	FIX_SPAN_Entity 1155 1176	DNA sequence analysis
-T19.sandy	VERIFY_Entity 1182 1209	transcript abundance values
-T20.sandy	FIX_SPAN_Entity 1274 1285	antioxidant
-T21.sandy	FIX_SPAN_Entity 1290 1306	DNA repair genes
-T25.sandy	FIX_SPAN_Entity 1504 1515	antioxidant
-T26.sandy	FIX_SPAN_Entity 1519 1535	DNA repair genes
-T41.sandy	FIX_SPAN_Entity 2197 2221	regulating transcription
-T42.sandy	FIX_SPAN_Entity 2229 2240	antioxidant
-T43.sandy	FIX_SPAN_Entity 2245 2261	DNA repair genes
-T44.sandy	VERIFY_Entity 2379 2401	sub-optimal regulation
-T1.sandy	VERIFY_KeyEntity 0 26	CEBPG transcription factor
-T6.sandy	VERIFY_KeyEntity 43 54	antioxidant
-T48.sandy	VERIFY_KeyEntity 59 75	DNA repair genes
-T49.sandy	VERIFY_KeyEntity 79 112	normal bronchial epithelial cells
-T50.sandy	VERIFY_KeyEntity 141 163	bronchogenic carcinoma
-T52.sandy	FIX_SPAN_Entity 522 524	BC
-T55.sandy	VERIFY_Entity 1393 1395	BC
-T56.sandy	FIX_SPAN_Entity 1379 1385	non-BC
-T2.kevin	VERIFY_Entity 187 204	Cigarette smoking
-T5.kevin	FIX_SPAN_Entity 604 616	NBEC samples
-T10.kevin	FIX_SPAN_Entity 522 536	BC individuals
-T13.kevin	FIX_SPAN_Entity 618 638	transcript abundance
-T16.kevin	FIX_SPAN_Entity 1034 1081	putative transcription factor recognition sites
-T18.kevin	FIX_SPAN_Entity 1148 1176	silico DNA sequence analysis
-T19.kevin	VERIFY_Entity 1219 1240	transcription factors
-T20.kevin	FIX_SPAN_Entity 1274 1306	antioxidant and DNA repair genes
-T24.kevin	FIX_SPAN_Entity 1379 1385;1396 1407	non-BC individuals
-T26.kevin	FIX_SPAN_Entity 1504 1535	antioxidant or DNA repair genes
-T28.kevin	VERIFY_Entity 1569 1583	BC individuals
-T37.kevin	VERIFY_Entity 1818 1838	transcription factor
-T43.kevin	FIX_SPAN_Entity 2208 2221;2225 2261	transcription key antioxidant and DNA repair genes
-T44.kevin	VERIFY_Entity 2357 2359	BC
-T46.kevin	VERIFY_Entity 1678 1696	non-BC individuals
+T54.sandy	KeyEntity 1016 1018	BC
+T3.sandy	Entity 360 382	genetically determined
+T9.sandy	Entity 618 645	transcript abundance values
+T16.sandy	Entity 1043 1081	transcription factor recognition sites
+T20.sandy	KeyEntity 1274 1285;1301 1306	antioxidant genes
+T21.sandy	KeyEntity 1290 1306	DNA repair genes
+T26.sandy	KeyEntity 1519 1535	DNA repair genes
+T42.sandy	KeyEntity 2229 2240;2256 2261	antioxidant genes
+T43.sandy	KeyEntity 2245 2261	DNA repair genes
+T1.sandy	KeyEntity 0 26	CEBPG transcription factor
+T6.sandy	KeyEntity 43 54;70 75	antioxidant genes
+T48.sandy	KeyEntity 59 75	DNA repair genes
+T49.sandy	Entity 79 112	normal bronchial epithelial cells
+T50.sandy	KeyEntity 141 163	bronchogenic carcinoma
+T2.kevin	Entity 187 204	Cigarette smoking
+T5.kevin	Entity 604 616	NBEC samples
+T10.kevin	Entity 522 536	BC individuals
+T18.kevin	Entity 1148 1176	silico DNA sequence analysis
+T19.kevin	Entity 1219 1240	transcription factors
+T24.kevin	Entity 1379 1385;1396 1407	non-BC individuals
+T28.kevin	Entity 1569 1583	BC individuals
+T37.kevin	Entity 1818 1838	transcription factor
+T44.kevin	KeyEntity 2357 2359	BC
+T46.kevin	Entity 1678 1696	non-BC individuals
 T49.kevin	VERIFY_Entity 2461 2463	BC
 T50.kevin	VERIFY_Entity 2700 2702	BC
 T51.kevin	VERIFY_Entity 2710 2721	Antioxidant
@@ -109,30 +93,30 @@ T85.kevin	VERIFY_KeyEntity 4128 4137	GPX3/SOD1
 #1	AnnotatorNotes T14.sandy	Not sure
 R7.sandy	regulates Arg1:T14.sandy Arg2:T11.sandy	
 R8.sandy	regulates Arg1:T14.sandy Arg2:T12.sandy	
-R2.sandy	VERIFY_is_part_of Arg1:T3.sandy Arg2:T2.sandy	
-R3.sandy	VERIFY_interacts_with Arg1:T4.sandy Arg2:T7.sandy	
-R5.sandy	VERIFY_is_part_of Arg1:T9.sandy Arg2:T8.sandy	
-R6.sandy	VERIFY_participates_in Arg1:T10.sandy Arg2:T8.sandy	
-R9.sandy	VERIFY_is_part_of Arg1:T16.sandy Arg2:T17.sandy	
-R16.sandy	VERIFY_participates_in Arg1:T45.sandy Arg2:T44.sandy	
-R17.sandy	VERIFY_participates_in Arg1:T46.sandy Arg2:T44.sandy	
-R18.sandy	VERIFY_is_subclass_of Arg1:T39.sandy Arg2:T40.sandy	
-R19.sandy	VERIFY_regulates Arg1:T39.sandy Arg2:T42.sandy	
-R20.sandy	VERIFY_regulates Arg1:T39.sandy Arg2:T43.sandy	
-R21.sandy	VERIFY_regulates Arg1:T47.sandy Arg2:T44.sandy	
-R1.kevin	VERIFY_participates_in Arg1:T2.kevin Arg2:T2.sandy	
-R2.kevin	VERIFY_participates_in Arg1:T4.sandy Arg2:T5.sandy	
-R3.kevin	VERIFY_is_part_of Arg1:T5.sandy Arg2:T7.sandy	
-R6.kevin	VERIFY_is_part_of Arg1:T7.sandy Arg2:T10.kevin	
-R7.kevin	VERIFY_is_part_of Arg1:T16.kevin Arg2:T17.sandy	
-R8.kevin	VERIFY_is_subclass_of Arg1:T36.sandy Arg2:T37.kevin	
-R10.kevin	VERIFY_regulates Arg1:T39.sandy Arg2:T43.kevin	
-R12.kevin	VERIFY_is_part_of Arg1:T26.kevin Arg2:T27.sandy	
-R13.kevin	VERIFY_regulates Arg1:T47.sandy Arg2:T46.sandy	
-R14.kevin	VERIFY_regulates Arg1:T47.sandy Arg2:T45.sandy	
+R2.sandy	participates_in Arg1:T3.sandy Arg2:T2.sandy	
+R3.sandy	interacts_with Arg1:T4.sandy Arg2:T7.sandy	
+R9.sandy	is_part_of Arg1:T16.sandy Arg2:T17.sandy	
+R18.sandy	is_subclass_of Arg1:T39.sandy Arg2:T40.sandy	
+R1.kevin	participates_in Arg1:T2.kevin Arg2:T2.sandy	
+R2.kevin	participates_in Arg1:T4.sandy Arg2:T5.sandy	
+R3.kevin	is_part_of Arg1:T5.sandy Arg2:T7.sandy	
+R6.kevin	is_part_of Arg1:T7.sandy Arg2:T10.kevin	
 R15.kevin	VERIFY_is_subclass_of Arg1:T54.kevin Arg2:T69.kevin	
 R16.kevin	VERIFY_is_subclass_of Arg1:T59.kevin Arg2:T58.kevin	
 R17.kevin	VERIFY_is_subclass_of Arg1:T60.kevin Arg2:T58.kevin	
 R18.kevin	VERIFY_is_subclass_of Arg1:T61.kevin Arg2:T71.kevin	
 R19.kevin	VERIFY_is_subclass_of Arg1:T62.kevin Arg2:T71.kevin	
 R20.kevin	VERIFY_is_subclass_of Arg1:T63.kevin Arg2:T71.kevin	
+T1	Entity 1393 1407	BC individuals
+T2	Entity 2208 2221	transcription
+R1	regulates Arg1:T39.sandy Arg2:T2	
+R2	participates_in Arg1:T42.sandy Arg2:T2	
+R3	participates_in Arg1:T43.sandy Arg2:T2	
+R4	regulates Arg1:T47.sandy Arg2:T45.sandy	
+R5	regulates Arg1:T47.sandy Arg2:T46.sandy	
+T3	KeyEntity 1504 1515;1530 1535	antioxidant genes
+T4	Entity 1182 1209	transcript abundance values
+T5	KeyEntity 658 674	DNA repair genes
+R6	interacts_with Arg1:T5 Arg2:T10.sandy	
+R7	is_part_of Arg1:T5 Arg2:T5.kevin	
+R8	is_part_of Arg1:T10.sandy Arg2:T5.kevin	

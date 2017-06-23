@@ -67,3 +67,244 @@ T62	Entity 14643 14646	p53
 T63	Entity 14656 14659	GFP
 T64	Entity 14688 14691	p53
 T65	Entity 2233 2241	ES cells
+R5	is_part_of Arg1:T28 Arg2:T29	
+T66	Entity 1745 1769	spatio-temporal profiles
+T67	Entity 1701 1732	physiological expression levels
+T68	Entity 1831 1842	p53 mutants
+T69	Entity 2011 2017;2021 2035	models p53 regulation
+T70	Entity 2484 2496	homozygosity
+T71	Entity 2767 2770	p53
+T72	Entity 2934 2945	fibroblasts
+T73	Entity 2990 2996	siRNAs
+T74	Entity 3000 3011	fibroblasts
+R6	is_part_of Arg1:T73 Arg2:T74	
+T75	Entity 3060 3075	gene knock-outs
+T76	Entity 3115 3143	disease-associated mutations
+T77	Entity 3164 3180	subtle mutations
+R7	participates_in Arg1:T77 Arg2:T76	
+T78	Entity 3272 3296	homologous recombination
+T79	Entity 3257 3268	fibroblasts
+T80	Entity 3238 3253	point mutations
+R8	is_part_of Arg1:T80 Arg2:T79	
+T81	Entity 3310 3321	inefficient
+R9	other_relation Arg1:T81 Arg2:T80	
+#1	AnnotatorNotes R9	attribute
+T82	Entity 3495 3504	p53 locus
+T83	Entity 3513 3521	ES cells
+T84	Entity 3526 3537	fibroblasts
+T85	KeyEntity 3539 3584	Recombinase-Mediated Cassette Exchange (RMCE)
+T86	Entity 3673 3689	gene of interest
+T87	Entity 3713 3731	selection cassette
+T88	Entity 3743 3767	recombinase target sites
+T89	Entity 3774 3784	loxP sites
+T90	Entity 3789 3804	Cre recombinase
+T91	Entity 3818 3832	‘floxed’ locus
+T92	Entity 3841 3867	Cre-mediated recombination
+T93	Entity 3944 3961	resident sequence
+T94	KeyEntity 4045 4049	RMCE
+T95	KeyEntity 5024 5040	RMCE experiments
+T96	Entity 5080 5098	somatic cell lines
+R10	is_subclass_of Arg1:T89 Arg2:T88	
+R11	is_part_of Arg1:T89 Arg2:T90	
+R12	other_relation Arg1:T92 Arg2:T93	
+#2	AnnotatorNotes R12	removes
+T97	Entity 4157 4176	repeated loxP sites
+T98	Entity 4250 4260	loxP sites
+T99	Entity 4359 4386	ntramolecular recombination
+T100	KeyEntity 4395 4399	RMCE
+T101	Entity 4598 4613	endogenous gene
+T102	KeyEntity 4718 4730	optimal RMCE
+T103	Entity 4744 4776	inverted heterologous loxP sites
+R13	participates_in Arg1:T103 Arg2:T102	
+T104	Entity 4855 4874	expression cassette
+T105	Entity 4889 4907	positive selection
+R14	participates_in Arg1:T105 Arg2:T104	
+T106	Entity 4953 4971	negative selection
+R15	participates_in Arg1:T106 Arg2:T104	
+R16	participates_in Arg1:T104 Arg2:T102	
+T107	KeyEntity 5136 5140	RMCE
+T108	Entity 5144 5152	ES cells
+T109	KeyEntity 5181 5185	RMCE
+T110	Entity 5214 5231	selectable marker
+T111	KeyEntity 5363 5402	Hygromycin–Thymidine Kinase fusion gene
+T112	KeyEntity 5459 5463	RMCE
+T113	Entity 5428 5455	positive/negative selection
+T114	Entity 5474 5489	mouse sterility
+T115	Entity 5534 5542	ES cells
+R17	participates_in Arg1:T111 Arg2:T113	
+R18	is_part_of Arg1:T113 Arg2:T112	
+T116	KeyEntity 5554 5567	RMCE strategy
+T117	Entity 5615 5647	inverted heterologous loxP sites
+T118	Entity 5651 5685	positive/negative selection marker
+T119	Entity 5705 5722	germline capacity
+T120	Entity 5726 5734	ES cells
+T121	Entity 5744 5767	power of mouse genetics
+T122	Entity 5858 5879	marker-free mutations
+T123	Entity 5887 5896	p53 locus
+T124	Entity 5900 5908	ES cells
+T125	Entity 5987 6033	Somatic cells to Accelerate Phenotyping (ASAP)
+T126	KeyEntity 6081 6090	RMCE-ASAP
+R19	participates_in Arg1:T117 Arg2:T116	
+R20	participates_in Arg1:T118 Arg2:T116	
+R21	participates_in Arg1:T121 Arg2:T116	
+T127	Entity 5780 5799	phenotypic analyses
+R22	is_part_of Arg1:T123 Arg2:T124	
+R23	is_part_of Arg1:T122 Arg2:T123	
+T128	KeyEntity 6714 6718	RMCE
+T129	KeyEntity 6751 6755	RMCE
+T130	Entity 7810 7817	plasmid
+T131	Entity 7833 7839;7847 7866;7874 7882	region homology downstream p53 gene
+T132	Entity 7891 7899	DTA gene
+R24	is_part_of Arg1:T131 Arg2:T130	
+R25	is_part_of Arg1:T132 Arg2:T130	
+T133	Entity 8643 8655	Plasmid Flox
+T134	Entity 8708 8728	restriction analysis
+T135	Entity 8782 8788;8793 8813	verify p53 coding sequences
+T136	Entity 8782 8788;8819 8840	verify exon–intron junctions
+T137	Entity 8782 8788;8849 8872;8877 8887	verify sequences at and around loxP sites
+T138	Entity 8962 8984	p53-GFP fusion protein
+T139	Entity 9037 9046	p53 locus
+T140	Entity 9787 9810	p53-GFP fusion fragment
+T141	KeyEntity 10327 10339	Flox plasmid
+T142	Entity 11465 11485	Targeting/genotyping
+T143	KeyEntity 11493 11509	RMCE-ready locus
+T144	KeyEntity 11757 11761	RMCE
+T145	Entity 11804 11812	ES cells
+T146	KeyEntity 12242 12246	RMCE
+T147	Entity 14946 14970;15034 15038	ES cell clones resistant FIAU
+T148	Entity 15081 15084	PCR
+T149	Entity 15089 15102	Southern blot
+T150	Entity 15172 15192	high RMCE efficiency
+T151	KeyEntity 15200 15204	RMCE
+T152	Entity 15235 15252	no aberrant bands
+T153	Entity 15270 15273	PCR
+T154	Entity 15278 15292	Southern blots
+R26	other_relation Arg1:T152 Arg2:T153	
+#3	AnnotatorNotes R26	attribute
+R27	other_relation Arg1:T152 Arg2:T154	
+#4	AnnotatorNotes R27	attribute
+T155	Entity 15306 15324	p53+/GFP ES clones
+T156	Entity 15478 15484;15488 15491;15495 15498	fusion GFP p53
+T157	Entity 15518 15531	p53 stability
+T158	Entity 15714 15719	p53WT
+T159	Entity 15724 15730	p53GFP
+T160	Entity 15750 15770	adriamycin treatment
+T161	Entity 15801 15816	p53+/GFP clones
+T162	Entity 15836 15847	blastocysts
+T163	Entity 15867 15890	pseudo-pregnant females
+R28	is_part_of Arg1:T161 Arg2:T162	
+T164	Entity 15987 15998	p53 pathway
+T165	Entity 16032 16034;16047 16052	ES cells
+T166	Entity 16039 16052	somatic cells
+T167	Entity 16054 16062	ES cells
+T168	Entity 16082 16097	high p53 levels
+T169	Entity 16102 16106;16111 16134	lack p53-mediated DNA damage
+R29	other_relation Arg1:T168 Arg2:T167	
+#5	AnnotatorNotes R29	attribute
+R30	other_relation Arg1:T169 Arg2:T167	
+#6	AnnotatorNotes R30	at
+T170	Entity 16215 16261	p53 levels decrease during mouse embryogenesis
+T171	Entity 16353 16364;16368 16374	high levels p53GFP
+T172	Entity 16382 16390	ES cells
+R31	is_part_of Arg1:T171 Arg2:T172	
+T173	Entity 16411 16412	c
+R32	is_part_of Arg1:T172 Arg2:T173	
+T174	Entity 16428 16466	prevented normal embryonic development
+T175	KeyEntity 16586 16590	RMCE
+T176	Entity 16598 16613	p53 fusion gene
+T177	Entity 16627 16656;16670 16675	p53 proline-rich domain (PRD) p53ΔP
+T178	Entity 16738 16746;16751 16790	deleting proline-rich domain decreases stability
+T179	Entity 16795 16827	compromises DNA-damage responses
+T180	Entity 16875 16893	hypomorphic mutant
+T181	KeyEntity 16936 16940	RMCE
+T182	Entity 16948 16976	p53ΔPGFP replacement plasmid
+T183	Entity 17006 17019	western blots
+T184	Entity 17090 17109	p53+/ΔPGFP ES cells
+T185	Entity 17140 17152	PRD deletion
+T186	Entity 17169 17192	lower expression levels
+T187	Entity 17194 17202	p53ΔPGFP
+R33	other_relation Arg1:T186 Arg2:T185	
+#7	AnnotatorNotes R33	associated
+T188	Entity 17302 17321	p53+/ΔPGFP ES cells
+T189	Entity 17337 17350	chimeric mice
+T190	Entity 17410 17435	p53+/ΔPGFP ES cell clones
+T191	Entity 17455 17466	blastocysts
+R34	is_part_of Arg1:T190 Arg2:T191	
+T192	Entity 17514 17531	Heterozygote pups
+T193	Entity 17630 17646	marker-free RMCE
+T194	Entity 17668 17676	ES cells
+T195	Entity 17688 17709	germline transmission
+T196	KeyEntity 17789 17793	RMCE
+T197	Entity 17844 17854	p53 allele
+T198	Entity 17858 17871	somatic cells
+T199	Entity 17820 17836	target mutations
+R35	is_part_of Arg1:T199 Arg2:T197	
+R36	is_part_of Arg1:T197 Arg2:T198	
+T200	KeyEntity 17919 17949	RMCE-ready p53 locus (p53RMCE)
+T201	Entity 17995 18037	mating p53RMCE/+ chimeras with p53+/− mice
+T202	Entity 18096 18110	p53RMCE/− MEFs
+T203	KeyEntity 18136 18140	RMCE
+T204	Entity 18148 18157	p53 locus
+T205	Entity 18161 18174	somatic cells
+T206	Entity 18195 18207	RMCE in MEFs
+T207	Entity 18211 18241	electroporating p53RMCE/− MEFs
+T208	Entity 18249 18271	Cre-expression plasmid
+T209	Entity 18280 18294	p53GFP plasmid
+T210	Entity 18323 18327	FIAU
+T211	Entity 18331 18342	ganciclovir
+T212	Entity 18425 18441	RMCE with p53GFP
+T213	Entity 18445 18453	ES cells
+R37	is_part_of Arg1:T212 Arg2:T213	
+T214	Entity 18466 18472;18476 18485;18489 18500	p53GFP expressed high levels
+T215	Entity 18543 18554	p53 pathway
+T216	Entity 18613 18621	ES cells
+T217	Entity 20641 20663	improved RMCE approach
+T218	Entity 20677 20706	efficient allele modification
+T219	Entity 20710 20718	ES cells
+T220	Entity 20731 20735	mice
+T221	Entity 20743 20760	heterozygous MEFs
+T222	Entity 20764 20794	accelerate phenotypic analyses
+T223	KeyEntity 20811 20820	RMCE-ASAP
+T224	Entity 20853 20885	inverted heterologous loxP sites
+T225	Entity 20889 20923	positive/negative selection marker
+T226	Entity 21002 21033;21041 21057	existence of a knock-out allele gene of interest
+T227	Entity 20943 20960;20964 20972	germline capacity ES cells
+T228	KeyEntity 21093 21102	RMCE-ASAP
+T229	Entity 21151 21166	mammalian genes
+T230	KeyEntity 21259 21268	RMCE-ASAP
+T231	Entity 21295 21318	fibroblastic cell lines
+T232	KeyEntity 19700 19704	RMCE
+T233	Entity 19708 19722	p53RMCE/− MEFs
+T234	Entity 19732 19750	p53ΔPGFP construct
+T235	Entity 19752 19776	p53ΔPGFP-expressing MEFs
+T236	Entity 19850 19869	ES cell experiments
+T237	Entity 19883 19899	p53ΔPGFP protein
+T238	Entity 19908 19931	lower levels than p53WT
+T239	Entity 19961 19974	p53ΔP/ΔP MEFs
+T240	Entity 19979 19985;19989 20021	unable arrest cycling after irradiation
+T241	Entity 20051 20068;20074 20097	irradiation doses arrested p53RMCE/− MEFs
+T242	Entity 20174 20200	not arrest p53ΔPGFP/− MEFs
+T243	Entity 20244 20262	RMCE-ASAP reaction
+T244	Entity 20292 20301;20307 20326	detection recessive phenotype
+T245	Entity 20366 20385	proline rich domain
+T246	Entity 20395 20410	less active p53
+T247	Entity 20416 20443	impaired cell cycle control
+T248	Entity 20470 20491	GFP C-terminal fusion
+T249	Entity 20515 20529	p53 regulation
+T250	Entity 18659 18670;18674 18680	high levels p53GFP
+T251	Entity 18703 18711	ES cells
+T252	Entity 18716 18729	toxic to MEFs
+T253	Entity 18739 18743	MEFs
+T254	KeyEntity 18756 18760	RMCE
+T255	Entity 18823 18837	p53RMCE/− MEFs
+T256	Entity 18843 18857;18867 18895	electroporated p53GFP replacement construct
+T257	Entity 18914 18936	Cre-expression plasmid
+T258	Entity 19150 19154	FIAU
+T259	Entity 19158 19169	ganciclovir
+T260	Entity 19206 19223	effects of p53GFP
+T261	Entity 19275 19297	Cre expression plasmid
+T262	KeyEntity 19362 19366	RMCE
+T263	Entity 19420 19442	‘fried-egg’ appearance
+T264	KeyEntity 19588 19592	RMCE
+T265	Entity 19610 19632	p53GFP-expressing MEFs
+T266	Entity 19643 19679	die rapidly owing to p53GFP toxicity

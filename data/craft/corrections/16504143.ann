@@ -54,7 +54,6 @@ T152.kevin-tmp	Entity 5915 5946	anatomical-histological studies
 T163.kevin-tmp	Entity 6913 6937	spatial learning ability
 T164.kevin-tmp	KeyEntity 6941 6962	ADAM11-deficient mice
 T171.kevin-tmp	Entity 8082 8109	spatial learning impairment
-T176.kevin-tmp	Entity 8598 8608	(-/-) mice
 T188.kevin-tmp	KeyEntity 10319 10325	ADAM11
 T192.kevin-tmp	Entity 10436 10441	brain
 T193.kevin-tmp	Entity 10443 10448	heart
@@ -187,8 +186,7 @@ T166.kevin-tmp	Entity 7009 7013	mice
 T167.kevin-tmp	Entity 7032 7052	hidden platform task
 T168.kevin-tmp	KeyEntity 7128 7145	Adam11 (-/-) mice
 T174.kevin-tmp	Entity 8241 8262	visible platform task
-T177.kevin-tmp	FIX_SPAN_Entity 8614 8628	normal visible
-T178.kevin-tmp	FIX_SPAN_Entity 8614 8620;8633 8647	normal motor function
+T178.kevin-tmp	Entity 8633 8647	motor function
 T179.kevin-tmp	Entity 8699 8713	Motor function
 T180.kevin-tmp	KeyEntity 8717 8738	ADAM11-deficient mice
 T181.kevin-tmp	KeyEntity 8766 8772	ADAM11
@@ -459,3 +457,5 @@ R38	is_part_of Arg1:T114.kevin-tmp Arg2:T115.kevin-tmp
 T38	Entity 15914 15918	mice
 R39	is_part_of Arg1:T154.sandy-tmp Arg2:T38	
 #11	AnnotatorNotes R39	is not part of 
+T39	Entity 8621 8628;8639 8647	visible function
+T40	Entity 8604 8608	mice
