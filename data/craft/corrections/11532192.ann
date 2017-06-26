@@ -524,10 +524,8 @@ T476.kevin-tmp	Entity 20173 20207	obese, diabetic homozygous mutants
 T477.kevin-tmp	Entity 20238 20275	non-obese, non-diabetic heterozygotes
 T484.kevin-tmp	Entity 20469 20506	mutant allele of tyrosinase (Tyrc-2J)
 T485.kevin-tmp	Entity 20535 20558	pigmented B6 background
-T486.kevin-tmp	FIX_SPAN_Entity 20581 20605	homozygosity for Tyrc-2J
 T487.kevin-tmp	Entity 20662 20687	wild type, pigmented mice
 T488.kevin-tmp	Entity 20854 20871	pigmented B6 mice
-T491.kevin-tmp	FIX_SPAN_Entity 21078 21101	altered diurnal changes
 T493.kevin-tmp	Entity 21168 21196	spontaneous Tyrc-2J mutation
 T507.kevin-tmp	Entity 14434 14446	light period
 T509.kevin-tmp	Entity 21752 21787	genetically different mouse strains
@@ -535,7 +533,6 @@ T512.kevin-tmp	Entity 22333 22346	strain survey
 T518.kevin-tmp	Entity 22842 22859	anesthetic agents
 T522.kevin-tmp	Entity 23241 23260	anesthetic protocol
 T538.kevin-tmp	Entity 24228 24267	intraperitoneally administered ketamine
-T542.kevin-tmp	FIX_SPAN_Entity 24120 24145	strong hypotensive effect
 T202.kevin-tmp	KeyEntity 24301 24313	decrease IOP
 T545.kevin-tmp	Entity 24802 24812	anesthesia
 T546.kevin-tmp	Entity 25170 25180	anesthesia
@@ -543,7 +540,6 @@ T550.kevin-tmp	Entity 25703 25719	Cage cleanliness
 T551.kevin-tmp	Entity 25721 25739	changing frequency
 T552.kevin-tmp	Entity 25744 25759	housing density
 T559.kevin-tmp	Entity 25950 25958	terpenes
-T561.kevin-tmp	FIX_SPAN_Entity 25986 26020	environmental exposure to terpenes
 T564.kevin-tmp	Entity 26089 26106	anesthetic agents
 T579.kevin-tmp	Entity 26652 26689	genetically homogeneous mouse strains
 T585.kevin-tmp	Entity 26845 26848	age
@@ -763,44 +759,17 @@ R58.kevin-tmp	participates_in Arg1:T660.kevin-tmp Arg2:T661.kevin-tmp
 R59.kevin-tmp	regulates Arg1:T662.kevin-tmp Arg2:T663.kevin-tmp	
 R2.kevin-tmp	interacts_with Arg1:T5.kevin-tmp Arg2:T4.kevin-tmp	
 R4.kevin-tmp	is_part_of Arg1:T32.kevin-tmp Arg2:T28.kevin-tmp	
-R6.kevin-tmp	VERIFY_other_relation Arg1:T36.kevin-tmp Arg2:T37.kevin-tmp	
 R7.kevin-tmp	participates_in Arg1:T39.kevin-tmp Arg2:T38.kevin-tmp	
 R8.kevin-tmp	participates_in Arg1:T40.kevin-tmp Arg2:T38.kevin-tmp	
 R9.kevin-tmp	participates_in Arg1:T41.kevin-tmp Arg2:T39.kevin-tmp	
 R10.kevin-tmp	participates_in Arg1:T41.kevin-tmp Arg2:T40.kevin-tmp	
-R12.kevin-tmp	VERIFY_other_relation Arg1:T82.kevin-tmp Arg2:T81.kevin-tmp	
 R13.kevin-tmp	is_part_of Arg1:T99.kevin-tmp Arg2:T98.kevin-tmp	
 R14.kevin-tmp	is_part_of Arg1:T100.kevin-tmp Arg2:T98.kevin-tmp	
-R15.kevin-tmp	VERIFY_other_relation Arg1:T152.kevin-tmp Arg2:T151.kevin-tmp	
-R16.kevin-tmp	VERIFY_other_relation Arg1:T225.kevin-tmp Arg2:T226.kevin-tmp	
-R17.kevin-tmp	VERIFY_other_relation Arg1:T227.kevin-tmp Arg2:T228.kevin-tmp	
-R18.kevin-tmp	VERIFY_other_relation Arg1:T232.kevin-tmp Arg2:T225.kevin-tmp	
-R19.kevin-tmp	VERIFY_other_relation Arg1:T233.kevin-tmp Arg2:T225.kevin-tmp	
-R20.kevin-tmp	VERIFY_other_relation Arg1:T236.kevin-tmp Arg2:T227.kevin-tmp	
-R21.kevin-tmp	VERIFY_other_relation Arg1:T235.kevin-tmp Arg2:T227.kevin-tmp	
-R22.kevin-tmp	VERIFY_other_relation Arg1:T237.kevin-tmp Arg2:T238.kevin-tmp	
-R23.kevin-tmp	VERIFY_other_relation Arg1:T237.kevin-tmp Arg2:T239.kevin-tmp	
-R24.kevin-tmp	VERIFY_other_relation Arg1:T240.kevin-tmp Arg2:T241.kevin-tmp	
-R25.kevin-tmp	VERIFY_other_relation Arg1:T240.kevin-tmp Arg2:T242.kevin-tmp	
-R26.kevin-tmp	VERIFY_other_relation Arg1:T244.kevin-tmp Arg2:T243.kevin-tmp	
-R29.kevin-tmp	VERIFY_other_relation Arg1:T265.kevin-tmp Arg2:T266.kevin-tmp	
-R30.kevin-tmp	VERIFY_other_relation Arg1:T269.kevin-tmp Arg2:T268.kevin-tmp	
-R31.kevin-tmp	VERIFY_other_relation Arg1:T278.kevin-tmp Arg2:T277.kevin-tmp	
-R32.kevin-tmp	VERIFY_other_relation Arg1:T324.kevin-tmp Arg2:T323.kevin-tmp	
 R33.kevin-tmp	is_subclass_of Arg1:T338.kevin-tmp Arg2:T337.kevin-tmp	
 R34.kevin-tmp	is_subclass_of Arg1:T339.kevin-tmp Arg2:T337.kevin-tmp	
-R35.kevin-tmp	VERIFY_other_relation Arg1:T345.kevin-tmp Arg2:T344.kevin-tmp	
-R37.kevin-tmp	VERIFY_other_relation Arg1:T425.kevin-tmp Arg2:T426.kevin-tmp	
 R38.kevin-tmp	is_part_of Arg1:T428.kevin-tmp Arg2:T429.kevin-tmp	
 R40.kevin-tmp	is_part_of Arg1:T431.kevin-tmp Arg2:T434.kevin-tmp	
-R42.kevin-tmp	VERIFY_other_relation Arg1:T472.kevin-tmp Arg2:T473.kevin-tmp	
-R43.kevin-tmp	VERIFY_other_relation Arg1:T472.kevin-tmp Arg2:T474.kevin-tmp	
-R44.kevin-tmp	VERIFY_other_relation Arg1:T486.kevin-tmp Arg2:T184.kevin-tmp	
-R46.kevin-tmp	VERIFY_other_relation Arg1:T490.kevin-tmp Arg2:T491.kevin-tmp	
 R47.kevin-tmp	is_subclass_of Arg1:T519.kevin-tmp Arg2:T518.kevin-tmp	
-R48.kevin-tmp	VERIFY_other_relation Arg1:T540.kevin-tmp Arg2:T542.kevin-tmp	
-R49.kevin-tmp	VERIFY_other_relation Arg1:T538.kevin-tmp Arg2:T202.kevin-tmp	
-R52.kevin-tmp	VERIFY_other_relation Arg1:T561.kevin-tmp Arg2:T563.kevin-tmp	
 R53.kevin-tmp	is_subclass_of Arg1:T593.kevin-tmp Arg2:T594.kevin-tmp	
 R54.kevin-tmp	is_subclass_of Arg1:T595.kevin-tmp Arg2:T594.kevin-tmp	
 R56.kevin-tmp	regulates Arg1:T641.kevin-tmp Arg2:T639.kevin-tmp	
@@ -829,14 +798,11 @@ R25.sandy-tmp	participates_in Arg1:T52.kevin-tmp Arg2:T53.kevin-tmp
 R26.sandy-tmp	participates_in Arg1:T51.kevin-tmp Arg2:T53.kevin-tmp	
 R27.sandy-tmp	participates_in Arg1:T48.kevin-tmp Arg2:T90.sandy-tmp	
 R28.sandy-tmp	participates_in Arg1:T49.kevin-tmp Arg2:T90.sandy-tmp	
-R33.sandy-tmp	VERIFY_other_relation Arg1:T81.kevin-tmp Arg2:T82.kevin-tmp	
-R36.sandy-tmp	VERIFY_other_relation Arg1:T141.sandy-tmp Arg2:T104.kevin-tmp	
 R37.sandy-tmp	is_part_of Arg1:T141.sandy-tmp Arg2:T143.sandy-tmp	
 R38.sandy-tmp	interacts_with Arg1:T311.kevin-tmp Arg2:T312.kevin-tmp	
 R42.sandy-tmp	is_part_of Arg1:T318.kevin-tmp Arg2:T319.kevin-tmp	
 R43.sandy-tmp	is_part_of Arg1:T318.kevin-tmp Arg2:T320.kevin-tmp	
 R44.sandy-tmp	participates_in Arg1:T322.kevin-tmp Arg2:T321.kevin-tmp	
-R49.sandy-tmp	VERIFY_other_relation Arg1:T344.kevin-tmp Arg2:T345.kevin-tmp	
 R50.sandy-tmp	is_part_of Arg1:T293.kevin-tmp Arg2:T207.sandy-tmp	
 R52.sandy-tmp	is_part_of Arg1:T120.kevin-tmp Arg2:T347.kevin-tmp	
 R53.sandy-tmp	interacts_with Arg1:T220.sandy-tmp Arg2:T124.kevin-tmp	
@@ -845,7 +811,6 @@ R55.sandy-tmp	interacts_with Arg1:T228.sandy-tmp Arg2:T127.kevin-tmp
 R58.sandy-tmp	regulates Arg1:T243.sandy-tmp Arg2:T130.kevin-tmp	
 R61.sandy-tmp	interacts_with Arg1:T262.sandy-tmp Arg2:T136.kevin-tmp	
 R62.sandy-tmp	interacts_with Arg1:T264.sandy-tmp Arg2:T137.kevin-tmp	
-R63.sandy-tmp	VERIFY_other_relation Arg1:T371.kevin-tmp Arg2:T267.sandy-tmp	
 R64.sandy-tmp	participates_in Arg1:T273.sandy-tmp Arg2:T274.sandy-tmp	
 R67.sandy-tmp	is_subclass_of Arg1:T534.kevin-tmp Arg2:T384.kevin-tmp	
 R68.sandy-tmp	is_subclass_of Arg1:T535.kevin-tmp Arg2:T384.kevin-tmp	
@@ -860,13 +825,9 @@ R81.sandy-tmp	interacts_with Arg1:T398.kevin-tmp Arg2:T158.kevin-tmp
 R82.sandy-tmp	interacts_with Arg1:T399.kevin-tmp Arg2:T159.kevin-tmp	
 R83.sandy-tmp	is_part_of Arg1:T343.sandy-tmp Arg2:T404.kevin-tmp	
 R84.sandy-tmp	is_part_of Arg1:T344.sandy-tmp Arg2:T404.kevin-tmp	
-R85.sandy-tmp	VERIFY_other_relation Arg1:T414.kevin-tmp Arg2:T163.kevin-tmp	
 R86.sandy-tmp	regulates Arg1:T374.sandy-tmp Arg2:T426.kevin-tmp	
 R88.sandy-tmp	is_part_of Arg1:T432.kevin-tmp Arg2:T387.sandy-tmp	
-R89.sandy-tmp	VERIFY_other_relation Arg1:T435.kevin-tmp Arg2:T172.kevin-tmp	
 R99.sandy-tmp	participates_in Arg1:T490.kevin-tmp Arg2:T465.sandy-tmp	
-R101.sandy-tmp	VERIFY_other_relation Arg1:T191.kevin-tmp Arg2:T515.kevin-tmp	
-R102.sandy-tmp	VERIFY_other_relation Arg1:T514.kevin-tmp Arg2:T515.kevin-tmp	
 R103.sandy-tmp	regulates Arg1:T519.kevin-tmp Arg2:T495.sandy-tmp	
 R104.sandy-tmp	regulates Arg1:T520.kevin-tmp Arg2:T497.sandy-tmp	
 R108.sandy-tmp	participates_in Arg1:T540.kevin-tmp Arg2:T523.sandy-tmp	
@@ -879,7 +840,6 @@ R116.sandy-tmp	interacts_with Arg1:T234.kevin-tmp Arg2:T227.kevin-tmp
 R118.sandy-tmp	interacts_with Arg1:T234.kevin-tmp Arg2:T228.kevin-tmp	
 R125.sandy-tmp	is_part_of Arg1:T660.sandy-tmp Arg2:T659.sandy-tmp	
 R126.sandy-tmp	is_part_of Arg1:T260.kevin-tmp Arg2:T631.kevin-tmp	
-R127.sandy-tmp	VERIFY_other_relation Arg1:T684.sandy-tmp Arg2:T263.kevin-tmp	
 R128.sandy-tmp	participates_in Arg1:T638.kevin-tmp Arg2:T639.kevin-tmp	
 R129.sandy-tmp	participates_in Arg1:T640.kevin-tmp Arg2:T639.kevin-tmp	
 R134.sandy-tmp	participates_in Arg1:T672.kevin-tmp Arg2:T718.sandy-tmp	
@@ -891,7 +851,6 @@ R140.sandy-tmp	participates_in Arg1:T727.sandy-tmp Arg2:T728.sandy-tmp
 R141.sandy-tmp	participates_in Arg1:T726.sandy-tmp Arg2:T728.sandy-tmp	
 R142.sandy-tmp	regulates Arg1:T748.sandy-tmp Arg2:T747.sandy-tmp	
 R143.sandy-tmp	is_part_of Arg1:T747.sandy-tmp Arg2:T746.sandy-tmp	
-R144.sandy-tmp	VERIFY_other_relation Arg1:T416.kevin-tmp Arg2:T165.kevin-tmp	
 T1	Entity 35225 35233	diabetes
 T2	Entity 34181 34195	diurnal rhythm
 R1	participates_in Arg1:T688.kevin-tmp Arg2:T2	
@@ -968,3 +927,9 @@ R44	interacts_with Arg1:T540.kevin-tmp Arg2:T541.kevin-tmp
 R45	interacts_with Arg1:T550.kevin-tmp Arg2:T553.kevin-tmp	
 R46	interacts_with Arg1:T551.kevin-tmp Arg2:T553.kevin-tmp	
 R47	interacts_with Arg1:T552.kevin-tmp Arg2:T553.kevin-tmp	
+R48	participates_in Arg1:T324.kevin-tmp Arg2:T323.kevin-tmp	
+R49	participates_in Arg1:T237.kevin-tmp Arg2:T239.kevin-tmp	
+R50	participates_in Arg1:T237.kevin-tmp Arg2:T238.kevin-tmp	
+R51	interacts_with Arg1:T235.kevin-tmp Arg2:T227.kevin-tmp	
+R52	interacts_with Arg1:T236.kevin-tmp Arg2:T227.kevin-tmp	
+R54	participates_in Arg1:T268.kevin-tmp Arg2:T269.kevin-tmp	

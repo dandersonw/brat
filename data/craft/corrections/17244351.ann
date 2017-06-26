@@ -1,38 +1,765 @@
-T2.sandy	FIX_TYPE 354 396	small-effect quantitative trait loci (QTL)
-T4.sandy	FIX_TYPE 400 432	collagen induced arthritis (CIA)
-T5.sandy	Entity 503 526	genome linkage analysis
-T10.sandy	FIX_TYPE 989 1001	CIA severity
-T13.sandy	FIX_TYPE 10 23	global genome
-T14.sandy	FIX_TYPE 28 41	transcriptome
-T16.sandy	FIX_TYPE 128 154	collagen-induced arthritis
-T6.sandy	VERIFY_Entity 638 662	gene expression patterns
-T7.sandy	FIX_SPAN_Entity 771 792	genomic region linked
-T8.sandy	FIX_SPAN_Entity 810 826	disease-specific
-T9.sandy	FIX_SPAN_Entity 877 892	strain-specific
-T11.sandy	FIX_SPAN_Entity 954 976	Eight small-effect QTL
-T12.sandy	FIX_SPAN_Entity 1205 1223	8 small-effect QTL
-T15.sandy	FIX_SPAN_Entity 69 124	candidate genes of small-effect quantitative trait loci
-T3.kevin	VERIFY_Entity 457 481	transcriptome approaches
-T5.kevin	VERIFY_Entity 530 540	F2 progeny
-T6.kevin	VERIFY_Entity 548 585	CIA susceptible and resistant strains
-T7.kevin	VERIFY_KeyEntity 600 616	small-effect QTL
-T8.kevin	VERIFY_KeyEntity 686 689	CIA
-T9.kevin	FIX_SPAN_Entity 771 785	genomic region
-T10.kevin	VERIFY_KeyEntity 796 799	CIA
-T11.kevin	FIX_SPAN_Entity 810 841	disease-specific differentially
-T12.kevin	VERIFY_KeyEntity 859 862	CIA
-T13.kevin	FIX_SPAN_Entity 877 907	strain-specific differentially
-T14.kevin	FIX_SPAN_KeyEntity 960 976	small-effect QTL
-T16.kevin	VERIFY_Entity 1059 1110	strain-specific and disease-specific differentially
-T17.kevin	VERIFY_Entity 1128 1131	CIA
-T18.kevin	FIX_SPAN_KeyEntity 1207 1223	small-effect QTL
-T19.kevin	VERIFY_Entity 439 452	global genome
-T22.kevin	FIX_SPAN_Entity 88 124	small-effect quantitative trait loci
-R3.sandy	VERIFY_participates_in Arg1:T11.sandy Arg2:T10.sandy	
-R4.sandy	VERIFY_interacts_with Arg1:T13.sandy Arg2:T15.sandy	
-R5.sandy	VERIFY_interacts_with Arg1:T14.sandy Arg2:T15.sandy	
-R1.kevin	VERIFY_participates_in Arg1:T2.sandy Arg2:T4.sandy	
-R2.kevin	VERIFY_is_subclass_of Arg1:T5.kevin Arg2:T6.kevin	
-R3.kevin	VERIFY_is_part_of Arg1:T9.kevin Arg2:T10.kevin	
-R5.kevin	VERIFY_regulates Arg1:T14.kevin Arg2:T10.sandy	
-R6.kevin	VERIFY_participates_in Arg1:T16.kevin Arg2:T17.kevin	
+T4.kevin-tmp	Entity 503 526	genome linkage analysis
+T5.kevin-tmp	Entity 530 540	F2 progeny
+T7.kevin-tmp	Entity 600 616	small-effect QTL
+T8.kevin-tmp	KeyEntity 686 689	CIA
+T10.kevin-tmp	KeyEntity 796 799	CIA
+T12.kevin-tmp	KeyEntity 859 862	CIA
+T15.kevin-tmp	KeyEntity 989 1001	CIA severity
+T17.kevin-tmp	KeyEntity 1128 1131	CIA
+T19.kevin-tmp	Entity 439 452;471 481	global genome approaches
+T20.kevin-tmp	Entity 10 23;42 52	global genome approaches
+T23.kevin-tmp	KeyEntity 128 154	collagen-induced arthritis
+T24.kevin-tmp	Entity 1411 1436	rheumatoid arthritis (RA)
+T27.kevin-tmp	Entity 1946 1953	HLA-DR4
+T28.kevin-tmp	Entity 1955 1960	PADI4
+T29.kevin-tmp	Entity 1962 1968	PTPN22
+T30.kevin-tmp	Entity 1973 1978	FCRL3
+T32.kevin-tmp	Entity 1997 2004	HLA-DR4
+T33.kevin-tmp	Entity 2127 2138;2142 2144	mouse model RA
+T34.kevin-tmp	Entity 2280 2309	quantitative trait loci (QTL)
+T35.kevin-tmp	KeyEntity 2313 2345	collagen-induced arthritis (CIA)
+T37.kevin-tmp	Entity 2399 2402	QTL
+T38.kevin-tmp	Entity 2404 2408	Cia2
+T39.kevin-tmp	Entity 2446 2458	CIA severity
+T40.kevin-tmp	Entity 2469 2472	QTL
+T43.kevin-tmp	Entity 2529 2547	CIA susceptibility
+T44.kevin-tmp	Entity 3085 3088	QTL
+T45.kevin-tmp	Entity 3117 3129	mouse genome
+T46.kevin-tmp	Entity 3765 3804	Microarray-based global gene expression
+T47.kevin-tmp	Entity 4046 4065	expression patterns
+T48.kevin-tmp	Entity 4073 4102	disease-related cells/tissues
+T51.kevin-tmp	Entity 4259 4268	arthritis
+T54.kevin-tmp	KeyEntity 28597 28629	collagen-induced arthritis (CIA)
+T55.kevin-tmp	Entity 28662 28684	post-immunisation (PI)
+T56.kevin-tmp	Entity 28686 28709	onset of arthritis (OA)
+T57.kevin-tmp	Entity 28714 28736	chronic arthritis (CA)
+T58.kevin-tmp	Entity 28757 28775	naïve control (NC)
+T74.kevin-tmp	Entity 5353 5381	genome-wide linkage analysis
+T78.kevin-tmp	Entity 5470 5494	gene expression patterns
+T84.kevin-tmp	KeyEntity 6223 6226	CIA
+T85.kevin-tmp	Entity 6347 6353	DBA/1J
+T86.kevin-tmp	Entity 6355 6360	FVB/N
+T87.kevin-tmp	Entity 6365 6391	(DBA/1J × FVB/N)F2 progeny
+T92.kevin-tmp	Entity 7015 7037	post-immunisation (PI)
+T93.kevin-tmp	Entity 7039 7062	onset of arthritis (OA)
+T94.kevin-tmp	Entity 7067 7089	chronic arthritis (CA)
+T98.kevin-tmp	Entity 8299 8316	Lymph nodes (LNs)
+T99.kevin-tmp	Entity 8362 8383	total RNA preparation
+T106.kevin-tmp	Entity 10475 10509	QTL controlling CIA susceptibility
+T107.kevin-tmp	Entity 10513 10539	(DBA/1 × FVB/N) F2 progeny
+T109.kevin-tmp	Entity 10596 10600	Cia2
+T110.kevin-tmp	Entity 10699 10703	Cia2
+T111.kevin-tmp	Entity 10794 10810	small-effect QTL
+T116.kevin-tmp	Entity 11089 11117	complement component C5 (Hc)
+T117.kevin-tmp	KeyEntity 11150 11165	CIA development
+T119.kevin-tmp	Entity 11198 11210	C5 deficient
+T122.kevin-tmp	Entity 11317 11333	linkage analysis
+T124.kevin-tmp	Entity 11609 11625	small-effect QTL
+T131.kevin-tmp	Entity 26632 26634	NA
+T132.kevin-tmp	Entity 26636 26638	PI
+T133.kevin-tmp	Entity 26640 26642	OA
+T134.kevin-tmp	Entity 26647 26649	CA
+T136.kevin-tmp	Entity 24954 24970	small-effect QTL
+T138.kevin-tmp	Entity 24932 24947	candidate genes
+T140.kevin-tmp	Entity 25118 25134	small-effect QTL
+T146.kevin-tmp	Entity 25445 25459	knock-out mice
+T149.kevin-tmp	Entity 25657 25667	RA cohorts
+T151.kevin-tmp	Entity 25599 25614	candidate genes
+T153.kevin-tmp	Entity 12440 12467	(DBA/1 × BALB/C) F2 progeny
+T157.kevin-tmp	Entity 12493 12506	chromosome 10
+T158.kevin-tmp	Entity 12551 12577	(DBA/1 × B10.Q) F2 progeny
+T160.kevin-tmp	Entity 12521 12525	Cia8
+T161.kevin-tmp	Entity 12606 12611	Pgia7
+T162.kevin-tmp	Entity 12628 12683	susceptibility to proteoglycan-induced arthritis (PGIA)
+T163.kevin-tmp	Entity 12706 12733	(BALB/C × DBA/2) F2 progeny
+T164.kevin-tmp	Entity 12777 12793	small-effect QTL
+T168.kevin-tmp	Entity 13039 13052	chromosome 21
+T169.kevin-tmp	Entity 13039 13049;13057 13059	chromosome 10
+T172.kevin-tmp	Entity 13764 13810	strain-specific differentially expressed genes
+T176.kevin-tmp	Entity 13929 13931	NC
+T177.kevin-tmp	Entity 13933 13935	PI
+T178.kevin-tmp	Entity 13937 13939	OA
+T179.kevin-tmp	Entity 13944 13946	CA
+T180.kevin-tmp	Entity 14732 14745	CIA induction
+T184.kevin-tmp	KeyEntity 14966 14969	CIA
+T185.kevin-tmp	Entity 15028 15030	PI
+T186.kevin-tmp	Entity 15032 15034	OA
+T187.kevin-tmp	Entity 15039 15041	CA
+T193.kevin-tmp	Entity 15793 15816	gene expression pattern
+T194.kevin-tmp	KeyEntity 15824 15827	CIA
+T195.kevin-tmp	Entity 15842 15871	hierarchical cluster analysis
+T203.kevin-tmp	Entity 16435 16450	immune response
+T204.kevin-tmp	Entity 16452 16470	organelle membrane
+T208.kevin-tmp	Entity 16612 16634	intercellular junction
+T211.kevin-tmp	Entity 16807 16831	lymphocyte proliferation
+T212.kevin-tmp	Entity 16833 16850	T cell activation
+T213.kevin-tmp	Entity 16852 16867	protein binding
+T214.kevin-tmp	Entity 16883 16903	notch signal pathway
+T219.kevin-tmp	KeyEntity 17244 17264	CIA small-effect QTL
+T221.kevin-tmp	Entity 18130 18136	hspa1a
+T222.kevin-tmp	Entity 18141 18146	Oas1a
+T225.kevin-tmp	Entity 18192 18197	Oas1a
+T224.kevin-tmp	Entity 18501 18507	H2-Q10
+T228.kevin-tmp	Entity 18509 18515	Mapk14
+T229.kevin-tmp	Entity 18517 18522	Pscd1
+T230.kevin-tmp	Entity 18524 18529	Kpnb1
+T231.kevin-tmp	Entity 18534 18538	Wdr1
+T232.kevin-tmp	Entity 18564 18570	H2-Q10
+T234.kevin-tmp	Entity 18615 18620	DBA/1
+T236.kevin-tmp	Entity 19029 19035	Mapk14
+T237.kevin-tmp	Entity 19037 19045	Mapk8ip3
+T238.kevin-tmp	Entity 19047 19053	Stat5a
+T239.kevin-tmp	Entity 19058 19063	Gna12
+T241.kevin-tmp	Entity 19160 19170	F2 progeny
+T242.kevin-tmp	Entity 19172 19188	Small-effect QTL
+T243.kevin-tmp	Entity 19412 19428	small-effect QTL
+T245.kevin-tmp	Entity 19498 19514	linkage analysis
+T246.kevin-tmp	Entity 19566 19582	C5+/+ F2 progeny
+T247.kevin-tmp	Entity 19591 19607	C5+/- F2 progeny
+T248.kevin-tmp	Entity 19552 19561	F progeny
+T251.kevin-tmp	Entity 19872 19889	syntenic analysis
+T253.kevin-tmp	Entity 19979 19982	QTL
+T254.kevin-tmp	Entity 20045 20058	DBA/1 alleles
+T255.kevin-tmp	Entity 20067 20094	arthritis-enhancing alleles
+T257.kevin-tmp	Entity 20200 20220	susceptibility genes
+T258.kevin-tmp	Entity 20241 20257	resistant strain
+T261.kevin-tmp	Entity 20432 20437	Cia27
+T262.kevin-tmp	Entity 20441 20493	QTL controlling IgG2a antibody levels to collagen II
+T263.kevin-tmp	Entity 20526 20529	QTL
+T264.kevin-tmp	Entity 20611 20623	CIA severity
+T268.kevin-tmp	Entity 20697 20710	chromosome 16
+T269.kevin-tmp	Entity 20725 20728	Lp1
+T270.kevin-tmp	Entity 20745 20769	lymphocyte proliferation
+T272.kevin-tmp	Entity 20829 20842	chromosome 17
+T274.kevin-tmp	Entity 20961 20973	CIA severity
+T276.kevin-tmp	Entity 20931 20947	small-effect QTL
+T279.kevin-tmp	Entity 23968 23993	potential candidate genes
+T280.kevin-tmp	Entity 24125 24147	false positive results
+T286.kevin-tmp	Entity 22823 22839	small-effect QTL
+T287.kevin-tmp	Entity 22859 22883	gene expression patterns
+T288.kevin-tmp	KeyEntity 22891 22894	CIA
+T289.kevin-tmp	Entity 23190 23196	Mapk14
+T291.kevin-tmp	Entity 23243 23292	p38 mitogen-activated protein kinase (MAPK) alpha
+T293.kevin-tmp	Entity 23361 23383	tumour necrosis factor
+T294.kevin-tmp	Entity 23388 23401	interleukin-1
+T297.kevin-tmp	Entity 23479 23487	p38 MAPK
+T299.kevin-tmp	Entity 23543 23549	Stat5a
+T301.kevin-tmp	Entity 23609 23629	lymphoid development
+T302.kevin-tmp	Entity 23609 23617;23634 23649	lymphoid differentiation
+T303.kevin-tmp	Entity 23656 23677	Stat5a-deficient mice
+T306.kevin-tmp	Entity 23764 23770	Stat5a
+T308.kevin-tmp	Entity 23801 23810	tolerance
+T311.kevin-tmp	KeyEntity 21233 21236	CIA
+T314.kevin-tmp	Entity 21311 21322;21339 21356	genetically resistant strains
+T324.kevin-tmp	Entity 22029 22051	GO term classification
+T326.kevin-tmp	Entity 22094 22118	lymphocyte proliferation
+T327.kevin-tmp	Entity 22094 22104;22123 22133	lymphocyte activation
+T1.kevin-tmp	Entity 354 396	small-effect quantitative trait loci (QTL)
+T2.kevin-tmp	KeyEntity 400 432	collagen induced arthritis (CIA)
+T3.kevin-tmp	Entity 457 481	transcriptome approaches
+T9.kevin-tmp	Entity 771 785	genomic region
+T11.kevin-tmp	FIX_SPAN_Entity 810 841	disease-specific differentially
+T14.kevin-tmp	Entity 960 976	small-effect QTL
+T18.kevin-tmp	Entity 1207 1223	small-effect QTL
+T26.kevin-tmp	Entity 1559 1561	RA
+T36.kevin-tmp	Entity 2386 2388	RA
+T41.kevin-tmp	Entity 5935 5940;5951 5955	DBA/1 mice
+T42.kevin-tmp	Entity 5945 5955	FVB/N mice
+T53.kevin-tmp	Entity 28577 28589	DBA/1 strain
+T60.kevin-tmp	Entity 28047 28052;28063 28070	DBA/1 strains
+T61.kevin-tmp	Entity 28057 28070	FVB/N strains
+T62.kevin-tmp	KeyEntity 28103 28106	CIA
+T64.kevin-tmp	Entity 28250 28274	naive control (NC) phase
+T65.kevin-tmp	Entity 28289 28317	post-immunisation (PI) phase
+T66.kevin-tmp	Entity 28336 28365	onset of arthritis (OA) phase
+T67.kevin-tmp	Entity 28386 28414	chronic arthritis (CA) phase
+T76.kevin-tmp	Entity 5507 5512;5523 5530	DBA/1 strains
+T77.kevin-tmp	Entity 5517 5530	FVB/N strains
+T80.kevin-tmp	FIX_SPAN_Entity 5702 5733	disease-specific differentially
+T81.kevin-tmp	KeyEntity 5751 5754	CIA
+T82.kevin-tmp	FIX_SPAN_Entity 5769 5799	strain-specific differentially
+T83.kevin-tmp	KeyEntity 5850 5853	CIA
+T88.kevin-tmp	Entity 6828 6833;6845 6849	FVB/N mice
+T89.kevin-tmp	Entity 6838 6849	DBA/1J mice
+T95.kevin-tmp	Entity 7105 7113	NC group
+T96.kevin-tmp	Entity 7124 7142	non-immunised mice
+T97.kevin-tmp	Entity 7883 7905	microsatellite markers
+T103.kevin-tmp	Entity 9703 9731	Hierarchical gene clustering
+T104.kevin-tmp	KeyEntity 9809 9812	CIA
+T118.kevin-tmp	Entity 11182 11194	FVB/N strain
+T128.kevin-tmp	Entity 26539 26544;26555 26562	DBA/1 strains
+T129.kevin-tmp	Entity 26549 26562	FVB/N strains
+T130.kevin-tmp	KeyEntity 26627 26630	CIA
+T137.kevin-tmp	Entity 24982 25000	CIA susceptibility
+T144.kevin-tmp	Entity 25288 25293;25304 25311	mouse studies
+T145.kevin-tmp	Entity 25298 25311	human studies
+T156.kevin-tmp	Entity 12474 12481	Locus 5
+T159.kevin-tmp	Entity 12584 12591	Locus 6
+T167.kevin-tmp	Entity 12968 12981	chromosome 12
+T170.kevin-tmp	Entity 13103 13116	chromosome 17
+T171.kevin-tmp	Entity 13163 13175	chromosome 3
+T173.kevin-tmp	Entity 13868 13873;13884 13891	DBA/1 strains
+T174.kevin-tmp	Entity 13878 13891	FVB/N strains
+T188.kevin-tmp	Entity 15066 15074	NC group
+T198.kevin-tmp	Entity 16057 16062	genes
+T199.kevin-tmp	FIX_SPAN_Entity 16073 16107	upregulated after induction of CIA
+T200.kevin-tmp	Entity 16161 16172	onset phase
+T260.kevin-tmp	Entity 20382 20389	Locus 2
+T265.kevin-tmp	Entity 20577 20581	gene
+T266.kevin-tmp	FIX_SPAN_Entity 20627 20679	controlling the IgG2a antibody levels to collagen II
+T267.kevin-tmp	Entity 20686 20693	Locus 7
+T271.kevin-tmp	Entity 20819 20825	loci 8
+T275.kevin-tmp	Entity 20915 20919	gene
+T283.kevin-tmp	VERIFY_Entity 24299 24306	locus 4
+T284.kevin-tmp	VERIFY_Entity 24329 24340	low P value
+T290.kevin-tmp	FIX_SPAN_Entity 23200 23226	candidate gene for locus 8
+T300.kevin-tmp	VERIFY_Entity 23553 23578	candidate gene for loci 6
+T305.kevin-tmp	FIX_SPAN_Entity 23728 23762	development of autoimmune diseases
+T307.kevin-tmp	FIX_SPAN_Entity 23819 23876	maintenance of the CD4+CD25+ regulatory T cell population
+T318.kevin-tmp	FIX_SPAN_Entity 21595 21622	biological responses in LNs
+T320.kevin-tmp	VERIFY_Entity 21628 21636	stronger
+T325.kevin-tmp	Entity 22072 22077	genes
+T329.kevin-tmp	FIX_SPAN_Entity 22436 22467	upregulated in the DBA/1 strain
+T330.kevin-tmp	Entity 22394 22399	genes
+T333.kevin-tmp	Entity 22602 22614	DBA/1 strain
+T1.sandy-tmp	FIX_SPAN_Entity 354 390	small-effect quantitative trait loci
+T2.sandy-tmp	FIX_SPAN_Entity 392 395	QTL
+T3.sandy-tmp	FIX_SPAN_KeyEntity 400 426	collagen induced arthritis
+T4.sandy-tmp	FIX_SPAN_KeyEntity 428 431	CIA
+T6.sandy-tmp	Entity 638 662	gene expression patterns
+T28.sandy-tmp	KeyEntity 5070 5073	CIA
+T30.sandy-tmp	Entity 5278 5301;5324 5331	CIA susceptible (DBA/1) strains
+T32.sandy-tmp	KeyEntity 5559 5562	CIA
+T37.sandy-tmp	KeyEntity 6687 6690	CIA
+T38.sandy-tmp	KeyEntity 6983 6986	CIA
+T39.sandy-tmp	KeyEntity 8098 8101	CIA
+T41.sandy-tmp	KeyEntity 10376 10379	CIA
+T43.sandy-tmp	KeyEntity 10834 10837	CIA
+T45.sandy-tmp	KeyEntity 11513 11525	CIA severity
+T46.sandy-tmp	KeyEntity 12433 12436	CIA
+T47.sandy-tmp	KeyEntity 13914 13917	CIA
+T48.sandy-tmp	KeyEntity 14208 14211	CIA
+T50.sandy-tmp	KeyEntity 14890 14893	CIA
+T52.sandy-tmp	KeyEntity 15467 15470	CIA
+T53.sandy-tmp	KeyEntity 15725 15728	CIA
+T55.sandy-tmp	KeyEntity 16010 16013	CIA
+T57.sandy-tmp	KeyEntity 16392 16395	CIA
+T61.sandy-tmp	KeyEntity 18486 18489	CIA
+T62.sandy-tmp	KeyEntity 18650 18653	CIA
+T63.sandy-tmp	KeyEntity 19469 19472	CIA
+T65.sandy-tmp	KeyEntity 20895 20898	CIA
+T67.sandy-tmp	KeyEntity 21096 21099	CIA
+T69.sandy-tmp	KeyEntity 21385 21388	CIA
+T71.sandy-tmp	KeyEntity 22266 22269	CIA
+T72.sandy-tmp	KeyEntity 22503 22506	CIA
+T75.sandy-tmp	KeyEntity 23457 23460	CIA
+T77.sandy-tmp	KeyEntity 25500 25503	CIA
+T83.sandy-tmp	KeyEntity 27072 27075	CIA
+T84.sandy-tmp	KeyEntity 27608 27611	CIA
+T85.sandy-tmp	Entity 27933 27977;27992 27999	collagen-induced arthritis (CIA) susceptible strains
+T86.sandy-tmp	Entity 27933 27965;27982 27999	collagen-induced arthritis (CIA) resistant strains
+T88.sandy-tmp	KeyEntity 28218 28221	CIA
+T89.sandy-tmp	KeyEntity 28523 28526	CIA
+T91.sandy-tmp	KeyEntity 28926 28929	CIA
+T92.sandy-tmp	KeyEntity 29590 29593	CIA
+T94.sandy-tmp	Entity 1447 1488	complex multifactorial autoimmune disease
+T98.sandy-tmp	Entity 1830 1832	RA
+T100.sandy-tmp	Entity 1914 1916	RA
+T106.sandy-tmp	Entity 2040 2042	RA
+T107.sandy-tmp	Entity 2058 2078	susceptibility genes
+T116.sandy-tmp	Entity 2607 2627	susceptibility genes
+T117.sandy-tmp	Entity 2972 2992	susceptibility genes
+T120.sandy-tmp	Entity 3146 3149	QTL
+T121.sandy-tmp	Entity 3227 3258	quantitative trait genes (QTGs)
+T122.sandy-tmp	Entity 3266 3278	mouse genome
+T123.sandy-tmp	Entity 3328 3332	QTGs
+T124.sandy-tmp	Entity 3370 3390	causal polymorphisms
+T125.sandy-tmp	Entity 3398 3419	protein-coding region
+T126.sandy-tmp	Entity 3440 3465	protein structure changes
+T127.sandy-tmp	Entity 3469 3487	protein deficiency
+T128.sandy-tmp	Entity 3526 3542	small-effect QTL
+T129.sandy-tmp	Entity 3630 3643	polymorphisms
+T130.sandy-tmp	Entity 3655 3670	gene expression
+T134.sandy-tmp	Entity 4199 4201	RA
+T139.sandy-tmp	Entity 4461 4463	RA
+T140.sandy-tmp	Entity 4479 4489	Chemokines
+T141.sandy-tmp	Entity 4494 4512	adhesion molecules
+T142.sandy-tmp	Entity 4537 4542	joint
+T143.sandy-tmp	Entity 4570 4579	arthritis
+T144.sandy-tmp	Entity 4630 4651	cartilage destruction
+T145.sandy-tmp	Entity 4656 4668	bone erosion
+T146.sandy-tmp	Entity 4720 4729	arthritis
+T147.sandy-tmp	Entity 4750 4752	RA
+T149.sandy-tmp	Entity 4861 4882	genetic polymorphisms
+T150.sandy-tmp	Entity 4894 4909	gene expression
+T151.sandy-tmp	Entity 4988 5000	polymorphism
+T152.sandy-tmp	Entity 5012 5031	regulatory elements
+T153.sandy-tmp	Entity 5050 5066	small-effect QTL
+T154.sandy-tmp	Entity 5089 5114	potential candidate genes
+T29.sandy-tmp	Entity 5144 5171;5186 5193	CIA genetically susceptible strains
+T155.sandy-tmp	Entity 5144 5159;5176 5193	CIA genetically resistant strains
+T158.sandy-tmp	Entity 5246 5252	genome
+T31.sandy-tmp	Entity 5278 5281;5306 5331	CIA resistant (FVB/N) strains
+T160.sandy-tmp	Entity 5408 5424	small-effect QTL
+T166.sandy-tmp	Entity 5568 5593	potential candidate genes
+T35.sandy-tmp	Entity 5888 5900	immunisation
+T168.sandy-tmp	Entity 5919 5928	arthritis
+T174.sandy-tmp	Entity 6692 6713	Arthritis development
+T176.sandy-tmp	Entity 6614 6626	immunisation
+T177.sandy-tmp	Entity 6580 6589	arthritis
+T181.sandy-tmp	Entity 6995 7013	naive control (NC)
+T186.sandy-tmp	Entity 7203 7205	PI
+T187.sandy-tmp	Entity 7244 7256	immunisation
+T188.sandy-tmp	Entity 7274 7276	OA
+T189.sandy-tmp	Entity 7315 7327	immunisation
+T190.sandy-tmp	Entity 7335 7359	FVB/N non-arthritic mice
+T192.sandy-tmp	Entity 7402 7411	arthritis
+T193.sandy-tmp	Entity 7434 7446	immunisation
+T194.sandy-tmp	Entity 7479 7491	immunisation
+T195.sandy-tmp	Entity 7509 7511	CA
+T196.sandy-tmp	Entity 7550 7562	immunisation
+T198.sandy-tmp	Entity 7605 7615	DBA/1 mice
+T199.sandy-tmp	Entity 7635 7644	arthritis
+T201.sandy-tmp	Entity 7716 7732	Linkage analysis
+T202.sandy-tmp	Entity 7776 7789	genome screen
+T206.sandy-tmp	Entity 10449 10462	genome screen
+T209.sandy-tmp	Entity 12327 12339	mouse genome
+T210.sandy-tmp	Entity 12801 12813	human genome
+T214.sandy-tmp	Entity 7999 8015	linkage analyses
+T215.sandy-tmp	Entity 8103 8121	arthritis severity
+T216.sandy-tmp	Entity 8161 8177	small-effect QTL
+T217.sandy-tmp	Entity 8273 8297	microarray hybridisation
+T219.sandy-tmp	Entity 8330 8347	immunisation site
+T221.sandy-tmp	Entity 8389 8398	total RNA
+T222.sandy-tmp	Entity 8422 8440	tissue homogenates
+T40.sandy-tmp	Entity 10356 10372	Small-effect QTL
+T224.sandy-tmp	Entity 10383 10409	(DBA/1 × FVB/N) F2 progeny
+T226.sandy-tmp	Entity 10562 10580	arthritis severity
+T227.sandy-tmp	Entity 10591 10594	QTL
+T231.sandy-tmp	Entity 10939 10955	small-effect QTL
+T232.sandy-tmp	Entity 11083 11087	Cia2
+T236.sandy-tmp	Entity 11225 11241	small-effect QTL
+T237.sandy-tmp	Entity 11261 11265	Cia2
+T240.sandy-tmp	Entity 11380 11390	F2 progeny
+T241.sandy-tmp	Entity 11406 11422	C5+/+ F2 progeny
+T242.sandy-tmp	Entity 11437 11457	133 C5+/- F2 progeny
+T244.sandy-tmp	Entity 12257 12266	arthritis
+T246.sandy-tmp	Entity 11763 11768	DBA/1
+T247.sandy-tmp	Entity 11776 11797	susceptibility allele
+T248.sandy-tmp	Entity 11813 11818	FVB/N
+T249.sandy-tmp	Entity 11826 11847	susceptibility allele
+T250.sandy-tmp	Entity 12024 12042	false negative QTL
+T251.sandy-tmp	Entity 12072 12090	false positive QTL
+T253.sandy-tmp	Entity 12273 12289	small-effect QTL
+T254.sandy-tmp	Entity 12306 12319	arthritis QTL
+T255.sandy-tmp	Entity 12390 12395	Cia13
+T256.sandy-tmp	Entity 12400 12405	Cia14
+T264.sandy-tmp	Entity 12744 12768	syntenic genomic regions
+T266.sandy-tmp	Entity 12849 12851	RA
+T267.sandy-tmp	Entity 12863 12878	genomic regions
+T268.sandy-tmp	Entity 12879 12884	22q11
+T269.sandy-tmp	Entity 12889 12898	12p13-q24
+T270.sandy-tmp	Entity 12902 12915	chromosome 22
+T271.sandy-tmp	Entity 12902 12912;12920 12922	chromosome 12
+T273.sandy-tmp	Entity 13012 13022	21q22-qter
+T274.sandy-tmp	Entity 13027 13035	10q22-23
+T279.sandy-tmp	Entity 13213 13259	Strain-specific differentially expressed genes
+T293.sandy-tmp	Entity 15555 15557	PI
+T294.sandy-tmp	Entity 15563 15565	OA
+T295.sandy-tmp	Entity 15567 15569	PI
+T296.sandy-tmp	Entity 15575 15577	CA
+T297.sandy-tmp	Entity 15582 15584	OA
+T298.sandy-tmp	Entity 15590 15592	CA
+T299.sandy-tmp	Entity 15732 15742	DBA/1 mice
+T300.sandy-tmp	Entity 11642 11655	chromosomes 5
+T301.sandy-tmp	Entity 11642 11653;11657 11658	chromosomes 6
+T302.sandy-tmp	Entity 11642 11653;11663 11665	chromosomes 10
+T303.sandy-tmp	Entity 11642 11653;11660 11661	chromosomes 7
+T304.sandy-tmp	Entity 11642 11653;11667 11669	chromosomes 11
+T305.sandy-tmp	Entity 11642 11653;11671 11673	chromosomes 16
+T306.sandy-tmp	Entity 11642 11653;11679 11681	chromosomes 17
+T307.sandy-tmp	Entity 13956 13987	naive mice without immunisation
+T308.sandy-tmp	Entity 14070 14082	immunisation
+T309.sandy-tmp	Entity 14187 14197	DBA/1 mice
+T310.sandy-tmp	Entity 14224 14254	differentially expressed genes
+T311.sandy-tmp	Entity 14304 14309;14322 14328	onset phases
+T312.sandy-tmp	Entity 14314 14328	chronic phases
+T313.sandy-tmp	Entity 14366 14396	differentially expressed genes
+T314.sandy-tmp	Entity 14665 14705	strain-specific differentially expressed
+T315.sandy-tmp	Entity 14747 14749	PI
+T316.sandy-tmp	Entity 14751 14753	OA
+T317.sandy-tmp	Entity 14758 14760	CA
+T318.sandy-tmp	Entity 14774 14821	Disease-specific differentially expressed genes
+T319.sandy-tmp	Entity 14839 14886	disease-specific differentially expressed genes
+T320.sandy-tmp	Entity 14955 14958	LNs
+T321.sandy-tmp	Entity 14977 14995	susceptible strain
+T322.sandy-tmp	Entity 15092 15104	immunisation
+T323.sandy-tmp	Entity 15209 15220	onset phase
+T324.sandy-tmp	Entity 15289 15302	chronic phase
+T325.sandy-tmp	Entity 15640 15687	disease-specific differentially expressed genes
+T329.sandy-tmp	Entity 15970 16002	distinct gene expression pattern
+T335.sandy-tmp	Entity 16475 16495	extracellular region
+T336.sandy-tmp	Entity 16475 16488;16500 16505	extracellular space
+T337.sandy-tmp	Entity 16571 16579	PI phase
+T339.sandy-tmp	Entity 16752 16765	chronic phase
+T344.sandy-tmp	Entity 16957 16965	PI phase
+T345.sandy-tmp	Entity 17017 17025	OA phase
+T348.sandy-tmp	Entity 17205 17235	candidate susceptibility genes
+T346.sandy-tmp	Entity 17144 17159	Candidate genes
+T349.sandy-tmp	Entity 17290 17336	strain-specific differentially expressed genes
+T350.sandy-tmp	Entity 17354 17401	disease-specific differentially expressed genes
+T351.sandy-tmp	Entity 17556 17572	small-effect QTL
+T352.sandy-tmp	Entity 17607 17618;17637 17639	chromosomes 16
+T353.sandy-tmp	Entity 17607 17618;17633 17635	chromosomes 11
+T354.sandy-tmp	Entity 17607 17618;17626 17627	chromosomes 7
+T355.sandy-tmp	Entity 17607 17618;17623 17624	chromosomes 6
+T356.sandy-tmp	Entity 17607 17618;17620 17621	chromosomes 5
+T357.sandy-tmp	Entity 17607 17618;17629 17631	chromosomes 10
+T358.sandy-tmp	Entity 17607 17618;17644 17646	chromosomes 17
+T359.sandy-tmp	Entity 17682 17685	QTL
+T360.sandy-tmp	Entity 17857 17860	QTL
+T361.sandy-tmp	Entity 18003 18017	candidate gene
+T362.sandy-tmp	Entity 18077 18092	candidate genes
+T365.sandy-tmp	KeyEntity 18184 18187	CIA
+T366.sandy-tmp	Entity 18226 18234	PI phase
+T367.sandy-tmp	Entity 18349 18355	hspa1a
+T368.sandy-tmp	Entity 18418 18426	NC phase
+T376.sandy-tmp	Entity 18630 18635	FVB/N
+T377.sandy-tmp	Entity 18720 18725	DBA/1
+T378.sandy-tmp	Entity 18764 18766	NC
+T379.sandy-tmp	Entity 18768 18770	PI
+T380.sandy-tmp	Entity 18775 18777	OA
+T381.sandy-tmp	Entity 18809 18822	chronic phase
+T382.sandy-tmp	Entity 18824 18855	GO term classification analysis
+T383.sandy-tmp	Entity 18874 18892	functional cluster
+T386.sandy-tmp	Entity 18896 18918	protein kinase cascade
+T387.sandy-tmp	Entity 18956 18971	candidate genes
+T388.sandy-tmp	Entity 18978 18996	functional cluster
+T393.sandy-tmp	Entity 19137 19153	small-effect QTL
+T395.sandy-tmp	Entity 17689 17699	F2 progeny
+T396.sandy-tmp	Entity 7983 7993	F2 progeny
+T397.sandy-tmp	Entity 5260 5270	F2 progeny
+T398.sandy-tmp	Entity 2551 2561	F2 progeny
+T406.sandy-tmp	Entity 19627 19643	small-effect QTL
+T407.sandy-tmp	Entity 19708 19711	QTL
+T408.sandy-tmp	Entity 19743 19746	QTL
+T409.sandy-tmp	Entity 19792 19805	arthritis QTL
+T413.sandy-tmp	Entity 19997 19999	RA
+T414.sandy-tmp	Entity 20024 20040	small-effect QTL
+T417.sandy-tmp	Entity 20106 20118	FVBN alleles
+T418.sandy-tmp	Entity 20127 20154	arthritis-enhancing alleles
+T419.sandy-tmp	Entity 20174 20177	QTL
+T422.sandy-tmp	Entity 20314 20335	arthritis-related QTL
+T423.sandy-tmp	Entity 20365 20375	F2 progeny
+T434.sandy-tmp	Entity 20852 20872	lymphocyte adherence
+T436.sandy-tmp	Entity 20994 21022	arthritis-related phenotypes
+T437.sandy-tmp	Entity 21073 21088	gene expression
+T438.sandy-tmp	Entity 21119 21125	joints
+T439.sandy-tmp	Entity 21133 21146	target tissue
+T440.sandy-tmp	Entity 21203 21218	gene expression
+T441.sandy-tmp	Entity 21222 21225	LNs
+T442.sandy-tmp	Entity 21271 21295	gene expression patterns
+T443.sandy-tmp	Entity 21299 21302	LNs
+T444.sandy-tmp	Entity 21311 21334;21349 21356	genetically susceptible strains
+T446.sandy-tmp	Entity 21407 21437	differentially regulated genes
+T449.sandy-tmp	Entity 21619 21622	LNs
+T450.sandy-tmp	Entity 21644 21646;21654 21659	PI phase
+T452.sandy-tmp	Entity 21673 21675	OA
+T453.sandy-tmp	Entity 21756 21767;21785 21791	susceptible strain
+T454.sandy-tmp	Entity 21775 21791	resistant strain
+T455.sandy-tmp	Entity 21913 21918	DBA/1
+T456.sandy-tmp	Entity 21927 21932	FVB/N
+T461.sandy-tmp	Entity 22151 22162	lymphocytes
+T464.sandy-tmp	Entity 22361 22373	immunisation
+T471.sandy-tmp	Entity 22786 22801	candidate genes
+T475.sandy-tmp	Entity 22927 22942	candidate genes
+T476.sandy-tmp	Entity 22959 22962	QTL
+T477.sandy-tmp	Entity 22988 23005	QTG polymorphisms
+T478.sandy-tmp	Entity 23013 23033	susceptibility genes
+T479.sandy-tmp	Entity 23051 23054	QTL
+T480.sandy-tmp	Entity 23100 23115	gene expression
+T481.sandy-tmp	Entity 24511 24526	gene expression
+T482.sandy-tmp	Entity 28019 28034	gene expression
+T486.sandy-tmp	Entity 29559 29582	gene expression pattern
+T487.sandy-tmp	Entity 29941 29966	gene expression profiling
+T488.sandy-tmp	Entity 30175 30200	gene expression profiling
+T489.sandy-tmp	Entity 30395 30411	small-effect QTL
+T490.sandy-tmp	Entity 30627 30659	small-effect QTL candidate genes
+T491.sandy-tmp	Entity 23179 23188	arthritis
+T494.sandy-tmp	Entity 23200 23214	candidate gene
+T495.sandy-tmp	Entity 23322 23351	arthritis-essential cytokines
+T501.sandy-tmp	Entity 23534 23536	RA
+T507.sandy-tmp	Entity 23743 23762	autoimmune diseases
+T510.sandy-tmp	Entity 23838 23876	CD4+CD25+ regulatory T cell population
+T511.sandy-tmp	Entity 23936 23952	small-effect QTL
+T514.sandy-tmp	Entity 24188 24204	small-effect QTL
+T516.sandy-tmp	Entity 24393 24406	arthritis QTL
+T518.sandy-tmp	Entity 24571 24601	differentially expressed genes
+T519.sandy-tmp	Entity 24681 24698	allele difference
+T520.sandy-tmp	Entity 24857 24872	candidate genes
+T521.sandy-tmp	Entity 24877 24893	small-effect QTL
+T526.sandy-tmp	Entity 25209 25222	arthritis QTL
+T527.sandy-tmp	Entity 25261 25276	candidate genes
+T528.sandy-tmp	Entity 25313 25328	Candidate genes
+T532.sandy-tmp	Entity 25571 25573	RA
+T534.sandy-tmp	Entity 25621 25653	case-control association studies
+T536.sandy-tmp	Entity 26500 26530	genes differentially expressed
+T539.sandy-tmp	Entity 26697 26727	differentially expressed genes
+T540.sandy-tmp	Entity 27004 27034	genes differentially expressed
+T541.sandy-tmp	Entity 27038 27044	joints
+T543.sandy-tmp	Entity 27126 27128	PI
+T545.sandy-tmp	Entity 27130 27132	OA
+T546.sandy-tmp	Entity 27137 27139	CA
+T547.sandy-tmp	Entity 27145 27147	NA
+T548.sandy-tmp	Entity 27518 27558	strain-specific differentially expressed
+T551.sandy-tmp	Entity 27894 27924	Differentially expressed genes
+T552.sandy-tmp	FIX_SPAN_Entity 28250 28268	naive control (NC)
+T553.sandy-tmp	FIX_SPAN_Entity 28289 28311	post-immunisation (PI)
+T554.sandy-tmp	FIX_SPAN_Entity 28336 28359	onset of arthritis (OA)
+T555.sandy-tmp	FIX_SPAN_Entity 28386 28408	chronic arthritis (CA)
+T556.sandy-tmp	Entity 28457 28499	overlapping genes differentially expressed
+T557.sandy-tmp	Entity 28539 28569	Differentially expressed genes
+T559.sandy-tmp	Entity 28637 28660	experimental conditions
+T564.sandy-tmp	Entity 28790 28820	differentially expressed genes
+T566.sandy-tmp	Entity 28864 28906	overlapping genes differentially expressed
+T567.sandy-tmp	Entity 28935 28958	Hierarchical clustering
+T568.sandy-tmp	Entity 28970 29000	differentially expressed genes
+T569.sandy-tmp	Entity 29079 29106	hierarchical tree structure
+T572.sandy-tmp	Entity 29599 29618	expression patterns
+T573.sandy-tmp	Entity 29626 29638	gene cluster
+T574.sandy-tmp	Entity 29726 29756	functional clustering analysis
+T575.sandy-tmp	Entity 29821 29842	chromosomal locations
+T576.sandy-tmp	Entity 29850 29866	small-effect QTL
+T577.sandy-tmp	Entity 30043 30046	QTL
+T578.sandy-tmp	Entity 30113 30116	QTL
+R55.kevin-tmp	regulates Arg1:T299.kevin-tmp Arg2:T301.kevin-tmp	
+R56.kevin-tmp	regulates Arg1:T299.kevin-tmp Arg2:T302.kevin-tmp	
+R58.kevin-tmp	participates_in Arg1:T306.kevin-tmp Arg2:T308.kevin-tmp	
+R1.kevin-tmp	participates_in Arg1:T1.kevin-tmp Arg2:T2.kevin-tmp	
+R3.kevin-tmp	is_part_of Arg1:T9.kevin-tmp Arg2:T10.kevin-tmp	
+R4.kevin-tmp	VERIFY_other_relation Arg1:T11.kevin-tmp Arg2:T12.kevin-tmp	
+R5.kevin-tmp	regulates Arg1:T14.kevin-tmp Arg2:T15.kevin-tmp	
+R9.kevin-tmp	is_part_of Arg1:T44.kevin-tmp Arg2:T45.kevin-tmp	
+R10.kevin-tmp	is_part_of Arg1:T78.kevin-tmp Arg2:T76.kevin-tmp	
+R11.kevin-tmp	is_part_of Arg1:T78.kevin-tmp Arg2:T77.kevin-tmp	
+R12.kevin-tmp	VERIFY_other_relation Arg1:T80.kevin-tmp Arg2:T81.kevin-tmp	
+R13.kevin-tmp	VERIFY_other_relation Arg1:T82.kevin-tmp Arg2:T83.kevin-tmp	
+R18.kevin-tmp	is_part_of Arg1:T96.kevin-tmp Arg2:T95.kevin-tmp	
+R19.kevin-tmp	is_part_of Arg1:T106.kevin-tmp Arg2:T107.kevin-tmp	
+R21.kevin-tmp	VERIFY_other_relation Arg1:T119.kevin-tmp Arg2:T118.kevin-tmp	
+R23.kevin-tmp	regulates Arg1:T136.kevin-tmp Arg2:T137.kevin-tmp	
+R24.kevin-tmp	VERIFY_other_relation Arg1:T136.kevin-tmp Arg2:T138.kevin-tmp	
+R26.kevin-tmp	is_part_of Arg1:T156.kevin-tmp Arg2:T157.kevin-tmp	
+R27.kevin-tmp	regulates Arg1:T159.kevin-tmp Arg2:T162.kevin-tmp	
+R33.kevin-tmp	is_part_of Arg1:T193.kevin-tmp Arg2:T194.kevin-tmp	
+R34.kevin-tmp	VERIFY_other_relation Arg1:T199.kevin-tmp Arg2:T198.kevin-tmp	
+R36.kevin-tmp	VERIFY_other_relation Arg1:T255.kevin-tmp Arg2:T254.kevin-tmp	
+R37.kevin-tmp	VERIFY_other_relation Arg1:T262.kevin-tmp Arg2:T261.kevin-tmp	
+R38.kevin-tmp	regulates Arg1:T265.kevin-tmp Arg2:T264.kevin-tmp	
+R39.kevin-tmp	VERIFY_other_relation Arg1:T266.kevin-tmp Arg2:T265.kevin-tmp	
+R40.kevin-tmp	is_part_of Arg1:T265.kevin-tmp Arg2:T263.kevin-tmp	
+R41.kevin-tmp	is_part_of Arg1:T267.kevin-tmp Arg2:T268.kevin-tmp	
+R42.kevin-tmp	regulates Arg1:T267.kevin-tmp Arg2:T270.kevin-tmp	
+R43.kevin-tmp	is_part_of Arg1:T271.kevin-tmp Arg2:T272.kevin-tmp	
+R45.kevin-tmp	regulates Arg1:T275.kevin-tmp Arg2:T274.kevin-tmp	
+R46.kevin-tmp	is_part_of Arg1:T275.kevin-tmp Arg2:T276.kevin-tmp	
+R47.kevin-tmp	VERIFY_other_relation Arg1:T284.kevin-tmp Arg2:T283.kevin-tmp	
+R48.kevin-tmp	is_part_of Arg1:T287.kevin-tmp Arg2:T288.kevin-tmp	
+R49.kevin-tmp	VERIFY_other_relation Arg1:T291.kevin-tmp Arg2:T289.kevin-tmp	
+R50.kevin-tmp	VERIFY_other_relation Arg1:T290.kevin-tmp Arg2:T289.kevin-tmp	
+R54.kevin-tmp	VERIFY_other_relation Arg1:T300.kevin-tmp Arg2:T299.kevin-tmp	
+R57.kevin-tmp	VERIFY_other_relation Arg1:T305.kevin-tmp Arg2:T303.kevin-tmp	
+R59.kevin-tmp	VERIFY_other_relation Arg1:T307.kevin-tmp Arg2:T306.kevin-tmp	
+R61.kevin-tmp	VERIFY_other_relation Arg1:T320.kevin-tmp Arg2:T318.kevin-tmp	
+R62.kevin-tmp	participates_in Arg1:T325.kevin-tmp Arg2:T326.kevin-tmp	
+R63.kevin-tmp	participates_in Arg1:T325.kevin-tmp Arg2:T327.kevin-tmp	
+R64.kevin-tmp	VERIFY_other_relation Arg1:T329.kevin-tmp Arg2:T330.kevin-tmp	
+R1.sandy-tmp	VERIFY_other_relation Arg1:T2.sandy-tmp Arg2:T1.sandy-tmp	
+R2.sandy-tmp	VERIFY_other_relation Arg1:T4.sandy-tmp Arg2:T3.sandy-tmp	
+R10.sandy-tmp	is_subclass_of Arg1:T24.kevin-tmp Arg2:T94.sandy-tmp	
+R15.sandy-tmp	participates_in Arg1:T32.kevin-tmp Arg2:T106.sandy-tmp	
+R16.sandy-tmp	is_subclass_of Arg1:T38.kevin-tmp Arg2:T37.kevin-tmp	
+R17.sandy-tmp	regulates Arg1:T38.kevin-tmp Arg2:T39.kevin-tmp	
+R18.sandy-tmp	regulates Arg1:T129.sandy-tmp Arg2:T130.sandy-tmp	
+R19.sandy-tmp	participates_in Arg1:T140.sandy-tmp Arg2:T143.sandy-tmp	
+R20.sandy-tmp	participates_in Arg1:T141.sandy-tmp Arg2:T143.sandy-tmp	
+R21.sandy-tmp	participates_in Arg1:T145.sandy-tmp Arg2:T146.sandy-tmp	
+R22.sandy-tmp	participates_in Arg1:T144.sandy-tmp Arg2:T146.sandy-tmp	
+R23.sandy-tmp	regulates Arg1:T149.sandy-tmp Arg2:T150.sandy-tmp	
+R25.sandy-tmp	is_subclass_of Arg1:T109.kevin-tmp Arg2:T227.sandy-tmp	
+R26.sandy-tmp	is_part_of Arg1:T116.kevin-tmp Arg2:T232.sandy-tmp	
+R27.sandy-tmp	regulates Arg1:T116.kevin-tmp Arg2:T117.kevin-tmp	
+R28.sandy-tmp	is_subclass_of Arg1:T246.sandy-tmp Arg2:T247.sandy-tmp	
+R29.sandy-tmp	is_subclass_of Arg1:T248.sandy-tmp Arg2:T249.sandy-tmp	
+R32.sandy-tmp	is_part_of Arg1:T160.kevin-tmp Arg2:T157.kevin-tmp	
+R33.sandy-tmp	regulates Arg1:T161.kevin-tmp Arg2:T162.kevin-tmp	
+R34.sandy-tmp	is_subclass_of Arg1:T268.sandy-tmp Arg2:T267.sandy-tmp	
+R35.sandy-tmp	is_subclass_of Arg1:T269.sandy-tmp Arg2:T267.sandy-tmp	
+R36.sandy-tmp	is_part_of Arg1:T268.sandy-tmp Arg2:T270.sandy-tmp	
+R37.sandy-tmp	is_part_of Arg1:T269.sandy-tmp Arg2:T271.sandy-tmp	
+R43.sandy-tmp	is_part_of Arg1:T273.sandy-tmp Arg2:T168.kevin-tmp	
+R44.sandy-tmp	is_part_of Arg1:T274.sandy-tmp Arg2:T169.kevin-tmp	
+R45.sandy-tmp	VERIFY_other_relation Arg1:T176.kevin-tmp Arg2:T47.sandy-tmp	
+R46.sandy-tmp	VERIFY_other_relation Arg1:T177.kevin-tmp Arg2:T47.sandy-tmp	
+R47.sandy-tmp	VERIFY_other_relation Arg1:T178.kevin-tmp Arg2:T47.sandy-tmp	
+R48.sandy-tmp	VERIFY_other_relation Arg1:T179.kevin-tmp Arg2:T47.sandy-tmp	
+R49.sandy-tmp	VERIFY_other_relation Arg1:T181.sandy-tmp Arg2:T38.sandy-tmp	
+R50.sandy-tmp	VERIFY_other_relation Arg1:T92.kevin-tmp Arg2:T38.sandy-tmp	
+R51.sandy-tmp	VERIFY_other_relation Arg1:T93.kevin-tmp Arg2:T38.sandy-tmp	
+R52.sandy-tmp	VERIFY_other_relation Arg1:T94.kevin-tmp Arg2:T38.sandy-tmp	
+R53.sandy-tmp	VERIFY_other_relation Arg1:T315.sandy-tmp Arg2:T180.kevin-tmp	
+R54.sandy-tmp	VERIFY_other_relation Arg1:T316.sandy-tmp Arg2:T180.kevin-tmp	
+R55.sandy-tmp	VERIFY_other_relation Arg1:T317.sandy-tmp Arg2:T180.kevin-tmp	
+R56.sandy-tmp	is_part_of Arg1:T236.kevin-tmp Arg2:T388.sandy-tmp	
+R57.sandy-tmp	is_part_of Arg1:T237.kevin-tmp Arg2:T388.sandy-tmp	
+R58.sandy-tmp	is_part_of Arg1:T238.kevin-tmp Arg2:T388.sandy-tmp	
+R59.sandy-tmp	is_part_of Arg1:T239.kevin-tmp Arg2:T388.sandy-tmp	
+R60.sandy-tmp	VERIFY_other_relation Arg1:T261.kevin-tmp Arg2:T262.kevin-tmp	
+R61.sandy-tmp	is_part_of Arg1:T269.kevin-tmp Arg2:T268.kevin-tmp	
+R62.sandy-tmp	regulates Arg1:T269.kevin-tmp Arg2:T270.kevin-tmp	
+R63.sandy-tmp	regulates Arg1:T272.kevin-tmp Arg2:T434.sandy-tmp	
+R64.sandy-tmp	is_subclass_of Arg1:T438.sandy-tmp Arg2:T439.sandy-tmp	
+R65.sandy-tmp	is_part_of Arg1:T478.sandy-tmp Arg2:T479.sandy-tmp	
+R66.sandy-tmp	VERIFY_other_relation Arg1:T289.kevin-tmp Arg2:T291.kevin-tmp	
+R72.sandy-tmp	VERIFY_other_relation Arg1:T507.sandy-tmp Arg2:T303.kevin-tmp	
+R75.sandy-tmp	VERIFY_other_relation Arg1:T552.sandy-tmp Arg2:T88.sandy-tmp	
+R76.sandy-tmp	VERIFY_other_relation Arg1:T553.sandy-tmp Arg2:T88.sandy-tmp	
+R77.sandy-tmp	VERIFY_other_relation Arg1:T554.sandy-tmp Arg2:T88.sandy-tmp	
+R78.sandy-tmp	VERIFY_other_relation Arg1:T555.sandy-tmp Arg2:T88.sandy-tmp	
+R79.sandy-tmp	is_subclass_of Arg1:T55.kevin-tmp Arg2:T559.sandy-tmp	
+R80.sandy-tmp	is_subclass_of Arg1:T56.kevin-tmp Arg2:T559.sandy-tmp	
+R81.sandy-tmp	is_subclass_of Arg1:T57.kevin-tmp Arg2:T559.sandy-tmp	
+T1	Entity 88 124	small-effect quantitative trait loci
+R1	participates_in Arg1:T1 Arg2:T23.kevin-tmp	
+T2	Entity 27588 27600	DBA/1 strain
+T3	Entity 27052 27064	DBA/1 strain
+T4	Entity 7701 7713	immunisation
+R2	is_part_of Arg1:T53.sandy-tmp Arg2:T299.sandy-tmp	
+T5	Entity 17168 17184	small-effect QTL
+T6	KeyEntity 17188 17191	CIA
+T7	Entity 28 52	transcriptome approaches
+T8	KeyEntity 548 563;578 585	CIA susceptible strains
+T9	KeyEntity 548 551;568 585	CIA resistant strains
+T10	Entity 877 917	strain-specific differentially expressed
+T11	Entity 810 851	disease-specific differentially expressed
+R3	participates_in Arg1:T11 Arg2:T12.kevin-tmp	
+T12	Entity 1079 1120	disease-specific differentially expressed
+R4	participates_in Arg1:T12 Arg2:T17.kevin-tmp	
+T13	Entity 1059 1074;1096 1120	strain-specific differentially expressed
+R5	participates_in Arg1:T13 Arg2:T17.kevin-tmp	
+T14	Entity 1890 1910	susceptibility genes
+R6	participates_in Arg1:T14 Arg2:T100.sandy-tmp	
+R7	is_subclass_of Arg1:T27.kevin-tmp Arg2:T14	
+R8	is_subclass_of Arg1:T28.kevin-tmp Arg2:T14	
+R9	is_subclass_of Arg1:T29.kevin-tmp Arg2:T14	
+R10	is_subclass_of Arg1:T30.kevin-tmp Arg2:T14	
+R11	is_part_of Arg1:T124.sandy-tmp Arg2:T125.sandy-tmp	
+T15	Entity 4550 4566	initiation phase
+R12	is_part_of Arg1:T15 Arg2:T143.sandy-tmp	
+T16	Entity 4816 4827	microarrays
+T17	Entity 5663 5677	genomic region
+T18	KeyEntity 5688 5691	CIA
+R13	participates_in Arg1:T17 Arg2:T18	
+T19	Entity 5702 5743	disease-specific differentially expressed
+R14	participates_in Arg1:T19 Arg2:T81.kevin-tmp	
+T20	Entity 5769 5809	strain-specific differentially expressed
+R15	participates_in Arg1:T20 Arg2:T83.kevin-tmp	
+T21	Entity 7570 7594	non-arthritic FVB/N mice
+T22	Entity 7370 7380	DBA/1 mice
+R16	is_part_of Arg1:T181.sandy-tmp Arg2:T38.sandy-tmp	
+R17	is_part_of Arg1:T92.kevin-tmp Arg2:T38.sandy-tmp	
+R18	is_part_of Arg1:T93.kevin-tmp Arg2:T38.sandy-tmp	
+R19	is_part_of Arg1:T94.kevin-tmp Arg2:T38.sandy-tmp	
+T23	Entity 11300 11302	C5
+R20	is_part_of Arg1:T124.kevin-tmp Arg2:T306.sandy-tmp	
+R21	is_part_of Arg1:T124.kevin-tmp Arg2:T305.sandy-tmp	
+R22	is_part_of Arg1:T124.kevin-tmp Arg2:T304.sandy-tmp	
+R23	is_part_of Arg1:T124.kevin-tmp Arg2:T302.sandy-tmp	
+R24	is_part_of Arg1:T124.kevin-tmp Arg2:T303.sandy-tmp	
+R25	is_part_of Arg1:T124.kevin-tmp Arg2:T301.sandy-tmp	
+R26	is_part_of Arg1:T124.kevin-tmp Arg2:T300.sandy-tmp	
+T24	Entity 12363 12370	Locus 1
+T25	Entity 12363 12368;12375 12376	Locus 2
+T26	Entity 12421 12429	severity
+R27	participates_in Arg1:T46.sandy-tmp Arg2:T26	
+R28	participates_in Arg1:T256.sandy-tmp Arg2:T26	
+R29	participates_in Arg1:T255.sandy-tmp Arg2:T26	
+T27	Entity 12954 12964	12p13-pter
+T28	Entity 13091 13099	17q21-25
+T29	Entity 13150 13159	3q29-qter
+R30	is_part_of Arg1:T27 Arg2:T167.kevin-tmp	
+R31	is_part_of Arg1:T28 Arg2:T170.kevin-tmp	
+R32	is_part_of Arg1:T29 Arg2:T171.kevin-tmp	
+R33	is_subclass_of Arg1:T27 Arg2:T267.sandy-tmp	
+R34	is_subclass_of Arg1:T273.sandy-tmp Arg2:T267.sandy-tmp	
+R35	is_subclass_of Arg1:T274.sandy-tmp Arg2:T267.sandy-tmp	
+R36	is_subclass_of Arg1:T28 Arg2:T267.sandy-tmp	
+R37	is_subclass_of Arg1:T29 Arg2:T267.sandy-tmp	
+R38	is_part_of Arg1:T176.kevin-tmp Arg2:T47.sandy-tmp	
+R39	is_part_of Arg1:T177.kevin-tmp Arg2:T47.sandy-tmp	
+R40	is_part_of Arg1:T178.kevin-tmp Arg2:T47.sandy-tmp	
+R41	is_part_of Arg1:T179.kevin-tmp Arg2:T47.sandy-tmp	
+T30	Entity 16375 16388	chronic phase
+T31	KeyEntity 16104 16107	CIA
+T32	Entity 16091 16100	induction
+R42	participates_in Arg1:T31 Arg2:T32	
+R43	participates_in Arg1:T32 Arg2:T198.kevin-tmp	
+T33	Entity 18309 18322	chronic phase
+T34	KeyEntity 18326 18329	CIA
+R44	is_part_of Arg1:T33 Arg2:T34	
+T35	Entity 19444 19464	susceptibility genes
+T36	Entity 19839 19845	loci 1
+T37	Entity 19839 19843;19847 19848	loci 2
+T38	Entity 19839 19843;19850 19851	loci 5
+T39	Entity 19839 19843;19856 19857	loci 6
+R45	is_part_of Arg1:T393.sandy-tmp Arg2:T241.kevin-tmp	
+T40	Entity 20274 20280	loci 2
+T41	Entity 20274 20278;20285 20286	loci 7
+T42	Entity 21477 21486	CA phases
+T43	Entity 21470 21472;21480 21486	PI phases
+T44	Entity 21651 21659	CA phase
+T45	KeyEntity 21956 21959	CIA
+T46	Entity 21961 21963	NC
+T47	Entity 21965 21967	PI
+T48	Entity 21972 21974	OA
+R46	is_part_of Arg1:T46 Arg2:T45	
+R47	is_part_of Arg1:T47 Arg2:T45	
+R48	is_part_of Arg1:T48 Arg2:T45	
+T49	Entity 22019 22027	CA phase
+T50	Entity 22170 22182	DBA/1 strain
+R49	is_part_of Arg1:T461.sandy-tmp Arg2:T50	
+T51	Entity 22220 22232	FVB/N strain
+T52	Entity 22631 22643	FVB/N strain
+R50	is_part_of Arg1:T64.kevin-tmp Arg2:T88.sandy-tmp	
+R51	is_part_of Arg1:T65.kevin-tmp Arg2:T88.sandy-tmp	
+R52	is_part_of Arg1:T66.kevin-tmp Arg2:T88.sandy-tmp	
+R53	is_part_of Arg1:T67.kevin-tmp Arg2:T88.sandy-tmp	
+R54	is_part_of Arg1:T131.kevin-tmp Arg2:T130.kevin-tmp	
+R55	is_part_of Arg1:T132.kevin-tmp Arg2:T130.kevin-tmp	
+R56	is_part_of Arg1:T133.kevin-tmp Arg2:T130.kevin-tmp	
+R57	is_part_of Arg1:T134.kevin-tmp Arg2:T130.kevin-tmp	
+T53	KeyEntity 22713 22716	CIA
+T54	Entity 23432 23440	p38 MAPK
+T55	Entity 23219 23226	locus 8
+R58	regulates Arg1:T289.kevin-tmp Arg2:T495.sandy-tmp	
+R59	is_subclass_of Arg1:T293.kevin-tmp Arg2:T495.sandy-tmp	
+R60	is_subclass_of Arg1:T294.kevin-tmp Arg2:T495.sandy-tmp	
+T56	Entity 23553 23567	candidate gene
+T57	Entity 23572 23578	loci 6
+R61	is_subclass_of Arg1:T299.kevin-tmp Arg2:T56	
+R62	is_subclass_of Arg1:T289.kevin-tmp Arg2:T494.sandy-tmp	
+T58	Entity 23728 23739	development
+R63	participates_in Arg1:T507.sandy-tmp Arg2:T58	
+R64	participates_in Arg1:T303.kevin-tmp Arg2:T58	
+R65	interacts_with Arg1:T306.kevin-tmp Arg2:T510.sandy-tmp	
+T59	Entity 22455 22467	DBA/1 strain
+T60	Entity 22483 22495	FVB/N strain
+R66	participates_in Arg1:T330.kevin-tmp Arg2:T59	
+R67	participates_in Arg1:T65.sandy-tmp Arg2:T434.sandy-tmp	
+T61	Entity 20643 20664	IgG2a antibody levels
+R68	participates_in Arg1:T265.kevin-tmp Arg2:T61	
+T62	Entity 20668 20679	collagen II
+T63	Entity 20441 20444	QTL
+T64	Entity 20457 20478	IgG2a antibody levels
+T65	Entity 20482 20493	collagen II
+R69	participates_in Arg1:T261.kevin-tmp Arg2:T64	

@@ -160,8 +160,6 @@ T73.kevin-tmp	Entity 2990 2996	siRNAs
 T74.kevin-tmp	Entity 3000 3011	fibroblasts
 T75.kevin-tmp	Entity 3060 3075	gene knock-outs
 T76.kevin-tmp	Entity 3115 3143	disease-associated mutations
-T80.kevin-tmp	FIX_SPAN_Entity 3238 3253	point mutations
-T81.kevin-tmp	VERIFY_Entity 3310 3321	inefficient
 T86.kevin-tmp	Entity 3673 3689	gene of interest
 T87.kevin-tmp	Entity 3713 3731	selection cassette
 T89.kevin-tmp	Entity 3774 3784	loxP sites
@@ -185,16 +183,12 @@ T145.kevin-tmp	Entity 11804 11812	ES cells
 T146.kevin-tmp	KeyEntity 12242 12246	RMCE
 T147.kevin-tmp	Entity 14946 14970	ES cell clones resistant
 T150.kevin-tmp	Entity 15172 15192	high RMCE efficiency
-T152.kevin-tmp	VERIFY_Entity 15235 15252	no aberrant bands
 T158.kevin-tmp	Entity 15714 15719	p53WT
 T159.kevin-tmp	Entity 15724 15730	p53GFP
 T160.kevin-tmp	Entity 15750 15770	adriamycin treatment
 T165.kevin-tmp	Entity 16032 16034;16047 16052	ES cells
-T168.kevin-tmp	FIX_SPAN_Entity 16082 16097	high p53 levels
-T169.kevin-tmp	FIX_SPAN_Entity 16102 16106;16111 16134	lack p53-mediated DNA damage
 T171.kevin-tmp	Entity 16368 16374	p53GFP
 T180.kevin-tmp	Entity 16875 16893	hypomorphic mutant
-T186.kevin-tmp	VERIFY_Entity 17169 17192	lower expression levels
 T188.kevin-tmp	Entity 17302 17321	p53+/ΔPGFP ES cells
 T189.kevin-tmp	Entity 17337 17350	chimeric mice
 T190.kevin-tmp	Entity 17410 17435	p53+/ΔPGFP ES cell clones
@@ -524,21 +518,14 @@ R3.kevin-tmp	participates_in Arg1:T43.kevin-tmp Arg2:T45.kevin-tmp
 R4.kevin-tmp	is_part_of Arg1:T58.kevin-tmp Arg2:T59.kevin-tmp	
 R5.kevin-tmp	is_part_of Arg1:T28.kevin-tmp Arg2:T29.kevin-tmp	
 R6.kevin-tmp	is_part_of Arg1:T73.kevin-tmp Arg2:T74.kevin-tmp	
-R9.kevin-tmp	VERIFY_other_relation Arg1:T81.kevin-tmp Arg2:T80.kevin-tmp	
 R10.kevin-tmp	is_subclass_of Arg1:T89.kevin-tmp Arg2:T88.kevin-tmp	
 R11.kevin-tmp	is_part_of Arg1:T89.kevin-tmp Arg2:T90.kevin-tmp	
-R12.kevin-tmp	VERIFY_other_relation Arg1:T92.kevin-tmp Arg2:T93.kevin-tmp	
 R14.kevin-tmp	participates_in Arg1:T104.kevin-tmp Arg2:T105.kevin-tmp	
 R15.kevin-tmp	participates_in Arg1:T104.kevin-tmp Arg2:T106.kevin-tmp	
 R18.kevin-tmp	participates_in Arg1:T113.kevin-tmp Arg2:T112.kevin-tmp	
 R24.kevin-tmp	is_part_of Arg1:T131.kevin-tmp Arg2:T130.kevin-tmp	
 R25.kevin-tmp	is_part_of Arg1:T132.kevin-tmp Arg2:T130.kevin-tmp	
-R26.kevin-tmp	VERIFY_other_relation Arg1:T152.kevin-tmp Arg2:T153.kevin-tmp	
-R27.kevin-tmp	VERIFY_other_relation Arg1:T152.kevin-tmp Arg2:T154.kevin-tmp	
-R29.kevin-tmp	VERIFY_other_relation Arg1:T168.kevin-tmp Arg2:T167.kevin-tmp	
-R30.kevin-tmp	VERIFY_other_relation Arg1:T169.kevin-tmp Arg2:T167.kevin-tmp	
 R31.kevin-tmp	is_part_of Arg1:T171.kevin-tmp Arg2:T172.kevin-tmp	
-R33.kevin-tmp	VERIFY_other_relation Arg1:T186.kevin-tmp Arg2:T185.kevin-tmp	
 R34.kevin-tmp	is_part_of Arg1:T190.kevin-tmp Arg2:T191.kevin-tmp	
 R35.kevin-tmp	is_part_of Arg1:T199.kevin-tmp Arg2:T197.kevin-tmp	
 R36.kevin-tmp	is_part_of Arg1:T197.kevin-tmp Arg2:T198.kevin-tmp	
@@ -566,7 +553,6 @@ R51.sandy-tmp	participates_in Arg1:T215.kevin-tmp Arg2:T293.sandy-tmp
 R55.sandy-tmp	regulates Arg1:T264.kevin-tmp Arg2:T265.kevin-tmp	
 R56.sandy-tmp	participates_in Arg1:T265.kevin-tmp Arg2:T308.sandy-tmp	
 R4.sandy-tmp	is_part_of Arg1:T31.kevin-tmp Arg2:T32.kevin-tmp	
-R58.sandy-tmp	VERIFY_participates_in Arg1:T124.sandy-tmp Arg2:T79.kevin-tmp	
 R59.sandy-tmp	is_part_of Arg1:T82.kevin-tmp Arg2:T83.kevin-tmp	
 R60.sandy-tmp	is_part_of Arg1:T82.kevin-tmp Arg2:T84.kevin-tmp	
 R64.sandy-tmp	participates_in Arg1:T107.kevin-tmp Arg2:T108.kevin-tmp	

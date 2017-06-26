@@ -1,65 +1,533 @@
-T1.sandy	FIX_TYPE 93 119	Collagen-induced arthritis
-T3.sandy	FIX_TYPE 219 239	rheumatoid arthritis
-T4.sandy	FIX_TYPE 247 273	collagen-induced arthritis
-T7.sandy	Entity 392 412	rheumatoid arthritis
-T8.sandy	FIX_TYPE 519 545	collagen-induced arthritis
-T13.sandy	Entity 859 881	microsatellite markers
-T17.sandy	Entity 1001 1014	chromosome 11
-T18.sandy	FIX_TYPE 1024 1029	Cia40
-T20.sandy	Entity 1075 1092	pregnancy failure
-T25.sandy	Entity 1236 1248	chromosome 1
-T27.sandy	Entity 1327 1359	collagen type II antibody titers
-T28.sandy	Entity 1378 1391	chromosome 13
-T29.sandy	Entity 1427 1436	gene loci
-T30.sandy	Entity 1445 1454	arthritis
-T31.sandy	Entity 1458 1482	aged multiparous females
-T32.sandy	Entity 1535 1552	pregnancy failure
-T21.sandy	FIX_TYPE 18 49	collagen-induced arthritis loci
-T2.sandy	VERIFY_Entity 161 191	autoimmune experimental models
-T5.sandy	VERIFY_Entity 287 304	polygenic disease
-T6.sandy	VERIFY_Entity 357 382	disease-controlling genes
-T9.sandy	FIX_SPAN_Entity 594 599	NFR/N
-T10.sandy	FIX_SPAN_Entity 604 609	B10.Q
-T11.sandy	FIX_SPAN_Entity 611 625	H-2q haplotype
-T12.sandy	VERIFY_Entity 672 694	reproductive histories
-T15.sandy	FIX_SPAN_Entity 951 970	arthritis incidence
-T16.sandy	FIX_SPAN_Entity 972 980	severity
-T19.sandy	VERIFY_Entity 1038 1049	colocalizes
-T22.sandy	VERIFY_Entity 1181 1190	incidence
-T23.sandy	VERIFY_Entity 1192 1200	severity
-T24.sandy	VERIFY_Entity 1205 1217	day of onset
-T14.sandy	FIX_SPAN_Entity 985 997	day of onset
-T26.sandy	FIX_SPAN_Entity 53 81	aged multiparous female mice
-T6.kevin	VERIFY_Entity 558 574	aged female mice
-T7.kevin	FIX_SPAN_KeyEntity 594 626	NFR/N and B10.Q (H-2q haplotype)
-T8.kevin	VERIFY_Entity 822 849	total genome-wide screening
-T10.kevin	VERIFY_Entity 912 936	quantitative trait locus
-T11.kevin	VERIFY_Entity 1057 1062	locus
-T13.kevin	VERIFY_Entity 1109 1133	quantitative trait locus
-T15.kevin	VERIFY_Entity 1286 1310	quantitative trait locus
-T23.kevin	FIX_SPAN_Entity 951 988	arthritis incidence, severity and day
-T26.kevin	FIX_SPAN_Entity 58 81	multiparous female mice
-R16.sandy	regulates Arg1:T29.sandy Arg2:T30.sandy	
-R1.sandy	VERIFY_participates_in Arg1:T1.sandy Arg2:T2.sandy	
-R2.sandy	VERIFY_participates_in Arg1:T3.sandy Arg2:T2.sandy	
-R3.sandy	VERIFY_is_part_of Arg1:T4.sandy Arg2:T5.sandy	
-R4.sandy	VERIFY_is_part_of Arg1:T10.sandy Arg2:T11.sandy	
-R5.sandy	VERIFY_is_part_of Arg1:T9.sandy Arg2:T11.sandy	
-R6.sandy	VERIFY_is_subclass_of Arg1:T8.sandy Arg2:T7.sandy	
-R7.sandy	VERIFY_participates_in Arg1:T17.sandy Arg2:T15.sandy	
-R8.sandy	VERIFY_participates_in Arg1:T17.sandy Arg2:T16.sandy	
-R9.sandy	VERIFY_participates_in Arg1:T17.sandy Arg2:T14.sandy	
-R10.sandy	VERIFY_is_part_of Arg1:T17.sandy Arg2:T18.sandy	
-R11.sandy	VERIFY_participates_in Arg1:T18.sandy Arg2:T20.sandy	
-R12.sandy	VERIFY_participates_in Arg1:T22.sandy Arg2:T25.sandy	
-R13.sandy	VERIFY_participates_in Arg1:T23.sandy Arg2:T25.sandy	
-R14.sandy	VERIFY_participates_in Arg1:T24.sandy Arg2:T25.sandy	
-R15.sandy	VERIFY_participates_in Arg1:T27.sandy Arg2:T28.sandy	
-R17.sandy	VERIFY_participates_in Arg1:T29.sandy Arg2:T32.sandy	
-R18.sandy	VERIFY_is_part_of Arg1:T21.sandy Arg2:T26.sandy	
-R2.kevin	VERIFY_participates_in Arg1:T13.sandy Arg2:T8.kevin	
-R3.kevin	VERIFY_participates_in Arg1:T10.kevin Arg2:T23.kevin	
-R5.kevin	VERIFY_regulates Arg1:T11.kevin Arg2:T20.sandy	
-R7.kevin	VERIFY_is_part_of Arg1:T15.kevin Arg2:T28.sandy	
-R8.kevin	VERIFY_is_part_of Arg1:T10.kevin Arg2:T17.sandy	
-R10.kevin	VERIFY_is_part_of Arg1:T29.sandy Arg2:T31.sandy	
+T1.kevin-tmp	KeyEntity 93 119	Collagen-induced arthritis
+T2.kevin-tmp	KeyEntity 219 239	rheumatoid arthritis
+T3.kevin-tmp	KeyEntity 247 273	collagen-induced arthritis
+T4.kevin-tmp	KeyEntity 392 412	rheumatoid arthritis
+T5.kevin-tmp	KeyEntity 519 545	collagen-induced arthritis
+T9.kevin-tmp	Entity 859 881	microsatellite markers
+T12.kevin-tmp	Entity 1024 1029	Cia40
+T14.kevin-tmp	Entity 1236 1248	chromosome 1
+T16.kevin-tmp	Entity 1327 1359	collagen type II antibody titers
+T17.kevin-tmp	Entity 1378 1391	chromosome 13
+T18.kevin-tmp	Entity 1427 1436	gene loci
+T19.kevin-tmp	Entity 1445 1454	arthritis
+T20.kevin-tmp	Entity 1458 1482	aged multiparous females
+T21.kevin-tmp	Entity 1535 1552	pregnancy failure
+T22.kevin-tmp	Entity 1001 1014	chromosome 11
+T24.kevin-tmp	Entity 1075 1092	pregnancy failure
+T25.kevin-tmp	KeyEntity 18 49	collagen-induced arthritis loci
+T27.kevin-tmp	KeyEntity 1631 1663	collagen-induced arthritis (CIA)
+T28.kevin-tmp	KeyEntity 1594 1619	rheumatoid arthritis (RA)
+T29.kevin-tmp	KeyEntity 1769 1771	RA
+T32.kevin-tmp	KeyEntity 2922 2925	CIA
+T36.kevin-tmp	KeyEntity 5638 5641	CIA
+T37.kevin-tmp	KeyEntity 5703 5706	CIA
+T38.kevin-tmp	KeyEntity 5718 5721	CIA
+T39.kevin-tmp	KeyEntity 6262 6265	CIA
+T40.kevin-tmp	Entity 9805 9822	NFR/N female mice
+T45.kevin-tmp	KeyEntity 12185 12211	CIA-susceptible MHC region
+T46.kevin-tmp	KeyEntity 12811 12814	CIA
+T47.kevin-tmp	KeyEntity 13410 13429	CIA-associated loci
+T49.kevin-tmp	KeyEntity 13688 13707	CIA-associated loci
+T52.kevin-tmp	KeyEntity 15119 15122	CIA
+T59.kevin-tmp	KeyEntity 1947 1949	RA
+T60.kevin-tmp	Entity 1998 2007	pregnancy
+T61.kevin-tmp	KeyEntity 2072 2074	RA
+T64.kevin-tmp	Entity 2135 2144	pregnancy
+T67.kevin-tmp	KeyEntity 2254 2256	RA
+T69.kevin-tmp	Entity 2507 2520;2538 2553	immunological characteristics
+T70.kevin-tmp	Entity 2525 2553	pathological characteristics
+T71.kevin-tmp	KeyEntity 2559 2567	human RA
+T72.kevin-tmp	Entity 2662 2671	arthritis
+T73.kevin-tmp	Entity 2697 2710	sex dependent
+T75.kevin-tmp	Entity 2900 2918	Gender differences
+T76.kevin-tmp	Entity 2982 2989;3015 3025	genetic influences
+T77.kevin-tmp	Entity 2991 2999;3015 3025	hormonal influences
+T79.kevin-tmp	KeyEntity 3091 3093	RA
+T80.kevin-tmp	Entity 3133 3142;3146 3150	Pregnancy mice
+T82.kevin-tmp	Entity 3193 3202;3206 3215	remission arthritis
+T85.kevin-tmp	Entity 3388 3411	postpartum exacerbation
+T86.kevin-tmp	Entity 3445 3449;3453 3461	drop estrogen
+T89.kevin-tmp	KeyEntity 3678 3680	RA
+T92.kevin-tmp	Entity 4121 4126	NFR/N
+T93.kevin-tmp	Entity 4131 4150	C57BL/B10.Q (B10.Q)
+T95.kevin-tmp	Entity 4273 4290	Inbred NFR/N mice
+T101.kevin-tmp	Entity 5798 5824	rat collagen type II (CII)
+T102.kevin-tmp	Entity 5845 5856	acetic acid
+T105.kevin-tmp	Entity 5993 5996	CII
+T106.kevin-tmp	Entity 6017 6028	acetic acid
+T107.kevin-tmp	Entity 6062 6089	Freud's incomplete adjuvant
+T108.kevin-tmp	Entity 6160 6169	arthritis
+T110.kevin-tmp	Entity 6328 6343	arthritis index
+T117.kevin-tmp	Entity 6840 6849	arthritis
+T118.kevin-tmp	Entity 6881 6906	Microsatellite genotyping
+T119.kevin-tmp	Entity 6911 6927	linkage analysis
+T120.kevin-tmp	Entity 6929 6942	Tail biopsies
+T121.kevin-tmp	Entity 6967 6977	N2 females
+T125.kevin-tmp	Entity 7291 7298	N2 mice
+T126.kevin-tmp	Entity 7381 7398	PCR amplification
+T127.kevin-tmp	Entity 8351 8367	linkage analysis
+T128.kevin-tmp	Entity 8376 8392	permutation test
+T129.kevin-tmp	Entity 9025 9058	Enzyme-linked immunosorbent assay
+T132.kevin-tmp	Entity 9236 9239	CII
+T133.kevin-tmp	Entity 9547 9563	CII-specific IgG
+T134.kevin-tmp	Entity 9591 9631	peroxidase-conjugated goat antimouse IgG
+T136.kevin-tmp	Entity 9883 9896	B10.Q females
+T137.kevin-tmp	Entity 9952 9962	NFR/N mice
+T138.kevin-tmp	Entity 10080 10089	arthritis
+T139.kevin-tmp	Entity 10138 10148	NFR/N mice
+T141.kevin-tmp	Entity 10211 10221	B10.Q mice
+T143.kevin-tmp	Entity 10380 10400	primary immunization
+T144.kevin-tmp	Entity 10464 10469;10480 10491	NFR/N female mice
+T145.kevin-tmp	Entity 10474 10491	B10.Q female mice
+T146.kevin-tmp	Entity 10508 10525	Pregnancy history
+T147.kevin-tmp	Entity 10661 10680	arthritic incidence
+T148.kevin-tmp	Entity 10682 10697	arthritis onset
+T149.kevin-tmp	Entity 10702 10725	maximum arthritic score
+T151.kevin-tmp	Entity 10753 10791	N2 generation, (NFR/N × B10.Q) × B10.Q
+T156.kevin-tmp	Entity 11116 11132	multiparous mice
+T160.kevin-tmp	Entity 5488 5526	MHC (major histocompatibility complex)
+T161.kevin-tmp	Entity 5458 5475	allogeneic mating
+T162.kevin-tmp	Entity 5571 5587	syngeneic mating
+T163.kevin-tmp	Entity 5600 5603	MHC
+T165.kevin-tmp	Entity 11401 11432	MHC mismatched males (B10.RIII)
+T166.kevin-tmp	Entity 11483 11508	MHC matched males (B10.Q)
+T150.kevin-tmp	Entity 11575 11599	genetic linkage analysis
+T167.kevin-tmp	Entity 11625 11655	quantitative trait locus (QTL)
+T168.kevin-tmp	Entity 11780 11796	traits incidence
+T169.kevin-tmp	Entity 11814 11826	day of onset
+T170.kevin-tmp	Entity 11883 11898	arthritis score
+T171.kevin-tmp	Entity 11921 11924	QTL
+T172.kevin-tmp	Entity 12059 12062	QTL
+T173.kevin-tmp	Entity 12077 12100	anti-CII antibody titer
+T175.kevin-tmp	Entity 12227 12237	B10.Q mice
+T176.kevin-tmp	Entity 12277 12288	NFR/N mouse
+T179.kevin-tmp	Entity 12370 12381	B10.Q mouse
+T183.kevin-tmp	Entity 12844 12869	MHC class II A beta genes
+T185.kevin-tmp	Entity 13019 13034;13038 13047	genetic control arthritis
+T187.kevin-tmp	KeyEntity 13099 13107	human RA
+T189.kevin-tmp	Entity 13366 13382	linkage analyses
+T191.kevin-tmp	KeyEntity 13544 13546	RA
+T193.kevin-tmp	Entity 13609 13621	NFR/N strain
+T194.kevin-tmp	Entity 13654 13670	linkage analyses
+T196.kevin-tmp	Entity 13862 13873	multiparity
+T201.kevin-tmp	Entity 14278 14287	arthritis
+T202.kevin-tmp	Entity 14393 14411	exacerbation phase
+T207.kevin-tmp	Entity 14671 14685	arthritis loci
+T208.kevin-tmp	Entity 14925 14936	Cia40 locus
+T209.kevin-tmp	Entity 14950 14968	Ctla4 (CD152) gene
+T210.kevin-tmp	Entity 15014 15034	spontaneous diabetes
+T214.kevin-tmp	Entity 15381 15386	Cia28
+T216.kevin-tmp	Entity 15612 15615	QTL
+T217.kevin-tmp	Entity 15667 15672	Cia28
+T218.kevin-tmp	Entity 15834 15839	Cia28
+T219.kevin-tmp	Entity 15638 15651	chromosome 13
+T220.kevin-tmp	Entity 15445 15458	chromosome 13
+T221.kevin-tmp	Entity 15808 15821	chromosome 13
+T223.kevin-tmp	Entity 12119 12132	chromosome 13
+T226.kevin-tmp	Entity 14721 14733	chromosome 1
+T230.kevin-tmp	Entity 14869 14881	chromosome 1
+T231.kevin-tmp	Entity 15729 15741	chromosome 1
+T232.kevin-tmp	Entity 15896 15899	QTL
+T233.kevin-tmp	Entity 15942 15955	chromosome 11
+T234.kevin-tmp	Entity 15965 15970	Cia40
+T236.kevin-tmp	Entity 16105 16122	inflammation loci
+T237.kevin-tmp	Entity 16132 16137	Eae22
+T238.kevin-tmp	Entity 16139 16144	Eae6b
+T239.kevin-tmp	Entity 16146 16151	Eae23
+T240.kevin-tmp	Entity 16156 16160	Eae7
+T242.kevin-tmp	Entity 16283 16296	chromosome 11
+T244.kevin-tmp	Entity 16319 16325	Pgia28
+T245.kevin-tmp	Entity 16361 16366	Cia40
+T248.kevin-tmp	Entity 16592 16596	Cia5
+T250.kevin-tmp	Entity 16671 16697	pristane-induced arthritis
+T251.kevin-tmp	Entity 16796 16799	QTL
+T252.kevin-tmp	Entity 16808 16814	Pregq2
+T253.kevin-tmp	Entity 16830 16849	pregnancy frequency
+T254.kevin-tmp	Entity 16878 16883	Cia40
+T259.kevin-tmp	Entity 17306 17329	early pregnancy failure
+T261.kevin-tmp	Entity 17496 17507	multiparity
+T58.kevin-tmp	KeyEntity 17630 17648	CIA susceptibility
+T264.kevin-tmp	Entity 17695 17707	chromosome 1
+T265.kevin-tmp	Entity 17724 17737	chromosome 13
+T266.kevin-tmp	Entity 17762 17777	anti-CII titers
+T267.kevin-tmp	Entity 17831 17836	Cia28
+T270.kevin-tmp	Entity 18804 18833	quantitative trait loci (QTL)
+T274.kevin-tmp	Entity 18900 18903	QTL
+T275.kevin-tmp	Entity 18908 18946	collagen type II (CII) antibody titers
+T276.kevin-tmp	Entity 18966 18979	chromosome 13
+T278.kevin-tmp	Entity 19193 19232	anti-collagen type II (anti-CII) titers
+T281.kevin-tmp	Entity 19352 19366	arthritic mice
+T282.kevin-tmp	Entity 19485 19499	arthritic mice
+T283.kevin-tmp	Entity 19556 19566	B10.Q mice
+T289.kevin-tmp	Entity 19751 19765	arthritic mice
+T287.kevin-tmp	Entity 19875 19889	arthritic mice
+T290.kevin-tmp	Entity 19994 20001	N2 mice
+T292.kevin-tmp	KeyEntity 20053 20079	collagen-induced arthritis
+T304.kevin-tmp	Entity 10588 10599	female mice
+T308.kevin-tmp	Entity 1181 1190	incidence
+T309.kevin-tmp	Entity 1192 1200	severity
+T6.kevin-tmp	Entity 558 574	aged female mice
+T7.kevin-tmp	FIX_SPAN_KeyEntity 594 626	NFR/N and B10.Q (H-2q haplotype)
+T10.kevin-tmp	Entity 912 936	quantitative trait locus
+T11.kevin-tmp	Entity 1057 1062	locus
+T13.kevin-tmp	Entity 1109 1133	quantitative trait locus
+T15.kevin-tmp	Entity 1286 1310	quantitative trait locus
+T30.kevin-tmp	Entity 2490 2494	mice
+T31.kevin-tmp	Entity 2677 2686	incidence
+T34.kevin-tmp	KeyEntity 3595 3598	CIA
+T44.kevin-tmp	Entity 11515 11519	loci
+T51.kevin-tmp	KeyEntity 14517 14520	CIA
+T55.kevin-tmp	KeyEntity 16663 16666	CIA
+T63.kevin-tmp	VERIFY_Entity 2103 2116	risk of onset
+T65.kevin-tmp	Entity 2159 2180	first year postpartum
+T66.kevin-tmp	VERIFY_Entity 2185 2200	chance of onset
+T78.kevin-tmp	Entity 3004 3025	behavioral influences
+T81.kevin-tmp	Entity 3157 3166	pregnancy
+T88.kevin-tmp	Entity 3543 3569	pregnancy history (parity)
+T91.kevin-tmp	Entity 4061 4072	female mice
+T96.kevin-tmp	Entity 4382 4392	B10.Q mice
+T98.kevin-tmp	Entity 4497 4527	B10.Q × NFR/N) × B10.Q N2 mice
+T100.kevin-tmp	Entity 5238 5274	N2 backcross (B10.Q × NFR/N) × B10.Q
+T103.kevin-tmp	Entity 5737 5761	immunized subcutaneously
+T104.kevin-tmp	Entity 5890 5915	complete Freud's adjuvant
+T109.kevin-tmp	Entity 6204 6216	immunization
+T115.kevin-tmp	Entity 6666 6680	severity trait
+T116.kevin-tmp	Entity 6796 6808	immunization
+T124.kevin-tmp	Entity 7207 7226	informative markers
+T140.kevin-tmp	Entity 10202 10205	paw
+T152.kevin-tmp	Entity 10828 10839	pregnancies
+T155.kevin-tmp	Entity 10998 11009	pregnancies
+T157.kevin-tmp	Entity 11182 11193	pregnancies
+T158.kevin-tmp	Entity 11277 11286	pregnancy
+T159.kevin-tmp	Entity 11387 11395	pregnant
+T174.kevin-tmp	Entity 12217 12222;12233 12237	NFR/N mice
+T177.kevin-tmp	Entity 12302 12319	inbred NMRI mouse
+T178.kevin-tmp	Entity 12327 12341	H-2q haplotype
+T184.kevin-tmp	Entity 12916 12936	inflammatory disease
+T186.kevin-tmp	Entity 13051 13075	aged multiparous females
+T188.kevin-tmp	Entity 13220 13240	reproductive history
+T190.kevin-tmp	Entity 13510 13530	old multiparous mice
+T200.kevin-tmp	Entity 14242 14251	pregnancy
+T203.kevin-tmp	Entity 14318 14337	temporary remission
+T204.kevin-tmp	Entity 11554 11569	old female mice
+T206.kevin-tmp	Entity 14633 14648	anti-CII titers
+T211.kevin-tmp	Entity 15075 15100	nonobese diabetic strains
+T215.kevin-tmp	Entity 15404 15432	anti-CII antibody production
+T222.kevin-tmp	Entity 14650 14663	chromosome 13
+T224.kevin-tmp	Entity 11679 11692	chromosome 11
+T225.kevin-tmp	Entity 12012 12024	chromosome 1
+T227.kevin-tmp	Entity 14735 14740	Cia15
+T228.kevin-tmp	Entity 14755 14760	Cia20
+T229.kevin-tmp	Entity 14779 14783	Cia9
+T243.kevin-tmp	Entity 16244 16257	disease onset
+T249.kevin-tmp	Entity 16612 16629	rat chromosome 10
+T255.kevin-tmp	Entity 16905 16918	chromosome 11
+T256.kevin-tmp	Entity 17172 17183	female mice
+T257.kevin-tmp	Entity 17190 17204	pregnancy rate
+T258.kevin-tmp	VERIFY_Entity 17228 17276	successful pregnancies per detected vaginal plug
+T262.kevin-tmp	Entity 17666 17679	chromosome 11
+T263.kevin-tmp	Entity 17681 17686	Cia40
+T271.kevin-tmp	KeyEntity 18838 18874	collagen-induced arthritis incidence
+T277.kevin-tmp	KeyEntity 19179 19188	arthritis
+T280.kevin-tmp	Entity 19315 19319;19323 19328	days onset
+T285.kevin-tmp	Entity 19618 19627	Incidence
+T286.kevin-tmp	Entity 19629 19634	onset
+T288.kevin-tmp	Entity 19714 19718;19722 19727	days onset
+T291.kevin-tmp	Entity 20030 20049	clinical phenotypes
+T296.kevin-tmp	Entity 14135 14144	incidence
+T297.kevin-tmp	Entity 14148 14156	severity
+T301.kevin-tmp	Entity 9988 9997	incidence
+T305.kevin-tmp	Entity 10936 10945	incidence
+T306.kevin-tmp	Entity 10949 10957	severity
+T307.kevin-tmp	Entity 2330 2339	incidence
+T2.sandy-tmp	Entity 161 191	autoimmune experimental models
+T5.sandy-tmp	Entity 287 304	polygenic disease
+T6.sandy-tmp	Entity 357 382	disease-controlling genes
+T9.sandy-tmp	Entity 594 599	NFR/N
+T26.sandy-tmp	Entity 53 81	aged multiparous female mice
+T12.sandy-tmp	Entity 828 849	genome-wide screening
+T38.sandy-tmp	Entity 1958 1976	clinical remission
+T47.sandy-tmp	KeyEntity 2483 2486	CIA
+T52.sandy-tmp	KeyEntity 2690 2693	CIA
+T54.sandy-tmp	KeyEntity 2734 2736	RA
+T67.sandy-tmp	Entity 3230 3242	exacerbation
+T68.sandy-tmp	Entity 3256 3266	postpartum
+T69.sandy-tmp	Entity 3278 3305	Pregnancy-induced remission
+T70.sandy-tmp	KeyEntity 3309 3312	CIA
+T71.sandy-tmp	Entity 3361 3376	estrogen levels
+T74.sandy-tmp	Entity 3491 3517	increased prolactin levels
+T77.sandy-tmp	Entity 4100 4112	N2 backcross
+T80.sandy-tmp	KeyEntity 4195 4198	CIA
+T83.sandy-tmp	Entity 4467 4491	(B10Q × NFR/N)F1 hybrids
+T89.sandy-tmp	Entity 5442 5456	B10.RIII males
+T92.sandy-tmp	Entity 5558 5569	B10.Q males
+T108.sandy-tmp	Entity 6424 6433	arthritis
+T116.sandy-tmp	Entity 6986 6999	F0 generation
+T118.sandy-tmp	Entity 7124 7173	mouse fluorescence-labeled microsatellite markers
+T135.sandy-tmp	Entity 8293 8325	Map Manager QTXb20 free software
+T146.sandy-tmp	Entity 9122 9126	sera
+T145.sandy-tmp	Entity 9143 9167	Anti-CII antibody titers
+T147.sandy-tmp	Entity 9171 9175	sera
+T148.sandy-tmp	Entity 9195 9219	sandwich ELISA technique
+T150.sandy-tmp	Entity 9266 9286	immunosorbent plates
+T151.sandy-tmp	Entity 9305 9325	Bovine serum albumin
+T152.sandy-tmp	Entity 9422 9434	control sera
+T153.sandy-tmp	Entity 9436 9470	purified mouse anti-CII antibodies
+T154.sandy-tmp	Entity 9473 9482	test sera
+T159.sandy-tmp	Entity 9828 9841	delayed onset
+T160.sandy-tmp	KeyEntity 9866 9867	I
+T166.sandy-tmp	Entity 10159 10175;10179 10187	higher frequency swelling
+T167.sandy-tmp	KeyEntity 10270 10283	CIA frequency
+T168.sandy-tmp	Entity 10349 10364	anti-CII titers
+T172.sandy-tmp	KeyEntity 10581 10584	CIA
+T179.sandy-tmp	KeyEntity 10888 10891	CII
+T180.sandy-tmp	Entity 10961 10970	arthritis
+T181.sandy-tmp	FIX_SPAN_Entity 10988 11009	number of pregnancies
+T186.sandy-tmp	KeyEntity 11536 11539	CIA
+T190.sandy-tmp	Entity 11737 11742	Cia40
+T192.sandy-tmp	Entity 11798 11801	LOD
+T193.sandy-tmp	Entity 11829 11832	LOD
+T196.sandy-tmp	Entity 11858 11867	LOD score
+T198.sandy-tmp	Entity 11901 11904	LOD
+T211.sandy-tmp	Entity 12486 12517	(NFR/N × B10.Q) × B10.Q females
+T217.sandy-tmp	KeyEntity 13338 13341	CIA
+T225.sandy-tmp	Entity 13760 13777	polymorphic genes
+T227.sandy-tmp	KeyEntity 13933 13936	CIA
+T228.sandy-tmp	KeyEntity 14027 14029	RA
+T229.sandy-tmp	Entity 14094 14103	pregnancy
+T230.sandy-tmp	KeyEntity 14160 14162	RA
+T232.sandy-tmp	Entity 14345 14352	disease
+T247.sandy-tmp	Entity 15065 15070;15093 15100	C57Bl strains
+T251.sandy-tmp	Entity 15254 15259	Cia40
+T252.sandy-tmp	Entity 15299 15307	diabetes
+T266.sandy-tmp	KeyEntity 15982 15991	CIA genes
+T267.sandy-tmp	Entity 16059 16072	chromosome 11
+T273.sandy-tmp	Entity 16174 16177	QTL
+T274.sandy-tmp	Entity 16182 16212	proteoglycan-induced arthritis
+T278.sandy-tmp	Entity 16398 16417	mouse chromosome 11
+T279.sandy-tmp	Entity 16472 16491	human chromosome 17
+T280.sandy-tmp	KeyEntity 16506 16514	human RA
+T290.sandy-tmp	KeyEntity 17086 17099	CIA incidence
+T291.sandy-tmp	Entity 17103 17119	multiparous mice
+T292.sandy-tmp	Entity 17368 17386	inflammatory cause
+T295.sandy-tmp	FIX_SPAN_Entity 17555 17570	severity of CIA
+T310.sandy-tmp	Entity 18731 18736	NFR/N
+T311.sandy-tmp	Entity 18741 18746	B10.Q
+T316.sandy-tmp	Entity 18878 18888;18896 18898	chromosome 11
+T322.sandy-tmp	Entity 19237 19250	NFR/N × B10.Q
+T323.sandy-tmp	Entity 19254 19271	B10.Q female mice
+T327.sandy-tmp	Entity 19657 19670	NFR/N × B10.Q
+T328.sandy-tmp	Entity 19674 19691	B10.Q female mice
+R9.kevin-tmp	regulates Arg1:T18.kevin-tmp Arg2:T19.kevin-tmp	
+R13.kevin-tmp	participates_in Arg1:T80.kevin-tmp Arg2:T82.kevin-tmp	
+R16.kevin-tmp	regulates Arg1:T86.kevin-tmp Arg2:T85.kevin-tmp	
+R20.kevin-tmp	is_part_of Arg1:T209.kevin-tmp Arg2:T208.kevin-tmp	
+R25.kevin-tmp	is_part_of Arg1:T218.kevin-tmp Arg2:T221.kevin-tmp	
+R26.kevin-tmp	is_part_of Arg1:T207.kevin-tmp Arg2:T226.kevin-tmp	
+R30.kevin-tmp	is_subclass_of Arg1:T237.kevin-tmp Arg2:T236.kevin-tmp	
+R31.kevin-tmp	is_subclass_of Arg1:T238.kevin-tmp Arg2:T236.kevin-tmp	
+R32.kevin-tmp	is_subclass_of Arg1:T239.kevin-tmp Arg2:T236.kevin-tmp	
+R33.kevin-tmp	is_subclass_of Arg1:T240.kevin-tmp Arg2:T236.kevin-tmp	
+R1.kevin-tmp	VERIFY_other_relation Arg1:T7.kevin-tmp Arg2:T6.kevin-tmp	
+R4.kevin-tmp	VERIFY_other_relation Arg1:T12.kevin-tmp Arg2:T10.kevin-tmp	
+R5.kevin-tmp	regulates Arg1:T11.kevin-tmp Arg2:T24.kevin-tmp	
+R6.kevin-tmp	VERIFY_other_relation Arg1:T15.kevin-tmp Arg2:T16.kevin-tmp	
+R7.kevin-tmp	is_part_of Arg1:T15.kevin-tmp Arg2:T17.kevin-tmp	
+R8.kevin-tmp	is_part_of Arg1:T10.kevin-tmp Arg2:T22.kevin-tmp	
+R10.kevin-tmp	is_part_of Arg1:T18.kevin-tmp Arg2:T20.kevin-tmp	
+R11.kevin-tmp	VERIFY_other_relation Arg1:T63.kevin-tmp Arg2:T64.kevin-tmp	
+R12.kevin-tmp	VERIFY_other_relation Arg1:T66.kevin-tmp Arg2:T65.kevin-tmp	
+R14.kevin-tmp	participates_in Arg1:T81.kevin-tmp Arg2:T82.kevin-tmp	
+R21.kevin-tmp	regulates Arg1:T209.kevin-tmp Arg2:T210.kevin-tmp	
+R22.kevin-tmp	is_part_of Arg1:T217.kevin-tmp Arg2:T219.kevin-tmp	
+R23.kevin-tmp	participates_in Arg1:T214.kevin-tmp Arg2:T215.kevin-tmp	
+R24.kevin-tmp	is_part_of Arg1:T214.kevin-tmp Arg2:T220.kevin-tmp	
+R27.kevin-tmp	is_part_of Arg1:T227.kevin-tmp Arg2:T226.kevin-tmp	
+R28.kevin-tmp	is_part_of Arg1:T228.kevin-tmp Arg2:T226.kevin-tmp	
+R29.kevin-tmp	is_part_of Arg1:T229.kevin-tmp Arg2:T226.kevin-tmp	
+R36.kevin-tmp	is_part_of Arg1:T248.kevin-tmp Arg2:T249.kevin-tmp	
+R39.kevin-tmp	is_part_of Arg1:T254.kevin-tmp Arg2:T255.kevin-tmp	
+R40.kevin-tmp	is_part_of Arg1:T252.kevin-tmp Arg2:T255.kevin-tmp	
+R41.kevin-tmp	participates_in Arg1:T252.kevin-tmp Arg2:T253.kevin-tmp	
+R42.kevin-tmp	VERIFY_other_relation Arg1:T258.kevin-tmp Arg2:T257.kevin-tmp	
+R1.sandy-tmp	participates_in Arg1:T1.kevin-tmp Arg2:T2.sandy-tmp	
+R3.sandy-tmp	is_subclass_of Arg1:T3.kevin-tmp Arg2:T5.sandy-tmp	
+R6.sandy-tmp	is_subclass_of Arg1:T5.kevin-tmp Arg2:T4.kevin-tmp	
+R17.sandy-tmp	participates_in Arg1:T18.kevin-tmp Arg2:T21.kevin-tmp	
+R18.sandy-tmp	is_part_of Arg1:T25.kevin-tmp Arg2:T26.sandy-tmp	
+R22.sandy-tmp	participates_in Arg1:T60.kevin-tmp Arg2:T38.sandy-tmp	
+R24.sandy-tmp	regulates Arg1:T73.kevin-tmp Arg2:T52.sandy-tmp	
+R26.sandy-tmp	regulates Arg1:T69.sandy-tmp Arg2:T70.sandy-tmp	
+R30.sandy-tmp	interacts_with Arg1:T102.kevin-tmp Arg2:T101.kevin-tmp	
+R32.sandy-tmp	interacts_with Arg1:T106.kevin-tmp Arg2:T105.kevin-tmp	
+R34.sandy-tmp	is_part_of Arg1:T120.kevin-tmp Arg2:T121.kevin-tmp	
+R35.sandy-tmp	is_part_of Arg1:T145.sandy-tmp Arg2:T147.sandy-tmp	
+R36.sandy-tmp	interacts_with Arg1:T134.kevin-tmp Arg2:T133.kevin-tmp	
+R37.sandy-tmp	interacts_with Arg1:T150.sandy-tmp Arg2:T132.kevin-tmp	
+R39.sandy-tmp	VERIFY_other_relation Arg1:T146.kevin-tmp Arg2:T172.sandy-tmp	
+R40.sandy-tmp	is_part_of Arg1:T146.kevin-tmp Arg2:T304.kevin-tmp	
+R41.sandy-tmp	VERIFY_other_relation Arg1:T180.sandy-tmp Arg2:T181.sandy-tmp	
+R48.sandy-tmp	is_subclass_of Arg1:T187.kevin-tmp Arg2:T185.kevin-tmp	
+R49.sandy-tmp	interacts_with Arg1:T189.kevin-tmp Arg2:T47.kevin-tmp	
+R50.sandy-tmp	VERIFY_other_relation Arg1:T196.kevin-tmp Arg2:T227.sandy-tmp	
+R51.sandy-tmp	VERIFY_other_relation Arg1:T229.sandy-tmp Arg2:T230.sandy-tmp	
+R57.sandy-tmp	is_part_of Arg1:T234.kevin-tmp Arg2:T233.kevin-tmp	
+R59.sandy-tmp	is_part_of Arg1:T236.kevin-tmp Arg2:T267.sandy-tmp	
+R67.sandy-tmp	regulates Arg1:T248.kevin-tmp Arg2:T250.kevin-tmp	
+R70.sandy-tmp	participates_in Arg1:T292.sandy-tmp Arg2:T259.kevin-tmp	
+R71.sandy-tmp	VERIFY_other_relation Arg1:T261.kevin-tmp Arg2:T295.sandy-tmp	
+T1	Entity 604 626	B10.Q (H-2q haplotype)
+R1	interacts_with Arg1:T9.sandy-tmp Arg2:T1	
+R2	participates_in Arg1:T9.kevin-tmp Arg2:T12.sandy-tmp	
+T2	Entity 735 740	onset
+T3	Entity 742 751	incidence
+T4	Entity 755 763	severity
+T5	Entity 2290 2307	pregnancy history
+R3	interacts_with Arg1:T327.sandy-tmp Arg2:T328.sandy-tmp	
+T6	Entity 19167 19175	Severity
+R4	interacts_with Arg1:T322.sandy-tmp Arg2:T323.sandy-tmp	
+T9	Entity 951 960;972 980	arthritis severity
+T7	Entity 951 970	arthritis incidence
+T8	Entity 951 960;985 988;992 997	arthritis day onset
+R6	participates_in Arg1:T10.kevin-tmp Arg2:T9	
+R5	participates_in Arg1:T10.kevin-tmp Arg2:T8	
+R7	participates_in Arg1:T10.kevin-tmp Arg2:T7	
+R8	interacts_with Arg1:T10.kevin-tmp Arg2:T11.kevin-tmp	
+R9	is_part_of Arg1:T13.kevin-tmp Arg2:T14.kevin-tmp	
+T10	Entity 1205 1208;1212 1217	day onset
+R10	participates_in Arg1:T13.kevin-tmp Arg2:T308.kevin-tmp	
+R11	participates_in Arg1:T13.kevin-tmp Arg2:T309.kevin-tmp	
+R12	participates_in Arg1:T13.kevin-tmp Arg2:T10	
+T11	Entity 1903 1918	female patients
+R13	is_part_of Arg1:T59.kevin-tmp Arg2:T11	
+R14	participates_in Arg1:T11 Arg2:T38.sandy-tmp	
+T12	Entity 2721 2730	incidence
+T13	Entity 2091 2097	parity
+R15	regulates Arg1:T69.sandy-tmp Arg2:T71.sandy-tmp	
+T14	Entity 3582 3591	incidence
+R16	participates_in Arg1:T34.kevin-tmp Arg2:T14	
+T15	Entity 4202 4214	aged females
+T16	Entity 4222 4241	multiparous history
+R17	participates_in Arg1:T15 Arg2:T16	
+R18	is_part_of Arg1:T120.kevin-tmp Arg2:T116.sandy-tmp	
+T17	Entity 9846 9861	lower incidence
+R19	participates_in Arg1:T160.sandy-tmp Arg2:T159.sandy-tmp	
+R20	participates_in Arg1:T160.sandy-tmp Arg2:T17	
+R21	participates_in Arg1:T40.kevin-tmp Arg2:T159.sandy-tmp	
+R22	participates_in Arg1:T40.kevin-tmp Arg2:T17	
+R23	is_part_of Arg1:T140.kevin-tmp Arg2:T139.kevin-tmp	
+R24	participates_in Arg1:T140.kevin-tmp Arg2:T166.sandy-tmp	
+R25	participates_in Arg1:T180.sandy-tmp Arg2:T305.kevin-tmp	
+R26	participates_in Arg1:T180.sandy-tmp Arg2:T306.kevin-tmp	
+T18	Entity 11098 11112	lower severity
+R27	participates_in Arg1:T156.kevin-tmp Arg2:T18	
+R28	participates_in Arg1:T44.kevin-tmp Arg2:T186.sandy-tmp	
+R29	is_part_of Arg1:T167.kevin-tmp Arg2:T224.kevin-tmp	
+R30	is_part_of Arg1:T171.kevin-tmp Arg2:T225.kevin-tmp	
+T19	Entity 18878 18888;18890 18891	chromosome 1
+R31	is_part_of Arg1:T270.kevin-tmp Arg2:T19	
+R32	is_part_of Arg1:T270.kevin-tmp Arg2:T316.sandy-tmp	
+R33	participates_in Arg1:T274.kevin-tmp Arg2:T275.kevin-tmp	
+R34	is_part_of Arg1:T274.kevin-tmp Arg2:T276.kevin-tmp	
+R35	participates_in Arg1:T270.kevin-tmp Arg2:T271.kevin-tmp	
+T20	Entity 18751 18762	female mice
+R36	interacts_with Arg1:T310.sandy-tmp Arg2:T311.sandy-tmp	
+T21	Entity 18683 18692	incidence
+T22	Entity 18696 18705	arthritis
+R37	participates_in Arg1:T22 Arg2:T21	
+R38	is_part_of Arg1:T22 Arg2:T310.sandy-tmp	
+T23	KeyEntity 17859 17862	CIA
+T24	KeyEntity 17865 17891	collagen-induced arthritis
+T25	Entity 17893 17896	CII
+T26	Entity 17899 17915	collagen type II
+T27	Entity 17946 17949	MHC
+T28	Entity 17952 17984	major histocompatibility complex
+T29	Entity 18019 18022	QTL
+T30	Entity 18025 18049	quantitative trait locus
+T31	KeyEntity 18051 18053	RA
+T32	KeyEntity 18056 18076	rheumatoid arthritis
+T33	Entity 17542 17551	incidence
+T34	Entity 17555 17563	severity
+T35	KeyEntity 17567 17570	CIA
+R39	participates_in Arg1:T35 Arg2:T34	
+R40	participates_in Arg1:T35 Arg2:T33	
+R41	participates_in Arg1:T261.kevin-tmp Arg2:T33	
+#1	AnnotatorNotes R41	does not participate in 
+R42	participates_in Arg1:T261.kevin-tmp Arg2:T34	
+#2	AnnotatorNotes R42	does not participate in 
+R43	is_part_of Arg1:T263.kevin-tmp Arg2:T262.kevin-tmp	
+T36	Entity 17615 17619	loci
+R44	participates_in Arg1:T36 Arg2:T58.kevin-tmp	
+R45	is_part_of Arg1:T36 Arg2:T262.kevin-tmp	
+R46	participates_in Arg1:T263.kevin-tmp Arg2:T58.kevin-tmp	
+R47	is_part_of Arg1:T36 Arg2:T264.kevin-tmp	
+T37	Entity 17740 17745	locus
+R48	is_part_of Arg1:T37 Arg2:T265.kevin-tmp	
+R49	participates_in Arg1:T37 Arg2:T266.kevin-tmp	
+T38	Entity 13313 13322	incidence
+T39	Entity 13326 13334	severity
+R50	participates_in Arg1:T217.sandy-tmp Arg2:T39	
+R51	participates_in Arg1:T217.sandy-tmp Arg2:T38	
+R52	is_subclass_of Arg1:T177.kevin-tmp Arg2:T176.kevin-tmp	
+T40	Entity 12898 12912	susceptibility
+R53	participates_in Arg1:T184.kevin-tmp Arg2:T40	
+R54	participates_in Arg1:T232.sandy-tmp Arg2:T203.kevin-tmp	
+T41	Entity 13908 13917	incidence
+T42	Entity 13921 13929	severity
+R55	participates_in Arg1:T227.sandy-tmp Arg2:T41	
+R56	participates_in Arg1:T227.sandy-tmp Arg2:T42	
+R57	participates_in Arg1:T196.kevin-tmp Arg2:T41	
+#3	AnnotatorNotes R57	does not participate in 
+R58	participates_in Arg1:T196.kevin-tmp Arg2:T42	
+#4	AnnotatorNotes R58	does not participate in 
+R59	participates_in Arg1:T230.sandy-tmp Arg2:T297.kevin-tmp	
+R60	participates_in Arg1:T230.sandy-tmp Arg2:T296.kevin-tmp	
+R61	participates_in Arg1:T229.sandy-tmp Arg2:T296.kevin-tmp	
+#5	AnnotatorNotes R61	does not participate in 
+R62	participates_in Arg1:T229.sandy-tmp Arg2:T297.kevin-tmp	
+#6	AnnotatorNotes R62	does
+T43	KeyEntity 15904 15917	CIA incidence
+R63	participates_in Arg1:T273.sandy-tmp Arg2:T274.sandy-tmp	
+R64	is_part_of Arg1:T273.sandy-tmp Arg2:T242.kevin-tmp	
+R65	participates_in Arg1:T273.sandy-tmp Arg2:T243.kevin-tmp	
+T44	Entity 15788 15793	locus
+R66	is_part_of Arg1:T44 Arg2:T221.kevin-tmp	
+R67	participates_in Arg1:T291.sandy-tmp Arg2:T290.sandy-tmp	
+T45	Entity 17147 17168	successful deliveries
+R68	participates_in Arg1:T256.kevin-tmp Arg2:T45	
+T46	Entity 16651 16659	severity
+R69	participates_in Arg1:T55.kevin-tmp Arg2:T46	
+R70	regulates Arg1:T248.kevin-tmp Arg2:T46	
+R71	interacts_with Arg1:T211.kevin-tmp Arg2:T247.sandy-tmp	
+R72	is_part_of Arg1:T124.kevin-tmp Arg2:T118.sandy-tmp	
+R73	interacts_with Arg1:T101.kevin-tmp Arg2:T104.kevin-tmp	
+T47	Entity 5727 5731	mice
+R74	interacts_with Arg1:T101.kevin-tmp Arg2:T47	
+R75	interacts_with Arg1:T105.kevin-tmp Arg2:T107.kevin-tmp	
+T48	Entity 11761 11771	LOD scores
+R76	participates_in Arg1:T172.kevin-tmp Arg2:T173.kevin-tmp	
+R77	is_part_of Arg1:T172.kevin-tmp Arg2:T223.kevin-tmp	
+T49	Entity 2111 2116	onset
+R78	participates_in Arg1:T64.kevin-tmp Arg2:T49	
+T50	Entity 2195 2200	onset
+R79	participates_in Arg1:T65.kevin-tmp Arg2:T50	
+T51	Entity 3170 3175	women
+R80	participates_in Arg1:T51 Arg2:T81.kevin-tmp	
+R81	participates_in Arg1:T68.sandy-tmp Arg2:T67.sandy-tmp	
+T52	Entity 10556 10565	incidence
+T53	Entity 10569 10577	severity
+R82	participates_in Arg1:T172.sandy-tmp Arg2:T53	
+R83	participates_in Arg1:T172.sandy-tmp Arg2:T52	
+R84	participates_in Arg1:T146.kevin-tmp Arg2:T52	
+#7	AnnotatorNotes R84	does not
+R85	participates_in Arg1:T146.kevin-tmp Arg2:T53	
+#8	AnnotatorNotes R85	does not participate in 
+T54	Entity 14485 14489	loci
+T55	Entity 14561 14585	arthritis susceptibility
+T56	Entity 14587 14597;14599 14600	chromosome 1
+T57	Entity 14587 14597;14605 14607	chromosome 11
+R86	participates_in Arg1:T54 Arg2:T55	
+R87	participates_in Arg1:T54 Arg2:T206.kevin-tmp	
+R88	is_part_of Arg1:T54 Arg2:T57	
+R89	is_part_of Arg1:T54 Arg2:T56	
+R90	is_part_of Arg1:T54 Arg2:T222.kevin-tmp	
