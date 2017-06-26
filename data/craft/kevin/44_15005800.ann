@@ -21,10 +21,9 @@ T19	Entity 1300 1331	Differentiation of type II AECs
 T20	Entity 1367 1396	surfactant protein (SP) mRNAs
 T21	Entity 1401 1420	SP-C immunostaining
 T22	Entity 1610 1630	sonic hedgehog (Shh)
-T23	Entity 1736 1739	Shh
-T24	Entity 1789 1805	Dhcr7-/- embryos
+T23	Entity 1736 1754	Shh autoprocessing
+T24	Entity 1776 1783;1789 1805	tissues Dhcr7-/- embryos
 T25	Entity 1844 1866	cholesterol deficiency
-T26	KeyEntity 1877 1882	Dhcr7
 T27	Entity 1910 1943	distinct lung saccular hypoplasia
 T28	Entity 1998 2011	alveolar sacs
 T29	Entity 2042 2053	type I AECs
@@ -34,3 +33,110 @@ T32	Entity 2184 2215	sterol deficiency by Dhcr7 loss
 T33	Entity 2286 2322	dysregulated Shh-Patched-Gli pathway
 T34	Entity 0 32	Late gestational lung hypoplasia
 T35	Entity 57 83	Smith-Lemli-Opitz syndrome
+R2	participates_in Arg1:T1 Arg2:T2	
+R3	other_relation Arg1:T4 Arg2:T3	
+#1	AnnotatorNotes R3	attribute
+T36	Entity 338 341;349 366	die 24 hours of birth
+R4	participates_in Arg1:T8 Arg2:T9	
+T37	Entity 663 693	Significant growth retardation
+R5	other_relation Arg1:T37 Arg2:T10	
+#2	AnnotatorNotes R5	attribute
+T38	Entity 808 845	decrease in lung-to-body weight ratio
+R6	other_relation Arg1:T38 Arg2:T11	
+#3	AnnotatorNotes R6	attribute
+T39	Entity 899 927	Lung branching morphogenesis
+T40	Entity 964 972	controls
+T41	Entity 1284 1298	knockout lungs
+T42	Entity 1509 1541	maternal transfer of cholesterol
+T43	Entity 1446 1457;1462 1490	cholesterol detectable in knockout lungs
+T44	Entity 1660 1680	immunohistochemistry
+T45	KeyEntity 1877 1887	Dhcr7 null
+R8	participates_in Arg1:T45 Arg2:T25	
+T46	Entity 2142 2167	impaired lung development
+T47	Entity 2360 2371	Cholesterol
+T48	Entity 2387 2395	membrane
+T49	Entity 2415 2449	mammalian, reptile and avian cells
+R9	is_subclass_of Arg1:T48 Arg2:T47	
+R10	is_part_of Arg1:T47 Arg2:T49	
+T50	Entity 2566 2590	cholesterol-like sterols
+T51	Entity 2592 2604	phytosterols
+T52	Entity 2606 2616	ergosterol
+R11	is_subclass_of Arg1:T51 Arg2:T50	
+R12	is_subclass_of Arg1:T52 Arg2:T50	
+T53	Entity 2763 2775	microdomains
+T54	Entity 2680 2687	sterols
+T55	Entity 2777 2799	variously termed rafts
+T56	Entity 2801 2808	caveoli
+R13	is_subclass_of Arg1:T55 Arg2:T53	
+R14	is_subclass_of Arg1:T56 Arg2:T53	
+T57	Entity 2859 2913	accumulation of cholesterol in atherosclerotic plaques
+T58	Entity 3051 3081	abnormal embryonic development
+T59	Entity 2985 3007	too little cholesterol
+R15	participates_in Arg1:T59 Arg2:T58	
+T60	Entity 3083 3115	Smith-Lemli-Opitz syndrome (SLOS
+T61	Entity 3148 3170	dysmorphology disorder
+R16	is_subclass_of Arg1:T61 Arg2:T60	
+T62	KeyEntity 3185 3203	mutations in DHCR7
+T63	Entity 3229 3262	7-dehydrocholesterol Δ7-reductase
+T64	Entity 3267 3276;3293 3317	catalyzes cholesterol biosynthesis
+T65	Entity 3374 3435	defects in the post-squalene cholesterol biosynthesis pathway
+T66	Entity 3445 3460	desmosterolosis
+T67	Entity 3462 3477	lathosterolosis
+T68	Entity 3479 3514	X-linked chondrodysplasia punctanta
+T69	Entity 3519 3533	CHILD syndrome
+T70	Entity 3340 3363	dysmorphology syndromes
+R17	is_subclass_of Arg1:T66 Arg2:T70	
+R18	is_subclass_of Arg1:T67 Arg2:T70	
+R19	is_subclass_of Arg1:T68 Arg2:T70	
+R20	is_subclass_of Arg1:T69 Arg2:T70	
+T71	Entity 3574 3592;3600 3605	Genetic disruption Dhcr7
+T72	Entity 3617 3635	neonatal lethality
+R21	participates_in Arg1:T71 Arg2:T72	
+T73	Entity 3642 3666;3675 3696	Neonatal mice homozygous Dhcr7 gene disruption
+T74	Entity 3701 3725	deficient in cholesterol
+T75	Entity 3735 3757;3765 3814	increased accumulation cholesterol precursor 7-dehydrocholesterol (7DHC)
+T76	KeyEntity 4304 4321	Dhcr7 null models
+T77	Entity 4179 4200	Poor lung development
+T78	Entity 4212 4275	lung alveolar atelectasis with cyanotic and lethargic breathing
+T79	Entity 4374 4399	respiratory insufficiency
+T80	KeyEntity 4424 4437	Dhcr7-/- pups
+T81	Entity 4445 4464	Dhcr7 knockout mice
+T82	Entity 4643 4675	Developmental lung abnormalities
+T83	Entity 4706 4719	SLOS patients
+R22	other_relation Arg1:T82 Arg2:T83	
+#4	AnnotatorNotes R22	attribute
+T84	Entity 4731 4751	pulmonary hypoplasia
+T85	Entity 4753 4803	abnormal pulmonary lobation and pulmonary arteries
+T86	Entity 4805 4852	anomalies of laryngeal and tracheal development
+R23	other_relation Arg1:T84 Arg2:T83	
+#5	AnnotatorNotes R23	attribute
+R24	other_relation Arg1:T85 Arg2:T83	
+R25	other_relation Arg1:T86 Arg2:T83	
+#6	AnnotatorNotes R24	attribute
+#7	AnnotatorNotes R25	attribute
+T87	Entity 5456 5482	Impaired hedgehog function
+T88	Entity 5527 5540;5547 5554	malformations in SLOS
+R26	participates_in Arg1:T87 Arg2:T88	
+T89	Entity 5556 5579	Hedgehog family members
+T90	Entity 5602 5623	embryonic development
+T91	Entity 5629 5640	cholesterol
+R27	participates_in Arg1:T89 Arg2:T90	
+T92	Entity 42019 42041	Cholesterol deficiency
+T93	Entity 42052 42068	Dhcr7 deficiency
+T94	Entity 42101 42105	IUGR
+T95	Entity 42109 42142	distinct lung saccular hypoplasia
+T96	Entity 42208 42247	delayed associated vascular development
+T97	Entity 42452 42480	signal transduction pathways
+T98	Entity 42432 42447;42472 42480	transcriptional pathways
+T99	Entity 42520 42533	loss of Dhcr7
+T100	Entity 42581 42596	lung hypoplasia
+T101	Entity 42627 42671	role of cholesterol in embryonic development
+T102	Entity 5702 5740	sonic hedgehog (Shh) signaling cascade
+T103	Entity 5782 5798	lung development
+R28	regulates Arg1:T102 Arg2:T103	
+T104	Entity 5808 5828	Loss of Shh function
+T105	Entity 5841 5860	severe lung defects
+T106	Entity 5877 5908	loss of branching morphogenesis
+T107	Entity 5984 6004	Overexpression of Sh
+T108	Entity 6013 6035	distal lung epithelium
+T109	Entity 6052 6081	absence of functional alveoli

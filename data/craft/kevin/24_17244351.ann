@@ -26,7 +26,7 @@ R6	participates_in Arg1:T16 Arg2:T17
 T19	Entity 439 452	global genome
 T20	Entity 10 23	global genome
 T21	Entity 28 41	transcriptome
-T22	Entity 88 124	small-effect quantitative trait loci
+T22	Entity 79 84;88 124	genes small-effect quantitative trait loci
 T23	Entity 128 154	collagen-induced arthritis
 T24	Entity 1411 1436	rheumatoid arthritis (RA)
 T25	Entity 1455 1488	multifactorial autoimmune disease
@@ -46,5 +46,370 @@ T37	Entity 2399 2402	QTL
 T38	Entity 2404 2408	Cia2
 T39	Entity 2446 2458	CIA severity
 T40	Entity 2469 2472	QTL
-T41	Entity 5935 5940;5951 5955	DBA/1 mice
-T42	Entity 5945 5955	FVB/N mice
+T41	KeyEntity 5935 5940;5951 5955	DBA/1 mice
+T42	KeyEntity 5945 5955	FVB/N mice
+R8	is_part_of Arg1:T22 Arg2:T23	
+T43	Entity 2529 2547	CIA susceptibility
+T44	Entity 3085 3088	QTL
+T45	Entity 3117 3129	mouse genome
+R9	is_part_of Arg1:T44 Arg2:T45	
+T46	Entity 3765 3804	Microarray-based global gene expression
+T47	Entity 4046 4065	expression patterns
+T48	Entity 4073 4102	disease-related cells/tissues
+T49	Entity 4113 4127	ideal controls
+T50	Entity 4199 4223	RA and its animal models
+T51	Entity 4259 4268	arthritis
+T52	Entity 29796 29809;29821 29842	Visualisation chromosomal locations
+T53	Entity 28577 28589	DBA/1 strain
+T54	Entity 28597 28629	collagen-induced arthritis (CIA)
+T55	Entity 28662 28684	post-immunisation (PI)
+T56	Entity 28686 28709	onset of arthritis (OA)
+T57	Entity 28714 28736	chronic arthritis (CA)
+T58	Entity 28757 28775	naïve control (NC)
+T59	Entity 27933 27965	collagen-induced arthritis (CIA)
+T60	Entity 28047 28052;28063 28070	DBA/1 strains
+T61	Entity 28057 28070	FVB/N strains
+T62	Entity 28103 28106	CIA
+T63	Entity 28218 28221	CIA
+T64	Entity 28250 28274	naive control (NC) phase
+T65	Entity 28289 28317	post-immunisation (PI) phase
+T66	Entity 28336 28365	onset of arthritis (OA) phase
+T67	Entity 28386 28414	chronic arthritis (CA) phase
+T68	Entity 5050 5073	small-effect QTL of CIA
+T69	Entity 5144 5147	CIA
+T70	Entity 5260 5270;5278 5293;5324 5331	F2 progeny CIA susceptible strains
+T71	KeyEntity 5295 5300	DBA/1
+T72	KeyEntity 5317 5322	FVB/N
+T73	Entity 5260 5270;5278 5281;5306 5315;5324 5331	F2 progeny CIA resistant strains
+T74	Entity 5353 5381	genome-wide linkage analysis
+T75	Entity 5399 5424	identify small-effect QTL
+T76	Entity 5507 5512;5523 5530	DBA/1 strains
+T77	Entity 5517 5530	FVB/N strains
+T78	Entity 5470 5494	gene expression patterns
+R10	is_part_of Arg1:T78 Arg2:T76	
+R11	is_part_of Arg1:T78 Arg2:T77	
+T79	Entity 5663 5691	genomic region linked to CIA
+T80	Entity 5702 5733	disease-specific differentially
+T81	Entity 5751 5754	CIA
+R12	other_relation Arg1:T80 Arg2:T81	
+#2	AnnotatorNotes R12	expressed
+T82	Entity 5769 5799	strain-specific differentially
+T83	Entity 5850 5853	CIA
+R13	other_relation Arg1:T82 Arg2:T83	
+#3	AnnotatorNotes R13	expressed
+T84	KeyEntity 6223 6226	CIA
+T85	KeyEntity 6347 6353	DBA/1J
+T86	KeyEntity 6355 6360	FVB/N
+T87	Entity 6365 6391	(DBA/1J × FVB/N)F2 progeny
+T88	Entity 6828 6833;6845 6849	FVB/N mice
+T89	Entity 6838 6849	DBA/1J mice
+T90	Entity 6973 6979;6983 6986	phases CIA
+T91	Entity 6988 7013	namely naive control (NC)
+T92	Entity 7015 7037	post-immunisation (PI)
+T93	Entity 7039 7062	onset of arthritis (OA)
+T94	Entity 7067 7089	chronic arthritis (CA)
+R14	is_subclass_of Arg1:T91 Arg2:T90	
+R15	is_subclass_of Arg1:T92 Arg2:T90	
+R16	is_subclass_of Arg1:T93 Arg2:T90	
+R17	is_subclass_of Arg1:T94 Arg2:T90	
+T95	Entity 7105 7113	NC group
+T96	Entity 7124 7142	non-immunised mice
+R18	is_part_of Arg1:T96 Arg2:T95	
+T97	Entity 7883 7905	microsatellite markers
+T98	Entity 8299 8316	Lymph nodes (LNs)
+T99	Entity 8362 8383	total RNA preparation
+T100	Entity 8995 9008;9016 9032	Normalisation expression level
+T101	Entity 9560 9580	false discovery rate
+T102	Entity 9666 9700	proportion of false-positive genes
+T103	Entity 9703 9731	Hierarchical gene clustering
+T104	KeyEntity 9809 9812	CIA
+T105	Entity 9939 9970	Pearson correlation coefficient
+T106	Entity 10475 10509	QTL controlling CIA susceptibility
+T107	KeyEntity 10513 10539	(DBA/1 × FVB/N) F2 progeny
+R19	is_part_of Arg1:T106 Arg2:T107	
+T108	Entity 10549 10558;10562 10580	phenotype arthritis severity
+T109	KeyEntity 10596 10600	Cia2
+T110	KeyEntity 10699 10703	Cia2
+T111	Entity 10794 10810	small-effect QTL
+T112	Entity 10817 10837	contributions to CIA
+T113	Entity 10929 10955	potential small-effect QTL
+T114	Entity 10988 11020	lower threshold value of linkage
+T115	KeyEntity 11060 11087	main candidate gene of Cia2
+T116	Entity 11089 11117	complement component C5 (Hc)
+T117	Entity 11150 11165	CIA development
+R20	regulates Arg1:T115 Arg2:T117	
+T118	KeyEntity 11182 11194	FVB/N strain
+T119	Entity 11198 11210	C5 deficient
+R21	other_relation Arg1:T119 Arg2:T118	
+#4	AnnotatorNotes R21	attribute
+T120	Entity 11282 11302	masking effect of C5
+T121	Entity 11225 11241;11251 11265	small-effect QTL masked by Cia2
+T122	Entity 11317 11333	linkage analysis
+T123	Entity 11500 11525	phenotype of CIA severity
+T124	Entity 11609 11625	small-effect QTL
+T125	Entity 11642 11681	chromosomes 5, 6, 7, 10, 11, 16, and 17
+R22	is_part_of Arg1:T124 Arg2:T125	
+T126	Entity 11763 11768;11776 11797	DBA/1 susceptibility allele
+T127	Entity 11813 11818;11826 11847	FVB/N susceptibility allele
+T128	KeyEntity 26539 26544;26555 26562	DBA/1 strains
+T129	KeyEntity 26549 26562	FVB/N strains
+T130	Entity 26627 26630	CIA
+T131	Entity 26632 26634	NA
+T132	Entity 26636 26638	PI
+T133	Entity 26640 26642	OA
+T134	Entity 26647 26649	CA
+T135	Entity 24850 24872;24877 24893	search candidate genes small-effect QTL
+T136	Entity 24954 24970	small-effect QTL
+T137	Entity 24982 25000	CIA susceptibility
+R23	regulates Arg1:T136 Arg2:T137	
+T138	Entity 24932 24947	candidate genes
+R24	other_relation Arg1:T136 Arg2:T138	
+#5	AnnotatorNotes R24	attribute
+T139	Entity 25087 25103	congenic animals
+T140	Entity 25118 25134	small-effect QTL
+T141	Entity 25156 25169	high P values
+T142	Entity 25187 25222	previously-identified arthritis QTL
+T143	Entity 25247 25276	investigating candidate genes
+T144	Entity 25288 25293;25304 25311	mouse studies
+T145	Entity 25298 25311	human studies
+T146	Entity 25445 25459	knock-out mice
+T147	Entity 25479 25503	role of the genes in CIA
+T148	Entity 25544 25556;25571 25573	human genome RA
+T149	Entity 25657 25667	RA cohorts
+T150	Entity 25621 25645	case-control association
+T151	Entity 25599 25614	candidate genes
+T153	Entity 12440 12467	(DBA/1 × BALB/C) F2 progeny
+T152	Entity 12363 12376	Locus 1 and 2
+T154	Entity 12390 12405	Cia13 and Cia14
+T155	Entity 12421 12436	severity of CIA
+R25	regulates Arg1:T154 Arg2:T155	
+T156	Entity 12474 12481	Locus 5
+T157	Entity 12493 12506	chromosome 10
+R26	is_part_of Arg1:T156 Arg2:T157	
+T158	Entity 12551 12577	(DBA/1 × B10.Q) F2 progeny
+T159	Entity 12584 12591	Locus 6
+T160	Entity 12521 12525	Cia8
+T161	Entity 12606 12611	Pgia7
+T162	Entity 12628 12683	susceptibility to proteoglycan-induced arthritis (PGIA)
+R27	regulates Arg1:T159 Arg2:T162	
+T163	Entity 12706 12733	(BALB/C × DBA/2) F2 progeny
+T164	Entity 12777 12793	small-effect QTL
+T165	Entity 12839 12851	linked to RA
+T166	Entity 12902 12922	chromosome 22 and 12
+T167	Entity 12968 12981	chromosome 12
+T168	Entity 13039 13052	chromosome 21
+T169	Entity 13039 13049;13057 13059	chromosome 10
+T170	Entity 13103 13116	chromosome 17
+T171	Entity 13163 13175	chromosome 3
+T172	Entity 13764 13810	strain-specific differentially expressed genes
+T173	KeyEntity 13868 13873;13884 13891	DBA/1 strains
+T174	KeyEntity 13878 13891	FVB/N strains
+T175	Entity 13904 13917	phases of CIA
+T176	Entity 13929 13931	NC
+T177	Entity 13933 13935	PI
+T178	Entity 13937 13939	OA
+T179	Entity 13944 13946	CA
+R28	is_subclass_of Arg1:T176 Arg2:T175	
+R29	is_subclass_of Arg1:T177 Arg2:T175	
+R30	is_subclass_of Arg1:T178 Arg2:T175	
+R31	is_subclass_of Arg1:T179 Arg2:T175	
+T180	Entity 14732 14745	CIA induction
+T181	Entity 14747 14760	PI, OA and CA
+T182	Entity 14839 14893	disease-specific differentially expressed genes in CIA
+T183	Entity 14942 14958	expressed in LNs
+T184	Entity 14966 14969	CIA
+R32	is_part_of Arg1:T183 Arg2:T184	
+T185	Entity 15028 15030	PI
+T186	Entity 15032 15034	OA
+T187	Entity 15039 15041	CA
+T188	Entity 15066 15074	NC group
+T189	Entity 15555 15565	PI with OA
+T191	Entity 15567 15577	PI with CA
+T190	Entity 15582 15592	OA with CA
+T192	Entity 15725 15742	CIA in DBA/1 mice
+T193	Entity 15793 15816	gene expression pattern
+T194	Entity 15824 15827	CIA
+R33	is_part_of Arg1:T193 Arg2:T194	
+T195	Entity 15842 15871	hierarchical cluster analysis
+T196	Entity 15893 15910	Six gene clusters
+T197	Entity 16015 16024	Cluster I
+T198	Entity 16057 16062	genes
+T199	Entity 16073 16107	upregulated after induction of CIA
+R34	other_relation Arg1:T199 Arg2:T198	
+#6	AnnotatorNotes R34	attribute
+T200	Entity 16149 16153;16161 16172	peak onset phase
+T201	Entity 16277 16287	Cluster II
+T202	Entity 16363 16367;16375 16395	peak chronic phase of CIA
+T203	Entity 16435 16450	immune response
+T204	Entity 16452 16470	organelle membrane
+T205	Entity 16475 16505	extracellular region and space
+T206	Entity 16507 16518	Cluster III
+T207	Entity 16552 16566;16571 16579	upregulated at PI phase
+T208	Entity 16612 16634	intercellular junction
+T209	Entity 16687 16697	cluster IV
+T210	Entity 16731 16747;16752 16765	downregultaed at chronic phase
+T211	Entity 16807 16831	lymphocyte proliferation
+T212	Entity 16833 16850	T cell activation
+T213	Entity 16852 16867	protein binding
+T214	Entity 16883 16903	notch signal pathway
+T215	Entity 16905 16914	Cluster V
+T216	Entity 16936 16952;16957 16965	downregulated at PI phase
+T217	Entity 16967 16977	Cluster VI
+T218	Entity 16996 17012;17017 17025	downregulated at OA phase
+T219	Entity 17244 17264	CIA small-effect QTL
+T220	Entity 17607 17646	chromosomes, 5, 6, 7, 10, 11, 16 and 17
+T221	KeyEntity 18130 18136	hspa1a
+T222	KeyEntity 18141 18146	Oas1a
+T223	Entity 18153 18167;18172 18187	upregulated at OA phase of CIA
+T225	KeyEntity 18192 18197	Oas1a
+T226	Entity 18207 18221;18226 18234	upregulated at PI phase
+T227	Entity 18288 18304;18309 18329	downregulated at chronic phase of CIA
+T224	KeyEntity 18501 18507	H2-Q10
+T228	KeyEntity 18509 18515	Mapk14
+T229	KeyEntity 18517 18522	Pscd1
+T230	KeyEntity 18524 18529	Kpnb1
+T231	KeyEntity 18534 18538	Wdr1
+T232	KeyEntity 18564 18570	H2-Q10
+T233	Entity 18590 18607	higher expression
+T234	Entity 18615 18620	DBA/1
+T235	Entity 18874 18918;18937 18945	functional cluster of protein kinase cascade enriched
+T236	KeyEntity 19029 19035	Mapk14
+T237	KeyEntity 19037 19045	Mapk8ip3
+T238	KeyEntity 19047 19053	Stat5a
+T239	KeyEntity 19058 19063	Gna12
+T240	Entity 19128 19153	identify small-effect QTL
+T241	Entity 19160 19170	F2 progeny
+R35	is_part_of Arg1:T240 Arg2:T241	
+T242	Entity 19172 19188	Small-effect QTL
+T243	Entity 19412 19428	small-effect QTL
+T244	Entity 19444 19472	susceptibility genes for CIA
+T245	Entity 19498 19514	linkage analysis
+T246	Entity 19566 19582	C5+/+ F2 progeny
+T247	Entity 19591 19607	C5+/- F2 progeny
+T248	Entity 19552 19561	F progeny
+T249	Entity 19779 19805	overlap with arthritis QTL
+T250	Entity 19839 19857	loci 1, 2, 5 and 6
+T251	Entity 19872 19889	syntenic analysis
+T252	Entity 19987 19999	linked to RA
+T253	Entity 19979 19982	QTL
+T254	Entity 20045 20058	DBA/1 alleles
+T255	Entity 20067 20094	arthritis-enhancing alleles
+R36	other_relation Arg1:T255 Arg2:T254	
+#7	AnnotatorNotes R36	attribute
+T257	Entity 20200 20220	susceptibility genes
+T258	Entity 20241 20257	resistant strain
+T256	Entity 20274 20286	loci 2 and 7
+T259	Entity 20297 20335	overlap with two arthritis-related QTL
+T260	Entity 20382 20389	Locus 2
+T261	Entity 20432 20437	Cia27
+T262	Entity 20441 20493	QTL controlling IgG2a antibody levels to collagen II
+R37	other_relation Arg1:T262 Arg2:T261	
+#8	AnnotatorNotes R37	attribute
+T263	Entity 20526 20529	QTL
+T264	Entity 20611 20623	CIA severity
+T265	Entity 20577 20581	gene
+R38	regulates Arg1:T265 Arg2:T264	
+T266	Entity 20627 20679	controlling the IgG2a antibody levels to collagen II
+R39	other_relation Arg1:T266 Arg2:T265	
+#9	AnnotatorNotes R39	attribute
+R40	is_part_of Arg1:T265 Arg2:T263	
+T267	Entity 20686 20693	Locus 7
+T268	Entity 20697 20710	chromosome 16
+R41	is_part_of Arg1:T267 Arg2:T268	
+T269	Entity 20725 20728	Lp1
+T270	Entity 20745 20769	lymphocyte proliferation
+R42	regulates Arg1:T267 Arg2:T270	
+T271	Entity 20819 20825	loci 8
+T272	Entity 20829 20842	chromosome 17
+R43	is_part_of Arg1:T271 Arg2:T272	
+T273	Entity 20852 20898	lymphocyte adherence during development of CIA
+R44	regulates Arg1:T273 Arg2:T271	
+T274	Entity 20961 20973	CIA severity
+T275	Entity 20915 20919	gene
+R45	regulates Arg1:T275 Arg2:T274	
+T276	Entity 20931 20947	small-effect QTL
+R46	is_part_of Arg1:T275 Arg2:T276	
+T277	Entity 20982 21022	controlling arthritis-related phenotypes
+T278	Entity 23927 23952	identify small-effect QTL
+T279	Entity 23968 23993	potential candidate genes
+T280	Entity 24125 24147	false positive results
+T281	Entity 24042 24067	low statistical threshold
+T282	Entity 24072 24105	small number of animals per group
+T283	Entity 24299 24306	locus 4
+T284	Entity 24329 24340	low P value
+R47	other_relation Arg1:T284 Arg2:T283	
+#10	AnnotatorNotes R47	attribute
+T285	Entity 24350 24361;24371 24406	not overlap previously identified arthritis QTL
+T286	Entity 22823 22839	small-effect QTL
+T287	Entity 22859 22883	gene expression patterns
+T288	Entity 22891 22894	CIA
+R48	is_part_of Arg1:T287 Arg2:T288	
+T289	KeyEntity 23190 23196	Mapk14
+T290	Entity 23200 23226	candidate gene for locus 8
+T291	Entity 23243 23292	p38 mitogen-activated protein kinase (MAPK) alpha
+R49	other_relation Arg1:T291 Arg2:T289	
+#11	AnnotatorNotes R49	attribute
+R50	other_relation Arg1:T290 Arg2:T289	
+#12	AnnotatorNotes R50	attribute
+T292	Entity 23308 23351	production of arthritis-essential cytokines
+R51	regulates Arg1:T289 Arg2:T292	
+T293	Entity 23361 23383	tumour necrosis factor
+T294	Entity 23388 23401	interleukin-1
+R52	is_subclass_of Arg1:T293 Arg2:T292	
+R53	is_subclass_of Arg1:T294 Arg2:T292	
+T295	Entity 23418 23440	inhibitors of p38 MAPK
+T296	Entity 23447 23468	attenuate CIA in rats
+T297	Entity 23479 23487	p38 MAPK
+T298	Entity 23512 23536	therapeutic target in RA
+T299	KeyEntity 23543 23549	Stat5a
+T300	Entity 23553 23578	candidate gene for loci 6
+R54	other_relation Arg1:T300 Arg2:T299	
+#13	AnnotatorNotes R54	attribute
+T301	Entity 23609 23629	lymphoid development
+T302	Entity 23609 23617;23634 23649	lymphoid differentiation
+R55	regulates Arg1:T299 Arg2:T301	
+R56	regulates Arg1:T299 Arg2:T302	
+T303	Entity 23656 23677	Stat5a-deficient mice
+T304	Entity 23695 23709	lose tolerance
+T305	Entity 23728 23762	development of autoimmune diseases
+R57	other_relation Arg1:T305 Arg2:T303	
+#14	AnnotatorNotes R57	attribute
+T306	KeyEntity 23764 23770	Stat5a
+T307	Entity 23819 23876	maintenance of the CD4+CD25+ regulatory T cell population
+T308	Entity 23801 23810	tolerance
+R58	participates_in Arg1:T306 Arg2:T308	
+R59	other_relation Arg1:T307 Arg2:T306	
+#15	AnnotatorNotes R59	attribute
+T309	Entity 21066 21099	detect gene expression during CIA
+T310	Entity 21194 21225	detected gene expression in LNs
+T311	Entity 21233 21236	CIA
+R60	is_part_of Arg1:T310 Arg2:T311	
+T312	Entity 21271 21302	gene expression patterns in LNs
+T313	Entity 21311 21334	genetically susceptible
+T314	Entity 21311 21322;21339 21356	genetically resistant strains
+T315	Entity 21375 21388	phases of CIA
+T316	Entity 21422 21437	regulated genes
+T317	Entity 21450 21486	concentrated at the PI and CA phases
+T318	Entity 21595 21622	biological responses in LNs
+T319	Entity 21644 21660	PI and CA phases
+T320	Entity 21628 21636	stronger
+R61	other_relation Arg1:T320 Arg2:T318	
+#16	AnnotatorNotes R61	attribute
+T321	Entity 21851 21861	cluster IV
+T322	Entity 21892 21918	higher expression in DBA/1
+T323	Entity 21984 22027	opposite expression pattern in the CA phase
+T324	Entity 22029 22051	GO term classification
+T325	Entity 22072 22077	genes
+T326	Entity 22094 22118	lymphocyte proliferation
+R62	participates_in Arg1:T325 Arg2:T326	
+T327	Entity 22094 22104;22123 22133	lymphocyte activation
+R63	participates_in Arg1:T325 Arg2:T327	
+T328	Entity 22151 22182;22187 22201	lymphocytes in the DBA/1 strain more activated
+T329	Entity 22436 22467	upregulated in the DBA/1 strain
+T330	Entity 22394 22399	genes
+R64	other_relation Arg1:T329 Arg2:T330	
+#17	AnnotatorNotes R64	attribute
+T331	Entity 22472 22475;22483 22506	not FVB/N strain during CIA
+T332	Entity 22546 22585	higher antibody response to collagen II
+T333	Entity 22602 22614	DBA/1 strain
+R65	is_part_of Arg1:T332 Arg2:T333	

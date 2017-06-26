@@ -1,13 +1,10 @@
 T1	Entity 107 152	Normal post-squalene cholesterol biosynthesis
 T2	Entity 170 201	mammalian embryonic development
-T3	Entity 236 267	dehydrocholesterol Δ7-reductase
-T4	KeyEntity 269 274	Dhcr7
+T4	KeyEntity 236 275	dehydrocholesterol Δ7-reductase (Dhcr7)
 T5	KeyEntity 310 336	Smith-Lemli-Opitz syndrome
 T6	Entity 477 496	respiratory failure
 T7	Entity 504 541	developmental pulmonary abnormalities
 R1	participates_in Arg1:T1 Arg2:T2	
-R2	other_relation Arg1:T4 Arg2:T3	
-#1	AnnotatorNotes R2	equivalent
 T8	KeyEntity 605 627	cholesterol deficiency
 T9	KeyEntity 631 647	lung development
 T10	Entity 675 693	growth retardation
@@ -15,11 +12,10 @@ T11	Entity 708 719	E14.5~E16.5
 T12	Entity 899 927	Lung branching morphogenesis
 T13	Entity 994 1022	delayed saccular development
 T14	Entity 1064 1069	E17.5
-T15	Entity 1089 1112	re-alveolar development
-T16	Entity 1144 1162	cell proliferation
-T17	Entity 1191 1223	type I alveolar epithelial cells
-T18	KeyEntity 1225 1229	AECs
-T19	Entity 1172 1187	differentiation
+T15	Entity 1079 1112	Impaired pre-alveolar development
+T16	Entity 1134 1162	inhibited cell proliferation
+T18	KeyEntity 1191 1230	type I alveolar epithelial cells (AECs)
+T19	Entity 1164 1187	delayed differentiation
 T20	Entity 1243 1263	vascular development
 T21	Entity 1300 1330	Differentiation of type II AEC
 T22	Entity 1509 1541	maternal transfer of cholesterol
@@ -28,23 +24,522 @@ R4	other_relation Arg1:T10 Arg2:T11
 #2	AnnotatorNotes R4	time stage
 R5	other_relation Arg1:T13 Arg2:T14	
 #3	AnnotatorNotes R5	time stage
-R6	other_relation Arg1:T18 Arg2:T17	
-#4	AnnotatorNotes R6	equivalent
 T23	Entity 1844 1866	cholesterol deficiency
-T24	KeyEntity 1877 1882	Dhcr7
+T24	KeyEntity 1877 1887	Dhcr7 null
 T25	Entity 1919 1943	lung saccular hypoplasia
 T26	Entity 1998 2011	alveolar sacs
 T27	Entity 2023 2052	differentiation of type I AEC
 T28	Entity 2061 2086	immature vascular network
 T29	Entity 2151 2167	lung development
 T30	Entity 2184 2201	sterol deficiency
-T31	Entity 2205 2215	Dhcr7 loss
+T31	KeyEntity 2205 2215	Dhcr7 loss
 R7	regulates Arg1:T31 Arg2:T30	
-T32	Entity 2299 2322	Shh-Patched-Gli pathway
+T32	KeyEntity 2299 2322	Shh-Patched-Gli pathway
 R8	regulates Arg1:T24 Arg2:T23	
 R9	is_part_of Arg1:T25 Arg2:T26	
 R10	is_part_of Arg1:T25 Arg2:T27	
 R11	is_part_of Arg1:T25 Arg2:T28	
 T33	KeyEntity 0 32	Late gestational lung hypoplasia
-T34	Entity 38 49	mouse model
 T35	KeyEntity 57 83	Smith-Lemli-Opitz syndrome
+R2	regulates Arg1:T4 Arg2:T5	
+T3	KeyEntity 737 753	Dhcr7-/- embryos
+T34	Entity 808 816;820 845	decrease lung-to-body weight ratio
+T36	KeyEntity 859 875	Dhcr7-/- embryos
+R12	is_part_of Arg1:T34 Arg2:T36	
+T37	KeyEntity 951 959	Dhcr7-/-
+T38	KeyEntity 1042 1058	Dhcr7-/- embryos
+R13	is_part_of Arg1:T13 Arg2:T38	
+R14	is_part_of Arg1:T10 Arg2:T3	
+T17	Entity 1284 1298	knockout lungs
+R6	is_part_of Arg1:T15 Arg2:T17	
+R15	is_part_of Arg1:T16 Arg2:T17	
+R16	is_part_of Arg1:T19 Arg2:T17	
+R17	is_part_of Arg1:T20 Arg2:T17	
+T39	Entity 1367 1396	surfactant protein (SP) mRNAs
+T40	Entity 1401 1420	SP-C immunostaining
+#1	AnnotatorNotes T40	method
+T41	Entity 1424 1435;1446 1457	significant cholesterol
+T42	Entity 1476 1490	knockout lungs
+R18	is_part_of Arg1:T41 Arg2:T42	
+T43	Entity 1577 1606	spatial-temporal localization
+T44	Entity 1610 1630	sonic hedgehog (Shh)
+T45	Entity 1660 1680	immunohistochemistry
+#4	AnnotatorNotes T45	method
+T46	Entity 1736 1754	Shh autoprocessing
+T47	KeyEntity 1789 1805	Dhcr7-/- embryos
+R19	is_part_of Arg1:T46 Arg2:T47	
+T48	Entity 2360 2371	Cholesterol
+T49	Entity 2415 2424;2444 2449	mammalian cells
+T50	Entity 2426 2433;2444 2449	reptile cells
+T51	Entity 2438 2449	avian cells
+R20	interacts_with Arg1:T48 Arg2:T49	
+R21	interacts_with Arg1:T48 Arg2:T50	
+R22	interacts_with Arg1:T48 Arg2:T51	
+T52	Entity 2566 2590	cholesterol-like sterols
+T53	Entity 2592 2604	phytosterols
+T54	Entity 2606 2616	ergosterol
+R23	is_subclass_of Arg1:T53 Arg2:T52	
+R24	is_subclass_of Arg1:T54 Arg2:T52	
+T55	Entity 2646 2657	cholesterol
+T56	Entity 2680 2687	sterols
+T57	Entity 2890 2913	atherosclerotic plaques
+T58	Entity 2859 2871;2875 2886	accumulation cholesterol
+R25	interacts_with Arg1:T58 Arg2:T57	
+T59	Entity 3051 3081	abnormal embryonic development
+T60	Entity 2985 3007	too little cholesterol
+R26	regulates Arg1:T60 Arg2:T59	
+T61	KeyEntity 3083 3109	Smith-Lemli-Opitz syndrome
+T62	KeyEntity 3198 3203	DHCR7
+R27	regulates Arg1:T62 Arg2:T61	
+T63	Entity 3229 3262	7-dehydrocholesterol Δ7-reductase
+R28	regulates Arg1:T62 Arg2:T63	
+T64	Entity 3293 3317	cholesterol biosynthesis
+R29	interacts_with Arg1:T62 Arg2:T64	
+T65	Entity 3389 3435	post-squalene cholesterol biosynthesis pathway
+T66	Entity 3445 3460	desmosterolosis
+T67	Entity 3462 3477	lathosterolosis
+T68	Entity 3479 3514	X-linked chondrodysplasia punctanta
+T69	Entity 3519 3533	CHILD syndrome
+T70	KeyEntity 3574 3592;3600 3605	Genetic disruption Dhcr7
+T71	Entity 3617 3635	neonatal lethality
+R30	interacts_with Arg1:T70 Arg2:T71	
+T72	KeyEntity 3656 3666;3675 3696	homozygous Dhcr7 gene disruption
+T73	Entity 3714 3725	cholesterol
+T74	KeyEntity 3765 3814	cholesterol precursor 7-dehydrocholesterol (7DHC)
+R31	interacts_with Arg1:T72 Arg2:T73	
+R32	interacts_with Arg1:T72 Arg2:T74	
+T75	Entity 3865 3878	knockout pups
+T76	Entity 3901 3928	developmental abnormalities
+T77	Entity 3979 3989	SLOS model
+T78	KeyEntity 4037 4043;4051 4068	exon 5 murine Dhcr7 gene
+T79	KeyEntity 4014 4021;4051 4068	exons 3 murine Dhcr7 gene
+T80	KeyEntity 4014 4018;4023 4024;4051 4068	exon 4 murine Dhcr7 gene
+R33	is_part_of Arg1:T79 Arg2:T77	
+R34	is_part_of Arg1:T78 Arg2:T77	
+R35	regulates Arg1:T80 Arg2:T77	
+T81	Entity 4179 4200	Poor lung development
+T82	Entity 4204 4237	diffuse lung alveolar atelectasis
+T83	Entity 4243 4251;4266 4275	cyanotic breathing
+T84	Entity 4256 4275	lethargic breathing
+T85	KeyEntity 4304 4321	Dhcr7 null models
+R36	is_part_of Arg1:T81 Arg2:T85	
+R37	is_part_of Arg1:T82 Arg2:T85	
+R38	is_part_of Arg1:T83 Arg2:T82	
+R39	is_part_of Arg1:T84 Arg2:T82	
+T86	Entity 4374 4399	respiratory insufficiency
+T87	KeyEntity 4424 4437	Dhcr7-/- pups
+R40	interacts_with Arg1:T86 Arg2:T87	
+T88	KeyEntity 4445 4464	Dhcr7 knockout mice
+T89	KeyEntity 4480 4490	human SLOS
+T90	Entity 4546 4571	early postnatal lethality
+T91	Entity 4577 4596	respiratory failure
+T92	KeyEntity 4625 4635	SLOS cases
+R41	is_part_of Arg1:T91 Arg2:T92	
+R42	is_part_of Arg1:T90 Arg2:T92	
+T93	Entity 4643 4675	Developmental lung abnormalities
+T94	KeyEntity 4706 4719	SLOS patients
+R43	is_part_of Arg1:T93 Arg2:T94	
+T95	Entity 4731 4751	pulmonary hypoplasia
+T96	Entity 4753 4780	abnormal pulmonary lobation
+T97	Entity 4785 4803	pulmonary arteries
+T98	Entity 4818 4827	laryngeal
+T99	Entity 4832 4852	tracheal development
+T100	Entity 4860 4874	Mammalian lung
+T101	Entity 4942 4954	gas exchange
+T102	Entity 5061 5077	Lung development
+T103	Entity 5113 5136;5140 5150	branching morphogenesis epithelium
+T104	Entity 5152 5176	interstitial development
+T105	Entity 5187 5201	vasculogenesis
+T106	Entity 5203 5227	cellular differentiation
+T107	Entity 5229 5251	biochemical maturation
+T108	Entity 5256 5271	physical growth
+T109	Entity 5288 5310	mouse lung development
+T110	Entity 5381 5396	pseudoglandular
+T111	Entity 5398 5409	canalicular
+T112	Entity 5411 5428	terminal saccular
+T113	Entity 5433 5448	alveolar stages
+R44	is_part_of Arg1:T103 Arg2:T102	
+R45	is_part_of Arg1:T104 Arg2:T102	
+R46	is_part_of Arg1:T110 Arg2:T109	
+R47	is_part_of Arg1:T111 Arg2:T109	
+R48	is_part_of Arg1:T112 Arg2:T109	
+R49	is_part_of Arg1:T113 Arg2:T109	
+T114	Entity 5465 5482	hedgehog function
+T115	Entity 5550 5554	SLOS
+T116	Entity 5556 5579	Hedgehog family members
+T117	Entity 5602 5623	embryonic development
+T118	Entity 5629 5640	cholesterol
+T119	Entity 5702 5740	sonic hedgehog (Shh) signaling cascade
+T120	Entity 5782 5798	lung development
+T121	Entity 5808 5828	Loss of Shh function
+T122	Entity 5877 5908	loss of branching morphogenesis
+R50	regulates Arg1:T121 Arg2:T122	
+T123	Entity 5924 5977	proximal-to-distal differentiation of lung epithelium
+T124	Entity 5984 6005	Overexpression of Shh
+T125	Entity 6013 6035	distal lung epithelium
+T126	Entity 6052 6081	absence of functional alveoli
+R51	participates_in Arg1:T124 Arg2:T125	
+R52	regulates Arg1:T124 Arg2:T126	
+T127	Entity 6101 6120	interstitial tissue
+R53	regulates Arg1:T124 Arg2:T127	
+T128	Entity 6144 6157	proliferation
+T129	Entity 6181 6197	mesenchyme cells
+T130	Entity 6166 6176;6192 6197	epithelial cells
+T131	Entity 6214 6232	Shh overexpression
+T132	Entity 6284 6303	respiratory failure
+R54	interacts_with Arg1:T132 Arg2:T131	
+T133	Entity 6331 6369	inhibition of cholesterol biosynthesis
+T134	KeyEntity 6396 6401	Dhcr7
+R55	regulates Arg1:T134 Arg2:T133	
+T135	Entity 6435 6448	Shh signaling
+T136	Entity 6454 6476	abnormal embryogenesis
+T137	Entity 6490 6515	severe sterol deprivation
+T138	Entity 6539 6549;6553 6568	processing transfected Shh
+T139	Entity 6572 6596	cultured mammalian cells
+R56	regulates Arg1:T137 Arg2:T138	
+T140	Entity 6645 6661	lung development
+T141	KeyEntity 6665 6681	Dhcr7-/- embryos
+T142	Entity 6727 6749	cholesterol deficiency
+T143	KeyEntity 6761 6774	loss of Dhcr7
+R57	regulates Arg1:T143 Arg2:T142	
+T144	Entity 6799 6827	lung branching morphogenesis
+T145	Entity 6829 6868	early gestational stages, E9.5 to E14.5
+R58	is_part_of Arg1:T145 Arg2:T144	
+R59	other_relation Arg1:T142 Arg2:T144	
+#5	AnnotatorNotes R59	no_relation
+T146	Entity 6880 6905	lung saccular development
+T147	Entity 6937 6975	partially developed epithelial tubules
+T148	Entity 6980 7008	delayed vascular development
+T149	Entity 7029 7069	type II alveolar epithelial cells (AECs)
+T150	Entity 7109 7120	type I AECs
+T151	Entity 7155 7177	cholesterol deficiency
+T152	Entity 7201 7233	late gestational lung hypoplasia
+R60	regulates Arg1:T151 Arg2:T152	
+T153	Entity 7252 7272	impaired sacculation
+R61	is_part_of Arg1:T153 Arg2:T152	
+T154	Entity 7278 7313	delayed type I AECs differentiation
+T155	Entity 7318 7347	immature vascular development
+R62	is_part_of Arg1:T154 Arg2:T152	
+R63	is_part_of Arg1:T155 Arg2:T152	
+T156	KeyEntity 7423 7446	Shh-Patched-Gli pathway
+T157	Entity 7483 7512	developmental lung hypoplasia
+T158	KeyEntity 7516 7532	Dhcr7-/- embryos
+R64	other_relation Arg1:T156 Arg2:T157	
+#6	AnnotatorNotes R64	no_relation
+T159	Entity 7560 7581	Shh signaling cascade
+T160	Entity 7626 7629	Shh
+T161	Entity 7657 7680	Body growth retardation
+T162	Entity 7684 7704	late gestation stage
+T163	KeyEntity 7708 7724	Dhcr7-/- embryos
+T164	KeyEntity 7726 7739	Dhcr7-/- mice
+T165	Entity 7766 7782	Mendelian ratios
+T166	Entity 8057 8064	hypoxia
+T167	Entity 8083 8103	spontaneous movement
+T168	Entity 8109 8128	breathing frequency
+T169	KeyEntity 8135 8143	Dhcr7-/-
+T170	KeyEntity 8217 8225	Dhcr7-/-
+T171	Entity 8376 8381	apnea
+T172	Entity 8401 8418	gestational stage
+T173	Entity 8442 8458	knockout embryos
+T174	KeyEntity 8567 8575	Dhcr7-/-
+T175	Entity 8811 8827	knockout embryos
+T176	Entity 9102 9127	Body length growth curves
+T177	Entity 9129 9147	Body length growth
+T178	Entity 9152 9168	gestational days
+T179	Entity 9182 9197	Control embryos
+T180	Entity 9332 9348	knockout embryos
+T181	Entity 9385 9397	growth curve
+T182	KeyEntity 9481 9497	Dhcr7-/- embryos
+T183	KeyEntity 9581 9589	Dhcr7-/-
+T184	KeyEntity 9674 9682	Dhcr7-/-
+T185	KeyEntity 9769 9777	Dhcr7-/-
+T186	KeyEntity 9895 9911	Dhcr7-/- embryos
+T187	Entity 9937 9957	pulmonary hypoplasia
+R65	is_part_of Arg1:T161 Arg2:T163	
+T188	Entity 9963 9991	delayed saccular development
+R66	is_part_of Arg1:T187 Arg2:T186	
+R67	is_part_of Arg1:T188 Arg2:T187	
+T189	KeyEntity 10077 10085	Dhcr7-/-
+T190	Entity 9993 10009	Wet lung weights
+T191	KeyEntity 10411 10419	Dhcr7+/+
+T192	Entity 10466 10481	Embryonic size,
+T193	Entity 10482 10497	lung morphology
+T194	Entity 10615 10637	Dhcr7-/- (-/-) embryos
+T195	Entity 10745 10752	hypoxic
+T196	Entity 10691 10704	knockout pups
+R68	is_part_of Arg1:T195 Arg2:T196	
+T197	Entity 10805 10813	knockout
+T198	Entity 10897 10918	cardiopulmonary level
+T199	Entity 10953 10975	normal lobar septation
+T200	Entity 11043 11059	distal sac space
+T201	Entity 11408 11430	organogenesis of lungs
+T202	KeyEntity 11448 11461	Dhcr7-/- pups
+T203	Entity 11709 11730	Histological analyses
+T204	Entity 11738 11764	cardiopulmonary structures
+T205	Entity 11931 11946	cardiac defects
+T206	Entity 12003 12024	histological analyses
+T207	Entity 12069 12087	hypoxia frequently
+T208	Entity 12113 12126	knockout pups
+T209	Entity 12134 12166	cardiac structural abnormalities
+T210	KeyEntity 12287 12295	Dhcr7-/-
+R69	is_part_of Arg1:T201 Arg2:T202	
+R70	is_part_of Arg1:T207 Arg2:T208	
+R71	other_relation Arg1:T209 Arg2:T208	
+#7	AnnotatorNotes R71	no_relation
+T211	Entity 12480 12485;12491 12507	lungs knockout embryos
+T212	Entity 12530 12544	saccular space
+T213	Entity 12565 12575	mesenchyme
+T214	Entity 12829 12847	epithelial tubules
+T215	Entity 13064 13087	terminal sac space area
+T216	KeyEntity 13119 13133	Dhcr7-/- lungs
+T217	Entity 13179 13202	Interstitial mesenchyme
+T218	Entity 13286 13296;13305 13312	thickening alveoli
+T219	Entity 13329 13336	hypoxia
+T220	KeyEntity 13356 13369	Dhcr7-/- pups
+T221	Entity 13391 13412	Histological analyses
+T222	Entity 13794 13816	knockout (-/-) embryos
+T223	Entity 13952 13966	Distal tubules
+T224	Entity 13987 14006	mesenchyme thinning
+T225	Entity 14119 14138	saccular structures
+T226	Entity 14028 14037	septation
+T227	Entity 14148 14158	mesenchyme
+T228	Entity 14249 14271	developing pre-alveoli
+T229	Entity 14276 14295	thinning mesenchyme
+T230	Entity 14337 14353	knockout embryos
+T231	Entity 14092 14106	knockout lungs
+R72	is_part_of Arg1:T225 Arg2:T231	
+R73	is_part_of Arg1:T227 Arg2:T231	
+T232	Entity 14445 14458	knockout pups
+T233	Entity 14466 14485	deficient septation
+R74	is_part_of Arg1:T233 Arg2:T232	
+T234	Entity 14490 14513	thick-walled mesenchyme
+R75	is_part_of Arg1:T234 Arg2:T232	
+T235	Entity 14654 14675	morphometric analyses
+T236	Entity 14680 14703	ung terminal sac spaces
+T237	Entity 14862 14891	Attenuated cell proliferation
+T238	Entity 14912 14926	Dhcr7-/- lungs
+R76	is_part_of Arg1:T237 Arg2:T238	
+T239	Entity 14937 14941;14945 14976	loss normal cholesterol biosynthesis
+T240	Entity 14985 14998;15002 15029	abnormalities cell proliferation/division
+T241	Entity 15045 15063	Cell proliferation
+T242	Entity 15099 15103	PCNA
+T243	Entity 15116 15134	BrdU incorporation
+T244	Entity 15080 15094	immunostaining
+#8	AnnotatorNotes T244	method
+T245	Entity 15141 15145	PCNA
+T246	Entity 15150 15163	BrdU staining
+T247	Entity 15321 15325	PCNA
+T248	Entity 15330 15334	BrdU
+T249	Entity 15362 15394	distal lungs of knockout embryos
+T250	Entity 15472 15485	PCNA labeling
+T251	Entity 15586 15590;15594 15624	pHH3 marker of active cell division
+T252	Entity 15647 15662	pHH3 expression
+T253	Entity 15670 15680	epithelium
+T254	Entity 15684 15697	knockout lung
+R77	is_part_of Arg1:T252 Arg2:T253	
+R78	participates_in Arg1:T253 Arg2:T254	
+T255	Entity 15792 15803	TUNEL assay
+T256	Entity 15832 15852	cell apoptosis rates
+T257	Entity 15981 16008	cell proliferation/division
+T258	Entity 16025 16041	knockout embryos
+R79	is_part_of Arg1:T257 Arg2:T258	
+T259	Entity 16103 16121	cell proliferation
+T260	Entity 16123 16136	cell division
+T261	Entity 16141 16151	cell death
+T262	Entity 16153 16171	Cell proliferation
+T263	Entity 16173 16177	PCNA
+T264	Entity 16201 16205	BrdU
+T265	Entity 16230 16243	cell division
+R80	interacts_with Arg1:T262 Arg2:T263	
+T266	Entity 16245 16249	pHH3
+R81	interacts_with Arg1:T265 Arg2:T266	
+T267	Entity 16277 16287	cell death
+T268	Entity 16289 16294	TUNEL
+R82	interacts_with Arg1:T267 Arg2:T268	
+T269	Entity 16329 16343	immunostaining
+#9	AnnotatorNotes T269	method
+T270	Entity 16374 16397	late gestational stages
+T271	Entity 16364 16369;16379 16397	early gestational stages
+T272	Entity 16404 16408	PCNA
+T273	Entity 16413 16417	BrdU
+T274	Entity 16440 16450	epithelial
+T275	Entity 16455 16466	mesenchymal
+T276	Entity 16621 16633	distal lungs
+T277	Entity 16659 16663	PCNA
+T278	Entity 16678 16682	BrdU
+T279	Entity 16518 16522	PCNA
+T280	Entity 16537 16541	BrdU
+T281	Entity 16752 16756	PCNA
+T282	Entity 16807 16823	knockout embryos
+T283	Entity 16769 16783	cardiac muscle
+T284	Entity 16882 16887	TUNEL
+T285	Entity 16979 16998	pHH3 immunostaining
+T286	Entity 17245 17255	epithelial
+T287	Entity 17326 17340	Sterol content
+T288	Entity 17344 17360	developing lungs
+T289	KeyEntity 17364 17384	Dhcr7 deficient mice
+T290	Entity 17395 17422	elevated 7-DHC/8-DHC levels
+T291	Entity 17427 17451	reduced body cholesterol
+T292	KeyEntity 17492 17508	Dhcr7-/- P0 mice
+R83	is_part_of Arg1:T290 Arg2:T292	
+R84	is_part_of Arg1:T291 Arg2:T292	
+T293	Entity 17542 17553	cholesterol
+T294	KeyEntity 17581 17594	Dhcr7-/- mice
+T295	Entity 17637 17644	sterols
+T296	Entity 17712 17723	cholesterol
+T297	Entity 17813 17832	cholesterol content
+T298	KeyEntity 17849 17867	Dhcr7 null embryos
+T299	Entity 17993 17998	7-DHC
+T300	Entity 18003 18008	8-DHC
+T301	Entity 18039 18064	spontaneous isomerization
+T302	KeyEntity 18134 18149	Dhcr7 null mice
+T303	Entity 18224 18239	Sterol analyses
+T304	Entity 18243 18258	embryonic lungs
+T305	Entity 18260 18275	Sterol contents
+T306	Entity 18287 18298	cholesterol
+T307	Entity 18316 18325	7DHC/8DHC
+T308	Entity 18360 18365	GC-MS
+T309	Entity 18404 18426	knockout (-/-) embryos
+R85	is_part_of Arg1:T306 Arg2:T305	
+R86	is_part_of Arg1:T307 Arg2:T305	
+T310	Entity 18520 18527	sterols
+T311	Entity 18556 18570	knockout lungs
+T312	Entity 18599 18618	cholesterol content
+T313	Entity 18688 18705	precursor sterols
+T314	Entity 18707 18716	7DHC/8DHC
+R87	is_subclass_of Arg1:T314 Arg2:T313	
+T315	Entity 18758 18769	Cholesterol
+T316	Entity 18797 18822	steroid hormone synthesis
+R88	is_part_of Arg1:T315 Arg2:T316	
+T317	Entity 18830 18844	adrenal glands
+R89	participates_in Arg1:T316 Arg2:T317	
+T318	Entity 18846 18867	Adrenal insufficiency
+T319	Entity 18914 18927	SLOS patients
+T320	Entity 18958 18973	lung hypoplasia
+T321	Entity 18978 18997	perinatal lethality
+T322	Entity 19004 19012	Steroids
+T323	Entity 19031 19046	corticosteroids
+T324	Entity 19066 19081	lung maturation
+T325	Entity 19125 19135	surfactant
+T326	Entity 19167 19188	plasma corticosterone
+T327	Entity 19229 19246	Wild type P0 mice
+T328	Entity 19251 19272	corticosterone levels
+T329	KeyEntity 19351 19367	Dhcr7-/- P0 mice
+T330	Entity 19379 19393	corticosterone
+T331	Entity 19404 19417	Dhcr7-/- mice
+T332	Entity 19592 19606	corticosterone
+T333	Entity 19683 19708	corticosterone deficiency
+T334	Entity 19712 19727	lung immaturity
+T335	Entity 19751 19780	surfactant protein expression
+T336	Entity 19782 19802	Surfactant protein C
+T337	Entity 19821 19824	IHC
+T338	Entity 19876 19894	Dhcr7 null embryos
+T339	Entity 19959 19976	Northern analyses
+T340	Entity 19981 19985	SP-A
+T341	Entity 19987 19991	SP-B
+T342	Entity 19993 19997	SP-C
+T343	Entity 20001 20005	SP-D
+T344	KeyEntity 20064 20079	Dhcr7 null mice
+R90	is_part_of Arg1:T293 Arg2:T294	
+R91	is_part_of Arg1:T297 Arg2:T298	
+R92	is_part_of Arg1:T318 Arg2:T319	
+R93	is_subclass_of Arg1:T323 Arg2:T322	
+T345	Entity 20191 20209	Surfactant protein
+T346	Entity 20249 20263	immunostaining
+T347	Entity 20277 20281	SP-C
+T348	Entity 20335 20357	knockout (-/-) embryos
+T349	Entity 20405 20418	SP-C staining
+T350	Entity 20499 20532	underdeveloped epithelial tubules
+T351	Entity 20536 20550	knockout lungs
+R94	is_part_of Arg1:T350 Arg2:T351	
+T352	Entity 20614 20649	normal type II AECs differentiation
+T353	Entity 20566 20570	SP-C
+R95	is_part_of Arg1:T353 Arg2:T351	
+T354	Entity 20741 20758	Northern analyses
+#10	AnnotatorNotes T354	method
+T355	Entity 20805 20822	knockout P0 lungs
+T356	Entity 20827 20831	SP-A
+T357	Entity 20833 20837	SP-B
+T358	Entity 20839 20843	SP-C
+T359	Entity 20848 20852	SP-D
+T360	Entity 20865 20886	Densitometry analyses
+T361	Entity 20948 20972	surfactant protein mRNAs
+T362	Entity 21038 21052	Dhcr7-/- lungs
+T363	Entity 21088 21127	type I alveolar epithelial cells (AECs)
+T364	Entity 21143 21154	distal lung
+T365	Entity 21189 21208	saccular structures
+T366	Entity 21218 21234	flat type I AECs
+T367	Entity 21243 21285	cuboidal surfactant-producing type II AECs
+T368	Entity 21341 21349	saccules
+T369	Entity 21366 21387	Dhcr7 deficient lungs
+T370	Entity 21404 21423	saccular structures
+T371	Entity 21440 21463	low columnar epithelium
+T372	Entity 21486 21503	type I-like cells
+R96	interacts_with Arg1:T371 Arg2:T370	
+R97	is_part_of Arg1:T372 Arg2:T370	
+T373	Entity 21545 21572	arrested epithelial tubules
+T374	Entity 21614 21641	type I AECs differentiation
+T376	Entity 21686 21689;21694 21724	T1α apical membrane protein marker
+T377	Entity 21728 21744	lung type I AECs
+R98	interacts_with Arg1:T376 Arg2:T377	
+T375	Entity 21804 21808;21818 21835	AQP5 type I AEC marker
+T378	Entity 21855 21876	Dhcr7 deficient lungs
+T379	Entity 21943 22012	Megalin, a low density lipoprotein receptor (LDLR) gene family member
+T380	Entity 22030 22056	embryonic epithelial cells
+T381	Entity 22080 22102	endocytic Shh receptor
+T382	Entity 22109 22116	Megalin
+T383	Entity 22145 22162	distal epithelium
+T384	Entity 22205 22223	type I AECs lining
+T385	Entity 22228 22246	developed saccules
+T386	Entity 22278 22294	megalin staining
+T387	Entity 22311 22330	developing saccules
+T388	Entity 22334 22358	knockout embryonic lungs
+T389	Entity 22391 22422	undifferentiated cuboidal cells
+T390	Entity 22464 22491	type I AECs differentiation
+R99	is_part_of Arg1:T363 Arg2:T362	
+R100	is_part_of Arg1:T365 Arg2:T364	
+R101	is_part_of Arg1:T366 Arg2:T365	
+R102	is_part_of Arg1:T367 Arg2:T365	
+R103	is_part_of Arg1:T379 Arg2:T380	
+R104	is_part_of Arg1:T382 Arg2:T383	
+R105	is_part_of Arg1:T384 Arg2:T385	
+R106	is_part_of Arg1:T386 Arg2:T387	
+R107	participates_in Arg1:T387 Arg2:T388	
+T391	Entity 22546 22573	type I AECs differentiation
+T392	Entity 22586 22601	distal saccules
+T393	Entity 22657 22668;22686 22702	type I (t1) epithelial cells
+T394	Entity 22673 22702	type II (t2) epithelial cells
+T395	Entity 22730 22761	knockout (-/-) littermate lungs
+T396	Entity 22769 22798	less developed saccules lined
+T397	Entity 22802 22827	columnar epithelial cells
+R108	is_part_of Arg1:T396 Arg2:T395	
+R109	is_part_of Arg1:T397 Arg2:T396	
+T398	Entity 22872 22888	arrested tubules
+T399	Entity 22896 22907	distal lung
+R110	participates_in Arg1:T398 Arg2:T399	
+T400	Entity 22956 22979	type I cell markers T1α
+T401	Entity 22956 22974;22984 22988	type I cell marker AQP5
+T402	Entity 23025 23046	flat epithelial cells
+R111	participates_in Arg1:T401 Arg2:T402	
+R112	participates_in Arg1:T400 Arg2:T402	
+T403	Entity 23121 23146	knockout littermate lungs
+T404	Entity 23148 23151	T1α
+T405	Entity 23156 23160	AQP5
+R113	participates_in Arg1:T404 Arg2:T403	
+R114	participates_in Arg1:T405 Arg2:T403	
+T406	Entity 23227 23251	Megalin expression (Meg)
+T407	Entity 23272 23295	airway epithelial cells
+R115	participates_in Arg1:T406 Arg2:T407	
+T408	Entity 23308 23344	proximal bronchiole epithelial cells
+T409	Entity 23422 23465	elongated megalin-positive epithelial cells
+T410	Entity 23497 23504	sacculi
+T411	Entity 23582 23607	terminal epithelial cells
+T412	Entity 23630 23648	megalin antibodies
+T413	Entity 23652 23666	knockout lungs
+R116	interacts_with Arg1:T412 Arg2:T413	
+R117	participates_in Arg1:T411 Arg2:T413	
+T414	Entity 23692 23723	undifferentiated cuboidal cells
+R118	is_part_of Arg1:T414 Arg2:T411	
+T415	Entity 23822 23850	Delayed vascular development
+T416	Entity 23854 23868	Dhcr7-/- lungs
+R119	participates_in Arg1:T415 Arg2:T416	

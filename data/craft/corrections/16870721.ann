@@ -23,7 +23,7 @@ T38.kevin-tmp	KeyEntity 27444 27448	RMCE
 T40.kevin-tmp	KeyEntity 27462 27466	RMCE
 T41.kevin-tmp	Entity 26581 26602	Germline transmission
 T42.kevin-tmp	Entity 26610 26630	p53 RMCE-ready locus
-T43.kevin-tmp	FIX_TYPE 26632 26650	p53RMCE/+ ES cells
+T43.kevin-tmp	Entity 26632 26650	p53RMCE/+ ES cells
 T44.kevin-tmp	Entity 26670 26681	blastocysts
 T45.kevin-tmp	Entity 26694 26707	chimeric mice
 T46.kevin-tmp	KeyEntity 24322 24326	RMCE
@@ -105,7 +105,7 @@ T187.kevin-tmp	Entity 17194 17202	p53ΔPGFP
 T195.kevin-tmp	Entity 17688 17709	germline transmission
 T196.kevin-tmp	KeyEntity 17789 17793	RMCE
 T197.kevin-tmp	Entity 17844 17854	p53 allele
-T200.kevin-tmp	FIX_TYPE 17919 17949	RMCE-ready p53 locus (p53RMCE)
+T200.kevin-tmp	KeyEntity 17919 17949	RMCE-ready p53 locus (p53RMCE)
 T202.kevin-tmp	Entity 18096 18110	p53RMCE/− MEFs
 T203.kevin-tmp	KeyEntity 18136 18140	RMCE
 T204.kevin-tmp	Entity 18148 18157	p53 locus
@@ -125,8 +125,8 @@ T230.kevin-tmp	KeyEntity 21259 21268	RMCE-ASAP
 T232.kevin-tmp	KeyEntity 19700 19704	RMCE
 T233.kevin-tmp	Entity 19708 19722	p53RMCE/− MEFs
 T234.kevin-tmp	Entity 19732 19750	p53ΔPGFP construct
-T235.kevin-tmp	FIX_TYPE 19752 19776	p53ΔPGFP-expressing MEFs
-T239.kevin-tmp	FIX_TYPE 19961 19974	p53ΔP/ΔP MEFs
+T235.kevin-tmp	Entity 19752 19776	p53ΔPGFP-expressing MEFs
+T239.kevin-tmp	Entity 19961 19974	p53ΔP/ΔP MEFs
 T242.kevin-tmp	Entity 20174 20200	not arrest p53ΔPGFP/− MEFs
 T246.kevin-tmp	Entity 20395 20410	less active p53
 T247.kevin-tmp	Entity 20416 20443	impaired cell cycle control
@@ -135,7 +135,6 @@ T252.kevin-tmp	Entity 18716 18729	toxic to MEFs
 T253.kevin-tmp	Entity 18739 18743	MEFs
 T255.kevin-tmp	Entity 18823 18837	p53RMCE/− MEFs
 T262.kevin-tmp	KeyEntity 19362 19366	RMCE
-T263.kevin-tmp	Entity 19420 19442	‘fried-egg’ appearance
 T264.kevin-tmp	KeyEntity 19588 19592	RMCE
 T265.kevin-tmp	Entity 19610 19632	p53GFP-expressing MEFs
 T6.kevin-tmp	KeyEntity 421 473	Recombinase-Mediated Cassette Exchange (RMCE) method
@@ -166,10 +165,10 @@ T81.kevin-tmp	VERIFY_Entity 3310 3321	inefficient
 T86.kevin-tmp	Entity 3673 3689	gene of interest
 T87.kevin-tmp	Entity 3713 3731	selection cassette
 T89.kevin-tmp	Entity 3774 3784	loxP sites
-T93.kevin-tmp	VERIFY_Entity 3944 3961	resident sequence
+T93.kevin-tmp	Entity 3944 3961	resident sequence
 T98.kevin-tmp	Entity 4250 4260	loxP sites
 T104.kevin-tmp	Entity 4855 4874	expression cassette
-T110.kevin-tmp	FIX_SPAN_Entity 5214 5231	selectable marker
+T110.kevin-tmp	Entity 5214 5231	selectable marker
 T115.kevin-tmp	Entity 5534 5542	ES cells
 T119.kevin-tmp	Entity 5705 5722	germline capacity
 T120.kevin-tmp	Entity 5726 5734	ES cells
@@ -189,59 +188,36 @@ T150.kevin-tmp	Entity 15172 15192	high RMCE efficiency
 T152.kevin-tmp	VERIFY_Entity 15235 15252	no aberrant bands
 T158.kevin-tmp	Entity 15714 15719	p53WT
 T159.kevin-tmp	Entity 15724 15730	p53GFP
-T160.kevin-tmp	VERIFY_Entity 15750 15770	adriamycin treatment
+T160.kevin-tmp	Entity 15750 15770	adriamycin treatment
 T165.kevin-tmp	Entity 16032 16034;16047 16052	ES cells
 T168.kevin-tmp	FIX_SPAN_Entity 16082 16097	high p53 levels
 T169.kevin-tmp	FIX_SPAN_Entity 16102 16106;16111 16134	lack p53-mediated DNA damage
-T170.kevin-tmp	FIX_SPAN_Entity 16215 16261	p53 levels decrease during mouse embryogenesis
-T171.kevin-tmp	FIX_SPAN_Entity 16353 16364;16368 16374	high levels p53GFP
-T173.kevin-tmp	FIX_SPAN_Entity 16411 16412	c
-T174.kevin-tmp	FIX_SPAN_Entity 16428 16466	prevented normal embryonic development
-T177.kevin-tmp	FIX_SPAN_Entity 16627 16656;16670 16675	p53 proline-rich domain (PRD) p53ΔP
-T178.kevin-tmp	FIX_SPAN_Entity 16738 16746;16751 16790	deleting proline-rich domain decreases stability
-T179.kevin-tmp	FIX_SPAN_Entity 16795 16827	compromises DNA-damage responses
-T180.kevin-tmp	VERIFY_Entity 16875 16893	hypomorphic mutant
+T171.kevin-tmp	Entity 16368 16374	p53GFP
+T180.kevin-tmp	Entity 16875 16893	hypomorphic mutant
 T186.kevin-tmp	VERIFY_Entity 17169 17192	lower expression levels
-T188.kevin-tmp	VERIFY_Entity 17302 17321	p53+/ΔPGFP ES cells
-T189.kevin-tmp	VERIFY_Entity 17337 17350	chimeric mice
-T190.kevin-tmp	FIX_SPAN_Entity 17410 17435	p53+/ΔPGFP ES cell clones
-T191.kevin-tmp	VERIFY_Entity 17455 17466	blastocysts
-T192.kevin-tmp	VERIFY_Entity 17514 17531	Heterozygote pups
-T193.kevin-tmp	FIX_SPAN_Entity 17630 17646	marker-free RMCE
+T188.kevin-tmp	Entity 17302 17321	p53+/ΔPGFP ES cells
+T189.kevin-tmp	Entity 17337 17350	chimeric mice
+T190.kevin-tmp	Entity 17410 17435	p53+/ΔPGFP ES cell clones
+T191.kevin-tmp	Entity 17455 17466	blastocysts
+T193.kevin-tmp	Entity 17630 17646	marker-free RMCE
 T194.kevin-tmp	Entity 17668 17676	ES cells
 T198.kevin-tmp	Entity 17858 17871	somatic cells
-T199.kevin-tmp	VERIFY_Entity 17820 17836	target mutations
-T201.kevin-tmp	FIX_SPAN_Entity 17995 18037	mating p53RMCE/+ chimeras with p53+/− mice
-T207.kevin-tmp	FIX_SPAN_Entity 18211 18241	electroporating p53RMCE/− MEFs
-T210.kevin-tmp	VERIFY_Entity 18323 18327	FIAU
-T211.kevin-tmp	VERIFY_Entity 18331 18342	ganciclovir
+T199.kevin-tmp	Entity 17820 17836	target mutations
+T210.kevin-tmp	Entity 18323 18327	FIAU
+T211.kevin-tmp	Entity 18331 18342	ganciclovir
 T216.kevin-tmp	Entity 18613 18621	ES cells
-T217.kevin-tmp	FIX_SPAN_Entity 20641 20663	improved RMCE approach
-T218.kevin-tmp	FIX_SPAN_Entity 20677 20706	efficient allele modification
 T220.kevin-tmp	Entity 20731 20735	mice
-T226.kevin-tmp	FIX_SPAN_Entity 21002 21033;21041 21057	existence of a knock-out allele gene of interest
-T227.kevin-tmp	VERIFY_Entity 20943 20960;20964 20972	germline capacity ES cells
-T229.kevin-tmp	FIX_SPAN_Entity 21151 21166	mammalian genes
-T231.kevin-tmp	FIX_SPAN_Entity 21295 21318	fibroblastic cell lines
-T236.kevin-tmp	VERIFY_Entity 19850 19869	ES cell experiments
-T237.kevin-tmp	FIX_SPAN_Entity 19883 19899	p53ΔPGFP protein
-T238.kevin-tmp	FIX_SPAN_Entity 19908 19931	lower levels than p53WT
-T240.kevin-tmp	FIX_SPAN_Entity 19979 19985;19989 20021	unable arrest cycling after irradiation
-T241.kevin-tmp	FIX_SPAN_Entity 20051 20068;20074 20097	irradiation doses arrested p53RMCE/− MEFs
-T243.kevin-tmp	FIX_SPAN_Entity 20244 20262	RMCE-ASAP reaction
-T244.kevin-tmp	FIX_SPAN_Entity 20292 20301;20307 20326	detection recessive phenotype
-T245.kevin-tmp	FIX_SPAN_Entity 20366 20385	proline rich domain
-T249.kevin-tmp	FIX_SPAN_Entity 20515 20529	p53 regulation
-T250.kevin-tmp	FIX_SPAN_Entity 18659 18670;18674 18680	high levels p53GFP
-T251.kevin-tmp	VERIFY_Entity 18703 18711	ES cells
+T236.kevin-tmp	Entity 19850 19869	ES cell experiments
+T237.kevin-tmp	Entity 19883 19899	p53ΔPGFP protein
+T244.kevin-tmp	Entity 20307 20326	recessive phenotype
+T245.kevin-tmp	Entity 20366 20385	proline rich domain
+T249.kevin-tmp	Entity 20515 20529	p53 regulation
+T251.kevin-tmp	Entity 18703 18711	ES cells
 T254.kevin-tmp	KeyEntity 18756 18760	RMCE
-T256.kevin-tmp	FIX_SPAN_Entity 18843 18857;18867 18895	electroporated p53GFP replacement construct
-T257.kevin-tmp	FIX_SPAN_Entity 18914 18936	Cre-expression plasmid
-T258.kevin-tmp	VERIFY_Entity 19150 19154	FIAU
-T259.kevin-tmp	VERIFY_Entity 19158 19169	ganciclovir
-T260.kevin-tmp	FIX_SPAN_Entity 19206 19223	effects of p53GFP
-T261.kevin-tmp	VERIFY_Entity 19275 19297	Cre expression plasmid
-T266.kevin-tmp	FIX_SPAN_Entity 19643 19679	die rapidly owing to p53GFP toxicity
+T257.kevin-tmp	Entity 18914 18936	Cre-expression plasmid
+T258.kevin-tmp	Entity 19150 19154	FIAU
+T259.kevin-tmp	Entity 19158 19169	ganciclovir
+T261.kevin-tmp	Entity 19275 19297	Cre expression plasmid
 T11.sandy-tmp	KeyEntity 612 688	Adapted for targeting in Somatic cells to Accelerate Phenotyping (RMCE-ASAP)
 T13.sandy-tmp	Entity 796 821	rapid phenotypic read-out
 T22.sandy-tmp	KeyEntity 1473 1482	p53 locus
@@ -249,12 +225,9 @@ T27.sandy-tmp	KeyEntity 2021 2035	p53 regulation
 T29.sandy-tmp	Entity 2818 2838	targeting efficiency
 T30.sandy-tmp	Entity 2842 2850	ES cells
 T6.sandy-tmp	Entity 3622 3642	targeting efficiency
-T39.sandy-tmp	VERIFY_Entity 3966 3989	inserts the mutant gene
-T40.sandy-tmp	VERIFY_Entity 4455 4507	marker enabling selection of the desired recombinant
 T42.sandy-tmp	KeyEntity 4726 4730	RMCE
-T44.sandy-tmp	VERIFY_Entity 4924 4943	initial recombinant
-T46.sandy-tmp	VERIFY_Entity 4984 5004	‘marker-free’ mutant
-T51.sandy-tmp	FIX_SPAN_Entity 5214 5239	selectable marker (15–17)
+T44.sandy-tmp	Entity 4924 4943	initial recombinant
+T46.sandy-tmp	Entity 4984 5004	‘marker-free’ mutant
 T52.sandy-tmp	KeyEntity 5554 5558	RMCE
 T56.sandy-tmp	Entity 6633 6656	loxP257 spacer sequence
 T58.sandy-tmp	Entity 7053 7068	puroΔTK plasmid
@@ -345,51 +318,31 @@ T223.sandy-tmp	Entity 14507 14520	Southern blot
 T224.sandy-tmp	Entity 14536 14539	PCR
 T226.sandy-tmp	Entity 14739 14755	GFP fluorescence
 T230.sandy-tmp	Entity 15342 15354	western blot
-T232.sandy-tmp	VERIFY_Entity 15363 15383	antibody against p53
-T233.sandy-tmp	FIX_SPAN_Entity 15478 15498	fusion of GFP to p53
-T234.sandy-tmp	VERIFY_KeyEntity 15533 15562	steady-state levels of p53GFP
-T241.sandy-tmp	FIX_SPAN_KeyEntity 16087 16097	p53 levels
-T242.sandy-tmp	FIX_SPAN_Entity 16102 16144	lack the p53-mediated DNA damage responses
-T244.sandy-tmp	FIX_SPAN_KeyEntity 16215 16218	p53
-T245.sandy-tmp	FIX_SPAN_Entity 16242 16261	mouse embryogenesis
-T246.sandy-tmp	FIX_SPAN_Entity 16353 16374	high levels of p53GFP
-T248.sandy-tmp	FIX_SPAN_Entity 16405 16416	blastocysts
-T249.sandy-tmp	FIX_SPAN_Entity 16429 16466	revented normal embryonic development
+T241.sandy-tmp	KeyEntity 16087 16097	p53 levels
+T244.sandy-tmp	KeyEntity 16215 16218	p53
+T245.sandy-tmp	Entity 16242 16261	mouse embryogenesis
+T248.sandy-tmp	Entity 16405 16416	blastocysts
 T250.sandy-tmp	Entity 7717 7725	L3-CF-1L
-T256.sandy-tmp	FIX_SPAN_Entity 16627 16656	p53 proline-rich domain (PRD)
-T257.sandy-tmp	FIX_SPAN_Entity 16670 16675	p53ΔP
-T258.sandy-tmp	VERIFY_Entity 16686 16691	p53ΔP
+T258.sandy-tmp	Entity 16686 16691	p53ΔP
 T259.sandy-tmp	Entity 16705 16708	GFP
-T260.sandy-tmp	FIX_SPAN_Entity 16781 16790	stability
-T261.sandy-tmp	FIX_SPAN_Entity 16807 16827	DNA-damage responses
-T264.sandy-tmp	VERIFY_Entity 16992 17001	efficient
-T269.sandy-tmp	VERIFY_Entity 17212 17225	less abundant
-T270.sandy-tmp	VERIFY_Entity 17231 17236	p53WT
-T271.sandy-tmp	VERIFY_Entity 17244 17261	p53+/ΔPGFP clones
-T272.sandy-tmp	VERIFY_Entity 17471 17498	highly chimeric (>80%) mice
-T273.sandy-tmp	FIX_SPAN_Entity 17406 17435	Two p53+/ΔPGFP ES cell clones
-T274.sandy-tmp	FIX_SPAN_KeyEntity 17642 17646	RMCE
-T279.sandy-tmp	FIX_SPAN_Entity 18002 18037	p53RMCE/+ chimeras with p53+/− mice
+T261.sandy-tmp	Entity 16807 16827	DNA-damage responses
+T270.sandy-tmp	Entity 17231 17236	p53WT
+T271.sandy-tmp	Entity 17244 17261	p53+/ΔPGFP clones
 T284.sandy-tmp	KeyEntity 18195 18199	RMCE
-T285.sandy-tmp	FIX_SPAN_Entity 18227 18241	p53RMCE/− MEFs
+T285.sandy-tmp	Entity 18227 18241	p53RMCE/− MEFs
 T288.sandy-tmp	KeyEntity 18425 18429	RMCE
 T289.sandy-tmp	Entity 18435 18441	p53GFP
 T291.sandy-tmp	KeyEntity 18466 18472	p53GFP
-T293.sandy-tmp	VERIFY_Entity 18580 18584	MEFs
-T294.sandy-tmp	FIX_SPAN_Entity 18659 18680	high levels of p53GFP
-T297.sandy-tmp	VERIFY_Entity 18774 18795	failed to proliferate
-T298.sandy-tmp	VERIFY_Entity 18955 18978	fluorescence microscopy
-T300.sandy-tmp	FIX_SPAN_Entity 18843 18857	electroporated
-T301.sandy-tmp	FIX_SPAN_Entity 18867 18895	p53GFP replacement construct
-T302.sandy-tmp	FIX_SPAN_Entity 18904 18936	without a Cre-expression plasmid
-T303.sandy-tmp	FIX_SPAN_Entity 19217 19223	p53GFP
-T305.sandy-tmp	VERIFY_Entity 19390 19407	fluorescent cells
-T308.sandy-tmp	FIX_SPAN_Entity 19664 19679	p53GFP toxicity
+T293.sandy-tmp	Entity 18580 18584	MEFs
+T298.sandy-tmp	Entity 18955 18978	fluorescence microscopy
+T301.sandy-tmp	Entity 18867 18895	p53GFP replacement construct
+T303.sandy-tmp	Entity 19217 19223	p53GFP
+T305.sandy-tmp	Entity 19390 19407	fluorescent cells
+T308.sandy-tmp	Entity 19664 19679	p53GFP toxicity
 T10.sandy-tmp	Entity 4133 4142	cassettes
 T315.sandy-tmp	Entity 4358 4386	intramolecular recombination
-T316.sandy-tmp	VERIFY_Entity 4527 4539	interference
-T317.sandy-tmp	VERIFY_Entity 4573 4589	selection marker
-T319.sandy-tmp	VERIFY_Entity 4646 4672	remove the selectable gene
+T316.sandy-tmp	Entity 4527 4539	interference
+T317.sandy-tmp	Entity 4573 4589	selection marker
 T333.sandy-tmp	KeyEntity 6184 6204	p53 RMCE-ready locus
 T334.sandy-tmp	Entity 6158 6177	Targeting construct
 T335.sandy-tmp	Entity 6470 6477	WT loxP
@@ -404,135 +357,103 @@ T346.sandy-tmp	Entity 7273 7293	plasmid CN-PuroΔTK-F
 T349.sandy-tmp	Entity 8552 8574	L3-p53PmlEagPuroΔTK-1L
 T351.sandy-tmp	Entity 8922 8928;8942 8950	p53GFP plasmids
 T352.sandy-tmp	Entity 8933 8950	p53ΔPGFP plasmids
-T363.sandy-tmp	FIX_SPAN_Entity 19883 19899;19908 19913	p53ΔPGFP protein lower
-T365.sandy-tmp	FIX_SPAN_Entity 19979 20021	unable to arrest cycling after irradiation
-T366.sandy-tmp	FIX_SPAN_Entity 20051 20068	irradiation doses
-T367.sandy-tmp	FIX_SPAN_Entity 20074 20097	arrested p53RMCE/− MEFs
-T369.sandy-tmp	FIX_SPAN_KeyEntity 20244 20253	RMCE-ASAP
-T370.sandy-tmp	VERIFY_Entity 20266 20283	heterozygous MEFs
-T371.sandy-tmp	FIX_SPAN_Entity 20292 20326	detection of a recessive phenotype
-T372.sandy-tmp	FIX_SPAN_Entity 20353 20385	deleting the proline rich domain
-T376.sandy-tmp	FIX_SPAN_Entity 20509 20529	alter p53 regulation
-T377.sandy-tmp	FIX_SPAN_Entity 20604 20615;20650 20663	development RMCE approach
-T378.sandy-tmp	FIX_SPAN_Entity 20620 20634;20650 20663	implementation RMCE approach
-T379.sandy-tmp	FIX_SPAN_Entity 20687 20706	allele modification
-T386.sandy-tmp	FIX_SPAN_Entity 21017 21057	knock-out allele of the gene of interest
-T388.sandy-tmp	FIX_SPAN_Entity 21139 21166	analysis of mammalian genes
-T390.sandy-tmp	FIX_SPAN_Entity 21286 21318	generate fibroblastic cell lines
-T391.sandy-tmp	VERIFY_Entity 21336 21354	repeated targeting
-T392.sandy-tmp	VERIFY_Entity 21380 21383	p53
-T393.sandy-tmp	VERIFY_Entity 21387 21390	myc
-T394.sandy-tmp	VERIFY_Entity 21392 21397	NF-KB
-T395.sandy-tmp	VERIFY_Entity 21462 21474	PuroΔTK gene
-T396.sandy-tmp	VERIFY_Entity 21479 21496	SNLPuro-7/4 cells
-T397.sandy-tmp	VERIFY_Entity 21516 21524	DTA gene
+T367.sandy-tmp	Entity 20074 20097	arrested p53RMCE/− MEFs
+T369.sandy-tmp	KeyEntity 20244 20253	RMCE-ASAP
+T370.sandy-tmp	Entity 20266 20283	heterozygous MEFs
+T379.sandy-tmp	Entity 20687 20706	allele modification
+T390.sandy-tmp	Entity 21286 21318	generate fibroblastic cell lines
+T391.sandy-tmp	Entity 21336 21354	repeated targeting
+T392.sandy-tmp	KeyEntity 21380 21383	p53
+T394.sandy-tmp	Entity 21392 21397	NF-KB
 T400.sandy-tmp	Entity 22038 22079	gene of interest (GOI, open boxes: exons)
 T401.sandy-tmp	Entity 22153 22157	loxP
 T402.sandy-tmp	Entity 22193 22229	positive/negative selection cassette
 T403.sandy-tmp	Entity 22246 22279	second inverted heterologous loxP
 T405.sandy-tmp	Entity 22391 22413	Cre expression plasmid
 T406.sandy-tmp	Entity 22447 22490	floxed mutant GOI (green box: mutated exon)
-T408.sandy-tmp	VERIFY_Entity 22624 22660	positive/negative selection cassette
-T409.sandy-tmp	VERIFY_Entity 22751 22769;22799 22825	selection cassette lies downstream of the GOI
-T410.sandy-tmp	VERIFY_Entity 22861 22901	accelerated phenotyping in somatic cells
-T411.sandy-tmp	VERIFY_Entity 22952 22968	RMCE-ready locus
-T412.sandy-tmp	VERIFY_Entity 22990 22998	WT locus
-T413.sandy-tmp	VERIFY_Entity 22920 22934	functional GOI
-T414.sandy-tmp	VERIFY_Entity 23026 23042	RMCE-ready mouse
-T415.sandy-tmp	VERIFY_Entity 22709 22724	RMCE-ready mice
-T416.sandy-tmp	VERIFY_Entity 23075 23079	GOI,
-T417.sandy-tmp	VERIFY_Entity 23080 23093	somatic cells
-T418.sandy-tmp	VERIFY_KeyEntity 23102 23118	RMCE-ready locus
-T419.sandy-tmp	VERIFY_Entity 23164 23216	RMCE/+ and RMCE/− mouse embryonic fibroblasts (MEFs)
-T420.sandy-tmp	FIX_SPAN_Entity 23320 23328;23342 23351	dominant mutations
-T421.sandy-tmp	FIX_SPAN_Entity 23332 23351	recessive mutations
-T422.sandy-tmp	VERIFY_Entity 23297 23316	phenotypic analyses
+T408.sandy-tmp	Entity 22624 22660	positive/negative selection cassette
+T409.sandy-tmp	Entity 22751 22769	selection cassette
+T410.sandy-tmp	Entity 22861 22901	accelerated phenotyping in somatic cells
+T411.sandy-tmp	KeyEntity 22952 22968	RMCE-ready locus
+T412.sandy-tmp	Entity 22990 22998	WT locus
+T413.sandy-tmp	Entity 22920 22934	functional GOI
+T414.sandy-tmp	KeyEntity 23026 23042	RMCE-ready mouse
+T415.sandy-tmp	KeyEntity 22709 22724	RMCE-ready mice
+T416.sandy-tmp	Entity 23075 23079	GOI,
+T417.sandy-tmp	Entity 23080 23093	somatic cells
+T418.sandy-tmp	KeyEntity 23102 23118	RMCE-ready locus
+T419.sandy-tmp	Entity 23164 23216	RMCE/+ and RMCE/− mouse embryonic fibroblasts (MEFs)
+T420.sandy-tmp	Entity 23320 23328;23342 23351	dominant mutations
+T421.sandy-tmp	Entity 23332 23351	recessive mutations
+T422.sandy-tmp	Entity 23297 23316	phenotypic analyses
 T427.sandy-tmp	Entity 23555 23579	Flox targeting construct
-T428.sandy-tmp	VERIFY_Entity 23672 23702	3.4 kb-long 5′ homology region
-T429.sandy-tmp	VERIFY_Entity 23709 23734	0.2 kb upstream of coding
-T430.sandy-tmp	VERIFY_Entity 23749 23759	EcoRI site
-T431.sandy-tmp	VERIFY_Entity 23764 23766	L3
-T432.sandy-tmp	VERIFY_Entity 23770 23796	mutant loxP [loxP257, (14)
-T433.sandy-tmp	VERIFY_Entity 23805 23814	p53 exons
-T434.sandy-tmp	VERIFY_Entity 23821 23838	0.4 kb downstream
-T435.sandy-tmp	VERIFY_KeyEntity 23842 23869	puroΔTK fusion gene (puDTK)
-T436.sandy-tmp	VERIFY_Entity 23874 23901	positive/negative selection
-T437.sandy-tmp	VERIFY_Entity 23914 23930	inverted WT loxP
-T438.sandy-tmp	VERIFY_Entity 23943 23973	1.2 kb-long 3′ homology region
-T439.sandy-tmp	VERIFY_Entity 23987 24015	diphteria α-toxin (DTA) gene
-T440.sandy-tmp	VERIFY_Entity 24020 24040	targeting enrichment
+T430.sandy-tmp	Entity 23749 23759	EcoRI site
+T432.sandy-tmp	Entity 23770 23796	mutant loxP [loxP257, (14)
+T433.sandy-tmp	Entity 23805 23814	p53 exons
+T435.sandy-tmp	Entity 23842 23869	puroΔTK fusion gene (puDTK)
+T436.sandy-tmp	Entity 23874 23901	positive/negative selection
+T437.sandy-tmp	Entity 23914 23930	inverted WT loxP
 T442.sandy-tmp	Entity 24137 24150	Southern blot
 T445.sandy-tmp	Entity 24183 24186	PCR
 T448.sandy-tmp	Entity 24226 24234	Southern
 T449.sandy-tmp	Entity 24240 24243	PCR
-T450.sandy-tmp	FIX_SPAN_Entity 24251 24263;24281 24287	positive (β) clones
-T451.sandy-tmp	FIX_SPAN_Entity 24272 24287	negative clones
 T455.sandy-tmp	Entity 24356 24370	p53GFP plasmid
 T456.sandy-tmp	Entity 24447 24470	p53GFP coding sequences
 T459.sandy-tmp	Entity 24528 24550	Cre expression plasmid
 T460.sandy-tmp	Entity 24591 24594	PCR
 T463.sandy-tmp	Entity 24620 24633	Southern blot
 T464.sandy-tmp	Entity 24552 24573	FIAU-resistant clones
-T466.sandy-tmp	VERIFY_Entity 24704 24727	54/65 RMCE recombinants
+T466.sandy-tmp	Entity 24704 24727	54/65 RMCE recombinants
 T467.sandy-tmp	Entity 24787 24790	PCR
 T468.sandy-tmp	Entity 24801 24809	Southern
 T472.sandy-tmp	Entity 25032 25040	Southern
 T475.sandy-tmp	Entity 25123 25132	Southerns
 T478.sandy-tmp	KeyEntity 25233 25237	RMCE
-T479.sandy-tmp	VERIFY_Entity 25266 25284	Recombinant clones
+T479.sandy-tmp	Entity 25266 25284	Recombinant clones
 T480.sandy-tmp	Entity 25302 25314	western blot
-T481.sandy-tmp	VERIFY_Entity 25323 25338	antibody to p53
 T482.sandy-tmp	Entity 25362 25369	western
 T483.sandy-tmp	Entity 25406 25424	p53+/GFP ES clones
-T484.sandy-tmp	VERIFY_Entity 25461 25477	adriamycin (ADR)
 T486.sandy-tmp	Entity 25537 25543	p53GFP
 T488.sandy-tmp	KeyEntity 25656 25660	RMCE
 T489.sandy-tmp	Entity 25668 25684	p53ΔPGFP plasmid
 T490.sandy-tmp	Entity 25690 25717	p53ΔPGFP exchange construct
 T491.sandy-tmp	Entity 25777 25793	p53GFP construct
 T492.sandy-tmp	Entity 25829 25840	exon 4 (4*)
-T493.sandy-tmp	VERIFY_Entity 25852 25864	PRD deletion
+T493.sandy-tmp	Entity 25852 25864	PRD deletion
 T494.sandy-tmp	KeyEntity 25866 25870	RMCE
-T495.sandy-tmp	VERIFY_Entity 25902 25929	10/12 FIAU-resistant clones
+T495.sandy-tmp	Entity 25902 25929	10/12 FIAU-resistant clones
 T497.sandy-tmp	Entity 25955 25958	PCR
 T500.sandy-tmp	Entity 25983 25990	western
-T501.sandy-tmp	VERIFY_Entity 26008 26029	FIAU-resistant clones
-T502.sandy-tmp	VERIFY_Entity 26071 26080	Lo X/Hi X
-T503.sandy-tmp	VERIFY_Entity 26125 26133	p53ΔPGFP
-T504.sandy-tmp	VERIFY_Entity 26135 26143	p53ΔPGFP
-T506.sandy-tmp	VERIFY_Entity 26239 26244	p53WT
-T507.sandy-tmp	VERIFY_Entity 26279 26296	p53ΔPGFP mutation
-T508.sandy-tmp	VERIFY_Entity 26250 26271	Germline transmission
-T509.sandy-tmp	VERIFY_Entity 26357 26373	p53ΔPGFP chimera
+T501.sandy-tmp	Entity 26008 26029	FIAU-resistant clones
+T502.sandy-tmp	Entity 26071 26080	Lo X/Hi X
+T503.sandy-tmp	Entity 26125 26133	p53ΔPGFP
+T504.sandy-tmp	Entity 26135 26143	p53ΔPGFP
+T506.sandy-tmp	KeyEntity 26239 26244	p53WT
+T507.sandy-tmp	Entity 26279 26296	p53ΔPGFP mutation
+T508.sandy-tmp	Entity 26250 26271	Germline transmission
+T509.sandy-tmp	Entity 26357 26373	p53ΔPGFP chimera
 T510.sandy-tmp	Entity 26407 26410	PCR
 T513.sandy-tmp	Entity 26459 26466	p53+/ΔP
-T514.sandy-tmp	VERIFY_Entity 26471 26484	p53ΔP/ΔP MEFs
-T515.sandy-tmp	VERIFY_Entity 26502 26505	U45
-T516.sandy-tmp	VERIFY_Entity 26509 26525	p53+/ΔPGFP mouse
-T517.sandy-tmp	VERIFY_Entity 26540 26568	transmission of the mutation
-T523.sandy-tmp	VERIFY_Entity 26709 26724	Chimeras (>80%)
-T524.sandy-tmp	VERIFY_Entity 26746 26767	p53+/− mice (Taconic)
-T525.sandy-tmp	VERIFY_Entity 26772 26776	MEFs
-T526.sandy-tmp	VERIFY_Entity 26792 26796	MEFs
+T514.sandy-tmp	Entity 26471 26484	p53ΔP/ΔP MEFs
+T516.sandy-tmp	Entity 26509 26525	p53+/ΔPGFP mouse
+T524.sandy-tmp	Entity 26746 26767	p53+/− mice (Taconic)
+T525.sandy-tmp	Entity 26772 26776	MEFs
+T526.sandy-tmp	Entity 26792 26796	MEFs
 T528.sandy-tmp	Entity 26821 26824	PCR
-T531.sandy-tmp	VERIFY_Entity 26875 26889	PuroΔTK marker
+T531.sandy-tmp	Entity 26875 26889	PuroΔTK marker
 T532.sandy-tmp	KeyEntity 26897 26908	RMCE allele
 T533.sandy-tmp	Entity 26959 26979	p53 RMCE-ready locus
-T534.sandy-tmp	FIX_SPAN_Entity 26983 26989	MEFs 1
-T535.sandy-tmp	FIX_SPAN_Entity 26983 26986	MEF
-T536.sandy-tmp	FIX_SPAN_Entity 26983 26986;26997 26998	MEF 6
-T537.sandy-tmp	VERIFY_Entity 27020 27030	MEF clones
-T542.sandy-tmp	VERIFY_Entity 27149 27160	p53+/− mice
-T546.sandy-tmp	VERIFY_Entity 27253 27264	RMCE allele
-T550.sandy-tmp	VERIFY_Entity 27335 27345	Neo marker
-T551.sandy-tmp	VERIFY_Entity 27353 27362	KO allele
+T534.sandy-tmp	Entity 26983 26989	MEFs 1
+T536.sandy-tmp	Entity 26983 26986;26997 26998	MEF 6
+T537.sandy-tmp	Entity 27020 27030	MEF clones
+T542.sandy-tmp	Entity 27149 27160	p53+/− mice
+T546.sandy-tmp	KeyEntity 27253 27264	RMCE allele
 T552.sandy-tmp	Entity 27364 27369	MEF 1
 T553.sandy-tmp	Entity 27374 27383	p53RMCE/+
-T554.sandy-tmp	FIX_SPAN_Entity 27388 27394	MEFs 2
-T555.sandy-tmp	FIX_SPAN_Entity 27388 27391;27399 27400	MEF 6
-T556.sandy-tmp	VERIFY_Entity 27405 27420	p53RMCE/− cells
+T554.sandy-tmp	Entity 27388 27394	MEFs 2
+T555.sandy-tmp	Entity 27388 27391;27399 27400	MEF 6
+T556.sandy-tmp	Entity 27405 27420	p53RMCE/− cells
 T560.sandy-tmp	Entity 27476 27490	p53GFP plasmid
-T561.sandy-tmp	VERIFY_Entity 27540 27568	intense nuclear fluorescence
 T562.sandy-tmp	Entity 27570 27584	p53RMCE/− MEFs
 T563.sandy-tmp	Entity 27608 27630	Cre expression plasmid
 T564.sandy-tmp	Entity 27639 27662	p53GFP exchange plasmid
@@ -543,8 +464,8 @@ T571.sandy-tmp	Entity 27953 27975	Cre expression plasmid
 T572.sandy-tmp	Entity 27984 28000	p53ΔPGFP plasmid
 T573.sandy-tmp	Entity 28021 28032	ganciclovir
 T574.sandy-tmp	Entity 28034 28037	PCR
-T577.sandy-tmp	VERIFY_Entity 28086 28119	9/22 ganciclovir-resistant clones
-T578.sandy-tmp	VERIFY_Entity 28135 28146	ΔP mutation
+T577.sandy-tmp	Entity 28086 28119	9/22 ganciclovir-resistant clones
+T578.sandy-tmp	Entity 28135 28146	ΔP mutation
 T579.sandy-tmp	Entity 28213 28216	PCR
 T582.sandy-tmp	Entity 28270 28283	PRD deletions
 T583.sandy-tmp	KeyEntity 28298 28302	RMCE
@@ -552,17 +473,17 @@ T584.sandy-tmp	KeyEntity 28310 28319	p53 locus
 T585.sandy-tmp	Entity 28416 28423	Western
 T586.sandy-tmp	Entity 28477 28485	p53ΔPGFP
 T588.sandy-tmp	KeyEntity 28534 28539	p53WT
-T589.sandy-tmp	KeyEntity 28565 28573	p53ΔPGFP
-T590.sandy-tmp	KeyEntity 28603 28625;28641 28645	Asynchronous p53RMCE/− MEFs
-T591.sandy-tmp	KeyEntity 28603 28615;28630 28645	Asynchronous p53ΔPGFP/− MEFs
+T589.sandy-tmp	Entity 28565 28573	p53ΔPGFP
+T590.sandy-tmp	Entity 28603 28625;28641 28645	Asynchronous p53RMCE/− MEFs
+T591.sandy-tmp	Entity 28603 28615;28630 28645	Asynchronous p53ΔPGFP/− MEFs
 T593.sandy-tmp	Entity 28842 28855	p53RMCE locus
-T595.sandy-tmp	KeyEntity 28941 28949	p53ΔPGFP
-T596.sandy-tmp	KeyEntity 28953 28959	p53GFP
+T595.sandy-tmp	Entity 28941 28949	p53ΔPGFP
+T596.sandy-tmp	Entity 28953 28959	p53GFP
 T597.sandy-tmp	KeyEntity 28963 28967	RMCE
-T600.sandy-tmp	KeyEntity 29062 29077	p53GFP toxicity
+T600.sandy-tmp	Entity 29062 29077	p53GFP toxicity
 T601.sandy-tmp	KeyEntity 29112 29116	RMCE
-T602.sandy-tmp	KeyEntity 29122 29130	p53ΔPGFP
-T603.sandy-tmp	KeyEntity 29193 29201	p53ΔPGFP
+T602.sandy-tmp	Entity 29122 29130	p53ΔPGFP
+T603.sandy-tmp	Entity 29193 29201	p53ΔPGFP
 T604.sandy-tmp	Entity 29214 29218	MEFs
 #3	AnnotatorNotes T28.kevin-tmp	experimental_procedure
 #1	AnnotatorNotes T92.kevin-tmp	experimental_procedure
@@ -596,10 +517,10 @@ T604.sandy-tmp	Entity 29214 29218	MEFs
 R17.kevin-tmp	participates_in Arg1:T111.kevin-tmp Arg2:T113.kevin-tmp	
 R22.kevin-tmp	is_part_of Arg1:T123.kevin-tmp Arg2:T124.kevin-tmp	
 R23.kevin-tmp	participates_in Arg1:T122.kevin-tmp Arg2:T123.kevin-tmp	
-R28.kevin-tmp	FIX_RELATION_TYPE Arg1:T161.kevin-tmp Arg2:T162.kevin-tmp	
+R28.kevin-tmp	is_part_of Arg1:T161.kevin-tmp Arg2:T162.kevin-tmp	
 R1.kevin-tmp	is_part_of Arg1:T2.kevin-tmp Arg2:T4.kevin-tmp	
-R2.kevin-tmp	VERIFY_participates_in Arg1:T44.kevin-tmp Arg2:T45.kevin-tmp	
-R3.kevin-tmp	VERIFY_participates_in Arg1:T43.kevin-tmp Arg2:T45.kevin-tmp	
+R2.kevin-tmp	participates_in Arg1:T44.kevin-tmp Arg2:T45.kevin-tmp	
+R3.kevin-tmp	participates_in Arg1:T43.kevin-tmp Arg2:T45.kevin-tmp	
 R4.kevin-tmp	is_part_of Arg1:T58.kevin-tmp Arg2:T59.kevin-tmp	
 R5.kevin-tmp	is_part_of Arg1:T28.kevin-tmp Arg2:T29.kevin-tmp	
 R6.kevin-tmp	is_part_of Arg1:T73.kevin-tmp Arg2:T74.kevin-tmp	
@@ -607,8 +528,8 @@ R9.kevin-tmp	VERIFY_other_relation Arg1:T81.kevin-tmp Arg2:T80.kevin-tmp
 R10.kevin-tmp	is_subclass_of Arg1:T89.kevin-tmp Arg2:T88.kevin-tmp	
 R11.kevin-tmp	is_part_of Arg1:T89.kevin-tmp Arg2:T90.kevin-tmp	
 R12.kevin-tmp	VERIFY_other_relation Arg1:T92.kevin-tmp Arg2:T93.kevin-tmp	
-R14.kevin-tmp	VERIFY_participates_in Arg1:T105.kevin-tmp Arg2:T104.kevin-tmp	
-R15.kevin-tmp	VERIFY_participates_in Arg1:T106.kevin-tmp Arg2:T104.kevin-tmp	
+R14.kevin-tmp	participates_in Arg1:T104.kevin-tmp Arg2:T105.kevin-tmp	
+R15.kevin-tmp	participates_in Arg1:T104.kevin-tmp Arg2:T106.kevin-tmp	
 R18.kevin-tmp	participates_in Arg1:T113.kevin-tmp Arg2:T112.kevin-tmp	
 R24.kevin-tmp	is_part_of Arg1:T131.kevin-tmp Arg2:T130.kevin-tmp	
 R25.kevin-tmp	is_part_of Arg1:T132.kevin-tmp Arg2:T130.kevin-tmp	
@@ -616,31 +537,22 @@ R26.kevin-tmp	VERIFY_other_relation Arg1:T152.kevin-tmp Arg2:T153.kevin-tmp
 R27.kevin-tmp	VERIFY_other_relation Arg1:T152.kevin-tmp Arg2:T154.kevin-tmp	
 R29.kevin-tmp	VERIFY_other_relation Arg1:T168.kevin-tmp Arg2:T167.kevin-tmp	
 R30.kevin-tmp	VERIFY_other_relation Arg1:T169.kevin-tmp Arg2:T167.kevin-tmp	
-R31.kevin-tmp	VERIFY_is_part_of Arg1:T171.kevin-tmp Arg2:T172.kevin-tmp	
-R32.kevin-tmp	VERIFY_is_part_of Arg1:T172.kevin-tmp Arg2:T173.kevin-tmp	
+R31.kevin-tmp	is_part_of Arg1:T171.kevin-tmp Arg2:T172.kevin-tmp	
 R33.kevin-tmp	VERIFY_other_relation Arg1:T186.kevin-tmp Arg2:T185.kevin-tmp	
-R34.kevin-tmp	VERIFY_is_part_of Arg1:T190.kevin-tmp Arg2:T191.kevin-tmp	
-R35.kevin-tmp	VERIFY_is_part_of Arg1:T199.kevin-tmp Arg2:T197.kevin-tmp	
-R36.kevin-tmp	VERIFY_is_part_of Arg1:T197.kevin-tmp Arg2:T198.kevin-tmp	
+R34.kevin-tmp	is_part_of Arg1:T190.kevin-tmp Arg2:T191.kevin-tmp	
+R35.kevin-tmp	is_part_of Arg1:T199.kevin-tmp Arg2:T197.kevin-tmp	
+R36.kevin-tmp	is_part_of Arg1:T197.kevin-tmp Arg2:T198.kevin-tmp	
 R2.sandy-tmp	interacts_with Arg1:T3.kevin-tmp Arg2:T4.kevin-tmp	
-R3.sandy-tmp	VERIFY_participates_in Arg1:T92.kevin-tmp Arg2:T39.sandy-tmp	
 R10.sandy-tmp	participates_in Arg1:T85.kevin-tmp Arg2:T6.sandy-tmp	
 R11.sandy-tmp	participates_in Arg1:T103.kevin-tmp Arg2:T42.sandy-tmp	
-R12.sandy-tmp	VERIFY_is_part_of Arg1:T105.kevin-tmp Arg2:T44.sandy-tmp	
-R13.sandy-tmp	VERIFY_is_part_of Arg1:T106.kevin-tmp Arg2:T46.sandy-tmp	
-R16.sandy-tmp	VERIFY_regulates Arg1:T109.kevin-tmp Arg2:T51.sandy-tmp	
 R17.sandy-tmp	participates_in Arg1:T117.kevin-tmp Arg2:T52.sandy-tmp	
 R18.sandy-tmp	participates_in Arg1:T118.kevin-tmp Arg2:T52.sandy-tmp	
 R21.sandy-tmp	is_part_of Arg1:T69.sandy-tmp Arg2:T139.kevin-tmp	
 R22.sandy-tmp	interacts_with Arg1:T72.sandy-tmp Arg2:T73.sandy-tmp	
 R24.sandy-tmp	is_part_of Arg1:T135.sandy-tmp Arg2:T136.sandy-tmp	
 R25.sandy-tmp	is_part_of Arg1:T166.sandy-tmp Arg2:T167.sandy-tmp	
-R26.sandy-tmp	VERIFY_is_part_of Arg1:T232.sandy-tmp Arg2:T230.sandy-tmp	
-R27.sandy-tmp	VERIFY_participates_in Arg1:T233.sandy-tmp Arg2:T157.kevin-tmp	
-R29.sandy-tmp	VERIFY_is_part_of Arg1:T242.sandy-tmp Arg2:T167.kevin-tmp	
-R30.sandy-tmp	VERIFY_is_part_of Arg1:T241.sandy-tmp Arg2:T167.kevin-tmp	
-R31.sandy-tmp	VERIFY_regulates Arg1:T245.sandy-tmp Arg2:T244.sandy-tmp	
-R32.sandy-tmp	VERIFY_regulates Arg1:T246.sandy-tmp Arg2:T249.sandy-tmp	
+R30.sandy-tmp	is_part_of Arg1:T241.sandy-tmp Arg2:T167.kevin-tmp	
+R31.sandy-tmp	regulates Arg1:T245.sandy-tmp Arg2:T244.sandy-tmp	
 R34.sandy-tmp	is_part_of Arg1:T77.sandy-tmp Arg2:T78.sandy-tmp	
 R35.sandy-tmp	is_part_of Arg1:T144.sandy-tmp Arg2:T250.sandy-tmp	
 R36.sandy-tmp	interacts_with Arg1:T79.sandy-tmp Arg2:T141.kevin-tmp	
@@ -649,57 +561,29 @@ R38.sandy-tmp	interacts_with Arg1:T81.sandy-tmp Arg2:T180.sandy-tmp
 R39.sandy-tmp	interacts_with Arg1:T82.sandy-tmp Arg2:T80.sandy-tmp	
 R40.sandy-tmp	interacts_with Arg1:T82.sandy-tmp Arg2:T180.sandy-tmp	
 R41.sandy-tmp	interacts_with Arg1:T200.sandy-tmp Arg2:T86.sandy-tmp	
-R45.sandy-tmp	VERIFY_is_part_of Arg1:T269.sandy-tmp Arg2:T270.sandy-tmp	
-R46.sandy-tmp	VERIFY_participates_in Arg1:T274.sandy-tmp Arg2:T195.kevin-tmp	
-R47.sandy-tmp	VERIFY_participates_in Arg1:T203.kevin-tmp Arg2:T204.kevin-tmp	
-R48.sandy-tmp	VERIFY_interacts_with Arg1:T285.sandy-tmp Arg2:T208.kevin-tmp	
-R49.sandy-tmp	VERIFY_interacts_with Arg1:T285.sandy-tmp Arg2:T209.kevin-tmp	
 R50.sandy-tmp	is_part_of Arg1:T289.sandy-tmp Arg2:T288.sandy-tmp	
-R51.sandy-tmp	VERIFY_regulates Arg1:T215.kevin-tmp Arg2:T293.sandy-tmp	
-R52.sandy-tmp	VERIFY_participates_in Arg1:T294.sandy-tmp Arg2:T252.kevin-tmp	
-R53.sandy-tmp	VERIFY_participates_in Arg1:T253.kevin-tmp Arg2:T297.sandy-tmp	
-R54.sandy-tmp	VERIFY_is_part_of Arg1:T263.kevin-tmp Arg2:T305.sandy-tmp	
-R55.sandy-tmp	VERIFY_regulates Arg1:T264.kevin-tmp Arg2:T265.kevin-tmp	
-R56.sandy-tmp	VERIFY_participates_in Arg1:T265.kevin-tmp Arg2:T308.sandy-tmp	
+R51.sandy-tmp	participates_in Arg1:T215.kevin-tmp Arg2:T293.sandy-tmp	
+R55.sandy-tmp	regulates Arg1:T264.kevin-tmp Arg2:T265.kevin-tmp	
+R56.sandy-tmp	participates_in Arg1:T265.kevin-tmp Arg2:T308.sandy-tmp	
 R4.sandy-tmp	is_part_of Arg1:T31.kevin-tmp Arg2:T32.kevin-tmp	
 R58.sandy-tmp	VERIFY_participates_in Arg1:T124.sandy-tmp Arg2:T79.kevin-tmp	
 R59.sandy-tmp	is_part_of Arg1:T82.kevin-tmp Arg2:T83.kevin-tmp	
 R60.sandy-tmp	is_part_of Arg1:T82.kevin-tmp Arg2:T84.kevin-tmp	
-R61.sandy-tmp	VERIFY_is_part_of Arg1:T317.sandy-tmp Arg2:T316.sandy-tmp	
-R62.sandy-tmp	VERIFY_is_part_of Arg1:T101.kevin-tmp Arg2:T316.sandy-tmp	
-R63.sandy-tmp	VERIFY_participates_in Arg1:T316.sandy-tmp Arg2:T319.sandy-tmp	
 R64.sandy-tmp	participates_in Arg1:T107.kevin-tmp Arg2:T108.kevin-tmp	
 R66.sandy-tmp	participates_in Arg1:T111.kevin-tmp Arg2:T114.kevin-tmp	
-R71.sandy-tmp	VERIFY_is_part_of Arg1:T234.kevin-tmp Arg2:T232.kevin-tmp	
-R72.sandy-tmp	VERIFY_participates_in Arg1:T239.kevin-tmp Arg2:T365.sandy-tmp	
-R73.sandy-tmp	VERIFY_participates_in Arg1:T366.sandy-tmp Arg2:T367.sandy-tmp	
-R74.sandy-tmp	VERIFY_participates_in Arg1:T369.sandy-tmp Arg2:T370.sandy-tmp	
-R75.sandy-tmp	VERIFY_participates_in Arg1:T370.sandy-tmp Arg2:T371.sandy-tmp	
-R76.sandy-tmp	VERIFY_regulates Arg1:T372.sandy-tmp Arg2:T246.kevin-tmp	
-R77.sandy-tmp	VERIFY_participates_in Arg1:T246.kevin-tmp Arg2:T247.kevin-tmp	
-R78.sandy-tmp	VERIFY_participates_in Arg1:T248.kevin-tmp Arg2:T376.sandy-tmp	
-R79.sandy-tmp	VERIFY_participates_in Arg1:T377.sandy-tmp Arg2:T379.sandy-tmp	
-R80.sandy-tmp	VERIFY_participates_in Arg1:T378.sandy-tmp Arg2:T379.sandy-tmp	
-R81.sandy-tmp	VERIFY_is_part_of Arg1:T379.sandy-tmp Arg2:T219.kevin-tmp	
-R82.sandy-tmp	VERIFY_is_part_of Arg1:T224.kevin-tmp Arg2:T223.kevin-tmp	
-R83.sandy-tmp	VERIFY_is_part_of Arg1:T225.kevin-tmp Arg2:T223.kevin-tmp	
-R84.sandy-tmp	VERIFY_is_part_of Arg1:T386.sandy-tmp Arg2:T223.kevin-tmp	
-R85.sandy-tmp	VERIFY_participates_in Arg1:T228.kevin-tmp Arg2:T388.sandy-tmp	
-R86.sandy-tmp	VERIFY_participates_in Arg1:T230.kevin-tmp Arg2:T390.sandy-tmp	
-R87.sandy-tmp	VERIFY_participates_in Arg1:T408.sandy-tmp Arg2:T415.sandy-tmp	
-R89.sandy-tmp	VERIFY_is_part_of Arg1:T430.sandy-tmp Arg2:T428.sandy-tmp	
-R90.sandy-tmp	VERIFY_is_part_of Arg1:T431.sandy-tmp Arg2:T428.sandy-tmp	
-R91.sandy-tmp	VERIFY_is_part_of Arg1:T432.sandy-tmp Arg2:T428.sandy-tmp	
-R88.sandy-tmp	VERIFY_is_part_of Arg1:T435.sandy-tmp Arg2:T433.sandy-tmp	
-R92.sandy-tmp	VERIFY_participates_in Arg1:T435.sandy-tmp Arg2:T436.sandy-tmp	
-R93.sandy-tmp	VERIFY_is_part_of Arg1:T437.sandy-tmp Arg2:T433.sandy-tmp	
-R94.sandy-tmp	VERIFY_regulates Arg1:T492.sandy-tmp Arg2:T493.sandy-tmp	
+R74.sandy-tmp	participates_in Arg1:T369.sandy-tmp Arg2:T370.sandy-tmp	
+R77.sandy-tmp	participates_in Arg1:T246.kevin-tmp Arg2:T247.kevin-tmp	
+R81.sandy-tmp	is_part_of Arg1:T379.sandy-tmp Arg2:T219.kevin-tmp	
+R82.sandy-tmp	participates_in Arg1:T224.kevin-tmp Arg2:T223.kevin-tmp	
+R83.sandy-tmp	participates_in Arg1:T225.kevin-tmp Arg2:T223.kevin-tmp	
+R87.sandy-tmp	participates_in Arg1:T408.sandy-tmp Arg2:T415.sandy-tmp	
+R92.sandy-tmp	participates_in Arg1:T435.sandy-tmp Arg2:T436.sandy-tmp	
+R94.sandy-tmp	regulates Arg1:T492.sandy-tmp Arg2:T493.sandy-tmp	
 R95.sandy-tmp	is_part_of Arg1:T492.sandy-tmp Arg2:T491.sandy-tmp	
-R96.sandy-tmp	VERIFY_participates_in Arg1:T43.kevin-tmp Arg2:T44.kevin-tmp	
-R97.sandy-tmp	VERIFY_interacts_with Arg1:T523.sandy-tmp Arg2:T524.sandy-tmp	
-R98.sandy-tmp	VERIFY_participates_in Arg1:T577.sandy-tmp Arg2:T578.sandy-tmp	
-R99.sandy-tmp	VERIFY_regulates Arg1:T583.sandy-tmp Arg2:T582.sandy-tmp	
-R100.sandy-tmp	VERIFY_is_part_of Arg1:T583.sandy-tmp Arg2:T584.sandy-tmp	
+R96.sandy-tmp	is_part_of Arg1:T43.kevin-tmp Arg2:T44.kevin-tmp	
+R98.sandy-tmp	participates_in Arg1:T577.sandy-tmp Arg2:T578.sandy-tmp	
+R99.sandy-tmp	regulates Arg1:T583.sandy-tmp Arg2:T582.sandy-tmp	
+R100.sandy-tmp	is_part_of Arg1:T583.sandy-tmp Arg2:T584.sandy-tmp	
 R101.sandy-tmp	interacts_with Arg1:T597.sandy-tmp Arg2:T596.sandy-tmp	
 R102.sandy-tmp	interacts_with Arg1:T597.sandy-tmp Arg2:T595.sandy-tmp	
 T1	Entity 63 92	accelerate phenotype analyses
@@ -733,3 +617,53 @@ T15	Entity 7962 7974	modified pBS
 T16	Entity 8580 8588	3′ + DTA
 T17	KeyEntity 8241 8244	p53
 T18	Entity 8421 8440	BamHI-PmlI fragment
+T19	Entity 22822 22825	GOI
+T20	Entity 15488 15491	GFP
+T21	KeyEntity 15495 15498	p53
+R14	interacts_with Arg1:T20 Arg2:T21	
+T22	Entity 15556 15562	p53GFP
+T23	Entity 18784 18795	proliferate
+R15	participates_in Arg1:T253.kevin-tmp Arg2:T23	
+#4	AnnotatorNotes R15	did not participate 
+R16	participates_in Arg1:T193.kevin-tmp Arg2:T195.kevin-tmp	
+T24	Entity 3889 3897	cassette
+T25	Entity 3911 3931	floxed mutant allele
+T26	Entity 27548 27568	nuclear fluorescence
+T27	Entity 26709 26717	Chimeras
+R17	interacts_with Arg1:T27 Arg2:T524.sandy-tmp	
+T28	Entity 26983 26986;26991 26992	MEF 2
+R18	is_part_of Arg1:T172.kevin-tmp Arg2:T248.sandy-tmp	
+T29	Entity 16438 16466	normal embryonic development
+T30	KeyEntity 16627 16656	p53 proline-rich domain (PRD)
+T31	KeyEntity 16670 16675	p53ΔP
+T32	Entity 18002 18020	p53RMCE/+ chimeras
+T33	Entity 18026 18037	p53+/− mice
+R19	interacts_with Arg1:T32 Arg2:T33	
+R20	interacts_with Arg1:T285.sandy-tmp Arg2:T208.kevin-tmp	
+R21	interacts_with Arg1:T285.sandy-tmp Arg2:T209.kevin-tmp	
+T34	Entity 18674 18680	p53GFP
+R22	participates_in Arg1:T34 Arg2:T252.kevin-tmp	
+T35	Entity 19926 19931	p53WT
+T36	Entity 19996 20003	cycling
+R23	participates_in Arg1:T239.kevin-tmp Arg2:T36	
+R24	regulates Arg1:T245.kevin-tmp Arg2:T246.kevin-tmp	
+R25	participates_in Arg1:T248.kevin-tmp Arg2:T249.kevin-tmp	
+T37	KeyEntity 20650 20654	RMCE
+R26	participates_in Arg1:T37 Arg2:T379.sandy-tmp	
+T38	Entity 20943 20960	germline capacity
+T39	Entity 20964 20972	ES cells
+T40	Entity 20983 20996	somatic cells
+T41	Entity 21041 21057	gene of interest
+T42	Entity 21017 21033	knock-out allele
+R27	is_part_of Arg1:T42 Arg2:T41	
+R28	participates_in Arg1:T42 Arg2:T223.kevin-tmp	
+R29	participates_in Arg1:T230.kevin-tmp Arg2:T390.sandy-tmp	
+T43	Entity 21385 21390	c-myc
+T44	Entity 16111 16134	p53-mediated DNA damage
+R30	participates_in Arg1:T167.kevin-tmp Arg2:T44	
+T45	Entity 3978 3989	mutant gene
+R31	interacts_with Arg1:T92.kevin-tmp Arg2:T93.kevin-tmp	
+R32	interacts_with Arg1:T92.kevin-tmp Arg2:T45	
+R33	participates_in Arg1:T317.sandy-tmp Arg2:T316.sandy-tmp	
+R34	participates_in Arg1:T101.kevin-tmp Arg2:T316.sandy-tmp	
+R35	is_part_of Arg1:T110.kevin-tmp Arg2:T109.kevin-tmp	

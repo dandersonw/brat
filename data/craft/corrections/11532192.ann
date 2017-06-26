@@ -1,62 +1,970 @@
-T2.sandy	KeyEntity 150 176	intraocular pressure (IOP)
-T3.sandy	Entity 526 536	IOP ranges
-T7.sandy	Entity 692 706	diurnal rhythm
-T14.sandy	KeyEntity 991 1011	Albino C57BL/6J mice
-T23.sandy	Entity 1529 1532	Tyr
-T1.sandy	KeyEntity 251 255	IOPs
-T27.sandy	Entity 259 293	genetically distinct mouse strains
-T31.sandy	KeyEntity 361 364	IOP
-T33.sandy	KeyEntity 463 466	IOP
-T5.sandy	Entity 612 617	aging
-T6.sandy	Entity 632 644	IOP decrease
-T11.sandy	Entity 944 951	obesity
-T12.sandy	Entity 956 964	diabetes
-T13.sandy	Entity 976 989	increased IOP
-T16.sandy	Entity 1064 1075	higher IOPs
-T17.sandy	Entity 1359 1362	Age
-T18.sandy	Entity 1364 1375	time of day
-T19.sandy	Entity 1377 1384	obesity
-T20.sandy	Entity 1389 1397	diabetes
-T22.sandy	Entity 1520 1524	Lepr
-T24.sandy	Entity 1544 1557	increased IOP
-T25.sandy	KeyEntity 0 20	Intraocular pressure
-T26.sandy	Entity 45 49	mice
-T28.sandy	Entity 333 336	age
-T29.sandy	Entity 338 341	sex
-T30.sandy	Entity 346 357	time of day
-T36.sandy	Entity 65 78	strain survey
-T5.kevin	Entity 435 459	candidate gene mutations
-T7.kevin	Entity 503 516	mouse strains
-T9.kevin	KeyEntity 604 607	IOP
-T12.kevin	KeyEntity 712 715	IOP
-T13.kevin	Entity 769 781	Homozygosity
-T14.kevin	Entity 788 799	null allele
-T15.kevin	KeyEntity 807 841	carbonic anhydrase II gene (Car2n)
-T16.kevin	KeyEntity 857 860	IOP
-T17.kevin	Entity 867 879	homozygosity
-T21.kevin	KeyEntity 1029 1058	tyrosinase mutation (Tyrc-2J)
-T23.kevin	KeyEntity 1213 1217	IOPs
-T24.kevin	KeyEntity 1225 1228	IOP
-T25.kevin	KeyEntity 1354 1357	IOP
-T26.kevin	Entity 1414 1423	mouse IOP
-T30.kevin	KeyEntity 1669 1683	IOP regulation
-T31.kevin	KeyEntity 1717 1720	IOP
-T32.kevin	Entity 1470 1479	Mutations
-R1.sandy	is_part_of Arg1:T1.sandy Arg2:T27.sandy	
-R3.sandy	participates_in Arg1:T5.sandy Arg2:T6.sandy	
-R10.sandy	is_part_of Arg1:T16.sandy Arg2:T14.sandy	
-R11.sandy	participates_in Arg1:T22.sandy Arg2:T24.sandy	
-R12.sandy	participates_in Arg1:T23.sandy Arg2:T24.sandy	
-R13.sandy	participates_in Arg1:T28.sandy Arg2:T31.sandy	
-R14.sandy	participates_in Arg1:T29.sandy Arg2:T31.sandy	
-R15.sandy	participates_in Arg1:T30.sandy Arg2:T31.sandy	
-R17.sandy	is_part_of Arg1:T25.sandy Arg2:T26.sandy	
-R2.kevin	interacts_with Arg1:T5.kevin Arg2:T33.sandy	
-R4.kevin	is_part_of Arg1:T32.kevin Arg2:T23.sandy	
-T2	KeyEntity 902 931	leptin receptor gene (Leprdb)
-R1	is_part_of Arg1:T21.kevin Arg2:T14.sandy	
-R2	participates_in Arg1:T2 Arg2:T11.sandy	
-R3	participates_in Arg1:T2 Arg2:T12.sandy	
-R4	participates_in Arg1:T2 Arg2:T13.sandy	
-R5	is_part_of Arg1:T32.kevin Arg2:T22.sandy	
-R6	interacts_with Arg1:T32.kevin Arg2:T24.sandy	
+T1.kevin-tmp	KeyEntity 150 176	intraocular pressure (IOP)
+T2.kevin-tmp	KeyEntity 251 255	IOPs
+T3.kevin-tmp	KeyEntity 361 364	IOP
+T4.kevin-tmp	KeyEntity 463 466	IOP
+T6.kevin-tmp	Entity 259 293	genetically distinct mouse strains
+T8.kevin-tmp	KeyEntity 526 536	IOP ranges
+T9.kevin-tmp	KeyEntity 604 607	IOP
+T11.kevin-tmp	Entity 692 706	diurnal rhythm
+T12.kevin-tmp	KeyEntity 712 715	IOP
+T15.kevin-tmp	Entity 807 841	carbonic anhydrase II gene (Car2n)
+T16.kevin-tmp	KeyEntity 857 860	IOP
+T18.kevin-tmp	Entity 902 931	leptin receptor gene (Leprdb)
+T20.kevin-tmp	Entity 991 1011	Albino C57BL/6J mice
+T23.kevin-tmp	KeyEntity 1213 1217	IOPs
+T24.kevin-tmp	KeyEntity 1225 1228	IOP
+T26.kevin-tmp	KeyEntity 1414 1423	mouse IOP
+T28.kevin-tmp	Entity 1529 1532	Tyr
+T31.kevin-tmp	KeyEntity 1717 1720	IOP
+T33.kevin-tmp	KeyEntity 0 20	Intraocular pressure
+T34.kevin-tmp	Entity 65 78	strain survey
+T35.kevin-tmp	Entity 24 49	genetically distinct mice
+T22.kevin-tmp	Entity 1125 1159	Genetically distinct mouse strains
+T36.kevin-tmp	Entity 1753 1761	Glaucoma
+T37.kevin-tmp	Entity 1784 1793	blindness
+T38.kevin-tmp	Entity 1843 1851	Glaucoma
+T39.kevin-tmp	Entity 1861 1888	retinal ganglion cell death
+T40.kevin-tmp	Entity 1893 1911	optic nerve damage
+T41.kevin-tmp	KeyEntity 1951 1977	intraocular pressure (IOP)
+T42.kevin-tmp	Entity 2039 2047	glaucoma
+T43.kevin-tmp	Entity 2181 2189	glaucoma
+T44.kevin-tmp	Entity 2290 2298	glaucoma
+T45.kevin-tmp	Entity 2339 2351	elevated IOP
+T46.kevin-tmp	Entity 2356 2364	glaucoma
+T48.kevin-tmp	KeyEntity 2826 2829	IOP
+T49.kevin-tmp	Entity 2834 2842	glaucoma
+T50.kevin-tmp	KeyEntity 2953 2956	IOP
+T51.kevin-tmp	Entity 2986 2997	optic nerve
+T52.kevin-tmp	Entity 3002 3008	retina
+T53.kevin-tmp	Entity 3012 3031	glaucomatous damage
+T54.kevin-tmp	KeyEntity 3083 3086	IOP
+T55.kevin-tmp	KeyEntity 3115 3130	IOP fluctuation
+T56.kevin-tmp	KeyEntity 3212 3215	IOP
+T58.kevin-tmp	Entity 3313 3331;3335 3343	direct measurement pressure
+T59.kevin-tmp	Entity 3354 3365;3373 3389	cannulation anterior chamber
+T60.kevin-tmp	Entity 3454 3472	ocular cannulation
+T61.kevin-tmp	KeyEntity 3500 3503	IOP
+T62.kevin-tmp	KeyEntity 3587 3614	intraocular pressure levels
+T64.kevin-tmp	KeyEntity 3840 3844	IOPs
+T65.kevin-tmp	KeyEntity 3889 3892	IOP
+T66.kevin-tmp	Entity 3908 3928	inbred mouse strains
+T67.kevin-tmp	KeyEntity 4009 4012	IOP
+T73.kevin-tmp	Entity 4330 4364	genetically distinct mouse strains
+T75.kevin-tmp	Entity 4488 4495	RIIIS/J
+T76.kevin-tmp	Entity 4563 4571	SEC/1ReJ
+T77.kevin-tmp	Entity 4576 4581	SB/Le
+T78.kevin-tmp	Entity 4637 4641	CE/J
+T79.kevin-tmp	Entity 4663 4670	BUB/BnJ
+T81.kevin-tmp	Entity 4786 4803	CBA/CaHN-Btkxid/J
+T82.kevin-tmp	Entity 4822 4830	CBA/CaHN
+T83.kevin-tmp	KeyEntity 5008 5011	IOP
+T84.kevin-tmp	Entity 5030 5048	iridocorneal angle
+T85.kevin-tmp	Entity 5053 5086	aqueous humor drainage structures
+T86.kevin-tmp	Entity 5103 5119	anterior chamber
+T90.kevin-tmp	KeyEntity 5226 5230	IOPs
+T91.kevin-tmp	Entity 5273 5281	glaucoma
+T92.kevin-tmp	Entity 5382 5394	optic nerves
+T93.kevin-tmp	Entity 5399 5406	retinas
+T94.kevin-tmp	Entity 5432 5440	glaucoma
+T95.kevin-tmp	Entity 5460 5479	iridocorneal angles
+T97.kevin-tmp	Entity 5518 5536	iridocorneal angle
+T98.kevin-tmp	Entity 5555 5588	aqueous humor drainage structures
+T99.kevin-tmp	Entity 5590 5610	Schlemm's canal (SC)
+T100.kevin-tmp	Entity 5615 5639	trabecular meshwork (TM)
+T104.kevin-tmp	Entity 5783 5800	human clump cells
+T109.kevin-tmp	KeyEntity 7080 7083	IOP
+T110.kevin-tmp	KeyEntity 7117 7120	IOP
+T112.kevin-tmp	KeyEntity 7374 7377	IOP
+T113.kevin-tmp	KeyEntity 7560 7563	IOP
+T114.kevin-tmp	KeyEntity 7780 7783	IOP
+T115.kevin-tmp	KeyEntity 7900 7903	IOP
+T116.kevin-tmp	KeyEntity 8788 8791	IOP
+T117.kevin-tmp	KeyEntity 8805 8809	IOPs
+T120.kevin-tmp	KeyEntity 9250 9253	IOP
+T121.kevin-tmp	KeyEntity 9429 9432	IOP
+T122.kevin-tmp	KeyEntity 9016 9019	IOP
+T123.kevin-tmp	KeyEntity 9378 9381	IOP
+T124.kevin-tmp	KeyEntity 9747 9750	IOP
+T125.kevin-tmp	KeyEntity 9923 9926	IOP
+T126.kevin-tmp	KeyEntity 9851 9854	IOP
+T127.kevin-tmp	KeyEntity 9906 9909	IOP
+T130.kevin-tmp	KeyEntity 10704 10707	IOP
+T133.kevin-tmp	KeyEntity 11262 11265	IOP
+T134.kevin-tmp	KeyEntity 11439 11442	IOP
+T135.kevin-tmp	KeyEntity 11482 11485	IOP
+T136.kevin-tmp	KeyEntity 11819 11822	IOP
+T137.kevin-tmp	KeyEntity 11886 11889	IOP
+T142.kevin-tmp	KeyEntity 13071 13074	IOP
+T143.kevin-tmp	KeyEntity 13111 13114	IOP
+T144.kevin-tmp	KeyEntity 13265 13268	IOP
+T146.kevin-tmp	KeyEntity 13526 13529	IOP
+T147.kevin-tmp	KeyEntity 13569 13572	IOP
+T148.kevin-tmp	KeyEntity 13732 13735	IOP
+T149.kevin-tmp	KeyEntity 13643 13646	IOP
+T150.kevin-tmp	KeyEntity 13835 13838	IOP
+T152.kevin-tmp	Entity 14055 14065	anesthesia
+T155.kevin-tmp	KeyEntity 14518 14521	IOP
+T131.kevin-tmp	KeyEntity 10743 10746	IOP
+T156.kevin-tmp	KeyEntity 14693 14696	IOP
+T157.kevin-tmp	KeyEntity 14887 14890	IOP
+T158.kevin-tmp	KeyEntity 14923 14926	IOP
+T159.kevin-tmp	KeyEntity 15141 15144	IOP
+T160.kevin-tmp	KeyEntity 15476 15479	IOP
+T161.kevin-tmp	KeyEntity 15561 15564	IOP
+T162.kevin-tmp	KeyEntity 15839 15842	IOP
+T163.kevin-tmp	KeyEntity 16159 16162	IOP
+T164.kevin-tmp	KeyEntity 16228 16231	IOP
+T165.kevin-tmp	KeyEntity 16349 16352	IOP
+T166.kevin-tmp	KeyEntity 16588 16591	IOP
+T167.kevin-tmp	KeyEntity 16461 16464	IOP
+T168.kevin-tmp	KeyEntity 16736 16739	IOP
+T169.kevin-tmp	KeyEntity 16794 16797	IOP
+T170.kevin-tmp	KeyEntity 16932 16935	IOP
+T171.kevin-tmp	KeyEntity 17545 17548	IOP
+T172.kevin-tmp	KeyEntity 17656 17659	IOP
+T173.kevin-tmp	KeyEntity 17932 17935	IOP
+T174.kevin-tmp	KeyEntity 17999 18002	IOP
+T175.kevin-tmp	KeyEntity 18171 18174	IOP
+T176.kevin-tmp	KeyEntity 18357 18360	IOP
+T177.kevin-tmp	KeyEntity 18474 18477	IOP
+T178.kevin-tmp	KeyEntity 18520 18523	IOP
+T179.kevin-tmp	KeyEntity 19593 19596	IOP
+T180.kevin-tmp	KeyEntity 19751 19754	IOP
+T181.kevin-tmp	KeyEntity 19889 19892	IOP
+T183.kevin-tmp	KeyEntity 20353 20356	IOP
+T187.kevin-tmp	KeyEntity 21313 21316	IOP
+T188.kevin-tmp	KeyEntity 21655 21658	IOP
+T189.kevin-tmp	KeyEntity 21860 21863	IOP
+T190.kevin-tmp	KeyEntity 22324 22327	IOP
+T191.kevin-tmp	KeyEntity 22586 22589	IOP
+T192.kevin-tmp	KeyEntity 22794 22797	IOP
+T195.kevin-tmp	KeyEntity 22994 22997	IOP
+T197.kevin-tmp	KeyEntity 23377 23380	IOP
+T198.kevin-tmp	KeyEntity 23428 23431	IOP
+T199.kevin-tmp	KeyEntity 23543 23546	IOP
+T200.kevin-tmp	KeyEntity 23614 23617	IOP
+T201.kevin-tmp	KeyEntity 23708 23711	IOP
+T203.kevin-tmp	KeyEntity 24345 24348	IOP
+T204.kevin-tmp	KeyEntity 24478 24481	IOP
+T206.kevin-tmp	Entity 25037 25051	IOP depression
+T207.kevin-tmp	KeyEntity 25385 25388	IOP
+T210.kevin-tmp	KeyEntity 26645 26648	IOP
+T211.kevin-tmp	KeyEntity 26794 26797	IOP
+T212.kevin-tmp	KeyEntity 26966 26969	IOP
+T213.kevin-tmp	KeyEntity 27088 27091	IOP
+T217.kevin-tmp	KeyEntity 27688 27691	IOP
+T218.kevin-tmp	KeyEntity 27870 27873	IOP
+T221.kevin-tmp	KeyEntity 28333 28336	IOP
+T222.kevin-tmp	KeyEntity 28427 28430	IOP
+T223.kevin-tmp	KeyEntity 28646 28649	IOP
+T224.kevin-tmp	KeyEntity 28721 28724	IOP
+T225.kevin-tmp	Entity 28888 28901	increased IOP
+T226.kevin-tmp	Entity 28906 28914	glaucoma
+T227.kevin-tmp	Entity 29025 29037	elevated IOP
+T228.kevin-tmp	Entity 29042 29050	glaucoma
+T229.kevin-tmp	KeyEntity 29141 29144	IOP
+T230.kevin-tmp	Entity 28761 28768	Obesity
+T231.kevin-tmp	Entity 28773 28781	diabetes
+T232.kevin-tmp	Entity 28783 28790	Obesity
+T233.kevin-tmp	Entity 28794 28816	higher body mass index
+T234.kevin-tmp	Entity 28938 28946	diabetes
+T237.kevin-tmp	Entity 29077 29098	genetic perturbations
+T238.kevin-tmp	Entity 29110 29117	obesity
+T239.kevin-tmp	Entity 29122 29130	diabetes
+T240.kevin-tmp	Entity 29265 29294	leptin receptor mutation (db)
+T241.kevin-tmp	Entity 29311 29330	early onset obesity
+T243.kevin-tmp	Entity 29349 29369	obese, diabetic mice
+T244.kevin-tmp	KeyEntity 29374 29385	higher IOPs
+T245.kevin-tmp	Entity 29472 29485	increased IOP
+T246.kevin-tmp	Entity 29490 29497	obesity
+T247.kevin-tmp	Entity 29501 29509	diabetes
+T248.kevin-tmp	Entity 29602 29620;29643 29647	obese non-diabetic mice
+T249.kevin-tmp	Entity 29624 29647	diabetic non-obese mice
+T250.kevin-tmp	KeyEntity 29719 29722	IOP
+T251.kevin-tmp	KeyEntity 29792 29795	IOP
+T253.kevin-tmp	KeyEntity 30145 30148	IOP
+T254.kevin-tmp	KeyEntity 30177 30180	IOP
+T255.kevin-tmp	KeyEntity 30215 30218	IOP
+T256.kevin-tmp	KeyEntity 30368 30371	IOP
+T260.kevin-tmp	KeyEntity 31139 31142	IOP
+T262.kevin-tmp	KeyEntity 31647 31650	IOP
+T263.kevin-tmp	KeyEntity 32044 32047	IOP
+T264.kevin-tmp	KeyEntity 32396 32399	IOP
+T265.kevin-tmp	Entity 32565 32586	Tyrosinase deficiency
+T266.kevin-tmp	KeyEntity 32598 32611	increased IOP
+T268.kevin-tmp	Entity 32976 32989	increased IOP
+T270.kevin-tmp	KeyEntity 33103 33106	IOP
+T277.kevin-tmp	Entity 34064 34077	IOP elevation
+T278.kevin-tmp	Entity 33997 34011	albino B6 mice
+T279.kevin-tmp	KeyEntity 34123 34126	IOP
+T281.kevin-tmp	KeyEntity 34401 34404	IOP
+T282.kevin-tmp	KeyEntity 34549 34552	IOP
+T286.kevin-tmp	KeyEntity 35828 35849	Intraocular pressures
+T287.kevin-tmp	KeyEntity 36452 36455	IOP
+T288.kevin-tmp	KeyEntity 36639 36642	IOP
+T293.kevin-tmp	KeyEntity 8869 8873	IOPs
+T295.kevin-tmp	KeyEntity 10200 10204	IOPs
+T297.kevin-tmp	KeyEntity 12833 12837	IOPs
+T300.kevin-tmp	KeyEntity 18225 18229	IOPs
+T301.kevin-tmp	KeyEntity 18831 18835	IOPs
+T303.kevin-tmp	KeyEntity 20888 20892	IOPs
+T304.kevin-tmp	KeyEntity 21736 21740	IOPs
+T305.kevin-tmp	KeyEntity 22092 22096	IOPs
+T306.kevin-tmp	KeyEntity 23166 23170	IOPs
+T307.kevin-tmp	KeyEntity 30577 30581	IOPs
+T308.kevin-tmp	KeyEntity 31199 31203	IOPs
+T309.kevin-tmp	KeyEntity 36184 36188	IOPs
+T310.kevin-tmp	Entity 5999 6011	angle recess
+T311.kevin-tmp	Entity 6024 6034	cornea (C)
+T312.kevin-tmp	Entity 6039 6052	iris root (I)
+T314.kevin-tmp	Entity 6141 6160	drainage structures
+T315.kevin-tmp	Entity 6201 6221	Ocular abnormalities
+T316.kevin-tmp	Entity 6576 6597	Histological analysis
+T318.kevin-tmp	Entity 6685 6700	iris epithelium
+T319.kevin-tmp	Entity 6712 6717	SB/Le
+T320.kevin-tmp	Entity 6722 6730	SEC/1ReJ
+T321.kevin-tmp	Entity 6751 6767	corneal scarring
+T322.kevin-tmp	Entity 6821 6837	scratched cornea
+T323.kevin-tmp	Entity 6860 6880	retinal degeneration
+T324.kevin-tmp	Entity 6898 6910;6919 6935	homozygosity Pde6brd1mutation
+T325.kevin-tmp	Entity 6957 6962	SB/Le
+T326.kevin-tmp	Entity 6964 6969	ST/bJ
+T327.kevin-tmp	Entity 6971 6978	BUB/BnJ
+T328.kevin-tmp	Entity 6980 6985	CBA/J
+T329.kevin-tmp	Entity 6987 6994	C3H/HeJ
+T330.kevin-tmp	Entity 6996 7001	SJL/J
+T331.kevin-tmp	Entity 7006 7011	SWR/J
+T332.kevin-tmp	Entity 7290 7303	C57BL/6J (B6)
+T333.kevin-tmp	Entity 7410 7417	CBA/CaJ
+T334.kevin-tmp	Entity 7419 7427	CBA/CaHN
+T335.kevin-tmp	Entity 7460 7462	B6
+T337.kevin-tmp	Entity 8314 8325	CBA strains
+T338.kevin-tmp	Entity 8404 8411	CBA/CaJ
+T339.kevin-tmp	Entity 8451 8459	CBA/CaHN
+T340.kevin-tmp	Entity 8500 8507	BALB/cJ
+T341.kevin-tmp	Entity 8512 8520	C57BL/6J
+T342.kevin-tmp	Entity 8626 8633	BALB/cJ
+T344.kevin-tmp	Entity 8706 8723	CBA/CaHN-Btkxid/J
+T345.kevin-tmp	Entity 8742 8750	CBA/CaHN
+T347.kevin-tmp	Entity 9257 9260	A/J
+T348.kevin-tmp	Entity 9385 9388	A/J
+T349.kevin-tmp	Entity 9532 9534	B6
+T350.kevin-tmp	Entity 9539 9546	C3H/HeJ
+T351.kevin-tmp	Entity 9784 9786	B6
+T352.kevin-tmp	Entity 9788 9795	129P3/J
+T353.kevin-tmp	Entity 9800 9807	C3H/HeJ
+T354.kevin-tmp	Entity 9870 9872	B6
+T355.kevin-tmp	Entity 10283 10285	B6
+T356.kevin-tmp	Entity 10405 10407	B6
+T358.kevin-tmp	Entity 10845 10853	C57BL/6J
+T359.kevin-tmp	Entity 10858 10865	129P3/J
+T361.kevin-tmp	Entity 10887 10895	C57BL/6J
+T362.kevin-tmp	Entity 10900 10907	129P3/J
+T363.kevin-tmp	Entity 10995 11002	C3H/HeJ
+T364.kevin-tmp	Entity 11156 11164	C57BL/6J
+T365.kevin-tmp	Entity 11186 11193	129P3/J
+T366.kevin-tmp	Entity 11215 11222	C3H/HeJ
+T367.kevin-tmp	Entity 11253 11260	129P3/J
+T371.kevin-tmp	Entity 11907 11931	sex specific differences
+T372.kevin-tmp	Entity 12118 12120	B6
+T373.kevin-tmp	Entity 12125 12132	129P3/J
+T374.kevin-tmp	Entity 12259 12266	129P3/J
+T375.kevin-tmp	Entity 12298 12300	B6
+T376.kevin-tmp	Entity 12214 12229	Sex differences
+T380.kevin-tmp	Entity 12648 12650	B6
+T382.kevin-tmp	Entity 12808 12827	diurnal differences
+T383.kevin-tmp	Entity 12861 12878	anesthetic regime
+T384.kevin-tmp	Entity 13043 13053	anesthesia
+T385.kevin-tmp	Entity 13241 13251	anesthesia
+T387.kevin-tmp	Entity 13622 13639	anesthetic effect
+T388.kevin-tmp	Entity 13755 13772	anesthetic effect
+T393.kevin-tmp	Entity 14285 14295	anesthesia
+T395.kevin-tmp	Entity 14594 14604	anesthesia
+T397.kevin-tmp	Entity 14790 14800	anesthetic
+T398.kevin-tmp	Entity 14983 14993	anesthesia
+T399.kevin-tmp	Entity 15175 15185	anesthetic
+T403.kevin-tmp	Entity 15735 15742	CBA/CaJ
+T404.kevin-tmp	Entity 15772 15777	129B6
+T406.kevin-tmp	Entity 15895 15902	CBA/CaJ
+T407.kevin-tmp	Entity 15995 16001	DBA/2J
+T408.kevin-tmp	Entity 16011 16019	C57BL/6J
+T409.kevin-tmp	Entity 16030 16039	C57BR/cdJ
+T410.kevin-tmp	Entity 16049 16054	SWR/J
+T411.kevin-tmp	Entity 16065 16074	BALB/cByJ
+T412.kevin-tmp	Entity 16085 16090	129B6
+T413.kevin-tmp	Entity 16101 16108	CBA/CaJ
+T414.kevin-tmp	Entity 16120 16134	Blood pressure
+T415.kevin-tmp	Entity 16209 16223	blood pressure
+T416.kevin-tmp	Entity 16330 16344	blood pressure
+T417.kevin-tmp	Entity 16406 16429	systolic blood pressure
+T420.kevin-tmp	Entity 16681 16686	ARK/J
+T421.kevin-tmp	Entity 16688 16696	C57BL/6J
+T422.kevin-tmp	Entity 16701 16706	SJL/J
+T423.kevin-tmp	Entity 16715 16720	ARK/J
+T424.kevin-tmp	Entity 16742 16754	Myoc alleles
+T426.kevin-tmp	Entity 16843 16857	human glaucoma
+T428.kevin-tmp	Entity 17083 17103	nucleotide insertion
+T429.kevin-tmp	Entity 17111 17126	promoter region
+T430.kevin-tmp	Entity 17239 17255	insertion allele
+T431.kevin-tmp	Entity 17324 17340	insertion allele
+T432.kevin-tmp	Entity 17372 17384	substitution
+T434.kevin-tmp	Entity 17460 17475	promoter region
+T435.kevin-tmp	Entity 17621 17633	Myoc alleles
+T437.kevin-tmp	Entity 17810 17825	promoter region
+T438.kevin-tmp	Entity 17793 17802	insertion
+T440.kevin-tmp	Entity 17975 17994	Genetic alterations
+T441.kevin-tmp	Entity 18004 18016	Y Chromosome
+T442.kevin-tmp	Entity 18022 18034	Y chromosome
+T447.kevin-tmp	Entity 18251 18268	consomic B6 males
+T448.kevin-tmp	Entity 18282 18304	129P2/Ola Y chromosome
+T449.kevin-tmp	Entity 18447 18466	genetic alterations
+T450.kevin-tmp	Entity 18571 18580	129P2/Ola
+T453.kevin-tmp	Entity 18637 18646	129 Y Chr
+T454.kevin-tmp	Entity 18678 18686	C57BL/6J
+T458.kevin-tmp	Entity 19061 19072	body weight
+T459.kevin-tmp	Entity 19202 19214	db /db males
+T463.kevin-tmp	Entity 19521 19525	Car2
+T465.kevin-tmp	Entity 19620 19633	B6 background
+T468.kevin-tmp	Entity 19808 19812	Lepr
+T469.kevin-tmp	Entity 19825 19846	genetic perturbations
+T470.kevin-tmp	Entity 19858 19865	obesity
+T471.kevin-tmp	Entity 19870 19878	diabetes
+T472.kevin-tmp	Entity 19990 20019	leptin receptor mutation (db)
+T473.kevin-tmp	Entity 20036 20043	obesity
+T474.kevin-tmp	Entity 20048 20056	diabetes
+T475.kevin-tmp	Entity 20087 20114	C57BLKS/J strain background
+T478.kevin-tmp	Entity 20316 20319	Tyr
+T479.kevin-tmp	Entity 20337 20345	albinism
+T481.kevin-tmp	Entity 20395 20404	pigmented
+T482.kevin-tmp	Entity 20408 20414	albino
+T483.kevin-tmp	Entity 20420 20431	albino mice
+T184.kevin-tmp	KeyEntity 20618 20631	increased IOP
+T489.kevin-tmp	Entity 20900 20914	albino B6 mice
+T490.kevin-tmp	Entity 21036 21048	Tyr mutation
+T185.kevin-tmp	Entity 21060 21073	increased IOP
+T494.kevin-tmp	Entity 21371 21390	Tyrc-2J homozygotes
+T496.kevin-tmp	Entity 21470 21479	c-2J/c-2J
+T498.kevin-tmp	Entity 21504 21513	c-2J/c-2J
+T500.kevin-tmp	Entity 21538 21547	c-2J/c-2J
+T501.kevin-tmp	Entity 21618 21629	dark period
+T502.kevin-tmp	Entity 20960 20964;20983 20989	dark period
+T503.kevin-tmp	Entity 20977 20989	light period
+T504.kevin-tmp	Entity 21431 21443	light period
+T505.kevin-tmp	Entity 21345 21356	dark period
+T506.kevin-tmp	Entity 14413 14417;14440 14446	dark period
+T510.kevin-tmp	Entity 22181 22211	quantitative trait locus (QTL)
+T513.kevin-tmp	Entity 22478 22497	mutagenesis screens
+T514.kevin-tmp	Entity 22594 22602	glaucoma
+T515.kevin-tmp	Entity 22667 22689	aqueous humor dynamics
+T517.kevin-tmp	Entity 22771 22790	anesthetic protocol
+T519.kevin-tmp	Entity 22870 22878	xylazine
+T520.kevin-tmp	Entity 22890 22898	Ketamine
+T521.kevin-tmp	Entity 22965 22973	ketamine
+T524.kevin-tmp	Entity 23300 23308	ketamine
+T525.kevin-tmp	Entity 23321 23329	xylazine
+T526.kevin-tmp	Entity 23335 23345	anesthetic
+T528.kevin-tmp	Entity 23694 23704	anesthesia
+T529.kevin-tmp	Entity 23787 23812	anesthetic administration
+T530.kevin-tmp	Entity 14836 14844	ketamine
+T531.kevin-tmp	Entity 14857 14865	xylazine
+T532.kevin-tmp	Entity 12891 12899	ketamine
+T533.kevin-tmp	Entity 12912 12920	xylazine
+T534.kevin-tmp	Entity 13009 13017	ketamine
+T535.kevin-tmp	Entity 13030 13038	xylazine
+T539.kevin-tmp	Entity 23902 23927	cardiovascular depression
+T540.kevin-tmp	Entity 24018 24028	anesthesia
+T541.kevin-tmp	Entity 24051 24065	blood pressure
+T543.kevin-tmp	Entity 24446 24456	anesthesia
+T544.kevin-tmp	Entity 24687 24697	anesthesia
+T547.kevin-tmp	Entity 25223 25233	anesthesia
+T548.kevin-tmp	Entity 25472 25482	anesthesia
+T549.kevin-tmp	Entity 25659 25684	Environmental differences
+T553.kevin-tmp	Entity 25770 25785	drug metabolism
+T554.kevin-tmp	Entity 25804 25814	anesthesia
+T563.kevin-tmp	Entity 26045 26060	drug resistance
+T566.kevin-tmp	Entity 26226 26234	diabetes
+T567.kevin-tmp	Entity 26236 26257	vascular hypertension
+T568.kevin-tmp	Entity 26259 26279	arterial hypotension
+T569.kevin-tmp	Entity 26281 26290	vasospasm
+T571.kevin-tmp	Entity 26334 26337	sex
+T572.kevin-tmp	Entity 26341 26349	glaucoma
+T573.kevin-tmp	Entity 26411 26419	glaucoma
+T574.kevin-tmp	Entity 26483 26486	age
+T575.kevin-tmp	Entity 26488 26494	gender
+T576.kevin-tmp	Entity 26496 26510	blood pressure
+T577.kevin-tmp	Entity 26512 26519	obesity
+T578.kevin-tmp	Entity 26524 26532	diabetes
+T580.kevin-tmp	Entity 26720 26723	Age
+T583.kevin-tmp	Entity 27024 27034	anesthesia
+T594.kevin-tmp	Entity 27534 27554	glaucomatous strains
+T593.kevin-tmp	Entity 27555 27561	DBA/2J
+T595.kevin-tmp	Entity 27566 27576	AKXD-28/Ty
+T596.kevin-tmp	Entity 27603 27606	age
+T598.kevin-tmp	Entity 27617 27623	Gender
+T599.kevin-tmp	Entity 27943 27967	sex-specific differences
+T600.kevin-tmp	Entity 28159 28165	DBA/2J
+T601.kevin-tmp	Entity 28170 28180	AKXD-28/Ty
+T602.kevin-tmp	Entity 28241 28255	Blood pressure
+T603.kevin-tmp	Entity 28341 28355	blood pressure
+T604.kevin-tmp	Entity 28408 28422	blood pressure
+T605.kevin-tmp	Entity 28493 28508	blood pressures
+T606.kevin-tmp	Entity 28615 28629	blood pressure
+T607.kevin-tmp	Entity 28702 28716	blood pressure
+T608.kevin-tmp	Entity 28755 28758	age
+T609.kevin-tmp	Entity 29747 29758	dark period
+T610.kevin-tmp	Entity 29771 29788	Diurnal variation
+T611.kevin-tmp	Entity 29885 29899	diurnal rhythm
+T615.kevin-tmp	Entity 30122 30141	diurnal differences
+T617.kevin-tmp	Entity 30284 30295	dark period
+T618.kevin-tmp	Entity 30414 30425	dark period
+T619.kevin-tmp	Entity 30502 30513	dark period
+T620.kevin-tmp	Entity 30530 30542	light period
+T621.kevin-tmp	Entity 30688 30692;30715 30721	dark period
+T622.kevin-tmp	Entity 30709 30721	light period
+T623.kevin-tmp	Entity 30795 30800	SWR/J
+T629.kevin-tmp	Entity 31099 31103	rods
+T630.kevin-tmp	Entity 31108 31113	cones
+T631.kevin-tmp	Entity 31153 31160	CBA/CaJ
+T632.kevin-tmp	Entity 31323 31337	diurnal rhythm
+T633.kevin-tmp	KeyEntity 31341 31361	intraocular pressure
+T634.kevin-tmp	Entity 31446 31453	CBA/CaJ
+T636.kevin-tmp	Entity 31605 31613	glaucoma
+T637.kevin-tmp	Entity 31616 31631	Car2 deficiency
+T638.kevin-tmp	Entity 31652 31673	Bicarbonate formation
+T639.kevin-tmp	Entity 31691 31714	aqueous humor secretion
+T640.kevin-tmp	Entity 31724 31741	ciliary processes
+T641.kevin-tmp	Entity 31746 31769	carbonic anhydrase (CA)
+T643.kevin-tmp	Entity 31826 31828	CA
+T644.kevin-tmp	Entity 31837 31849	CAII isoform
+T645.kevin-tmp	Entity 31896 31913	ciliary processes
+T649.kevin-tmp	Entity 32096 32113	ciliary processes
+T650.kevin-tmp	Entity 32175 32179	CAIV
+T651.kevin-tmp	Entity 32192 32196	CAII
+T652.kevin-tmp	Entity 32200 32223	aqueous humor secretion
+T653.kevin-tmp	Entity 32250 32254	CAII
+T654.kevin-tmp	Entity 32284 32307	aqueous humor secretion
+T655.kevin-tmp	Entity 32334 32338	CAIV
+T656.kevin-tmp	Entity 32377 32392	CAII deficiency
+T657.kevin-tmp	Entity 32403 32419	Car2 mutant mice
+T660.kevin-tmp	Entity 32613 32623	Tyrosinase
+T661.kevin-tmp	Entity 32651 32677	pigment production pathway
+T662.kevin-tmp	Entity 32679 32700	Tyrosinase deficiency
+T663.kevin-tmp	Entity 32708 32716	albinism
+T664.kevin-tmp	Entity 32733 32752	ocular consequences
+T665.kevin-tmp	Entity 32796 32834	ipsilaterally projecting retinal axons
+T668.kevin-tmp	Entity 33131 33136;33146 33152	light period
+T669.kevin-tmp	Entity 33141 33152	dark period
+T671.kevin-tmp	Entity 33207 33221	albino B6 mice
+T672.kevin-tmp	Entity 33229 33237	albinism
+T673.kevin-tmp	Entity 33326 33337	albino eyes
+T676.kevin-tmp	Entity 33409 33432	altered diurnal rhythms
+T678.kevin-tmp	Entity 33466 33474	Albinism
+T682.kevin-tmp	Entity 33700 33715	Diurnal rhythms
+T683.kevin-tmp	Entity 33739 33754	visual pathways
+T684.kevin-tmp	Entity 33773 33788	light intensity
+T687.kevin-tmp	Entity 34154 34174	inbred mouse strains
+T689.kevin-tmp	Entity 36192 36200	C57BL/6J
+T690.kevin-tmp	Entity 36776 36787	dark period
+T691.kevin-tmp	Entity 37024 37041	anesthetic agents
+T692.kevin-tmp	Entity 37075 37085	anesthesia
+T693.kevin-tmp	Entity 37274 37292	ocular cannulation
+T5.kevin-tmp	Entity 435 459	candidate gene mutations
+T7.kevin-tmp	Entity 503 516	mouse strains
+T13.kevin-tmp	Entity 769 781	Homozygosity
+T14.kevin-tmp	Entity 788 799	null allele
+T17.kevin-tmp	Entity 867 879	homozygosity
+T30.kevin-tmp	KeyEntity 1669 1683	IOP regulation
+T32.kevin-tmp	Entity 1470 1479	Mutations
+T63.kevin-tmp	Entity 3694 3707	strain survey
+T68.kevin-tmp	Entity 4018 4032	strain BALB/cJ
+T69.kevin-tmp	KeyEntity 4066 4070	IOPs
+T70.kevin-tmp	Entity 4093 4107	strain CBA/CaJ
+T71.kevin-tmp	KeyEntity 4127 4131	IOPs
+T74.kevin-tmp	KeyEntity 4371 4374	IOP
+T80.kevin-tmp	KeyEntity 4741 4745	IOPs
+T102.kevin-tmp	Entity 5698 5705	BALB/cJ
+T118.kevin-tmp	KeyEntity 7830 7834	IOPs
+T119.kevin-tmp	KeyEntity 8058 8062	IOPs
+T129.kevin-tmp	KeyEntity 10523 10526	IOP
+T140.kevin-tmp	KeyEntity 12495 12498	IOP
+T151.kevin-tmp	KeyEntity 14030 14051	IOP depressing effect
+T153.kevin-tmp	Entity 14363 14366	IOP
+T235.kevin-tmp	Entity 28969 28977	diabetes
+T236.kevin-tmp	Entity 28982 28989	obesity
+T242.kevin-tmp	Entity 29335 29343	diabetes
+T258.kevin-tmp	KeyEntity 30673 30676	IOP
+T261.kevin-tmp	KeyEntity 31573 31576	IOP
+T269.kevin-tmp	Entity 32993 33025	mice lacking tyrosinase activity
+T272.kevin-tmp	Entity 33541 33544	IOP
+T274.kevin-tmp	KeyEntity 33866 33869	IOP
+T275.kevin-tmp	KeyEntity 33986 33989	IOP
+T285.kevin-tmp	KeyEntity 35806 35826	Intraocular pressure
+T290.kevin-tmp	KeyEntity 37514 37517	IOP
+T294.kevin-tmp	KeyEntity 9516 9520	IOPs
+T296.kevin-tmp	KeyEntity 10423 10427	IOPs
+T298.kevin-tmp	KeyEntity 17018 17022	IOPs
+T299.kevin-tmp	KeyEntity 17593 17597	IOPs
+T313.kevin-tmp	Entity 6080 6093	Aqueous humor
+T317.kevin-tmp	Entity 6647 6677	calcified cyst like structures
+T343.kevin-tmp	Entity 8660 8668	C57BL/6J
+T360.kevin-tmp	Entity 10874 10881	C3H/HeJ
+T377.kevin-tmp	KeyEntity 12312 12314	B6
+T379.kevin-tmp	Entity 12573 12587	sex difference
+T389.kevin-tmp	Entity 13793 13795	B6
+T394.kevin-tmp	Entity 14303 14321	general anesthesia
+T396.kevin-tmp	Entity 14633 14648	anesthetic dose
+T418.kevin-tmp	Entity 16564 16578	female CBA/CaJ
+T425.kevin-tmp	Entity 16799 16808	Mutations
+T443.kevin-tmp	Entity 18104 18108	rats
+T451.kevin-tmp	Entity 18593 18601	C57BL/6J
+T455.kevin-tmp	Entity 18762 18772;18813 18817	homozygous Car2
+T457.kevin-tmp	Entity 19180 19198	Blood sugar levels
+T461.kevin-tmp	Entity 19408 19413	db/db
+T476.kevin-tmp	Entity 20173 20207	obese, diabetic homozygous mutants
+T477.kevin-tmp	Entity 20238 20275	non-obese, non-diabetic heterozygotes
+T484.kevin-tmp	Entity 20469 20506	mutant allele of tyrosinase (Tyrc-2J)
+T485.kevin-tmp	Entity 20535 20558	pigmented B6 background
+T486.kevin-tmp	FIX_SPAN_Entity 20581 20605	homozygosity for Tyrc-2J
+T487.kevin-tmp	Entity 20662 20687	wild type, pigmented mice
+T488.kevin-tmp	Entity 20854 20871	pigmented B6 mice
+T491.kevin-tmp	FIX_SPAN_Entity 21078 21101	altered diurnal changes
+T493.kevin-tmp	Entity 21168 21196	spontaneous Tyrc-2J mutation
+T507.kevin-tmp	Entity 14434 14446	light period
+T509.kevin-tmp	Entity 21752 21787	genetically different mouse strains
+T512.kevin-tmp	Entity 22333 22346	strain survey
+T518.kevin-tmp	Entity 22842 22859	anesthetic agents
+T522.kevin-tmp	Entity 23241 23260	anesthetic protocol
+T538.kevin-tmp	Entity 24228 24267	intraperitoneally administered ketamine
+T542.kevin-tmp	FIX_SPAN_Entity 24120 24145	strong hypotensive effect
+T202.kevin-tmp	KeyEntity 24301 24313	decrease IOP
+T545.kevin-tmp	Entity 24802 24812	anesthesia
+T546.kevin-tmp	Entity 25170 25180	anesthesia
+T550.kevin-tmp	Entity 25703 25719	Cage cleanliness
+T551.kevin-tmp	Entity 25721 25739	changing frequency
+T552.kevin-tmp	Entity 25744 25759	housing density
+T559.kevin-tmp	Entity 25950 25958	terpenes
+T561.kevin-tmp	FIX_SPAN_Entity 25986 26020	environmental exposure to terpenes
+T564.kevin-tmp	Entity 26089 26106	anesthetic agents
+T579.kevin-tmp	Entity 26652 26689	genetically homogeneous mouse strains
+T585.kevin-tmp	Entity 26845 26848	age
+T586.kevin-tmp	Entity 26958 26961	age
+T587.kevin-tmp	Entity 27128 27131	age
+T588.kevin-tmp	Entity 27155 27158	age
+T589.kevin-tmp	Entity 27223 27226	age
+T597.kevin-tmp	Entity 27442 27445	age
+T648.kevin-tmp	Entity 32049 32062	CAIV activity
+T659.kevin-tmp	Entity 32537 32554	aqueous secretion
+T667.kevin-tmp	Entity 33070 33087	pigmented B6 mice
+T670.kevin-tmp	Entity 33185 33194;33214 33221	pigmented B6 mice
+T674.kevin-tmp	Entity 33362 33372	tyrosinase
+T675.kevin-tmp	Entity 33347 33357	homozygous
+T677.kevin-tmp	Entity 33445 33459	pigmented mice
+T685.kevin-tmp	Entity 33843 33862	diurnal fluctuation
+T686.kevin-tmp	Entity 33968 33982	diurnal rhythm
+T688.kevin-tmp	Entity 34199 34202	IOP
+T5.sandy-tmp	Entity 612 617	aging
+T6.sandy-tmp	KeyEntity 632 644	IOP decrease
+T11.sandy-tmp	Entity 944 951	obesity
+T12.sandy-tmp	Entity 956 964	diabetes
+T13.sandy-tmp	KeyEntity 976 989	increased IOP
+T15.sandy-tmp	Entity 1029 1058	tyrosinase mutation (Tyrc-2J)
+T16.sandy-tmp	KeyEntity 1064 1075	higher IOPs
+T17.sandy-tmp	Entity 1359 1362	Age
+T18.sandy-tmp	Entity 1364 1375	time of day
+T19.sandy-tmp	Entity 1377 1384	obesity
+T20.sandy-tmp	Entity 1389 1397	diabetes
+T22.sandy-tmp	Entity 1520 1524	Lepr
+T24.sandy-tmp	KeyEntity 1544 1557	increased IOP
+T28.sandy-tmp	Entity 333 336	age
+T29.sandy-tmp	Entity 338 341	sex
+T30.sandy-tmp	Entity 346 357	time of day
+T34.sandy-tmp	KeyEntity 1354 1357	IOP
+T45.sandy-tmp	Entity 1688 1705	disease processes
+T56.sandy-tmp	Entity 2132 2151	chromosomal regions
+T57.sandy-tmp	Entity 2156 2161	genes
+T60.sandy-tmp	Entity 2215 2219	loci
+T66.sandy-tmp	Entity 2540 2560	mammalian physiology
+T67.sandy-tmp	Entity 2524 2536	conservation
+T68.sandy-tmp	Entity 2587 2601	mouse genetics
+T74.sandy-tmp	Entity 2920 2925	genes
+T83.sandy-tmp	KeyEntity 3274 3283	mouse IOP
+T90.sandy-tmp	Entity 2809 2821	mouse system
+T92.sandy-tmp	Entity 3853 3860	strains
+T100.sandy-tmp	KeyEntity 4318 4321	IOP
+T114.sandy-tmp	Entity 4846 4867	histological analysis
+T115.sandy-tmp	Entity 4833 4841;4859 4867	Clinical analysis
+T116.sandy-tmp	Entity 4875 4879	eyes
+T117.sandy-tmp	Entity 4934 4942;4957 4965	anatomic features
+T118.sandy-tmp	Entity 4946 4965	pathologic features
+T123.sandy-tmp	Entity 5129 5146	normal morphology
+T124.sandy-tmp	Entity 5155 5162;5175 5179	BALB/cJ mice
+T125.sandy-tmp	Entity 5167 5179	CBA/CaJ mice
+T126.sandy-tmp	Entity 5209 5221	CBA/CaJ mice
+T133.sandy-tmp	KeyEntity 5496 5500;5509 5512	high IOP
+T134.sandy-tmp	KeyEntity 5505 5512	low IOP
+T141.sandy-tmp	Entity 5742 5768	Pigment filled macrophages
+T143.sandy-tmp	Entity 5836 5848	CBA/CaJ mice
+T144.sandy-tmp	Entity 5884 5892	drainage
+T145.sandy-tmp	KeyEntity 5984 5993	lower IOP
+T150.sandy-tmp	Entity 6114 6120	recess
+T174.sandy-tmp	KeyEntity 7265 7277	IOP spectrum
+T182.sandy-tmp	Entity 7568 7571	age
+T183.sandy-tmp	Entity 7719 7733	Strain 129P3/J
+T192.sandy-tmp	Entity 8230 8233	sex
+T193.sandy-tmp	Entity 8260 8263	age
+T207.sandy-tmp	Entity 8877 8889	BALB/cJ mice
+T218.sandy-tmp	Entity 9580 9582	B6
+T219.sandy-tmp	Entity 9652 9659	C3H/HeJ
+T220.sandy-tmp	Entity 9740 9743	age
+T225.sandy-tmp	Entity 9844 9847	age
+T228.sandy-tmp	Entity 9874 9877	age
+T240.sandy-tmp	Entity 10558 10565	B6 mice
+T241.sandy-tmp	KeyEntity 10599 10610	average IOP
+T243.sandy-tmp	Entity 10721 10735	increasing Age
+T259.sandy-tmp	Entity 11506 11518	C3H/HeJ mice
+T260.sandy-tmp	Entity 11749 11768;11784 11791	glaucomatous DBA/2J strains
+T261.sandy-tmp	Entity 11773 11791	AKXD-28/Ty strains
+T262.sandy-tmp	Entity 11812 11815	sex
+T264.sandy-tmp	Entity 11879 11882	sex
+T267.sandy-tmp	Entity 11974 11981	strains
+T273.sandy-tmp	Entity 12325 12330	males
+T274.sandy-tmp	KeyEntity 12362 12372	higher IOP
+T276.sandy-tmp	Entity 12435 12446	average IOP
+T280.sandy-tmp	Entity 12742 12761	Anesthesia protocol
+T281.sandy-tmp	KeyEntity 12769 12783	IOP alteration
+T294.sandy-tmp	Entity 13304 13311	B6 mice
+T295.sandy-tmp	KeyEntity 13427 13440	IOP decreased
+T307.sandy-tmp	KeyEntity 13938 13946	mean IOP
+T311.sandy-tmp	Entity 14164 14171;14194 14198	129P3/J mice
+T312.sandy-tmp	Entity 14187 14198	DBA/2J mice
+T313.sandy-tmp	Entity 14217 14224	129P3/J
+T314.sandy-tmp	Entity 14235 14241	DBA/2J
+T316.sandy-tmp	KeyEntity 14388 14401	increased IOP
+T321.sandy-tmp	Entity 14715 14728	C57BL/6J mice
+T330.sandy-tmp	Entity 15332 15337	sexes
+T331.sandy-tmp	Entity 15342 15346	ages
+T332.sandy-tmp	Entity 15422 15430;15459 15463	C57BL/6J mice
+T333.sandy-tmp	Entity 15436 15443;15459 15463	129P3/J mice
+T334.sandy-tmp	Entity 15452 15463	DBA/2J mice
+T336.sandy-tmp	Entity 15504 15508;15527 15534	dark periods
+T337.sandy-tmp	Entity 15521 15534	light periods
+T339.sandy-tmp	Entity 15632 15637;15672 15679	light periods
+T340.sandy-tmp	Entity 15653 15657;15672 15679	dark periods
+T343.sandy-tmp	Entity 15804 15813	129X1/SvJ
+T344.sandy-tmp	Entity 15818 15826	C57BL/6J
+T347.sandy-tmp	Entity 15956 15965;15978 15985	light (L) periods
+T348.sandy-tmp	Entity 15969 15985	dark (D) periods
+T366.sandy-tmp	Entity 16634 16646	CBA/CaJ mice
+T374.sandy-tmp	Entity 16816 16836	myocilin gene (MYOC)
+T376.sandy-tmp	Entity 16875 16892	allelic variation
+T377.sandy-tmp	Entity 16900 16915	mouse Myoc gene
+T387.sandy-tmp	Entity 17408 17414	exon 1
+T393.sandy-tmp	Entity 17699 17703	Myoc
+T402.sandy-tmp	Entity 18133 18145	Y chromosome
+T403.sandy-tmp	Entity 18156 18163	129/Ola
+T405.sandy-tmp	Entity 18198 18207	strain B6
+T407.sandy-tmp	Entity 18233 18246	pure B6 males
+T415.sandy-tmp	Entity 18611 18631	Y chromosome (Y Chr)
+T420.sandy-tmp	Entity 18914 18927	Lepr diabetes
+T421.sandy-tmp	Entity 18932 18939	obesity
+T422.sandy-tmp	Entity 18948 18961	mutation (db)
+T423.sandy-tmp	KeyEntity 18980 18991	higher IOPs
+T427.sandy-tmp	Entity 19252 19266	diabetic range
+T429.sandy-tmp	Entity 19552 19573	carbonic anhydrase II
+T443.sandy-tmp	Entity 20126 20129;20161 20169	IOP elevated
+T449.sandy-tmp	Entity 20370 20377	B6 mice
+T465.sandy-tmp	Entity 21086 21101	diurnal changes
+T466.sandy-tmp	Entity 21126 21139	C57BL/6J mice
+T468.sandy-tmp	KeyEntity 21202 21212	higher IOP
+T484.sandy-tmp	Entity 22266 22285	chromosomal regions
+T490.sandy-tmp	Entity 22736 22755	glaucoma candidates
+T495.sandy-tmp	KeyEntity 22879 22888	lower IOP
+T497.sandy-tmp	KeyEntity 22918 22930	increase IOP
+T500.sandy-tmp	KeyEntity 23006 23018	reducing IOP
+T508.sandy-tmp	Entity 23522 23539	depressant effect
+T510.sandy-tmp	Entity 23566 23576	anesthetic
+T519.sandy-tmp	Entity 23972 23980	ketamine
+T520.sandy-tmp	Entity 23985 23993	xylazine
+T523.sandy-tmp	Entity 24127 24145	hypotensive effect
+T532.sandy-tmp	Entity 24953 24963	anesthesia
+T533.sandy-tmp	KeyEntity 24964 24977	decreases IOP
+T535.sandy-tmp	Entity 25077 25087	anesthesia
+T537.sandy-tmp	Entity 25246 25253	species
+T538.sandy-tmp	Entity 25255 25261	strain
+T539.sandy-tmp	Entity 25266 25277	environment
+T540.sandy-tmp	Entity 25313 25321	ketamine
+T547.sandy-tmp	Entity 25960 25982	Terpene administration
+T551.sandy-tmp	KeyEntity 26156 26169	increased IOP
+T557.sandy-tmp	Entity 26319 26329	blood flow
+T566.sandy-tmp	KeyEntity 26568 26580	elevated IOP
+T570.sandy-tmp	Entity 26801 26808	B6 mice
+T573.sandy-tmp	Entity 26973 26980	B6 mice
+T576.sandy-tmp	Entity 27095 27107	129P3/J mice
+T577.sandy-tmp	KeyEntity 27181 27195	Decreasing IOP
+T578.sandy-tmp	Entity 27288 27295	B6 mice
+T579.sandy-tmp	KeyEntity 27423 27436	increased IOP
+T583.sandy-tmp	KeyEntity 27585 27597	elevated IOP
+T588.sandy-tmp	Entity 27895 27900	sexes
+T590.sandy-tmp	KeyEntity 27984 27994	higher IOP
+T591.sandy-tmp	Entity 27998 28005	females
+T594.sandy-tmp	KeyEntity 28189 28201	elevated IOP
+T625.sandy-tmp	Entity 29435 29463	epidemiological associations
+T636.sandy-tmp	Entity 29920 29954	increased aqueous humor production
+T637.sandy-tmp	Entity 29958 29962	flow
+T638.sandy-tmp	KeyEntity 29991 30004	increased IOP
+T644.sandy-tmp	Entity 30233 30240	B6 mice
+T648.sandy-tmp	KeyEntity 30480 30490	higher IOP
+T656.sandy-tmp	KeyEntity 30806 30818	IOP increase
+T657.sandy-tmp	Entity 30851 30865;30875 30889	functional rod photoreceptors
+T658.sandy-tmp	Entity 30851 30861;30870 30889	functional cone photoreceptors
+T659.sandy-tmp	Entity 30922 30932	SWR/J mice
+T660.sandy-tmp	Entity 30961 30978	Pde6brd1 mutation
+T661.sandy-tmp	Entity 31012 31032	circadian regulation
+T670.sandy-tmp	Entity 31365 31369	mice
+T684.sandy-tmp	Entity 32019 32028	Car2 gene
+T697.sandy-tmp	Entity 32493 32495	CA
+T709.sandy-tmp	KeyEntity 32947 32960	mammalian IOP
+T718.sandy-tmp	Entity 33253 33268	diurnal pattern
+T719.sandy-tmp	KeyEntity 33272 33275	IOP
+T722.sandy-tmp	Entity 33376 33403	pink eye dilution mutations
+T726.sandy-tmp	Entity 33630 33654	albino strains BALB/cByJ
+T727.sandy-tmp	Entity 33630 33644;33659 33664	albino strains SWR/J
+T728.sandy-tmp	KeyEntity 33669 33682	increased IOP
+T733.sandy-tmp	KeyEntity 33896 33908	elevated IOP
+T740.sandy-tmp	KeyEntity 34292 34305	increased IOP
+T743.sandy-tmp	KeyEntity 34643 34646	IOP
+T746.sandy-tmp	Entity 35087 35094	B6 mice
+T747.sandy-tmp	Entity 35103 35124	diet induced diabetes
+T748.sandy-tmp	Entity 35146 35159	high fat diet
+T749.sandy-tmp	Entity 35213 35216	age
+T750.sandy-tmp	Entity 35239 35246	B6 mice
+T752.sandy-tmp	KeyEntity 35333 35336	IOP
+T753.sandy-tmp	Entity 35345 35352	B6 mice
+T759.sandy-tmp	Entity 36714 36721	B6 mice
+T764.sandy-tmp	Entity 37294 37309	IOP measurement
+T766.sandy-tmp	Entity 37644 37659	blood pressures
+T768.sandy-tmp	KeyEntity 37886 37900	IOP measurment
+T770.sandy-tmp	Entity 38112 38126	C57BLKS/J mice
+T772.sandy-tmp	KeyEntity 38192 38195	IOP
+T778.sandy-tmp	Entity 38530 38538;38553 38560	CBA/CaHN strains
+T779.sandy-tmp	Entity 38543 38560	C57BLKS/J strains
+T786.sandy-tmp	Entity 38940 38949	Myoc gene
+T787.sandy-tmp	Entity 38970 38987	mouse genomic DNA
+T790.sandy-tmp	KeyEntity 39760 39786	Intraocular pressure (IOP)
+T791.sandy-tmp	Entity 39788 39801	C57BL/6J (B6)
+T793.sandy-tmp	Entity 39821 39852	polymerase chain reaction (PCR)
+R1.kevin-tmp	is_part_of Arg1:T2.kevin-tmp Arg2:T6.kevin-tmp	
+R27.kevin-tmp	interacts_with Arg1:T245.kevin-tmp Arg2:T246.kevin-tmp	
+R28.kevin-tmp	interacts_with Arg1:T245.kevin-tmp Arg2:T247.kevin-tmp	
+R41.kevin-tmp	is_part_of Arg1:T438.kevin-tmp Arg2:T437.kevin-tmp	
+R45.kevin-tmp	participates_in Arg1:T490.kevin-tmp Arg2:T185.kevin-tmp	
+R57.kevin-tmp	participates_in Arg1:T650.kevin-tmp Arg2:T652.kevin-tmp	
+R58.kevin-tmp	participates_in Arg1:T660.kevin-tmp Arg2:T661.kevin-tmp	
+R59.kevin-tmp	regulates Arg1:T662.kevin-tmp Arg2:T663.kevin-tmp	
+R2.kevin-tmp	interacts_with Arg1:T5.kevin-tmp Arg2:T4.kevin-tmp	
+R4.kevin-tmp	is_part_of Arg1:T32.kevin-tmp Arg2:T28.kevin-tmp	
+R6.kevin-tmp	VERIFY_other_relation Arg1:T36.kevin-tmp Arg2:T37.kevin-tmp	
+R7.kevin-tmp	participates_in Arg1:T39.kevin-tmp Arg2:T38.kevin-tmp	
+R8.kevin-tmp	participates_in Arg1:T40.kevin-tmp Arg2:T38.kevin-tmp	
+R9.kevin-tmp	participates_in Arg1:T41.kevin-tmp Arg2:T39.kevin-tmp	
+R10.kevin-tmp	participates_in Arg1:T41.kevin-tmp Arg2:T40.kevin-tmp	
+R12.kevin-tmp	VERIFY_other_relation Arg1:T82.kevin-tmp Arg2:T81.kevin-tmp	
+R13.kevin-tmp	is_part_of Arg1:T99.kevin-tmp Arg2:T98.kevin-tmp	
+R14.kevin-tmp	is_part_of Arg1:T100.kevin-tmp Arg2:T98.kevin-tmp	
+R15.kevin-tmp	VERIFY_other_relation Arg1:T152.kevin-tmp Arg2:T151.kevin-tmp	
+R16.kevin-tmp	VERIFY_other_relation Arg1:T225.kevin-tmp Arg2:T226.kevin-tmp	
+R17.kevin-tmp	VERIFY_other_relation Arg1:T227.kevin-tmp Arg2:T228.kevin-tmp	
+R18.kevin-tmp	VERIFY_other_relation Arg1:T232.kevin-tmp Arg2:T225.kevin-tmp	
+R19.kevin-tmp	VERIFY_other_relation Arg1:T233.kevin-tmp Arg2:T225.kevin-tmp	
+R20.kevin-tmp	VERIFY_other_relation Arg1:T236.kevin-tmp Arg2:T227.kevin-tmp	
+R21.kevin-tmp	VERIFY_other_relation Arg1:T235.kevin-tmp Arg2:T227.kevin-tmp	
+R22.kevin-tmp	VERIFY_other_relation Arg1:T237.kevin-tmp Arg2:T238.kevin-tmp	
+R23.kevin-tmp	VERIFY_other_relation Arg1:T237.kevin-tmp Arg2:T239.kevin-tmp	
+R24.kevin-tmp	VERIFY_other_relation Arg1:T240.kevin-tmp Arg2:T241.kevin-tmp	
+R25.kevin-tmp	VERIFY_other_relation Arg1:T240.kevin-tmp Arg2:T242.kevin-tmp	
+R26.kevin-tmp	VERIFY_other_relation Arg1:T244.kevin-tmp Arg2:T243.kevin-tmp	
+R29.kevin-tmp	VERIFY_other_relation Arg1:T265.kevin-tmp Arg2:T266.kevin-tmp	
+R30.kevin-tmp	VERIFY_other_relation Arg1:T269.kevin-tmp Arg2:T268.kevin-tmp	
+R31.kevin-tmp	VERIFY_other_relation Arg1:T278.kevin-tmp Arg2:T277.kevin-tmp	
+R32.kevin-tmp	VERIFY_other_relation Arg1:T324.kevin-tmp Arg2:T323.kevin-tmp	
+R33.kevin-tmp	is_subclass_of Arg1:T338.kevin-tmp Arg2:T337.kevin-tmp	
+R34.kevin-tmp	is_subclass_of Arg1:T339.kevin-tmp Arg2:T337.kevin-tmp	
+R35.kevin-tmp	VERIFY_other_relation Arg1:T345.kevin-tmp Arg2:T344.kevin-tmp	
+R37.kevin-tmp	VERIFY_other_relation Arg1:T425.kevin-tmp Arg2:T426.kevin-tmp	
+R38.kevin-tmp	is_part_of Arg1:T428.kevin-tmp Arg2:T429.kevin-tmp	
+R40.kevin-tmp	is_part_of Arg1:T431.kevin-tmp Arg2:T434.kevin-tmp	
+R42.kevin-tmp	VERIFY_other_relation Arg1:T472.kevin-tmp Arg2:T473.kevin-tmp	
+R43.kevin-tmp	VERIFY_other_relation Arg1:T472.kevin-tmp Arg2:T474.kevin-tmp	
+R44.kevin-tmp	VERIFY_other_relation Arg1:T486.kevin-tmp Arg2:T184.kevin-tmp	
+R46.kevin-tmp	VERIFY_other_relation Arg1:T490.kevin-tmp Arg2:T491.kevin-tmp	
+R47.kevin-tmp	is_subclass_of Arg1:T519.kevin-tmp Arg2:T518.kevin-tmp	
+R48.kevin-tmp	VERIFY_other_relation Arg1:T540.kevin-tmp Arg2:T542.kevin-tmp	
+R49.kevin-tmp	VERIFY_other_relation Arg1:T538.kevin-tmp Arg2:T202.kevin-tmp	
+R52.kevin-tmp	VERIFY_other_relation Arg1:T561.kevin-tmp Arg2:T563.kevin-tmp	
+R53.kevin-tmp	is_subclass_of Arg1:T593.kevin-tmp Arg2:T594.kevin-tmp	
+R54.kevin-tmp	is_subclass_of Arg1:T595.kevin-tmp Arg2:T594.kevin-tmp	
+R56.kevin-tmp	regulates Arg1:T641.kevin-tmp Arg2:T639.kevin-tmp	
+R55.kevin-tmp	is_subclass_of Arg1:T644.kevin-tmp Arg2:T643.kevin-tmp	
+R3.sandy-tmp	participates_in Arg1:T5.sandy-tmp Arg2:T6.sandy-tmp	
+R6.sandy-tmp	regulates Arg1:T18.kevin-tmp Arg2:T11.sandy-tmp	
+R7.sandy-tmp	regulates Arg1:T18.kevin-tmp Arg2:T12.sandy-tmp	
+R8.sandy-tmp	participates_in Arg1:T18.kevin-tmp Arg2:T13.sandy-tmp	
+R9.sandy-tmp	is_part_of Arg1:T15.sandy-tmp Arg2:T20.kevin-tmp	
+R10.sandy-tmp	is_part_of Arg1:T16.sandy-tmp Arg2:T20.kevin-tmp	
+R11.sandy-tmp	participates_in Arg1:T22.sandy-tmp Arg2:T24.sandy-tmp	
+R12.sandy-tmp	participates_in Arg1:T28.kevin-tmp Arg2:T24.sandy-tmp	
+R13.sandy-tmp	interacts_with Arg1:T28.sandy-tmp Arg2:T3.kevin-tmp	
+R14.sandy-tmp	interacts_with Arg1:T29.sandy-tmp Arg2:T3.kevin-tmp	
+R15.sandy-tmp	interacts_with Arg1:T30.sandy-tmp Arg2:T3.kevin-tmp	
+R17.sandy-tmp	is_part_of Arg1:T33.kevin-tmp Arg2:T35.kevin-tmp	
+R5.sandy-tmp	interacts_with Arg1:T45.sandy-tmp Arg2:T31.kevin-tmp	
+R18.sandy-tmp	interacts_with Arg1:T17.sandy-tmp Arg2:T26.kevin-tmp	
+R19.sandy-tmp	interacts_with Arg1:T18.sandy-tmp Arg2:T26.kevin-tmp	
+R20.sandy-tmp	interacts_with Arg1:T19.sandy-tmp Arg2:T26.kevin-tmp	
+R21.sandy-tmp	interacts_with Arg1:T20.sandy-tmp Arg2:T26.kevin-tmp	
+R22.sandy-tmp	participates_in Arg1:T57.sandy-tmp Arg2:T43.kevin-tmp	
+R23.sandy-tmp	participates_in Arg1:T56.sandy-tmp Arg2:T43.kevin-tmp	
+R24.sandy-tmp	participates_in Arg1:T74.sandy-tmp Arg2:T50.kevin-tmp	
+R25.sandy-tmp	participates_in Arg1:T52.kevin-tmp Arg2:T53.kevin-tmp	
+R26.sandy-tmp	participates_in Arg1:T51.kevin-tmp Arg2:T53.kevin-tmp	
+R27.sandy-tmp	participates_in Arg1:T48.kevin-tmp Arg2:T90.sandy-tmp	
+R28.sandy-tmp	participates_in Arg1:T49.kevin-tmp Arg2:T90.sandy-tmp	
+R33.sandy-tmp	VERIFY_other_relation Arg1:T81.kevin-tmp Arg2:T82.kevin-tmp	
+R36.sandy-tmp	VERIFY_other_relation Arg1:T141.sandy-tmp Arg2:T104.kevin-tmp	
+R37.sandy-tmp	is_part_of Arg1:T141.sandy-tmp Arg2:T143.sandy-tmp	
+R38.sandy-tmp	interacts_with Arg1:T311.kevin-tmp Arg2:T312.kevin-tmp	
+R42.sandy-tmp	is_part_of Arg1:T318.kevin-tmp Arg2:T319.kevin-tmp	
+R43.sandy-tmp	is_part_of Arg1:T318.kevin-tmp Arg2:T320.kevin-tmp	
+R44.sandy-tmp	participates_in Arg1:T322.kevin-tmp Arg2:T321.kevin-tmp	
+R49.sandy-tmp	VERIFY_other_relation Arg1:T344.kevin-tmp Arg2:T345.kevin-tmp	
+R50.sandy-tmp	is_part_of Arg1:T293.kevin-tmp Arg2:T207.sandy-tmp	
+R52.sandy-tmp	is_part_of Arg1:T120.kevin-tmp Arg2:T347.kevin-tmp	
+R53.sandy-tmp	interacts_with Arg1:T220.sandy-tmp Arg2:T124.kevin-tmp	
+R54.sandy-tmp	interacts_with Arg1:T225.sandy-tmp Arg2:T126.kevin-tmp	
+R55.sandy-tmp	interacts_with Arg1:T228.sandy-tmp Arg2:T127.kevin-tmp	
+R58.sandy-tmp	regulates Arg1:T243.sandy-tmp Arg2:T130.kevin-tmp	
+R61.sandy-tmp	interacts_with Arg1:T262.sandy-tmp Arg2:T136.kevin-tmp	
+R62.sandy-tmp	interacts_with Arg1:T264.sandy-tmp Arg2:T137.kevin-tmp	
+R63.sandy-tmp	VERIFY_other_relation Arg1:T371.kevin-tmp Arg2:T267.sandy-tmp	
+R64.sandy-tmp	participates_in Arg1:T273.sandy-tmp Arg2:T274.sandy-tmp	
+R67.sandy-tmp	is_subclass_of Arg1:T534.kevin-tmp Arg2:T384.kevin-tmp	
+R68.sandy-tmp	is_subclass_of Arg1:T535.kevin-tmp Arg2:T384.kevin-tmp	
+R69.sandy-tmp	is_part_of Arg1:T532.kevin-tmp Arg2:T383.kevin-tmp	
+R70.sandy-tmp	is_part_of Arg1:T533.kevin-tmp Arg2:T383.kevin-tmp	
+R74.sandy-tmp	interacts_with Arg1:T387.kevin-tmp Arg2:T149.kevin-tmp	
+R75.sandy-tmp	interacts_with Arg1:T148.kevin-tmp Arg2:T388.kevin-tmp	
+R78.sandy-tmp	interacts_with Arg1:T316.sandy-tmp Arg2:T506.kevin-tmp	
+R79.sandy-tmp	participates_in Arg1:T321.sandy-tmp Arg2:T156.kevin-tmp	
+R80.sandy-tmp	interacts_with Arg1:T397.kevin-tmp Arg2:T321.sandy-tmp	
+R81.sandy-tmp	interacts_with Arg1:T398.kevin-tmp Arg2:T158.kevin-tmp	
+R82.sandy-tmp	interacts_with Arg1:T399.kevin-tmp Arg2:T159.kevin-tmp	
+R83.sandy-tmp	is_part_of Arg1:T343.sandy-tmp Arg2:T404.kevin-tmp	
+R84.sandy-tmp	is_part_of Arg1:T344.sandy-tmp Arg2:T404.kevin-tmp	
+R85.sandy-tmp	VERIFY_other_relation Arg1:T414.kevin-tmp Arg2:T163.kevin-tmp	
+R86.sandy-tmp	regulates Arg1:T374.sandy-tmp Arg2:T426.kevin-tmp	
+R88.sandy-tmp	is_part_of Arg1:T432.kevin-tmp Arg2:T387.sandy-tmp	
+R89.sandy-tmp	VERIFY_other_relation Arg1:T435.kevin-tmp Arg2:T172.kevin-tmp	
+R99.sandy-tmp	participates_in Arg1:T490.kevin-tmp Arg2:T465.sandy-tmp	
+R101.sandy-tmp	VERIFY_other_relation Arg1:T191.kevin-tmp Arg2:T515.kevin-tmp	
+R102.sandy-tmp	VERIFY_other_relation Arg1:T514.kevin-tmp Arg2:T515.kevin-tmp	
+R103.sandy-tmp	regulates Arg1:T519.kevin-tmp Arg2:T495.sandy-tmp	
+R104.sandy-tmp	regulates Arg1:T520.kevin-tmp Arg2:T497.sandy-tmp	
+R108.sandy-tmp	participates_in Arg1:T540.kevin-tmp Arg2:T523.sandy-tmp	
+R109.sandy-tmp	regulates Arg1:T532.sandy-tmp Arg2:T533.sandy-tmp	
+R111.sandy-tmp	participates_in Arg1:T593.kevin-tmp Arg2:T583.sandy-tmp	
+R112.sandy-tmp	participates_in Arg1:T595.kevin-tmp Arg2:T583.sandy-tmp	
+R113.sandy-tmp	participates_in Arg1:T596.kevin-tmp Arg2:T583.sandy-tmp	
+R114.sandy-tmp	is_part_of Arg1:T590.sandy-tmp Arg2:T591.sandy-tmp	
+R116.sandy-tmp	interacts_with Arg1:T234.kevin-tmp Arg2:T227.kevin-tmp	
+R118.sandy-tmp	interacts_with Arg1:T234.kevin-tmp Arg2:T228.kevin-tmp	
+R125.sandy-tmp	is_part_of Arg1:T660.sandy-tmp Arg2:T659.sandy-tmp	
+R126.sandy-tmp	is_part_of Arg1:T260.kevin-tmp Arg2:T631.kevin-tmp	
+R127.sandy-tmp	VERIFY_other_relation Arg1:T684.sandy-tmp Arg2:T263.kevin-tmp	
+R128.sandy-tmp	participates_in Arg1:T638.kevin-tmp Arg2:T639.kevin-tmp	
+R129.sandy-tmp	participates_in Arg1:T640.kevin-tmp Arg2:T639.kevin-tmp	
+R134.sandy-tmp	participates_in Arg1:T672.kevin-tmp Arg2:T718.sandy-tmp	
+R135.sandy-tmp	participates_in Arg1:T719.sandy-tmp Arg2:T718.sandy-tmp	
+R136.sandy-tmp	participates_in Arg1:T722.sandy-tmp Arg2:T676.kevin-tmp	
+R138.sandy-tmp	regulates Arg1:T683.kevin-tmp Arg2:T682.kevin-tmp	
+R139.sandy-tmp	participates_in Arg1:T684.kevin-tmp Arg2:T682.kevin-tmp	
+R140.sandy-tmp	participates_in Arg1:T727.sandy-tmp Arg2:T728.sandy-tmp	
+R141.sandy-tmp	participates_in Arg1:T726.sandy-tmp Arg2:T728.sandy-tmp	
+R142.sandy-tmp	regulates Arg1:T748.sandy-tmp Arg2:T747.sandy-tmp	
+R143.sandy-tmp	is_part_of Arg1:T747.sandy-tmp Arg2:T746.sandy-tmp	
+R144.sandy-tmp	VERIFY_other_relation Arg1:T416.kevin-tmp Arg2:T165.kevin-tmp	
+T1	Entity 35225 35233	diabetes
+T2	Entity 34181 34195	diurnal rhythm
+R1	participates_in Arg1:T688.kevin-tmp Arg2:T2	
+R2	is_part_of Arg1:T32.kevin-tmp Arg2:T22.sandy-tmp	
+R3	participates_in Arg1:T68.kevin-tmp Arg2:T69.kevin-tmp	
+R4	participates_in Arg1:T70.kevin-tmp Arg2:T71.kevin-tmp	
+T3	Entity 5667 5682	strains CBA/CaJ
+R5	interacts_with Arg1:T313.kevin-tmp Arg2:T150.sandy-tmp	
+R6	interacts_with Arg1:T313.kevin-tmp Arg2:T314.kevin-tmp	
+R7	is_part_of Arg1:T317.kevin-tmp Arg2:T318.kevin-tmp	
+T4	KeyEntity 10806 10819	IOP decreased
+R8	interacts_with Arg1:T4 Arg2:T358.kevin-tmp	
+R9	interacts_with Arg1:T4 Arg2:T359.kevin-tmp	
+T5	Entity 12419 12427	B6 males
+R10	participates_in Arg1:T5 Arg2:T276.sandy-tmp	
+T6	Entity 12609 12612	age
+R11	interacts_with Arg1:T379.kevin-tmp Arg2:T6	
+#1	AnnotatorNotes R11	does not interact with 
+#2	AnnotatorNotes R74.sandy-tmp	does not interact with 
+T7	Entity 14342 14359	diurnal variation
+R12	interacts_with Arg1:T316.sandy-tmp Arg2:T506.kevin-tmp	
+T8	Entity 37624 37638	Blood pressure
+R13	participates_in Arg1:T275.kevin-tmp Arg2:T686.kevin-tmp	
+T9	Entity 33523 33537	diurnal rhythm
+R14	participates_in Arg1:T272.kevin-tmp Arg2:T9	
+T10	Entity 38581 38585	eyes
+T11	Entity 38589 38596;38609 38613	CBA/CaJ mice
+T12	Entity 38601 38613	BALB/cJ mice
+R15	is_part_of Arg1:T10 Arg2:T11	
+R16	is_part_of Arg1:T10 Arg2:T12	
+T13	Entity 30940 30952	homozygosity
+R17	participates_in Arg1:T660.sandy-tmp Arg2:T13	
+#3	AnnotatorNotes R81.sandy-tmp	does not interact with 
+#4	AnnotatorNotes R82.sandy-tmp	does not interact with 
+R18	interacts_with Arg1:T343.sandy-tmp Arg2:T344.sandy-tmp	
+R19	is_part_of Arg1:T376.sandy-tmp Arg2:T377.sandy-tmp	
+R20	is_part_of Arg1:T425.kevin-tmp Arg2:T374.sandy-tmp	
+T14	Entity 17688 17695	alleles
+R21	is_part_of Arg1:T14 Arg2:T393.sandy-tmp	
+T15	Entity 18058 18100	strain specific blood pressure differences
+R22	participates_in Arg1:T442.kevin-tmp Arg2:T15	
+R23	is_part_of Arg1:T15 Arg2:T443.kevin-tmp	
+R24	interacts_with Arg1:T547.kevin-tmp Arg2:T537.sandy-tmp	
+R25	interacts_with Arg1:T547.kevin-tmp Arg2:T538.sandy-tmp	
+R26	regulates Arg1:T547.kevin-tmp Arg2:T539.sandy-tmp	
+T16	Entity 19705 19714	Car2 gene
+T17	Entity 19673 19679;19690 19697	normal alleles
+T18	Entity 19683 19697	mutant alleles
+R27	participates_in Arg1:T16 Arg2:T17	
+R28	participates_in Arg1:T16 Arg2:T18	
+R29	participates_in Arg1:T674.kevin-tmp Arg2:T676.kevin-tmp	
+T19	Entity 33316 33320	mice
+R30	is_part_of Arg1:T673.kevin-tmp Arg2:T19	
+R31	participates_in Arg1:T675.kevin-tmp Arg2:T673.kevin-tmp	
+R32	interacts_with Arg1:T258.kevin-tmp Arg2:T621.kevin-tmp	
+R33	interacts_with Arg1:T258.kevin-tmp Arg2:T622.kevin-tmp	
+T20	Entity 30076 30098	aqueous humor drainage
+R34	participates_in Arg1:T20 Arg2:T615.kevin-tmp	
+R35	participates_in Arg1:T253.kevin-tmp Arg2:T615.kevin-tmp	
+T21	Entity 31973 31977	CAII
+R36	interacts_with Arg1:T510.sandy-tmp Arg2:T200.kevin-tmp	
+#5	AnnotatorNotes R36	does not interact with 
+R37	is_part_of Arg1:T457.kevin-tmp Arg2:T459.kevin-tmp	
+R38	is_part_of Arg1:T457.kevin-tmp Arg2:T427.sandy-tmp	
+R39	participates_in Arg1:T422.sandy-tmp Arg2:T423.sandy-tmp	
+T22	Entity 20598 20605	Tyrc-2J
+T23	Entity 20581 20593	homozygosity
+R40	participates_in Arg1:T22 Arg2:T23	
+R41	participates_in Arg1:T22 Arg2:T184.kevin-tmp	
+T24	Entity 21149 21159	homozygous
+R42	participates_in Arg1:T493.kevin-tmp Arg2:T24	
+R43	participates_in Arg1:T493.kevin-tmp Arg2:T468.sandy-tmp	
+R44	interacts_with Arg1:T540.kevin-tmp Arg2:T541.kevin-tmp	
+R45	interacts_with Arg1:T550.kevin-tmp Arg2:T553.kevin-tmp	
+R46	interacts_with Arg1:T551.kevin-tmp Arg2:T553.kevin-tmp	
+R47	interacts_with Arg1:T552.kevin-tmp Arg2:T553.kevin-tmp	
