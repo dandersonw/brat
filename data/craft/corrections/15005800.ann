@@ -1,48 +1,808 @@
-T2.sandy	Entity 170 201	mammalian embryonic development
-T5.sandy	KeyEntity 310 336	Smith-Lemli-Opitz syndrome
-T6.sandy	Entity 477 496	respiratory failure
-T7.sandy	Entity 504 541	developmental pulmonary abnormalities
-T8.sandy	KeyEntity 605 627	cholesterol deficiency
-T9.sandy	KeyEntity 631 647	lung development
-T13.sandy	Entity 994 1022	delayed saccular development
-T15.sandy	Entity 1088 1112	pre-alveolar development
-T16.sandy	Entity 1144 1162	cell proliferation
-T20.sandy	Entity 1243 1263	vascular development
-T21.sandy	Entity 1300 1331	Differentiation of type II AECs
-T23.sandy	Entity 1844 1866	cholesterol deficiency
-T24.sandy	KeyEntity 1877 1882	Dhcr7
-T26.sandy	Entity 1998 2011	alveolar sacs
-T28.sandy	Entity 2061 2086	immature vascular network
-T10.sandy	Entity 675 693	growth retardation
-T12.sandy	Entity 899 927	Lung branching morphogenesis
-T25.sandy	Entity 1919 1943	lung saccular hypoplasia
-T27.sandy	Entity 2023 2053	differentiation of type I AECs
-T29.sandy	Entity 2151 2167	lung development
-T30.sandy	Entity 2184 2201	sterol deficiency
-T33.sandy	KeyEntity 0 32	Late gestational lung hypoplasia
-T34.sandy	Entity 38 49	mouse model
-T35.sandy	KeyEntity 57 83	Smith-Lemli-Opitz syndrome
-T1.kevin	Entity 114 152	post-squalene cholesterol biosynthesis
-T3.kevin	Entity 203 216	Neonatal mice
-T4.kevin	Entity 236 275	dehydrocholesterol Δ7-reductase (Dhcr7)
-T10.kevin	KeyEntity 737 753	Dhcr7-/- embryos
-T11.kevin	KeyEntity 859 875	Dhcr7-/- embryos
-T12.kevin	KeyEntity 951 959	Dhcr7-/-
-T14.kevin	KeyEntity 1042 1058	Dhcr7-/- embryos
-T20.kevin	Entity 1367 1396	surfactant protein (SP) mRNAs
-T21.kevin	Entity 1401 1420	SP-C immunostaining
-T22.kevin	Entity 1610 1630	sonic hedgehog (Shh)
-T23.kevin	Entity 1736 1739	Shh
-T24.kevin	KeyEntity 1789 1805	Dhcr7-/- embryos
-T31.kevin	Entity 2090 2113	late gestational stages
-T33.kevin	Entity 2286 2322	dysregulated Shh-Patched-Gli pathway
-R3.sandy	participates_in Arg1:T8.sandy Arg2:T9.sandy	
-R8.sandy	regulates Arg1:T24.sandy Arg2:T23.sandy	
-R9.sandy	participates_in Arg1:T26.sandy Arg2:T25.sandy	
-R10.sandy	participates_in Arg1:T27.sandy Arg2:T25.sandy	
-R11.sandy	participates_in Arg1:T28.sandy Arg2:T25.sandy	
-R1.kevin	participates_in Arg1:T7.sandy Arg2:T6.sandy	
-R1	participates_in Arg1:T1.kevin Arg2:T2.sandy	
-T1	Entity 1172 1230	differentiation of type I alveolar epithelial cells (AECs)
-T2	Entity 2205 2210	Dhcr7
-R2	regulates Arg1:T2 Arg2:T30.sandy	
+T2.kevin-tmp	Entity 170 201	mammalian embryonic development
+T4.kevin-tmp	KeyEntity 236 275	dehydrocholesterol Δ7-reductase (Dhcr7)
+T5.kevin-tmp	KeyEntity 310 336	Smith-Lemli-Opitz syndrome
+T6.kevin-tmp	Entity 477 496	respiratory failure
+T7.kevin-tmp	Entity 504 541	developmental pulmonary abnormalities
+T8.kevin-tmp	Entity 605 627	cholesterol deficiency
+T9.kevin-tmp	KeyEntity 631 647	lung development
+T10.kevin-tmp	KeyEntity 737 753	Dhcr7-/- embryos
+T11.kevin-tmp	KeyEntity 859 875	Dhcr7-/- embryos
+T12.kevin-tmp	KeyEntity 951 959	Dhcr7-/-
+T13.kevin-tmp	Entity 994 1022	delayed saccular development
+T18.kevin-tmp	Entity 1243 1263	vascular development
+T20.kevin-tmp	Entity 1367 1396	surfactant protein (SP) mRNAs
+T21.kevin-tmp	Entity 1401 1420	SP-C immunostaining
+T22.kevin-tmp	Entity 1610 1630	sonic hedgehog (Shh)
+T23.kevin-tmp	Entity 1736 1754	Shh autoprocessing
+T25.kevin-tmp	Entity 1844 1866	cholesterol deficiency
+T28.kevin-tmp	Entity 1998 2011	alveolar sacs
+T30.kevin-tmp	Entity 2061 2086	immature vascular network
+T34.kevin-tmp	KeyEntity 0 32	Late gestational lung hypoplasia
+T35.kevin-tmp	KeyEntity 57 83	Smith-Lemli-Opitz syndrome
+T39.kevin-tmp	Entity 899 927	Lung branching morphogenesis
+T41.kevin-tmp	Entity 1284 1298	knockout lungs
+T42.kevin-tmp	Entity 1509 1541	maternal transfer of cholesterol
+T44.kevin-tmp	Entity 1660 1680	immunohistochemistry
+T45.kevin-tmp	KeyEntity 1877 1887	Dhcr7 null
+T47.kevin-tmp	Entity 2360 2371	Cholesterol
+T50.kevin-tmp	Entity 2566 2590	cholesterol-like sterols
+T51.kevin-tmp	Entity 2592 2604	phytosterols
+T52.kevin-tmp	Entity 2606 2616	ergosterol
+T54.kevin-tmp	Entity 2680 2687	sterols
+T58.kevin-tmp	Entity 3051 3081	abnormal embryonic development
+T59.kevin-tmp	Entity 2985 3007	too little cholesterol
+T63.kevin-tmp	Entity 3229 3262	7-dehydrocholesterol Δ7-reductase
+T66.kevin-tmp	Entity 3445 3460	desmosterolosis
+T67.kevin-tmp	Entity 3462 3477	lathosterolosis
+T68.kevin-tmp	Entity 3479 3514	X-linked chondrodysplasia punctanta
+T69.kevin-tmp	Entity 3519 3533	CHILD syndrome
+T71.kevin-tmp	KeyEntity 3600 3605	Dhcr7
+T72.kevin-tmp	Entity 3617 3635	neonatal lethality
+T76.kevin-tmp	KeyEntity 4304 4321	Dhcr7 null models
+T77.kevin-tmp	Entity 4179 4200	Poor lung development
+T79.kevin-tmp	Entity 4374 4399	respiratory insufficiency
+T80.kevin-tmp	KeyEntity 4424 4437	Dhcr7-/- pups
+T81.kevin-tmp	KeyEntity 4445 4464	Dhcr7 knockout mice
+T82.kevin-tmp	Entity 4643 4675	Developmental lung abnormalities
+T83.kevin-tmp	KeyEntity 4706 4719	SLOS patients
+T84.kevin-tmp	Entity 4731 4751	pulmonary hypoplasia
+T89.kevin-tmp	Entity 5556 5579	Hedgehog family members
+T90.kevin-tmp	Entity 5602 5623	embryonic development
+T91.kevin-tmp	Entity 5629 5640	cholesterol
+T102.kevin-tmp	Entity 5702 5740	sonic hedgehog (Shh) signaling cascade
+T103.kevin-tmp	Entity 5782 5798	lung development
+T104.kevin-tmp	Entity 5808 5828	Loss of Shh function
+T108.kevin-tmp	Entity 6013 6035	distal lung epithelium
+T109.kevin-tmp	Entity 6052 6081	absence of functional alveoli
+T114.kevin-tmp	Entity 6490 6515	severe sterol deprivation
+T117.kevin-tmp	Entity 6645 6661	lung development
+T118.kevin-tmp	KeyEntity 6665 6681	Dhcr7-/- embryos
+T119.kevin-tmp	Entity 6727 6749	cholesterol deficiency
+T124.kevin-tmp	Entity 6980 7008	delayed vascular development
+T125.kevin-tmp	Entity 7155 7177	cholesterol deficiency
+T127.kevin-tmp	Entity 7201 7233	late gestational lung hypoplasia
+T128.kevin-tmp	Entity 7252 7272	impaired sacculation
+T129.kevin-tmp	Entity 7278 7313	delayed type I AECs differentiation
+T130.kevin-tmp	Entity 7318 7347	immature vascular development
+T131.kevin-tmp	KeyEntity 7726 7739	Dhcr7-/- mice
+T139.kevin-tmp	KeyEntity 10077 10085	Dhcr7-/-
+T143.kevin-tmp	KeyEntity 11448 11461	Dhcr7-/- pups
+T149.kevin-tmp	KeyEntity 13119 13133	Dhcr7-/- lungs
+T151.kevin-tmp	Entity 14337 14353	knockout embryos
+T153.kevin-tmp	Entity 15045 15063	Cell proliferation
+T155.kevin-tmp	Entity 15116 15134	BrdU incorporation
+T157.kevin-tmp	Entity 15150 15163	BrdU staining
+T162.kevin-tmp	Entity 15792 15803	TUNEL assay
+T164.kevin-tmp	Entity 16025 16041	knockout embryos
+T167.kevin-tmp	Entity 16153 16171	Cell proliferation
+T168.kevin-tmp	Entity 16230 16243	cell division
+T169.kevin-tmp	Entity 16277 16287	cell death
+T177.kevin-tmp	Entity 17395 17422	elevated 7-DHC/8-DHC levels
+T179.kevin-tmp	KeyEntity 17492 17508	Dhcr7-/- P0 mice
+T181.kevin-tmp	Entity 18758 18769	Cholesterol
+T182.kevin-tmp	Entity 18797 18822	steroid hormone synthesis
+T183.kevin-tmp	Entity 18830 18844	adrenal glands
+T184.kevin-tmp	Entity 18846 18867	Adrenal insufficiency
+T185.kevin-tmp	Entity 18914 18927	SLOS patients
+T186.kevin-tmp	Entity 18958 18973	lung hypoplasia
+T187.kevin-tmp	Entity 18978 18997	perinatal lethality
+T188.kevin-tmp	Entity 19004 19012	Steroids
+T189.kevin-tmp	Entity 19031 19046	corticosteroids
+T190.kevin-tmp	Entity 19066 19081	lung maturation
+T196.kevin-tmp	KeyEntity 21038 21052	Dhcr7-/- lungs
+T198.kevin-tmp	Entity 21088 21127	type I alveolar epithelial cells (AECs)
+T200.kevin-tmp	Entity 22730 22761	knockout (-/-) littermate lungs
+T203.kevin-tmp	Entity 22896 22907	distal lung
+T204.kevin-tmp	Entity 23822 23850	Delayed vascular development
+T205.kevin-tmp	KeyEntity 23854 23868	Dhcr7-/- lungs
+T206.kevin-tmp	Entity 24002 24033	timed capillary bed development
+T208.kevin-tmp	KeyEntity 24176 24190	Dhcr7-/- lungs
+T213.kevin-tmp	Entity 24435 24467	α-isoform of caveolin-1 (cav-1α)
+T214.kevin-tmp	Entity 24472 24526	platelet endothelial cell adhesion molecular (PECAM-1)
+T215.kevin-tmp	Entity 24613 24619	cav-1α
+T217.kevin-tmp	Entity 24689 24702	blood vessels
+T218.kevin-tmp	Entity 24704 24710	Cav-1α
+T219.kevin-tmp	Entity 24729 24766	terminally differentiated type I AECs
+T220.kevin-tmp	Entity 25076 25097	Cav-1α immunostaining
+T227.kevin-tmp	Entity 25621 25635	knockout lungs
+T229.kevin-tmp	Entity 25695 25725	undeveloped epithelial tubules
+T232.kevin-tmp	Entity 26063 26078	Cav-1α staining
+T3.kevin-tmp	Entity 203 216	Neonatal mice
+T29.kevin-tmp	Entity 2042 2053	type I AECs
+T31.kevin-tmp	Entity 2090 2113	late gestational stages
+T33.kevin-tmp	Entity 2286 2322	dysregulated Shh-Patched-Gli pathway
+T46.kevin-tmp	Entity 2142 2167	impaired lung development
+T53.kevin-tmp	Entity 2763 2775	microdomains
+T56.kevin-tmp	Entity 2801 2808	caveoli
+T60.kevin-tmp	Entity 3083 3115	Smith-Lemli-Opitz syndrome (SLOS
+T61.kevin-tmp	Entity 3148 3170	dysmorphology disorder
+T70.kevin-tmp	Entity 3340 3363	dysmorphology syndromes
+T87.kevin-tmp	Entity 5456 5482	Impaired hedgehog function
+T92.kevin-tmp	Entity 42019 42041	Cholesterol deficiency
+T93.kevin-tmp	Entity 42052 42068	Dhcr7 deficiency
+T94.kevin-tmp	Entity 42101 42105	IUGR
+T95.kevin-tmp	KeyEntity 42109 42142	distinct lung saccular hypoplasia
+T96.kevin-tmp	Entity 42208 42247	delayed associated vascular development
+T97.kevin-tmp	Entity 42452 42480	signal transduction pathways
+T98.kevin-tmp	Entity 42432 42447;42472 42480	transcriptional pathways
+T100.kevin-tmp	KeyEntity 42581 42596	lung hypoplasia
+T105.kevin-tmp	Entity 5841 5860	severe lung defects
+T133.kevin-tmp	Entity 8006 8019	knockout pups
+T136.kevin-tmp	KeyEntity 8132 8148	P0 Dhcr7-/- pups
+T145.kevin-tmp	Entity 12525 12544	less saccular space
+T146.kevin-tmp	Entity 12560 12575	more mesenchyme
+T156.kevin-tmp	Entity 15141 15145;15155 15163	PCNA staining
+T159.kevin-tmp	Entity 15199 15223	early gestational stages
+T165.kevin-tmp	Entity 15956 15979	late gestational stages
+T172.kevin-tmp	Entity 16404 16408;16418 16431	PCNA labeled cells
+T173.kevin-tmp	Entity 16413 16431	BrdU labeled cells
+T174.kevin-tmp	Entity 16440 16450;16467 16474	epithelial regions
+T175.kevin-tmp	Entity 16455 16474	mesenchymal regions
+T178.kevin-tmp	Entity 17427 17458	reduced body cholesterol levels
+T192.kevin-tmp	Entity 20113 20142	surfactant protein expression
+T194.kevin-tmp	Entity 20191 20220	Surfactant protein expression
+T195.kevin-tmp	Entity 20224 20229	lungs
+T197.kevin-tmp	Entity 21060 21084	abnormal differentiation
+T201.kevin-tmp	Entity 22769 22792	less developed saccules
+T202.kevin-tmp	Entity 22862 22888	partially arrested tubules
+T209.kevin-tmp	Entity 24194 24217	late gestational stages
+T212.kevin-tmp	Entity 24412 24426	immunostaining
+T223.kevin-tmp	Entity 25456 25471	cav-1α patterns
+T224.kevin-tmp	KeyEntity 25486 25502	Dhcr7-/- embryos
+T225.kevin-tmp	Entity 25525 25560	undeveloped pulmonary capillary bed
+T226.kevin-tmp	Entity 25597 25617	cav-1α stained cells
+T233.kevin-tmp	Entity 26424 26430	Cav-1α
+T234.kevin-tmp	Entity 26456 26499	proximal bronchiole sub-epithelial matrices
+T235.kevin-tmp	Entity 27569 27572	Shh
+T236.kevin-tmp	Entity 27589 27617	normal embryonic development
+T237.kevin-tmp	Entity 27657 27677	cholesterol molecule
+T240.kevin-tmp	KeyEntity 27985 28008	Dhcr7-/- lung phenotype
+T242.kevin-tmp	KeyEntity 28037 28045	Dhcr7-/-
+T245.kevin-tmp	Entity 28279 28303	Shh-expressing locations
+T246.kevin-tmp	Entity 28317 28328	floor plate
+T247.kevin-tmp	Entity 28330 28339	notochord
+T248.kevin-tmp	Entity 28344 28351	mid gut
+T249.kevin-tmp	KeyEntity 28415 28423	Dhcr7-/-
+T251.kevin-tmp	Entity 28813 28821	Dhcr7-/-
+T253.kevin-tmp	Entity 30629 30637	proteins
+T254.kevin-tmp	Entity 30646 30662	smoothened (Smo)
+T255.kevin-tmp	Entity 30668 30680	Gli proteins
+T256.kevin-tmp	Entity 30700 30722	target-gene expression
+T257.kevin-tmp	Entity 30738 30751	Shh signaling
+T259.kevin-tmp	Entity 33837 33841	SLOS
+T262.kevin-tmp	Entity 34774 34789	lung hypoplasia
+T263.kevin-tmp	Entity 34797 34811	saccular stage
+T265.kevin-tmp	Entity 34889 34915	reduced terminal sac space
+T266.kevin-tmp	Entity 34917 34952	delayed type I AECs differentiation
+T267.kevin-tmp	Entity 34957 34985	delayed vascular development
+T268.kevin-tmp	Entity 35016 35039	late gestational stages
+T269.kevin-tmp	KeyEntity 35043 35059	Dhcr7-/- embryos
+T271.kevin-tmp	Entity 35109 35138	mammalian alveolar epithelium
+T275.kevin-tmp	Entity 35270 35282	type II AECs
+T276.kevin-tmp	Entity 35321 35332	type I AECs
+T277.kevin-tmp	Entity 35381 35400	alveolar maturation
+T280.kevin-tmp	Entity 35760 35788	Delayed vascular development
+T283.kevin-tmp	Entity 35897 35901	AECs
+T285.kevin-tmp	Entity 36183 36204	impaired gas exchange
+T286.kevin-tmp	Entity 36277 36296	respiratory failure
+T289.kevin-tmp	Entity 36567 36605	Intrauterine growth retardation (IUGR)
+T291.kevin-tmp	Entity 36685 36698	SLOS patients
+T292.kevin-tmp	KeyEntity 36797 36813	Dhcr7-/- animals
+T296.kevin-tmp	Entity 37308 37326	growth retardation
+T297.kevin-tmp	Entity 37337 37359	cholesterol deficiency
+T300.kevin-tmp	Entity 37887 37904	Fetal cholesterol
+T307.kevin-tmp	Entity 38894 38924	abnormal embryonic development
+T308.kevin-tmp	Entity 39278 39301	branching morphogenesis
+T309.kevin-tmp	Entity 39229 39232	Shh
+T313.kevin-tmp	KeyEntity 39517 39533	Dhcr7-/- embryos
+T314.kevin-tmp	Entity 39863 39881	cholesterol levels
+T315.kevin-tmp	KeyEntity 39916 39932	Dhcr7-/- embryos
+T319.kevin-tmp	Entity 40091 40114	Shh processing reaction
+T320.kevin-tmp	Entity 40157 40178	Shh signaling pathway
+T321.kevin-tmp	Entity 40182 40202	immunohistochemistry
+T324.kevin-tmp	Entity 40290 40303	Shh signaling
+T326.kevin-tmp	Entity 40349 40373	increased protein levels
+T327.kevin-tmp	Entity 40767 40801	mouse embryonic fibroblasts (MEFs)
+T328.kevin-tmp	KeyEntity 40807 40823	Dhcr7-/- embryos
+T331.kevin-tmp	Entity 41080 41089	CHO cells
+T332.kevin-tmp	Entity 41136 41154	sterol deprivation
+T341.kevin-tmp	Entity 42072 42076	mice
+T10.sandy-tmp	Entity 675 693	growth retardation
+T15.sandy-tmp	Entity 1079 1112	Impaired pre-alveolar development
+T16.sandy-tmp	Entity 1134 1162	inhibited cell proliferation
+T18.sandy-tmp	KeyEntity 1191 1230	type I alveolar epithelial cells (AECs)
+T19.sandy-tmp	Entity 1164 1187	delayed differentiation
+T25.sandy-tmp	Entity 1919 1943	lung saccular hypoplasia
+T30.sandy-tmp	Entity 2184 2201	sterol deficiency
+T31.sandy-tmp	KeyEntity 2205 2215	Dhcr7 loss
+T38.sandy-tmp	KeyEntity 1042 1058	Dhcr7-/- embryos
+T41.sandy-tmp	Entity 1446 1457	cholesterol
+T42.sandy-tmp	Entity 1476 1490	knockout lungs
+T43.sandy-tmp	Entity 1577 1606	spatial-temporal localization
+T47.sandy-tmp	KeyEntity 1789 1805	Dhcr7-/- embryos
+T49.sandy-tmp	Entity 2415 2424;2444 2449	mammalian cells
+T50.sandy-tmp	Entity 2426 2433;2444 2449	reptile cells
+T51.sandy-tmp	Entity 2438 2449	avian cells
+T55.sandy-tmp	Entity 2646 2657	cholesterol
+T57.sandy-tmp	Entity 2890 2913	atherosclerotic plaques
+T58.sandy-tmp	Entity 2875 2886	cholesterol
+T62.sandy-tmp	KeyEntity 3198 3203	DHCR7
+T64.sandy-tmp	Entity 3293 3317	cholesterol biosynthesis
+T65.sandy-tmp	Entity 3389 3435	post-squalene cholesterol biosynthesis pathway
+T73.sandy-tmp	Entity 3714 3725	cholesterol
+T74.sandy-tmp	Entity 3765 3814	cholesterol precursor 7-dehydrocholesterol (7DHC)
+T75.sandy-tmp	Entity 3865 3878	knockout pups
+T76.sandy-tmp	Entity 3901 3928	developmental abnormalities
+T77.sandy-tmp	Entity 3979 3989	SLOS model
+T78.sandy-tmp	Entity 4037 4043;4051 4068	exon 5 murine Dhcr7 gene
+T79.sandy-tmp	Entity 4014 4021;4051 4068	exons 3 murine Dhcr7 gene
+T80.sandy-tmp	Entity 4014 4018;4023 4024;4051 4068	exon 4 murine Dhcr7 gene
+T82.sandy-tmp	Entity 4204 4237	diffuse lung alveolar atelectasis
+T83.sandy-tmp	Entity 4243 4251;4266 4275	cyanotic breathing
+T84.sandy-tmp	Entity 4256 4275	lethargic breathing
+T89.sandy-tmp	KeyEntity 4480 4490	human SLOS
+T90.sandy-tmp	Entity 4546 4571	early postnatal lethality
+T91.sandy-tmp	Entity 4577 4596	respiratory failure
+T92.sandy-tmp	KeyEntity 4625 4635	SLOS cases
+T96.sandy-tmp	Entity 4753 4780	abnormal pulmonary lobation
+T98.sandy-tmp	Entity 4818 4827;4841 4852	laryngeal development
+T99.sandy-tmp	Entity 4832 4852	tracheal development
+T100.sandy-tmp	Entity 4860 4874	Mammalian lung
+T102.sandy-tmp	Entity 5061 5077	Lung development
+T103.sandy-tmp	Entity 5140 5150	epithelium
+T104.sandy-tmp	Entity 5152 5176	interstitial development
+T105.sandy-tmp	Entity 5187 5201	vasculogenesis
+T106.sandy-tmp	Entity 5203 5227	cellular differentiation
+T107.sandy-tmp	Entity 5229 5251	biochemical maturation
+T108.sandy-tmp	Entity 5256 5271	physical growth
+T109.sandy-tmp	Entity 5288 5310	mouse lung development
+T110.sandy-tmp	Entity 5381 5396;5442 5448	pseudoglandular stages
+T111.sandy-tmp	Entity 5398 5409;5442 5448	canalicular stages
+T112.sandy-tmp	Entity 5411 5428;5442 5448	terminal saccular stages
+T113.sandy-tmp	Entity 5433 5448	alveolar stages
+T127.sandy-tmp	Entity 6101 6120	interstitial tissue
+T129.sandy-tmp	Entity 6181 6197	mesenchyme cells
+T130.sandy-tmp	Entity 6166 6176;6192 6197	epithelial cells
+T131.sandy-tmp	Entity 6214 6232	Shh overexpression
+T132.sandy-tmp	Entity 6284 6303	respiratory failure
+T134.sandy-tmp	KeyEntity 6396 6401	Dhcr7
+T135.sandy-tmp	Entity 6435 6448	Shh signaling
+T136.sandy-tmp	Entity 6454 6476	abnormal embryogenesis
+T138.sandy-tmp	Entity 6553 6568	transfected Shh
+T139.sandy-tmp	Entity 6572 6596	cultured mammalian cells
+T144.sandy-tmp	Entity 6799 6827	lung branching morphogenesis
+T146.sandy-tmp	Entity 6880 6905	lung saccular development
+T147.sandy-tmp	Entity 6937 6975	partially developed epithelial tubules
+T149.sandy-tmp	KeyEntity 7029 7069	type II alveolar epithelial cells (AECs)
+T150.sandy-tmp	Entity 7109 7120	type I AECs
+T156.sandy-tmp	Entity 7423 7446	Shh-Patched-Gli pathway
+T157.sandy-tmp	KeyEntity 7483 7512	developmental lung hypoplasia
+T158.sandy-tmp	KeyEntity 7516 7532	Dhcr7-/- embryos
+T159.sandy-tmp	Entity 7560 7581	Shh signaling cascade
+T160.sandy-tmp	Entity 7626 7629	Shh
+T161.sandy-tmp	Entity 7657 7680	Body growth retardation
+T162.sandy-tmp	Entity 7684 7704	late gestation stage
+T163.sandy-tmp	KeyEntity 7708 7724	Dhcr7-/- embryos
+T166.sandy-tmp	Entity 8057 8064	hypoxia
+T167.sandy-tmp	Entity 8083 8103	spontaneous movement
+T170.sandy-tmp	KeyEntity 8217 8225	Dhcr7-/-
+T172.sandy-tmp	Entity 8401 8418	gestational stage
+T173.sandy-tmp	Entity 8442 8458	knockout embryos
+T174.sandy-tmp	KeyEntity 8567 8575	Dhcr7-/-
+T175.sandy-tmp	Entity 8811 8827	knockout embryos
+T177.sandy-tmp	Entity 9129 9147	Body length growth
+T178.sandy-tmp	Entity 9152 9168	gestational days
+T179.sandy-tmp	Entity 9182 9197	Control embryos
+T180.sandy-tmp	Entity 9332 9348	knockout embryos
+T182.sandy-tmp	KeyEntity 9481 9497	Dhcr7-/- embryos
+T183.sandy-tmp	KeyEntity 9581 9589	Dhcr7-/-
+T184.sandy-tmp	KeyEntity 9674 9682	Dhcr7-/-
+T185.sandy-tmp	KeyEntity 9769 9777	Dhcr7-/-
+T186.sandy-tmp	KeyEntity 9895 9911	Dhcr7-/- embryos
+T187.sandy-tmp	Entity 9937 9957	pulmonary hypoplasia
+T188.sandy-tmp	Entity 9963 9991	delayed saccular development
+T190.sandy-tmp	Entity 9993 10009	Wet lung weights
+T191.sandy-tmp	KeyEntity 10411 10419	Dhcr7+/+
+T192.sandy-tmp	Entity 10466 10481	Embryonic size,
+T193.sandy-tmp	Entity 10482 10497	lung morphology
+T194.sandy-tmp	Entity 10615 10637	Dhcr7-/- (-/-) embryos
+T195.sandy-tmp	Entity 10745 10752	hypoxic
+T196.sandy-tmp	Entity 10691 10704	knockout pups
+T198.sandy-tmp	Entity 10897 10918	cardiopulmonary level
+T199.sandy-tmp	Entity 10953 10975	normal lobar septation
+T200.sandy-tmp	Entity 11043 11059	distal sac space
+T201.sandy-tmp	Entity 11408 11430	organogenesis of lungs
+T203.sandy-tmp	Entity 11709 11730	Histological analyses
+T204.sandy-tmp	Entity 11738 11764	cardiopulmonary structures
+T206.sandy-tmp	Entity 12003 12024	histological analyses
+T208.sandy-tmp	Entity 12113 12126	knockout pups
+T209.sandy-tmp	Entity 12134 12166	cardiac structural abnormalities
+T210.sandy-tmp	KeyEntity 12287 12295	Dhcr7-/-
+T214.sandy-tmp	Entity 12829 12847	epithelial tubules
+T215.sandy-tmp	Entity 13064 13087	terminal sac space area
+T217.sandy-tmp	Entity 13179 13202	Interstitial mesenchyme
+T219.sandy-tmp	Entity 13329 13336	hypoxia
+T220.sandy-tmp	KeyEntity 13356 13369	Dhcr7-/- pups
+T221.sandy-tmp	Entity 13391 13412	Histological analyses
+T222.sandy-tmp	KeyEntity 13794 13816	knockout (-/-) embryos
+T223.sandy-tmp	Entity 13952 13966	Distal tubules
+T224.sandy-tmp	Entity 13987 14006	mesenchyme thinning
+T225.sandy-tmp	Entity 14119 14138	saccular structures
+T227.sandy-tmp	Entity 14148 14158	mesenchyme
+T228.sandy-tmp	Entity 14249 14271	developing pre-alveoli
+T229.sandy-tmp	Entity 14276 14295	thinning mesenchyme
+T231.sandy-tmp	Entity 14092 14106	knockout lungs
+T232.sandy-tmp	Entity 14445 14458	knockout pups
+T233.sandy-tmp	Entity 14466 14485	deficient septation
+T234.sandy-tmp	Entity 14490 14513	thick-walled mesenchyme
+T235.sandy-tmp	Entity 14654 14675	morphometric analyses
+T236.sandy-tmp	Entity 14680 14703	ung terminal sac spaces
+T237.sandy-tmp	Entity 14862 14891	Attenuated cell proliferation
+T238.sandy-tmp	KeyEntity 14912 14926	Dhcr7-/- lungs
+T242.sandy-tmp	Entity 15099 15103	PCNA
+T244.sandy-tmp	Entity 15080 15094	immunostaining
+T247.sandy-tmp	Entity 15321 15325	PCNA
+T248.sandy-tmp	Entity 15330 15334	BrdU
+T250.sandy-tmp	Entity 15472 15485	PCNA labeling
+T251.sandy-tmp	Entity 15586 15590	pHH3
+T252.sandy-tmp	Entity 15647 15662	pHH3 expression
+T253.sandy-tmp	Entity 15670 15680	epithelium
+T254.sandy-tmp	Entity 15684 15697	knockout lung
+T257.sandy-tmp	Entity 15981 16008	cell proliferation/division
+T259.sandy-tmp	Entity 16103 16121	cell proliferation
+T260.sandy-tmp	Entity 16123 16136	cell division
+T261.sandy-tmp	Entity 16141 16151	cell death
+T263.sandy-tmp	Entity 16173 16177	PCNA
+T264.sandy-tmp	Entity 16201 16205	BrdU
+T266.sandy-tmp	Entity 16245 16249	pHH3
+T268.sandy-tmp	Entity 16289 16294	TUNEL
+T269.sandy-tmp	Entity 16329 16343	immunostaining
+T270.sandy-tmp	Entity 16374 16397	late gestational stages
+T271.sandy-tmp	Entity 16364 16369;16379 16397	early gestational stages
+T276.sandy-tmp	Entity 16621 16633	distal lungs
+T277.sandy-tmp	Entity 16659 16663	PCNA
+T278.sandy-tmp	Entity 16678 16682	BrdU
+T279.sandy-tmp	Entity 16518 16522	PCNA
+T280.sandy-tmp	Entity 16537 16541	BrdU
+T282.sandy-tmp	Entity 16807 16823	knockout embryos
+T285.sandy-tmp	Entity 16979 16998	pHH3 immunostaining
+T287.sandy-tmp	Entity 17326 17340	Sterol content
+T288.sandy-tmp	Entity 17344 17360	developing lungs
+T289.sandy-tmp	KeyEntity 17364 17384	Dhcr7 deficient mice
+T293.sandy-tmp	Entity 17542 17553	cholesterol
+T294.sandy-tmp	KeyEntity 17581 17594	Dhcr7-/- mice
+T295.sandy-tmp	Entity 17637 17644	sterols
+T296.sandy-tmp	Entity 17712 17723	cholesterol
+T297.sandy-tmp	Entity 17813 17832	cholesterol content
+T298.sandy-tmp	KeyEntity 17849 17867	Dhcr7 null embryos
+T302.sandy-tmp	KeyEntity 18134 18149	Dhcr7 null mice
+T303.sandy-tmp	Entity 18224 18239	Sterol analyses
+T304.sandy-tmp	Entity 18243 18258	embryonic lungs
+T305.sandy-tmp	Entity 18260 18275	Sterol contents
+T306.sandy-tmp	Entity 18287 18298	cholesterol
+T307.sandy-tmp	Entity 18316 18325	7DHC/8DHC
+T309.sandy-tmp	Entity 18404 18426	knockout (-/-) embryos
+T310.sandy-tmp	Entity 18520 18527	sterols
+T311.sandy-tmp	Entity 18556 18570	knockout lungs
+T312.sandy-tmp	Entity 18599 18618	cholesterol content
+T313.sandy-tmp	Entity 18688 18705	precursor sterols
+T314.sandy-tmp	Entity 18707 18716	7DHC/8DHC
+T326.sandy-tmp	Entity 19167 19188	plasma corticosterone
+T327.sandy-tmp	Entity 19229 19246	Wild type P0 mice
+T328.sandy-tmp	Entity 19251 19272	corticosterone levels
+T329.sandy-tmp	KeyEntity 19351 19367	Dhcr7-/- P0 mice
+T330.sandy-tmp	Entity 19379 19393	corticosterone
+T331.sandy-tmp	Entity 19404 19417	Dhcr7-/- mice
+T332.sandy-tmp	Entity 19592 19606	corticosterone
+T333.sandy-tmp	Entity 19683 19708	corticosterone deficiency
+T334.sandy-tmp	Entity 19712 19727	lung immaturity
+T335.sandy-tmp	Entity 19751 19780	surfactant protein expression
+T336.sandy-tmp	Entity 19782 19802	Surfactant protein C
+T337.sandy-tmp	Entity 19821 19824	IHC
+T338.sandy-tmp	Entity 19876 19894	Dhcr7 null embryos
+T339.sandy-tmp	Entity 19959 19976	Northern analyses
+T340.sandy-tmp	Entity 19981 19985	SP-A
+T341.sandy-tmp	Entity 19987 19991	SP-B
+T342.sandy-tmp	Entity 19993 19997	SP-C
+T343.sandy-tmp	Entity 20001 20005	SP-D
+T344.sandy-tmp	Entity 20064 20079	Dhcr7 null mice
+T346.sandy-tmp	Entity 20249 20263	immunostaining
+T347.sandy-tmp	Entity 20277 20281	SP-C
+T348.sandy-tmp	Entity 20335 20357	knockout (-/-) embryos
+T349.sandy-tmp	Entity 20405 20418	SP-C staining
+T350.sandy-tmp	Entity 20499 20532	underdeveloped epithelial tubules
+T351.sandy-tmp	Entity 20536 20550	knockout lungs
+T352.sandy-tmp	Entity 20614 20649	normal type II AECs differentiation
+T353.sandy-tmp	Entity 20566 20570	SP-C
+T354.sandy-tmp	Entity 20741 20758	Northern analyses
+T355.sandy-tmp	Entity 20805 20822	knockout P0 lungs
+T356.sandy-tmp	Entity 20827 20831	SP-A
+T357.sandy-tmp	Entity 20833 20837	SP-B
+T358.sandy-tmp	Entity 20839 20843	SP-C
+T359.sandy-tmp	Entity 20848 20852	SP-D
+T360.sandy-tmp	Entity 20865 20886	Densitometry analyses
+T361.sandy-tmp	Entity 20948 20972	surfactant protein mRNAs
+T364.sandy-tmp	Entity 21143 21154	distal lung
+T365.sandy-tmp	Entity 21189 21208	saccular structures
+T366.sandy-tmp	Entity 21218 21234	flat type I AECs
+T367.sandy-tmp	Entity 21243 21285	cuboidal surfactant-producing type II AECs
+T368.sandy-tmp	Entity 21341 21349	saccules
+T369.sandy-tmp	Entity 21366 21387	Dhcr7 deficient lungs
+T370.sandy-tmp	Entity 21404 21423	saccular structures
+T371.sandy-tmp	Entity 21440 21463	low columnar epithelium
+T372.sandy-tmp	Entity 21486 21503	type I-like cells
+T373.sandy-tmp	Entity 21545 21572	arrested epithelial tubules
+T374.sandy-tmp	Entity 21614 21641	type I AECs differentiation
+T377.sandy-tmp	Entity 21728 21744	lung type I AECs
+T378.sandy-tmp	Entity 21855 21876	Dhcr7 deficient lungs
+T380.sandy-tmp	Entity 22030 22056	embryonic epithelial cells
+T381.sandy-tmp	Entity 22080 22102	endocytic Shh receptor
+T382.sandy-tmp	Entity 22109 22116	Megalin
+T383.sandy-tmp	Entity 22145 22162	distal epithelium
+T384.sandy-tmp	Entity 22205 22223	type I AECs lining
+T385.sandy-tmp	Entity 22228 22246	developed saccules
+T386.sandy-tmp	Entity 22278 22294	megalin staining
+T387.sandy-tmp	Entity 22311 22330	developing saccules
+T388.sandy-tmp	Entity 22334 22358	knockout embryonic lungs
+T389.sandy-tmp	Entity 22391 22422	undifferentiated cuboidal cells
+T390.sandy-tmp	Entity 22464 22491	type I AECs differentiation
+T391.sandy-tmp	Entity 22546 22573	type I AECs differentiation
+T392.sandy-tmp	Entity 22586 22601	distal saccules
+T393.sandy-tmp	Entity 22657 22668;22686 22702	type I (t1) epithelial cells
+T394.sandy-tmp	Entity 22673 22702	type II (t2) epithelial cells
+T397.sandy-tmp	Entity 22802 22827	columnar epithelial cells
+T400.sandy-tmp	Entity 22956 22979	type I cell markers T1α
+T401.sandy-tmp	Entity 22956 22974;22984 22988	type I cell marker AQP5
+T402.sandy-tmp	Entity 23025 23046	flat epithelial cells
+T403.sandy-tmp	Entity 23121 23146	knockout littermate lungs
+T404.sandy-tmp	Entity 23148 23151	T1α
+T405.sandy-tmp	Entity 23156 23160	AQP5
+T406.sandy-tmp	Entity 23227 23251	Megalin expression (Meg)
+T407.sandy-tmp	Entity 23272 23295	airway epithelial cells
+T408.sandy-tmp	Entity 23308 23344	proximal bronchiole epithelial cells
+T409.sandy-tmp	Entity 23422 23465	elongated megalin-positive epithelial cells
+T410.sandy-tmp	Entity 23497 23504	sacculi
+T411.sandy-tmp	Entity 23582 23607	terminal epithelial cells
+T412.sandy-tmp	Entity 23630 23648	megalin antibodies
+T413.sandy-tmp	Entity 23652 23666	knockout lungs
+T414.sandy-tmp	Entity 23692 23723	undifferentiated cuboidal cells
+T417.sandy-tmp	Entity 23908 23932	blood vessel development
+T418.sandy-tmp	Entity 23937 23964	lung structural development
+T420.sandy-tmp	Entity 24068 24096	mature alveolar gas-exchange
+T421.sandy-tmp	Entity 24113 24123	mesenchyme
+T422.sandy-tmp	Entity 24139 24153	capillary beds
+T423.sandy-tmp	Entity 24162 24166	AECs
+T425.sandy-tmp	Entity 24245 24255	mesenchyme
+T427.sandy-tmp	Entity 24346 24362	lung sacculation
+T428.sandy-tmp	Entity 24377 24410	abnormal blood vessel development
+T431.sandy-tmp	KeyEntity 24573 24587	Dhcr7-/- lungs
+T433.sandy-tmp	Entity 24649 24660	endothelium
+T438.sandy-tmp	Entity 24812 24824	type II AECs
+T439.sandy-tmp	Entity 24850 24860	epithelium
+T440.sandy-tmp	Entity 24865 24875	mesenchyme
+T441.sandy-tmp	Entity 24894 24909	cav-1α staining
+T442.sandy-tmp	Entity 24915 24921	cav-1α
+T443.sandy-tmp	Entity 24953 24966	blood vessels
+T444.sandy-tmp	Entity 24971 24982	capillaries
+T445.sandy-tmp	KeyEntity 25035 25049	Dhcr7-/- lungs
+T448.sandy-tmp	Entity 25166 25181	saccular stages
+T449.sandy-tmp	Entity 25316 25331	septation walls
+T450.sandy-tmp	Entity 25335 25357	well-developed alveoli
+T451.sandy-tmp	Entity 25387 25398	type I AECs
+T457.sandy-tmp	Entity 25672 25682	mesenchyme
+T460.sandy-tmp	Entity 25818 25834	PECAM-1 staining
+T461.sandy-tmp	Entity 25866 25891	lung vascular development
+T462.sandy-tmp	KeyEntity 25928 25951	Dhcr7 deficient embryos
+T463.sandy-tmp	Entity 26021 26032	caveolin-1α
+T464.sandy-tmp	Entity 26037 26044	PECAM-1
+#1	AnnotatorNotes T21.kevin-tmp	method
+#4	AnnotatorNotes T44.kevin-tmp	method
+#8	AnnotatorNotes T244.sandy-tmp	method
+#9	AnnotatorNotes T269.sandy-tmp	method
+#10	AnnotatorNotes T354.sandy-tmp	method
+R4.kevin-tmp	participates_in Arg1:T8.kevin-tmp Arg2:T9.kevin-tmp	
+R8.kevin-tmp	participates_in Arg1:T45.kevin-tmp Arg2:T25.kevin-tmp	
+R11.kevin-tmp	is_subclass_of Arg1:T51.kevin-tmp Arg2:T50.kevin-tmp	
+R12.kevin-tmp	is_subclass_of Arg1:T52.kevin-tmp Arg2:T50.kevin-tmp	
+R15.kevin-tmp	participates_in Arg1:T59.kevin-tmp Arg2:T58.kevin-tmp	
+R21.kevin-tmp	regulates Arg1:T71.kevin-tmp Arg2:T72.kevin-tmp	
+R22.kevin-tmp	is_part_of Arg1:T82.kevin-tmp Arg2:T83.kevin-tmp	
+R38.kevin-tmp	participates_in Arg1:T125.kevin-tmp Arg2:T127.kevin-tmp	
+R49.kevin-tmp	regulates Arg1:T181.kevin-tmp Arg2:T182.kevin-tmp	
+R50.kevin-tmp	participates_in Arg1:T183.kevin-tmp Arg2:T182.kevin-tmp	
+R63.kevin-tmp	participates_in Arg1:T205.kevin-tmp Arg2:T204.kevin-tmp	
+R67.kevin-tmp	is_part_of Arg1:T218.kevin-tmp Arg2:T219.kevin-tmp	
+R86.kevin-tmp	other_relation Arg1:T267.kevin-tmp Arg2:T262.kevin-tmp	
+R1.kevin-tmp	participates_in Arg1:T7.kevin-tmp Arg2:T6.kevin-tmp	
+R14.kevin-tmp	is_subclass_of Arg1:T56.kevin-tmp Arg2:T53.kevin-tmp	
+R17.kevin-tmp	is_subclass_of Arg1:T66.kevin-tmp Arg2:T70.kevin-tmp	
+R18.kevin-tmp	is_subclass_of Arg1:T67.kevin-tmp Arg2:T70.kevin-tmp	
+R19.kevin-tmp	is_subclass_of Arg1:T68.kevin-tmp Arg2:T70.kevin-tmp	
+R20.kevin-tmp	is_subclass_of Arg1:T69.kevin-tmp Arg2:T70.kevin-tmp	
+R27.kevin-tmp	participates_in Arg1:T89.kevin-tmp Arg2:T90.kevin-tmp	
+R28.kevin-tmp	regulates Arg1:T102.kevin-tmp Arg2:T103.kevin-tmp	
+R36.kevin-tmp	is_part_of Arg1:T117.kevin-tmp Arg2:T118.kevin-tmp	
+R51.kevin-tmp	participates_in Arg1:T184.kevin-tmp Arg2:T186.kevin-tmp	
+R52.kevin-tmp	participates_in Arg1:T184.kevin-tmp Arg2:T187.kevin-tmp	
+R54.kevin-tmp	participates_in Arg1:T188.kevin-tmp Arg2:T190.kevin-tmp	
+R57.kevin-tmp	is_part_of Arg1:T194.kevin-tmp Arg2:T195.kevin-tmp	
+R59.kevin-tmp	participates_in Arg1:T198.kevin-tmp Arg2:T197.kevin-tmp	
+R62.kevin-tmp	is_part_of Arg1:T202.kevin-tmp Arg2:T203.kevin-tmp	
+R68.kevin-tmp	is_part_of Arg1:T223.kevin-tmp Arg2:T224.kevin-tmp	
+R69.kevin-tmp	is_part_of Arg1:T225.kevin-tmp Arg2:T224.kevin-tmp	
+R71.kevin-tmp	is_part_of Arg1:T233.kevin-tmp Arg2:T234.kevin-tmp	
+R72.kevin-tmp	regulates Arg1:T235.kevin-tmp Arg2:T236.kevin-tmp	
+R75.kevin-tmp	is_subclass_of Arg1:T248.kevin-tmp Arg2:T245.kevin-tmp	
+R76.kevin-tmp	is_subclass_of Arg1:T247.kevin-tmp Arg2:T245.kevin-tmp	
+R77.kevin-tmp	is_subclass_of Arg1:T246.kevin-tmp Arg2:T245.kevin-tmp	
+R78.kevin-tmp	is_subclass_of Arg1:T255.kevin-tmp Arg2:T253.kevin-tmp	
+R79.kevin-tmp	is_subclass_of Arg1:T254.kevin-tmp Arg2:T253.kevin-tmp	
+R82.kevin-tmp	is_part_of Arg1:T263.kevin-tmp Arg2:T262.kevin-tmp	
+R88.kevin-tmp	participates_in Arg1:T276.kevin-tmp Arg2:T277.kevin-tmp	
+R89.kevin-tmp	participates_in Arg1:T275.kevin-tmp Arg2:T277.kevin-tmp	
+R96.kevin-tmp	participates_in Arg1:T309.kevin-tmp Arg2:T308.kevin-tmp	
+R99.kevin-tmp	is_part_of Arg1:T314.kevin-tmp Arg2:T315.kevin-tmp	
+R7.sandy-tmp	regulates Arg1:T31.sandy-tmp Arg2:T30.sandy-tmp	
+R13.sandy-tmp	is_part_of Arg1:T13.kevin-tmp Arg2:T38.sandy-tmp	
+R14.sandy-tmp	is_part_of Arg1:T10.sandy-tmp Arg2:T10.kevin-tmp	
+R6.sandy-tmp	is_part_of Arg1:T15.sandy-tmp Arg2:T41.kevin-tmp	
+R15.sandy-tmp	is_part_of Arg1:T16.sandy-tmp Arg2:T41.kevin-tmp	
+R16.sandy-tmp	is_part_of Arg1:T19.sandy-tmp Arg2:T41.kevin-tmp	
+R17.sandy-tmp	is_part_of Arg1:T18.kevin-tmp Arg2:T41.kevin-tmp	
+R18.sandy-tmp	is_part_of Arg1:T41.sandy-tmp Arg2:T42.sandy-tmp	
+R19.sandy-tmp	is_part_of Arg1:T23.kevin-tmp Arg2:T47.sandy-tmp	
+R20.sandy-tmp	is_part_of Arg1:T47.kevin-tmp Arg2:T49.sandy-tmp	
+R21.sandy-tmp	is_part_of Arg1:T47.kevin-tmp Arg2:T50.sandy-tmp	
+R22.sandy-tmp	is_part_of Arg1:T47.kevin-tmp Arg2:T51.sandy-tmp	
+R25.sandy-tmp	interacts_with Arg1:T58.sandy-tmp Arg2:T57.sandy-tmp	
+R28.sandy-tmp	regulates Arg1:T62.sandy-tmp Arg2:T63.kevin-tmp	
+R29.sandy-tmp	interacts_with Arg1:T62.sandy-tmp Arg2:T64.sandy-tmp	
+R33.sandy-tmp	is_part_of Arg1:T79.sandy-tmp Arg2:T77.sandy-tmp	
+R34.sandy-tmp	is_part_of Arg1:T78.sandy-tmp Arg2:T77.sandy-tmp	
+R35.sandy-tmp	is_part_of Arg1:T80.sandy-tmp Arg2:T77.sandy-tmp	
+R36.sandy-tmp	is_part_of Arg1:T77.kevin-tmp Arg2:T76.kevin-tmp	
+R37.sandy-tmp	is_part_of Arg1:T82.sandy-tmp Arg2:T76.kevin-tmp	
+R38.sandy-tmp	is_part_of Arg1:T83.sandy-tmp Arg2:T82.sandy-tmp	
+R39.sandy-tmp	is_part_of Arg1:T84.sandy-tmp Arg2:T82.sandy-tmp	
+R40.sandy-tmp	is_part_of Arg1:T79.kevin-tmp Arg2:T80.kevin-tmp	
+R41.sandy-tmp	is_part_of Arg1:T91.sandy-tmp Arg2:T92.sandy-tmp	
+R42.sandy-tmp	is_part_of Arg1:T90.sandy-tmp Arg2:T92.sandy-tmp	
+R44.sandy-tmp	is_part_of Arg1:T103.sandy-tmp Arg2:T102.sandy-tmp	
+R45.sandy-tmp	is_part_of Arg1:T104.sandy-tmp Arg2:T102.sandy-tmp	
+R46.sandy-tmp	is_part_of Arg1:T110.sandy-tmp Arg2:T109.sandy-tmp	
+R47.sandy-tmp	is_part_of Arg1:T111.sandy-tmp Arg2:T109.sandy-tmp	
+R48.sandy-tmp	is_part_of Arg1:T112.sandy-tmp Arg2:T109.sandy-tmp	
+R49.sandy-tmp	is_part_of Arg1:T113.sandy-tmp Arg2:T109.sandy-tmp	
+R54.sandy-tmp	participates_in Arg1:T132.sandy-tmp Arg2:T131.sandy-tmp	
+R56.sandy-tmp	regulates Arg1:T114.kevin-tmp Arg2:T138.sandy-tmp	
+R61.sandy-tmp	is_part_of Arg1:T128.kevin-tmp Arg2:T127.kevin-tmp	
+R62.sandy-tmp	is_part_of Arg1:T129.kevin-tmp Arg2:T127.kevin-tmp	
+R65.sandy-tmp	is_part_of Arg1:T161.sandy-tmp Arg2:T163.sandy-tmp	
+R66.sandy-tmp	is_part_of Arg1:T187.sandy-tmp Arg2:T186.sandy-tmp	
+R67.sandy-tmp	is_part_of Arg1:T188.sandy-tmp Arg2:T187.sandy-tmp	
+R68.sandy-tmp	is_part_of Arg1:T195.sandy-tmp Arg2:T196.sandy-tmp	
+R69.sandy-tmp	is_part_of Arg1:T201.sandy-tmp Arg2:T143.kevin-tmp	
+R72.sandy-tmp	is_part_of Arg1:T225.sandy-tmp Arg2:T231.sandy-tmp	
+R73.sandy-tmp	is_part_of Arg1:T227.sandy-tmp Arg2:T231.sandy-tmp	
+R74.sandy-tmp	is_part_of Arg1:T233.sandy-tmp Arg2:T232.sandy-tmp	
+R75.sandy-tmp	is_part_of Arg1:T234.sandy-tmp Arg2:T232.sandy-tmp	
+R76.sandy-tmp	is_part_of Arg1:T237.sandy-tmp Arg2:T238.sandy-tmp	
+R77.sandy-tmp	is_part_of Arg1:T252.sandy-tmp Arg2:T253.sandy-tmp	
+R78.sandy-tmp	is_part_of Arg1:T253.sandy-tmp Arg2:T254.sandy-tmp	
+R79.sandy-tmp	is_part_of Arg1:T257.sandy-tmp Arg2:T164.kevin-tmp	
+R81.sandy-tmp	interacts_with Arg1:T168.kevin-tmp Arg2:T266.sandy-tmp	
+R83.sandy-tmp	is_part_of Arg1:T177.kevin-tmp Arg2:T179.kevin-tmp	
+R85.sandy-tmp	is_part_of Arg1:T306.sandy-tmp Arg2:T305.sandy-tmp	
+R86.sandy-tmp	is_part_of Arg1:T307.sandy-tmp Arg2:T305.sandy-tmp	
+R87.sandy-tmp	is_subclass_of Arg1:T314.sandy-tmp Arg2:T313.sandy-tmp	
+R90.sandy-tmp	is_part_of Arg1:T293.sandy-tmp Arg2:T294.sandy-tmp	
+R91.sandy-tmp	is_part_of Arg1:T297.sandy-tmp Arg2:T298.sandy-tmp	
+R92.sandy-tmp	is_part_of Arg1:T184.kevin-tmp Arg2:T185.kevin-tmp	
+R93.sandy-tmp	is_subclass_of Arg1:T189.kevin-tmp Arg2:T188.kevin-tmp	
+R94.sandy-tmp	is_part_of Arg1:T350.sandy-tmp Arg2:T351.sandy-tmp	
+R95.sandy-tmp	is_part_of Arg1:T353.sandy-tmp Arg2:T351.sandy-tmp	
+R96.sandy-tmp	is_part_of Arg1:T371.sandy-tmp Arg2:T370.sandy-tmp	
+R97.sandy-tmp	is_part_of Arg1:T372.sandy-tmp Arg2:T370.sandy-tmp	
+R99.sandy-tmp	is_part_of Arg1:T198.kevin-tmp Arg2:T196.kevin-tmp	
+R100.sandy-tmp	is_part_of Arg1:T365.sandy-tmp Arg2:T364.sandy-tmp	
+R101.sandy-tmp	is_part_of Arg1:T366.sandy-tmp Arg2:T365.sandy-tmp	
+R102.sandy-tmp	is_part_of Arg1:T367.sandy-tmp Arg2:T365.sandy-tmp	
+R104.sandy-tmp	is_part_of Arg1:T382.sandy-tmp Arg2:T383.sandy-tmp	
+R105.sandy-tmp	is_part_of Arg1:T384.sandy-tmp Arg2:T385.sandy-tmp	
+R106.sandy-tmp	is_part_of Arg1:T386.sandy-tmp Arg2:T387.sandy-tmp	
+R107.sandy-tmp	participates_in Arg1:T387.sandy-tmp Arg2:T388.sandy-tmp	
+R111.sandy-tmp	participates_in Arg1:T401.sandy-tmp Arg2:T402.sandy-tmp	
+R112.sandy-tmp	participates_in Arg1:T400.sandy-tmp Arg2:T402.sandy-tmp	
+R113.sandy-tmp	participates_in Arg1:T404.sandy-tmp Arg2:T403.sandy-tmp	
+R114.sandy-tmp	participates_in Arg1:T405.sandy-tmp Arg2:T403.sandy-tmp	
+R115.sandy-tmp	participates_in Arg1:T406.sandy-tmp Arg2:T407.sandy-tmp	
+R117.sandy-tmp	is_part_of Arg1:T411.sandy-tmp Arg2:T413.sandy-tmp	
+R120.sandy-tmp	participates_in Arg1:T206.kevin-tmp Arg2:T420.sandy-tmp	
+R121.sandy-tmp	interacts_with Arg1:T421.sandy-tmp Arg2:T422.sandy-tmp	
+R122.sandy-tmp	interacts_with Arg1:T421.sandy-tmp Arg2:T423.sandy-tmp	
+R123.sandy-tmp	is_part_of Arg1:T425.sandy-tmp Arg2:T208.kevin-tmp	
+R124.sandy-tmp	interacts_with Arg1:T428.sandy-tmp Arg2:T427.sandy-tmp	
+R126.sandy-tmp	regulates Arg1:T442.sandy-tmp Arg2:T443.sandy-tmp	
+R127.sandy-tmp	regulates Arg1:T442.sandy-tmp Arg2:T444.sandy-tmp	
+R128.sandy-tmp	is_part_of Arg1:T449.sandy-tmp Arg2:T450.sandy-tmp	
+T1	Entity 114 152	post-squalene cholesterol biosynthesis
+R1	participates_in Arg1:T1 Arg2:T2.kevin-tmp	
+T2	Entity 42635 42646	cholesterol
+T3	Entity 42650 42671	embryonic development
+T4	Entity 820 845	lung-to-body weight ratio
+R2	is_part_of Arg1:T4 Arg2:T11.kevin-tmp	
+T5	KeyEntity 1319 1331	type II AECs
+T6	Entity 2023 2038	differentiation
+R3	participates_in Arg1:T29.kevin-tmp Arg2:T6	
+R4	participates_in Arg1:T28.kevin-tmp Arg2:T25.sandy-tmp	
+R5	participates_in Arg1:T29.kevin-tmp Arg2:T25.sandy-tmp	
+R6	participates_in Arg1:T30.kevin-tmp Arg2:T25.sandy-tmp	
+T7	Entity 2794 2799	rafts
+R7	is_subclass_of Arg1:T7 Arg2:T53.kevin-tmp	
+R8	is_subclass_of Arg1:T60.kevin-tmp Arg2:T61.kevin-tmp	
+R9	regulates Arg1:T62.sandy-tmp Arg2:T60.kevin-tmp	
+T8	Entity 5113 5136	branching morphogenesis
+R10	participates_in Arg1:T103.sandy-tmp Arg2:T8	
+T9	Entity 12069 12076	hypoxia
+R11	is_part_of Arg1:T209.sandy-tmp Arg2:T208.sandy-tmp	
+#2	AnnotatorNotes R11	not a part of
+T10	Entity 13025 13033	neonates
+T11	Entity 13014 13019	lungs
+R12	is_part_of Arg1:T11 Arg2:T10	
+#3	AnnotatorNotes R72.sandy-tmp	is not part of 
+T12	Entity 14945 14976	normal cholesterol biosynthesis
+T13	Entity 15002 15029	cell proliferation/division
+R13	participates_in Arg1:T12 Arg2:T13	
+T14	Entity 15181 15195	knockout lungs
+T15	Entity 15167 15176;15190 15195	wild-type lungs
+T16	Entity 16882 16902	TUNEL immunostaining
+T17	Entity 16752 16765	PCNA labeling
+R14	is_part_of Arg1:T287.sandy-tmp Arg2:T288.sandy-tmp	
+R15	is_part_of Arg1:T178.kevin-tmp Arg2:T179.kevin-tmp	
+T18	Entity 20162 20178	Dhcr7 deficiency
+R16	participates_in Arg1:T18 Arg2:T192.kevin-tmp	
+#5	AnnotatorNotes R16	does 
+T19	Entity 19125 19146	surfactant components
+T20	Entity 19112 19121	secretion
+T21	Entity 32884 32900	Western blotting
+T22	Entity 19098 19107	synthesis
+R17	participates_in Arg1:T19 Arg2:T20	
+R18	participates_in Arg1:T19 Arg2:T22	
+R19	participates_in Arg1:T19 Arg2:T190.kevin-tmp	
+T23	Entity 21686 21689	T1α
+R20	is_part_of Arg1:T23 Arg2:T377.sandy-tmp	
+T24	Entity 21804 21808	AQP5
+R21	is_part_of Arg1:T24 Arg2:T378.sandy-tmp	
+T25	Entity 33870 33876	enzyme
+T26	Entity 33891 33915	cholesterol biosynthesis
+R22	participates_in Arg1:T25 Arg2:T26	
+R23	regulates Arg1:T25 Arg2:T259.kevin-tmp	
+T27	Entity 34411 34427	lung development
+T28	Entity 34431 34447	Dhcr7-/- embryos
+R24	participates_in Arg1:T28 Arg2:T27	
+T29	Entity 34842 34887	partially developed distal epithelial tubules
+T30	Entity 34830 34838;34862 34887	arrested distal epithelial tubules
+R25	participates_in Arg1:T30 Arg2:T262.kevin-tmp	
+R26	participates_in Arg1:T29 Arg2:T262.kevin-tmp	
+R27	participates_in Arg1:T265.kevin-tmp Arg2:T262.kevin-tmp	
+R28	participates_in Arg1:T266.kevin-tmp Arg2:T262.kevin-tmp	
+R29	participates_in Arg1:T267.kevin-tmp Arg2:T262.kevin-tmp	
+T31	Entity 35419 35439	vascular development
+T32	Entity 35443 35450	alveoli
+R30	participates_in Arg1:T32 Arg2:T31	
+T33	Entity 35473 35498	normal lung morphogenesis
+T34	Entity 35502 35525	late gestational stages
+R31	participates_in Arg1:T31 Arg2:T33	
+T35	Entity 35814 35833	delayed sacculation
+T36	KeyEntity 35837 35851	Dhcr7-/- lungs
+R32	participates_in Arg1:T36 Arg2:T35	
+R33	participates_in Arg1:T280.kevin-tmp Arg2:T35	
+T37	Entity 35985 35997	type II AECs
+R34	participates_in Arg1:T285.kevin-tmp Arg2:T286.kevin-tmp	
+T38	Entity 36321 36337	functional Dhcr7
+T39	Entity 36362 36378	embryonic growth
+R35	regulates Arg1:T38 Arg2:T39	
+T40	Entity 36727 36738	body length
+R36	is_part_of Arg1:T40 Arg2:T292.kevin-tmp	
+T41	Entity 37118 37128	inhibition
+T42	Entity 37132 37143	lung growth
+R37	participates_in Arg1:T42 Arg2:T41	
+R38	participates_in Arg1:T297.kevin-tmp Arg2:T296.kevin-tmp	
+T43	Entity 37402 37413	cell growth
+T44	Entity 37402 37406;37418 37431	cell proliferation
+T45	Entity 37473 37484	Cholesterol
+T46	KeyEntity 37499 37515	Dhcr7-/- embryos
+R39	is_part_of Arg1:T45 Arg2:T46	
+T47	KeyEntity 38650 38663	Dhcr7-/- mice
+T48	Entity 38516 38536	maternal cholesterol
+T49	Entity 38563 38575	murine fetus
+R40	interacts_with Arg1:T48 Arg2:T49	
+T50	Entity 38860 38884	cholesterol biosynthesis
+T51	Entity 40920 40934	Shh processing
+T52	Entity 40989 41003	Shh activation
+T53	Entity 40331 40344	transcription
+R41	regulates Arg1:T324.kevin-tmp Arg2:T53	
+R42	regulates Arg1:T324.kevin-tmp Arg2:T326.kevin-tmp	
+T54	Entity 40005 40031	Dhcr7-/- embryonic tissues
+T55	Entity 39985 39989	7DHC
+R43	is_part_of Arg1:T55 Arg2:T54	
+T56	Entity 39444 39463	gas-exchange region
+T57	Entity 39471 39475	lung
+R44	is_part_of Arg1:T56 Arg2:T57	
+T58	Entity 38985 38998	Shh signaling
+T59	Entity 41169 41187	Shh autoprocessing
+T60	Entity 41449 41480	normal cholesterol biosynthesis
+T61	Entity 41552 41582	correct plasma membrane milieu
+R45	participates_in Arg1:T60 Arg2:T61	
+T62	Entity 41602 41621	cholesterol content
+T63	Entity 41749 41777	normal cholesterol synthesis
+T64	Entity 41798 41817	signal transduction
+R46	participates_in Arg1:T63 Arg2:T64	
+T65	Entity 42528 42533	Dhcr7
+R47	participates_in Arg1:T65 Arg2:T98.kevin-tmp	
+R48	participates_in Arg1:T65 Arg2:T97.kevin-tmp	
+R49	participates_in Arg1:T93.kevin-tmp Arg2:T92.kevin-tmp	
+R50	is_part_of Arg1:T92.kevin-tmp Arg2:T341.kevin-tmp	
+R51	is_part_of Arg1:T95.kevin-tmp Arg2:T341.kevin-tmp	
+R52	participates_in Arg1:T2 Arg2:T3	
+T66	Entity 27962 27965	Shh
+T67	Entity 28163 28166	Shh
+T68	Entity 28187 28203	epithelial cells
+T69	Entity 28207 28216	lung buds
+R53	is_part_of Arg1:T68 Arg2:T69	
+R54	is_part_of Arg1:T67 Arg2:T68	
+T70	Entity 28753 28777	Ptch expression patterns
+T71	Entity 28745 28748;28758 28777	Shh expression patterns
+T72	Entity 30598 30624	Shh-Ptch signaling cascade
+T73	Entity 25993 26016	Immunostaining patterns
+R55	is_part_of Arg1:T226.kevin-tmp Arg2:T227.kevin-tmp	
+R56	is_part_of Arg1:T457.sandy-tmp Arg2:T227.kevin-tmp	
+T74	Entity 24664 24684	developing capillary
+R57	is_part_of Arg1:T433.sandy-tmp Arg2:T74	
+R58	is_part_of Arg1:T215.kevin-tmp Arg2:T433.sandy-tmp	
+#6	AnnotatorNotes R58	is expressed
+R59	is_part_of Arg1:T215.kevin-tmp Arg2:T217.kevin-tmp	
+#7	AnnotatorNotes R59	is expressed
+T75	Entity 15362 15374	distal lungs
+T76	Entity 15378 15394	knockout embryos
+R60	is_part_of Arg1:T75 Arg2:T76	
+T77	Entity 21943 21950	Megalin
+R61	is_part_of Arg1:T201.kevin-tmp Arg2:T200.kevin-tmp	
+R62	is_part_of Arg1:T397.sandy-tmp Arg2:T201.kevin-tmp	
+R63	interacts_with Arg1:T412.sandy-tmp Arg2:T411.sandy-tmp	
+R64	is_part_of Arg1:T414.sandy-tmp Arg2:T411.sandy-tmp	
+R65	is_part_of Arg1:T215.sandy-tmp Arg2:T149.kevin-tmp	
+T78	Entity 12480 12485	lungs
+T79	Entity 12491 12507	knockout embryos
+R66	is_part_of Arg1:T78 Arg2:T79	
+R67	is_part_of Arg1:T145.kevin-tmp Arg2:T78	
+R68	is_part_of Arg1:T146.kevin-tmp Arg2:T78	
+T80	Entity 3642 3655	Neonatal mice
+T81	Entity 3656 3666;3675 3696	homozygous Dhcr7 gene disruption
+R69	is_part_of Arg1:T81 Arg2:T80	
+R70	is_part_of Arg1:T73.sandy-tmp Arg2:T80	
+#11	AnnotatorNotes R70	is not part of 
+R71	is_part_of Arg1:T74.sandy-tmp Arg2:T80	
+T82	Entity 4753 4761;4795 4803	abnormal arteries
+R72	participates_in Arg1:T82 Arg2:T83.kevin-tmp	
+R73	participates_in Arg1:T96.sandy-tmp Arg2:T83.kevin-tmp	
+R74	participates_in Arg1:T98.sandy-tmp Arg2:T83.kevin-tmp	
+R75	participates_in Arg1:T99.sandy-tmp Arg2:T83.kevin-tmp	
+T83	Entity 5550 5554	SLOS
+R76	participates_in Arg1:T87.kevin-tmp Arg2:T83	
+T84	Entity 5885 5908	branching morphogenesis
+T85	Entity 5816 5828	Shh function
+R77	participates_in Arg1:T85 Arg2:T105.kevin-tmp	
+R78	participates_in Arg1:T84 Arg2:T105.kevin-tmp	
+R79	is_part_of Arg1:T138.sandy-tmp Arg2:T139.sandy-tmp	
+T86	Entity 6345 6369	cholesterol biosynthesis
+R80	regulates Arg1:T134.sandy-tmp Arg2:T86	
+T87	Entity 6925 6933;6957 6975	arrested epithelial tubules
+T88	Entity 6769 6783	Dhcr7 activity
+R81	participates_in Arg1:T88 Arg2:T119.kevin-tmp	
+R82	participates_in Arg1:T119.kevin-tmp Arg2:T144.sandy-tmp	
+#12	AnnotatorNotes R82	did not participate in 
+T89	Entity 6002 6005	Shh
+R83	is_part_of Arg1:T89 Arg2:T108.kevin-tmp	
+R84	participates_in Arg1:T89 Arg2:T109.kevin-tmp	
+R85	participates_in Arg1:T89 Arg2:T127.sandy-tmp	

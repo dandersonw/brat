@@ -1,6 +1,5 @@
 T4.kevin-tmp	Entity 503 526	genome linkage analysis
 T5.kevin-tmp	Entity 530 540	F2 progeny
-T7.kevin-tmp	Entity 600 616	small-effect QTL
 T8.kevin-tmp	KeyEntity 686 689	CIA
 T10.kevin-tmp	KeyEntity 796 799	CIA
 T12.kevin-tmp	KeyEntity 859 862	CIA
@@ -158,7 +157,6 @@ T1.kevin-tmp	Entity 354 396	small-effect quantitative trait loci (QTL)
 T2.kevin-tmp	KeyEntity 400 432	collagen induced arthritis (CIA)
 T3.kevin-tmp	Entity 457 481	transcriptome approaches
 T9.kevin-tmp	Entity 771 785	genomic region
-T11.kevin-tmp	FIX_SPAN_Entity 810 841	disease-specific differentially
 T14.kevin-tmp	Entity 960 976	small-effect QTL
 T18.kevin-tmp	Entity 1207 1223	small-effect QTL
 T26.kevin-tmp	Entity 1559 1561	RA
@@ -175,9 +173,7 @@ T66.kevin-tmp	Entity 28336 28365	onset of arthritis (OA) phase
 T67.kevin-tmp	Entity 28386 28414	chronic arthritis (CA) phase
 T76.kevin-tmp	Entity 5507 5512;5523 5530	DBA/1 strains
 T77.kevin-tmp	Entity 5517 5530	FVB/N strains
-T80.kevin-tmp	FIX_SPAN_Entity 5702 5733	disease-specific differentially
 T81.kevin-tmp	KeyEntity 5751 5754	CIA
-T82.kevin-tmp	FIX_SPAN_Entity 5769 5799	strain-specific differentially
 T83.kevin-tmp	KeyEntity 5850 5853	CIA
 T88.kevin-tmp	Entity 6828 6833;6845 6849	FVB/N mice
 T89.kevin-tmp	Entity 6838 6849	DBA/1J mice
@@ -202,30 +198,16 @@ T173.kevin-tmp	Entity 13868 13873;13884 13891	DBA/1 strains
 T174.kevin-tmp	Entity 13878 13891	FVB/N strains
 T188.kevin-tmp	Entity 15066 15074	NC group
 T198.kevin-tmp	Entity 16057 16062	genes
-T199.kevin-tmp	FIX_SPAN_Entity 16073 16107	upregulated after induction of CIA
 T200.kevin-tmp	Entity 16161 16172	onset phase
 T260.kevin-tmp	Entity 20382 20389	Locus 2
 T265.kevin-tmp	Entity 20577 20581	gene
-T266.kevin-tmp	FIX_SPAN_Entity 20627 20679	controlling the IgG2a antibody levels to collagen II
 T267.kevin-tmp	Entity 20686 20693	Locus 7
 T271.kevin-tmp	Entity 20819 20825	loci 8
 T275.kevin-tmp	Entity 20915 20919	gene
-T283.kevin-tmp	VERIFY_Entity 24299 24306	locus 4
-T284.kevin-tmp	VERIFY_Entity 24329 24340	low P value
-T290.kevin-tmp	FIX_SPAN_Entity 23200 23226	candidate gene for locus 8
-T300.kevin-tmp	VERIFY_Entity 23553 23578	candidate gene for loci 6
-T305.kevin-tmp	FIX_SPAN_Entity 23728 23762	development of autoimmune diseases
-T307.kevin-tmp	FIX_SPAN_Entity 23819 23876	maintenance of the CD4+CD25+ regulatory T cell population
-T318.kevin-tmp	FIX_SPAN_Entity 21595 21622	biological responses in LNs
-T320.kevin-tmp	VERIFY_Entity 21628 21636	stronger
+T283.kevin-tmp	Entity 24299 24306	locus 4
 T325.kevin-tmp	Entity 22072 22077	genes
-T329.kevin-tmp	FIX_SPAN_Entity 22436 22467	upregulated in the DBA/1 strain
 T330.kevin-tmp	Entity 22394 22399	genes
 T333.kevin-tmp	Entity 22602 22614	DBA/1 strain
-T1.sandy-tmp	FIX_SPAN_Entity 354 390	small-effect quantitative trait loci
-T2.sandy-tmp	FIX_SPAN_Entity 392 395	QTL
-T3.sandy-tmp	FIX_SPAN_KeyEntity 400 426	collagen induced arthritis
-T4.sandy-tmp	FIX_SPAN_KeyEntity 428 431	CIA
 T6.sandy-tmp	Entity 638 662	gene expression patterns
 T28.sandy-tmp	KeyEntity 5070 5073	CIA
 T30.sandy-tmp	Entity 5278 5301;5324 5331	CIA susceptible (DBA/1) strains
@@ -513,10 +495,6 @@ T546.sandy-tmp	Entity 27137 27139	CA
 T547.sandy-tmp	Entity 27145 27147	NA
 T548.sandy-tmp	Entity 27518 27558	strain-specific differentially expressed
 T551.sandy-tmp	Entity 27894 27924	Differentially expressed genes
-T552.sandy-tmp	FIX_SPAN_Entity 28250 28268	naive control (NC)
-T553.sandy-tmp	FIX_SPAN_Entity 28289 28311	post-immunisation (PI)
-T554.sandy-tmp	FIX_SPAN_Entity 28336 28359	onset of arthritis (OA)
-T555.sandy-tmp	FIX_SPAN_Entity 28386 28408	chronic arthritis (CA)
 T556.sandy-tmp	Entity 28457 28499	overlapping genes differentially expressed
 T557.sandy-tmp	Entity 28539 28569	Differentially expressed genes
 T559.sandy-tmp	Entity 28637 28660	experimental conditions
@@ -535,47 +513,27 @@ T578.sandy-tmp	Entity 30113 30116	QTL
 R55.kevin-tmp	regulates Arg1:T299.kevin-tmp Arg2:T301.kevin-tmp	
 R56.kevin-tmp	regulates Arg1:T299.kevin-tmp Arg2:T302.kevin-tmp	
 R58.kevin-tmp	participates_in Arg1:T306.kevin-tmp Arg2:T308.kevin-tmp	
-R1.kevin-tmp	participates_in Arg1:T1.kevin-tmp Arg2:T2.kevin-tmp	
 R3.kevin-tmp	is_part_of Arg1:T9.kevin-tmp Arg2:T10.kevin-tmp	
-R4.kevin-tmp	VERIFY_other_relation Arg1:T11.kevin-tmp Arg2:T12.kevin-tmp	
 R5.kevin-tmp	regulates Arg1:T14.kevin-tmp Arg2:T15.kevin-tmp	
 R9.kevin-tmp	is_part_of Arg1:T44.kevin-tmp Arg2:T45.kevin-tmp	
 R10.kevin-tmp	is_part_of Arg1:T78.kevin-tmp Arg2:T76.kevin-tmp	
 R11.kevin-tmp	is_part_of Arg1:T78.kevin-tmp Arg2:T77.kevin-tmp	
-R12.kevin-tmp	VERIFY_other_relation Arg1:T80.kevin-tmp Arg2:T81.kevin-tmp	
-R13.kevin-tmp	VERIFY_other_relation Arg1:T82.kevin-tmp Arg2:T83.kevin-tmp	
 R18.kevin-tmp	is_part_of Arg1:T96.kevin-tmp Arg2:T95.kevin-tmp	
 R19.kevin-tmp	is_part_of Arg1:T106.kevin-tmp Arg2:T107.kevin-tmp	
-R21.kevin-tmp	VERIFY_other_relation Arg1:T119.kevin-tmp Arg2:T118.kevin-tmp	
 R23.kevin-tmp	regulates Arg1:T136.kevin-tmp Arg2:T137.kevin-tmp	
-R24.kevin-tmp	VERIFY_other_relation Arg1:T136.kevin-tmp Arg2:T138.kevin-tmp	
 R26.kevin-tmp	is_part_of Arg1:T156.kevin-tmp Arg2:T157.kevin-tmp	
 R27.kevin-tmp	regulates Arg1:T159.kevin-tmp Arg2:T162.kevin-tmp	
 R33.kevin-tmp	is_part_of Arg1:T193.kevin-tmp Arg2:T194.kevin-tmp	
-R34.kevin-tmp	VERIFY_other_relation Arg1:T199.kevin-tmp Arg2:T198.kevin-tmp	
-R36.kevin-tmp	VERIFY_other_relation Arg1:T255.kevin-tmp Arg2:T254.kevin-tmp	
-R37.kevin-tmp	VERIFY_other_relation Arg1:T262.kevin-tmp Arg2:T261.kevin-tmp	
 R38.kevin-tmp	regulates Arg1:T265.kevin-tmp Arg2:T264.kevin-tmp	
-R39.kevin-tmp	VERIFY_other_relation Arg1:T266.kevin-tmp Arg2:T265.kevin-tmp	
 R40.kevin-tmp	is_part_of Arg1:T265.kevin-tmp Arg2:T263.kevin-tmp	
 R41.kevin-tmp	is_part_of Arg1:T267.kevin-tmp Arg2:T268.kevin-tmp	
 R42.kevin-tmp	regulates Arg1:T267.kevin-tmp Arg2:T270.kevin-tmp	
 R43.kevin-tmp	is_part_of Arg1:T271.kevin-tmp Arg2:T272.kevin-tmp	
 R45.kevin-tmp	regulates Arg1:T275.kevin-tmp Arg2:T274.kevin-tmp	
 R46.kevin-tmp	is_part_of Arg1:T275.kevin-tmp Arg2:T276.kevin-tmp	
-R47.kevin-tmp	VERIFY_other_relation Arg1:T284.kevin-tmp Arg2:T283.kevin-tmp	
 R48.kevin-tmp	is_part_of Arg1:T287.kevin-tmp Arg2:T288.kevin-tmp	
-R49.kevin-tmp	VERIFY_other_relation Arg1:T291.kevin-tmp Arg2:T289.kevin-tmp	
-R50.kevin-tmp	VERIFY_other_relation Arg1:T290.kevin-tmp Arg2:T289.kevin-tmp	
-R54.kevin-tmp	VERIFY_other_relation Arg1:T300.kevin-tmp Arg2:T299.kevin-tmp	
-R57.kevin-tmp	VERIFY_other_relation Arg1:T305.kevin-tmp Arg2:T303.kevin-tmp	
-R59.kevin-tmp	VERIFY_other_relation Arg1:T307.kevin-tmp Arg2:T306.kevin-tmp	
-R61.kevin-tmp	VERIFY_other_relation Arg1:T320.kevin-tmp Arg2:T318.kevin-tmp	
 R62.kevin-tmp	participates_in Arg1:T325.kevin-tmp Arg2:T326.kevin-tmp	
 R63.kevin-tmp	participates_in Arg1:T325.kevin-tmp Arg2:T327.kevin-tmp	
-R64.kevin-tmp	VERIFY_other_relation Arg1:T329.kevin-tmp Arg2:T330.kevin-tmp	
-R1.sandy-tmp	VERIFY_other_relation Arg1:T2.sandy-tmp Arg2:T1.sandy-tmp	
-R2.sandy-tmp	VERIFY_other_relation Arg1:T4.sandy-tmp Arg2:T3.sandy-tmp	
 R10.sandy-tmp	is_subclass_of Arg1:T24.kevin-tmp Arg2:T94.sandy-tmp	
 R15.sandy-tmp	participates_in Arg1:T32.kevin-tmp Arg2:T106.sandy-tmp	
 R16.sandy-tmp	is_subclass_of Arg1:T38.kevin-tmp Arg2:T37.kevin-tmp	
@@ -599,38 +557,19 @@ R36.sandy-tmp	is_part_of Arg1:T268.sandy-tmp Arg2:T270.sandy-tmp
 R37.sandy-tmp	is_part_of Arg1:T269.sandy-tmp Arg2:T271.sandy-tmp	
 R43.sandy-tmp	is_part_of Arg1:T273.sandy-tmp Arg2:T168.kevin-tmp	
 R44.sandy-tmp	is_part_of Arg1:T274.sandy-tmp Arg2:T169.kevin-tmp	
-R45.sandy-tmp	VERIFY_other_relation Arg1:T176.kevin-tmp Arg2:T47.sandy-tmp	
-R46.sandy-tmp	VERIFY_other_relation Arg1:T177.kevin-tmp Arg2:T47.sandy-tmp	
-R47.sandy-tmp	VERIFY_other_relation Arg1:T178.kevin-tmp Arg2:T47.sandy-tmp	
-R48.sandy-tmp	VERIFY_other_relation Arg1:T179.kevin-tmp Arg2:T47.sandy-tmp	
-R49.sandy-tmp	VERIFY_other_relation Arg1:T181.sandy-tmp Arg2:T38.sandy-tmp	
-R50.sandy-tmp	VERIFY_other_relation Arg1:T92.kevin-tmp Arg2:T38.sandy-tmp	
-R51.sandy-tmp	VERIFY_other_relation Arg1:T93.kevin-tmp Arg2:T38.sandy-tmp	
-R52.sandy-tmp	VERIFY_other_relation Arg1:T94.kevin-tmp Arg2:T38.sandy-tmp	
-R53.sandy-tmp	VERIFY_other_relation Arg1:T315.sandy-tmp Arg2:T180.kevin-tmp	
-R54.sandy-tmp	VERIFY_other_relation Arg1:T316.sandy-tmp Arg2:T180.kevin-tmp	
-R55.sandy-tmp	VERIFY_other_relation Arg1:T317.sandy-tmp Arg2:T180.kevin-tmp	
 R56.sandy-tmp	is_part_of Arg1:T236.kevin-tmp Arg2:T388.sandy-tmp	
 R57.sandy-tmp	is_part_of Arg1:T237.kevin-tmp Arg2:T388.sandy-tmp	
 R58.sandy-tmp	is_part_of Arg1:T238.kevin-tmp Arg2:T388.sandy-tmp	
 R59.sandy-tmp	is_part_of Arg1:T239.kevin-tmp Arg2:T388.sandy-tmp	
-R60.sandy-tmp	VERIFY_other_relation Arg1:T261.kevin-tmp Arg2:T262.kevin-tmp	
 R61.sandy-tmp	is_part_of Arg1:T269.kevin-tmp Arg2:T268.kevin-tmp	
 R62.sandy-tmp	regulates Arg1:T269.kevin-tmp Arg2:T270.kevin-tmp	
 R63.sandy-tmp	regulates Arg1:T272.kevin-tmp Arg2:T434.sandy-tmp	
 R64.sandy-tmp	is_subclass_of Arg1:T438.sandy-tmp Arg2:T439.sandy-tmp	
 R65.sandy-tmp	is_part_of Arg1:T478.sandy-tmp Arg2:T479.sandy-tmp	
-R66.sandy-tmp	VERIFY_other_relation Arg1:T289.kevin-tmp Arg2:T291.kevin-tmp	
-R72.sandy-tmp	VERIFY_other_relation Arg1:T507.sandy-tmp Arg2:T303.kevin-tmp	
-R75.sandy-tmp	VERIFY_other_relation Arg1:T552.sandy-tmp Arg2:T88.sandy-tmp	
-R76.sandy-tmp	VERIFY_other_relation Arg1:T553.sandy-tmp Arg2:T88.sandy-tmp	
-R77.sandy-tmp	VERIFY_other_relation Arg1:T554.sandy-tmp Arg2:T88.sandy-tmp	
-R78.sandy-tmp	VERIFY_other_relation Arg1:T555.sandy-tmp Arg2:T88.sandy-tmp	
 R79.sandy-tmp	is_subclass_of Arg1:T55.kevin-tmp Arg2:T559.sandy-tmp	
 R80.sandy-tmp	is_subclass_of Arg1:T56.kevin-tmp Arg2:T559.sandy-tmp	
 R81.sandy-tmp	is_subclass_of Arg1:T57.kevin-tmp Arg2:T559.sandy-tmp	
 T1	Entity 88 124	small-effect quantitative trait loci
-R1	participates_in Arg1:T1 Arg2:T23.kevin-tmp	
 T2	Entity 27588 27600	DBA/1 strain
 T3	Entity 27052 27064	DBA/1 strain
 T4	Entity 7701 7713	immunisation
@@ -763,3 +702,5 @@ T63	Entity 20441 20444	QTL
 T64	Entity 20457 20478	IgG2a antibody levels
 T65	Entity 20482 20493	collagen II
 R69	participates_in Arg1:T261.kevin-tmp Arg2:T64	
+T66	Entity 600 616	small-effect QTL
+R70	participates_in Arg1:T1.kevin-tmp Arg2:T2.kevin-tmp	

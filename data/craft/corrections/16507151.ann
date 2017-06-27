@@ -167,7 +167,6 @@ T304.kevin-tmp	Entity 10588 10599	female mice
 T308.kevin-tmp	Entity 1181 1190	incidence
 T309.kevin-tmp	Entity 1192 1200	severity
 T6.kevin-tmp	Entity 558 574	aged female mice
-T7.kevin-tmp	FIX_SPAN_KeyEntity 594 626	NFR/N and B10.Q (H-2q haplotype)
 T10.kevin-tmp	Entity 912 936	quantitative trait locus
 T11.kevin-tmp	Entity 1057 1062	locus
 T13.kevin-tmp	Entity 1109 1133	quantitative trait locus
@@ -178,9 +177,7 @@ T34.kevin-tmp	KeyEntity 3595 3598	CIA
 T44.kevin-tmp	Entity 11515 11519	loci
 T51.kevin-tmp	KeyEntity 14517 14520	CIA
 T55.kevin-tmp	KeyEntity 16663 16666	CIA
-T63.kevin-tmp	VERIFY_Entity 2103 2116	risk of onset
 T65.kevin-tmp	Entity 2159 2180	first year postpartum
-T66.kevin-tmp	VERIFY_Entity 2185 2200	chance of onset
 T78.kevin-tmp	Entity 3004 3025	behavioral influences
 T81.kevin-tmp	Entity 3157 3166	pregnancy
 T88.kevin-tmp	Entity 3543 3569	pregnancy history (parity)
@@ -224,7 +221,6 @@ T249.kevin-tmp	Entity 16612 16629	rat chromosome 10
 T255.kevin-tmp	Entity 16905 16918	chromosome 11
 T256.kevin-tmp	Entity 17172 17183	female mice
 T257.kevin-tmp	Entity 17190 17204	pregnancy rate
-T258.kevin-tmp	VERIFY_Entity 17228 17276	successful pregnancies per detected vaginal plug
 T262.kevin-tmp	Entity 17666 17679	chromosome 11
 T263.kevin-tmp	Entity 17681 17686	Cia40
 T271.kevin-tmp	KeyEntity 18838 18874	collagen-induced arthritis incidence
@@ -282,7 +278,6 @@ T168.sandy-tmp	Entity 10349 10364	anti-CII titers
 T172.sandy-tmp	KeyEntity 10581 10584	CIA
 T179.sandy-tmp	KeyEntity 10888 10891	CII
 T180.sandy-tmp	Entity 10961 10970	arthritis
-T181.sandy-tmp	FIX_SPAN_Entity 10988 11009	number of pregnancies
 T186.sandy-tmp	KeyEntity 11536 11539	CIA
 T190.sandy-tmp	Entity 11737 11742	Cia40
 T192.sandy-tmp	Entity 11798 11801	LOD
@@ -310,7 +305,6 @@ T280.sandy-tmp	KeyEntity 16506 16514	human RA
 T290.sandy-tmp	KeyEntity 17086 17099	CIA incidence
 T291.sandy-tmp	Entity 17103 17119	multiparous mice
 T292.sandy-tmp	Entity 17368 17386	inflammatory cause
-T295.sandy-tmp	FIX_SPAN_Entity 17555 17570	severity of CIA
 T310.sandy-tmp	Entity 18731 18736	NFR/N
 T311.sandy-tmp	Entity 18741 18746	B10.Q
 T316.sandy-tmp	Entity 18878 18888;18896 18898	chromosome 11
@@ -328,15 +322,10 @@ R30.kevin-tmp	is_subclass_of Arg1:T237.kevin-tmp Arg2:T236.kevin-tmp
 R31.kevin-tmp	is_subclass_of Arg1:T238.kevin-tmp Arg2:T236.kevin-tmp	
 R32.kevin-tmp	is_subclass_of Arg1:T239.kevin-tmp Arg2:T236.kevin-tmp	
 R33.kevin-tmp	is_subclass_of Arg1:T240.kevin-tmp Arg2:T236.kevin-tmp	
-R1.kevin-tmp	VERIFY_other_relation Arg1:T7.kevin-tmp Arg2:T6.kevin-tmp	
-R4.kevin-tmp	VERIFY_other_relation Arg1:T12.kevin-tmp Arg2:T10.kevin-tmp	
 R5.kevin-tmp	regulates Arg1:T11.kevin-tmp Arg2:T24.kevin-tmp	
-R6.kevin-tmp	VERIFY_other_relation Arg1:T15.kevin-tmp Arg2:T16.kevin-tmp	
 R7.kevin-tmp	is_part_of Arg1:T15.kevin-tmp Arg2:T17.kevin-tmp	
 R8.kevin-tmp	is_part_of Arg1:T10.kevin-tmp Arg2:T22.kevin-tmp	
 R10.kevin-tmp	is_part_of Arg1:T18.kevin-tmp Arg2:T20.kevin-tmp	
-R11.kevin-tmp	VERIFY_other_relation Arg1:T63.kevin-tmp Arg2:T64.kevin-tmp	
-R12.kevin-tmp	VERIFY_other_relation Arg1:T66.kevin-tmp Arg2:T65.kevin-tmp	
 R14.kevin-tmp	participates_in Arg1:T81.kevin-tmp Arg2:T82.kevin-tmp	
 R21.kevin-tmp	regulates Arg1:T209.kevin-tmp Arg2:T210.kevin-tmp	
 R22.kevin-tmp	is_part_of Arg1:T217.kevin-tmp Arg2:T219.kevin-tmp	
@@ -349,7 +338,6 @@ R36.kevin-tmp	is_part_of Arg1:T248.kevin-tmp Arg2:T249.kevin-tmp
 R39.kevin-tmp	is_part_of Arg1:T254.kevin-tmp Arg2:T255.kevin-tmp	
 R40.kevin-tmp	is_part_of Arg1:T252.kevin-tmp Arg2:T255.kevin-tmp	
 R41.kevin-tmp	participates_in Arg1:T252.kevin-tmp Arg2:T253.kevin-tmp	
-R42.kevin-tmp	VERIFY_other_relation Arg1:T258.kevin-tmp Arg2:T257.kevin-tmp	
 R1.sandy-tmp	participates_in Arg1:T1.kevin-tmp Arg2:T2.sandy-tmp	
 R3.sandy-tmp	is_subclass_of Arg1:T3.kevin-tmp Arg2:T5.sandy-tmp	
 R6.sandy-tmp	is_subclass_of Arg1:T5.kevin-tmp Arg2:T4.kevin-tmp	
@@ -364,18 +352,13 @@ R34.sandy-tmp	is_part_of Arg1:T120.kevin-tmp Arg2:T121.kevin-tmp
 R35.sandy-tmp	is_part_of Arg1:T145.sandy-tmp Arg2:T147.sandy-tmp	
 R36.sandy-tmp	interacts_with Arg1:T134.kevin-tmp Arg2:T133.kevin-tmp	
 R37.sandy-tmp	interacts_with Arg1:T150.sandy-tmp Arg2:T132.kevin-tmp	
-R39.sandy-tmp	VERIFY_other_relation Arg1:T146.kevin-tmp Arg2:T172.sandy-tmp	
 R40.sandy-tmp	is_part_of Arg1:T146.kevin-tmp Arg2:T304.kevin-tmp	
-R41.sandy-tmp	VERIFY_other_relation Arg1:T180.sandy-tmp Arg2:T181.sandy-tmp	
 R48.sandy-tmp	is_subclass_of Arg1:T187.kevin-tmp Arg2:T185.kevin-tmp	
 R49.sandy-tmp	interacts_with Arg1:T189.kevin-tmp Arg2:T47.kevin-tmp	
-R50.sandy-tmp	VERIFY_other_relation Arg1:T196.kevin-tmp Arg2:T227.sandy-tmp	
-R51.sandy-tmp	VERIFY_other_relation Arg1:T229.sandy-tmp Arg2:T230.sandy-tmp	
 R57.sandy-tmp	is_part_of Arg1:T234.kevin-tmp Arg2:T233.kevin-tmp	
 R59.sandy-tmp	is_part_of Arg1:T236.kevin-tmp Arg2:T267.sandy-tmp	
 R67.sandy-tmp	regulates Arg1:T248.kevin-tmp Arg2:T250.kevin-tmp	
 R70.sandy-tmp	participates_in Arg1:T292.sandy-tmp Arg2:T259.kevin-tmp	
-R71.sandy-tmp	VERIFY_other_relation Arg1:T261.kevin-tmp Arg2:T295.sandy-tmp	
 T1	Entity 604 626	B10.Q (H-2q haplotype)
 R1	interacts_with Arg1:T9.sandy-tmp Arg2:T1	
 R2	participates_in Arg1:T9.kevin-tmp Arg2:T12.sandy-tmp	
@@ -531,3 +514,4 @@ R87	participates_in Arg1:T54 Arg2:T206.kevin-tmp
 R88	is_part_of Arg1:T54 Arg2:T57	
 R89	is_part_of Arg1:T54 Arg2:T56	
 R90	is_part_of Arg1:T54 Arg2:T222.kevin-tmp	
+R91	participates_in Arg1:T15.kevin-tmp Arg2:T16.kevin-tmp	
